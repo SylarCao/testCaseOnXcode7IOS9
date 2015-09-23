@@ -47,6 +47,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *the_vctl = [[NSClassFromString([_vctls objectAtIndex:indexPath.row]) alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:the_vctl animated:YES];
     

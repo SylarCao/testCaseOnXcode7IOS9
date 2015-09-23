@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasicVCTL.h"
 
-@interface NaviBarVCTL : UIViewController
+@interface NaviBarVCTL : BasicVCTL
 
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */; settings = {ASSET_TAGS = (); }; };
+		2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73A1BB3A35D00D22F29 /* icon29.png */; settings = {ASSET_TAGS = (); }; };
+		2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73B1BB3A35D00D22F29 /* icon58.png */; settings = {ASSET_TAGS = (); }; };
+		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; settings = {ASSET_TAGS = (); }; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
 		2CA112921BB29E4A00406685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112911BB29E4A00406685 /* ViewController.m */; };
@@ -31,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C65D7321BB3A32300D22F29 /* MathProblem1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem1VCTL.h; sourceTree = "<group>"; };
+		2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem1VCTL.m; sourceTree = "<group>"; };
+		2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem1VCTL.xib; sourceTree = "<group>"; };
+		2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon0副本 2.png"; sourceTree = "<group>"; };
+		2C65D73A1BB3A35D00D22F29 /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
+		2C65D73B1BB3A35D00D22F29 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA1128D1BB29E4A00406685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +91,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C65D7311BB3A31200D22F29 /* mathProblem1 */ = {
+			isa = PBXGroup;
+			children = (
+				2C65D7321BB3A32300D22F29 /* MathProblem1VCTL.h */,
+				2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */,
+				2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */,
+			);
+			path = mathProblem1;
+			sourceTree = "<group>";
+		};
+		2C65D7371BB3A35D00D22F29 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C65D73F1BB3A38500D22F29 /* mathProblem */,
+				2C65D7381BB3A35D00D22F29 /* icon */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		2C65D7381BB3A35D00D22F29 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */,
+				2C65D73A1BB3A35D00D22F29 /* icon29.png */,
+				2C65D73B1BB3A35D00D22F29 /* icon58.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		2C65D73F1BB3A38500D22F29 /* mathProblem */ = {
+			isa = PBXGroup;
+			children = (
+				2C65D7401BB3A38500D22F29 /* mp1.jpg */,
+			);
+			path = mathProblem;
+			sourceTree = "<group>";
+		};
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2CA112A21BB29EAA00406685 /* section */,
+				2C65D7371BB3A35D00D22F29 /* resource */,
 			);
 			path = sylar;
 			sourceTree = "<group>";
@@ -151,12 +202,12 @@
 		2CA112A81BB29EAA00406685 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				2CA112A91BB29EAA00406685 /* HomeTableViewCell.h */,
-				2CA112AA1BB29EAA00406685 /* HomeTableViewCell.m */,
-				2CA112AB1BB29EAA00406685 /* HomeTableViewCell.xib */,
 				2CA112AC1BB29EAA00406685 /* HomeVCTL.h */,
 				2CA112AD1BB29EAA00406685 /* HomeVCTL.m */,
 				2CA112AE1BB29EAA00406685 /* HomeVCTL.xib */,
+				2CA112A91BB29EAA00406685 /* HomeTableViewCell.h */,
+				2CA112AA1BB29EAA00406685 /* HomeTableViewCell.m */,
+				2CA112AB1BB29EAA00406685 /* HomeTableViewCell.xib */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -164,6 +215,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C65D7311BB3A31200D22F29 /* mathProblem1 */,
 				2CA112B01BB29EAA00406685 /* constrains */,
 				2CA112B41BB29EAA00406685 /* navibarHeight */,
 				2CA112B71BB29EAA00406685 /* testXib */,
@@ -271,14 +323,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2CA112CE1BB29EAA00406685 /* X1.xib in Resources */,
+				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
+				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
+				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
 				2CA112CC1BB29EAA00406685 /* testXibVCTL.xib in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
 				2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */,
+				2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
+				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
 				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
 				2CA112C21BB29EAA00406685 /* BasicTableViewCell.m in Sources */,
 				2CA112C31BB29EAA00406685 /* BasicVCTL.m in Sources */,

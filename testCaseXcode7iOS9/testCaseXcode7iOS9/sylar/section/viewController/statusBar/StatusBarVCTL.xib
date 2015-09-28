@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusBarVCTL">
+            <connections>
+                <outlet property="table" destination="Tal-Dd-RCR" id="HyZ-QQ-KpI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tal-Dd-RCR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RNf-mJ-dnI"/>
+                        <outlet property="delegate" destination="-1" id="nsD-GX-zXt"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txr-qS-UAO">
+                    <rect key="frame" x="0.0" y="440" width="320" height="40"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="gJe-1w-cYV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tal-Dd-RCR" secondAttribute="bottom" constant="40" id="Rx8-Tm-maj"/>
+                <constraint firstAttribute="trailing" secondItem="Txr-qS-UAO" secondAttribute="trailing" id="Txn-v9-7he"/>
+                <constraint firstAttribute="bottom" secondItem="Txr-qS-UAO" secondAttribute="bottom" id="g6f-7y-5si"/>
+                <constraint firstItem="Tal-Dd-RCR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gr9-ip-XZd"/>
+                <constraint firstItem="Tal-Dd-RCR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kPR-t5-V9H"/>
+                <constraint firstAttribute="trailing" secondItem="Tal-Dd-RCR" secondAttribute="trailing" id="lZu-8S-EbI"/>
+                <constraint firstItem="Txr-qS-UAO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ngl-qv-Jvf"/>
+                <constraint firstItem="Txr-qS-UAO" firstAttribute="top" secondItem="Tal-Dd-RCR" secondAttribute="bottom" id="shA-Df-0sX"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="509" y="87"/>
+        </view>
+    </objects>
+</document>

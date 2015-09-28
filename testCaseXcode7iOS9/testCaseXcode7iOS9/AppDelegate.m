@@ -21,6 +21,7 @@
     
     HomeVCTL *hh = [[HomeVCTL alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:hh];
+    
     _window.rootViewController = nav;
     [_window addSubview:nav.view];
     [_window makeKeyAndVisible];

@@ -25,7 +25,7 @@
     
 //    [self calculate1];
     
-    [self calculate2];
+//    [self calculate2];
 }
 
 - (void) calculate1

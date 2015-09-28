@@ -31,8 +31,14 @@
     NSLog(@"time ======== ");
 }
 
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [_timer invalidate];
+    _timer = nil;
+}
 
-///
 - (IBAction)btn1:(id)sender
 {
     [_timer invalidate];

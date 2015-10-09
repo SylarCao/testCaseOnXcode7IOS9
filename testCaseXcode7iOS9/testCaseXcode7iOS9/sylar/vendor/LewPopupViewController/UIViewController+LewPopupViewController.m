@@ -15,6 +15,8 @@
 #define kLEWOverlayView @"kLEWOverlayView"
 #define kLEWPopupViewDismissedBlock @"kLEWPopupViewDismissedBlock"
 #define KLEWPopupAnimation @"KLEWPopupAnimation"
+#define kLEWPopupAllowDismiss @"kLEWPopupAllowDismiss"
+#define kLEWPupupInt1 @"kLEWPupupInt1"
 
 #define kLEWPopupViewTag 8002
 #define kLEWOverlayViewTag 8003
@@ -24,6 +26,8 @@
 @property (nonatomic, retain) UIView *lewOverlayView;
 @property (nonatomic, copy) void(^lewDismissCallback)(void);
 @property (nonatomic, retain) id<LewPopupAnimation> popupAnimation;
+@property (nonatomic, copy) NSString *allowDismiss;
+@property (nonatomic, assign) NSInteger int1;
 - (UIView*)topView;
 @end
 
@@ -77,6 +81,31 @@
 - (void)setLewPopupAnimation:(id<LewPopupAnimation>)lewPopupAnimation{
     objc_setAssociatedObject(self, KLEWPopupAnimation, lewPopupAnimation, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
+- (NSString *)allowDismiss
+{
+    return objc_getAssociatedObject(self, kLEWPopupAllowDismiss);
+}
+
+- (void) setAllowDismiss:(NSString *)allowDismiss
+{
+    objc_setAssociatedObject(self, kLEWPopupAllowDismiss, allowDismiss, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSInteger)int1
+{
+    NSNumber *number = objc_getAssociatedObject(self, kLEWPupupInt1);
+    NSInteger rt = [number integerValue];
+    return rt;
+}
+
+- (void) setInt1:(NSInteger)int1
+{
+    NSNumber *number = [NSNumber numberWithInteger:int1];
+    objc_setAssociatedObject(self, kLEWPupupInt1, number, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+
 #pragma mark - view handle
 
 - (void)presentPopupView:(UIView*)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void(^)(void))dismissed{
@@ -141,6 +170,11 @@
 }
 
 - (void)dismissPopupViewWithAnimation:(id<LewPopupAnimation>)animation{
+    NSInteger ii = self.int1;
+    if ([self.allowDismiss isEqualToString:@"0"])
+    {
+        return;
+    }
     if (animation) {
         [animation dismissView:self.lewPopupView overlayView:self.lewOverlayView completion:^(void) {
             [self.lewOverlayView removeFromSuperview];

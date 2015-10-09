@@ -41,7 +41,7 @@
     animation.type = LewPopupViewAnimationSlideTypeTopBottom;
     
     [self lew_presentPopupView:v1 animation:animation];
-    
+    self.allowDismiss = @"0";
     
 }
 

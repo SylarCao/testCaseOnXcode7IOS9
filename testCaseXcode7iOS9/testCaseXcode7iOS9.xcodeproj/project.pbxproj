@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C08A8251BB928090077FE53 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8191BB928090077FE53 /* LewPopupBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
-		2C08A8261BB928090077FE53 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A81B1BB928090077FE53 /* LewPopupViewAnimationDrop.m */; settings = {ASSET_TAGS = (); }; };
-		2C08A8271BB928090077FE53 /* LewPopupViewAnimationFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A81D1BB928090077FE53 /* LewPopupViewAnimationFade.m */; settings = {ASSET_TAGS = (); }; };
-		2C08A8281BB928090077FE53 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A81F1BB928090077FE53 /* LewPopupViewAnimationSlide.m */; settings = {ASSET_TAGS = (); }; };
-		2C08A8291BB928090077FE53 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8211BB928090077FE53 /* LewPopupViewAnimationSpring.m */; settings = {ASSET_TAGS = (); }; };
-		2C08A82A1BB928090077FE53 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8241BB928090077FE53 /* UIViewController+LewPopupViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2C08A8351BB931B60077FE53 /* LewPopupVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8331BB931B60077FE53 /* LewPopupVCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2C08A8361BB931B60077FE53 /* LewPopupVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A8341BB931B60077FE53 /* LewPopupVCTL.xib */; settings = {ASSET_TAGS = (); }; };
 		2C08A8391BB931C60077FE53 /* LewView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8381BB931C60077FE53 /* LewView1.m */; settings = {ASSET_TAGS = (); }; };
 		2C08A83C1BB933480077FE53 /* LewView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A83B1BB933480077FE53 /* LewView2.m */; settings = {ASSET_TAGS = (); }; };
 		2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A83D1BB933590077FE53 /* LewView2.xib */; settings = {ASSET_TAGS = (); }; };
+		2C08A8661BB939A80077FE53 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A85A1BB939A80077FE53 /* LewPopupBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		2C08A8671BB939A80077FE53 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A85C1BB939A80077FE53 /* LewPopupViewAnimationDrop.m */; settings = {ASSET_TAGS = (); }; };
+		2C08A8681BB939A80077FE53 /* LewPopupViewAnimationFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A85E1BB939A80077FE53 /* LewPopupViewAnimationFade.m */; settings = {ASSET_TAGS = (); }; };
+		2C08A8691BB939A80077FE53 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8601BB939A80077FE53 /* LewPopupViewAnimationSlide.m */; settings = {ASSET_TAGS = (); }; };
+		2C08A86A1BB939A80077FE53 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8621BB939A80077FE53 /* LewPopupViewAnimationSpring.m */; settings = {ASSET_TAGS = (); }; };
+		2C08A86B1BB939A80077FE53 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8651BB939A80077FE53 /* UIViewController+LewPopupViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A83B91BB8C88400A335B5 /* StackViewVCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2C3A83BC1BB8C88400A335B5 /* StackViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A83BA1BB8C88400A335B5 /* StackViewVCTL.xib */; settings = {ASSET_TAGS = (); }; };
 		2C3A83C21BB8CB2000A335B5 /* sgs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A83BE1BB8CB2000A335B5 /* sgs1.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -61,22 +61,17 @@
 		2CADEA311BB536BB009BBD28 /* StatusBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA2F1BB536BB009BBD28 /* StatusBarTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CADEA301BB536BB009BBD28 /* StatusBarTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; settings = {ASSET_TAGS = (); }; };
+		2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2CE092F51BC63BB500027EED /* PostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092F41BC63BB500027EED /* PostModel.m */; settings = {ASSET_TAGS = (); }; };
+		2CE092FA1BC63FE500027EED /* StringArrayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092F81BC63FE500027EED /* StringArrayVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2CE092FB1BC63FE500027EED /* StringArrayVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE092F91BC63FE500027EED /* StringArrayVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2CE329C11BBA369E008259DD /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE329C01BBA369E008259DD /* UITextField+Shake.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C08A8181BB928090077FE53 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
-		2C08A8191BB928090077FE53 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
-		2C08A81A1BB928090077FE53 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
-		2C08A81B1BB928090077FE53 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
-		2C08A81C1BB928090077FE53 /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
-		2C08A81D1BB928090077FE53 /* LewPopupViewAnimationFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationFade.m; sourceTree = "<group>"; };
-		2C08A81E1BB928090077FE53 /* LewPopupViewAnimationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSlide.h; sourceTree = "<group>"; };
-		2C08A81F1BB928090077FE53 /* LewPopupViewAnimationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSlide.m; sourceTree = "<group>"; };
-		2C08A8201BB928090077FE53 /* LewPopupViewAnimationSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSpring.h; sourceTree = "<group>"; };
-		2C08A8211BB928090077FE53 /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
-		2C08A8221BB928090077FE53 /* LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewController.h; sourceTree = "<group>"; };
-		2C08A8231BB928090077FE53 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
-		2C08A8241BB928090077FE53 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
 		2C08A8321BB931B60077FE53 /* LewPopupVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupVCTL.h; sourceTree = "<group>"; };
 		2C08A8331BB931B60077FE53 /* LewPopupVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupVCTL.m; sourceTree = "<group>"; };
 		2C08A8341BB931B60077FE53 /* LewPopupVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LewPopupVCTL.xib; sourceTree = "<group>"; };
@@ -85,6 +80,19 @@
 		2C08A83A1BB933480077FE53 /* LewView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewView2.h; sourceTree = "<group>"; };
 		2C08A83B1BB933480077FE53 /* LewView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewView2.m; sourceTree = "<group>"; };
 		2C08A83D1BB933590077FE53 /* LewView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LewView2.xib; sourceTree = "<group>"; };
+		2C08A8591BB939A80077FE53 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
+		2C08A85A1BB939A80077FE53 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
+		2C08A85B1BB939A80077FE53 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
+		2C08A85C1BB939A80077FE53 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
+		2C08A85D1BB939A80077FE53 /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
+		2C08A85E1BB939A80077FE53 /* LewPopupViewAnimationFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationFade.m; sourceTree = "<group>"; };
+		2C08A85F1BB939A80077FE53 /* LewPopupViewAnimationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSlide.h; sourceTree = "<group>"; };
+		2C08A8601BB939A80077FE53 /* LewPopupViewAnimationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSlide.m; sourceTree = "<group>"; };
+		2C08A8611BB939A80077FE53 /* LewPopupViewAnimationSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSpring.h; sourceTree = "<group>"; };
+		2C08A8621BB939A80077FE53 /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
+		2C08A8631BB939A80077FE53 /* LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewController.h; sourceTree = "<group>"; };
+		2C08A8641BB939A80077FE53 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
+		2C08A8651BB939A80077FE53 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
 		2C3A83B81BB8C88400A335B5 /* StackViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewVCTL.h; sourceTree = "<group>"; };
 		2C3A83B91BB8C88400A335B5 /* StackViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewVCTL.m; sourceTree = "<group>"; };
 		2C3A83BA1BB8C88400A335B5 /* StackViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewVCTL.xib; sourceTree = "<group>"; };
@@ -150,6 +158,19 @@
 		2CADEA301BB536BB009BBD28 /* StatusBarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusBarTableViewCell.xib; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		2CADEA381BB537E0009BBD28 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		2CE092EE1BC6378E00027EED /* PostNotificationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostNotificationVCTL.h; sourceTree = "<group>"; };
+		2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostNotificationVCTL.m; sourceTree = "<group>"; };
+		2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostNotificationVCTL.xib; sourceTree = "<group>"; };
+		2CE092F31BC63BB500027EED /* PostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostModel.h; sourceTree = "<group>"; };
+		2CE092F41BC63BB500027EED /* PostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostModel.m; sourceTree = "<group>"; };
+		2CE092F71BC63FE500027EED /* StringArrayVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayVCTL.h; sourceTree = "<group>"; };
+		2CE092F81BC63FE500027EED /* StringArrayVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayVCTL.m; sourceTree = "<group>"; };
+		2CE092F91BC63FE500027EED /* StringArrayVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringArrayVCTL.xib; sourceTree = "<group>"; };
+		2CE329B91BBA3602008259DD /* ShakeTextFieldVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeTextFieldVCTL.h; sourceTree = "<group>"; };
+		2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeTextFieldVCTL.m; sourceTree = "<group>"; };
+		2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeTextFieldVCTL.xib; sourceTree = "<group>"; };
+		2CE329BF1BBA369E008259DD /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		2CE329C01BBA369E008259DD /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,26 +184,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C08A8171BB928090077FE53 /* popupViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2C08A8181BB928090077FE53 /* LewPopupBackgroundView.h */,
-				2C08A8191BB928090077FE53 /* LewPopupBackgroundView.m */,
-				2C08A81A1BB928090077FE53 /* LewPopupViewAnimationDrop.h */,
-				2C08A81B1BB928090077FE53 /* LewPopupViewAnimationDrop.m */,
-				2C08A81C1BB928090077FE53 /* LewPopupViewAnimationFade.h */,
-				2C08A81D1BB928090077FE53 /* LewPopupViewAnimationFade.m */,
-				2C08A81E1BB928090077FE53 /* LewPopupViewAnimationSlide.h */,
-				2C08A81F1BB928090077FE53 /* LewPopupViewAnimationSlide.m */,
-				2C08A8201BB928090077FE53 /* LewPopupViewAnimationSpring.h */,
-				2C08A8211BB928090077FE53 /* LewPopupViewAnimationSpring.m */,
-				2C08A8221BB928090077FE53 /* LewPopupViewController.h */,
-				2C08A8231BB928090077FE53 /* UIViewController+LewPopupViewController.h */,
-				2C08A8241BB928090077FE53 /* UIViewController+LewPopupViewController.m */,
-			);
-			path = popupViewController;
-			sourceTree = "<group>";
-		};
 		2C08A8311BB931A80077FE53 /* LewPopupViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +197,26 @@
 				2C08A83D1BB933590077FE53 /* LewView2.xib */,
 			);
 			path = LewPopupViewcontroller;
+			sourceTree = "<group>";
+		};
+		2C08A8581BB939A80077FE53 /* LewPopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C08A8591BB939A80077FE53 /* LewPopupBackgroundView.h */,
+				2C08A85A1BB939A80077FE53 /* LewPopupBackgroundView.m */,
+				2C08A85B1BB939A80077FE53 /* LewPopupViewAnimationDrop.h */,
+				2C08A85C1BB939A80077FE53 /* LewPopupViewAnimationDrop.m */,
+				2C08A85D1BB939A80077FE53 /* LewPopupViewAnimationFade.h */,
+				2C08A85E1BB939A80077FE53 /* LewPopupViewAnimationFade.m */,
+				2C08A85F1BB939A80077FE53 /* LewPopupViewAnimationSlide.h */,
+				2C08A8601BB939A80077FE53 /* LewPopupViewAnimationSlide.m */,
+				2C08A8611BB939A80077FE53 /* LewPopupViewAnimationSpring.h */,
+				2C08A8621BB939A80077FE53 /* LewPopupViewAnimationSpring.m */,
+				2C08A8631BB939A80077FE53 /* LewPopupViewController.h */,
+				2C08A8641BB939A80077FE53 /* UIViewController+LewPopupViewController.h */,
+				2C08A8651BB939A80077FE53 /* UIViewController+LewPopupViewController.m */,
+			);
+			path = LewPopupViewController;
 			sourceTree = "<group>";
 		};
 		2C3A83B71BB8C85D00A335B5 /* StackView */ = {
@@ -234,7 +255,8 @@
 		2C3A83E01BB8EA8700A335B5 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				2C08A8171BB928090077FE53 /* popupViewController */,
+				2CE329BE1BBA369E008259DD /* textField_shake */,
+				2C08A8581BB939A80077FE53 /* LewPopupViewController */,
 				2C3A83E11BB8EA8700A335B5 /* MGSwipeTableCell */,
 			);
 			path = vendor;
@@ -378,6 +400,9 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CE092F61BC63FD400027EED /* stringArrayFunction */,
+				2CE092ED1BC6377500027EED /* postNotification */,
+				2CE329B81BBA35EE008259DD /* shakeTextField */,
 				2C08A8311BB931A80077FE53 /* LewPopupViewcontroller */,
 				2C3A83D21BB8EA3D00A335B5 /* MGSwipeCell */,
 				2C3A83B71BB8C85D00A335B5 /* StackView */,
@@ -455,6 +480,47 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
+		2CE092ED1BC6377500027EED /* postNotification */ = {
+			isa = PBXGroup;
+			children = (
+				2CE092EE1BC6378E00027EED /* PostNotificationVCTL.h */,
+				2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */,
+				2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */,
+				2CE092F31BC63BB500027EED /* PostModel.h */,
+				2CE092F41BC63BB500027EED /* PostModel.m */,
+			);
+			path = postNotification;
+			sourceTree = "<group>";
+		};
+		2CE092F61BC63FD400027EED /* stringArrayFunction */ = {
+			isa = PBXGroup;
+			children = (
+				2CE092F71BC63FE500027EED /* StringArrayVCTL.h */,
+				2CE092F81BC63FE500027EED /* StringArrayVCTL.m */,
+				2CE092F91BC63FE500027EED /* StringArrayVCTL.xib */,
+			);
+			path = stringArrayFunction;
+			sourceTree = "<group>";
+		};
+		2CE329B81BBA35EE008259DD /* shakeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2CE329B91BBA3602008259DD /* ShakeTextFieldVCTL.h */,
+				2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */,
+				2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */,
+			);
+			path = shakeTextField;
+			sourceTree = "<group>";
+		};
+		2CE329BE1BBA369E008259DD /* textField_shake */ = {
+			isa = PBXGroup;
+			children = (
+				2CE329BF1BBA369E008259DD /* UITextField+Shake.h */,
+				2CE329C01BBA369E008259DD /* UITextField+Shake.m */,
+			);
+			path = textField_shake;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,6 +552,7 @@
 				TargetAttributes = {
 					2CA112861BB29E4A00406685 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = KDQ72H3LGF;
 					};
 				};
 			};
@@ -521,13 +588,16 @@
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
 				2C3A83C31BB8CB2000A335B5 /* sgs2.jpg in Resources */,
+				2CE092FB1BC63FE500027EED /* StringArrayVCTL.xib in Resources */,
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
+				2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */,
 				2C3A83C41BB8CB2000A335B5 /* sgs3.jpg in Resources */,
 				2CA112CC1BB29EAA00406685 /* testXibVCTL.xib in Resources */,
 				2C3A83D71BB8EA4C00A335B5 /* MGSwipeCellVCTL.xib in Resources */,
+				2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */,
 				2C3A83C51BB8CB2000A335B5 /* sgs4.jpg in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
@@ -547,32 +617,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */,
+				2C08A8661BB939A80077FE53 /* LewPopupBackgroundView.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
 				2CADEA311BB536BB009BBD28 /* StatusBarTableViewCell.m in Sources */,
 				2C08A8391BB931C60077FE53 /* LewView1.m in Sources */,
-				2C08A8261BB928090077FE53 /* LewPopupViewAnimationDrop.m in Sources */,
 				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
-				2C08A8281BB928090077FE53 /* LewPopupViewAnimationSlide.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
+				2C08A86A1BB939A80077FE53 /* LewPopupViewAnimationSpring.m in Sources */,
+				2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */,
+				2C08A8681BB939A80077FE53 /* LewPopupViewAnimationFade.m in Sources */,
 				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
-				2C08A8291BB928090077FE53 /* LewPopupViewAnimationSpring.m in Sources */,
 				2CA112C21BB29EAA00406685 /* BasicTableViewCell.m in Sources */,
 				2CA112C31BB29EAA00406685 /* BasicVCTL.m in Sources */,
-				2C08A8251BB928090077FE53 /* LewPopupBackgroundView.m in Sources */,
-				2C08A82A1BB928090077FE53 /* UIViewController+LewPopupViewController.m in Sources */,
+				2CE092F51BC63BB500027EED /* PostModel.m in Sources */,
+				2CE329C11BBA369E008259DD /* UITextField+Shake.m in Sources */,
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
 				2C3A83E71BB8EA8700A335B5 /* MGSwipeTableCell.m in Sources */,
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
-				2C08A8271BB928090077FE53 /* LewPopupViewAnimationFade.m in Sources */,
 				2C3A83E61BB8EA8700A335B5 /* MGSwipeButton.m in Sources */,
+				2C08A8691BB939A80077FE53 /* LewPopupViewAnimationSlide.m in Sources */,
+				2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */,
 				2CA112C41BB29EAA00406685 /* HomeTableViewCell.m in Sources */,
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
 				2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */,
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
+				2CE092FA1BC63FE500027EED /* StringArrayVCTL.m in Sources */,
+				2C08A86B1BB939A80077FE53 /* UIViewController+LewPopupViewController.m in Sources */,
 				2C08A8351BB931B60077FE53 /* LewPopupVCTL.m in Sources */,
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
+				2C08A8671BB939A80077FE53 /* LewPopupViewAnimationDrop.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2CADEA2C1BB5364B009BBD28 /* StatusBarVCTL.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,
@@ -687,10 +762,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -698,10 +776,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

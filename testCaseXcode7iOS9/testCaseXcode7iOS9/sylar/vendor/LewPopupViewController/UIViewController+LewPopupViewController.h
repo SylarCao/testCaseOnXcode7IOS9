@@ -19,6 +19,8 @@
 @property (nonatomic, retain, readonly) UIView *lewPopupView;
 @property (nonatomic, retain, readonly) UIView *lewOverlayView;
 @property (nonatomic, retain, readonly) id<LewPopupAnimation> lewPopupAnimation;
+@property (nonatomic, copy) NSString *allowDismiss; // "1" or "0"
+@property (nonatomic, assign) NSInteger int1;
 
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation;
 - (void)lew_presentPopupView:(UIView *)popupView animation:(id<LewPopupAnimation>)animation dismissed:(void(^)(void))dismissed;

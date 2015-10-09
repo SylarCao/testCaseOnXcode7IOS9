@@ -23,7 +23,8 @@
     
     // data
     _vctls = @[@"testXibVCTL", @"NaviBarVCTL", @"ConstrainVCTL", @"TimerVCTL", @"MathProblem1VCTL", @"StatusBarVCTL",
-               @"StackViewVCTL", @"MGSwipeCellVCTL", @"LewPopupVCTL"];
+               @"StackViewVCTL", @"MGSwipeCellVCTL", @"LewPopupVCTL", @"ShakeTextFieldVCTL", @"PostNotificationVCTL",
+               @"StringArrayVCTL"];
     
     // table view
     [_table registerNib:[UINib nibWithNibName:@"HomeTableViewCell" bundle:nil] forCellReuseIdentifier:[HomeTableViewCell getCellId]];

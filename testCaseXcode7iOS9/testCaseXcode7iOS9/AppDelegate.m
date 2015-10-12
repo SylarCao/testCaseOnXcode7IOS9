@@ -26,6 +26,13 @@
     [_window addSubview:nav.view];
     [_window makeKeyAndVisible];
     
+    // 3d touch
+    UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"斋打开" localizedTitle:@"斋打开"];
+    UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"弹框" localizedTitle:@"弹框"];
+    NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem1, shortItem2, nil];
+    NSLog(@"%@", shortItems);
+    [[UIApplication sharedApplication] setShortcutItems:shortItems];
+    
     return YES;
 }
 
@@ -49,6 +56,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    if ([shortcutItem.localizedTitle  isEqual: @"弹框"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OPPS!" message:@"我的CTO叫佛山强" delegate:self cancelButtonTitle:@"哦" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
 }
 
 @end

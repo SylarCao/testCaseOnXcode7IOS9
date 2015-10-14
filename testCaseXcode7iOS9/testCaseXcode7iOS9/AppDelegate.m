@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeVCTL.h"
+#import <Bugly/CrashReporter.h>
 
 @interface AppDelegate ()
 
@@ -32,6 +33,10 @@
     NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem1, shortItem2, nil];
     NSLog(@"%@", shortItems);
     [[UIApplication sharedApplication] setShortcutItems:shortItems];
+    
+    // bugly
+    [[CrashReporter sharedInstance] enableLog:YES];
+    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
     
     return YES;
 }

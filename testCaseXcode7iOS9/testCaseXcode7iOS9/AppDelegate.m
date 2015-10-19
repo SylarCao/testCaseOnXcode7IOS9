@@ -38,6 +38,10 @@
     [[CrashReporter sharedInstance] enableLog:YES];
     [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
     
+    
+    // home
+    NSLog(@"home = %@", NSHomeDirectory());
+    
     return YES;
 }
 

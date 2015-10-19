@@ -66,7 +66,7 @@
 {
     NSLog(@"return nil");
     Touch3d1DetailVCTL *d3 = [[Touch3d1DetailVCTL alloc] initWithNibName:nil bundle:nil];
-    
+    d3.preferredContentSize = CGSizeMake(200, 100);
     return d3;
 }
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0)

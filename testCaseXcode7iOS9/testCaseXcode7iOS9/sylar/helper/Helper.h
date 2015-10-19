@@ -13,8 +13,20 @@
 
 + (instancetype) share;
 
+/**
+ *  get a random color
+ *
+ *  @return <#return value description#>
+ */
 - (UIColor *) getRandomColor;
 
-
+/**
+ *  get image from color
+ *
+ *  @param color <#color description#>
+ *
+ *  @return <#return value description#>
+ */
+- (UIImage *)imageWithColor:(UIColor *)color;
 
 @end

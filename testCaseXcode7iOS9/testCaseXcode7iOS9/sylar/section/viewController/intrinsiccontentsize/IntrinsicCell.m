@@ -1,0 +1,27 @@
+//
+//  IntrinsicCell.m
+//  testCaseXcode7iOS9
+//
+//  Created by sylar on 15/10/15.
+//  Copyright © 2015年 sylar. All rights reserved.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+#import "IntrinsicCell.h"
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+@interface IntrinsicCell()
+
+@property (nonatomic, weak) IBOutlet UILabel *lb1;
+@property (nonatomic, weak) IBOutlet UILabel *lb2;
+
+@end
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+@implementation IntrinsicCell
+
+- (void) setWithContent:(NSString *)content index:(NSInteger)index
+{
+    _lb1.text = [NSString stringWithFormat:@"%ld", index];
+    _lb2.text = content;
+}
+
+
+@end

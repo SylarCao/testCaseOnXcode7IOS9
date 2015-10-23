@@ -40,6 +40,9 @@
 		2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C855D1BCCD857009C4D24 /* libz.tbd */; };
 		2C3C85661BCCD94F009C4D24 /* BuglyVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2C3C85671BCCD94F009C4D24 /* BuglyVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2C4FE5521BD78A7700681C2F /* ContactListVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4FE5501BD78A7700681C2F /* ContactListVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4FE5511BD78A7700681C2F /* ContactListVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
 		2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */; settings = {ASSET_TAGS = (); }; };
 		2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */; settings = {ASSET_TAGS = (); }; };
@@ -109,6 +112,8 @@
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; settings = {ASSET_TAGS = (); }; };
 		2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */; settings = {ASSET_TAGS = (); }; };
+		2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF98F911BD4CF5B0001E209 /* ReleaseModeVCTL.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +164,10 @@
 		2C3C85631BCCD94F009C4D24 /* BuglyVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuglyVCTL.h; sourceTree = "<group>"; };
 		2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuglyVCTL.m; sourceTree = "<group>"; };
 		2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuglyVCTL.xib; sourceTree = "<group>"; };
+		2C4FE54F1BD78A7700681C2F /* ContactListVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListVCTL.h; sourceTree = "<group>"; };
+		2C4FE5501BD78A7700681C2F /* ContactListVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListVCTL.m; sourceTree = "<group>"; };
+		2C4FE5511BD78A7700681C2F /* ContactListVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListVCTL.xib; sourceTree = "<group>"; };
+		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		2C65D7321BB3A32300D22F29 /* MathProblem1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem1VCTL.h; sourceTree = "<group>"; };
 		2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem1VCTL.m; sourceTree = "<group>"; };
 		2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem1VCTL.xib; sourceTree = "<group>"; };
@@ -274,6 +283,9 @@
 		2CE329B91BBA3602008259DD /* ShakeTextFieldVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeTextFieldVCTL.h; sourceTree = "<group>"; };
 		2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeTextFieldVCTL.m; sourceTree = "<group>"; };
 		2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeTextFieldVCTL.xib; sourceTree = "<group>"; };
+		2CF98F8F1BD4CF5B0001E209 /* ReleaseModeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseModeVCTL.h; sourceTree = "<group>"; };
+		2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseModeVCTL.m; sourceTree = "<group>"; };
+		2CF98F911BD4CF5B0001E209 /* ReleaseModeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseModeVCTL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */,
 				2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */,
 				2C3C85601BCCD8B0009C4D24 /* libc++.tbd in Frameworks */,
 				2CE1F34B1BCE3DC800B82CAE /* Bugly.framework in Frameworks */,
@@ -407,6 +420,16 @@
 			path = bugly;
 			sourceTree = "<group>";
 		};
+		2C4FE54E1BD78A6800681C2F /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				2C4FE54F1BD78A7700681C2F /* ContactListVCTL.h */,
+				2C4FE5501BD78A7700681C2F /* ContactListVCTL.m */,
+				2C4FE5511BD78A7700681C2F /* ContactListVCTL.xib */,
+			);
+			path = contact;
+			sourceTree = "<group>";
+		};
 		2C65D7311BB3A31200D22F29 /* mathProblem1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +487,7 @@
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
+				2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */,
 				2C3C855F1BCCD8B0009C4D24 /* libc++.tbd */,
 				2C3C855D1BCCD857009C4D24 /* libz.tbd */,
 				2C3C855B1BCCD850009C4D24 /* Security.framework */,
@@ -559,6 +583,8 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C4FE54E1BD78A6800681C2F /* contact */,
+				2CF98F8E1BD4CF370001E209 /* releaseMode */,
 				2C1C92CF1BD0A935009573E6 /* numberKeyboard */,
 				2C2A16771BCFA44800D065CD /* intrinsiccontentsize */,
 				2C2A166B1BCF717500D065CD /* savePlist */,
@@ -806,6 +832,16 @@
 			path = shakeTextField;
 			sourceTree = "<group>";
 		};
+		2CF98F8E1BD4CF370001E209 /* releaseMode */ = {
+			isa = PBXGroup;
+			children = (
+				2CF98F8F1BD4CF5B0001E209 /* ReleaseModeVCTL.h */,
+				2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */,
+				2CF98F911BD4CF5B0001E209 /* ReleaseModeVCTL.xib */,
+			);
+			path = releaseMode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -885,6 +921,8 @@
 				2CE092FB1BC63FE500027EED /* StringArrayVCTL.xib in Resources */,
 				2CCB28961BCB4421005E9B85 /* DragCollectionView.xib in Resources */,
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
+				2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */,
+				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
 				2CCB289B1BCB4575005E9B85 /* DragCollectionCell.xib in Resources */,
@@ -940,6 +978,7 @@
 				2C08A8391BB931C60077FE53 /* LewView1.m in Sources */,
 				2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */,
 				2C1C92D31BD0A94C009573E6 /* NumberKeyboardVCTL.m in Sources */,
+				2C4FE5521BD78A7700681C2F /* ContactListVCTL.m in Sources */,
 				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
 				2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */,
@@ -966,6 +1005,7 @@
 				2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */,
 				2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */,
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
+				2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
 				2CE1F34F1BCE3DC800B82CAE /* UICollectionView+Draggable.m in Sources */,
 				2CE1F3531BCE3DC800B82CAE /* LewPopupViewAnimationSlide.m in Sources */,

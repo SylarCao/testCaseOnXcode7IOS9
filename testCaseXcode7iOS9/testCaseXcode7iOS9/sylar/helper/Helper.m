@@ -46,4 +46,24 @@
     return image;
 }
 
+- (NSString *) getVersion
+{
+    NSString *rt = [UIDevice currentDevice].systemVersion;
+    return rt;
+}
+
+- (BOOL) checkVersion:(NSInteger)version
+{
+    BOOL rt = NO;
+    NSString *current_version = [self getVersion];
+    if (version == [current_version integerValue])
+    {
+        rt = YES;
+    }
+    return rt;
+}
+
+
+
+
 @end

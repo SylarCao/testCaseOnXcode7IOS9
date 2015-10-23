@@ -874,7 +874,6 @@
 				TargetAttributes = {
 					2CA112861BB29E4A00406685 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = KDQ72H3LGF;
 					};
 				};
 			};
@@ -1146,6 +1145,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1166,6 +1166,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";

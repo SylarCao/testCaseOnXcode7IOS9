@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StackViewVCTL">
             <connections>
-                <outlet property="stackView" destination="UfA-K2-nfN" id="VAq-RH-9OU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,10 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UfA-K2-nfN">
-                    <rect key="frame" x="0.0" y="100" width="320" height="280"/>
-                    <color key="backgroundColor" red="1" green="0.97688473149999999" blue="0.049755077619999998" alpha="1" colorSpace="calibratedRGB"/>
-                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D61-H1-8Ld">
                     <rect key="frame" x="69" y="410" width="30" height="30"/>
                     <state key="normal" title="b1"/>
@@ -34,12 +30,6 @@
                     </connections>
                 </button>
             </subviews>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="UfA-K2-nfN" secondAttribute="trailing" id="1Ub-i1-k5u"/>
-                <constraint firstAttribute="bottom" secondItem="UfA-K2-nfN" secondAttribute="bottom" constant="100" id="57V-IA-ABN"/>
-                <constraint firstItem="UfA-K2-nfN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5F0-pg-nov"/>
-                <constraint firstItem="UfA-K2-nfN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="kZ3-Hg-fqq"/>
-            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="458" y="296"/>
         </view>

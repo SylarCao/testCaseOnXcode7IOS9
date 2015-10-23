@@ -7,11 +7,15 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "ContactListVCTL.h"
+#import "Helper.h"
 
 #import <ContactsUI/ContactsUI.h>
+
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface ContactListVCTL ()
-<CNContactPickerDelegate>
+<CNContactPickerDelegate, ABPeoplePickerNavigationControllerDelegate>
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,17 +40,35 @@
 
 - (void) contact1
 {
-    CNContactPickerViewController *cc = [[CNContactPickerViewController alloc] initWithNibName:nil bundle:nil];
-    cc.delegate = self;
-    [self presentViewController:cc animated:YES completion:nil];
+    // ios9
+    if (kIOSVersion(9.0))
+    {
+        CNContactPickerViewController *cc = [[CNContactPickerViewController alloc] initWithNibName:nil bundle:nil];
+        cc.delegate = self;
+        [self presentViewController:cc animated:YES completion:nil];
+    }
+    else
+    {
+        NSLog(@"9.0  is required");
+    }
     
 }
 
 - (void) contact2
 {
-    NSString *pp = @"13812345678";
-    CNPhoneNumber *nn = [CNPhoneNumber phoneNumberWithStringValue:pp];
-    NSLog(@"nn = %@", nn.stringValue);
+    // ios 7 8
+    if (kIOSVersion(9.0) == NO)
+    {
+        ABPeoplePickerNavigationController *ab = [[ABPeoplePickerNavigationController alloc] init];
+        ab.peoplePickerDelegate = self;
+        [self presentViewController:ab animated:YES completion:nil];
+        
+    }
+    else
+    {
+        NSLog(@"not in ios 9");
+    }
+    
 }
 
 
@@ -78,6 +100,49 @@
     
     NSLog(@"ss = %@", ss);
     NSLog(@"dd = %@", contactProperty);
+}
+
+
+#pragma mark - ABPeoplePickerNavigationControllerDelegate
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
+{
+    // ios8
+    NSLog(@"");
+    [self didSelectPerson:person identifier:identifier];
+}
+
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
+{
+    // ios 7
+    [self didSelectPerson:person identifier:identifier];
+    return NO;
+}
+
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
+{
+    NSLog(@"cancel");
+    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didSelectPerson:(ABRecordRef)person identifier:(ABMultiValueIdentifier)identifier
+{
+    NSString *phone_numbers = @"no email address";
+    ABMultiValueRef emails = ABRecordCopyValue(person, kABPersonPhoneProperty);
+    if (emails)
+    {
+        if (ABMultiValueGetCount(emails) > 0)
+        {
+            CFIndex index = 0;
+            if (identifier != kABMultiValueInvalidIdentifier)
+            {
+                index = ABMultiValueGetIndexForIdentifier(emails, identifier);
+            }
+            phone_numbers = CFBridgingRelease(ABMultiValueCopyValueAtIndex(emails, index));
+        }
+        CFRelease(emails);
+    }
+    
+    NSLog(@"select phone number = %@", phone_numbers);
 }
 
 @end

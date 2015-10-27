@@ -91,6 +91,8 @@
 		2CCB289B1BCB4575005E9B85 /* DragCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB28991BCB4575005E9B85 /* DragCollectionCell.xib */; settings = {ASSET_TAGS = (); }; };
 		2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
+		2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE43F1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m */; settings = {ASSET_TAGS = (); }; };
+		2CDAE4431BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */; settings = {ASSET_TAGS = (); }; };
 		2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */; settings = {ASSET_TAGS = (); }; };
 		2CE092F51BC63BB500027EED /* PostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092F41BC63BB500027EED /* PostModel.m */; settings = {ASSET_TAGS = (); }; };
@@ -242,6 +244,10 @@
 		2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCollectionViewCell.m; sourceTree = "<group>"; };
 		2CCB28B01BCB49EB005E9B85 /* testCaseIOS9.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCaseIOS9.pch; sourceTree = "<group>"; };
 		2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CDAE43E1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewWidthVCTL.h; sourceTree = "<group>"; };
+		2CDAE43F1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewWidthVCTL.m; sourceTree = "<group>"; };
+		2CDAE4411BDDC89D00FB8C4F /* TestTableWidthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableWidthTableViewCell.h; sourceTree = "<group>"; };
+		2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableWidthTableViewCell.m; sourceTree = "<group>"; };
 		2CE092EE1BC6378E00027EED /* PostNotificationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostNotificationVCTL.h; sourceTree = "<group>"; };
 		2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostNotificationVCTL.m; sourceTree = "<group>"; };
 		2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostNotificationVCTL.xib; sourceTree = "<group>"; };
@@ -583,6 +589,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CDAE43D1BDDC87900FB8C4F /* tableViewCellWidth */,
 				2C4FE54E1BD78A6800681C2F /* contact */,
 				2CF98F8E1BD4CF370001E209 /* releaseMode */,
 				2C1C92CF1BD0A935009573E6 /* numberKeyboard */,
@@ -703,6 +710,17 @@
 				2CCB28991BCB4575005E9B85 /* DragCollectionCell.xib */,
 			);
 			path = dragCollectionView;
+			sourceTree = "<group>";
+		};
+		2CDAE43D1BDDC87900FB8C4F /* tableViewCellWidth */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAE43E1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.h */,
+				2CDAE43F1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m */,
+				2CDAE4411BDDC89D00FB8C4F /* TestTableWidthTableViewCell.h */,
+				2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */,
+			);
+			path = tableViewCellWidth;
 			sourceTree = "<group>";
 		};
 		2CE092ED1BC6377500027EED /* postNotification */ = {
@@ -1013,8 +1031,10 @@
 				2CE092FA1BC63FE500027EED /* StringArrayVCTL.m in Sources */,
 				2C08A8351BB931B60077FE53 /* LewPopupVCTL.m in Sources */,
 				2CE1F3521BCE3DC800B82CAE /* LewPopupViewAnimationFade.m in Sources */,
+				2CDAE4431BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
+				2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
 				2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */,

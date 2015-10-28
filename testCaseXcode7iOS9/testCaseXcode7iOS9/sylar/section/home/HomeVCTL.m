@@ -24,7 +24,8 @@
     // data
     _vctls = @[@"testXibVCTL", @"NaviBarVCTL", @"ConstrainVCTL", @"TimerVCTL", @"MathProblem1VCTL", @"StatusBarVCTL",
                
-               @"NumberKeyboardVCTL", @"ReleaseModeVCTL", @"ContactListVCTL", @"TestTableViewWidthVCTL",
+               @"ReadPDFVCTL",
+               @"NumberKeyboardVCTL", @"ReleaseModeVCTL", @"ContactListVCTL", @"TestTableViewWidthVCTL", @"PushNotificationVCTL",
                @"BuglyVCTL", @"JsonKitVCTL", @"MBProgressHudVCTL", @"SavePlistVCTL", @"IntrinsicSizeTableViewVCTL",
                @"StackViewVCTL", @"MGSwipeCellVCTL", @"LewPopupVCTL", @"ShakeTextFieldVCTL", @"PostNotificationVCTL",
                @"StringArrayVCTL", @"Touch3DVCTL", @"Touch3D1VCTL", @"DragCollectionView"];

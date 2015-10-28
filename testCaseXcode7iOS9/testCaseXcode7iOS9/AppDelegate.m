@@ -44,6 +44,14 @@
     // home
     NSLog(@"home = %@", NSHomeDirectory());
     
+    // notification
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert
+                                            | UIUserNotificationTypeBadge
+                                            | UIUserNotificationTypeSound
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+    
     return YES;
 }
 
@@ -75,6 +83,10 @@
         [alert show];
         return;
     }
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification{
+    NSLog(@"didReceiveLocalNotification");
 }
 
 @end

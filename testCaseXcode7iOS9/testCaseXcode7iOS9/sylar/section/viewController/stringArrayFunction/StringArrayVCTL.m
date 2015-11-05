@@ -21,7 +21,9 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
     
 }
 
@@ -39,6 +41,23 @@
         NSLog(@"not contain a2");
     }
 
+}
+
+/**
+ *  四舍五入
+ */
+- (void) fun2
+{
+    NSString *s1 = @"1.2345678";
+    
+    CGFloat f1 = [s1 floatValue];
+    
+    NSLog(@"f1 = %.4f", f1);
+    
+    NSString *s2 = @"1.2";
+    CGFloat f2 = s2.floatValue;
+    NSLog(@"f2 = %.4f", f2);
+    
 }
 
 @end

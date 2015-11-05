@@ -10,7 +10,7 @@
 #import "MyMGCell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface MGSwipeCellVCTL ()
-<UITableViewDataSource, UITableViewDelegate>
+<UITableViewDataSource, UITableViewDelegate, MGSwipeTableCellDelegate>
 
 
 @property (nonatomic, weak) IBOutlet UITableView *table;
@@ -34,10 +34,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MyMGCell * rt = [tableView dequeueReusableCellWithIdentifier:[MyMGCell getCellId] forIndexPath:indexPath];
-    
-    
+    [rt setWithTest];
+    rt.delegate = self;
     
     return rt;
+}
+
+
+
+#pragma mark - MGSwipeTableCellDelegate
+-(BOOL) swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion
+{
+    return NO;
 }
 
 

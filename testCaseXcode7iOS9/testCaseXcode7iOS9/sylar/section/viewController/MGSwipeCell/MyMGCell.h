@@ -13,4 +13,7 @@
 
 + (NSString *) getCellId;
 
+
+- (void) setWithTest;
+
 @end

@@ -53,14 +53,34 @@
     lb.text = @"content 12345";
     [self.contentView addSubview:lb];
     
+    
+}
+
+- (void) setWithTest
+{
+    [self setWithRightButtons];
+}
+
+- (void) setWithRightButtons
+{
     MGSwipeButton *b1 = [MGSwipeButton buttonWithTitle:@"delete" backgroundColor:[UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
         [self cbDeleteButton];
         return YES;
     }];
     
-    [b1 addTarget:self action:@selector(btnDelete) forControlEvents:UIControlEventTouchUpInside];
+    MGSwipeButton *b2 = [MGSwipeButton buttonWithTitle:@"2222" backgroundColor:[UIColor blackColor] callback:^BOOL(MGSwipeTableCell *sender) {
+        [self btn2];
+        return NO;
+    }];
     
-    self.rightButtons = @[b1];
+    MGSwipeButton *b3 = [MGSwipeButton buttonWithTitle:@"333" backgroundColor:[UIColor blackColor] callback:^BOOL(MGSwipeTableCell *sender) {
+        [self btn3];
+        return YES;
+    }];
+    
+    //    [b1 addTarget:self action:@selector(btnDelete) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.rightButtons = @[b1, b2, b3];
 }
 
 - (void) cbDeleteButton
@@ -71,6 +91,16 @@
 - (void) btnDelete
 {
     NSLog(@"btnDelete");
+}
+
+- (void) btn2
+{
+    NSLog(@"btn 2222");
+}
+
+- (void) btn3
+{
+    NSLog(@"bn 33333");
 }
 
 

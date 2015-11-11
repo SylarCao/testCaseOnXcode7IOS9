@@ -48,5 +48,12 @@
  */
 - (BOOL) checkVersion:(NSInteger)version;
 
+/**
+ *  check is simulator
+ *
+ *  @return <#return value description#>
+ */
+- (BOOL) checkSimulator;
+
 
 @end

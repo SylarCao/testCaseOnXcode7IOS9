@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "TouchIDVCTL.h"
+#import "Helper.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TouchIDVCTL ()
@@ -24,7 +25,21 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self testTouchId];
+    BOOL is_simulator = [[Helper share] checkSimulator];
+    if (is_simulator)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"不是手机"
+                                                            message:@"不是手机，请用手机"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    else
+    {
+        [self testTouchId];
+    }
+    
 }
 
 - (void) testTouchId

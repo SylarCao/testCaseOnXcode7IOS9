@@ -67,6 +67,10 @@
 		2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */; };
 		2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */; };
 		2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */; };
+		2C3E34C51BF324D30008F1B0 /* BlurBkgVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34C31BF324D30008F1B0 /* BlurBkgVCTL.m */; };
+		2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E34C41BF324D30008F1B0 /* BlurBkgVCTL.xib */; };
+		2C3E34CC1BF325520008F1B0 /* SecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34C91BF325520008F1B0 /* SecurityStrategy.m */; };
+		2C3E34CD1BF325520008F1B0 /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34CB1BF325520008F1B0 /* UIImage+BlurGlass.m */; };
 		2C40EAFC1BE0C1AF00074AB8 /* ReadPDFVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EAFA1BE0C1AF00074AB8 /* ReadPDFVCTL.m */; };
 		2C40EAFD1BE0C1AF00074AB8 /* ReadPDFVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EAFB1BE0C1AF00074AB8 /* ReadPDFVCTL.xib */; };
 		2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EAFF1BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m */; };
@@ -281,6 +285,13 @@
 		2C3E34BC1BF319500008F1B0 /* TouchIDVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDVCTL.h; sourceTree = "<group>"; };
 		2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDVCTL.m; sourceTree = "<group>"; };
 		2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDVCTL.xib; sourceTree = "<group>"; };
+		2C3E34C21BF324D30008F1B0 /* BlurBkgVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurBkgVCTL.h; sourceTree = "<group>"; };
+		2C3E34C31BF324D30008F1B0 /* BlurBkgVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurBkgVCTL.m; sourceTree = "<group>"; };
+		2C3E34C41BF324D30008F1B0 /* BlurBkgVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlurBkgVCTL.xib; sourceTree = "<group>"; };
+		2C3E34C81BF325520008F1B0 /* SecurityStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityStrategy.h; sourceTree = "<group>"; };
+		2C3E34C91BF325520008F1B0 /* SecurityStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityStrategy.m; sourceTree = "<group>"; };
+		2C3E34CA1BF325520008F1B0 /* UIImage+BlurGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurGlass.h"; sourceTree = "<group>"; };
+		2C3E34CB1BF325520008F1B0 /* UIImage+BlurGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurGlass.m"; sourceTree = "<group>"; };
 		2C40EAF91BE0C1AF00074AB8 /* ReadPDFVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadPDFVCTL.h; sourceTree = "<group>"; };
 		2C40EAFA1BE0C1AF00074AB8 /* ReadPDFVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadPDFVCTL.m; sourceTree = "<group>"; };
 		2C40EAFB1BE0C1AF00074AB8 /* ReadPDFVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadPDFVCTL.xib; sourceTree = "<group>"; };
@@ -695,6 +706,28 @@
 			path = touchID;
 			sourceTree = "<group>";
 		};
+		2C3E34C11BF324C40008F1B0 /* blurBkg */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E34C71BF325520008F1B0 /* blur */,
+				2C3E34C21BF324D30008F1B0 /* BlurBkgVCTL.h */,
+				2C3E34C31BF324D30008F1B0 /* BlurBkgVCTL.m */,
+				2C3E34C41BF324D30008F1B0 /* BlurBkgVCTL.xib */,
+			);
+			path = blurBkg;
+			sourceTree = "<group>";
+		};
+		2C3E34C71BF325520008F1B0 /* blur */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E34C81BF325520008F1B0 /* SecurityStrategy.h */,
+				2C3E34C91BF325520008F1B0 /* SecurityStrategy.m */,
+				2C3E34CA1BF325520008F1B0 /* UIImage+BlurGlass.h */,
+				2C3E34CB1BF325520008F1B0 /* UIImage+BlurGlass.m */,
+			);
+			path = blur;
+			sourceTree = "<group>";
+		};
 		2C40EAF81BE0C1A000074AB8 /* readPdf */ = {
 			isa = PBXGroup;
 			children = (
@@ -995,6 +1028,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C3E34C11BF324C40008F1B0 /* blurBkg */,
 				2C3E34BB1BF319430008F1B0 /* touchID */,
 				2C3E34B61BF2DD310008F1B0 /* codeOnly */,
 				2C4BE00D1BE9A1D9004F1DAF /* refreshTableView */,
@@ -1365,6 +1399,7 @@
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
+				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
 				2C3A83C31BB8CB2000A335B5 /* sgs2.jpg in Resources */,
@@ -1465,6 +1500,7 @@
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
+				2C3E34CD1BF325520008F1B0 /* UIImage+BlurGlass.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
 				2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */,
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
@@ -1482,6 +1518,7 @@
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
 				2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */,
 				2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */,
+				2C3E34C51BF324D30008F1B0 /* BlurBkgVCTL.m in Sources */,
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
 				2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
@@ -1508,6 +1545,7 @@
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
 				2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */,
 				2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */,
+				2C3E34CC1BF325520008F1B0 /* SecurityStrategy.m in Sources */,
 				2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */,
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,

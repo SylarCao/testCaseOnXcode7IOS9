@@ -63,6 +63,26 @@
     return rt;
 }
 
+- (BOOL) checkSimulator
+{
+//    UIDevice *current = [UIDevice currentDevice];
+//    NSString *name = current.name;
+//    NSString *model = current.model;
+//    NSString *localizedModel = current.localizedModel;
+//    NSString *systemName = current.systemName;
+//    NSString *systemVersion = current.systemVersion;
+//    
+//    NSLog(@"name = %@", name);
+//    NSLog(@"model = %@", model);
+//    NSLog(@"localizedModel = %@", localizedModel);
+//    NSLog(@"systemName = %@", systemName);
+//    NSLog(@"systemVersion = %@", systemVersion);
+//    
+//    BOOL b1 = TARGET_OS_IPHONE;   // always 1 on simulator or ipad
+    BOOL rt = TARGET_OS_SIMULATOR;
+
+    return rt;
+}
 
 
 

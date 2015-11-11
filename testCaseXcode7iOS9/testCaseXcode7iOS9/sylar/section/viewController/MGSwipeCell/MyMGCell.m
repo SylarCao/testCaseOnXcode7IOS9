@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "MyMGCell.h"
 #import "MGSwipeButton.h"
+#import "AttributeStringVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface MyMGCell()
 
@@ -67,6 +68,7 @@
         [self cbDeleteButton];
         return YES;
     }];
+    [b1 setPadding:20];
     
     MGSwipeButton *b2 = [MGSwipeButton buttonWithTitle:@"2222" backgroundColor:[UIColor blackColor] callback:^BOOL(MGSwipeTableCell *sender) {
         [self btn2];
@@ -78,9 +80,12 @@
         return YES;
     }];
     
-    //    [b1 addTarget:self action:@selector(btnDelete) forControlEvents:UIControlEventTouchUpInside];
+    UILabel *lb1 = [self aCustomView];
     
-    self.rightButtons = @[b1, b2, b3];
+    //    [b1 addTarget:self action:@selector(btnDelete) forControlEvents:UIControlEventTouchUpInside];
+    self.allowsButtonsWithDifferentWidth = YES;
+    self.rightSwipeSettings.transition = MGSwipeTransitionStatic;
+    self.rightButtons = @[b1, b2, b3, lb1];
 }
 
 - (void) cbDeleteButton
@@ -103,5 +108,10 @@
     NSLog(@"bn 33333");
 }
 
+- (UILabel *) aCustomView
+{
+    UILabel *rt = [AttributeStringVCTL getOneLabel];
+    return rt;
+}
 
 @end

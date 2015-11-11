@@ -64,6 +64,9 @@
 		2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C855D1BCCD857009C4D24 /* libz.tbd */; };
 		2C3C85661BCCD94F009C4D24 /* BuglyVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */; };
 		2C3C85671BCCD94F009C4D24 /* BuglyVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */; };
+		2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */; };
+		2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */; };
+		2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */; };
 		2C40EAFC1BE0C1AF00074AB8 /* ReadPDFVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EAFA1BE0C1AF00074AB8 /* ReadPDFVCTL.m */; };
 		2C40EAFD1BE0C1AF00074AB8 /* ReadPDFVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EAFB1BE0C1AF00074AB8 /* ReadPDFVCTL.xib */; };
 		2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EAFF1BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m */; };
@@ -273,6 +276,11 @@
 		2C3C85631BCCD94F009C4D24 /* BuglyVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuglyVCTL.h; sourceTree = "<group>"; };
 		2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuglyVCTL.m; sourceTree = "<group>"; };
 		2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuglyVCTL.xib; sourceTree = "<group>"; };
+		2C3E34B81BF2DD460008F1B0 /* AttributeStringVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringVCTL.h; sourceTree = "<group>"; };
+		2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringVCTL.m; sourceTree = "<group>"; };
+		2C3E34BC1BF319500008F1B0 /* TouchIDVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDVCTL.h; sourceTree = "<group>"; };
+		2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDVCTL.m; sourceTree = "<group>"; };
+		2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDVCTL.xib; sourceTree = "<group>"; };
 		2C40EAF91BE0C1AF00074AB8 /* ReadPDFVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadPDFVCTL.h; sourceTree = "<group>"; };
 		2C40EAFA1BE0C1AF00074AB8 /* ReadPDFVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadPDFVCTL.m; sourceTree = "<group>"; };
 		2C40EAFB1BE0C1AF00074AB8 /* ReadPDFVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadPDFVCTL.xib; sourceTree = "<group>"; };
@@ -660,6 +668,33 @@
 			path = bugly;
 			sourceTree = "<group>";
 		};
+		2C3E34B61BF2DD310008F1B0 /* codeOnly */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E34B71BF2DD310008F1B0 /* attributeString */,
+			);
+			path = codeOnly;
+			sourceTree = "<group>";
+		};
+		2C3E34B71BF2DD310008F1B0 /* attributeString */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E34B81BF2DD460008F1B0 /* AttributeStringVCTL.h */,
+				2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */,
+			);
+			path = attributeString;
+			sourceTree = "<group>";
+		};
+		2C3E34BB1BF319430008F1B0 /* touchID */ = {
+			isa = PBXGroup;
+			children = (
+				2C3E34BC1BF319500008F1B0 /* TouchIDVCTL.h */,
+				2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */,
+				2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */,
+			);
+			path = touchID;
+			sourceTree = "<group>";
+		};
 		2C40EAF81BE0C1A000074AB8 /* readPdf */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,6 +995,8 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C3E34BB1BF319430008F1B0 /* touchID */,
+				2C3E34B61BF2DD310008F1B0 /* codeOnly */,
 				2C4BE00D1BE9A1D9004F1DAF /* refreshTableView */,
 				2C2EC2F41BE72678008197C3 /* dpLocation */,
 				2C40EAF81BE0C1A000074AB8 /* readPdf */,
@@ -1357,6 +1394,7 @@
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
 				2C2A165A1BCF54DA00D065CD /* MBProgressHudVCTL.xib in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
+				2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
 				2C3A83C21BB8CB2000A335B5 /* sgs1.jpg in Resources */,
 				2CADEA2D1BB5364B009BBD28 /* StatusBarVCTL.xib in Resources */,
@@ -1426,9 +1464,11 @@
 				2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */,
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
+				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
 				2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */,
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
+				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
 				2CB381A01BCF413100D4F33F /* JsonKitVCTL.m in Sources */,
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C4BE0481BE9A7B0004F1DAF /* MJRefreshBackGifFooter.m in Sources */,

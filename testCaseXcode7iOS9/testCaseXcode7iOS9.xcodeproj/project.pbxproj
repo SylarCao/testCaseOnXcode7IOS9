@@ -108,6 +108,10 @@
 		2C4FE5521BD78A7700681C2F /* ContactListVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4FE5501BD78A7700681C2F /* ContactListVCTL.m */; };
 		2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4FE5511BD78A7700681C2F /* ContactListVCTL.xib */; };
 		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
+		2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD5511BF4214A0014B672 /* MenuItemVCTL.m */; };
+		2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD5521BF4214A0014B672 /* MenuItemVCTL.xib */; };
+		2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD5561BF421B20014B672 /* MenuItemCell.m */; };
+		2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD5571BF421B20014B672 /* MenuItemCell.xib */; };
 		2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */; };
 		2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */; };
 		2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */; };
@@ -353,6 +357,12 @@
 		2C4FE5501BD78A7700681C2F /* ContactListVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListVCTL.m; sourceTree = "<group>"; };
 		2C4FE5511BD78A7700681C2F /* ContactListVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListVCTL.xib; sourceTree = "<group>"; };
 		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		2C5FD5501BF4214A0014B672 /* MenuItemVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemVCTL.h; sourceTree = "<group>"; };
+		2C5FD5511BF4214A0014B672 /* MenuItemVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemVCTL.m; sourceTree = "<group>"; };
+		2C5FD5521BF4214A0014B672 /* MenuItemVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemVCTL.xib; sourceTree = "<group>"; };
+		2C5FD5551BF421B20014B672 /* MenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemCell.h; sourceTree = "<group>"; };
+		2C5FD5561BF421B20014B672 /* MenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemCell.m; sourceTree = "<group>"; };
+		2C5FD5571BF421B20014B672 /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
 		2C65D7321BB3A32300D22F29 /* MathProblem1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem1VCTL.h; sourceTree = "<group>"; };
 		2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem1VCTL.m; sourceTree = "<group>"; };
 		2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem1VCTL.xib; sourceTree = "<group>"; };
@@ -870,6 +880,19 @@
 			path = contact;
 			sourceTree = "<group>";
 		};
+		2C5FD54F1BF421390014B672 /* menuItem */ = {
+			isa = PBXGroup;
+			children = (
+				2C5FD5501BF4214A0014B672 /* MenuItemVCTL.h */,
+				2C5FD5511BF4214A0014B672 /* MenuItemVCTL.m */,
+				2C5FD5521BF4214A0014B672 /* MenuItemVCTL.xib */,
+				2C5FD5551BF421B20014B672 /* MenuItemCell.h */,
+				2C5FD5561BF421B20014B672 /* MenuItemCell.m */,
+				2C5FD5571BF421B20014B672 /* MenuItemCell.xib */,
+			);
+			path = menuItem;
+			sourceTree = "<group>";
+		};
 		2C65D7311BB3A31200D22F29 /* mathProblem1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1028,6 +1051,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C5FD54F1BF421390014B672 /* menuItem */,
 				2C3E34C11BF324C40008F1B0 /* blurBkg */,
 				2C3E34BB1BF319430008F1B0 /* touchID */,
 				2C3E34B61BF2DD310008F1B0 /* codeOnly */,
@@ -1380,6 +1404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
+				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
 				2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */,
 				2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
@@ -1419,6 +1444,7 @@
 				2C3A83C41BB8CB2000A335B5 /* sgs3.jpg in Resources */,
 				2C2A167C1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
+				2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */,
 				2CA112CC1BB29EAA00406685 /* testXibVCTL.xib in Resources */,
 				2C3A83D71BB8EA4C00A335B5 /* MGSwipeCellVCTL.xib in Resources */,
 				2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */,
@@ -1485,6 +1511,7 @@
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
 				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
 				2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */,
+				2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */,
 				2C2A166F1BCF718500D065CD /* SavePlistVCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
@@ -1504,6 +1531,7 @@
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
 				2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */,
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
+				2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */,
 				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
 				2CB381A01BCF413100D4F33F /* JsonKitVCTL.m in Sources */,
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,

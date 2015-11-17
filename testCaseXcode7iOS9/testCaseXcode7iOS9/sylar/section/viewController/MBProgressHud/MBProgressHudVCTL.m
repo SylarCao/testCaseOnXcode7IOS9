@@ -25,17 +25,39 @@
 
 - (IBAction)btn1:(id)sender
 {
+    [self showHudAnimation];
+    [self hideHudAnimation];
+    [self showHudWithTitle];
+}
+
+
+- (void) showHudWithTitle
+{
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     _hud = hud;
     hud.mode = MBProgressHUDModeText;
     hud.labelText = @"hud";
     hud.margin = 20;;
-//    hud.removeFromSuperViewOnHide = YES;
+    //    hud.removeFromSuperViewOnHide = YES;
     [_hud show:YES];
-//    [hud hide:YES afterDelay:1];
+    //    [hud hide:YES afterDelay:1];
     
     hud.labelText = @"aaa";
     [_hud hide:YES afterDelay:1];
 }
+
+- (void) showHudAnimation
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    _hud = hud;
+    [hud show:YES];
+}
+
+- (void) hideHudAnimation
+{
+    [_hud hide:YES];
+}
+
+
 
 @end

@@ -14,6 +14,10 @@
 		2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A83D1BB933590077FE53 /* LewView2.xib */; };
 		2C1C92D31BD0A94C009573E6 /* NumberKeyboardVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C92D11BD0A94C009573E6 /* NumberKeyboardVCTL.m */; };
 		2C1C92D41BD0A94C009573E6 /* NumberKeyboardVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C92D21BD0A94C009573E6 /* NumberKeyboardVCTL.xib */; };
+		2C23B7671BFB043000E87E95 /* DeleteInsertCellVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C23B7651BFB043000E87E95 /* DeleteInsertCellVCTL.m */; };
+		2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23B7661BFB043000E87E95 /* DeleteInsertCellVCTL.xib */; };
+		2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C23B76A1BFB047600E87E95 /* DeleteInsertCell.m */; };
+		2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23B76B1BFB047600E87E95 /* DeleteInsertCell.xib */; };
 		2C2A07F91BCFA99700D6ED86 /* IntrinsicDetailVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A07F71BCFA99700D6ED86 /* IntrinsicDetailVCTL.m */; };
 		2C2A07FA1BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A07F81BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib */; };
 		2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */; };
@@ -125,6 +129,8 @@
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
 		2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB631BC7DF90000FD2DF /* Touch3d1DetailVCTL.m */; };
 		2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB641BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib */; };
+		2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */; };
+		2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
 		2CA112921BB29E4A00406685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112911BB29E4A00406685 /* ViewController.m */; };
@@ -201,6 +207,12 @@
 		2C1C92D01BD0A94C009573E6 /* NumberKeyboardVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberKeyboardVCTL.h; sourceTree = "<group>"; };
 		2C1C92D11BD0A94C009573E6 /* NumberKeyboardVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberKeyboardVCTL.m; sourceTree = "<group>"; };
 		2C1C92D21BD0A94C009573E6 /* NumberKeyboardVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberKeyboardVCTL.xib; sourceTree = "<group>"; };
+		2C23B7641BFB043000E87E95 /* DeleteInsertCellVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteInsertCellVCTL.h; sourceTree = "<group>"; };
+		2C23B7651BFB043000E87E95 /* DeleteInsertCellVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteInsertCellVCTL.m; sourceTree = "<group>"; };
+		2C23B7661BFB043000E87E95 /* DeleteInsertCellVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteInsertCellVCTL.xib; sourceTree = "<group>"; };
+		2C23B7691BFB047600E87E95 /* DeleteInsertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteInsertCell.h; sourceTree = "<group>"; };
+		2C23B76A1BFB047600E87E95 /* DeleteInsertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteInsertCell.m; sourceTree = "<group>"; };
+		2C23B76B1BFB047600E87E95 /* DeleteInsertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteInsertCell.xib; sourceTree = "<group>"; };
 		2C2A07F61BCFA99700D6ED86 /* IntrinsicDetailVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrinsicDetailVCTL.h; sourceTree = "<group>"; };
 		2C2A07F71BCFA99700D6ED86 /* IntrinsicDetailVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntrinsicDetailVCTL.m; sourceTree = "<group>"; };
 		2C2A07F81BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntrinsicDetailVCTL.xib; sourceTree = "<group>"; };
@@ -380,6 +392,9 @@
 		2C8BAB621BC7DF90000FD2DF /* Touch3d1DetailVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch3d1DetailVCTL.h; sourceTree = "<group>"; };
 		2C8BAB631BC7DF90000FD2DF /* Touch3d1DetailVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch3d1DetailVCTL.m; sourceTree = "<group>"; };
 		2C8BAB641BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Touch3d1DetailVCTL.xib; sourceTree = "<group>"; };
+		2C92DFE21BF9A303009CA50A /* JailBreakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailBreakVCTL.h; sourceTree = "<group>"; };
+		2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailBreakVCTL.m; sourceTree = "<group>"; };
+		2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JailBreakVCTL.xib; sourceTree = "<group>"; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA1128D1BB29E4A00406685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -536,6 +551,19 @@
 				2C1C92D21BD0A94C009573E6 /* NumberKeyboardVCTL.xib */,
 			);
 			path = numberKeyboard;
+			sourceTree = "<group>";
+		};
+		2C23B7631BFB042200E87E95 /* deleteInsert */ = {
+			isa = PBXGroup;
+			children = (
+				2C23B7641BFB043000E87E95 /* DeleteInsertCellVCTL.h */,
+				2C23B7651BFB043000E87E95 /* DeleteInsertCellVCTL.m */,
+				2C23B7661BFB043000E87E95 /* DeleteInsertCellVCTL.xib */,
+				2C23B7691BFB047600E87E95 /* DeleteInsertCell.h */,
+				2C23B76A1BFB047600E87E95 /* DeleteInsertCell.m */,
+				2C23B76B1BFB047600E87E95 /* DeleteInsertCell.xib */,
+			);
+			path = deleteInsert;
 			sourceTree = "<group>";
 		};
 		2C2A16511BCF54AF00D065CD /* MBProgressHud */ = {
@@ -948,6 +976,16 @@
 			path = 3DTouch;
 			sourceTree = "<group>";
 		};
+		2C92DFE11BF9A2F2009CA50A /* jailbreak */ = {
+			isa = PBXGroup;
+			children = (
+				2C92DFE21BF9A303009CA50A /* JailBreakVCTL.h */,
+				2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */,
+				2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */,
+			);
+			path = jailbreak;
+			sourceTree = "<group>";
+		};
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1089,8 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C23B7631BFB042200E87E95 /* deleteInsert */,
+				2C92DFE11BF9A2F2009CA50A /* jailbreak */,
 				2C5FD54F1BF421390014B672 /* menuItem */,
 				2C3E34C11BF324C40008F1B0 /* blurBkg */,
 				2C3E34BB1BF319430008F1B0 /* touchID */,
@@ -1403,6 +1443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */,
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
 				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
 				2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */,
@@ -1425,6 +1466,7 @@
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
 				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
+				2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
 				2C3A83C31BB8CB2000A335B5 /* sgs2.jpg in Resources */,
@@ -1436,6 +1478,7 @@
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */,
+				2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
 				2CCB289B1BCB4575005E9B85 /* DragCollectionCell.xib in Resources */,
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
@@ -1512,6 +1555,7 @@
 				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
 				2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */,
 				2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */,
+				2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */,
 				2C2A166F1BCF718500D065CD /* SavePlistVCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
@@ -1583,10 +1627,12 @@
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
 				2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */,
 				2C2EC3331BE74021008197C3 /* AFURLRequestSerialization.m in Sources */,
+				2C23B7671BFB043000E87E95 /* DeleteInsertCellVCTL.m in Sources */,
 				2C3C85661BCCD94F009C4D24 /* BuglyVCTL.m in Sources */,
 				2C4BE04A1BE9A7B0004F1DAF /* MJRefreshBackStateFooter.m in Sources */,
 				2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */,
 				2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */,
+				2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */,
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
 				2C4BE0431BE9A7B0004F1DAF /* MJRefreshFooter.m in Sources */,
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,

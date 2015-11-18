@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/menuItem/MenuItemVCTL.m"
-            timestampString = "468987227.711077"
+            timestampString = "469505792.552225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -36,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/menuItem/MenuItemVCTL.m"
-            timestampString = "468987227.711077"
+            timestampString = "469505792.552225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/menuItem/MenuItemVCTL.m"
-            timestampString = "468987227.711077"
+            timestampString = "469506024.694611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-menuItemClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,6 +74,38 @@
             startingLineNumber = "42"
             endingLineNumber = "42"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testCaseXcode7iOS9/sylar/helper/Helper.m"
+            timestampString = "469453753.29128"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-checkVersion:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testCaseXcode7iOS9/sylar/helper/Helper.m"
+            timestampString = "469453753.797757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-checkVersion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

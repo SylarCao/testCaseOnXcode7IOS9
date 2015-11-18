@@ -71,9 +71,10 @@
     
 }
 
-- (void) menuItemClick:(UIMenuController *)menu
+- (void) menuItemClick:(id)sender
 {
-//    NSLog(@"click menu = %@", item.title);
+    UIMenuItem *ii = (UIMenuItem *)sender;
+    NSLog(@"click menu = %@", ii.title);
 }
 
 

@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "StringArrayVCTL.h"
+# define kAAA @"abc"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface StringArrayVCTL ()
 
@@ -24,6 +25,8 @@
 //    [self fun1];
     
     [self fun2];
+    
+    [self fun3];
     
 }
 
@@ -58,6 +61,22 @@
     CGFloat f2 = s2.floatValue;
     NSLog(@"f2 = %.4f", f2);
     
+}
+
+- (void)fun3
+{
+#ifdef kAAA
+    NSLog(@"aaa defined 11111");
+#endif
+    
+    
+#ifdef kAAA
+#undef kAAA
+#endif
+    
+#ifdef kAAA
+    NSLog(@"aaa defined 22222");
+#endif
 }
 
 @end

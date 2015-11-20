@@ -29,6 +29,13 @@
 		2C2A167C1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A167A1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.xib */; };
 		2C2A16801BCFA57200D065CD /* IntrinsicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A167E1BCFA57200D065CD /* IntrinsicCell.m */; };
 		2C2A16811BCFA57200D065CD /* IntrinsicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A167F1BCFA57200D065CD /* IntrinsicCell.xib */; };
+		2C2A68681BFDA9B900C4FA73 /* JSPatchVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A68661BFDA9B900C4FA73 /* JSPatchVCTL.m */; };
+		2C2A68691BFDA9B900C4FA73 /* JSPatchVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A68671BFDA9B900C4FA73 /* JSPatchVCTL.xib */; };
+		2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */; };
+		2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A686D1BFDAAED00C4FA73 /* JSPatch.js */; };
+		2C2A68711BFDAFB500C4FA73 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2A68701BFDAFB500C4FA73 /* JSPatch.framework */; };
+		2C2A68731BFDB09E00C4FA73 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */; };
+		2C2A68751BFDB30200C4FA73 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A68741BFDB30200C4FA73 /* main.js */; };
 		2C2EC2F81BE72687008197C3 /* DPLocationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC2F61BE72687008197C3 /* DPLocationVCTL.m */; };
 		2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2EC2F71BE72687008197C3 /* DPLocationVCTL.xib */; };
 		2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC2FB1BE726F4008197C3 /* DPHelper.m */; };
@@ -230,6 +237,15 @@
 		2C2A167D1BCFA57200D065CD /* IntrinsicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrinsicCell.h; sourceTree = "<group>"; };
 		2C2A167E1BCFA57200D065CD /* IntrinsicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntrinsicCell.m; sourceTree = "<group>"; };
 		2C2A167F1BCFA57200D065CD /* IntrinsicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntrinsicCell.xib; sourceTree = "<group>"; };
+		2C2A68651BFDA9B900C4FA73 /* JSPatchVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchVCTL.h; sourceTree = "<group>"; };
+		2C2A68661BFDA9B900C4FA73 /* JSPatchVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchVCTL.m; sourceTree = "<group>"; };
+		2C2A68671BFDA9B900C4FA73 /* JSPatchVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSPatchVCTL.xib; sourceTree = "<group>"; };
+		2C2A686B1BFDAAED00C4FA73 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		2C2A686D1BFDAAED00C4FA73 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		2C2A68701BFDAFB500C4FA73 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2C2A68741BFDB30200C4FA73 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		2C2EC2F51BE72687008197C3 /* DPLocationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLocationVCTL.h; sourceTree = "<group>"; };
 		2C2EC2F61BE72687008197C3 /* DPLocationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLocationVCTL.m; sourceTree = "<group>"; };
 		2C2EC2F71BE72687008197C3 /* DPLocationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPLocationVCTL.xib; sourceTree = "<group>"; };
@@ -510,12 +526,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2A68731BFDB09E00C4FA73 /* JavaScriptCore.framework in Frameworks */,
+				2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */,
+				2C2A68711BFDAFB500C4FA73 /* JSPatch.framework in Frameworks */,
 				2C2EC3051BE7302E008197C3 /* CoreGraphics.framework in Frameworks */,
 				2C2EC3031BE73029008197C3 /* Foundation.framework in Frameworks */,
 				2C2EC3011BE72C43008197C3 /* CoreLocation.framework in Frameworks */,
 				2C40EB0D1BE0C99E00074AB8 /* QuickLook.framework in Frameworks */,
 				2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */,
-				2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */,
 				2C3C85601BCCD8B0009C4D24 /* libc++.tbd in Frameworks */,
 				2CE1F34B1BCE3DC800B82CAE /* Bugly.framework in Frameworks */,
 				2C3C855C1BCCD850009C4D24 /* Security.framework in Frameworks */,
@@ -609,6 +627,28 @@
 				2C2A07F81BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib */,
 			);
 			path = intrinsiccontentsize;
+			sourceTree = "<group>";
+		};
+		2C2A68641BFDA9A700C4FA73 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				2C2A68741BFDB30200C4FA73 /* main.js */,
+				2C2A68651BFDA9B900C4FA73 /* JSPatchVCTL.h */,
+				2C2A68661BFDA9B900C4FA73 /* JSPatchVCTL.m */,
+				2C2A68671BFDA9B900C4FA73 /* JSPatchVCTL.xib */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		2C2A686A1BFDAAED00C4FA73 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				2C2A68701BFDAFB500C4FA73 /* JSPatch.framework */,
+				2C2A686B1BFDAAED00C4FA73 /* JPEngine.h */,
+				2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */,
+				2C2A686D1BFDAAED00C4FA73 /* JSPatch.js */,
+			);
+			path = JSPatch;
 			sourceTree = "<group>";
 		};
 		2C2EC2F41BE72678008197C3 /* dpLocation */ = {
@@ -989,6 +1029,7 @@
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
+				2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */,
 				2C2EC3041BE7302E008197C3 /* CoreGraphics.framework */,
 				2C2EC3021BE73029008197C3 /* Foundation.framework */,
 				2C2EC3001BE72C43008197C3 /* CoreLocation.framework */,
@@ -1089,6 +1130,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C2A68641BFDA9A700C4FA73 /* JSPatch */,
 				2C23B7631BFB042200E87E95 /* deleteInsert */,
 				2C92DFE11BF9A2F2009CA50A /* jailbreak */,
 				2C5FD54F1BF421390014B672 /* menuItem */,
@@ -1270,6 +1312,7 @@
 		2CE1F3251BCE3DC800B82CAE /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				2C2A686A1BFDAAED00C4FA73 /* JSPatch */,
 				2C4BE0131BE9A7B0004F1DAF /* MJRefresh */,
 				2C2EC3061BE74021008197C3 /* AFNetworking */,
 				2C2EC31A1BE74021008197C3 /* UIKit+AFNetworking */,
@@ -1465,6 +1508,7 @@
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
+				2C2A68691BFDA9B900C4FA73 /* JSPatchVCTL.xib in Resources */,
 				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
 				2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
@@ -1476,6 +1520,7 @@
 				2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */,
 				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
+				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */,
 				2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */,
@@ -1500,6 +1545,7 @@
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
+				2C2A68751BFDB30200C4FA73 /* main.js in Resources */,
 				2C3A83C21BB8CB2000A335B5 /* sgs1.jpg in Resources */,
 				2CADEA2D1BB5364B009BBD28 /* StatusBarVCTL.xib in Resources */,
 				2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */,
@@ -1565,6 +1611,7 @@
 				2C4BE0421BE9A7B0004F1DAF /* MJRefreshComponent.m in Sources */,
 				2CA112C31BB29EAA00406685 /* BasicVCTL.m in Sources */,
 				2C2EC2FF1BE72787008197C3 /* LocationHelper.m in Sources */,
+				2C2A68681BFDA9B900C4FA73 /* JSPatchVCTL.m in Sources */,
 				2CE092F51BC63BB500027EED /* PostModel.m in Sources */,
 				2CCB289A1BCB4575005E9B85 /* DragCollectionCell.m in Sources */,
 				2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */,
@@ -1623,6 +1670,7 @@
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,
 				2C4BE04D1BE9A7B0004F1DAF /* MJRefreshStateHeader.m in Sources */,
+				2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */,
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
 				2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */,
@@ -1760,6 +1808,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testCaseXcode7iOS9/sylar/vendor/bugly",
+					"$(PROJECT_DIR)/testCaseXcode7iOS9/sylar/vendor/JSPatch",
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
@@ -1781,6 +1830,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testCaseXcode7iOS9/sylar/vendor/bugly",
+					"$(PROJECT_DIR)/testCaseXcode7iOS9/sylar/vendor/JSPatch",
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;

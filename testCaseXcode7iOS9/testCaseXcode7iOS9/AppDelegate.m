@@ -11,6 +11,7 @@
 #import "Helper.h"
 #import "SecurityStrategy.h"
 #import <Bugly/CrashReporter.h>
+#import <JSPatch/JSPatch.h>
 
 @interface AppDelegate ()
 
@@ -41,6 +42,8 @@
     [[CrashReporter sharedInstance] enableLog:YES];
     [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
     
+    // JSPatch
+    [JSPatch testScriptInBundle];
     
     // home
     NSLog(@"home = %@", NSHomeDirectory());

@@ -61,6 +61,7 @@
     CGFloat f2 = s2.floatValue;
     NSLog(@"f2 = %.4f", f2);
     
+    
 }
 
 - (void)fun3

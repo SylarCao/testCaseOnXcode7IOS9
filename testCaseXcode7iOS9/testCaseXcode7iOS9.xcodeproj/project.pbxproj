@@ -18,6 +18,11 @@
 		2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23B7661BFB043000E87E95 /* DeleteInsertCellVCTL.xib */; };
 		2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C23B76A1BFB047600E87E95 /* DeleteInsertCell.m */; };
 		2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23B76B1BFB047600E87E95 /* DeleteInsertCell.xib */; };
+		2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24FFB61C05495E0001BB5D /* ImageVCTL.m */; };
+		2C24FFB91C05495E0001BB5D /* ImageVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C24FFB71C05495E0001BB5D /* ImageVCTL.xib */; };
+		2C24FFBD1C054B010001BB5D /* sgs5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C24FFBA1C054B010001BB5D /* sgs5.png */; };
+		2C24FFBE1C054B010001BB5D /* sgs6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C24FFBB1C054B010001BB5D /* sgs6.png */; };
+		2C24FFBF1C054B010001BB5D /* sgs7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C24FFBC1C054B010001BB5D /* sgs7.png */; };
 		2C2A07F91BCFA99700D6ED86 /* IntrinsicDetailVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A07F71BCFA99700D6ED86 /* IntrinsicDetailVCTL.m */; };
 		2C2A07FA1BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A07F81BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib */; };
 		2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */; };
@@ -220,6 +225,12 @@
 		2C23B7691BFB047600E87E95 /* DeleteInsertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteInsertCell.h; sourceTree = "<group>"; };
 		2C23B76A1BFB047600E87E95 /* DeleteInsertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteInsertCell.m; sourceTree = "<group>"; };
 		2C23B76B1BFB047600E87E95 /* DeleteInsertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteInsertCell.xib; sourceTree = "<group>"; };
+		2C24FFB51C05495E0001BB5D /* ImageVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageVCTL.h; sourceTree = "<group>"; };
+		2C24FFB61C05495E0001BB5D /* ImageVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageVCTL.m; sourceTree = "<group>"; };
+		2C24FFB71C05495E0001BB5D /* ImageVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageVCTL.xib; sourceTree = "<group>"; };
+		2C24FFBA1C054B010001BB5D /* sgs5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5.png; sourceTree = "<group>"; };
+		2C24FFBB1C054B010001BB5D /* sgs6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6.png; sourceTree = "<group>"; };
+		2C24FFBC1C054B010001BB5D /* sgs7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs7.png; sourceTree = "<group>"; };
 		2C2A07F61BCFA99700D6ED86 /* IntrinsicDetailVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrinsicDetailVCTL.h; sourceTree = "<group>"; };
 		2C2A07F71BCFA99700D6ED86 /* IntrinsicDetailVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntrinsicDetailVCTL.m; sourceTree = "<group>"; };
 		2C2A07F81BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntrinsicDetailVCTL.xib; sourceTree = "<group>"; };
@@ -584,6 +595,16 @@
 			path = deleteInsert;
 			sourceTree = "<group>";
 		};
+		2C24FFB41C05494A0001BB5D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				2C24FFB51C05495E0001BB5D /* ImageVCTL.h */,
+				2C24FFB61C05495E0001BB5D /* ImageVCTL.m */,
+				2C24FFB71C05495E0001BB5D /* ImageVCTL.xib */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		2C2A16511BCF54AF00D065CD /* MBProgressHud */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,6 +748,9 @@
 		2C3A83BD1BB8CB2000A335B5 /* sgs */ = {
 			isa = PBXGroup;
 			children = (
+				2C24FFBA1C054B010001BB5D /* sgs5.png */,
+				2C24FFBB1C054B010001BB5D /* sgs6.png */,
+				2C24FFBC1C054B010001BB5D /* sgs7.png */,
 				2C3A83BE1BB8CB2000A335B5 /* sgs1.jpg */,
 				2C3A83BF1BB8CB2000A335B5 /* sgs2.jpg */,
 				2C3A83C01BB8CB2000A335B5 /* sgs3.jpg */,
@@ -1130,6 +1154,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C24FFB41C05494A0001BB5D /* image */,
 				2C2A68641BFDA9A700C4FA73 /* JSPatch */,
 				2C23B7631BFB042200E87E95 /* deleteInsert */,
 				2C92DFE11BF9A2F2009CA50A /* jailbreak */,
@@ -1488,6 +1513,7 @@
 			files = (
 				2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */,
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
+				2C24FFB91C05495E0001BB5D /* ImageVCTL.xib in Resources */,
 				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
 				2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */,
 				2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */,
@@ -1542,9 +1568,12 @@
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
 				2C2A165A1BCF54DA00D065CD /* MBProgressHudVCTL.xib in Resources */,
+				2C24FFBD1C054B010001BB5D /* sgs5.png in Resources */,
+				2C24FFBE1C054B010001BB5D /* sgs6.png in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
+				2C24FFBF1C054B010001BB5D /* sgs7.png in Resources */,
 				2C2A68751BFDB30200C4FA73 /* main.js in Resources */,
 				2C3A83C21BB8CB2000A335B5 /* sgs1.jpg in Resources */,
 				2CADEA2D1BB5364B009BBD28 /* StatusBarVCTL.xib in Resources */,
@@ -1579,6 +1608,7 @@
 			files = (
 				2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */,
 				2C2A16801BCFA57200D065CD /* IntrinsicCell.m in Sources */,
+				2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
 				2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */,
 				2CADEA311BB536BB009BBD28 /* StatusBarTableViewCell.m in Sources */,

@@ -27,12 +27,15 @@
 {
     NSString *dd = @"nothing";
 #if RELEASE
+    // 好像 这个没有用
     dd = @"release";
-# endif
     
+# endif
+    NSLog(@"dd = %@", dd);
     
 #if DEBUG
     dd = @"debug";
+    NSLog(@"debug mode");
 # endif
     
     _lbReleaseDebug.text = dd;

@@ -59,6 +59,18 @@
 
 - (void)openScore
 {
+    /* scoreboard 的plist 里
+     <key>CFBundleURLTypes</key>
+         <array>
+             <dict>
+                 <key>CFBundleURLSchemes</key>
+                     <array>
+                         <string>scoreBoard1</string>
+                     </array>
+             </dict>
+         </array>
+     
+     */
     if ( [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"scoreBoard1://"]] )
     {
         NSLog(@"scoreBoard1 OK");

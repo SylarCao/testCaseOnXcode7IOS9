@@ -49,7 +49,8 @@
 //    [self checkInstallFacebook];
 //    [self checkInstallInstagram];
 //    [self checkInstallWechat];
-    [self checkInstallZZY1];
+//    [self checkInstallZZY1];
+    [self checkInstallQQ];
 }
 
 - (IBAction)btnOpenScore:(id)sender
@@ -61,14 +62,14 @@
 {
     /* scoreboard 的plist 里
      <key>CFBundleURLTypes</key>
-         <array>
-             <dict>
-                 <key>CFBundleURLSchemes</key>
-                     <array>
-                         <string>scoreBoard1</string>
-                     </array>
-             </dict>
-         </array>
+     <array>
+         <dict>
+             <key>CFBundleURLSchemes</key>
+                 <array>
+                     <string>scoreBoard1</string>
+                 </array>
+         </dict>
+     </array>
      
      */
     if ( [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"scoreBoard1://"]] )
@@ -107,6 +108,19 @@
     {
         NSLog(@"instagram NOT installed");
         _lb1.text = @"instagram not installed";
+    }
+}
+
+- (void) checkInstallQQ
+{
+    if ( [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://app"]] )
+    {
+        NSLog(@"qq OK");
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mqq://app"]];
+    }
+    else
+    {
+        NSLog(@"not open qq");
     }
 }
 

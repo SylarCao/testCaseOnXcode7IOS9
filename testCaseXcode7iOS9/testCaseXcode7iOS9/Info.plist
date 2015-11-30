@@ -24,6 +24,24 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>plist里写点，否则没法授权</string>
+	<key>LSApplicationQueriesSchemes</key>
+    <array>
+     <string>fbapi</string>
+     <string>fbauth2</string>
+     <string>fbshareextension</string>
+     <string>fb-messenger-api</string>
+     <string>twitter</string>
+     <string>whatsapp</string>
+     <string>wechat</string>
+     <string>line</string>
+     <string>instagram</string>
+     <string>kakaotalk</string>
+     <string>mqq</string>
+     <string>vk</string>
+     <string>com.gtja.yhtkhdxsp</string>
+     <string>comgooglemaps</string>
+     <string>scoreBoard1</string>
+    </array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleExecutable</key>

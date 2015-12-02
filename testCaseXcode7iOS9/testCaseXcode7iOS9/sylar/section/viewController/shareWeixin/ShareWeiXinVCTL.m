@@ -1,0 +1,38 @@
+//
+//  ShareWeiXinVCTL.m
+//  testCaseXcode7iOS9
+//
+//  Created by sylar on 15/12/1.
+//  Copyright © 2015年 sylar. All rights reserved.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+#import "ShareWeiXinVCTL.h"
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+@interface ShareWeiXinVCTL ()
+
+
+
+@end
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+@implementation ShareWeiXinVCTL
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (IBAction)btn1:(id)sender
+{
+    [self shareWeiXin1];
+}
+
+- (void)shareWeiXin1
+{
+    
+}
+
+
+
+
+
+@end

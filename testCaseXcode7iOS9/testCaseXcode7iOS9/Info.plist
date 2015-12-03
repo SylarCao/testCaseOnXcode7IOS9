@@ -21,6 +21,15 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CFBundleURLTypes</key>
+     <array>
+         <dict>
+             <key>CFBundleURLSchemes</key>
+                 <array>
+                     <string>testiOS9</string>
+                 </array>
+         </dict>
+     </array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>plist里写点，否则没法授权</string>
 	<key>LSApplicationQueriesSchemes</key>

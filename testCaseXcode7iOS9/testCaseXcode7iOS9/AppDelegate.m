@@ -12,8 +12,11 @@
 #import "SecurityStrategy.h"
 #import <Bugly/CrashReporter.h>
 //#import <JSPatch/JSPatch.h>
+#import "OpeniOS9VCTL.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UINavigationController *naviController;
 
 @end
 
@@ -25,6 +28,7 @@
     
     HomeVCTL *hh = [[HomeVCTL alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:hh];
+    _naviController = nav;
     
     _window.rootViewController = nav;
     [_window addSubview:nav.view];
@@ -87,6 +91,7 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark -  3d touch的效果
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
     if ([shortcutItem.localizedTitle  isEqual: @"弹框"]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OPPS!" message:@"我的CTO叫佛山强" delegate:self cancelButtonTitle:@"哦" otherButtonTitles:nil, nil];
@@ -95,8 +100,19 @@
     }
 }
 
+#pragma mark - 本地推送
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification{
     NSLog(@"didReceiveLocalNotification");
+}
+
+#pragma mark - 打开app
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    OpeniOS9VCTL *o9 = [[OpeniOS9VCTL alloc] initWithNibName:nil bundle:nil];
+    [o9 fun1];
+    [_naviController pushViewController:o9 animated:YES];
+    
+    return YES;
 }
 
 @end

@@ -24,7 +24,8 @@
     // data
     _vctls = @[@"testXibVCTL", @"NaviBarVCTL", @"ConstrainVCTL", @"TimerVCTL", @"MathProblem1VCTL", @"StatusBarVCTL",
                
-               @"ShareWeiXinVCTL", @"OpeniOS9VCTL", @"LifeTimeVCTL",
+               @"DeallocVCTL", @"DrawLineVCTL",
+               @"ShareWeiXinVCTL", @"OpeniOS9VCTL", @"LifeTimeVCTL", @"ScreenFrameVCTL", @"ActionSheetVCTL", @"NavigationBarVCTL",
                @"MenuItemVCTL", @"JailBreakVCTL", @"DeleteInsertCellVCTL", @"JSPatchVCTL", @"ImageVCTL", @"CheckInstallQQVCTL",
                @"ReadPDFVCTL", @"DPLocationVCTL", @"RefreshTableVCTL", @"AttributeStringVCTL", @"TouchIDVCTL",
                @"NumberKeyboardVCTL", @"ReleaseModeVCTL", @"ContactListVCTL", @"TestTableViewWidthVCTL", @"PushNotificationVCTL",

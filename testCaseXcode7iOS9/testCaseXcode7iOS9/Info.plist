@@ -22,14 +22,14 @@
 		</dict>
 	</dict>
 	<key>CFBundleURLTypes</key>
-     <array>
-         <dict>
-             <key>CFBundleURLSchemes</key>
-                 <array>
-                     <string>testiOS9</string>
-                 </array>
-         </dict>
-     </array>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>testiOS9</string>
+			</array>
+		</dict>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>plist里写点，否则没法授权</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -40,7 +40,7 @@
 		<string>fb-messenger-api</string>
 		<string>twitter</string>
 		<string>whatsapp</string>
-		<string>wechat</string>
+		<string>weixin</string>
 		<string>line</string>
 		<string>instagram</string>
 		<string>kakaotalk</string>

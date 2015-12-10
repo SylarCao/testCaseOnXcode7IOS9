@@ -42,23 +42,26 @@
     if (kIOSVersion(9))
         [[UIApplication sharedApplication] setShortcutItems:shortItems];
     
-    // bugly
-    [[CrashReporter sharedInstance] enableLog:YES];
-    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
+//    // bugly
+//    [[CrashReporter sharedInstance] enableLog:YES];
+//    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
     
 //    // JSPatch
 //    [JSPatch testScriptInBundle];
     
+    BOOL register_wx = [WXApi registerApp:@"wx7b829ff9443d4102" withDescription:@"description123"];
+    NSLog(@"注册微信 = %d", register_wx);
+    
     // home
     NSLog(@"home = %@", NSHomeDirectory());
     
-    // notification
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert
-                                            | UIUserNotificationTypeBadge
-                                            | UIUserNotificationTypeSound
-                                                                             categories:nil];
-    [application registerUserNotificationSettings:settings];
-    [application registerForRemoteNotifications];
+//    // notification
+//    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert
+//                                            | UIUserNotificationTypeBadge
+//                                            | UIUserNotificationTypeSound
+//                                                                             categories:nil];
+//    [application registerUserNotificationSettings:settings];
+//    [application registerForRemoteNotifications];
     
     return YES;
 }
@@ -108,11 +111,13 @@
 #pragma mark - 打开app
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
 {
+    NSString *source = [options objectForKey:@"UIApplicationOpenURLOptionsSourceApplicationKey"];
+    NSLog(@"source = %@", source);
     OpeniOS9VCTL *o9 = [[OpeniOS9VCTL alloc] initWithNibName:nil bundle:nil];
     [o9 fun1];
     [_naviController pushViewController:o9 animated:YES];
     
-    return YES;
+    return NO;
 }
 
 @end

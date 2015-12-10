@@ -43,6 +43,8 @@
 		2C2A68711BFDAFB500C4FA73 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2A68701BFDAFB500C4FA73 /* JSPatch.framework */; };
 		2C2A68731BFDB09E00C4FA73 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */; };
 		2C2A68751BFDB30200C4FA73 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A68741BFDB30200C4FA73 /* main.js */; };
+		2C2E081B1C16783E0096DAD0 /* NavigationBarVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E08191C16783E0096DAD0 /* NavigationBarVCTL.m */; };
+		2C2E081C1C16783E0096DAD0 /* NavigationBarVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E081A1C16783E0096DAD0 /* NavigationBarVCTL.xib */; };
 		2C2EC2F81BE72687008197C3 /* DPLocationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC2F61BE72687008197C3 /* DPLocationVCTL.m */; };
 		2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2EC2F71BE72687008197C3 /* DPLocationVCTL.xib */; };
 		2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC2FB1BE726F4008197C3 /* DPHelper.m */; };
@@ -67,6 +69,10 @@
 		2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3281BE74021008197C3 /* UIProgressView+AFNetworking.m */; };
 		2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */; };
 		2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */; };
+		2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38CA5C1C151E7600492AF6 /* ScreenFrameVCTL.m */; };
+		2C38CA5F1C151E7600492AF6 /* ScreenFrameVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C38CA5D1C151E7600492AF6 /* ScreenFrameVCTL.xib */; };
+		2C38CA641C1596C500492AF6 /* ActionSheetVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38CA621C1596C500492AF6 /* ActionSheetVCTL.m */; };
+		2C38CA651C1596C500492AF6 /* ActionSheetVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C38CA631C1596C500492AF6 /* ActionSheetVCTL.xib */; };
 		2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A83B91BB8C88400A335B5 /* StackViewVCTL.m */; };
 		2C3A83BC1BB8C88400A335B5 /* StackViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A83BA1BB8C88400A335B5 /* StackViewVCTL.xib */; };
 		2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A83D41BB8EA4C00A335B5 /* MGSwipeCellVCTL.m */; };
@@ -96,6 +102,9 @@
 		2C40EB0D1BE0C99E00074AB8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40EB0C1BE0C99E00074AB8 /* QuickLook.framework */; };
 		2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EB0E1BE0CA8A00074AB8 /* pp1.pdf */; };
 		2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EB0F1BE0CA8A00074AB8 /* pp2.pdf */; };
+		2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4225471C17FD8500009D5F /* DrawLineVCTL.m */; };
+		2C42254A1C17FD8500009D5F /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4225481C17FD8500009D5F /* DrawLineVCTL.xib */; };
+		2C42254E1C17FDDD00009D5F /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C42254D1C17FDDD00009D5F /* Gdip.m */; };
 		2C46701F1C100D0300DF57AE /* OpeniOS9VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46701D1C100D0300DF57AE /* OpeniOS9VCTL.m */; };
 		2C4670201C100D0300DF57AE /* OpeniOS9VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46701E1C100D0300DF57AE /* OpeniOS9VCTL.xib */; };
 		2C4670581C1019AD00DF57AE /* LifeTimeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4670561C1019AD00DF57AE /* LifeTimeVCTL.m */; };
@@ -139,6 +148,14 @@
 		2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73A1BB3A35D00D22F29 /* icon29.png */; };
 		2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73B1BB3A35D00D22F29 /* icon58.png */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
+		2C68EDF81C194102009E1396 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDEB1C194102009E1396 /* WXApiManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C68EDF91C194102009E1396 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDED1C194102009E1396 /* WXApiRequestHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C68EDFA1C194102009E1396 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDEF1C194102009E1396 /* WXApiResponseHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C68EDFB1C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDF31C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C68EDFC1C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDF51C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C68EDFD1C194102009E1396 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDF71C194102009E1396 /* WXMediaMessage+messageConstruct.m */; };
+		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
+		2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C68EE021C1942F2009E1396 /* sgs5TH.png */; };
 		2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */; };
 		2C8BAB5A1BC7C00A000FD2DF /* Touch3DVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */; };
 		2C8BAB5E1BC7CF45000FD2DF /* Touch3D1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB5C1BC7CF45000FD2DF /* Touch3D1VCTL.m */; };
@@ -196,6 +213,12 @@
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
 		2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE43F1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m */; };
 		2CDAE4431BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */; };
+		2CDF0EA01C16F786009B8537 /* DeallocVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0E9E1C16F786009B8537 /* DeallocVCTL.m */; };
+		2CDF0EA11C16F786009B8537 /* DeallocVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDF0E9F1C16F786009B8537 /* DeallocVCTL.xib */; };
+		2CDF0EA61C16F7D5009B8537 /* Dealloc1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0EA41C16F7D5009B8537 /* Dealloc1VCTL.m */; };
+		2CDF0EA71C16F7D5009B8537 /* Dealloc1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDF0EA51C16F7D5009B8537 /* Dealloc1VCTL.xib */; };
+		2CDF0EAB1C16F7E3009B8537 /* Dealloc2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF0EA91C16F7E3009B8537 /* Dealloc2VCTL.m */; };
+		2CDF0EAE1C16FA20009B8537 /* Dealloc2VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDF0EAD1C16FA20009B8537 /* Dealloc2VCTL.xib */; };
 		2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */; };
 		2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */; };
 		2CE092F51BC63BB500027EED /* PostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE092F41BC63BB500027EED /* PostModel.m */; };
@@ -277,6 +300,9 @@
 		2C2A68701BFDAFB500C4FA73 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
 		2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		2C2A68741BFDB30200C4FA73 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		2C2E08181C16783E0096DAD0 /* NavigationBarVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarVCTL.h; sourceTree = "<group>"; };
+		2C2E08191C16783E0096DAD0 /* NavigationBarVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarVCTL.m; sourceTree = "<group>"; };
+		2C2E081A1C16783E0096DAD0 /* NavigationBarVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarVCTL.xib; sourceTree = "<group>"; };
 		2C2EC2F51BE72687008197C3 /* DPLocationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLocationVCTL.h; sourceTree = "<group>"; };
 		2C2EC2F61BE72687008197C3 /* DPLocationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLocationVCTL.m; sourceTree = "<group>"; };
 		2C2EC2F71BE72687008197C3 /* DPLocationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPLocationVCTL.xib; sourceTree = "<group>"; };
@@ -324,6 +350,12 @@
 		2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		2C2EC32B1BE74021008197C3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		2C38CA5B1C151E7600492AF6 /* ScreenFrameVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenFrameVCTL.h; sourceTree = "<group>"; };
+		2C38CA5C1C151E7600492AF6 /* ScreenFrameVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenFrameVCTL.m; sourceTree = "<group>"; };
+		2C38CA5D1C151E7600492AF6 /* ScreenFrameVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenFrameVCTL.xib; sourceTree = "<group>"; };
+		2C38CA611C1596C500492AF6 /* ActionSheetVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetVCTL.h; sourceTree = "<group>"; };
+		2C38CA621C1596C500492AF6 /* ActionSheetVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetVCTL.m; sourceTree = "<group>"; };
+		2C38CA631C1596C500492AF6 /* ActionSheetVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetVCTL.xib; sourceTree = "<group>"; };
 		2C3A83B81BB8C88400A335B5 /* StackViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewVCTL.h; sourceTree = "<group>"; };
 		2C3A83B91BB8C88400A335B5 /* StackViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewVCTL.m; sourceTree = "<group>"; };
 		2C3A83BA1BB8C88400A335B5 /* StackViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewVCTL.xib; sourceTree = "<group>"; };
@@ -364,6 +396,11 @@
 		2C40EB0C1BE0C99E00074AB8 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		2C40EB0E1BE0CA8A00074AB8 /* pp1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pp1.pdf; sourceTree = "<group>"; };
 		2C40EB0F1BE0CA8A00074AB8 /* pp2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pp2.pdf; sourceTree = "<group>"; };
+		2C4225461C17FD8500009D5F /* DrawLineVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineVCTL.h; sourceTree = "<group>"; };
+		2C4225471C17FD8500009D5F /* DrawLineVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineVCTL.m; sourceTree = "<group>"; };
+		2C4225481C17FD8500009D5F /* DrawLineVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawLineVCTL.xib; sourceTree = "<group>"; };
+		2C42254C1C17FDDD00009D5F /* Gdip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gdip.h; sourceTree = "<group>"; };
+		2C42254D1C17FDDD00009D5F /* Gdip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gdip.m; sourceTree = "<group>"; };
 		2C46701C1C100D0300DF57AE /* OpeniOS9VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeniOS9VCTL.h; sourceTree = "<group>"; };
 		2C46701D1C100D0300DF57AE /* OpeniOS9VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeniOS9VCTL.m; sourceTree = "<group>"; };
 		2C46701E1C100D0300DF57AE /* OpeniOS9VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpeniOS9VCTL.xib; sourceTree = "<group>"; };
@@ -436,6 +473,22 @@
 		2C65D73A1BB3A35D00D22F29 /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
 		2C65D73B1BB3A35D00D22F29 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
 		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
+		2C68EDEA1C194102009E1396 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		2C68EDEB1C194102009E1396 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		2C68EDEC1C194102009E1396 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		2C68EDED1C194102009E1396 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		2C68EDEE1C194102009E1396 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		2C68EDEF1C194102009E1396 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		2C68EDF11C194102009E1396 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		2C68EDF21C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		2C68EDF31C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		2C68EDF41C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		2C68EDF51C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		2C68EDF61C194102009E1396 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		2C68EDF71C194102009E1396 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		2C68EDFE1C194280009E1396 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2C68EE021C1942F2009E1396 /* sgs5TH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5TH.png; sourceTree = "<group>"; };
 		2C8BAB561BC7C00A000FD2DF /* Touch3DVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch3DVCTL.h; sourceTree = "<group>"; };
 		2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch3DVCTL.m; sourceTree = "<group>"; };
 		2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Touch3DVCTL.xib; sourceTree = "<group>"; };
@@ -523,6 +576,15 @@
 		2CDAE43F1BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewWidthVCTL.m; sourceTree = "<group>"; };
 		2CDAE4411BDDC89D00FB8C4F /* TestTableWidthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableWidthTableViewCell.h; sourceTree = "<group>"; };
 		2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableWidthTableViewCell.m; sourceTree = "<group>"; };
+		2CDF0E9D1C16F786009B8537 /* DeallocVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeallocVCTL.h; sourceTree = "<group>"; };
+		2CDF0E9E1C16F786009B8537 /* DeallocVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeallocVCTL.m; sourceTree = "<group>"; };
+		2CDF0E9F1C16F786009B8537 /* DeallocVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeallocVCTL.xib; sourceTree = "<group>"; };
+		2CDF0EA31C16F7D5009B8537 /* Dealloc1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealloc1VCTL.h; sourceTree = "<group>"; };
+		2CDF0EA41C16F7D5009B8537 /* Dealloc1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealloc1VCTL.m; sourceTree = "<group>"; };
+		2CDF0EA51C16F7D5009B8537 /* Dealloc1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dealloc1VCTL.xib; sourceTree = "<group>"; };
+		2CDF0EA81C16F7E3009B8537 /* Dealloc2VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealloc2VCTL.h; sourceTree = "<group>"; };
+		2CDF0EA91C16F7E3009B8537 /* Dealloc2VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealloc2VCTL.m; sourceTree = "<group>"; };
+		2CDF0EAD1C16FA20009B8537 /* Dealloc2VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dealloc2VCTL.xib; sourceTree = "<group>"; };
 		2CE092EE1BC6378E00027EED /* PostNotificationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostNotificationVCTL.h; sourceTree = "<group>"; };
 		2CE092EF1BC6378E00027EED /* PostNotificationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostNotificationVCTL.m; sourceTree = "<group>"; };
 		2CE092F01BC6378E00027EED /* PostNotificationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostNotificationVCTL.xib; sourceTree = "<group>"; };
@@ -574,6 +636,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */,
 				2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */,
 				2C2A68731BFDB09E00C4FA73 /* JavaScriptCore.framework in Frameworks */,
 				2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */,
@@ -624,6 +687,7 @@
 		2C23A07A1C0D4256008B4712 /* shareWeixin */ = {
 			isa = PBXGroup;
 			children = (
+				2C68EDE81C194102009E1396 /* weixin */,
 				2C23A07B1C0D4268008B4712 /* ShareWeiXinVCTL.h */,
 				2C23A07C1C0D4268008B4712 /* ShareWeiXinVCTL.m */,
 				2C23A07D1C0D4268008B4712 /* ShareWeiXinVCTL.xib */,
@@ -733,6 +797,16 @@
 			path = JSPatch;
 			sourceTree = "<group>";
 		};
+		2C2E08171C1678100096DAD0 /* navigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E08181C16783E0096DAD0 /* NavigationBarVCTL.h */,
+				2C2E08191C16783E0096DAD0 /* NavigationBarVCTL.m */,
+				2C2E081A1C16783E0096DAD0 /* NavigationBarVCTL.xib */,
+			);
+			path = navigationBar;
+			sourceTree = "<group>";
+		};
 		2C2EC2F41BE72678008197C3 /* dpLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,6 +868,26 @@
 				2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		2C38CA5A1C151E6400492AF6 /* screenFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2C38CA5B1C151E7600492AF6 /* ScreenFrameVCTL.h */,
+				2C38CA5C1C151E7600492AF6 /* ScreenFrameVCTL.m */,
+				2C38CA5D1C151E7600492AF6 /* ScreenFrameVCTL.xib */,
+			);
+			path = screenFrame;
+			sourceTree = "<group>";
+		};
+		2C38CA601C1596B600492AF6 /* actionsheet */ = {
+			isa = PBXGroup;
+			children = (
+				2C38CA611C1596C500492AF6 /* ActionSheetVCTL.h */,
+				2C38CA621C1596C500492AF6 /* ActionSheetVCTL.m */,
+				2C38CA631C1596C500492AF6 /* ActionSheetVCTL.xib */,
+			);
+			path = actionsheet;
 			sourceTree = "<group>";
 		};
 		2C3A83B71BB8C85D00A335B5 /* StackView */ = {
@@ -901,6 +995,26 @@
 				2C40EB071BE0C40500074AB8 /* file_pdf4.pdf */,
 			);
 			path = pdf;
+			sourceTree = "<group>";
+		};
+		2C4225451C17FD7800009D5F /* drawLine */ = {
+			isa = PBXGroup;
+			children = (
+				2C42254B1C17FDDD00009D5F /* gdip */,
+				2C4225461C17FD8500009D5F /* DrawLineVCTL.h */,
+				2C4225471C17FD8500009D5F /* DrawLineVCTL.m */,
+				2C4225481C17FD8500009D5F /* DrawLineVCTL.xib */,
+			);
+			path = drawLine;
+			sourceTree = "<group>";
+		};
+		2C42254B1C17FDDD00009D5F /* gdip */ = {
+			isa = PBXGroup;
+			children = (
+				2C42254C1C17FDDD00009D5F /* Gdip.h */,
+				2C42254D1C17FDDD00009D5F /* Gdip.m */,
+			);
+			path = gdip;
 			sourceTree = "<group>";
 		};
 		2C46701B1C100CF200DF57AE /* openiOS9 */ = {
@@ -1096,6 +1210,42 @@
 			path = mathProblem;
 			sourceTree = "<group>";
 		};
+		2C68EDE81C194102009E1396 /* weixin */ = {
+			isa = PBXGroup;
+			children = (
+				2C68EDE91C194102009E1396 /* Control */,
+				2C68EDF01C194102009E1396 /* Helper */,
+			);
+			path = weixin;
+			sourceTree = "<group>";
+		};
+		2C68EDE91C194102009E1396 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				2C68EDEA1C194102009E1396 /* WXApiManager.h */,
+				2C68EDEB1C194102009E1396 /* WXApiManager.m */,
+				2C68EDEC1C194102009E1396 /* WXApiRequestHandler.h */,
+				2C68EDED1C194102009E1396 /* WXApiRequestHandler.m */,
+				2C68EDEE1C194102009E1396 /* WXApiResponseHandler.h */,
+				2C68EDEF1C194102009E1396 /* WXApiResponseHandler.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		2C68EDF01C194102009E1396 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2C68EDF11C194102009E1396 /* Constant.h */,
+				2C68EDF21C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				2C68EDF31C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				2C68EDF41C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				2C68EDF51C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				2C68EDF61C194102009E1396 /* WXMediaMessage+messageConstruct.h */,
+				2C68EDF71C194102009E1396 /* WXMediaMessage+messageConstruct.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		2C8BAB501BC7BEA7000FD2DF /* 3DTouch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1125,6 +1275,8 @@
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
+				2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */,
+				2C68EDFE1C194280009E1396 /* libsqlite3.tbd */,
 				2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */,
 				2C2A68721BFDB09E00C4FA73 /* JavaScriptCore.framework */,
 				2C2EC3041BE7302E008197C3 /* CoreGraphics.framework */,
@@ -1227,6 +1379,11 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C4225451C17FD7800009D5F /* drawLine */,
+				2CDF0E9C1C16F76F009B8537 /* dealloc */,
+				2C2E08171C1678100096DAD0 /* navigationBar */,
+				2C38CA601C1596B600492AF6 /* actionsheet */,
+				2C38CA5A1C151E6400492AF6 /* screenFrame */,
 				2C4670541C1019A000DF57AE /* viewcontrollerLifeTime */,
 				2C46701B1C100CF200DF57AE /* openiOS9 */,
 				2C23A07A1C0D4256008B4712 /* shareWeixin */,
@@ -1325,6 +1482,7 @@
 		2CA1F89E1C0BF3D600089E14 /* sgs */ = {
 			isa = PBXGroup;
 			children = (
+				2C68EE021C1942F2009E1396 /* sgs5TH.png */,
 				2CA1F8AF1C0BF54000089E14 /* sgs7.png */,
 				2CA1F8AD1C0BF4C200089E14 /* sgs6.png */,
 				2CA1F89F1C0BF3D700089E14 /* sgs1.jpg */,
@@ -1411,6 +1569,30 @@
 				2CDAE4421BDDC89D00FB8C4F /* TestTableWidthTableViewCell.m */,
 			);
 			path = tableViewCellWidth;
+			sourceTree = "<group>";
+		};
+		2CDF0E9C1C16F76F009B8537 /* dealloc */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0EA21C16F7B9009B8537 /* vctl */,
+				2CDF0E9D1C16F786009B8537 /* DeallocVCTL.h */,
+				2CDF0E9E1C16F786009B8537 /* DeallocVCTL.m */,
+				2CDF0E9F1C16F786009B8537 /* DeallocVCTL.xib */,
+			);
+			path = dealloc;
+			sourceTree = "<group>";
+		};
+		2CDF0EA21C16F7B9009B8537 /* vctl */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF0EA31C16F7D5009B8537 /* Dealloc1VCTL.h */,
+				2CDF0EA41C16F7D5009B8537 /* Dealloc1VCTL.m */,
+				2CDF0EA51C16F7D5009B8537 /* Dealloc1VCTL.xib */,
+				2CDF0EA81C16F7E3009B8537 /* Dealloc2VCTL.h */,
+				2CDF0EA91C16F7E3009B8537 /* Dealloc2VCTL.m */,
+				2CDF0EAD1C16FA20009B8537 /* Dealloc2VCTL.xib */,
+			);
+			path = vctl;
 			sourceTree = "<group>";
 		};
 		2CE092ED1BC6377500027EED /* postNotification */ = {
@@ -1617,6 +1799,7 @@
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
 				2C24FFB91C05495E0001BB5D /* ImageVCTL.xib in Resources */,
 				2CA1F89D1C0BF0C400089E14 /* CheckInstallQQVCTL.xib in Resources */,
+				2C38CA651C1596C500492AF6 /* ActionSheetVCTL.xib in Resources */,
 				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
 				2C2EC2F91BE72687008197C3 /* DPLocationVCTL.xib in Resources */,
 				2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */,
@@ -1627,14 +1810,17 @@
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA112CE1BB29EAA00406685 /* X1.xib in Resources */,
 				2C8BAB5F1BC7CF45000FD2DF /* Touch3D1VCTL.xib in Resources */,
+				2CDF0EA71C16F7D5009B8537 /* Dealloc1VCTL.xib in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
 				2C2A16701BCF718500D065CD /* SavePlistVCTL.xib in Resources */,
+				2CDF0EA11C16F786009B8537 /* DeallocVCTL.xib in Resources */,
 				2C8BAB5A1BC7C00A000FD2DF /* Touch3DVCTL.xib in Resources */,
 				2C3A83BC1BB8C88400A335B5 /* StackViewVCTL.xib in Resources */,
 				2C2A16811BCFA57200D065CD /* IntrinsicCell.xib in Resources */,
 				2C4670201C100D0300DF57AE /* OpeniOS9VCTL.xib in Resources */,
 				2C1C92D41BD0A94C009573E6 /* NumberKeyboardVCTL.xib in Resources */,
 				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
+				2CDF0EAE1C16FA20009B8537 /* Dealloc2VCTL.xib in Resources */,
 				2CB381A11BCF413100D4F33F /* JsonKitVCTL.xib in Resources */,
 				2C4BE0571BE9A7F1004F1DAF /* RefreshTableViewCell.xib in Resources */,
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
@@ -1666,6 +1852,7 @@
 				2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */,
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
 				2C40EB021BE0C1F000074AB8 /* ReadPDFDefaultVCTL.xib in Resources */,
+				2C2E081C1C16783E0096DAD0 /* NavigationBarVCTL.xib in Resources */,
 				2C2A167C1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */,
@@ -1673,8 +1860,10 @@
 				2C3A83D71BB8EA4C00A335B5 /* MGSwipeCellVCTL.xib in Resources */,
 				2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */,
 				2C2A07FA1BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib in Resources */,
+				2C38CA5F1C151E7600492AF6 /* ScreenFrameVCTL.xib in Resources */,
 				2C4BE0121BE9A1EB004F1DAF /* RefreshTableVCTL.xib in Resources */,
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
+				2C42254A1C17FD8500009D5F /* DrawLineVCTL.xib in Resources */,
 				2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */,
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
 				2C2A165A1BCF54DA00D065CD /* MBProgressHudVCTL.xib in Resources */,
@@ -1682,6 +1871,7 @@
 				2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
 				2C2A68751BFDB30200C4FA73 /* main.js in Resources */,
+				2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */,
 				2CADEA2D1BB5364B009BBD28 /* StatusBarVCTL.xib in Resources */,
 				2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */,
 				2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */,
@@ -1719,6 +1909,7 @@
 				2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
 				2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */,
+				2CDF0EA61C16F7D5009B8537 /* Dealloc1VCTL.m in Sources */,
 				2CADEA311BB536BB009BBD28 /* StatusBarTableViewCell.m in Sources */,
 				2CE1F3551BCE3DC800B82CAE /* UIViewController+LewPopupViewController.m in Sources */,
 				2C08A8391BB931C60077FE53 /* LewView1.m in Sources */,
@@ -1734,6 +1925,7 @@
 				2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */,
 				2C46701F1C100D0300DF57AE /* OpeniOS9VCTL.m in Sources */,
 				2C2EC3301BE74021008197C3 /* AFNetworkReachabilityManager.m in Sources */,
+				2CDF0EA01C16F786009B8537 /* DeallocVCTL.m in Sources */,
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
 				2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */,
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
@@ -1743,6 +1935,7 @@
 				2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */,
 				2C2A166F1BCF718500D065CD /* SavePlistVCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
+				2C68EDFB1C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
 				2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */,
 				2C2A07F91BCFA99700D6ED86 /* IntrinsicDetailVCTL.m in Sources */,
@@ -1755,9 +1948,11 @@
 				2CE092F51BC63BB500027EED /* PostModel.m in Sources */,
 				2CCB289A1BCB4575005E9B85 /* DragCollectionCell.m in Sources */,
 				2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */,
+				2C68EDF81C194102009E1396 /* WXApiManager.m in Sources */,
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
+				2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */,
 				2C3E34CD1BF325520008F1B0 /* UIImage+BlurGlass.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
 				2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */,
@@ -1769,6 +1964,8 @@
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C4BE0481BE9A7B0004F1DAF /* MJRefreshBackGifFooter.m in Sources */,
 				2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */,
+				2C68EDFD1C194102009E1396 /* WXMediaMessage+messageConstruct.m in Sources */,
+				2C2E081B1C16783E0096DAD0 /* NavigationBarVCTL.m in Sources */,
 				2C4BE04C1BE9A7B0004F1DAF /* MJRefreshNormalHeader.m in Sources */,
 				2CA112C41BB29EAA00406685 /* HomeTableViewCell.m in Sources */,
 				2C4BE0461BE9A7B0004F1DAF /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1779,8 +1976,10 @@
 				2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */,
 				2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */,
 				2C3E34C51BF324D30008F1B0 /* BlurBkgVCTL.m in Sources */,
+				2C42254E1C17FDDD00009D5F /* Gdip.m in Sources */,
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
 				2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */,
+				2CDF0EAB1C16F7E3009B8537 /* Dealloc2VCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
 				2CE1F34F1BCE3DC800B82CAE /* UICollectionView+Draggable.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
@@ -1810,9 +2009,12 @@
 				2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */,
 				2C4670611C1019F400DF57AE /* Life2VCTL.m in Sources */,
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
+				2C68EDFA1C194102009E1396 /* WXApiResponseHandler.m in Sources */,
+				2C38CA641C1596C500492AF6 /* ActionSheetVCTL.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,
 				2C4BE04D1BE9A7B0004F1DAF /* MJRefreshStateHeader.m in Sources */,
+				2C68EDFC1C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */,
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
@@ -1822,12 +2024,14 @@
 				2C3C85661BCCD94F009C4D24 /* BuglyVCTL.m in Sources */,
 				2C4BE04A1BE9A7B0004F1DAF /* MJRefreshBackStateFooter.m in Sources */,
 				2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */,
+				2C68EDF91C194102009E1396 /* WXApiRequestHandler.m in Sources */,
 				2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */,
 				2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */,
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
 				2C4BE0431BE9A7B0004F1DAF /* MJRefreshFooter.m in Sources */,
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
+				2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C4BE0471BE9A7B0004F1DAF /* MJRefreshAutoStateFooter.m in Sources */,
 				2CADEA2C1BB5364B009BBD28 /* StatusBarVCTL.m in Sources */,

@@ -49,8 +49,9 @@
 //    // JSPatch
 //    [JSPatch testScriptInBundle];
     
-    BOOL register_wx = [WXApi registerApp:@"wx7b829ff9443d4102" withDescription:@"description123"];
-    NSLog(@"注册微信 = %d", register_wx);
+//    // 注册微信
+//    BOOL register_wx = [WXApi registerApp:@"wx7b829ff9443d4102" withDescription:@"description123"];
+//    NSLog(@"注册微信 = %d", register_wx);
     
     // home
     NSLog(@"home = %@", NSHomeDirectory());

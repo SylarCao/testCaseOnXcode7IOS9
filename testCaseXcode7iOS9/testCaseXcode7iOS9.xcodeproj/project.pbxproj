@@ -156,6 +156,7 @@
 		2C68EDFD1C194102009E1396 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EDF71C194102009E1396 /* WXMediaMessage+messageConstruct.m */; };
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
 		2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C68EE021C1942F2009E1396 /* sgs5TH.png */; };
+		2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EE061C1949F4009E1396 /* DrawView1.m */; };
 		2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */; };
 		2C8BAB5A1BC7C00A000FD2DF /* Touch3DVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */; };
 		2C8BAB5E1BC7CF45000FD2DF /* Touch3D1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB5C1BC7CF45000FD2DF /* Touch3D1VCTL.m */; };
@@ -489,6 +490,8 @@
 		2C68EDFE1C194280009E1396 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		2C68EE021C1942F2009E1396 /* sgs5TH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5TH.png; sourceTree = "<group>"; };
+		2C68EE051C1949F4009E1396 /* DrawView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView1.h; sourceTree = "<group>"; };
+		2C68EE061C1949F4009E1396 /* DrawView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView1.m; sourceTree = "<group>"; };
 		2C8BAB561BC7C00A000FD2DF /* Touch3DVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch3DVCTL.h; sourceTree = "<group>"; };
 		2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch3DVCTL.m; sourceTree = "<group>"; };
 		2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Touch3DVCTL.xib; sourceTree = "<group>"; };
@@ -1000,6 +1003,7 @@
 		2C4225451C17FD7800009D5F /* drawLine */ = {
 			isa = PBXGroup;
 			children = (
+				2C68EE041C1949CE009E1396 /* view */,
 				2C42254B1C17FDDD00009D5F /* gdip */,
 				2C4225461C17FD8500009D5F /* DrawLineVCTL.h */,
 				2C4225471C17FD8500009D5F /* DrawLineVCTL.m */,
@@ -1244,6 +1248,15 @@
 				2C68EDF71C194102009E1396 /* WXMediaMessage+messageConstruct.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2C68EE041C1949CE009E1396 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C68EE051C1949F4009E1396 /* DrawView1.h */,
+				2C68EE061C1949F4009E1396 /* DrawView1.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		2C8BAB501BC7BEA7000FD2DF /* 3DTouch */ = {
@@ -1960,6 +1973,7 @@
 				2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */,
 				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
 				2C23A07E1C0D4268008B4712 /* ShareWeiXinVCTL.m in Sources */,
+				2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */,
 				2CB381A01BCF413100D4F33F /* JsonKitVCTL.m in Sources */,
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C4BE0481BE9A7B0004F1DAF /* MJRefreshBackGifFooter.m in Sources */,

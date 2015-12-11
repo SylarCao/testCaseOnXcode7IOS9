@@ -86,11 +86,14 @@
 //    [self fun1:gc color:[[Helper share] getRandomColor]];
 //    [self drawRect1:gc color:[[Helper share] getRandomColor]];
     
+//    [self drawLine1];
 //    [self drawLine2];
 //    [self drawImage1];
     
-    [self drawRect1];
-    [self drawLabel];
+    [self drawDashLine1];
+    
+//    [self drawRect1];
+//    [self drawLabel];
     
 //    // 画好多个点
 //    NSTimeInterval time1 = [NSDate timeIntervalSinceReferenceDate];
@@ -120,7 +123,7 @@
     aPoints[3] =CGPointMake(60, 30);
     aPoints[4] =CGPointMake(60, 60);
     CGContextAddLines(gc, aPoints, 5);
-    CGContextDrawPath(gc, kCGPathStroke); //开始画线
+    CGContextStrokePath(gc);
 }
 
 - (void)drawLine2
@@ -141,6 +144,23 @@
     aPoints[1] =CGPointMake(_lineX, _lineYEnd);
     CGContextAddLines(gc, aPoints, 2);
     CGContextDrawPath(gc, kCGPathStroke); //开始画线
+    
+}
+
+- (void)drawDashLine1
+{
+    CGContextRef gc = UIGraphicsGetCurrentContext();
+    UIColor *aColor = [[Helper share] getRandomColor];
+    CGContextSetStrokeColor(gc, CGColorGetComponents(aColor.CGColor));
+    CGPoint aPoints[2];
+    aPoints[0] =CGPointMake(10, 60);
+    aPoints[1] =CGPointMake(200, 60);
+    CGFloat dash[2];
+    dash[0] = 10;
+    dash[1] = 4;
+    CGContextSetLineDash(gc, 0, dash, 2);
+    CGContextAddLines(gc, aPoints, 2);
+    CGContextStrokePath(gc);
     
 }
 

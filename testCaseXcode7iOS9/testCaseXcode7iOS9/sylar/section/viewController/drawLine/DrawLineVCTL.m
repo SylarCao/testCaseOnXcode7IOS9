@@ -34,9 +34,9 @@
 
 //    [_view1 publicFun1];
     
-//    [_view1 setNeedsDisplay];
+    [_view1 setNeedsDisplay];
     
-    [self test1];
+//    [self test1];
 }
 
 - (void)test1

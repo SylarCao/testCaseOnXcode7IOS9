@@ -82,7 +82,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    CGContextRef gc = UIGraphicsGetCurrentContext();
+//    CGContextRef gc = UIGraphicsGetCurrentContext();
 //    [self fun1:gc color:[[Helper share] getRandomColor]];
 //    [self drawRect1:gc color:[[Helper share] getRandomColor]];
     
@@ -90,7 +90,7 @@
 //    [self drawLine2];
 //    [self drawImage1];
     
-    [self drawDashLine1];
+//    [self drawDashLine1];
     
 //    [self drawRect1];
 //    [self drawLabel];
@@ -184,7 +184,7 @@
     CGContextSetRGBStrokeColor(gc, red, green, blue, alpha);
     CGContextSetLineWidth(gc, 2);
     CGContextAddLines(gc, m_points, _mPointsCount);
-    CGContextDrawPath(gc, kCGPathStroke); //开始画线
+    CGContextStrokePath(gc);
 }
 
 - (void)drawRect1

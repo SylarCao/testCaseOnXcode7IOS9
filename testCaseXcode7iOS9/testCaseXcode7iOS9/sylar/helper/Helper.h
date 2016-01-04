@@ -22,6 +22,7 @@
  *  @return <#return value description#>
  */
 - (UIColor *) getRandomColor;
+- (UIColor *)getRandomColorWithAlpha:(CGFloat)alpha;
 
 /**
  *  get image from color

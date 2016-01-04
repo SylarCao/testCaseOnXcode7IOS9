@@ -69,6 +69,8 @@
 		2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3281BE74021008197C3 /* UIProgressView+AFNetworking.m */; };
 		2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */; };
 		2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */; };
+		2C35BE9B1C30C921000E2C2C /* HorizontalVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BE9A1C30C921000E2C2C /* HorizontalVCTL.m */; };
+		2C35BE9E1C30CA19000E2C2C /* HorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C35BE9D1C30CA19000E2C2C /* HorizontalView.m */; };
 		2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38CA5C1C151E7600492AF6 /* ScreenFrameVCTL.m */; };
 		2C38CA5F1C151E7600492AF6 /* ScreenFrameVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C38CA5D1C151E7600492AF6 /* ScreenFrameVCTL.xib */; };
 		2C38CA641C1596C500492AF6 /* ActionSheetVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38CA621C1596C500492AF6 /* ActionSheetVCTL.m */; };
@@ -157,6 +159,9 @@
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
 		2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C68EE021C1942F2009E1396 /* sgs5TH.png */; };
 		2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EE061C1949F4009E1396 /* DrawView1.m */; };
+		2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A881C3A385A00B6669B /* TouchEventVCTL.m */; };
+		2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */; };
+		2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A8D1C3A387F00B6669B /* TouchEventView.m */; };
 		2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */; };
 		2C8BAB5A1BC7C00A000FD2DF /* Touch3DVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */; };
 		2C8BAB5E1BC7CF45000FD2DF /* Touch3D1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB5C1BC7CF45000FD2DF /* Touch3D1VCTL.m */; };
@@ -241,6 +246,8 @@
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
 		2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */; };
 		2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */; };
+		2CEF54961C1EE48D003D1E7F /* MathProblem2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF54941C1EE48D003D1E7F /* MathProblem2VCTL.m */; };
+		2CEF54971C1EE48D003D1E7F /* MathProblem2VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEF54951C1EE48D003D1E7F /* MathProblem2VCTL.xib */; };
 		2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */; };
 		2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF98F911BD4CF5B0001E209 /* ReleaseModeVCTL.xib */; };
 /* End PBXBuildFile section */
@@ -351,6 +358,10 @@
 		2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		2C2EC32B1BE74021008197C3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		2C35BE991C30C921000E2C2C /* HorizontalVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalVCTL.h; sourceTree = "<group>"; };
+		2C35BE9A1C30C921000E2C2C /* HorizontalVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalVCTL.m; sourceTree = "<group>"; };
+		2C35BE9C1C30CA19000E2C2C /* HorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalView.h; sourceTree = "<group>"; };
+		2C35BE9D1C30CA19000E2C2C /* HorizontalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalView.m; sourceTree = "<group>"; };
 		2C38CA5B1C151E7600492AF6 /* ScreenFrameVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenFrameVCTL.h; sourceTree = "<group>"; };
 		2C38CA5C1C151E7600492AF6 /* ScreenFrameVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenFrameVCTL.m; sourceTree = "<group>"; };
 		2C38CA5D1C151E7600492AF6 /* ScreenFrameVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenFrameVCTL.xib; sourceTree = "<group>"; };
@@ -492,6 +503,11 @@
 		2C68EE021C1942F2009E1396 /* sgs5TH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5TH.png; sourceTree = "<group>"; };
 		2C68EE051C1949F4009E1396 /* DrawView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView1.h; sourceTree = "<group>"; };
 		2C68EE061C1949F4009E1396 /* DrawView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView1.m; sourceTree = "<group>"; };
+		2C899A871C3A385A00B6669B /* TouchEventVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventVCTL.h; sourceTree = "<group>"; };
+		2C899A881C3A385A00B6669B /* TouchEventVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventVCTL.m; sourceTree = "<group>"; };
+		2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchEventVCTL.xib; sourceTree = "<group>"; };
+		2C899A8C1C3A387F00B6669B /* TouchEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventView.h; sourceTree = "<group>"; };
+		2C899A8D1C3A387F00B6669B /* TouchEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventView.m; sourceTree = "<group>"; };
 		2C8BAB561BC7C00A000FD2DF /* Touch3DVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch3DVCTL.h; sourceTree = "<group>"; };
 		2C8BAB571BC7C00A000FD2DF /* Touch3DVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch3DVCTL.m; sourceTree = "<group>"; };
 		2C8BAB581BC7C00A000FD2DF /* Touch3DVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Touch3DVCTL.xib; sourceTree = "<group>"; };
@@ -629,6 +645,9 @@
 		2CE329B91BBA3602008259DD /* ShakeTextFieldVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeTextFieldVCTL.h; sourceTree = "<group>"; };
 		2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeTextFieldVCTL.m; sourceTree = "<group>"; };
 		2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeTextFieldVCTL.xib; sourceTree = "<group>"; };
+		2CEF54931C1EE48D003D1E7F /* MathProblem2VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem2VCTL.h; sourceTree = "<group>"; };
+		2CEF54941C1EE48D003D1E7F /* MathProblem2VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem2VCTL.m; sourceTree = "<group>"; };
+		2CEF54951C1EE48D003D1E7F /* MathProblem2VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem2VCTL.xib; sourceTree = "<group>"; };
 		2CF98F8F1BD4CF5B0001E209 /* ReleaseModeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseModeVCTL.h; sourceTree = "<group>"; };
 		2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseModeVCTL.m; sourceTree = "<group>"; };
 		2CF98F911BD4CF5B0001E209 /* ReleaseModeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseModeVCTL.xib; sourceTree = "<group>"; };
@@ -871,6 +890,17 @@
 				2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		2C35BE981C30C90B000E2C2C /* horizontalView */ = {
+			isa = PBXGroup;
+			children = (
+				2C35BE991C30C921000E2C2C /* HorizontalVCTL.h */,
+				2C35BE9A1C30C921000E2C2C /* HorizontalVCTL.m */,
+				2C35BE9C1C30CA19000E2C2C /* HorizontalView.h */,
+				2C35BE9D1C30CA19000E2C2C /* HorizontalView.m */,
+			);
+			path = horizontalView;
 			sourceTree = "<group>";
 		};
 		2C38CA5A1C151E6400492AF6 /* screenFrame */ = {
@@ -1259,6 +1289,18 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		2C899A861C3A384600B6669B /* touchEvent */ = {
+			isa = PBXGroup;
+			children = (
+				2C899A871C3A385A00B6669B /* TouchEventVCTL.h */,
+				2C899A881C3A385A00B6669B /* TouchEventVCTL.m */,
+				2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */,
+				2C899A8C1C3A387F00B6669B /* TouchEventView.h */,
+				2C899A8D1C3A387F00B6669B /* TouchEventView.m */,
+			);
+			path = touchEvent;
+			sourceTree = "<group>";
+		};
 		2C8BAB501BC7BEA7000FD2DF /* 3DTouch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1392,6 +1434,9 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C899A861C3A384600B6669B /* touchEvent */,
+				2C35BE981C30C90B000E2C2C /* horizontalView */,
+				2CEF54921C1EE47B003D1E7F /* mathProblem2 */,
 				2C4225451C17FD7800009D5F /* drawLine */,
 				2CDF0E9C1C16F76F009B8537 /* dealloc */,
 				2C2E08171C1678100096DAD0 /* navigationBar */,
@@ -1740,6 +1785,16 @@
 			path = shakeTextField;
 			sourceTree = "<group>";
 		};
+		2CEF54921C1EE47B003D1E7F /* mathProblem2 */ = {
+			isa = PBXGroup;
+			children = (
+				2CEF54931C1EE48D003D1E7F /* MathProblem2VCTL.h */,
+				2CEF54941C1EE48D003D1E7F /* MathProblem2VCTL.m */,
+				2CEF54951C1EE48D003D1E7F /* MathProblem2VCTL.xib */,
+			);
+			path = mathProblem2;
+			sourceTree = "<group>";
+		};
 		2CF98F8E1BD4CF370001E209 /* releaseMode */ = {
 			isa = PBXGroup;
 			children = (
@@ -1842,6 +1897,7 @@
 				2C2A68691BFDA9B900C4FA73 /* JSPatchVCTL.xib in Resources */,
 				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
 				2C4670591C1019AD00DF57AE /* LifeTimeVCTL.xib in Resources */,
+				2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */,
 				2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
 				2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */,
@@ -1859,6 +1915,7 @@
 				2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */,
 				2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
+				2CEF54971C1EE48D003D1E7F /* MathProblem2VCTL.xib in Resources */,
 				2CCB289B1BCB4575005E9B85 /* DragCollectionCell.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
@@ -1919,6 +1976,7 @@
 			files = (
 				2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */,
 				2C2A16801BCFA57200D065CD /* IntrinsicCell.m in Sources */,
+				2C35BE9B1C30C921000E2C2C /* HorizontalVCTL.m in Sources */,
 				2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
 				2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */,
@@ -1947,7 +2005,9 @@
 				2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */,
 				2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */,
 				2C2A166F1BCF718500D065CD /* SavePlistVCTL.m in Sources */,
+				2CEF54961C1EE48D003D1E7F /* MathProblem2VCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
+				2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */,
 				2C68EDFB1C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
 				2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */,
@@ -2018,6 +2078,7 @@
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
 				2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */,
+				2C35BE9E1C30CA19000E2C2C /* HorizontalView.m in Sources */,
 				2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */,
 				2C3E34CC1BF325520008F1B0 /* SecurityStrategy.m in Sources */,
 				2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */,
@@ -2046,6 +2107,7 @@
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */,
+				2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C4BE0471BE9A7B0004F1DAF /* MJRefreshAutoStateFooter.m in Sources */,
 				2CADEA2C1BB5364B009BBD28 /* StatusBarVCTL.m in Sources */,

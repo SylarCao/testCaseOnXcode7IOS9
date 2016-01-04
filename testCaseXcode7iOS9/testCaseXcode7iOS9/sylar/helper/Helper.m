@@ -22,11 +22,17 @@
 
 - (UIColor *) getRandomColor
 {
+    UIColor *rt = [self getRandomColorWithAlpha:1];
+    return rt;
+}
+
+- (UIColor *)getRandomColorWithAlpha:(CGFloat)alpha
+{
     NSInteger r = arc4random()%250;
     NSInteger g = arc4random()%250;
     NSInteger b = arc4random()%250;
     
-    UIColor *rt = [UIColor colorWithRed:r/255.9 green:g/255.9 blue:b/255.9 alpha:1];
+    UIColor *rt = [UIColor colorWithRed:r/255.9 green:g/255.9 blue:b/255.9 alpha:alpha];
     return rt;
 }
 

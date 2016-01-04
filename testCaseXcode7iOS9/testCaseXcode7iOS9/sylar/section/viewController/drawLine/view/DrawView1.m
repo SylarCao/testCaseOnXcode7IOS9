@@ -92,8 +92,8 @@
     
 //    [self drawDashLine1];
     
-//    [self drawRect1];
-//    [self drawLabel];
+    [self drawRect1];
+    [self drawLabel];
     
 //    // 画好多个点
 //    NSTimeInterval time1 = [NSDate timeIntervalSinceReferenceDate];
@@ -206,7 +206,7 @@
 {
     CGContextRef gc = UIGraphicsGetCurrentContext();
     
-    UIColor *aColor = [UIColor yellowColor];
+    UIColor *aColor = [UIColor redColor];
     const CGFloat *cg_color = CGColorGetComponents(aColor.CGColor);
     CGFloat red = cg_color[0];
     CGFloat green = cg_color[1];
@@ -215,7 +215,16 @@
     CGContextSetRGBStrokeColor(gc, red, green, blue, alpha);
     
     NSString *text = @"文字abcdefgh abcefghijklmnopqr";
-    [text drawInRect:CGRectMake(100, 100, 100, 100) withAttributes:@{NSForegroundColorAttributeName: aColor, NSFontAttributeName:[UIFont systemFontOfSize:20]}];
+    
+    
+    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.alignment = NSTextAlignmentRight;
+    
+//    NSParagraphStyle *ss = [[NSParagraphStyle alloc] init];
+//    ss.alignment = NSTextAlignmentRight;
+    
+    
+    [text drawInRect:CGRectMake(100, 100, 100, 100) withAttributes:@{NSForegroundColorAttributeName: aColor, NSFontAttributeName:[UIFont systemFontOfSize:20], NSParagraphStyleAttributeName: paragraphStyle}];
     
 }
 

@@ -24,9 +24,11 @@
 {
 //    [self fun1];
     
-    [self fun2];
+//    [self fun2];
     
-    [self fun3];
+//    [self fun3];
+    
+    [self fun4];
     
 }
 
@@ -78,6 +80,16 @@
 #ifdef kAAA
     NSLog(@"aaa defined 22222");
 #endif
+}
+
+- (void)fun4
+{
+    CGFloat f1 = 123456789012345678.12345;
+    NSLog(@"f1 = %f", f1);
+    
+    int n1 = 12345678901234;
+    NSLog(@"n1 = %d", n1);
+    
 }
 
 @end

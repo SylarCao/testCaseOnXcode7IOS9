@@ -21,6 +21,8 @@
     // Do any additional setup after loading the view from its nib.
     
     [self checkReleaseMode];
+    
+    [self checkSimulator];
 }
 
 - (void) checkReleaseMode
@@ -42,6 +44,22 @@
     
     
     NSArray *aa = nil;
+    
+}
+
+- (void)checkSimulator
+{
+    
+    if (TARGET_OS_IPHONE)
+    {
+        NSLog(@"TARGET_OS_IPHONE = 1");
+    }
+    
+    if (TARGET_IPHONE_SIMULATOR)
+    {
+        NSLog(@"TARGET_IPHONE_SIMULATOR = 1");
+    }
+    
     
 }
 

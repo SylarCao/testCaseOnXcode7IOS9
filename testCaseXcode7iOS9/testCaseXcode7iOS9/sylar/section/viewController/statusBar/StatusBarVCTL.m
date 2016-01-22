@@ -78,4 +78,28 @@
     return rt;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1)
+    {
+        [self statusBarColorChangeLight];
+    }
+    else if (indexPath.row == 2)
+    {
+        [self statusBarColorChangeDark];
+    }
+}
+
+
+#pragma mark - helper
+- (void)statusBarColorChangeLight
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
+
+- (void)statusBarColorChangeDark
+{
+   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
+
 @end

@@ -22,13 +22,13 @@
 
 - (IBAction)btn1:(id)sender
 {
-//    [self fun1];
+    [self fun1];
     
 //    [self fun2];
     
 //    [self fun3];
     
-    [self fun4];
+//    [self fun4];
     
 }
 
@@ -39,11 +39,22 @@
     NSString *a2 = @"a2";
     if ([arr containsObject:a2])
     {
-        NSLog(@"contain a2");
+        NSLog(@"contain a2");  // come here
     }
     else
     {
         NSLog(@"not contain a2");
+    }
+    
+    NSArray *arr2 = @[@"123", @"124", @"125", @"126"];
+    NSString *s1 = @"123";
+    if ([arr2 containsObject:s1])
+    {
+        NSLog(@"contain  s1");  // come here
+    }
+    else
+    {
+        NSLog(@"not contain s1");
     }
 
 }

@@ -20,7 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self fun1];
 }
+
+- (void)fun1
+{
+    UITextField *t1 = [[UITextField alloc] init];
+    t1.frame = CGRectMake(100, 200, 100, 40);
+    [self.view addSubview:t1];
+    t1.borderStyle = UITextBorderStyleRoundedRect;
+    t1.layer.borderColor = [UIColor redColor].CGColor;
+    t1.layer.borderWidth = 1;
+}
+
+
 
 - (IBAction)btn1:(id)sender
 {

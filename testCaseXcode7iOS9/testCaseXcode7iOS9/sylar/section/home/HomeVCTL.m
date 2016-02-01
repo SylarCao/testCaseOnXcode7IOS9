@@ -22,16 +22,19 @@
     [super viewDidLoad];
     
     // data
-    _vctls = @[@"testXibVCTL", @"NaviBarVCTL", @"ConstrainVCTL", @"TimerVCTL", @"MathProblem1VCTL", @"StatusBarVCTL",
-               
+    NSArray *ctrls = @[@"testXibVCTL", @"NaviBarVCTL",
+                             
+                             
                @"DeallocVCTL", @"DrawLineVCTL", @"MathProblem2VCTL", @"HorizontalVCTL", @"TouchEventVCTL", @"ResizeImageVCTL",
                @"ShareWeiXinVCTL", @"OpeniOS9VCTL", @"LifeTimeVCTL", @"ScreenFrameVCTL", @"ActionSheetVCTL", @"NavigationBarVCTL",
                @"MenuItemVCTL", @"JailBreakVCTL", @"DeleteInsertCellVCTL", @"JSPatchVCTL", @"ImageVCTL", @"CheckInstallQQVCTL",
-               @"ReadPDFVCTL", @"DPLocationVCTL", @"RefreshTableVCTL", @"AttributeStringVCTL", @"TouchIDVCTL",
+               @"ReadPDFVCTL", @"DPLocationVCTL", @"RefreshTableVCTL", @"AttributeStringVCTL", @"TouchIDVCTL", @"TimerVCTL",
                @"NumberKeyboardVCTL", @"ReleaseModeVCTL", @"ContactListVCTL", @"TestTableViewWidthVCTL", @"PushNotificationVCTL",
-               @"BuglyVCTL", @"JsonKitVCTL", @"MBProgressHudVCTL", @"SavePlistVCTL", @"IntrinsicSizeTableViewVCTL",
+               @"BuglyVCTL", @"JsonKitVCTL", @"MBProgressHudVCTL", @"SavePlistVCTL", @"IntrinsicSizeTableViewVCTL", @"StatusBarVCTL",
                @"StackViewVCTL", @"MGSwipeCellVCTL", @"LewPopupVCTL", @"ShakeTextFieldVCTL", @"PostNotificationVCTL",
-               @"StringArrayVCTL", @"Touch3DVCTL", @"Touch3D1VCTL", @"DragCollectionView"];
+               @"StringArrayVCTL", @"Touch3DVCTL", @"Touch3D1VCTL", @"DragCollectionView", @"MathProblem1VCTL", @"ConstrainVCTL"];
+    
+    _vctls = [self sortArray:ctrls];
     
     // table view
     [_table registerNib:[UINib nibWithNibName:@"HomeTableViewCell" bundle:nil] forCellReuseIdentifier:[HomeTableViewCell getCellId]];
@@ -59,10 +62,39 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *the_vctl = [[NSClassFromString([_vctls objectAtIndex:indexPath.row]) alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:the_vctl animated:YES];
-    
-    
-    
-    
+}
+
+- (NSArray *)sortArray:(NSArray *)array
+{
+    NSInteger dealloc_index = [array indexOfObject:@"DeallocVCTL"] + 1;
+    NSArray *rt = [array sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        NSComparisonResult result = NSOrderedSame;
+        
+        NSInteger index1 = [array indexOfObject:obj1];
+        NSInteger index2 = [array indexOfObject:obj2];
+        
+        if (index1 < dealloc_index && index2 < dealloc_index)
+        {
+            result = NSOrderedSame;
+        }
+        else if (index1 < dealloc_index)
+        {
+            result = NSOrderedAscending;
+        }
+        else if (index2 < dealloc_index)
+        {
+            result = NSOrderedDescending;
+        }
+        else
+        {
+            NSString *s1 = obj1;
+            NSString *s2 = obj2;
+            result = [s1 compare:s2];
+        }
+
+        return result;
+    }];
+    return rt;
 }
 
 @end

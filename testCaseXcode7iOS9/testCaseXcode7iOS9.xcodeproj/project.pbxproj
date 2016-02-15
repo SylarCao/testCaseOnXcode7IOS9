@@ -248,6 +248,8 @@
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
 		2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */; };
 		2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */; };
+		2CEEE03E1C71623C00891C1F /* FingerTapVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEE03C1C71623C00891C1F /* FingerTapVCTL.m */; };
+		2CEEE03F1C71623C00891C1F /* FingerTapVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEEE03D1C71623C00891C1F /* FingerTapVCTL.xib */; };
 		2CEF54961C1EE48D003D1E7F /* MathProblem2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF54941C1EE48D003D1E7F /* MathProblem2VCTL.m */; };
 		2CEF54971C1EE48D003D1E7F /* MathProblem2VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEF54951C1EE48D003D1E7F /* MathProblem2VCTL.xib */; };
 		2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF98F901BD4CF5B0001E209 /* ReleaseModeVCTL.m */; };
@@ -650,6 +652,9 @@
 		2CE329B91BBA3602008259DD /* ShakeTextFieldVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeTextFieldVCTL.h; sourceTree = "<group>"; };
 		2CE329BA1BBA3602008259DD /* ShakeTextFieldVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeTextFieldVCTL.m; sourceTree = "<group>"; };
 		2CE329BB1BBA3602008259DD /* ShakeTextFieldVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeTextFieldVCTL.xib; sourceTree = "<group>"; };
+		2CEEE03B1C71623C00891C1F /* FingerTapVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerTapVCTL.h; sourceTree = "<group>"; };
+		2CEEE03C1C71623C00891C1F /* FingerTapVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerTapVCTL.m; sourceTree = "<group>"; };
+		2CEEE03D1C71623C00891C1F /* FingerTapVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FingerTapVCTL.xib; sourceTree = "<group>"; };
 		2CEF54931C1EE48D003D1E7F /* MathProblem2VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem2VCTL.h; sourceTree = "<group>"; };
 		2CEF54941C1EE48D003D1E7F /* MathProblem2VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem2VCTL.m; sourceTree = "<group>"; };
 		2CEF54951C1EE48D003D1E7F /* MathProblem2VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem2VCTL.xib; sourceTree = "<group>"; };
@@ -1449,6 +1454,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CEEE03A1C71622800891C1F /* fingerTap */,
 				2C72B3151C3CF25F00269DEB /* resizeImage */,
 				2C899A861C3A384600B6669B /* touchEvent */,
 				2C35BE981C30C90B000E2C2C /* horizontalView */,
@@ -1801,6 +1807,16 @@
 			path = shakeTextField;
 			sourceTree = "<group>";
 		};
+		2CEEE03A1C71622800891C1F /* fingerTap */ = {
+			isa = PBXGroup;
+			children = (
+				2CEEE03B1C71623C00891C1F /* FingerTapVCTL.h */,
+				2CEEE03C1C71623C00891C1F /* FingerTapVCTL.m */,
+				2CEEE03D1C71623C00891C1F /* FingerTapVCTL.xib */,
+			);
+			path = fingerTap;
+			sourceTree = "<group>";
+		};
 		2CEF54921C1EE47B003D1E7F /* mathProblem2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1904,6 +1920,7 @@
 				2C4670201C100D0300DF57AE /* OpeniOS9VCTL.xib in Resources */,
 				2C1C92D41BD0A94C009573E6 /* NumberKeyboardVCTL.xib in Resources */,
 				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
+				2CEEE03F1C71623C00891C1F /* FingerTapVCTL.xib in Resources */,
 				2CDF0EAE1C16FA20009B8537 /* Dealloc2VCTL.xib in Resources */,
 				2CB381A11BCF413100D4F33F /* JsonKitVCTL.xib in Resources */,
 				2C4BE0571BE9A7F1004F1DAF /* RefreshTableViewCell.xib in Resources */,
@@ -2094,6 +2111,7 @@
 				2C4BE04B1BE9A7B0004F1DAF /* MJRefreshGifHeader.m in Sources */,
 				2C4BE0411BE9A7B0004F1DAF /* MJRefreshBackFooter.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
+				2CEEE03E1C71623C00891C1F /* FingerTapVCTL.m in Sources */,
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
 				2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */,
 				2C35BE9E1C30CA19000E2C2C /* HorizontalView.m in Sources */,

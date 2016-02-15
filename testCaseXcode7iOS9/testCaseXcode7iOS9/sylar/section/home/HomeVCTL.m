@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"testXibVCTL", @"NaviBarVCTL",
+    NSArray *ctrls = @[@"testXibVCTL", @"NaviBarVCTL", @"FingerTapVCTL",
                              
                              
                @"DeallocVCTL", @"DrawLineVCTL", @"MathProblem2VCTL", @"HorizontalVCTL", @"TouchEventVCTL", @"ResizeImageVCTL",

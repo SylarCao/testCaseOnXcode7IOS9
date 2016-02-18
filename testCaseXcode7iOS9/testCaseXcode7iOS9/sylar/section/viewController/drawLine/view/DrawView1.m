@@ -185,6 +185,8 @@
     CGContextSetLineWidth(gc, 2);
     CGContextAddLines(gc, m_points, _mPointsCount);
     CGContextStrokePath(gc);
+    
+    
 }
 
 - (void)drawRect1

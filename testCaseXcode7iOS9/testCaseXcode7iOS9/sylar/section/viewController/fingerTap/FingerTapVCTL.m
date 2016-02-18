@@ -25,6 +25,8 @@
 //    _viewFinger.multipleTouchEnabled = YES;
     
     [self addGesture];
+    
+    [self addMask];
 }
 
 - (void)addGesture
@@ -41,6 +43,13 @@
     [_viewFinger addGestureRecognizer:pinch];
 }
 
+- (void)addMask
+{
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 500, 400)];
+    v1.backgroundColor = [UIColor yellowColor];
+//    v1.userInteractionEnabled = NO;
+    [self.view addSubview:v1];
+}
 
 
 #pragma mark - gesture

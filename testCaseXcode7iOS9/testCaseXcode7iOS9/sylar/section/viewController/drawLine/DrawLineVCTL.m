@@ -9,11 +9,14 @@
 #import "DrawLineVCTL.h"
 #import "Gdip.h"
 #import "DrawView1.h"
+#import "DrawView2.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface DrawLineVCTL ()
 
 
 @property (nonatomic, strong) DrawView1 *view1;
+
+@property (nonatomic, strong) DrawView2 *view2;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,6 +27,8 @@
     [self addView1];
     
     [self drawLine1];
+    
+    [self addDrawView2];
 }
 
 - (IBAction)btn1:(id)sender
@@ -37,6 +42,13 @@
     [_view1 setNeedsDisplay];
     
 //    [self test1];
+}
+
+- (void)addDrawView2
+{
+    _view2 = [[DrawView2 alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
+    _view2.backgroundColor = [UIColor redColor];
+    [_view1 addSubview:_view2];
 }
 
 - (void)test1

@@ -162,6 +162,9 @@
 		2C72B3191C3CF26E00269DEB /* ResizeImageVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */; };
 		2C72B31A1C3CF26E00269DEB /* ResizeImageVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
+		2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33191C759C2E002A08AD /* DrawView2.m */; };
+		2C7A33251C75BE85002A08AD /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33231C75BE85002A08AD /* XOptionVCTL.m */; };
+		2C7A33261C75BE85002A08AD /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A33241C75BE85002A08AD /* XOptionVCTL.xib */; };
 		2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A881C3A385A00B6669B /* TouchEventVCTL.m */; };
 		2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */; };
 		2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A8D1C3A387F00B6669B /* TouchEventView.m */; };
@@ -512,6 +515,11 @@
 		2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeImageVCTL.m; sourceTree = "<group>"; };
 		2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResizeImageVCTL.xib; sourceTree = "<group>"; };
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
+		2C7A33181C759C2E002A08AD /* DrawView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView2.h; sourceTree = "<group>"; };
+		2C7A33191C759C2E002A08AD /* DrawView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView2.m; sourceTree = "<group>"; };
+		2C7A33221C75BE85002A08AD /* XOptionVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XOptionVCTL.h; sourceTree = "<group>"; };
+		2C7A33231C75BE85002A08AD /* XOptionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOptionVCTL.m; sourceTree = "<group>"; };
+		2C7A33241C75BE85002A08AD /* XOptionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XOptionVCTL.xib; sourceTree = "<group>"; };
 		2C899A871C3A385A00B6669B /* TouchEventVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventVCTL.h; sourceTree = "<group>"; };
 		2C899A881C3A385A00B6669B /* TouchEventVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventVCTL.m; sourceTree = "<group>"; };
 		2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchEventVCTL.xib; sourceTree = "<group>"; };
@@ -1298,6 +1306,8 @@
 			children = (
 				2C68EE051C1949F4009E1396 /* DrawView1.h */,
 				2C68EE061C1949F4009E1396 /* DrawView1.m */,
+				2C7A33181C759C2E002A08AD /* DrawView2.h */,
+				2C7A33191C759C2E002A08AD /* DrawView2.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1318,6 +1328,16 @@
 				2C7584A01C740EAC00614D17 /* small_30.png */,
 			);
 			path = 1;
+			sourceTree = "<group>";
+		};
+		2C7A33211C75BE72002A08AD /* XOption */ = {
+			isa = PBXGroup;
+			children = (
+				2C7A33221C75BE85002A08AD /* XOptionVCTL.h */,
+				2C7A33231C75BE85002A08AD /* XOptionVCTL.m */,
+				2C7A33241C75BE85002A08AD /* XOptionVCTL.xib */,
+			);
+			path = XOption;
 			sourceTree = "<group>";
 		};
 		2C899A861C3A384600B6669B /* touchEvent */ = {
@@ -1465,6 +1485,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A33211C75BE72002A08AD /* XOption */,
 				2CEEE03A1C71622800891C1F /* fingerTap */,
 				2C72B3151C3CF25F00269DEB /* resizeImage */,
 				2C899A861C3A384600B6669B /* touchEvent */,
@@ -1973,6 +1994,7 @@
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */,
 				2CA112CC1BB29EAA00406685 /* testXibVCTL.xib in Resources */,
+				2C7A33261C75BE85002A08AD /* XOptionVCTL.xib in Resources */,
 				2C3A83D71BB8EA4C00A335B5 /* MGSwipeCellVCTL.xib in Resources */,
 				2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */,
 				2C2A07FA1BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib in Resources */,
@@ -2069,6 +2091,7 @@
 				2C2EC2FC1BE726F4008197C3 /* DPHelper.m in Sources */,
 				2C68EDF81C194102009E1396 /* WXApiManager.m in Sources */,
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
+				2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
 				2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */,
@@ -2150,6 +2173,7 @@
 				2C68EDF91C194102009E1396 /* WXApiRequestHandler.m in Sources */,
 				2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */,
 				2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */,
+				2C7A33251C75BE85002A08AD /* XOptionVCTL.m in Sources */,
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
 				2C4BE0431BE9A7B0004F1DAF /* MJRefreshFooter.m in Sources */,
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,

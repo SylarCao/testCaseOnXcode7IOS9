@@ -22,7 +22,7 @@
 
 - (void)fun1
 {
-    NSInteger op = op_test2|op_test3;
+    NSInteger op = op_test0;
     
     if (op & op_test2)
     {

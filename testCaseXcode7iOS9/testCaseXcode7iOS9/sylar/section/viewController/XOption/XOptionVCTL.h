@@ -10,7 +10,7 @@
 #import "BasicVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 typedef NS_OPTIONS(NSInteger, OptionTest) {
-    op_test0   = -1,
+    op_test0   = 0xFF,  // -1 也可以
     op_test2   = 1 << 0,
     op_test3   = 1 << 1,
     op_test4   = 1 << 2,

@@ -25,6 +25,11 @@
     NSLog(@"size = %f, %f", rr.size.width, rr.size.height);
     
     
+    // 5 for  (320, 568)
+    // 6 for  (375,667)
+    // 6p for (414, 736)
+    
+    
     _lb1.text = [NSString stringWithFormat:@"size = %f, %f", rr.size.width, rr.size.height];
     
     

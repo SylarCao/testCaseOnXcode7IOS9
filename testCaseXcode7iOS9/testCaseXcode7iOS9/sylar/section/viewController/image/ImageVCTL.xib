@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageVCTL">
             <connections>
                 <outlet property="imgView" destination="ewf-la-CrK" id="6o8-9q-mBy"/>
+                <outlet property="imv1" destination="Zd6-fh-ThM" id="lR2-ne-0HA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,17 +27,24 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewf-la-CrK">
                     <rect key="frame" x="124" y="293" width="183" height="137"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zd6-fh-ThM">
+                    <rect key="frame" x="244" y="164" width="85" height="85"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ewf-la-CrK" secondAttribute="bottom" constant="237" id="4Xw-3L-9Mz"/>
                 <constraint firstAttribute="trailing" secondItem="ewf-la-CrK" secondAttribute="trailing" constant="68" id="7MJ-bk-iqK"/>
+                <constraint firstItem="Zd6-fh-ThM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="FT1-hv-Eoi"/>
+                <constraint firstItem="Zd6-fh-ThM" firstAttribute="leading" secondItem="Zj6-2t-Xn2" secondAttribute="trailing" constant="138" id="cCe-fs-QhK"/>
+                <constraint firstAttribute="trailing" secondItem="Zd6-fh-ThM" secondAttribute="trailing" constant="46" id="f1e-oz-ePY"/>
                 <constraint firstItem="ewf-la-CrK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="293" id="fah-Oj-fOU"/>
                 <constraint firstAttribute="trailing" secondItem="Zj6-2t-Xn2" secondAttribute="trailing" constant="269" id="gBs-R2-pXw"/>
                 <constraint firstAttribute="bottom" secondItem="Zj6-2t-Xn2" secondAttribute="bottom" constant="460" id="hQ2-8s-P9R"/>
                 <constraint firstItem="Zj6-2t-Xn2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="ied-0K-g7z"/>
                 <constraint firstItem="Zj6-2t-Xn2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="kFX-JF-c79"/>
                 <constraint firstItem="ewf-la-CrK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="124" id="lJS-fh-p1M"/>
+                <constraint firstItem="ewf-la-CrK" firstAttribute="top" secondItem="Zd6-fh-ThM" secondAttribute="bottom" constant="44" id="n9s-ov-42h"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="503.5" y="364.5"/>

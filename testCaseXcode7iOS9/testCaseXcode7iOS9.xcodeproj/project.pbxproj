@@ -161,6 +161,7 @@
 		2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EE061C1949F4009E1396 /* DrawView1.m */; };
 		2C72B3191C3CF26E00269DEB /* ResizeImageVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */; };
 		2C72B31A1C3CF26E00269DEB /* ResizeImageVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */; };
+		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
 		2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A881C3A385A00B6669B /* TouchEventVCTL.m */; };
 		2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */; };
 		2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C899A8D1C3A387F00B6669B /* TouchEventView.m */; };
@@ -510,6 +511,7 @@
 		2C72B3161C3CF26E00269DEB /* ResizeImageVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeImageVCTL.h; sourceTree = "<group>"; };
 		2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeImageVCTL.m; sourceTree = "<group>"; };
 		2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResizeImageVCTL.xib; sourceTree = "<group>"; };
+		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
 		2C899A871C3A385A00B6669B /* TouchEventVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventVCTL.h; sourceTree = "<group>"; };
 		2C899A881C3A385A00B6669B /* TouchEventVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventVCTL.m; sourceTree = "<group>"; };
 		2C899A891C3A385A00B6669B /* TouchEventVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchEventVCTL.xib; sourceTree = "<group>"; };
@@ -1228,6 +1230,7 @@
 		2C65D7371BB3A35D00D22F29 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				2C75849F1C740EAC00614D17 /* 1 */,
 				2CA1F89E1C0BF3D600089E14 /* sgs */,
 				2C40EB031BE0C40500074AB8 /* pdf */,
 				2C65D73F1BB3A38500D22F29 /* mathProblem */,
@@ -1307,6 +1310,14 @@
 				2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */,
 			);
 			path = resizeImage;
+			sourceTree = "<group>";
+		};
+		2C75849F1C740EAC00614D17 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				2C7584A01C740EAC00614D17 /* small_30.png */,
+			);
+			path = 1;
 			sourceTree = "<group>";
 		};
 		2C899A861C3A384600B6669B /* touchEvent */ = {
@@ -1905,6 +1916,7 @@
 				2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2C3C85671BCCD94F009C4D24 /* BuglyVCTL.xib in Resources */,
+				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C40EAFD1BE0C1AF00074AB8 /* ReadPDFVCTL.xib in Resources */,
 				2C08A8361BB931B60077FE53 /* LewPopupVCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,

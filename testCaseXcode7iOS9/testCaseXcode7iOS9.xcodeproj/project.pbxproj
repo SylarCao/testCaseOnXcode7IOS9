@@ -177,6 +177,8 @@
 		2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB641BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib */; };
 		2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */; };
 		2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */; };
+		2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */; };
+		2C9B57111C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9B570F1C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
 		2CA112921BB29E4A00406685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112911BB29E4A00406685 /* ViewController.m */; };
@@ -538,6 +540,9 @@
 		2C92DFE21BF9A303009CA50A /* JailBreakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailBreakVCTL.h; sourceTree = "<group>"; };
 		2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailBreakVCTL.m; sourceTree = "<group>"; };
 		2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JailBreakVCTL.xib; sourceTree = "<group>"; };
+		2C9B570D1C7FEC850073B0D1 /* ScrollViewZoomVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewZoomVCTL.h; sourceTree = "<group>"; };
+		2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewZoomVCTL.m; sourceTree = "<group>"; };
+		2C9B570F1C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewZoomVCTL.xib; sourceTree = "<group>"; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA1128D1BB29E4A00406685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1378,6 +1383,16 @@
 			path = jailbreak;
 			sourceTree = "<group>";
 		};
+		2C9B570C1C7FEC640073B0D1 /* scrollViewZoom */ = {
+			isa = PBXGroup;
+			children = (
+				2C9B570D1C7FEC850073B0D1 /* ScrollViewZoomVCTL.h */,
+				2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */,
+				2C9B570F1C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib */,
+			);
+			path = scrollViewZoom;
+			sourceTree = "<group>";
+		};
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
@@ -1485,6 +1500,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C9B570C1C7FEC640073B0D1 /* scrollViewZoom */,
 				2C7A33211C75BE72002A08AD /* XOption */,
 				2CEEE03A1C71622800891C1F /* fingerTap */,
 				2C72B3151C3CF25F00269DEB /* resizeImage */,
@@ -1980,6 +1996,7 @@
 				2C46705E1C1019E200DF57AE /* Life1VCTL.xib in Resources */,
 				2C23A07F1C0D4268008B4712 /* ShareWeiXinVCTL.xib in Resources */,
 				2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */,
+				2C9B57111C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib in Resources */,
 				2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
 				2CEF54971C1EE48D003D1E7F /* MathProblem2VCTL.xib in Resources */,
@@ -2101,6 +2118,7 @@
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
 				2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */,
 				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
+				2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */,
 				2C23A07E1C0D4268008B4712 /* ShareWeiXinVCTL.m in Sources */,
 				2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */,
 				2CB381A01BCF413100D4F33F /* JsonKitVCTL.m in Sources */,

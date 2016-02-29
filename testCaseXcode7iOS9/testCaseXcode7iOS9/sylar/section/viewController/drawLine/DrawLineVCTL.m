@@ -26,9 +26,9 @@
     [super viewDidLoad];
     [self addView1];
     
-    [self drawLine1];
+//    [self drawLine1];
     
-    [self addDrawView2];
+//    [self addDrawView2];
 }
 
 - (IBAction)btn1:(id)sender

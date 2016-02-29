@@ -78,28 +78,22 @@
     NSLog(@"cancel");
 }
 
-//- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact
-//{
-//    NSLog(@"didSelectContact");
-//}
-
 - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty
 {
-    NSLog(@"didSelectContactProperty = %@ - %@ - %@", contactProperty.key, contactProperty.identifier, contactProperty.label);
-    NSArray * aaa = contactProperty.contact.phoneNumbers;
-    CNContact *cc = contactProperty.contact;
-    id vv = contactProperty.value;
-    id a1 = contactProperty.key;
-    id a12 = contactProperty.identifier;
-    id a3 = contactProperty.label;
-    CNLabeledValue *lbv = contactProperty.contact.phoneNumbers.firstObject;
-    CNPhoneNumber *ss = lbv.value;
-    NSLog(@"sss = %@", ss.stringValue);
-    NSLog(@"ccc = %@", contactProperty.contact.phoneNumbers);
-    NSLog(@"aaa = %@", aaa);
     
-    NSLog(@"ss = %@", ss);
-    NSLog(@"dd = %@", contactProperty);
+    NSString *the_id = contactProperty.identifier;
+    NSString *the_number = nil;
+    for (CNLabeledValue *each in contactProperty.contact.phoneNumbers)
+    {
+        if ([the_id isEqualToString:each.identifier])
+        {
+            CNPhoneNumber *cn_number = each.value;
+            the_number = cn_number.stringValue;
+            break;
+        }
+    }
+    NSLog(@"ios9 select number = %@", the_number);
+    
 }
 
 

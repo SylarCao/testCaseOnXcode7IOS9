@@ -32,7 +32,7 @@
 - (void)addGesture
 {
 //    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] init];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
     [_viewFinger addGestureRecognizer:pan];
     
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGesture)];
@@ -41,6 +41,9 @@
     
     UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchGesture:)];
     [_viewFinger addGestureRecognizer:pinch];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [_viewFinger addGestureRecognizer:tap];
 }
 
 - (void)addMask
@@ -48,25 +51,30 @@
     UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 500, 400)];
     v1.backgroundColor = [UIColor yellowColor];
 //    v1.userInteractionEnabled = NO;
-    [self.view addSubview:v1];
+//    [_viewFinger addSubview:v1];
 }
 
 
 #pragma mark - gesture
-- (void)panGesture
+- (void)panGesture:(UIPanGestureRecognizer *)gesture
 {
-    NSLog(@"pan");
+    NSLog(@"pan = %ld", gesture.state);
 }
 
 - (void)pinchGesture:(UIPinchGestureRecognizer *)gesture
 {
-    NSLog(@"pinch = %f", gesture.scale);
+    NSLog(@"pinch = %f - (%ld) - （%f）", gesture.scale, gesture.numberOfTouches, gesture.velocity);
     _viewPoint.center = [gesture locationInView:_viewFinger];
 }
 
 - (void)swipeGesture
 {
     NSLog(@"swipe");
+}
+
+- (void)tapGesture:(UITapGestureRecognizer *)gesture
+{
+    NSLog(@"tap");
 }
 
 //#pragma mark - touch event

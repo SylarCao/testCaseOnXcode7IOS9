@@ -94,12 +94,28 @@
     
     [self drawRect1];
     [self drawLabel];
+    [self drawRectOutside];
     
 //    // 画好多个点
 //    NSTimeInterval time1 = [NSDate timeIntervalSinceReferenceDate];
 //    [self drawMPoints];
 //    NSTimeInterval time2 = [NSDate timeIntervalSinceReferenceDate];
 //    NSLog(@"time = %f", time2-time1);
+}
+
+- (void)drawRectOutside
+{
+    CGContextRef gc = UIGraphicsGetCurrentContext();
+    UIColor *aColor = [UIColor greenColor];
+    const CGFloat *cg_color = CGColorGetComponents(aColor.CGColor);
+    CGContextSetStrokeColor(gc, cg_color);
+    CGContextStrokeRect(gc,CGRectMake(250, 100, 100, 100));  //画方框
+    
+    // 填充矩形颜色
+    aColor = [UIColor blueColor];
+    cg_color = CGColorGetComponents(aColor.CGColor);
+    CGContextSetFillColor(gc, cg_color);
+    CGContextFillRect(gc, CGRectMake(250, 100, 100, 100));
 }
 
 

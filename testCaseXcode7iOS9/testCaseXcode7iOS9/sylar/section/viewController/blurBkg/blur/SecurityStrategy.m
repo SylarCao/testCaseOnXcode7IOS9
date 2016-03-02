@@ -69,6 +69,7 @@
    
     CGImageRef imageRefRect =CGImageCreateWithImageInRect(imageRef, rect);
     UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];
+    CGImageRelease(imageRefRect);
     return sendImage;
 }
 

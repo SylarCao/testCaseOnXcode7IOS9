@@ -38,7 +38,7 @@
     UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"斋打开" localizedTitle:@"斋打开"];
     UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"弹框" localizedTitle:@"弹框"];
     NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem1, shortItem2, nil];
-    NSLog(@"%@", shortItems);
+//    NSLog(@"%@", shortItems);
     if (kIOSVersion(9))
         [[UIApplication sharedApplication] setShortcutItems:shortItems];
     

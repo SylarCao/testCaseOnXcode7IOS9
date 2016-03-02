@@ -54,8 +54,8 @@
     }
     [_locationManager stopUpdatingLocation];
     [_locationManager startUpdatingLocation];
-    
 }
+
 
 - (void) cbWithLocation:(CLLocation *)location
 {

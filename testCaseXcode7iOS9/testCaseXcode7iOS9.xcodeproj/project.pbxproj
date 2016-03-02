@@ -114,6 +114,7 @@
 		2C46705D1C1019E200DF57AE /* Life1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46705B1C1019E200DF57AE /* Life1VCTL.m */; };
 		2C46705E1C1019E200DF57AE /* Life1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46705C1C1019E200DF57AE /* Life1VCTL.xib */; };
 		2C4670611C1019F400DF57AE /* Life2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4670601C1019F400DF57AE /* Life2VCTL.m */; };
+		2C48A32B1C86832D007A73E9 /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A32A1C86832D007A73E9 /* LocationXiangYi.gpx */; };
 		2C4BE0111BE9A1EB004F1DAF /* RefreshTableVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */; };
 		2C4BE0121BE9A1EB004F1DAF /* RefreshTableVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */; };
 		2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE0161BE9A7B0004F1DAF /* MJRefreshAutoFooter.m */; };
@@ -434,6 +435,7 @@
 		2C46705C1C1019E200DF57AE /* Life1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Life1VCTL.xib; sourceTree = "<group>"; };
 		2C46705F1C1019F400DF57AE /* Life2VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Life2VCTL.h; sourceTree = "<group>"; };
 		2C4670601C1019F400DF57AE /* Life2VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Life2VCTL.m; sourceTree = "<group>"; };
+		2C48A32A1C86832D007A73E9 /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2C4BE00E1BE9A1EB004F1DAF /* RefreshTableVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableVCTL.h; sourceTree = "<group>"; };
 		2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableVCTL.m; sourceTree = "<group>"; };
 		2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshTableVCTL.xib; sourceTree = "<group>"; };
@@ -862,6 +864,7 @@
 				2C2EC2F71BE72687008197C3 /* DPLocationVCTL.xib */,
 				2C2EC2FA1BE726F4008197C3 /* DPHelper.h */,
 				2C2EC2FB1BE726F4008197C3 /* DPHelper.m */,
+				2C48A32A1C86832D007A73E9 /* LocationXiangYi.gpx */,
 			);
 			path = dpLocation;
 			sourceTree = "<group>";
@@ -1988,6 +1991,7 @@
 				2CE092FB1BC63FE500027EED /* StringArrayVCTL.xib in Resources */,
 				2CCB28961BCB4421005E9B85 /* DragCollectionView.xib in Resources */,
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
+				2C48A32B1C86832D007A73E9 /* LocationXiangYi.gpx in Resources */,
 				2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */,
 				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,

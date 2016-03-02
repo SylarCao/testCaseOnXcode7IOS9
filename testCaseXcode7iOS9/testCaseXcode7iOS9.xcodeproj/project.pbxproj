@@ -106,7 +106,7 @@
 		2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EB0F1BE0CA8A00074AB8 /* pp2.pdf */; };
 		2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4225471C17FD8500009D5F /* DrawLineVCTL.m */; };
 		2C42254A1C17FD8500009D5F /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4225481C17FD8500009D5F /* DrawLineVCTL.xib */; };
-		2C42254E1C17FDDD00009D5F /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C42254D1C17FDDD00009D5F /* Gdip.m */; };
+		2C42254E1C17FDDD00009D5F /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C42254D1C17FDDD00009D5F /* Gdip.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		2C46701F1C100D0300DF57AE /* OpeniOS9VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46701D1C100D0300DF57AE /* OpeniOS9VCTL.m */; };
 		2C4670201C100D0300DF57AE /* OpeniOS9VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C46701E1C100D0300DF57AE /* OpeniOS9VCTL.xib */; };
 		2C4670581C1019AD00DF57AE /* LifeTimeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4670561C1019AD00DF57AE /* LifeTimeVCTL.m */; };
@@ -2339,6 +2339,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-unused-variable",
+				);
 			};
 			name = Debug;
 		};
@@ -2365,6 +2369,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				WARNING_CFLAGS = (
+					"-Wno-shorten-64-to-32",
+					"-Wno-unused-variable",
+				);
 			};
 			name = Release;
 		};

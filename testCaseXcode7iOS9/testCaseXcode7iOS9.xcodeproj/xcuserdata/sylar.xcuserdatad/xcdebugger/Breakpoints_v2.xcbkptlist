@@ -340,11 +340,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/stringArrayFunction/StringArrayVCTL.m"
-            timestampString = "474789804.415972"
+            timestampString = "478589371.550477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "-fun4"
             landmarkType = "5">
          </BreakpointContent>

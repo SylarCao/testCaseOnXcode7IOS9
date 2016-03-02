@@ -257,6 +257,7 @@
 
 - (void)drawRect1:(CGContextRef)gc color:(UIColor *)color
 {
+    
     // 话一个空心的矩形
     const CGFloat *cg_color = CGColorGetComponents(color.CGColor);
     CGFloat red = cg_color[0];
@@ -281,7 +282,10 @@
     CGContextStrokePath(gc);
     CGContextFlush(gc);
     CGContextRestoreGState(gc);
+
 }
+
+
 
 - (void)fun1:(CGContextRef)gc color:(UIColor *)color
 {

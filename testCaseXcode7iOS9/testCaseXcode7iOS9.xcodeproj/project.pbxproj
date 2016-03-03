@@ -116,6 +116,14 @@
 		2C4670611C1019F400DF57AE /* Life2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4670601C1019F400DF57AE /* Life2VCTL.m */; };
 		2C48A32B1C86832D007A73E9 /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A32A1C86832D007A73E9 /* LocationXiangYi.gpx */; };
 		2C48A32D1C86B33C007A73E9 /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A32C1C86B33C007A73E9 /* LocationGTJA.gpx */; };
+		2C48A3321C87D179007A73E9 /* HorizonScrollVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A3301C87D179007A73E9 /* HorizonScrollVCTL.m */; };
+		2C48A3331C87D179007A73E9 /* HorizonScrollVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A3311C87D179007A73E9 /* HorizonScrollVCTL.xib */; };
+		2C48A3371C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A3351C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m */; };
+		2C48A3381C87D1A3007A73E9 /* HorizontalScrollCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A3361C87D1A3007A73E9 /* HorizontalScrollCollectionCell.xib */; };
+		2C48A33C1C87E17F007A73E9 /* HorizonScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A33B1C87E17F007A73E9 /* HorizonScrollTitleView.m */; };
+		2C48A33E1C87E18D007A73E9 /* HorizonScrollTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A33D1C87E18D007A73E9 /* HorizonScrollTitleView.xib */; };
+		2C48A3421C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A3401C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m */; };
+		2C48A3431C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A3411C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib */; };
 		2C4BE0111BE9A1EB004F1DAF /* RefreshTableVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */; };
 		2C4BE0121BE9A1EB004F1DAF /* RefreshTableVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */; };
 		2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE0161BE9A7B0004F1DAF /* MJRefreshAutoFooter.m */; };
@@ -438,6 +446,18 @@
 		2C4670601C1019F400DF57AE /* Life2VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Life2VCTL.m; sourceTree = "<group>"; };
 		2C48A32A1C86832D007A73E9 /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2C48A32C1C86B33C007A73E9 /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
+		2C48A32F1C87D179007A73E9 /* HorizonScrollVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonScrollVCTL.h; sourceTree = "<group>"; };
+		2C48A3301C87D179007A73E9 /* HorizonScrollVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollVCTL.m; sourceTree = "<group>"; };
+		2C48A3311C87D179007A73E9 /* HorizonScrollVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizonScrollVCTL.xib; sourceTree = "<group>"; };
+		2C48A3341C87D1A3007A73E9 /* HorizontalScrollCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollCollectionCell.h; sourceTree = "<group>"; };
+		2C48A3351C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollCollectionCell.m; sourceTree = "<group>"; };
+		2C48A3361C87D1A3007A73E9 /* HorizontalScrollCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalScrollCollectionCell.xib; sourceTree = "<group>"; };
+		2C48A33A1C87E17F007A73E9 /* HorizonScrollTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonScrollTitleView.h; sourceTree = "<group>"; };
+		2C48A33B1C87E17F007A73E9 /* HorizonScrollTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollTitleView.m; sourceTree = "<group>"; };
+		2C48A33D1C87E18D007A73E9 /* HorizonScrollTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizonScrollTitleView.xib; sourceTree = "<group>"; };
+		2C48A33F1C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonScrollTitleCollectionCell.h; sourceTree = "<group>"; };
+		2C48A3401C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollTitleCollectionCell.m; sourceTree = "<group>"; };
+		2C48A3411C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizonScrollTitleCollectionCell.xib; sourceTree = "<group>"; };
 		2C4BE00E1BE9A1EB004F1DAF /* RefreshTableVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableVCTL.h; sourceTree = "<group>"; };
 		2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableVCTL.m; sourceTree = "<group>"; };
 		2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshTableVCTL.xib; sourceTree = "<group>"; };
@@ -1107,6 +1127,33 @@
 			path = viewcontrollerLifeTime;
 			sourceTree = "<group>";
 		};
+		2C48A32E1C87D166007A73E9 /* horizonScroll */ = {
+			isa = PBXGroup;
+			children = (
+				2C48A3391C87E16C007A73E9 /* titleView */,
+				2C48A32F1C87D179007A73E9 /* HorizonScrollVCTL.h */,
+				2C48A3301C87D179007A73E9 /* HorizonScrollVCTL.m */,
+				2C48A3311C87D179007A73E9 /* HorizonScrollVCTL.xib */,
+				2C48A3341C87D1A3007A73E9 /* HorizontalScrollCollectionCell.h */,
+				2C48A3351C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m */,
+				2C48A3361C87D1A3007A73E9 /* HorizontalScrollCollectionCell.xib */,
+			);
+			path = horizonScroll;
+			sourceTree = "<group>";
+		};
+		2C48A3391C87E16C007A73E9 /* titleView */ = {
+			isa = PBXGroup;
+			children = (
+				2C48A33A1C87E17F007A73E9 /* HorizonScrollTitleView.h */,
+				2C48A33B1C87E17F007A73E9 /* HorizonScrollTitleView.m */,
+				2C48A33D1C87E18D007A73E9 /* HorizonScrollTitleView.xib */,
+				2C48A33F1C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.h */,
+				2C48A3401C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m */,
+				2C48A3411C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib */,
+			);
+			path = titleView;
+			sourceTree = "<group>";
+		};
 		2C4BE00D1BE9A1D9004F1DAF /* refreshTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1506,6 +1553,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C48A32E1C87D166007A73E9 /* horizonScroll */,
 				2C9B570C1C7FEC640073B0D1 /* scrollViewZoom */,
 				2C7A33211C75BE72002A08AD /* XOption */,
 				2CEEE03A1C71622800891C1F /* fingerTap */,
@@ -1959,6 +2007,7 @@
 				2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2C3C85671BCCD94F009C4D24 /* BuglyVCTL.xib in Resources */,
+				2C48A3381C87D1A3007A73E9 /* HorizontalScrollCollectionCell.xib in Resources */,
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C40EAFD1BE0C1AF00074AB8 /* ReadPDFVCTL.xib in Resources */,
 				2C08A8361BB931B60077FE53 /* LewPopupVCTL.xib in Resources */,
@@ -2023,9 +2072,11 @@
 				2C3A83D71BB8EA4C00A335B5 /* MGSwipeCellVCTL.xib in Resources */,
 				2CE329BD1BBA3602008259DD /* ShakeTextFieldVCTL.xib in Resources */,
 				2C2A07FA1BCFA99700D6ED86 /* IntrinsicDetailVCTL.xib in Resources */,
+				2C48A3431C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib in Resources */,
 				2C38CA5F1C151E7600492AF6 /* ScreenFrameVCTL.xib in Resources */,
 				2C4BE0121BE9A1EB004F1DAF /* RefreshTableVCTL.xib in Resources */,
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
+				2C48A33E1C87E18D007A73E9 /* HorizonScrollTitleView.xib in Resources */,
 				2C42254A1C17FD8500009D5F /* DrawLineVCTL.xib in Resources */,
 				2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */,
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
@@ -2037,6 +2088,7 @@
 				2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */,
 				2CADEA2D1BB5364B009BBD28 /* StatusBarVCTL.xib in Resources */,
 				2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */,
+				2C48A3331C87D179007A73E9 /* HorizonScrollVCTL.xib in Resources */,
 				2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
@@ -2084,6 +2136,7 @@
 				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
 				2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */,
+				2C48A3421C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
 				2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */,
 				2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */,
@@ -2118,6 +2171,7 @@
 				2CA112CD1BB29EAA00406685 /* X1.m in Sources */,
 				2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
+				2C48A33C1C87E17F007A73E9 /* HorizonScrollTitleView.m in Sources */,
 				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
 				2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */,
 				2C3E34CD1BF325520008F1B0 /* UIImage+BlurGlass.m in Sources */,
@@ -2126,6 +2180,7 @@
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
 				2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */,
 				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
+				2C48A3321C87D179007A73E9 /* HorizonScrollVCTL.m in Sources */,
 				2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */,
 				2C23A07E1C0D4268008B4712 /* ShareWeiXinVCTL.m in Sources */,
 				2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */,
@@ -2138,6 +2193,7 @@
 				2C4BE04C1BE9A7B0004F1DAF /* MJRefreshNormalHeader.m in Sources */,
 				2CA112C41BB29EAA00406685 /* HomeTableViewCell.m in Sources */,
 				2C4BE0461BE9A7B0004F1DAF /* MJRefreshAutoNormalFooter.m in Sources */,
+				2C48A3371C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m in Sources */,
 				2C2EC3381BE74021008197C3 /* UIAlertView+AFNetworking.m in Sources */,
 				2C2EC3341BE74021008197C3 /* AFURLResponseSerialization.m in Sources */,
 				2C4BE0441BE9A7B0004F1DAF /* MJRefreshHeader.m in Sources */,

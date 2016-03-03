@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-N9-rNy">
-                    <rect key="frame" x="10" y="10" width="300" height="548"/>
+                    <rect key="frame" x="10" y="10" width="300" height="258"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-9y-jfy">
                             <rect key="frame" x="50" y="100" width="20" height="20"/>
@@ -40,7 +40,7 @@
             <constraints>
                 <constraint firstItem="Hha-N9-rNy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="L7w-3s-fRl"/>
                 <constraint firstAttribute="trailing" secondItem="Hha-N9-rNy" secondAttribute="trailing" constant="10" id="QRs-wc-dV0"/>
-                <constraint firstAttribute="bottom" secondItem="Hha-N9-rNy" secondAttribute="bottom" constant="10" id="rQK-1D-RNC"/>
+                <constraint firstAttribute="bottom" secondItem="Hha-N9-rNy" secondAttribute="bottom" constant="300" id="rQK-1D-RNC"/>
                 <constraint firstItem="Hha-N9-rNy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="zG4-6u-T9q"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

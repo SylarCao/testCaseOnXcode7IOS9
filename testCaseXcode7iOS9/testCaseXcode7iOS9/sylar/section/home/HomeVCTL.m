@@ -22,9 +22,9 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"testXibVCTL", @"NaviBarVCTL", @"FingerTapVCTL", @"XOptionVCTL", @"ScrollViewZoomVCTL", @"HorizonScrollVCTL",
-                             
-                             
+    NSArray *ctrls = @[ @"UILabelVCTL",
+                        
+               @"testXibVCTL", @"NaviBarVCTL", @"FingerTapVCTL", @"XOptionVCTL", @"ScrollViewZoomVCTL", @"HorizonScrollVCTL",
                @"DeallocVCTL", @"DrawLineVCTL", @"MathProblem2VCTL", @"HorizontalVCTL", @"TouchEventVCTL", @"ResizeImageVCTL",
                @"ShareWeiXinVCTL", @"OpeniOS9VCTL", @"LifeTimeVCTL", @"ScreenFrameVCTL", @"ActionSheetVCTL", @"NavigationBarVCTL",
                @"MenuItemVCTL", @"JailBreakVCTL", @"DeleteInsertCellVCTL", @"JSPatchVCTL", @"ImageVCTL", @"CheckInstallQQVCTL",
@@ -66,7 +66,7 @@
 
 - (NSArray *)sortArray:(NSArray *)array
 {
-    NSInteger dealloc_index = [array indexOfObject:@"DeallocVCTL"] + 1;
+    NSInteger dealloc_index = [array indexOfObject:@"testXibVCTL"] + 1;
     NSArray *rt = [array sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSComparisonResult result = NSOrderedSame;
         

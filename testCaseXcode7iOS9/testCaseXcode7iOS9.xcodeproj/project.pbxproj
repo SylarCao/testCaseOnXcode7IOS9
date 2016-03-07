@@ -124,6 +124,8 @@
 		2C48A33E1C87E18D007A73E9 /* HorizonScrollTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A33D1C87E18D007A73E9 /* HorizonScrollTitleView.xib */; };
 		2C48A3421C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A3401C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m */; };
 		2C48A3431C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A3411C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib */; };
+		2C48A3481C882452007A73E9 /* UILabelVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48A3461C882452007A73E9 /* UILabelVCTL.m */; };
+		2C48A3491C882452007A73E9 /* UILabelVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48A3471C882452007A73E9 /* UILabelVCTL.xib */; };
 		2C4BE0111BE9A1EB004F1DAF /* RefreshTableVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */; };
 		2C4BE0121BE9A1EB004F1DAF /* RefreshTableVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */; };
 		2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE0161BE9A7B0004F1DAF /* MJRefreshAutoFooter.m */; };
@@ -458,6 +460,9 @@
 		2C48A33F1C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonScrollTitleCollectionCell.h; sourceTree = "<group>"; };
 		2C48A3401C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollTitleCollectionCell.m; sourceTree = "<group>"; };
 		2C48A3411C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizonScrollTitleCollectionCell.xib; sourceTree = "<group>"; };
+		2C48A3451C882452007A73E9 /* UILabelVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelVCTL.h; sourceTree = "<group>"; };
+		2C48A3461C882452007A73E9 /* UILabelVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelVCTL.m; sourceTree = "<group>"; };
+		2C48A3471C882452007A73E9 /* UILabelVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UILabelVCTL.xib; sourceTree = "<group>"; };
 		2C4BE00E1BE9A1EB004F1DAF /* RefreshTableVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableVCTL.h; sourceTree = "<group>"; };
 		2C4BE00F1BE9A1EB004F1DAF /* RefreshTableVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableVCTL.m; sourceTree = "<group>"; };
 		2C4BE0101BE9A1EB004F1DAF /* RefreshTableVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshTableVCTL.xib; sourceTree = "<group>"; };
@@ -1154,6 +1159,16 @@
 			path = titleView;
 			sourceTree = "<group>";
 		};
+		2C48A3441C882442007A73E9 /* uilabe */ = {
+			isa = PBXGroup;
+			children = (
+				2C48A3451C882452007A73E9 /* UILabelVCTL.h */,
+				2C48A3461C882452007A73E9 /* UILabelVCTL.m */,
+				2C48A3471C882452007A73E9 /* UILabelVCTL.xib */,
+			);
+			path = uilabe;
+			sourceTree = "<group>";
+		};
 		2C4BE00D1BE9A1D9004F1DAF /* refreshTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1553,6 +1568,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C48A3441C882442007A73E9 /* uilabe */,
 				2C48A32E1C87D166007A73E9 /* horizonScroll */,
 				2C9B570C1C7FEC640073B0D1 /* scrollViewZoom */,
 				2C7A33211C75BE72002A08AD /* XOption */,
@@ -2049,6 +2065,7 @@
 				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
+				2C48A3491C882452007A73E9 /* UILabelVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2C46705E1C1019E200DF57AE /* Life1VCTL.xib in Resources */,
 				2C23A07F1C0D4268008B4712 /* ShareWeiXinVCTL.xib in Resources */,
@@ -2230,6 +2247,7 @@
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2CEEE03E1C71623C00891C1F /* FingerTapVCTL.m in Sources */,
 				2C08A83C1BB933480077FE53 /* LewView2.m in Sources */,
+				2C48A3481C882452007A73E9 /* UILabelVCTL.m in Sources */,
 				2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */,
 				2C35BE9E1C30CA19000E2C2C /* HorizontalView.m in Sources */,
 				2CDAE4401BDDC88D00FB8C4F /* TestTableViewWidthVCTL.m in Sources */,

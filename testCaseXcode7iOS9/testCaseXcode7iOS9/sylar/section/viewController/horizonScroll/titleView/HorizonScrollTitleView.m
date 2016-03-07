@@ -37,6 +37,7 @@
     
     [_collectionView registerNib:[UINib nibWithNibName:@"HorizonScrollTitleCollectionCell" bundle:nil] forCellWithReuseIdentifier:[HorizonScrollTitleCollectionCell getCellId]];
     [(UICollectionViewFlowLayout *)_collectionView.collectionViewLayout setItemSize:_size];
+    _collectionView.scrollEnabled = NO;
     _collectionView.backgroundColor = [UIColor clearColor];
 }
 

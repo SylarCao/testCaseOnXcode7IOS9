@@ -22,11 +22,12 @@
 
 - (void)roundFunction1
 {
-    NSInteger a1 = round(3.3);
-    NSInteger a2 = round(3.5);
-    NSInteger a3 = round(3.0);
+    NSInteger a1 = round(3.3);  // 3
+    NSInteger a2 = round(3.5);  // 4
+    NSInteger a3 = round(3.0);  // 3
+    NSInteger a4 = round(2.9);  // 3
     
-    NSLog(@"a123 = %ld, %ld, %ld", a1, a2, a3);
+    NSLog(@"a123 = %ld, %ld, %ld %ld", a1, a2, a3, a4);
 }
 
 @end

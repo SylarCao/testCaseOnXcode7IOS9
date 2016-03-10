@@ -20,6 +20,8 @@
     [self setWindowFrame];
     
     [self setNavi1];
+    
+    [self setWithRightItem2];
 }
 
 - (void) setNavi1
@@ -29,7 +31,7 @@
 
 - (UIView *)getView1
 {
-    UIView *rt = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    UIView *rt = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
     rt.backgroundColor = [UIColor yellowColor];
     
     
@@ -55,7 +57,23 @@
     NSLog(@"frame = %f, %f", ss.width, ss.height);
 }
 
+- (void)setWithRightItem1
+{
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"right" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithTitle:@"right1" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    self.navigationItem.rightBarButtonItems = @[item1, item2];
+}
 
+- (void)setWithRightItem2
+{
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"small_30"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"small_30"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStyleDone target:nil action:nil];
+    
+    
+    self.navigationItem.rightBarButtonItems = @[item1, item2];
+}
 
 
 

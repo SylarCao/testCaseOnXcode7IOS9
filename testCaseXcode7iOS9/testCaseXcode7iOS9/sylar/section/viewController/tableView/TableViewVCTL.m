@@ -73,7 +73,7 @@
         rt = cell;
     }
     
-    
+    NSLog(@"rt.size = %f, %f", rt.frame.size.width,rt.frame.size.height);
     
     return rt;
 }
@@ -81,6 +81,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 50;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 48;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

@@ -15,6 +15,10 @@
 
 @property (nonatomic, strong) UIPageControl *p1;
 
+@property (nonatomic, assign) NSInteger height1;
+@property (nonatomic, assign) NSInteger width1;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constrainValue1;
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ConstrainVCTL
@@ -25,6 +29,10 @@
     
     
     [self addV1V2];
+    
+    _height1 = 50;
+    _width1 = 50;
+    [self constraints4];
 }
 
 
@@ -49,7 +57,36 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self constraints3];
+    NSArray *cc = self.view.constraints;
+    NSLayoutConstraint *the_one = nil;
+    for (NSLayoutConstraint *each_constraint in cc)
+    {
+        if (each_constraint.firstItem == _v2 && each_constraint.secondItem == nil)
+        {
+            the_one = each_constraint;
+            break;
+        }
+    }
+    
+    NSLog(@"cc = %@", the_one);
+    the_one.constant = 90;
+}
+
+- (void)constraints4
+{
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_v1, _v2);
+    
+    NSInteger var1 = _width1;
+    
+    NSArray *c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[_v1]-10-[_v2(==37)]-10-|" options:0 metrics:nil views:dict];
+    
+    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-300-[_v1]-20-|" options:0 metrics:nil views:dict];
+    NSArray *c3 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-300-[_v2]-20-|" options:0 metrics:nil views:dict];
+    
+    [self.view addConstraints:c1];
+    [self.view addConstraints:c2];
+    [self.view addConstraints:c3];
+
 }
 
 - (void) constraints3

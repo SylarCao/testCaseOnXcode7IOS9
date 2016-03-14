@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) BlockObject1 *obj;
 
+@property (nonatomic, strong) NSString *string1;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation TestBlockVCTL
@@ -29,11 +31,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _string1 = @"init_value";
 }
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+    [self funPara1];
 }
 
 - (void)fun1
@@ -70,6 +73,28 @@
     _weak = block1;
     BlockObject1 *bb1 = [[BlockObject1 alloc] init];
     [bb1 requestBlockWeak:_weak];
+}
+
+- (void)funPara1
+{
+    BlockObject1 *obj1 = [[BlockObject1 alloc] init];
+    NSString *ss = _string1;
+    [obj1 requestBlockWithParameter:ss block:^(NSString *data) {
+        NSLog(@"ss = %@", ss);
+        NSLog(@"data = %@", data);
+        NSLog(@"para1 = %@", _string1);
+        
+        if ([_string1 isEqualToString:data])
+        {
+            NSLog(@"same");
+        }
+        else
+        {
+            NSLog(@"not same");
+        }
+    }];
+    
+    _string1 = @"another";
 }
 
 @end

@@ -11,6 +11,8 @@
 typedef void (^BlockObject1BlockStrong)(NSString *data); 
 
 typedef void (^BlockObject1BlockWeak)(NSString *data);
+
+typedef void (^BlockObject1BlockPara1)(NSString *data);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface BlockObject1 : NSObject
 
@@ -29,6 +31,14 @@ typedef void (^BlockObject1BlockWeak)(NSString *data);
  *  @param block block description
  */
 - (void)requestBlockWeak:(BlockObject1BlockWeak)block;
+
+/**
+ *  block 带一个参数
+ *
+ *  @param para1 para1 description
+ *  @param block block description
+ */
+- (void)requestBlockWithParameter:(NSString *)para1 block:(BlockObject1BlockPara1)block;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

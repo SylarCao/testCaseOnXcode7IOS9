@@ -28,6 +28,9 @@
 
 - (void)setInitialValue
 {
+    CGSize size = self.contentView.frame.size;
+    NSLog(@"code.size = %f, %f", size.width, size.height);
+    
     _lbContent = [[UILabel alloc] init];
     [self.contentView addSubview:_lbContent];
     _lbContent.translatesAutoresizingMaskIntoConstraints = NO;

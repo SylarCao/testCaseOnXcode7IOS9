@@ -16,6 +16,10 @@
 
 @property (nonatomic, weak) BlockObject1BlockWeak blockWeak;
 
+@property (nonatomic, strong) BlockObject1BlockPara1 blockPara1;
+
+@property (nonatomic, strong) NSString *para1;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation BlockObject1
@@ -37,6 +41,14 @@
     _blockWeak = block;
 //    [self performSelector:@selector(cbWeakBlock) withObject:nil afterDelay:2];
     [[BlockHelperTimer share] fun2SecondAfter:self obj:self];
+}
+
+- (void)requestBlockWithParameter:(NSString *)para1 block:(BlockObject1BlockPara1)block
+{
+    _para1 = para1;
+    _blockPara1 = block;
+//    [[BlockHelperTimer share] fun2SecondAfter:self obj:self];
+    [self performSelector:@selector(BlockHelperTimerCallBackAfter2Second) withObject:nil afterDelay:2];
 }
 
 
@@ -64,18 +76,15 @@
     {
         _blockStrong(@"strong block call back");
     }
-    else
-    {
-        NSLog(@"not strong");
-    }
     
     if (_blockWeak)
     {
         _blockWeak(@"weak block call back");
     }
-    else
+    
+    if (_blockPara1)
     {
-        NSLog(@"not weak");
+        _blockPara1(_para1);
     }
 }
 

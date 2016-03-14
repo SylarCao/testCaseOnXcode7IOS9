@@ -16,6 +16,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation TimerVCTL
 
+- (void)dealloc
+{
+    // will not dealloc if (timer != nil)
+    NSLog(@"dealloc");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -46,7 +52,7 @@
 
 - (IBAction)btn2:(id)sender
 {
-    
+    [_timer fire];
 }
 
 

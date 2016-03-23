@@ -86,6 +86,7 @@
     [self.view addConstraints:c1];
     [self.view addConstraints:c2];
     [self.view addConstraints:c3];
+    
 
 }
 

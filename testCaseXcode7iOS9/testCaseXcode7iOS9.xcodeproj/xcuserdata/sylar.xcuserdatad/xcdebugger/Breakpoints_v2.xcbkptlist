@@ -244,11 +244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/actionsheet/ActionSheetVCTL.m"
-            timestampString = "471178227.655983"
+            timestampString = "479886907.651479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-btn1:"
             landmarkType = "5">
          </BreakpointContent>
@@ -734,28 +734,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/constrains/ConstrainVCTL.m"
-            timestampString = "479635878.406385"
+            timestampString = "479961153.116369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-btn1:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testCaseXcode7iOS9/sylar/section/viewController/constrains/ConstrainVCTL.m"
-            timestampString = "479635878.406385"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-constraints4"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

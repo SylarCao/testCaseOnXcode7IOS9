@@ -23,9 +23,9 @@
 
 - (IBAction)btn1:(id)sender
 {
-    if (kIOSVersion(9))
+    if (kIOSVersion(9) && NO)
     {
-        UIAlertController *sheet = [UIAlertController alertControllerWithTitle:@"title" message:@"message" preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertController *sheet = [UIAlertController alertControllerWithTitle:@"title" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         
         UIAlertAction *a1 = [UIAlertAction actionWithTitle:@"title 1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [self btnTap1];
@@ -47,8 +47,18 @@
     }
     else
     {
+        
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"cancel button" destructiveButtonTitle:nil otherButtonTitles:@"o1", @"o2", @"o3", nil];
-        [sheet showInView:self.view];
+        
+        NSArray *other_titles = @[@"o1", @"o2", @"other3"];
+        UIActionSheet *sheet1 = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"cancel btn" destructiveButtonTitle:nil otherButtonTitles: nil];
+        for (NSString *each in other_titles)
+        {
+            [sheet1 addButtonWithTitle:each];
+        }
+        
+        
+        [sheet1 showInView:self.view];
     }
 }
 

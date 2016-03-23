@@ -28,7 +28,7 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self shareWX1];
+//    [self shareWX1];
 }
 
 - (void)shareWX1

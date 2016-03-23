@@ -199,6 +199,9 @@
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
 		2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BAB631BC7DF90000FD2DF /* Touch3d1DetailVCTL.m */; };
 		2C8BAB661BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BAB641BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib */; };
+		2C9029AD1C9BE0370052B1FC /* ConstraintCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9029AB1C9BE0370052B1FC /* ConstraintCodeVCTL.m */; };
+		2C9029AE1C9BE0370052B1FC /* ConstraintCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9029AC1C9BE0370052B1FC /* ConstraintCodeVCTL.xib */; };
+		2C9029B11C9BE0720052B1FC /* constraintView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9029B01C9BE0720052B1FC /* constraintView1.m */; };
 		2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */; };
 		2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */; };
 		2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */; };
@@ -598,6 +601,11 @@
 		2C8BAB621BC7DF90000FD2DF /* Touch3d1DetailVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch3d1DetailVCTL.h; sourceTree = "<group>"; };
 		2C8BAB631BC7DF90000FD2DF /* Touch3d1DetailVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch3d1DetailVCTL.m; sourceTree = "<group>"; };
 		2C8BAB641BC7DF90000FD2DF /* Touch3d1DetailVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Touch3d1DetailVCTL.xib; sourceTree = "<group>"; };
+		2C9029AA1C9BE0370052B1FC /* ConstraintCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintCodeVCTL.h; sourceTree = "<group>"; };
+		2C9029AB1C9BE0370052B1FC /* ConstraintCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintCodeVCTL.m; sourceTree = "<group>"; };
+		2C9029AC1C9BE0370052B1FC /* ConstraintCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstraintCodeVCTL.xib; sourceTree = "<group>"; };
+		2C9029AF1C9BE0720052B1FC /* constraintView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraintView1.h; sourceTree = "<group>"; };
+		2C9029B01C9BE0720052B1FC /* constraintView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constraintView1.m; sourceTree = "<group>"; };
 		2C92DFE21BF9A303009CA50A /* JailBreakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailBreakVCTL.h; sourceTree = "<group>"; };
 		2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailBreakVCTL.m; sourceTree = "<group>"; };
 		2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JailBreakVCTL.xib; sourceTree = "<group>"; };
@@ -1507,6 +1515,18 @@
 			path = 3DTouch;
 			sourceTree = "<group>";
 		};
+		2C9029A61C9BE0060052B1FC /* constraintCode */ = {
+			isa = PBXGroup;
+			children = (
+				2C9029AA1C9BE0370052B1FC /* ConstraintCodeVCTL.h */,
+				2C9029AB1C9BE0370052B1FC /* ConstraintCodeVCTL.m */,
+				2C9029AC1C9BE0370052B1FC /* ConstraintCodeVCTL.xib */,
+				2C9029AF1C9BE0720052B1FC /* constraintView1.h */,
+				2C9029B01C9BE0720052B1FC /* constraintView1.m */,
+			);
+			path = constraintCode;
+			sourceTree = "<group>";
+		};
 		2C92DFE11BF9A2F2009CA50A /* jailbreak */ = {
 			isa = PBXGroup;
 			children = (
@@ -1634,6 +1654,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C9029A61C9BE0060052B1FC /* constraintCode */,
 				2C84CCF61C910839005A16FA /* tableView */,
 				2C7491C61C8EA8FA00A82022 /* testBlock */,
 				2C48A3441C882442007A73E9 /* uilabe */,
@@ -2135,6 +2156,7 @@
 				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
 				2C84CD051C91095E005A16FA /* TableViewHeaderXIBView.xib in Resources */,
 				2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */,
+				2C9029AE1C9BE0370052B1FC /* ConstraintCodeVCTL.xib in Resources */,
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C48A3491C882452007A73E9 /* UILabelVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
@@ -2248,6 +2270,7 @@
 				2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */,
 				2C68EDFB1C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
+				2C9029AD1C9BE0370052B1FC /* ConstraintCodeVCTL.m in Sources */,
 				2C84CD031C910942005A16FA /* TableViewHeaderXIBView.m in Sources */,
 				2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */,
 				2C2A07F91BCFA99700D6ED86 /* IntrinsicDetailVCTL.m in Sources */,
@@ -2340,6 +2363,7 @@
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,
 				2C4BE04D1BE9A7B0004F1DAF /* MJRefreshStateHeader.m in Sources */,
 				2C68EDFC1C194102009E1396 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				2C9029B11C9BE0720052B1FC /* constraintView1.m in Sources */,
 				2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */,
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,

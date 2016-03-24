@@ -31,6 +31,26 @@
     
 //    [self fun4];
     
+    [self fun5];
+    
+}
+
+- (void)fun5
+{
+    // string size 适应大小
+    
+    UILabel *lb = [[UILabel alloc] init];
+    lb.text = @"12345678901";
+    lb.font = [UIFont systemFontOfSize:14];
+    lb.backgroundColor = [UIColor redColor];
+    [self.view addSubview:lb];
+    
+    
+    CGSize size = [lb sizeThatFits:CGSizeMake(200, 200)];
+    NSLog(@"size = %f, %f", size.width, size.height);
+    
+    lb.frame = CGRectMake(200, 200, size.width, size.height);
+    
 }
 
 - (void) fun1

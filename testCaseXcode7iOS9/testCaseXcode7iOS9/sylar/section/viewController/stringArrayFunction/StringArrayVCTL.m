@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "StringArrayVCTL.h"
+#import "StringArrayHelper.h"
 # define kAAA @"abc"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface StringArrayVCTL ()
@@ -19,11 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self fun6];
+    
 }
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
     
 //    [self fun2];
     
@@ -31,8 +34,15 @@
     
 //    [self fun4];
     
-    [self fun5];
+//    [self fun5];
     
+}
+
+- (void)fun6
+{
+    // extern  string
+    NSString *ss = [NSString stringWithFormat:@"abc = %@", constStringArrayHelper1];
+    NSLog(@"ss = %@", ss);
 }
 
 - (void)fun5

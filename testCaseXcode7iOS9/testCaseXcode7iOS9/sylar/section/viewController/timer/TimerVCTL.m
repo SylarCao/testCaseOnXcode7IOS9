@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "TimerVCTL.h"
+#import "TimerInstance.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TimerVCTL ()
 
@@ -18,23 +19,44 @@
 
 - (void)dealloc
 {
-    // will not dealloc if (timer != nil)
+    // will not dealloc if (_timer != nil)
     NSLog(@"dealloc");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
+//    [self fun2];
+}
+
+- (void)fun2
+{
+    static int i = 0;
+    i++;
+//    [[TimerInstance share] startTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%ld", i]];
+    
+    [[TimerInstance share] reStartTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%d", i]];
+}
+
+- (void)fun1
+{
+    
+//    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];  // 没什么用
+    
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
     
-//    [_timer fire];
+    //    [_timer fire];
 }
 
 - (void) showLog
 {
     NSLog(@"time ======== ");
+}
+
+- (void)showLogWithContent:(NSString *)content
+{
+    NSLog(@"content ========= %@", content);
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -47,12 +69,15 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [_timer invalidate];
+//    [_timer invalidate];
+    [self fun2];
 }
 
 - (IBAction)btn2:(id)sender
 {
-    [_timer fire];
+//    [_timer fire];
+    
+    [[TimerInstance share] fun1];
 }
 
 

@@ -208,6 +208,9 @@
 		2C92EC311CA373BE005ED0E3 /* EncoderVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92EC2F1CA373BE005ED0E3 /* EncoderVCTL.xib */; };
 		2C92EC341CA373CF005ED0E3 /* EncoderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC331CA373CF005ED0E3 /* EncoderObject.m */; };
 		2C92EC371CA37671005ED0E3 /* EncoderObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC361CA37671005ED0E3 /* EncoderObject1.m */; };
+		2C92EC3F1CA398AC005ED0E3 /* TimerInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC3E1CA398AC005ED0E3 /* TimerInstance.m */; };
+		2C92EC421CA3B337005ED0E3 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC411CA3B337005ED0E3 /* TimerObject.m */; };
+		2C92EC4C1CA3D017005ED0E3 /* StringArrayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC4B1CA3D017005ED0E3 /* StringArrayHelper.m */; };
 		2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */; };
 		2C9B57111C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9B570F1C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
@@ -620,6 +623,12 @@
 		2C92EC331CA373CF005ED0E3 /* EncoderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncoderObject.m; sourceTree = "<group>"; };
 		2C92EC351CA37671005ED0E3 /* EncoderObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncoderObject1.h; sourceTree = "<group>"; };
 		2C92EC361CA37671005ED0E3 /* EncoderObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncoderObject1.m; sourceTree = "<group>"; };
+		2C92EC3D1CA398AC005ED0E3 /* TimerInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerInstance.h; sourceTree = "<group>"; };
+		2C92EC3E1CA398AC005ED0E3 /* TimerInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerInstance.m; sourceTree = "<group>"; };
+		2C92EC401CA3B337005ED0E3 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
+		2C92EC411CA3B337005ED0E3 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
+		2C92EC4A1CA3D017005ED0E3 /* StringArrayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayHelper.h; sourceTree = "<group>"; };
+		2C92EC4B1CA3D017005ED0E3 /* StringArrayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayHelper.m; sourceTree = "<group>"; };
 		2C9B570D1C7FEC850073B0D1 /* ScrollViewZoomVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewZoomVCTL.h; sourceTree = "<group>"; };
 		2C9B570E1C7FEC850073B0D1 /* ScrollViewZoomVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewZoomVCTL.m; sourceTree = "<group>"; };
 		2C9B570F1C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewZoomVCTL.xib; sourceTree = "<group>"; };
@@ -1778,6 +1787,10 @@
 				2CA112BF1BB29EAA00406685 /* TimerVCTL.h */,
 				2CA112C01BB29EAA00406685 /* TimerVCTL.m */,
 				2CA112C11BB29EAA00406685 /* TimerVCTL.xib */,
+				2C92EC3D1CA398AC005ED0E3 /* TimerInstance.h */,
+				2C92EC3E1CA398AC005ED0E3 /* TimerInstance.m */,
+				2C92EC401CA3B337005ED0E3 /* TimerObject.h */,
+				2C92EC411CA3B337005ED0E3 /* TimerObject.m */,
 			);
 			path = timer;
 			sourceTree = "<group>";
@@ -1926,6 +1939,8 @@
 				2CE092F71BC63FE500027EED /* StringArrayVCTL.h */,
 				2CE092F81BC63FE500027EED /* StringArrayVCTL.m */,
 				2CE092F91BC63FE500027EED /* StringArrayVCTL.xib */,
+				2C92EC4A1CA3D017005ED0E3 /* StringArrayHelper.h */,
+				2C92EC4B1CA3D017005ED0E3 /* StringArrayHelper.m */,
 			);
 			path = stringArrayFunction;
 			sourceTree = "<group>";
@@ -2353,6 +2368,7 @@
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
 				2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */,
 				2CDF0EAB1C16F7E3009B8537 /* Dealloc2VCTL.m in Sources */,
+				2C92EC421CA3B337005ED0E3 /* TimerObject.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
 				2CE1F34F1BCE3DC800B82CAE /* UICollectionView+Draggable.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
@@ -2394,6 +2410,7 @@
 				2C9029B11C9BE0720052B1FC /* constraintView1.m in Sources */,
 				2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */,
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
+				2C92EC4C1CA3D017005ED0E3 /* StringArrayHelper.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
 				2C92EC301CA373BE005ED0E3 /* EncoderVCTL.m in Sources */,
 				2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */,
@@ -2417,6 +2434,7 @@
 				2C4BE0471BE9A7B0004F1DAF /* MJRefreshAutoStateFooter.m in Sources */,
 				2C84CCFA1C91084C005A16FA /* TableViewVCTL.m in Sources */,
 				2CADEA2C1BB5364B009BBD28 /* StatusBarVCTL.m in Sources */,
+				2C92EC3F1CA398AC005ED0E3 /* TimerInstance.m in Sources */,
 				2C4BE0451BE9A7B0004F1DAF /* MJRefreshAutoGifFooter.m in Sources */,
 				2C4670581C1019AD00DF57AE /* LifeTimeVCTL.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,

@@ -173,10 +173,16 @@
 		2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68EE061C1949F4009E1396 /* DrawView1.m */; };
 		2C72B3191C3CF26E00269DEB /* ResizeImageVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */; };
 		2C72B31A1C3CF26E00269DEB /* ResizeImageVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */; };
+		2C7459CB1CACAFCB00A97EB6 /* OtherObjectHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7459CA1CACAFCB00A97EB6 /* OtherObjectHelper.m */; };
+		2C7459D01CACB6FC00A97EB6 /* WebViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7459CE1CACB6FC00A97EB6 /* WebViewVCTL.m */; };
+		2C7459D11CACB6FC00A97EB6 /* WebViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7459CF1CACB6FC00A97EB6 /* WebViewVCTL.xib */; };
 		2C7491CA1C8EA90900A82022 /* TestBlockVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7491C81C8EA90900A82022 /* TestBlockVCTL.m */; };
 		2C7491CB1C8EA90900A82022 /* TestBlockVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7491C91C8EA90900A82022 /* TestBlockVCTL.xib */; };
 		2C7491CE1C8EA93D00A82022 /* BlockObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7491CD1C8EA93D00A82022 /* BlockObject1.m */; };
 		2C7491D11C8EAFF400A82022 /* BlockHelperTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7491D01C8EAFF400A82022 /* BlockHelperTimer.m */; };
+		2C754D431CABB41F0004FEA2 /* OthersVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C754D411CABB41F0004FEA2 /* OthersVCTL.m */; };
+		2C754D441CABB41F0004FEA2 /* OthersVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C754D421CABB41F0004FEA2 /* OthersVCTL.xib */; };
+		2C754D471CABB52A0004FEA2 /* OthersInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C754D461CABB52A0004FEA2 /* OthersInstance.m */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
 		2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33191C759C2E002A08AD /* DrawView2.m */; };
 		2C7A33251C75BE85002A08AD /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33231C75BE85002A08AD /* XOptionVCTL.m */; };
@@ -567,6 +573,11 @@
 		2C72B3161C3CF26E00269DEB /* ResizeImageVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeImageVCTL.h; sourceTree = "<group>"; };
 		2C72B3171C3CF26E00269DEB /* ResizeImageVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeImageVCTL.m; sourceTree = "<group>"; };
 		2C72B3181C3CF26E00269DEB /* ResizeImageVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResizeImageVCTL.xib; sourceTree = "<group>"; };
+		2C7459C91CACAFCB00A97EB6 /* OtherObjectHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherObjectHelper.h; sourceTree = "<group>"; };
+		2C7459CA1CACAFCB00A97EB6 /* OtherObjectHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherObjectHelper.m; sourceTree = "<group>"; };
+		2C7459CD1CACB6FC00A97EB6 /* WebViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVCTL.h; sourceTree = "<group>"; };
+		2C7459CE1CACB6FC00A97EB6 /* WebViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVCTL.m; sourceTree = "<group>"; };
+		2C7459CF1CACB6FC00A97EB6 /* WebViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVCTL.xib; sourceTree = "<group>"; };
 		2C7491C71C8EA90900A82022 /* TestBlockVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlockVCTL.h; sourceTree = "<group>"; };
 		2C7491C81C8EA90900A82022 /* TestBlockVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlockVCTL.m; sourceTree = "<group>"; };
 		2C7491C91C8EA90900A82022 /* TestBlockVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestBlockVCTL.xib; sourceTree = "<group>"; };
@@ -574,6 +585,11 @@
 		2C7491CD1C8EA93D00A82022 /* BlockObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockObject1.m; sourceTree = "<group>"; };
 		2C7491CF1C8EAFF400A82022 /* BlockHelperTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockHelperTimer.h; sourceTree = "<group>"; };
 		2C7491D01C8EAFF400A82022 /* BlockHelperTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockHelperTimer.m; sourceTree = "<group>"; };
+		2C754D401CABB41F0004FEA2 /* OthersVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersVCTL.h; sourceTree = "<group>"; };
+		2C754D411CABB41F0004FEA2 /* OthersVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersVCTL.m; sourceTree = "<group>"; };
+		2C754D421CABB41F0004FEA2 /* OthersVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OthersVCTL.xib; sourceTree = "<group>"; };
+		2C754D451CABB52A0004FEA2 /* OthersInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersInstance.h; sourceTree = "<group>"; };
+		2C754D461CABB52A0004FEA2 /* OthersInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersInstance.m; sourceTree = "<group>"; };
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
 		2C7A33181C759C2E002A08AD /* DrawView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView2.h; sourceTree = "<group>"; };
 		2C7A33191C759C2E002A08AD /* DrawView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView2.m; sourceTree = "<group>"; };
@@ -1455,6 +1471,16 @@
 			path = resizeImage;
 			sourceTree = "<group>";
 		};
+		2C7459CC1CACB6E100A97EB6 /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				2C7459CD1CACB6FC00A97EB6 /* WebViewVCTL.h */,
+				2C7459CE1CACB6FC00A97EB6 /* WebViewVCTL.m */,
+				2C7459CF1CACB6FC00A97EB6 /* WebViewVCTL.xib */,
+			);
+			path = webView;
+			sourceTree = "<group>";
+		};
 		2C7491C61C8EA8FA00A82022 /* testBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -1467,6 +1493,20 @@
 				2C7491D01C8EAFF400A82022 /* BlockHelperTimer.m */,
 			);
 			path = testBlock;
+			sourceTree = "<group>";
+		};
+		2C754D3F1CABB4130004FEA2 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				2C754D401CABB41F0004FEA2 /* OthersVCTL.h */,
+				2C754D411CABB41F0004FEA2 /* OthersVCTL.m */,
+				2C754D421CABB41F0004FEA2 /* OthersVCTL.xib */,
+				2C754D451CABB52A0004FEA2 /* OthersInstance.h */,
+				2C754D461CABB52A0004FEA2 /* OthersInstance.m */,
+				2C7459C91CACAFCB00A97EB6 /* OtherObjectHelper.h */,
+				2C7459CA1CACAFCB00A97EB6 /* OtherObjectHelper.m */,
+			);
+			path = others;
 			sourceTree = "<group>";
 		};
 		2C75849F1C740EAC00614D17 /* 1 */ = {
@@ -1688,6 +1728,8 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7459CC1CACB6E100A97EB6 /* webView */,
+				2C754D3F1CABB4130004FEA2 /* others */,
 				2C92EC2C1CA373AE005ED0E3 /* encoder */,
 				2C9029A61C9BE0060052B1FC /* constraintCode */,
 				2C84CCF61C910839005A16FA /* tableView */,
@@ -2184,6 +2226,7 @@
 				2C2A68691BFDA9B900C4FA73 /* JSPatchVCTL.xib in Resources */,
 				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
 				2C4670591C1019AD00DF57AE /* LifeTimeVCTL.xib in Resources */,
+				2C7459D11CACB6FC00A97EB6 /* WebViewVCTL.xib in Resources */,
 				2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */,
 				2C23B76D1BFB047600E87E95 /* DeleteInsertCell.xib in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
@@ -2236,6 +2279,7 @@
 				2C2A165A1BCF54DA00D065CD /* MBProgressHudVCTL.xib in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */,
+				2C754D441CABB41F0004FEA2 /* OthersVCTL.xib in Resources */,
 				2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */,
 				2C2A68751BFDB30200C4FA73 /* main.js in Resources */,
 				2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */,
@@ -2275,6 +2319,7 @@
 				2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */,
 				2C2A16801BCFA57200D065CD /* IntrinsicCell.m in Sources */,
 				2C35BE9B1C30C921000E2C2C /* HorizontalVCTL.m in Sources */,
+				2C7459CB1CACAFCB00A97EB6 /* OtherObjectHelper.m in Sources */,
 				2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
 				2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */,
@@ -2282,6 +2327,7 @@
 				2CADEA311BB536BB009BBD28 /* StatusBarTableViewCell.m in Sources */,
 				2CE1F3551BCE3DC800B82CAE /* UIViewController+LewPopupViewController.m in Sources */,
 				2C08A8391BB931C60077FE53 /* LewView1.m in Sources */,
+				2C754D471CABB52A0004FEA2 /* OthersInstance.m in Sources */,
 				2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */,
 				2C1C92D31BD0A94C009573E6 /* NumberKeyboardVCTL.m in Sources */,
 				2C4BE0491BE9A7B0004F1DAF /* MJRefreshBackNormalFooter.m in Sources */,
@@ -2360,6 +2406,7 @@
 				2C2EC3341BE74021008197C3 /* AFURLResponseSerialization.m in Sources */,
 				2C4BE0441BE9A7B0004F1DAF /* MJRefreshHeader.m in Sources */,
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
+				2C7459D01CACB6FC00A97EB6 /* WebViewVCTL.m in Sources */,
 				2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */,
 				2C72B3191C3CF26E00269DEB /* ResizeImageVCTL.m in Sources */,
 				2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */,
@@ -2429,6 +2476,7 @@
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */,
+				2C754D431CABB41F0004FEA2 /* OthersVCTL.m in Sources */,
 				2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C4BE0471BE9A7B0004F1DAF /* MJRefreshAutoStateFooter.m in Sources */,

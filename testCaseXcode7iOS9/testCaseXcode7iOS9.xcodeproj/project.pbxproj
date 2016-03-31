@@ -176,6 +176,8 @@
 		2C7459CB1CACAFCB00A97EB6 /* OtherObjectHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7459CA1CACAFCB00A97EB6 /* OtherObjectHelper.m */; };
 		2C7459D01CACB6FC00A97EB6 /* WebViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7459CE1CACB6FC00A97EB6 /* WebViewVCTL.m */; };
 		2C7459D11CACB6FC00A97EB6 /* WebViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7459CF1CACB6FC00A97EB6 /* WebViewVCTL.xib */; };
+		2C7459D61CACCD5A00A97EB6 /* KVOVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7459D41CACCD5A00A97EB6 /* KVOVCTL.m */; };
+		2C7459D71CACCD5A00A97EB6 /* KVOVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7459D51CACCD5A00A97EB6 /* KVOVCTL.xib */; };
 		2C7491CA1C8EA90900A82022 /* TestBlockVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7491C81C8EA90900A82022 /* TestBlockVCTL.m */; };
 		2C7491CB1C8EA90900A82022 /* TestBlockVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7491C91C8EA90900A82022 /* TestBlockVCTL.xib */; };
 		2C7491CE1C8EA93D00A82022 /* BlockObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7491CD1C8EA93D00A82022 /* BlockObject1.m */; };
@@ -578,6 +580,9 @@
 		2C7459CD1CACB6FC00A97EB6 /* WebViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVCTL.h; sourceTree = "<group>"; };
 		2C7459CE1CACB6FC00A97EB6 /* WebViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVCTL.m; sourceTree = "<group>"; };
 		2C7459CF1CACB6FC00A97EB6 /* WebViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVCTL.xib; sourceTree = "<group>"; };
+		2C7459D31CACCD5A00A97EB6 /* KVOVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOVCTL.h; sourceTree = "<group>"; };
+		2C7459D41CACCD5A00A97EB6 /* KVOVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVCTL.m; sourceTree = "<group>"; };
+		2C7459D51CACCD5A00A97EB6 /* KVOVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOVCTL.xib; sourceTree = "<group>"; };
 		2C7491C71C8EA90900A82022 /* TestBlockVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlockVCTL.h; sourceTree = "<group>"; };
 		2C7491C81C8EA90900A82022 /* TestBlockVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlockVCTL.m; sourceTree = "<group>"; };
 		2C7491C91C8EA90900A82022 /* TestBlockVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestBlockVCTL.xib; sourceTree = "<group>"; };
@@ -1481,6 +1486,16 @@
 			path = webView;
 			sourceTree = "<group>";
 		};
+		2C7459D21CACCD4D00A97EB6 /* kvo */ = {
+			isa = PBXGroup;
+			children = (
+				2C7459D31CACCD5A00A97EB6 /* KVOVCTL.h */,
+				2C7459D41CACCD5A00A97EB6 /* KVOVCTL.m */,
+				2C7459D51CACCD5A00A97EB6 /* KVOVCTL.xib */,
+			);
+			path = kvo;
+			sourceTree = "<group>";
+		};
 		2C7491C61C8EA8FA00A82022 /* testBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -1728,6 +1743,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7459D21CACCD4D00A97EB6 /* kvo */,
 				2C7459CC1CACB6E100A97EB6 /* webView */,
 				2C754D3F1CABB4130004FEA2 /* others */,
 				2C92EC2C1CA373AE005ED0E3 /* encoder */,
@@ -2274,6 +2290,7 @@
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
 				2C48A33E1C87E18D007A73E9 /* HorizonScrollTitleView.xib in Resources */,
 				2C42254A1C17FD8500009D5F /* DrawLineVCTL.xib in Resources */,
+				2C7459D71CACCD5A00A97EB6 /* KVOVCTL.xib in Resources */,
 				2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */,
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
 				2C2A165A1BCF54DA00D065CD /* MBProgressHudVCTL.xib in Resources */,
@@ -2413,6 +2430,7 @@
 				2C3E34C51BF324D30008F1B0 /* BlurBkgVCTL.m in Sources */,
 				2C42254E1C17FDDD00009D5F /* Gdip.m in Sources */,
 				2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */,
+				2C7459D61CACCD5A00A97EB6 /* KVOVCTL.m in Sources */,
 				2CF98F921BD4CF5B0001E209 /* ReleaseModeVCTL.m in Sources */,
 				2CDF0EAB1C16F7E3009B8537 /* Dealloc2VCTL.m in Sources */,
 				2C92EC421CA3B337005ED0E3 /* TimerObject.m in Sources */,

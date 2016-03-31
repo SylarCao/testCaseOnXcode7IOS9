@@ -44,9 +44,22 @@
     {
         NSLog(@"nil");
     }
-//    OtherObjectHelper *oo = [[OtherObjectHelper alloc] init];
-//    oo.aViewcontroller = aViewController;
-    [_arrayVCTL addObject:aViewController];
+    
+    // 使用 weak
+    OtherObjectHelper *oo = [[OtherObjectHelper alloc] init];
+    oo.aViewcontroller = aViewController;
+    [_arrayVCTL addObject:oo];
+    
+    
+//    // 使用 valueWithNonretainedObject
+//    id obj = [NSValue valueWithNonretainedObject:aViewController];
+//    [_arrayVCTL addObject:obj];
+//    if (_arrayVCTL.count > 1)
+//    {
+//        NSValue *o1 = [_arrayVCTL lastObject];
+//        UIView *v1 = o1.nonretainedObjectValue;
+//        NSLog(@"v1 = %@", v1);
+//    }
     
 }
 

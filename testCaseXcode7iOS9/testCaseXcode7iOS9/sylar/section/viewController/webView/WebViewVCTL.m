@@ -14,22 +14,39 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *content;
 
+@property (nonatomic, strong) NSString *bigImageUrl;
+
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation WebViewVCTL
 
+- (void)dealloc
+{
+    NSLog(@"dealloc");
+    [_web1 stopLoading];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self setConfig];
     
     [self setInitialValue];
     
 }
 
+- (void)setConfig
+{
+    _bigImageUrl = @"http://dev.gtjabadminton.avosapps.com/bigWebView";
+}
+
 - (void)setInitialValue
 {
-    
+    NSURL *url1 = [NSURL URLWithString:_bigImageUrl];
+    NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
+    [_web1 loadRequest:rr];
 }
 
 - (IBAction)btn1:(id)sender

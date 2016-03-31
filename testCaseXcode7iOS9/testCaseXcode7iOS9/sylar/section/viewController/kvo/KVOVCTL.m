@@ -34,11 +34,11 @@
 {
     _s1 = @"init s1";
     
-//    [_s1 addObserver:self forKeyPath:@"self.s1.value" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//    [self addObserver:self forKeyPath:@"self.s1" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
     [self addObserver:self forKeyPath:@"self.content.text" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
-    _s1 = @"desef";
+    self.s1 = @"desef";
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
@@ -48,14 +48,15 @@
 
 - (IBAction)btn1:(id)sender
 {
-    _s1 = @"btn s1";
+    self.s1 = @"btn s1";
     _content.text = @"bbb1";
 }
 
 - (IBAction) btn2:(id)sender
 {
     _s1 = @"btn s2";
-    _content.text = @"bbb2";
+    self.content.text = @"bbb2";
+    
 }
 
 

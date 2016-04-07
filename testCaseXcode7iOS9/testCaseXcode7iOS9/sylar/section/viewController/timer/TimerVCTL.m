@@ -35,7 +35,7 @@
     i++;
 //    [[TimerInstance share] startTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%ld", i]];
     
-    [[TimerInstance share] reStartTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%d", i]];
+//    [[TimerInstance share] reStartTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%d", i]];
 }
 
 - (void)fun1
@@ -44,9 +44,9 @@
 //    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];  // 没什么用
     
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:7 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
     
-    //    [_timer fire];
+//        [_timer fire];
 }
 
 - (void) showLog
@@ -70,14 +70,17 @@
 - (IBAction)btn1:(id)sender
 {
 //    [_timer invalidate];
-    [self fun2];
+//    [self fun2];
+    [self fun1];
 }
 
 - (IBAction)btn2:(id)sender
 {
 //    [_timer fire];
     
-    [[TimerInstance share] fun1];
+//    [[TimerInstance share] fun1];
+    [_timer fire];
+    NSLog(@"fire");
 }
 
 

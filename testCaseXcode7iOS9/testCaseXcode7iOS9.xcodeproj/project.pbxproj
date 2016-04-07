@@ -156,6 +156,8 @@
 		2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD5521BF4214A0014B672 /* MenuItemVCTL.xib */; };
 		2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FD5561BF421B20014B672 /* MenuItemCell.m */; };
 		2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FD5571BF421B20014B672 /* MenuItemCell.xib */; };
+		2C63047A1CB657AF00A67700 /* HorizontalView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6304791CB657AF00A67700 /* HorizontalView2.m */; };
+		2C6304811CB659BC00A67700 /* HorizontalVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6304801CB659BC00A67700 /* HorizontalVCTL.xib */; };
 		2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */; };
 		2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */; };
 		2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */; };
@@ -261,6 +263,11 @@
 		2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB381A41BCF418800D4F33F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDD1571BDF71EE00FB7519 /* PushNotificationVCTL.m */; };
 		2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBDD1581BDF71EE00FB7519 /* PushNotificationVCTL.xib */; };
+		2CBF41221CB66F72005C9567 /* AnimationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF41201CB66F72005C9567 /* AnimationVCTL.m */; };
+		2CBF41231CB66F72005C9567 /* AnimationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF41211CB66F72005C9567 /* AnimationVCTL.xib */; };
+		2CBF412D1CB67085005C9567 /* AnimationRotateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF412B1CB67085005C9567 /* AnimationRotateVCTL.m */; };
+		2CBF412E1CB67085005C9567 /* AnimationRotateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF412C1CB67085005C9567 /* AnimationRotateVCTL.xib */; };
+		2CBF41311CB670F7005C9567 /* AnimationRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF41301CB670F7005C9567 /* AnimationRotateView.m */; };
 		2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB28931BCB4421005E9B85 /* DragCollectionView.m */; };
 		2CCB28961BCB4421005E9B85 /* DragCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB28941BCB4421005E9B85 /* DragCollectionView.xib */; };
 		2CCB289A1BCB4575005E9B85 /* DragCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB28981BCB4575005E9B85 /* DragCollectionCell.m */; };
@@ -547,6 +554,9 @@
 		2C5FD5551BF421B20014B672 /* MenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemCell.h; sourceTree = "<group>"; };
 		2C5FD5561BF421B20014B672 /* MenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemCell.m; sourceTree = "<group>"; };
 		2C5FD5571BF421B20014B672 /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		2C6304781CB657AF00A67700 /* HorizontalView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalView2.h; sourceTree = "<group>"; };
+		2C6304791CB657AF00A67700 /* HorizontalView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalView2.m; sourceTree = "<group>"; };
+		2C6304801CB659BC00A67700 /* HorizontalVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalVCTL.xib; sourceTree = "<group>"; };
 		2C65D7321BB3A32300D22F29 /* MathProblem1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblem1VCTL.h; sourceTree = "<group>"; };
 		2C65D7331BB3A32300D22F29 /* MathProblem1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem1VCTL.m; sourceTree = "<group>"; };
 		2C65D7341BB3A32300D22F29 /* MathProblem1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathProblem1VCTL.xib; sourceTree = "<group>"; };
@@ -713,6 +723,14 @@
 		2CBDD1561BDF71EE00FB7519 /* PushNotificationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationVCTL.h; sourceTree = "<group>"; };
 		2CBDD1571BDF71EE00FB7519 /* PushNotificationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationVCTL.m; sourceTree = "<group>"; };
 		2CBDD1581BDF71EE00FB7519 /* PushNotificationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushNotificationVCTL.xib; sourceTree = "<group>"; };
+		2CBF411F1CB66F72005C9567 /* AnimationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVCTL.h; sourceTree = "<group>"; };
+		2CBF41201CB66F72005C9567 /* AnimationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVCTL.m; sourceTree = "<group>"; };
+		2CBF41211CB66F72005C9567 /* AnimationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationVCTL.xib; sourceTree = "<group>"; };
+		2CBF412A1CB67085005C9567 /* AnimationRotateVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationRotateVCTL.h; sourceTree = "<group>"; };
+		2CBF412B1CB67085005C9567 /* AnimationRotateVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationRotateVCTL.m; sourceTree = "<group>"; };
+		2CBF412C1CB67085005C9567 /* AnimationRotateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationRotateVCTL.xib; sourceTree = "<group>"; };
+		2CBF412F1CB670F7005C9567 /* AnimationRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationRotateView.h; sourceTree = "<group>"; };
+		2CBF41301CB670F7005C9567 /* AnimationRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationRotateView.m; sourceTree = "<group>"; };
 		2CCB28921BCB4421005E9B85 /* DragCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionView.h; sourceTree = "<group>"; };
 		2CCB28931BCB4421005E9B85 /* DragCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionView.m; sourceTree = "<group>"; };
 		2CCB28941BCB4421005E9B85 /* DragCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionView.xib; sourceTree = "<group>"; };
@@ -1034,8 +1052,11 @@
 			children = (
 				2C35BE991C30C921000E2C2C /* HorizontalVCTL.h */,
 				2C35BE9A1C30C921000E2C2C /* HorizontalVCTL.m */,
+				2C6304801CB659BC00A67700 /* HorizontalVCTL.xib */,
 				2C35BE9C1C30CA19000E2C2C /* HorizontalView.h */,
 				2C35BE9D1C30CA19000E2C2C /* HorizontalView.m */,
+				2C6304781CB657AF00A67700 /* HorizontalView2.h */,
+				2C6304791CB657AF00A67700 /* HorizontalView2.m */,
 			);
 			path = horizontalView;
 			sourceTree = "<group>";
@@ -1743,6 +1764,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF411E1CB66F64005C9567 /* animation */,
 				2C7459D21CACCD4D00A97EB6 /* kvo */,
 				2C7459CC1CACB6E100A97EB6 /* webView */,
 				2C754D3F1CABB4130004FEA2 /* others */,
@@ -1929,6 +1951,29 @@
 				2CBDD1581BDF71EE00FB7519 /* PushNotificationVCTL.xib */,
 			);
 			path = pushNotification;
+			sourceTree = "<group>";
+		};
+		2CBF411E1CB66F64005C9567 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF411F1CB66F72005C9567 /* AnimationVCTL.h */,
+				2CBF41201CB66F72005C9567 /* AnimationVCTL.m */,
+				2CBF41211CB66F72005C9567 /* AnimationVCTL.xib */,
+				2CBF41291CB67085005C9567 /* rotate */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		2CBF41291CB67085005C9567 /* rotate */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF412A1CB67085005C9567 /* AnimationRotateVCTL.h */,
+				2CBF412B1CB67085005C9567 /* AnimationRotateVCTL.m */,
+				2CBF412C1CB67085005C9567 /* AnimationRotateVCTL.xib */,
+				2CBF412F1CB670F7005C9567 /* AnimationRotateView.h */,
+				2CBF41301CB670F7005C9567 /* AnimationRotateView.m */,
+			);
+			path = rotate;
 			sourceTree = "<group>";
 		};
 		2CCB28911BCB440F005E9B85 /* dragCollectionView */ = {
@@ -2204,6 +2249,7 @@
 				2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */,
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
 				2C24FFB91C05495E0001BB5D /* ImageVCTL.xib in Resources */,
+				2CBF41231CB66F72005C9567 /* AnimationVCTL.xib in Resources */,
 				2CA1F89D1C0BF0C400089E14 /* CheckInstallQQVCTL.xib in Resources */,
 				2C38CA651C1596C500492AF6 /* ActionSheetVCTL.xib in Resources */,
 				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
@@ -2215,11 +2261,13 @@
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C40EAFD1BE0C1AF00074AB8 /* ReadPDFVCTL.xib in Resources */,
 				2C08A8361BB931B60077FE53 /* LewPopupVCTL.xib in Resources */,
+				2C6304811CB659BC00A67700 /* HorizontalVCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA112CE1BB29EAA00406685 /* X1.xib in Resources */,
 				2C8BAB5F1BC7CF45000FD2DF /* Touch3D1VCTL.xib in Resources */,
 				2C48A32D1C86B33C007A73E9 /* LocationGTJA.gpx in Resources */,
 				2C92EC311CA373BE005ED0E3 /* EncoderVCTL.xib in Resources */,
+				2CBF412E1CB67085005C9567 /* AnimationRotateVCTL.xib in Resources */,
 				2CDF0EA71C16F7D5009B8537 /* Dealloc1VCTL.xib in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
 				2C2A16701BCF718500D065CD /* SavePlistVCTL.xib in Resources */,
@@ -2352,6 +2400,7 @@
 				2C7491CA1C8EA90900A82022 /* TestBlockVCTL.m in Sources */,
 				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
+				2C63047A1CB657AF00A67700 /* HorizontalView2.m in Sources */,
 				2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */,
 				2C48A3421C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
@@ -2368,6 +2417,7 @@
 				2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */,
 				2C92EC371CA37671005ED0E3 /* EncoderObject1.m in Sources */,
 				2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */,
+				2CBF412D1CB67085005C9567 /* AnimationRotateVCTL.m in Sources */,
 				2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */,
 				2C2A166F1BCF718500D065CD /* SavePlistVCTL.m in Sources */,
 				2CEF54961C1EE48D003D1E7F /* MathProblem2VCTL.m in Sources */,
@@ -2421,6 +2471,7 @@
 				2C48A3371C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m in Sources */,
 				2C2EC3381BE74021008197C3 /* UIAlertView+AFNetworking.m in Sources */,
 				2C2EC3341BE74021008197C3 /* AFURLResponseSerialization.m in Sources */,
+				2CBF41311CB670F7005C9567 /* AnimationRotateView.m in Sources */,
 				2C4BE0441BE9A7B0004F1DAF /* MJRefreshHeader.m in Sources */,
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
 				2C7459D01CACB6FC00A97EB6 /* WebViewVCTL.m in Sources */,
@@ -2485,6 +2536,7 @@
 				2C4BE04A1BE9A7B0004F1DAF /* MJRefreshBackStateFooter.m in Sources */,
 				2C92EC341CA373CF005ED0E3 /* EncoderObject.m in Sources */,
 				2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */,
+				2CBF41221CB66F72005C9567 /* AnimationVCTL.m in Sources */,
 				2C68EDF91C194102009E1396 /* WXApiRequestHandler.m in Sources */,
 				2C40EB011BE0C1F000074AB8 /* ReadPDFDefaultVCTL.m in Sources */,
 				2C23B76C1BFB047600E87E95 /* DeleteInsertCell.m in Sources */,

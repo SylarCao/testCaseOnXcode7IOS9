@@ -45,7 +45,7 @@
             break;
         }
     }
-    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_v1(==200)]-30-|" options:0 metrics:nil views:dict];
+    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_v1(==200)]-30-|" options:0 metrics:nil views:dict];
     [self.view addConstraints:c1];
     [self.view addConstraints:c2];
 }

@@ -23,19 +23,20 @@
     self = [super initWithFrame:frame];
     if (self)
     {
+        self.backgroundColor = [[Helper share] getRandomColorWithAlpha:0.4];
         [self setInitialValue];
         
 //        [self fun1];
 //        [self fun2];
 //        [self fun3];
-        [self fun4];
+//        [self fun4];
+        [self fun5];
     }
     return self;
 }
 
 - (void)setInitialValue
 {
-    self.backgroundColor = [[Helper share] getRandomColorWithAlpha:0.4];
     
     _v1 = [[UIView alloc] init];
     _v1.translatesAutoresizingMaskIntoConstraints = NO;
@@ -48,6 +49,23 @@
     [self addSubview:_v2];
 }
 
+- (void)fun5
+{
+    // 加了一个 再加一个
+    
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_v1);
+    NSArray *c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[_v1(==20)]" options:0 metrics:nil views:dict];
+    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_v1]-20-|" options:0 metrics:nil views:dict];
+    [self addConstraints:c1];
+    [self addConstraints:c2];
+    
+    // 开始加第二个
+    dict = NSDictionaryOfVariableBindings(_v1, _v2);
+    c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[_v1]-20-[_v2]-0-|" options:0 metrics:nil views:dict];
+    c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_v2]-20-|" options:0 metrics:nil views:dict];
+    [self addConstraints:c1];
+    [self addConstraints:c2];
+}
 
 
 - (void)fun4

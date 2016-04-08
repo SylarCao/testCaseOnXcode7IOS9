@@ -50,8 +50,8 @@
     
     // constraints
     NSDictionary *dict = NSDictionaryOfVariableBindings(l1);
-    NSArray *c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[l1]-0-|" options:0 metrics:nil views:dict];
-    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[l1]-10-|" options:0 metrics:nil views:dict];
+    NSArray *c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[l1]-0-|" options:NSLayoutFormatDirectionRightToLeft metrics:nil views:dict];
+    NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[l1]-10-|" options:NSLayoutFormatDirectionRightToLeft metrics:nil views:dict];
     [self addConstraints:c1];
     [self addConstraints:c2];
 }

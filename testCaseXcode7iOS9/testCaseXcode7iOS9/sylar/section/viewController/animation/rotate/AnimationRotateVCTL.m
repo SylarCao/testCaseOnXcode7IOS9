@@ -49,12 +49,12 @@
 - (void)fun2
 {
     _v3 = [[HorizontalView2 alloc] initWithFrame:CGRectMake(100, 300, 100, 50)];
-//    [self.view addSubview:_v3];
-//    
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        CGAffineTransform rotate = CGAffineTransformMakeRotation(90 / 180.0 * M_PI );
-//        [_v3 setTransform:rotate];
-//    });
+    [self.view addSubview:_v3];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGAffineTransform rotate = CGAffineTransformMakeRotation(90 / 180.0 * M_PI );
+        [_v3 setTransform:rotate];
+    });
 }
 
 
@@ -93,23 +93,30 @@
 - (void)an3
 {
     [self animationWithView:self.view WithAnimationTransition:UIViewAnimationTransitionFlipFromLeft];
-    [self.view addSubview:_v3];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CGAffineTransform rotate = CGAffineTransformMakeRotation(90 / 180.0 * M_PI );
-        [_v3 setTransform:rotate];
-    });
+    _v3.hidden = NO;
+    
+    
+    
+//    [self.view addSubview:_v3];
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        CGAffineTransform rotate = CGAffineTransformMakeRotation(90 / 180.0 * M_PI );
+//        [_v3 setTransform:rotate];
+//    });
 }
 
 - (void)an4
 {
     [self animationWithView:self.view WithAnimationTransition:UIViewAnimationTransitionFlipFromLeft];
-    [_v3 removeFromSuperview];
+//    [_v3 removeFromSuperview];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CGAffineTransform rotate = CGAffineTransformMakeRotation(0);
-        [_v3 setTransform:rotate];
-    });
+    _v3.hidden = YES;
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        CGAffineTransform rotate = CGAffineTransformMakeRotation(0);
+//        [_v3 setTransform:rotate];
+//    });
 }
 
 #pragma UIView实现动画

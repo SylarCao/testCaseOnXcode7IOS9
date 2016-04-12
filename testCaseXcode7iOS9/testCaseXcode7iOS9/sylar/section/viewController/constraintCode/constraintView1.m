@@ -29,8 +29,8 @@
 //        [self fun1];
 //        [self fun2];
 //        [self fun3];
-//        [self fun4];
-        [self fun5];
+        [self fun4];
+//        [self fun5];
     }
     return self;
 }
@@ -74,7 +74,8 @@
     [self addConstraint:[NSLayoutConstraint constraintWithItem:_v1 attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.4 constant:0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:_v1 attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:0.4 constant:0]];
     
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:_v1 attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_v1 attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.8 constant:0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_v1 attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
     
     

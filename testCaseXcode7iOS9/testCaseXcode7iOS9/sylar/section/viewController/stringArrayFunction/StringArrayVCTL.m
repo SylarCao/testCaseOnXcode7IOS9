@@ -36,6 +36,18 @@
     
 //    [self fun5];
     
+    [self fun7];
+    
+}
+
+- (void)fun7
+{
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    [arr addObject:@"1"];
+    [arr addObject:@"2"];
+    [arr replaceObjectAtIndex:0 withObject:@"a"];
+    [arr replaceObjectAtIndex:2 withObject:@"c"];  // crash
+    NSLog(@"");
 }
 
 - (void)fun6

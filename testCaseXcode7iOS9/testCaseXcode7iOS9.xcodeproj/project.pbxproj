@@ -244,6 +244,8 @@
 		2CA112CE1BB29EAA00406685 /* X1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112BD1BB29EAA00406685 /* X1.xib */; };
 		2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112C01BB29EAA00406685 /* TimerVCTL.m */; };
 		2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112C11BB29EAA00406685 /* TimerVCTL.xib */; };
+		2CA1BBFB1CBCD583008C2C0F /* CPlusVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */; };
+		2CA1BBFC1CBCD583008C2C0F /* CPlusVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */; };
 		2CA1F89C1C0BF0C400089E14 /* CheckInstallQQVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1F89A1C0BF0C400089E14 /* CheckInstallQQVCTL.m */; };
 		2CA1F89D1C0BF0C400089E14 /* CheckInstallQQVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F89B1C0BF0C400089E14 /* CheckInstallQQVCTL.xib */; };
 		2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F89F1C0BF3D700089E14 /* sgs1.jpg */; };
@@ -697,6 +699,9 @@
 		2CA112BF1BB29EAA00406685 /* TimerVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerVCTL.h; sourceTree = "<group>"; };
 		2CA112C01BB29EAA00406685 /* TimerVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerVCTL.m; sourceTree = "<group>"; };
 		2CA112C11BB29EAA00406685 /* TimerVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerVCTL.xib; sourceTree = "<group>"; };
+		2CA1BBF81CBCD583008C2C0F /* CPlusVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlusVCTL.h; sourceTree = "<group>"; };
+		2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPlusVCTL.m; sourceTree = "<group>"; };
+		2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPlusVCTL.xib; sourceTree = "<group>"; };
 		2CA1F8991C0BF0C400089E14 /* CheckInstallQQVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInstallQQVCTL.h; sourceTree = "<group>"; };
 		2CA1F89A1C0BF0C400089E14 /* CheckInstallQQVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInstallQQVCTL.m; sourceTree = "<group>"; };
 		2CA1F89B1C0BF0C400089E14 /* CheckInstallQQVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInstallQQVCTL.xib; sourceTree = "<group>"; };
@@ -1764,6 +1769,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CA1BBF71CBCD56D008C2C0F /* CPlus */,
 				2CBF411E1CB66F64005C9567 /* animation */,
 				2C7459D21CACCD4D00A97EB6 /* kvo */,
 				2C7459CC1CACB6E100A97EB6 /* webView */,
@@ -1873,6 +1879,16 @@
 				2C92EC411CA3B337005ED0E3 /* TimerObject.m */,
 			);
 			path = timer;
+			sourceTree = "<group>";
+		};
+		2CA1BBF71CBCD56D008C2C0F /* CPlus */ = {
+			isa = PBXGroup;
+			children = (
+				2CA1BBF81CBCD583008C2C0F /* CPlusVCTL.h */,
+				2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */,
+				2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */,
+			);
+			path = CPlus;
 			sourceTree = "<group>";
 		};
 		2CA1F8981C0BF0B000089E14 /* checkInstallQQ */ = {
@@ -2324,6 +2340,7 @@
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
 				2C40EB021BE0C1F000074AB8 /* ReadPDFDefaultVCTL.xib in Resources */,
 				2C2E081C1C16783E0096DAD0 /* NavigationBarVCTL.xib in Resources */,
+				2CA1BBFC1CBCD583008C2C0F /* CPlusVCTL.xib in Resources */,
 				2C2A167C1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C5FD5541BF4214A0014B672 /* MenuItemVCTL.xib in Resources */,
@@ -2546,6 +2563,7 @@
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2C4225491C17FD8500009D5F /* DrawLineVCTL.m in Sources */,
+				2CA1BBFB1CBCD583008C2C0F /* CPlusVCTL.m in Sources */,
 				2C754D431CABB41F0004FEA2 /* OthersVCTL.m in Sources */,
 				2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,

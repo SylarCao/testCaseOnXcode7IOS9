@@ -92,7 +92,7 @@
 
 - (void)an3
 {
-    [self animationWithView:self.view WithAnimationTransition:UIViewAnimationTransitionFlipFromLeft];
+    [self animationWithView:self.navigationController.view WithAnimationTransition:UIViewAnimationTransitionFlipFromLeft];
     
     _v3.hidden = NO;
     

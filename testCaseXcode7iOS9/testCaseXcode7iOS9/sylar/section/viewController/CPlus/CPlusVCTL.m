@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "CPlusVCTL.h"
+#import "CMMFile.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface CPlusVCTL ()
 
@@ -19,6 +20,21 @@
     // Do any additional setup after loading the view from its nib.
     
     [self fun1];
+}
+
+- (IBAction)btn1:(id)sender
+{
+    [self fun2];
+}
+
+
+
+
+- (void)fun2
+{
+    CMMFile *mm = [[CMMFile alloc] init];
+
+    [mm cppFun1];
 }
 
 - (void)fun1
@@ -43,5 +59,12 @@
     printf("3");
     printf("4");
 }
+
+
+
+
+
+
+
 
 @end

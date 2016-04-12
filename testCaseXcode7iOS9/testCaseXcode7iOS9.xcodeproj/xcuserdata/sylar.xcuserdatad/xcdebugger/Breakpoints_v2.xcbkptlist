@@ -131,13 +131,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "testCaseXcode7iOS9/sylar/section/viewController/CPlus/CPlusVCTL.m"
-            timestampString = "482137652.020895"
+            filePath = "testCaseXcode7iOS9/sylar/section/viewController/CPlus/CPlus.cpp"
+            timestampString = "482144273.699091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-fun1"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "cppClass1::cppFun1()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

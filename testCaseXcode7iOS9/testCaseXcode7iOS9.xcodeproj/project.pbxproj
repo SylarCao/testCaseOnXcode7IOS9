@@ -246,6 +246,8 @@
 		2CA112D01BB29EAA00406685 /* TimerVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112C11BB29EAA00406685 /* TimerVCTL.xib */; };
 		2CA1BBFB1CBCD583008C2C0F /* CPlusVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */; };
 		2CA1BBFC1CBCD583008C2C0F /* CPlusVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */; };
+		2CA1BC021CBCEC01008C2C0F /* CPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1BC001CBCEC01008C2C0F /* CPlus.cpp */; };
+		2CA1BC071CBCEC3F008C2C0F /* CMMFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1BC061CBCEC3F008C2C0F /* CMMFile.mm */; };
 		2CA1F89C1C0BF0C400089E14 /* CheckInstallQQVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1F89A1C0BF0C400089E14 /* CheckInstallQQVCTL.m */; };
 		2CA1F89D1C0BF0C400089E14 /* CheckInstallQQVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F89B1C0BF0C400089E14 /* CheckInstallQQVCTL.xib */; };
 		2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F89F1C0BF3D700089E14 /* sgs1.jpg */; };
@@ -702,6 +704,10 @@
 		2CA1BBF81CBCD583008C2C0F /* CPlusVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlusVCTL.h; sourceTree = "<group>"; };
 		2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPlusVCTL.m; sourceTree = "<group>"; };
 		2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPlusVCTL.xib; sourceTree = "<group>"; };
+		2CA1BC001CBCEC01008C2C0F /* CPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlus.cpp; sourceTree = "<group>"; };
+		2CA1BC011CBCEC01008C2C0F /* CPlus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPlus.hpp; sourceTree = "<group>"; };
+		2CA1BC051CBCEC3F008C2C0F /* CMMFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMFile.h; sourceTree = "<group>"; };
+		2CA1BC061CBCEC3F008C2C0F /* CMMFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CMMFile.mm; sourceTree = "<group>"; };
 		2CA1F8991C0BF0C400089E14 /* CheckInstallQQVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInstallQQVCTL.h; sourceTree = "<group>"; };
 		2CA1F89A1C0BF0C400089E14 /* CheckInstallQQVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInstallQQVCTL.m; sourceTree = "<group>"; };
 		2CA1F89B1C0BF0C400089E14 /* CheckInstallQQVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInstallQQVCTL.xib; sourceTree = "<group>"; };
@@ -1887,6 +1893,10 @@
 				2CA1BBF81CBCD583008C2C0F /* CPlusVCTL.h */,
 				2CA1BBF91CBCD583008C2C0F /* CPlusVCTL.m */,
 				2CA1BBFA1CBCD583008C2C0F /* CPlusVCTL.xib */,
+				2CA1BC051CBCEC3F008C2C0F /* CMMFile.h */,
+				2CA1BC061CBCEC3F008C2C0F /* CMMFile.mm */,
+				2CA1BC001CBCEC01008C2C0F /* CPlus.cpp */,
+				2CA1BC011CBCEC01008C2C0F /* CPlus.hpp */,
 			);
 			path = CPlus;
 			sourceTree = "<group>";
@@ -2432,6 +2442,7 @@
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
 				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
 				2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */,
+				2CA1BC071CBCEC3F008C2C0F /* CMMFile.mm in Sources */,
 				2C92EC371CA37671005ED0E3 /* EncoderObject1.m in Sources */,
 				2C5FD5581BF421B20014B672 /* MenuItemCell.m in Sources */,
 				2CBF412D1CB67085005C9567 /* AnimationRotateVCTL.m in Sources */,
@@ -2443,6 +2454,7 @@
 				2C899A8A1C3A385A00B6669B /* TouchEventVCTL.m in Sources */,
 				2C68EDFB1C194102009E1396 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
+				2CA1BC021CBCEC01008C2C0F /* CPlus.cpp in Sources */,
 				2C9029AD1C9BE0370052B1FC /* ConstraintCodeVCTL.m in Sources */,
 				2C84CD031C910942005A16FA /* TableViewHeaderXIBView.m in Sources */,
 				2C8BAB591BC7C00A000FD2DF /* Touch3DVCTL.m in Sources */,

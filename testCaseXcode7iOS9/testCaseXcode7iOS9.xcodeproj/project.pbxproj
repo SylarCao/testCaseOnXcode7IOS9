@@ -212,6 +212,10 @@
 		2C9029AD1C9BE0370052B1FC /* ConstraintCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9029AB1C9BE0370052B1FC /* ConstraintCodeVCTL.m */; };
 		2C9029AE1C9BE0370052B1FC /* ConstraintCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9029AC1C9BE0370052B1FC /* ConstraintCodeVCTL.xib */; };
 		2C9029B11C9BE0720052B1FC /* constraintView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9029B01C9BE0720052B1FC /* constraintView1.m */; };
+		2C92A4991CC07C0900105A5D /* PickerVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92A4971CC07C0900105A5D /* PickerVCTL.m */; };
+		2C92A49A1CC07C0900105A5D /* PickerVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92A4981CC07C0900105A5D /* PickerVCTL.xib */; };
+		2C92A4A11CC087D800105A5D /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92A49F1CC087D800105A5D /* PickerViewController.m */; };
+		2C92A4A21CC087D800105A5D /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92A4A01CC087D800105A5D /* PickerViewController.xib */; };
 		2C92DFE51BF9A303009CA50A /* JailBreakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */; };
 		2C92DFE61BF9A303009CA50A /* JailBreakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */; };
 		2C92EC301CA373BE005ED0E3 /* EncoderVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92EC2E1CA373BE005ED0E3 /* EncoderVCTL.m */; };
@@ -648,6 +652,12 @@
 		2C9029AC1C9BE0370052B1FC /* ConstraintCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstraintCodeVCTL.xib; sourceTree = "<group>"; };
 		2C9029AF1C9BE0720052B1FC /* constraintView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraintView1.h; sourceTree = "<group>"; };
 		2C9029B01C9BE0720052B1FC /* constraintView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constraintView1.m; sourceTree = "<group>"; };
+		2C92A4961CC07C0900105A5D /* PickerVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerVCTL.h; sourceTree = "<group>"; };
+		2C92A4971CC07C0900105A5D /* PickerVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerVCTL.m; sourceTree = "<group>"; };
+		2C92A4981CC07C0900105A5D /* PickerVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerVCTL.xib; sourceTree = "<group>"; };
+		2C92A49E1CC087D800105A5D /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		2C92A49F1CC087D800105A5D /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		2C92A4A01CC087D800105A5D /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		2C92DFE21BF9A303009CA50A /* JailBreakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailBreakVCTL.h; sourceTree = "<group>"; };
 		2C92DFE31BF9A303009CA50A /* JailBreakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailBreakVCTL.m; sourceTree = "<group>"; };
 		2C92DFE41BF9A303009CA50A /* JailBreakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JailBreakVCTL.xib; sourceTree = "<group>"; };
@@ -1634,6 +1644,19 @@
 			path = constraintCode;
 			sourceTree = "<group>";
 		};
+		2C92A4951CC07BCD00105A5D /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				2C92A4961CC07C0900105A5D /* PickerVCTL.h */,
+				2C92A4971CC07C0900105A5D /* PickerVCTL.m */,
+				2C92A4981CC07C0900105A5D /* PickerVCTL.xib */,
+				2C92A49E1CC087D800105A5D /* PickerViewController.h */,
+				2C92A49F1CC087D800105A5D /* PickerViewController.m */,
+				2C92A4A01CC087D800105A5D /* PickerViewController.xib */,
+			);
+			path = picker;
+			sourceTree = "<group>";
+		};
 		2C92DFE11BF9A2F2009CA50A /* jailbreak */ = {
 			isa = PBXGroup;
 			children = (
@@ -1775,6 +1798,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C92A4951CC07BCD00105A5D /* picker */,
 				2CA1BBF71CBCD56D008C2C0F /* CPlus */,
 				2CBF411E1CB66F64005C9567 /* animation */,
 				2C7459D21CACCD4D00A97EB6 /* kvo */,
@@ -2326,6 +2350,7 @@
 				2CCB28961BCB4421005E9B85 /* DragCollectionView.xib in Resources */,
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
 				2C48A32B1C86832D007A73E9 /* LocationXiangYi.gpx in Resources */,
+				2C92A4A21CC087D800105A5D /* PickerViewController.xib in Resources */,
 				2C84CCFB1C91084C005A16FA /* TableViewVCTL.xib in Resources */,
 				2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */,
 				2C4FE5531BD78A7700681C2F /* ContactListVCTL.xib in Resources */,
@@ -2348,6 +2373,7 @@
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
 				2CE092F21BC6378E00027EED /* PostNotificationVCTL.xib in Resources */,
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
+				2C92A49A1CC07C0900105A5D /* PickerVCTL.xib in Resources */,
 				2C40EB021BE0C1F000074AB8 /* ReadPDFDefaultVCTL.xib in Resources */,
 				2C2E081C1C16783E0096DAD0 /* NavigationBarVCTL.xib in Resources */,
 				2CA1BBFC1CBCD583008C2C0F /* CPlusVCTL.xib in Resources */,
@@ -2420,6 +2446,7 @@
 				2CE1F3551BCE3DC800B82CAE /* UIViewController+LewPopupViewController.m in Sources */,
 				2C08A8391BB931C60077FE53 /* LewView1.m in Sources */,
 				2C754D471CABB52A0004FEA2 /* OthersInstance.m in Sources */,
+				2C92A4A11CC087D800105A5D /* PickerViewController.m in Sources */,
 				2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */,
 				2C1C92D31BD0A94C009573E6 /* NumberKeyboardVCTL.m in Sources */,
 				2C4BE0491BE9A7B0004F1DAF /* MJRefreshBackNormalFooter.m in Sources */,
@@ -2486,6 +2513,7 @@
 				2C48A3321C87D179007A73E9 /* HorizonScrollVCTL.m in Sources */,
 				2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */,
 				2C23A07E1C0D4268008B4712 /* ShareWeiXinVCTL.m in Sources */,
+				2C92A4991CC07C0900105A5D /* PickerVCTL.m in Sources */,
 				2C68EE071C1949F4009E1396 /* DrawView1.m in Sources */,
 				2CB381A01BCF413100D4F33F /* JsonKitVCTL.m in Sources */,
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,

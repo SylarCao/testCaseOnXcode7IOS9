@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[ @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL",
+    NSArray *ctrls = @[ @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL",
                        
                @"UILabelVCTL", @"TestBlockVCTL", @"TableViewVCTL", @"ConstraintCodeVCTL", @"EncoderVCTL", @"OthersVCTL",
                @"testXibVCTL", @"NaviBarVCTL", @"FingerTapVCTL", @"XOptionVCTL", @"ScrollViewZoomVCTL", @"HorizonScrollVCTL",

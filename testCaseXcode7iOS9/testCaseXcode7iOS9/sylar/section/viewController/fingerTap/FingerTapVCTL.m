@@ -26,9 +26,9 @@
     
     [self addGesture];
     
-    [self addMask];
+//    [self addMask];
     
-    [self addMask2];
+//    [self addMask2];
     
     
     
@@ -48,6 +48,7 @@
     [_viewFinger addGestureRecognizer:pinch];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    tap.delegate = self;
     [_viewFinger addGestureRecognizer:tap];
 }
 
@@ -60,6 +61,7 @@
     
     UITapGestureRecognizer *tap_yellow = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMask)];
     [v1 addGestureRecognizer:tap_yellow];
+    tap_yellow.enabled = NO;
     
     UIPanGestureRecognizer *pp = [[UIPanGestureRecognizer alloc] init];
     [v1 addGestureRecognizer:pp];
@@ -112,6 +114,21 @@
 - (void)tapGesture:(UITapGestureRecognizer *)gesture
 {
     NSLog(@"tap");
+}
+
+
+#pragma mark -  UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    CGPoint location = [touch locationInView:_viewFinger];
+    if (location.x > 200)
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
 }
 
 #pragma mark - touch event

@@ -12,6 +12,17 @@
 		2C08A8391BB931C60077FE53 /* LewView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A8381BB931C60077FE53 /* LewView1.m */; };
 		2C08A83C1BB933480077FE53 /* LewView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A83B1BB933480077FE53 /* LewView2.m */; };
 		2C08A83E1BB933590077FE53 /* LewView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C08A83D1BB933590077FE53 /* LewView2.xib */; };
+		2C09197B1CC86917004EDFD2 /* CameraVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0919791CC86917004EDFD2 /* CameraVCTL.m */; };
+		2C09197C1CC86917004EDFD2 /* CameraVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C09197A1CC86917004EDFD2 /* CameraVCTL.xib */; };
+		2C0919811CC86938004EDFD2 /* DefaultCameraVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C09197F1CC86938004EDFD2 /* DefaultCameraVCTL.m */; };
+		2C0919821CC86938004EDFD2 /* DefaultCameraVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0919801CC86938004EDFD2 /* DefaultCameraVCTL.xib */; };
+		2C0919871CC87082004EDFD2 /* EWMCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0919851CC87082004EDFD2 /* EWMCodeVCTL.m */; };
+		2C0919881CC87082004EDFD2 /* EWMCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0919861CC87082004EDFD2 /* EWMCodeVCTL.xib */; };
+		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
+		2C0919961CC87BDB004EDFD2 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C0919951CC87BDB004EDFD2 /* beep.mp3 */; };
+		2C09199B1CC89C2A004EDFD2 /* DownloadVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0919991CC89C2A004EDFD2 /* DownloadVCTL.m */; };
+		2C09199C1CC89C2A004EDFD2 /* DownloadVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C09199A1CC89C2A004EDFD2 /* DownloadVCTL.xib */; };
+		2C09199E1CC89E05004EDFD2 /* beep_mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C09199D1CC89E05004EDFD2 /* beep_mine.mp3 */; };
 		2C1C92D31BD0A94C009573E6 /* NumberKeyboardVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C92D11BD0A94C009573E6 /* NumberKeyboardVCTL.m */; };
 		2C1C92D41BD0A94C009573E6 /* NumberKeyboardVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1C92D21BD0A94C009573E6 /* NumberKeyboardVCTL.xib */; };
 		2C23A07E1C0D4268008B4712 /* ShareWeiXinVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C23A07C1C0D4268008B4712 /* ShareWeiXinVCTL.m */; };
@@ -328,6 +339,21 @@
 		2C08A83A1BB933480077FE53 /* LewView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewView2.h; sourceTree = "<group>"; };
 		2C08A83B1BB933480077FE53 /* LewView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewView2.m; sourceTree = "<group>"; };
 		2C08A83D1BB933590077FE53 /* LewView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LewView2.xib; sourceTree = "<group>"; };
+		2C0919781CC86917004EDFD2 /* CameraVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraVCTL.h; sourceTree = "<group>"; };
+		2C0919791CC86917004EDFD2 /* CameraVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraVCTL.m; sourceTree = "<group>"; };
+		2C09197A1CC86917004EDFD2 /* CameraVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraVCTL.xib; sourceTree = "<group>"; };
+		2C09197E1CC86938004EDFD2 /* DefaultCameraVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultCameraVCTL.h; sourceTree = "<group>"; };
+		2C09197F1CC86938004EDFD2 /* DefaultCameraVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultCameraVCTL.m; sourceTree = "<group>"; };
+		2C0919801CC86938004EDFD2 /* DefaultCameraVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultCameraVCTL.xib; sourceTree = "<group>"; };
+		2C0919841CC87082004EDFD2 /* EWMCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMCodeVCTL.h; sourceTree = "<group>"; };
+		2C0919851CC87082004EDFD2 /* EWMCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMCodeVCTL.m; sourceTree = "<group>"; };
+		2C0919861CC87082004EDFD2 /* EWMCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWMCodeVCTL.xib; sourceTree = "<group>"; };
+		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C0919951CC87BDB004EDFD2 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		2C0919981CC89C2A004EDFD2 /* DownloadVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadVCTL.h; sourceTree = "<group>"; };
+		2C0919991CC89C2A004EDFD2 /* DownloadVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadVCTL.m; sourceTree = "<group>"; };
+		2C09199A1CC89C2A004EDFD2 /* DownloadVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadVCTL.xib; sourceTree = "<group>"; };
+		2C09199D1CC89E05004EDFD2 /* beep_mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_mine.mp3; sourceTree = "<group>"; };
 		2C1C92D01BD0A94C009573E6 /* NumberKeyboardVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberKeyboardVCTL.h; sourceTree = "<group>"; };
 		2C1C92D11BD0A94C009573E6 /* NumberKeyboardVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberKeyboardVCTL.m; sourceTree = "<group>"; };
 		2C1C92D21BD0A94C009573E6 /* NumberKeyboardVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberKeyboardVCTL.xib; sourceTree = "<group>"; };
@@ -832,6 +858,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */,
 				2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */,
 				2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */,
 				2C2A68731BFDB09E00C4FA73 /* JavaScriptCore.framework in Frameworks */,
@@ -868,6 +895,50 @@
 				2C08A83D1BB933590077FE53 /* LewView2.xib */,
 			);
 			path = LewPopupViewcontroller;
+			sourceTree = "<group>";
+		};
+		2C0919771CC86908004EDFD2 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				2C0919781CC86917004EDFD2 /* CameraVCTL.h */,
+				2C0919791CC86917004EDFD2 /* CameraVCTL.m */,
+				2C09197A1CC86917004EDFD2 /* CameraVCTL.xib */,
+				2C0919831CC8706B004EDFD2 /* ErWeiMa */,
+				2C09197D1CC86929004EDFD2 /* default */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
+		2C09197D1CC86929004EDFD2 /* default */ = {
+			isa = PBXGroup;
+			children = (
+				2C09197E1CC86938004EDFD2 /* DefaultCameraVCTL.h */,
+				2C09197F1CC86938004EDFD2 /* DefaultCameraVCTL.m */,
+				2C0919801CC86938004EDFD2 /* DefaultCameraVCTL.xib */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
+		2C0919831CC8706B004EDFD2 /* ErWeiMa */ = {
+			isa = PBXGroup;
+			children = (
+				2C09199D1CC89E05004EDFD2 /* beep_mine.mp3 */,
+				2C0919951CC87BDB004EDFD2 /* beep.mp3 */,
+				2C0919841CC87082004EDFD2 /* EWMCodeVCTL.h */,
+				2C0919851CC87082004EDFD2 /* EWMCodeVCTL.m */,
+				2C0919861CC87082004EDFD2 /* EWMCodeVCTL.xib */,
+			);
+			path = ErWeiMa;
+			sourceTree = "<group>";
+		};
+		2C0919971CC89C1A004EDFD2 /* download */ = {
+			isa = PBXGroup;
+			children = (
+				2C0919981CC89C2A004EDFD2 /* DownloadVCTL.h */,
+				2C0919991CC89C2A004EDFD2 /* DownloadVCTL.m */,
+				2C09199A1CC89C2A004EDFD2 /* DownloadVCTL.xib */,
+			);
+			path = download;
 			sourceTree = "<group>";
 		};
 		2C1C92CF1BD0A935009573E6 /* numberKeyboard */ = {
@@ -1694,6 +1765,7 @@
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
+				2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */,
 				2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */,
 				2C68EDFE1C194280009E1396 /* libsqlite3.tbd */,
 				2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */,
@@ -1798,6 +1870,8 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C0919971CC89C1A004EDFD2 /* download */,
+				2C0919771CC86908004EDFD2 /* camera */,
 				2C92A4951CC07BCD00105A5D /* picker */,
 				2CA1BBF71CBCD56D008C2C0F /* CPlus */,
 				2CBF411E1CB66F64005C9567 /* animation */,
@@ -2326,6 +2400,7 @@
 				2C3A83BC1BB8C88400A335B5 /* StackViewVCTL.xib in Resources */,
 				2C2A16811BCFA57200D065CD /* IntrinsicCell.xib in Resources */,
 				2C4670201C100D0300DF57AE /* OpeniOS9VCTL.xib in Resources */,
+				2C09199C1CC89C2A004EDFD2 /* DownloadVCTL.xib in Resources */,
 				2C1C92D41BD0A94C009573E6 /* NumberKeyboardVCTL.xib in Resources */,
 				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
 				2CEEE03F1C71623C00891C1F /* FingerTapVCTL.xib in Resources */,
@@ -2339,6 +2414,7 @@
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
 				2C2A68691BFDA9B900C4FA73 /* JSPatchVCTL.xib in Resources */,
 				2C3E34C61BF324D30008F1B0 /* BlurBkgVCTL.xib in Resources */,
+				2C0919881CC87082004EDFD2 /* EWMCodeVCTL.xib in Resources */,
 				2C4670591C1019AD00DF57AE /* LifeTimeVCTL.xib in Resources */,
 				2C7459D11CACB6FC00A97EB6 /* WebViewVCTL.xib in Resources */,
 				2C899A8B1C3A385A00B6669B /* TouchEventVCTL.xib in Resources */,
@@ -2349,7 +2425,9 @@
 				2CE092FB1BC63FE500027EED /* StringArrayVCTL.xib in Resources */,
 				2CCB28961BCB4421005E9B85 /* DragCollectionView.xib in Resources */,
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
+				2C0919961CC87BDB004EDFD2 /* beep.mp3 in Resources */,
 				2C48A32B1C86832D007A73E9 /* LocationXiangYi.gpx in Resources */,
+				2C09197C1CC86917004EDFD2 /* CameraVCTL.xib in Resources */,
 				2C92A4A21CC087D800105A5D /* PickerViewController.xib in Resources */,
 				2C84CCFB1C91084C005A16FA /* TableViewVCTL.xib in Resources */,
 				2CF98F931BD4CF5B0001E209 /* ReleaseModeVCTL.xib in Resources */,
@@ -2365,6 +2443,7 @@
 				2CBDD15A1BDF71EE00FB7519 /* PushNotificationVCTL.xib in Resources */,
 				2C9B57111C7FEC850073B0D1 /* ScrollViewZoomVCTL.xib in Resources */,
 				2C7491CB1C8EA90900A82022 /* TestBlockVCTL.xib in Resources */,
+				2C09199E1CC89E05004EDFD2 /* beep_mine.mp3 in Resources */,
 				2C23B7681BFB043000E87E95 /* DeleteInsertCellVCTL.xib in Resources */,
 				2CADEA321BB536BB009BBD28 /* StatusBarTableViewCell.xib in Resources */,
 				2CEF54971C1EE48D003D1E7F /* MathProblem2VCTL.xib in Resources */,
@@ -2406,6 +2485,7 @@
 				2C48A3331C87D179007A73E9 /* HorizonScrollVCTL.xib in Resources */,
 				2C65D7361BB3A32400D22F29 /* MathProblem1VCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
+				2C0919821CC86938004EDFD2 /* DefaultCameraVCTL.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
 				2CA1F8A91C0BF3D700089E14 /* sgs4.jpg in Resources */,
 			);
@@ -2453,6 +2533,7 @@
 				2C4FE5521BD78A7700681C2F /* ContactListVCTL.m in Sources */,
 				2C7491CA1C8EA90900A82022 /* TestBlockVCTL.m in Sources */,
 				2C65D7351BB3A32400D22F29 /* MathProblem1VCTL.m in Sources */,
+				2C09199B1CC89C2A004EDFD2 /* DownloadVCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
 				2C63047A1CB657AF00A67700 /* HorizontalView2.m in Sources */,
 				2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */,
@@ -2519,10 +2600,12 @@
 				2C2A167B1BCFA46700D065CD /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C4BE0481BE9A7B0004F1DAF /* MJRefreshBackGifFooter.m in Sources */,
 				2CE329BC1BBA3602008259DD /* ShakeTextFieldVCTL.m in Sources */,
+				2C0919871CC87082004EDFD2 /* EWMCodeVCTL.m in Sources */,
 				2C68EDFD1C194102009E1396 /* WXMediaMessage+messageConstruct.m in Sources */,
 				2C2E081B1C16783E0096DAD0 /* NavigationBarVCTL.m in Sources */,
 				2C4BE04C1BE9A7B0004F1DAF /* MJRefreshNormalHeader.m in Sources */,
 				2C84CD0B1C910FD1005A16FA /* TableViewCodeCell.m in Sources */,
+				2C09197B1CC86917004EDFD2 /* CameraVCTL.m in Sources */,
 				2CA112C41BB29EAA00406685 /* HomeTableViewCell.m in Sources */,
 				2C4BE0461BE9A7B0004F1DAF /* MJRefreshAutoNormalFooter.m in Sources */,
 				2C48A3371C87D1A3007A73E9 /* HorizontalScrollCollectionCell.m in Sources */,
@@ -2585,6 +2668,7 @@
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2C92EC4C1CA3D017005ED0E3 /* StringArrayHelper.m in Sources */,
 				2C3A83D61BB8EA4C00A335B5 /* MGSwipeCellVCTL.m in Sources */,
+				2C0919811CC86938004EDFD2 /* DefaultCameraVCTL.m in Sources */,
 				2C92EC301CA373BE005ED0E3 /* EncoderVCTL.m in Sources */,
 				2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */,
 				2C2EC3331BE74021008197C3 /* AFURLRequestSerialization.m in Sources */,

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EWMCodeVCTL">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPreview" destination="zfL-WQ-yux" id="hi5-C5-qtI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccf-Q5-SdQ">
+                    <rect key="frame" x="195" y="167" width="81" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="AjA-xi-QY6"/>
+                        <constraint firstAttribute="width" constant="81" id="wJ3-su-qGb"/>
+                    </constraints>
+                    <state key="normal" title="从相册选取"/>
+                    <connections>
+                        <action selector="btn2:" destination="-1" eventType="touchUpInside" id="WbW-gH-EaG"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfL-WQ-yux">
+                    <rect key="frame" x="50" y="324" width="275" height="263"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="lRp-Oe-xFl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-zX-xr6">
+                    <rect key="frame" x="27" y="160" width="92" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="IPK-91-51t"/>
+                        <constraint firstAttribute="height" constant="67" id="hBx-rx-KoK"/>
+                    </constraints>
+                    <state key="normal" title="扫二维码"/>
+                    <connections>
+                        <action selector="btn1:" destination="-1" eventType="touchUpInside" id="Mye-kc-VIv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zfL-WQ-yux" firstAttribute="top" secondItem="Ccf-Q5-SdQ" secondAttribute="bottom" constant="104" id="01A-Xi-SMb"/>
+                <constraint firstAttribute="trailing" secondItem="zfL-WQ-yux" secondAttribute="trailing" constant="50" id="2E8-Wb-hm7"/>
+                <constraint firstAttribute="trailing" secondItem="Ccf-Q5-SdQ" secondAttribute="trailing" constant="99" id="6ag-aQ-kbH"/>
+                <constraint firstAttribute="bottom" secondItem="zfL-WQ-yux" secondAttribute="bottom" constant="80" id="AD5-rs-Bl9"/>
+                <constraint firstItem="zfL-WQ-yux" firstAttribute="top" secondItem="Tgw-zX-xr6" secondAttribute="bottom" constant="97" id="T1f-QT-3ez"/>
+                <constraint firstItem="Tgw-zX-xr6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="XNl-k5-GBV"/>
+                <constraint firstItem="zfL-WQ-yux" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="zfx-xW-aqy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="495.5" y="380.5"/>
+        </view>
+    </objects>
+</document>

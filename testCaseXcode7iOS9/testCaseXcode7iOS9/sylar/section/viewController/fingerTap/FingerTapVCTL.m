@@ -9,6 +9,7 @@
 #import "FingerTapVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface FingerTapVCTL ()
+<UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *viewFinger;
 

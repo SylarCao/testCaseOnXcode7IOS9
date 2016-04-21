@@ -90,6 +90,11 @@
     return rt;
 }
 
+- (NSString *)getHomeDocumentsPath
+{
+    NSString *rt = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+    return rt;
+}
 
 
 @end

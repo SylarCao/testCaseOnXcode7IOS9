@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DefaultCameraVCTL">
+            <connections>
+                <outlet property="imageView" destination="l95-br-Jzk" id="Lox-GY-eGs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlI-4q-fUn">
+                    <rect key="frame" x="67" y="194" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LFf-KI-ukT"/>
+                        <constraint firstAttribute="width" constant="50" id="PXh-PU-qCU"/>
+                    </constraints>
+                    <state key="normal" title="照相机"/>
+                    <connections>
+                        <action selector="btn1:" destination="-1" eventType="touchUpInside" id="gEl-c4-aom"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l95-br-Jzk">
+                    <rect key="frame" x="87" y="317" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7kK-ei-VBp"/>
+                        <constraint firstAttribute="width" constant="200" id="bE0-NP-ps6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwE-5z-YSD">
+                    <rect key="frame" x="182" y="204" width="49" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="8Mx-dd-fCK"/>
+                        <constraint firstAttribute="height" constant="40" id="vN1-SC-uT6"/>
+                    </constraints>
+                    <state key="normal" title="相册"/>
+                    <connections>
+                        <action selector="btn2:" destination="-1" eventType="touchUpInside" id="eJM-rb-Exq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l95-br-Jzk" firstAttribute="top" secondItem="DlI-4q-fUn" secondAttribute="bottom" constant="73" id="ehp-Zs-oK2"/>
+                <constraint firstItem="l95-br-Jzk" firstAttribute="top" secondItem="vwE-5z-YSD" secondAttribute="bottom" constant="73" id="lkU-ke-EXV"/>
+                <constraint firstItem="vwE-5z-YSD" firstAttribute="leading" secondItem="DlI-4q-fUn" secondAttribute="trailing" constant="65" id="nyt-0p-ixn"/>
+                <constraint firstAttribute="bottom" secondItem="l95-br-Jzk" secondAttribute="bottom" constant="150" id="sVg-97-WV7"/>
+                <constraint firstItem="l95-br-Jzk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vIo-qn-ZqC"/>
+                <constraint firstItem="DlI-4q-fUn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="w4u-Ak-Ps5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

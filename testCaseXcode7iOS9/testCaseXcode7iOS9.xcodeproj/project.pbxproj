@@ -97,7 +97,6 @@
 		2C3C85611BCCD8B6009C4D24 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C855D1BCCD857009C4D24 /* libz.tbd */; };
 		2C3C85661BCCD94F009C4D24 /* BuglyVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */; };
 		2C3C85671BCCD94F009C4D24 /* BuglyVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */; };
-		2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */; };
 		2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */; };
 		2C3E34C01BF319500008F1B0 /* TouchIDVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */; };
 		2C3E34C51BF324D30008F1B0 /* BlurBkgVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E34C31BF324D30008F1B0 /* BlurBkgVCTL.m */; };
@@ -205,6 +204,8 @@
 		2C7B94681CC9B0B700243FE9 /* RQScanVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B94661CC9B0B700243FE9 /* RQScanVCTL.m */; };
 		2C7B94691CC9B0B700243FE9 /* RQScanVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B94671CC9B0B700243FE9 /* RQScanVCTL.xib */; };
 		2C7B946C1CC9B11800243FE9 /* QRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B946B1CC9B11800243FE9 /* QRScanView.m */; };
+		2C7B94731CC9FAC300243FE9 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B94711CC9FAC300243FE9 /* AttributeStringVCTL.m */; };
+		2C7B94741CC9FAC300243FE9 /* AttributeStringVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B94721CC9FAC300243FE9 /* AttributeStringVCTL.xib */; };
 		2C84CCFA1C91084C005A16FA /* TableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCF81C91084C005A16FA /* TableViewVCTL.m */; };
 		2C84CCFB1C91084C005A16FA /* TableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */; };
 		2C84CCFF1C910917005A16FA /* TableViewXIBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCFD1C910917005A16FA /* TableViewXIBCell.m */; };
@@ -478,8 +479,6 @@
 		2C3C85631BCCD94F009C4D24 /* BuglyVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuglyVCTL.h; sourceTree = "<group>"; };
 		2C3C85641BCCD94F009C4D24 /* BuglyVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuglyVCTL.m; sourceTree = "<group>"; };
 		2C3C85651BCCD94F009C4D24 /* BuglyVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuglyVCTL.xib; sourceTree = "<group>"; };
-		2C3E34B81BF2DD460008F1B0 /* AttributeStringVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringVCTL.h; sourceTree = "<group>"; };
-		2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringVCTL.m; sourceTree = "<group>"; };
 		2C3E34BC1BF319500008F1B0 /* TouchIDVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDVCTL.h; sourceTree = "<group>"; };
 		2C3E34BD1BF319500008F1B0 /* TouchIDVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDVCTL.m; sourceTree = "<group>"; };
 		2C3E34BE1BF319500008F1B0 /* TouchIDVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDVCTL.xib; sourceTree = "<group>"; };
@@ -652,6 +651,9 @@
 		2C7B94671CC9B0B700243FE9 /* RQScanVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RQScanVCTL.xib; sourceTree = "<group>"; };
 		2C7B946A1CC9B11800243FE9 /* QRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanView.h; sourceTree = "<group>"; };
 		2C7B946B1CC9B11800243FE9 /* QRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanView.m; sourceTree = "<group>"; };
+		2C7B94701CC9FAC300243FE9 /* AttributeStringVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringVCTL.h; sourceTree = "<group>"; };
+		2C7B94711CC9FAC300243FE9 /* AttributeStringVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringVCTL.m; sourceTree = "<group>"; };
+		2C7B94721CC9FAC300243FE9 /* AttributeStringVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeStringVCTL.xib; sourceTree = "<group>"; };
 		2C84CCF71C91084C005A16FA /* TableViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewVCTL.h; sourceTree = "<group>"; };
 		2C84CCF81C91084C005A16FA /* TableViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewVCTL.m; sourceTree = "<group>"; };
 		2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewVCTL.xib; sourceTree = "<group>"; };
@@ -1226,8 +1228,9 @@
 		2C3E34B71BF2DD310008F1B0 /* attributeString */ = {
 			isa = PBXGroup;
 			children = (
-				2C3E34B81BF2DD460008F1B0 /* AttributeStringVCTL.h */,
-				2C3E34B91BF2DD460008F1B0 /* AttributeStringVCTL.m */,
+				2C7B94701CC9FAC300243FE9 /* AttributeStringVCTL.h */,
+				2C7B94711CC9FAC300243FE9 /* AttributeStringVCTL.m */,
+				2C7B94721CC9FAC300243FE9 /* AttributeStringVCTL.xib */,
 			);
 			path = attributeString;
 			sourceTree = "<group>";
@@ -2374,6 +2377,7 @@
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
 				2C24FFB91C05495E0001BB5D /* ImageVCTL.xib in Resources */,
 				2CBF41231CB66F72005C9567 /* AnimationVCTL.xib in Resources */,
+				2C7B94741CC9FAC300243FE9 /* AttributeStringVCTL.xib in Resources */,
 				2CA1F89D1C0BF0C400089E14 /* CheckInstallQQVCTL.xib in Resources */,
 				2C38CA651C1596C500492AF6 /* ActionSheetVCTL.xib in Resources */,
 				2C5FD5591BF421B20014B672 /* MenuItemCell.xib in Resources */,
@@ -2584,7 +2588,6 @@
 				2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C48A33C1C87E17F007A73E9 /* HorizonScrollTitleView.m in Sources */,
-				2C3E34BA1BF2DD460008F1B0 /* AttributeStringVCTL.m in Sources */,
 				2C38CA5E1C151E7600492AF6 /* ScreenFrameVCTL.m in Sources */,
 				2C3E34CD1BF325520008F1B0 /* UIImage+BlurGlass.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
@@ -2694,6 +2697,7 @@
 				2C899A8E1C3A387F00B6669B /* TouchEventView.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C4BE0471BE9A7B0004F1DAF /* MJRefreshAutoStateFooter.m in Sources */,
+				2C7B94731CC9FAC300243FE9 /* AttributeStringVCTL.m in Sources */,
 				2C84CCFA1C91084C005A16FA /* TableViewVCTL.m in Sources */,
 				2CADEA2C1BB5364B009BBD28 /* StatusBarVCTL.m in Sources */,
 				2C92EC3F1CA398AC005ED0E3 /* TimerInstance.m in Sources */,

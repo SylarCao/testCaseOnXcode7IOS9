@@ -2,13 +2,15 @@
 //  AttributeStringVCTL.m
 //  testCaseXcode7iOS9
 //
-//  Created by sylar on 15/11/11.
-//  Copyright © 2015年 sylar. All rights reserved.
+//  Created by sylar on 16/4/22.
+//  Copyright © 2016年 sylar. All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "AttributeStringVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface AttributeStringVCTL ()
+
+@property (nonatomic, weak) IBOutlet UILabel *lb1;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,14 +19,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _lb1.layer.borderColor = [UIColor redColor].CGColor;
+    _lb1.layer.borderWidth = 1;
+    
     [self setInitialValue];
 }
 
 - (void) setInitialValue
 {
-    [self setWithLabel1];
-    [self setWithLabel2];
+//    [self setWithLabel1];
+//    [self setWithLabel2];
+    
+    [self fun1];
+    
+    
 }
+
+- (void)fun1
+{
+    // 文字 + 图片
+    NSMutableAttributedString *m1 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+    
+    NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
+    UIImage *image58 = [UIImage imageNamed:@"sgs7"];
+    image58 = [[Helper share] imageScaleFitToSize:CGSizeMake(30, 30) image:image58];
+    textAttachment.image = image58;
+    NSAttributedString *m2 = [NSAttributedString attributedStringWithAttachment:textAttachment];
+//    NSMutableAttributedString *m2 = [[NSMutableAttributedString alloc] ]
+    [m1 appendAttributedString:m2];
+    
+//    NSMutableAttributedString *m3 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+//    [m1 appendAttributedString:m3];
+    
+    _lb1.attributedText = m1;
+    
+    
+    
+}
+
+
 
 - (void) setWithLabel1
 {
@@ -55,14 +89,14 @@
     
     lb.attributedText = muta_string;
     [self.view addSubview:lb];
-
+    
 }
 
 + (UILabel *) getOneLabel
 {
     UILabel *lb = [[UILabel alloc] init];
     lb.numberOfLines = 0;
-//    lb.frame = CGRectMake(50, 140, 200, 50);
+    //    lb.frame = CGRectMake(50, 140, 200, 50);
     lb.backgroundColor = [UIColor greenColor];
     
     NSMutableAttributedString *muta_string = [[NSMutableAttributedString alloc] initWithString:@"line2 -- end" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
@@ -74,5 +108,6 @@
 }
 
 
-
 @end
+
+

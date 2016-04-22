@@ -66,4 +66,36 @@
  */
 - (NSString *)getHomeDocumentsPath;
 
+/**
+ *  缩放图片到指定的size
+ *
+ *  @param size   size description
+ *  @param aImage aImage description
+ *
+ *  @return return value description
+ */
+- (UIImage *)imageScaleToSize:(CGSize)size image:(UIImage *)aImage;
+
+/**
+ *  缩放图片  UIViewContentModeScaleAspectFill
+ *
+ *  @param size   size description
+ *  @param aImage aImage description
+ *
+ *  @return return value description
+ */
+- (UIImage *)imageScaleFillToSize:(CGSize)size image:(UIImage *)aImage;
+
+/**
+ *  缩放图片  UIViewContentModeScaleAspectFit
+ *
+ *  @param size   size description
+ *  @param aImage aImage description
+ *
+ *  @return return value description
+ */
+- (UIImage *)imageScaleFitToSize:(CGSize)size image:(UIImage *)aImage;
+
+
+
 @end

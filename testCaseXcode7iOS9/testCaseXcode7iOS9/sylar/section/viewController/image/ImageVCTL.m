@@ -29,7 +29,7 @@
     _imv1.layer.borderWidth = 0.5;
     
     
-    [self addCropImage];
+//    [self addCropImage];
 }
 
 - (IBAction)btn1:(id)sender
@@ -37,7 +37,20 @@
     
 //    [self imageAppendImage];
     
-    [self imageCoverImage];
+//    [self imageCoverImage];
+    
+    [self fun1];
+}
+
+- (void)fun1
+{
+    // scale image
+    _imgView.contentMode = UIViewContentModeCenter;
+    UIImage *image0 = [UIImage imageNamed:@"sgs7"];
+    CGSize size = CGSizeMake(50, 80);
+//    UIImage *i1 = [[Helper share] imageScaleFitToSize:size image:image0];
+    UIImage *i1 = [[Helper share] imageScaleFillToSize:size image:image0];
+    _imgView.image = i1;
 }
 
 - (void)addCropImage

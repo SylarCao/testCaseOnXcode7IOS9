@@ -96,5 +96,60 @@
     return rt;
 }
 
+- (UIImage *)imageScaleToSize:(CGSize)size image:(UIImage *)aImage
+{
+    // Scalling selected image to targeted size
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(NULL, size.width, size.height, 8, 0, colorSpace, kCGImageAlphaPremultipliedLast);
+    CGContextClearRect(context, CGRectMake(0, 0, size.width, size.height));
+    
+    if(aImage.imageOrientation == UIImageOrientationRight)
+    {
+        CGContextRotateCTM(context, -M_PI_2);
+        CGContextTranslateCTM(context, -size.height, 0.0f);
+        CGContextDrawImage(context, CGRectMake(0, 0, size.height, size.width), aImage.CGImage);
+    }
+    else
+        CGContextDrawImage(context, CGRectMake(0, 0, size.width, size.height), aImage.CGImage);
+    
+    CGImageRef scaledImage=CGBitmapContextCreateImage(context);
+    
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    
+    UIImage *image = [UIImage imageWithCGImage: scaledImage];
+    
+    CGImageRelease(scaledImage);
+    
+    return image;
+}
+
+- (UIImage *)imageScaleFillToSize:(CGSize)size image:(UIImage *)aImage
+{
+    CGFloat scale_width = aImage.size.width/size.width;
+    CGFloat scale_height = aImage.size.height/size.height;
+    scale_width = MAX(1, scale_width);
+    scale_height = MAX(1, scale_height);
+    
+    CGFloat scale = MIN(scale_width, scale_height);
+    UIImage *rt = [self imageScaleToSize:CGSizeMake(aImage.size.width/scale, aImage.size.height/scale) image:aImage];
+    
+    return rt;
+}
+
+- (UIImage *)imageScaleFitToSize:(CGSize)size image:(UIImage *)aImage
+{
+    CGFloat scale_width = aImage.size.width/size.width;
+    CGFloat scale_height = aImage.size.height/size.height;
+    scale_width = MAX(1, scale_width);
+    scale_height = MAX(1, scale_height);
+    
+    CGFloat scale = MAX(scale_width, scale_height);
+    UIImage *rt = [self imageScaleToSize:CGSizeMake(aImage.size.width/scale, aImage.size.height/scale) image:aImage];
+    
+    return rt;
+}
+
+
 
 @end

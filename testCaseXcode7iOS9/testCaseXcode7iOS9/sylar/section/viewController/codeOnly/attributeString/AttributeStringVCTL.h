@@ -2,8 +2,8 @@
 //  AttributeStringVCTL.h
 //  testCaseXcode7iOS9
 //
-//  Created by sylar on 15/11/11.
-//  Copyright © 2015年 sylar. All rights reserved.
+//  Created by sylar on 16/4/22.
+//  Copyright © 2016年 sylar. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,9 +11,6 @@
 
 @interface AttributeStringVCTL : BasicVCTL
 
-
-
 + (UILabel *) getOneLabel;
-
 
 @end

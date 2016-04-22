@@ -26,8 +26,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self funScan];
-    [self loadBeepSound];
+    
+    if (kIsSimulator)
+    {
+        UILabel *lb = [[UILabel alloc] init];
+        lb.text = @"不要用模拟器";
+        lb.frame = CGRectMake(0, 0, 300, 300);
+        lb.backgroundColor = [UIColor redColor];
+        [self.view addSubview:lb];
+    }
+    else
+    {
+        [self funScan];
+        [self loadBeepSound];
+    }
+    
+    
 }
 
 - (IBAction)btn1:(id)sender
@@ -46,6 +60,29 @@
     [self.navigationController pushViewController:rr animated:YES];
 }
 
+- (IBAction)btn3:(id)sender
+{
+    [self funCreateCode];
+}
+
+- (void)funCreateCode
+{
+    NSString *content = @"abcdefgh765432";
+    NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [filter setValue:data forKey:@"inputMessage"];
+    CIImage *outputImage = filter.outputImage;
+    
+    CGFloat scale = CGRectGetWidth(_viewPreview.bounds) / CGRectGetWidth(outputImage.extent);
+    CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+    CIImage *transformImage = [outputImage imageByApplyingTransform:transform];
+    
+    UIImage *im = [UIImage imageWithCIImage:transformImage];
+    UIImageView *imv = [[UIImageView alloc] initWithImage:im];
+    imv.frame = _viewPreview.bounds;
+    [_viewPreview addSubview:imv];
+}
+
 - (void)funScan
 {
     // reference link: http://www.appcoda.com/qr-code-ios-programming-tutorial/
@@ -58,7 +95,7 @@
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
     if (!input) {
         NSLog(@"%@", [error localizedDescription]);
-//        return NO;
+        return ;
     }
     
     _captureSession = [[AVCaptureSession alloc] init];

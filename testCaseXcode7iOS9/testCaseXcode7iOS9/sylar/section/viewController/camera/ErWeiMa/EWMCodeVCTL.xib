@@ -45,13 +45,26 @@
                         <action selector="btn1:" destination="-1" eventType="touchUpInside" id="Mye-kc-VIv"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe6-hv-YRB">
+                    <rect key="frame" x="47" y="128" width="83" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="b49-UH-LWR"/>
+                        <constraint firstAttribute="height" constant="30" id="yP1-uf-Sxo"/>
+                    </constraints>
+                    <state key="normal" title="生成二维码"/>
+                    <connections>
+                        <action selector="btn3:" destination="-1" eventType="touchUpInside" id="Gzq-gH-qtq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="zfL-WQ-yux" firstAttribute="top" secondItem="Ccf-Q5-SdQ" secondAttribute="bottom" constant="104" id="01A-Xi-SMb"/>
                 <constraint firstAttribute="trailing" secondItem="zfL-WQ-yux" secondAttribute="trailing" constant="50" id="2E8-Wb-hm7"/>
+                <constraint firstItem="fe6-hv-YRB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="5R0-Yx-kAH"/>
                 <constraint firstAttribute="trailing" secondItem="Ccf-Q5-SdQ" secondAttribute="trailing" constant="99" id="6ag-aQ-kbH"/>
                 <constraint firstAttribute="bottom" secondItem="zfL-WQ-yux" secondAttribute="bottom" constant="80" id="AD5-rs-Bl9"/>
+                <constraint firstItem="Tgw-zX-xr6" firstAttribute="top" secondItem="fe6-hv-YRB" secondAttribute="bottom" constant="2" id="DAK-Jh-BpG"/>
                 <constraint firstItem="zfL-WQ-yux" firstAttribute="top" secondItem="Tgw-zX-xr6" secondAttribute="bottom" constant="97" id="T1f-QT-3ez"/>
                 <constraint firstItem="Tgw-zX-xr6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="XNl-k5-GBV"/>
                 <constraint firstItem="zfL-WQ-yux" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="zfx-xW-aqy"/>

@@ -202,6 +202,9 @@
 		2C7A331A1C759C2E002A08AD /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33191C759C2E002A08AD /* DrawView2.m */; };
 		2C7A33251C75BE85002A08AD /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A33231C75BE85002A08AD /* XOptionVCTL.m */; };
 		2C7A33261C75BE85002A08AD /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A33241C75BE85002A08AD /* XOptionVCTL.xib */; };
+		2C7B94681CC9B0B700243FE9 /* RQScanVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B94661CC9B0B700243FE9 /* RQScanVCTL.m */; };
+		2C7B94691CC9B0B700243FE9 /* RQScanVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B94671CC9B0B700243FE9 /* RQScanVCTL.xib */; };
+		2C7B946C1CC9B11800243FE9 /* QRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B946B1CC9B11800243FE9 /* QRScanView.m */; };
 		2C84CCFA1C91084C005A16FA /* TableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCF81C91084C005A16FA /* TableViewVCTL.m */; };
 		2C84CCFB1C91084C005A16FA /* TableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */; };
 		2C84CCFF1C910917005A16FA /* TableViewXIBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCFD1C910917005A16FA /* TableViewXIBCell.m */; };
@@ -645,6 +648,11 @@
 		2C7A33221C75BE85002A08AD /* XOptionVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XOptionVCTL.h; sourceTree = "<group>"; };
 		2C7A33231C75BE85002A08AD /* XOptionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOptionVCTL.m; sourceTree = "<group>"; };
 		2C7A33241C75BE85002A08AD /* XOptionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XOptionVCTL.xib; sourceTree = "<group>"; };
+		2C7B94651CC9B0B700243FE9 /* RQScanVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQScanVCTL.h; sourceTree = "<group>"; };
+		2C7B94661CC9B0B700243FE9 /* RQScanVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQScanVCTL.m; sourceTree = "<group>"; };
+		2C7B94671CC9B0B700243FE9 /* RQScanVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RQScanVCTL.xib; sourceTree = "<group>"; };
+		2C7B946A1CC9B11800243FE9 /* QRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanView.h; sourceTree = "<group>"; };
+		2C7B946B1CC9B11800243FE9 /* QRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanView.m; sourceTree = "<group>"; };
 		2C84CCF71C91084C005A16FA /* TableViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewVCTL.h; sourceTree = "<group>"; };
 		2C84CCF81C91084C005A16FA /* TableViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewVCTL.m; sourceTree = "<group>"; };
 		2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewVCTL.xib; sourceTree = "<group>"; };
@@ -927,6 +935,11 @@
 				2C0919841CC87082004EDFD2 /* EWMCodeVCTL.h */,
 				2C0919851CC87082004EDFD2 /* EWMCodeVCTL.m */,
 				2C0919861CC87082004EDFD2 /* EWMCodeVCTL.xib */,
+				2C7B94651CC9B0B700243FE9 /* RQScanVCTL.h */,
+				2C7B94661CC9B0B700243FE9 /* RQScanVCTL.m */,
+				2C7B94671CC9B0B700243FE9 /* RQScanVCTL.xib */,
+				2C7B946A1CC9B11800243FE9 /* QRScanView.h */,
+				2C7B946B1CC9B11800243FE9 /* QRScanView.m */,
 			);
 			path = ErWeiMa;
 			sourceTree = "<group>";
@@ -2387,6 +2400,7 @@
 				2C08A8361BB931B60077FE53 /* LewPopupVCTL.xib in Resources */,
 				2C6304811CB659BC00A67700 /* HorizontalVCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
+				2C7B94691CC9B0B700243FE9 /* RQScanVCTL.xib in Resources */,
 				2CA112CE1BB29EAA00406685 /* X1.xib in Resources */,
 				2C8BAB5F1BC7CF45000FD2DF /* Touch3D1VCTL.xib in Resources */,
 				2C48A32D1C86B33C007A73E9 /* LocationGTJA.gpx in Resources */,
@@ -2538,6 +2552,7 @@
 				2C63047A1CB657AF00A67700 /* HorizontalView2.m in Sources */,
 				2C8BAB651BC7DF90000FD2DF /* Touch3d1DetailVCTL.m in Sources */,
 				2C48A3421C87E25F007A73E9 /* HorizonScrollTitleCollectionCell.m in Sources */,
+				2C7B94681CC9B0B700243FE9 /* RQScanVCTL.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
 				2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */,
 				2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */,
@@ -2590,6 +2605,7 @@
 				2CCB28951BCB4421005E9B85 /* DragCollectionView.m in Sources */,
 				2C3A83EA1BB8EAED00A335B5 /* MyMGCell.m in Sources */,
 				2C5FD5531BF4214A0014B672 /* MenuItemVCTL.m in Sources */,
+				2C7B946C1CC9B11800243FE9 /* QRScanView.m in Sources */,
 				2C3E34BF1BF319500008F1B0 /* TouchIDVCTL.m in Sources */,
 				2C48A3321C87D179007A73E9 /* HorizonScrollVCTL.m in Sources */,
 				2C9B57101C7FEC850073B0D1 /* ScrollViewZoomVCTL.m in Sources */,

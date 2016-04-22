@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "EWMCodeVCTL.h"
 #import <AVFoundation/AVFoundation.h>
+#import "RQScanVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface EWMCodeVCTL ()
 <AVCaptureMetadataOutputObjectsDelegate>
@@ -25,23 +26,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    [self funScan];
     [self loadBeepSound];
 }
 
 - (IBAction)btn1:(id)sender
 {
-    [self funScan];
+//    [self funScan];
+    
+//    [self funScan];
+//    [self loadBeepSound];
+    
+     [_captureSession startRunning];
 }
 
 - (IBAction)btn2:(id)sender
 {
-    
+    RQScanVCTL *rr = [[RQScanVCTL alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:rr animated:YES];
 }
 
 - (void)funScan
 {
     // reference link: http://www.appcoda.com/qr-code-ios-programming-tutorial/
+    // full screen 扫码范围 https://github.com/c0ming/QRCodeDemo
     
     NSError *error;
     
@@ -69,7 +77,7 @@
     [_videoPreviewLayer setFrame:_viewPreview.layer.bounds];
     [_viewPreview.layer addSublayer:_videoPreviewLayer];
     
-    [_captureSession startRunning];
+//    [_captureSession startRunning];
     
 
 }
@@ -101,11 +109,22 @@
 //            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
 //            [_bbitemStart performSelectorOnMainThread:@selector(setTitle:) withObject:@"Start!" waitUntilDone:NO];
 //            _isReading = NO;
+            
+//            [self performSelectorOnMainThread:@selector(backItem) withObject:nil waitUntilDone:YES];
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.navigationController popViewControllerAnimated:YES];
+            });
+            
         }
     }
 }
 
-
+- (void)backItem
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 -(void)stopReading{
     [_captureSession stopRunning];

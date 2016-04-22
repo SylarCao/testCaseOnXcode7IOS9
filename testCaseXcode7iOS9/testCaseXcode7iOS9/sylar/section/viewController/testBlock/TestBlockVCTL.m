@@ -39,6 +39,26 @@
     [self funPara1];
 }
 
+- (void)fun5
+{
+    // reference link: http://stackoverflow.com/questions/7080927/what-does-the-block-keyword-mean
+    
+    NSInteger a1 = 42;
+    __block NSInteger a2;
+    
+    void (^aBlock)(void) = ^(void) {
+        a2 = 77;
+        a2 = a1;
+//        a1 = a2;   // 这个会报错
+    };
+    
+//    ++localCounter; // unseen by the block
+//    localCharacter = 'b';
+    
+    aBlock(); // execute the block
+    // localCharacter now 'a'
+}
+
 - (void)fun1
 {
     BlockObject1 *block1 = [[BlockObject1 alloc] init];

@@ -21,6 +21,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation RQScanVCTL
 
+- (void)dealloc
+{
+    NSLog(@"dealloc");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -170,15 +175,6 @@
     [alertView show];
 }
 
-#pragma mark -
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (void)dealloc {
-    NSLog(@"%s", __func__);
-}
 
 
 @end

@@ -206,6 +206,9 @@
 		2C7B946C1CC9B11800243FE9 /* QRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B946B1CC9B11800243FE9 /* QRScanView.m */; };
 		2C7B94731CC9FAC300243FE9 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B94711CC9FAC300243FE9 /* AttributeStringVCTL.m */; };
 		2C7B94741CC9FAC300243FE9 /* AttributeStringVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B94721CC9FAC300243FE9 /* AttributeStringVCTL.xib */; };
+		2C7B94791CCA05E500243FE9 /* CategoryVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B94771CCA05E500243FE9 /* CategoryVCTL.m */; };
+		2C7B947A1CCA05E600243FE9 /* CategoryVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B94781CCA05E500243FE9 /* CategoryVCTL.xib */; };
+		2C7B947D1CCA077900243FE9 /* ViewCategory1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B947C1CCA077900243FE9 /* ViewCategory1.m */; };
 		2C84CCFA1C91084C005A16FA /* TableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCF81C91084C005A16FA /* TableViewVCTL.m */; };
 		2C84CCFB1C91084C005A16FA /* TableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */; };
 		2C84CCFF1C910917005A16FA /* TableViewXIBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84CCFD1C910917005A16FA /* TableViewXIBCell.m */; };
@@ -654,6 +657,11 @@
 		2C7B94701CC9FAC300243FE9 /* AttributeStringVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringVCTL.h; sourceTree = "<group>"; };
 		2C7B94711CC9FAC300243FE9 /* AttributeStringVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringVCTL.m; sourceTree = "<group>"; };
 		2C7B94721CC9FAC300243FE9 /* AttributeStringVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeStringVCTL.xib; sourceTree = "<group>"; };
+		2C7B94761CCA05E500243FE9 /* CategoryVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVCTL.h; sourceTree = "<group>"; };
+		2C7B94771CCA05E500243FE9 /* CategoryVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVCTL.m; sourceTree = "<group>"; };
+		2C7B94781CCA05E500243FE9 /* CategoryVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVCTL.xib; sourceTree = "<group>"; };
+		2C7B947B1CCA077900243FE9 /* ViewCategory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCategory1.h; sourceTree = "<group>"; };
+		2C7B947C1CCA077900243FE9 /* ViewCategory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCategory1.m; sourceTree = "<group>"; };
 		2C84CCF71C91084C005A16FA /* TableViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewVCTL.h; sourceTree = "<group>"; };
 		2C84CCF81C91084C005A16FA /* TableViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewVCTL.m; sourceTree = "<group>"; };
 		2C84CCF91C91084C005A16FA /* TableViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewVCTL.xib; sourceTree = "<group>"; };
@@ -1668,6 +1676,18 @@
 			path = XOption;
 			sourceTree = "<group>";
 		};
+		2C7B94751CCA05D900243FE9 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				2C7B94761CCA05E500243FE9 /* CategoryVCTL.h */,
+				2C7B94771CCA05E500243FE9 /* CategoryVCTL.m */,
+				2C7B94781CCA05E500243FE9 /* CategoryVCTL.xib */,
+				2C7B947B1CCA077900243FE9 /* ViewCategory1.h */,
+				2C7B947C1CCA077900243FE9 /* ViewCategory1.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		2C84CCF61C910839005A16FA /* tableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1883,6 +1903,7 @@
 		2CA112AF1BB29EAA00406685 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7B94751CCA05D900243FE9 /* category */,
 				2C0919971CC89C1A004EDFD2 /* download */,
 				2C0919771CC86908004EDFD2 /* camera */,
 				2C92A4951CC07BCD00105A5D /* picker */,
@@ -2397,6 +2418,7 @@
 				2C48A32D1C86B33C007A73E9 /* LocationGTJA.gpx in Resources */,
 				2C92EC311CA373BE005ED0E3 /* EncoderVCTL.xib in Resources */,
 				2CBF412E1CB67085005C9567 /* AnimationRotateVCTL.xib in Resources */,
+				2C7B947A1CCA05E600243FE9 /* CategoryVCTL.xib in Resources */,
 				2CDF0EA71C16F7D5009B8537 /* Dealloc1VCTL.xib in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
 				2C2A16701BCF718500D065CD /* SavePlistVCTL.xib in Resources */,
@@ -2522,6 +2544,7 @@
 				2C3A83BB1BB8C88400A335B5 /* StackViewVCTL.m in Sources */,
 				2C2A16801BCFA57200D065CD /* IntrinsicCell.m in Sources */,
 				2C35BE9B1C30C921000E2C2C /* HorizontalVCTL.m in Sources */,
+				2C7B94791CCA05E500243FE9 /* CategoryVCTL.m in Sources */,
 				2C7459CB1CACAFCB00A97EB6 /* OtherObjectHelper.m in Sources */,
 				2C24FFB81C05495E0001BB5D /* ImageVCTL.m in Sources */,
 				2CA112CF1BB29EAA00406685 /* TimerVCTL.m in Sources */,
@@ -2650,6 +2673,7 @@
 				2C4BE0561BE9A7F1004F1DAF /* RefreshTableViewCell.m in Sources */,
 				2C40EAFC1BE0C1AF00074AB8 /* ReadPDFVCTL.m in Sources */,
 				2C4BE04B1BE9A7B0004F1DAF /* MJRefreshGifHeader.m in Sources */,
+				2C7B947D1CCA077900243FE9 /* ViewCategory1.m in Sources */,
 				2C4BE0411BE9A7B0004F1DAF /* MJRefreshBackFooter.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2CEEE03E1C71623C00891C1F /* FingerTapVCTL.m in Sources */,

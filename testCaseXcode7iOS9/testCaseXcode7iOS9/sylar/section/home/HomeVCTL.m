@@ -22,8 +22,10 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[ @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL", @"CameraVCTL", @"DownloadVCTL",
-                       
+    NSArray *ctrls = @[ @"CategoryVCTL",
+                
+               @"sort", // 都放到这个后边
+               @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL", @"CameraVCTL", @"DownloadVCTL",
                @"UILabelVCTL", @"TestBlockVCTL", @"TableViewVCTL", @"ConstraintCodeVCTL", @"EncoderVCTL", @"OthersVCTL",
                @"testXibVCTL", @"FingerTapVCTL", @"XOptionVCTL", @"ScrollViewZoomVCTL", @"HorizonScrollVCTL",
                @"DeallocVCTL", @"DrawLineVCTL", @"MathProblem2VCTL", @"HorizontalVCTL", @"TouchEventVCTL", @"ResizeImageVCTL",
@@ -61,13 +63,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UIViewController *the_vctl = [[NSClassFromString([_vctls objectAtIndex:indexPath.row]) alloc] initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:the_vctl animated:YES];
+    NSString *content = [_vctls objectAtIndex:indexPath.row];
+    if ([content isEqualToString:@"sort"] == NO)
+    {
+        UIViewController *the_vctl = [[NSClassFromString(content) alloc] initWithNibName:nil bundle:nil];
+        [self.navigationController pushViewController:the_vctl animated:YES];
+    }
+    
 }
 
 - (NSArray *)sortArray:(NSArray *)array
 {
-    NSInteger dealloc_index = [array indexOfObject:@"UILabelVCTL"] + 1;
+    NSInteger dealloc_index = [array indexOfObject:@"sort"] + 1;
     NSArray *rt = [array sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSComparisonResult result = NSOrderedSame;
         

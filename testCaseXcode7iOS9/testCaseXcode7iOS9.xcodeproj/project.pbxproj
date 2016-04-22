@@ -255,7 +255,6 @@
 		2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112AE1BB29EAA00406685 /* HomeVCTL.xib */; };
 		2CA112C81BB29EAA00406685 /* ConstrainVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112B21BB29EAA00406685 /* ConstrainVCTL.m */; };
 		2CA112C91BB29EAA00406685 /* ConstrainVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112B31BB29EAA00406685 /* ConstrainVCTL.xib */; };
-		2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112B61BB29EAA00406685 /* NaviBarVCTL.m */; };
 		2CA112CB1BB29EAA00406685 /* testXibVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112B91BB29EAA00406685 /* testXibVCTL.m */; };
 		2CA112CC1BB29EAA00406685 /* testXibVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA112BA1BB29EAA00406685 /* testXibVCTL.xib */; };
 		2CA112CD1BB29EAA00406685 /* X1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112BC1BB29EAA00406685 /* X1.m */; };
@@ -734,8 +733,6 @@
 		2CA112B11BB29EAA00406685 /* ConstrainVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstrainVCTL.h; sourceTree = "<group>"; };
 		2CA112B21BB29EAA00406685 /* ConstrainVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstrainVCTL.m; sourceTree = "<group>"; };
 		2CA112B31BB29EAA00406685 /* ConstrainVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstrainVCTL.xib; sourceTree = "<group>"; };
-		2CA112B51BB29EAA00406685 /* NaviBarVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviBarVCTL.h; sourceTree = "<group>"; };
-		2CA112B61BB29EAA00406685 /* NaviBarVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviBarVCTL.m; sourceTree = "<group>"; };
 		2CA112B81BB29EAA00406685 /* testXibVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testXibVCTL.h; sourceTree = "<group>"; };
 		2CA112B91BB29EAA00406685 /* testXibVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testXibVCTL.m; sourceTree = "<group>"; };
 		2CA112BA1BB29EAA00406685 /* testXibVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testXibVCTL.xib; sourceTree = "<group>"; };
@@ -1945,7 +1942,6 @@
 				2CADEA281BB534F5009BBD28 /* statusBar */,
 				2C65D7311BB3A31200D22F29 /* mathProblem1 */,
 				2CA112B01BB29EAA00406685 /* constrains */,
-				2CA112B41BB29EAA00406685 /* navibarHeight */,
 				2CA112B71BB29EAA00406685 /* testXib */,
 				2CA112BE1BB29EAA00406685 /* timer */,
 			);
@@ -1960,15 +1956,6 @@
 				2CA112B31BB29EAA00406685 /* ConstrainVCTL.xib */,
 			);
 			path = constrains;
-			sourceTree = "<group>";
-		};
-		2CA112B41BB29EAA00406685 /* navibarHeight */ = {
-			isa = PBXGroup;
-			children = (
-				2CA112B51BB29EAA00406685 /* NaviBarVCTL.h */,
-				2CA112B61BB29EAA00406685 /* NaviBarVCTL.m */,
-			);
-			path = navibarHeight;
 			sourceTree = "<group>";
 		};
 		2CA112B71BB29EAA00406685 /* testXib */ = {
@@ -2563,7 +2550,6 @@
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
 				2CE092F11BC6378E00027EED /* PostNotificationVCTL.m in Sources */,
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
-				2CA112CA1BB29EAA00406685 /* NaviBarVCTL.m in Sources */,
 				2CBDD1591BDF71EE00FB7519 /* PushNotificationVCTL.m in Sources */,
 				2CA1BC071CBCEC3F008C2C0F /* CMMFile.mm in Sources */,
 				2C92EC371CA37671005ED0E3 /* EncoderObject1.m in Sources */,

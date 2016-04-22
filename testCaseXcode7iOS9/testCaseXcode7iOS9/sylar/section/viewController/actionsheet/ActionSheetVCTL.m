@@ -23,7 +23,7 @@
 
 - (IBAction)btn1:(id)sender
 {
-    if (kIOSVersion(9) && NO)
+    if (kIOSVersion(9))
     {
         UIAlertController *sheet = [UIAlertController alertControllerWithTitle:@"title" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
         

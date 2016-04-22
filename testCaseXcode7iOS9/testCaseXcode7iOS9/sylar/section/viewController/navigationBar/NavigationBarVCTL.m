@@ -19,9 +19,17 @@
     [self setNaviBarHeight];
     [self setWindowFrame];
     
-    [self setNavi1];
+//    [self setNavi1];
     
-    [self setWithRightItem2];
+//    [self setWithRightItem2];
+    
+    [self fun1];
+}
+
+- (void)fun1
+{
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor yellowColor];
 }
 
 - (void) setNavi1

@@ -270,9 +270,8 @@
     CGContextSetRGBStrokeColor(gc, red, green, blue, alpha);
     CGContextStrokeRect(gc,rect1);
     
-    
-    
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunreachable-code"
     return;
     CGContextSaveGState(gc);
     CGContextSetAllowsAntialiasing(gc, YES);
@@ -282,6 +281,8 @@
     CGContextStrokePath(gc);
     CGContextFlush(gc);
     CGContextRestoreGState(gc);
+    
+#pragma clang diagnostic pop
 
 }
 

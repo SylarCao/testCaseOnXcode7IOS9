@@ -128,8 +128,13 @@
     CGFloat a36 = (CGFloat)f3/f6;
     
     NSLog(@"a36 = %f", a36);
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wformat"
   
     NSLog(@"%d, %d, %d, %d, %d, %d, %d, %d", a1, a2, a3, a4, a5, a6, a7, a8);
+    
+#pragma clang diagnostic pop
     
     do {
         if (a1+a2-9 == 4 && a3-a4*a5 == 4 && a6+a7-a8 == 4 && a1+a36 == 4 && a2-a4*a7 ==4 && 9-a5-a8==4)
@@ -168,10 +173,13 @@
     
     CGFloat a36 = (CGFloat) a3/a6;
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wformat"
+    
     NSLog(@"a36 = %f", a3);
     
     NSLog(@"%d, %d, %d, %d, %d, %d, %d, %d", a1, a2, a3, a4, a5, a6, a7, a8);
-    
+
     do {
         if (a1+a2-9 == 4 && a3-a4*a5 == 4 && a6+a7-a8 == 4 && a1+a36 == 4 && a2-a4*a7 ==4 && 9-a5-a8==4)
         {
@@ -184,7 +192,7 @@
         
     } while (NO);
     
-    
+#pragma clang diagnostic pop   
     return rt;
 }
 

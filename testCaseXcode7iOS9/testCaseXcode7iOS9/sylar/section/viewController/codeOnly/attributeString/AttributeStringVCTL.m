@@ -31,9 +31,30 @@
 //    [self setWithLabel1];
 //    [self setWithLabel2];
     
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
     
     
+}
+
+- (void)fun2
+{
+    // 文字 外边加个框  html
+    NSMutableAttributedString *m1 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+    NSMutableAttributedString *m2 = [[NSMutableAttributedString alloc] initWithString:@"融资" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+    
+    NSString *h5 = @"<p style=\" background-color: red;\"> html5 </h5>";
+    
+//    NSString *h5 = @"<p style=\"border: solid red 2px;\"> html5 </h5>";  // 这个 不可以用
+    
+    NSAttributedString *m3 =[[NSAttributedString alloc] initWithData:[h5 dataUsingEncoding:NSUTF8StringEncoding]
+                                     options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                                               NSCharacterEncodingDocumentAttribute: @(NSUTF8StringEncoding)}
+                          documentAttributes:nil error:nil];
+    [m1 appendAttributedString:m3];
+    
+    _lb1.attributedText = m1;
 }
 
 - (void)fun1
@@ -43,11 +64,11 @@
     
     NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
     UIImage *image58 = [UIImage imageNamed:@"sgs7"];
-    image58 = [[Helper share] imageScaleFitToSize:CGSizeMake(30, 30) image:image58];
+    image58 = [[Helper share] imageScaleFitToSize:CGSizeMake(40, 40) image:image58];
     textAttachment.image = image58;
     NSAttributedString *m2 = [NSAttributedString attributedStringWithAttachment:textAttachment];
 //    NSMutableAttributedString *m2 = [[NSMutableAttributedString alloc] ]
-    [m1 appendAttributedString:m2];
+//    [m1 appendAttributedString:m2];
     
 //    NSMutableAttributedString *m3 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
 //    [m1 appendAttributedString:m3];

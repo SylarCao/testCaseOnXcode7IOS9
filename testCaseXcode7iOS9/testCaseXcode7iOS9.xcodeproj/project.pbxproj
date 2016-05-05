@@ -97,13 +97,6 @@
 		2C729D051CD0522200284E78 /* CameraVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B6F1CD0522200284E78 /* CameraVCTL.xib */; };
 		2C729D061CD0522200284E78 /* DefaultCameraVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B721CD0522200284E78 /* DefaultCameraVCTL.m */; };
 		2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B731CD0522200284E78 /* DefaultCameraVCTL.xib */; };
-		2C729D081CD0522200284E78 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B751CD0522200284E78 /* beep.mp3 */; };
-		2C729D091CD0522200284E78 /* beep_mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B761CD0522200284E78 /* beep_mine.mp3 */; };
-		2C729D0A1CD0522200284E78 /* EWMCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B781CD0522200284E78 /* EWMCodeVCTL.m */; };
-		2C729D0B1CD0522200284E78 /* EWMCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B791CD0522200284E78 /* EWMCodeVCTL.xib */; };
-		2C729D0C1CD0522200284E78 /* QRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B7B1CD0522200284E78 /* QRScanView.m */; };
-		2C729D0D1CD0522200284E78 /* RQScanVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B7D1CD0522200284E78 /* RQScanVCTL.m */; };
-		2C729D0E1CD0522200284E78 /* RQScanVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B7E1CD0522200284E78 /* RQScanVCTL.xib */; };
 		2C729D0F1CD0522200284E78 /* CategoryVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B811CD0522200284E78 /* CategoryVCTL.m */; };
 		2C729D101CD0522200284E78 /* CategoryVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729B821CD0522200284E78 /* CategoryVCTL.xib */; };
 		2C729D111CD0522200284E78 /* ViewCategory1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729B841CD0522200284E78 /* ViewCategory1.m */; };
@@ -139,10 +132,6 @@
 		2C729D2F1CD0522200284E78 /* DPLocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */; };
 		2C729D301CD0522200284E78 /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC01CD0522200284E78 /* LocationGTJA.gpx */; };
 		2C729D311CD0522200284E78 /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC11CD0522200284E78 /* LocationXiangYi.gpx */; };
-		2C729D321CD0522200284E78 /* DragCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BC41CD0522200284E78 /* DragCollectionCell.m */; };
-		2C729D331CD0522200284E78 /* DragCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC51CD0522200284E78 /* DragCollectionCell.xib */; };
-		2C729D341CD0522200284E78 /* DragCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BC71CD0522200284E78 /* DragCollectionView.m */; };
-		2C729D351CD0522200284E78 /* DragCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC81CD0522200284E78 /* DragCollectionView.xib */; };
 		2C729D361CD0522200284E78 /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCB1CD0522200284E78 /* DrawLineVCTL.m */; };
 		2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BCC1CD0522200284E78 /* DrawLineVCTL.xib */; };
 		2C729D381CD0522200284E78 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCF1CD0522200284E78 /* Gdip.m */; };
@@ -296,6 +285,22 @@
 		2C729DCC1CD0522200284E78 /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CEF1CD0522200284E78 /* XOptionVCTL.m */; };
 		2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CF01CD0522200284E78 /* XOptionVCTL.xib */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
+		2C837C2C1CDAEFB10078737F /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C221CDAEFB10078737F /* beep.mp3 */; };
+		2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C231CDAEFB10078737F /* beep_mine.mp3 */; };
+		2C837C2E1CDAEFB10078737F /* EWMCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C251CDAEFB10078737F /* EWMCodeVCTL.m */; };
+		2C837C2F1CDAEFB10078737F /* EWMCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C261CDAEFB10078737F /* EWMCodeVCTL.xib */; };
+		2C837C301CDAEFB10078737F /* QRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C281CDAEFB10078737F /* QRScanView.m */; };
+		2C837C311CDAEFB10078737F /* RQScanVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C2A1CDAEFB10078737F /* RQScanVCTL.m */; };
+		2C837C321CDAEFB10078737F /* RQScanVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C2B1CDAEFB10078737F /* RQScanVCTL.xib */; };
+		2C837C361CDB10DF0078737F /* DragCollectionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C341CDB10DF0078737F /* DragCollectionVCTL.m */; };
+		2C837C371CDB10DF0078737F /* DragCollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C351CDB10DF0078737F /* DragCollectionVCTL.xib */; };
+		2C837C3F1CDB113F0078737F /* DragCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C3A1CDB113F0078737F /* DragCollectionCell.m */; };
+		2C837C401CDB113F0078737F /* DragCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C3B1CDB113F0078737F /* DragCollectionCell.xib */; };
+		2C837C411CDB113F0078737F /* DragCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C3D1CDB113F0078737F /* DragCollectionView.m */; };
+		2C837C421CDB113F0078737F /* DragCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C3E1CDB113F0078737F /* DragCollectionView.xib */; };
+		2C837C491CDB11D80078737F /* Drag2CollectionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C471CDB11D80078737F /* Drag2CollectionVCTL.m */; };
+		2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */; };
+		2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */; };
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
@@ -486,16 +491,6 @@
 		2C729B711CD0522200284E78 /* DefaultCameraVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultCameraVCTL.h; sourceTree = "<group>"; };
 		2C729B721CD0522200284E78 /* DefaultCameraVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultCameraVCTL.m; sourceTree = "<group>"; };
 		2C729B731CD0522200284E78 /* DefaultCameraVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultCameraVCTL.xib; sourceTree = "<group>"; };
-		2C729B751CD0522200284E78 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
-		2C729B761CD0522200284E78 /* beep_mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_mine.mp3; sourceTree = "<group>"; };
-		2C729B771CD0522200284E78 /* EWMCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMCodeVCTL.h; sourceTree = "<group>"; };
-		2C729B781CD0522200284E78 /* EWMCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMCodeVCTL.m; sourceTree = "<group>"; };
-		2C729B791CD0522200284E78 /* EWMCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWMCodeVCTL.xib; sourceTree = "<group>"; };
-		2C729B7A1CD0522200284E78 /* QRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanView.h; sourceTree = "<group>"; };
-		2C729B7B1CD0522200284E78 /* QRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanView.m; sourceTree = "<group>"; };
-		2C729B7C1CD0522200284E78 /* RQScanVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQScanVCTL.h; sourceTree = "<group>"; };
-		2C729B7D1CD0522200284E78 /* RQScanVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQScanVCTL.m; sourceTree = "<group>"; };
-		2C729B7E1CD0522200284E78 /* RQScanVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RQScanVCTL.xib; sourceTree = "<group>"; };
 		2C729B801CD0522200284E78 /* CategoryVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVCTL.h; sourceTree = "<group>"; };
 		2C729B811CD0522200284E78 /* CategoryVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVCTL.m; sourceTree = "<group>"; };
 		2C729B821CD0522200284E78 /* CategoryVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVCTL.xib; sourceTree = "<group>"; };
@@ -550,12 +545,6 @@
 		2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPLocationVCTL.xib; sourceTree = "<group>"; };
 		2C729BC01CD0522200284E78 /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
 		2C729BC11CD0522200284E78 /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
-		2C729BC31CD0522200284E78 /* DragCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionCell.h; sourceTree = "<group>"; };
-		2C729BC41CD0522200284E78 /* DragCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionCell.m; sourceTree = "<group>"; };
-		2C729BC51CD0522200284E78 /* DragCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionCell.xib; sourceTree = "<group>"; };
-		2C729BC61CD0522200284E78 /* DragCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionView.h; sourceTree = "<group>"; };
-		2C729BC71CD0522200284E78 /* DragCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionView.m; sourceTree = "<group>"; };
-		2C729BC81CD0522200284E78 /* DragCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionView.xib; sourceTree = "<group>"; };
 		2C729BCA1CD0522200284E78 /* DrawLineVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineVCTL.h; sourceTree = "<group>"; };
 		2C729BCB1CD0522200284E78 /* DrawLineVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineVCTL.m; sourceTree = "<group>"; };
 		2C729BCC1CD0522200284E78 /* DrawLineVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawLineVCTL.xib; sourceTree = "<group>"; };
@@ -800,6 +789,30 @@
 		2C729CEF1CD0522200284E78 /* XOptionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOptionVCTL.m; sourceTree = "<group>"; };
 		2C729CF01CD0522200284E78 /* XOptionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XOptionVCTL.xib; sourceTree = "<group>"; };
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
+		2C837C221CDAEFB10078737F /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		2C837C231CDAEFB10078737F /* beep_mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_mine.mp3; sourceTree = "<group>"; };
+		2C837C241CDAEFB10078737F /* EWMCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMCodeVCTL.h; sourceTree = "<group>"; };
+		2C837C251CDAEFB10078737F /* EWMCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMCodeVCTL.m; sourceTree = "<group>"; };
+		2C837C261CDAEFB10078737F /* EWMCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWMCodeVCTL.xib; sourceTree = "<group>"; };
+		2C837C271CDAEFB10078737F /* QRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanView.h; sourceTree = "<group>"; };
+		2C837C281CDAEFB10078737F /* QRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanView.m; sourceTree = "<group>"; };
+		2C837C291CDAEFB10078737F /* RQScanVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQScanVCTL.h; sourceTree = "<group>"; };
+		2C837C2A1CDAEFB10078737F /* RQScanVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQScanVCTL.m; sourceTree = "<group>"; };
+		2C837C2B1CDAEFB10078737F /* RQScanVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RQScanVCTL.xib; sourceTree = "<group>"; };
+		2C837C331CDB10DF0078737F /* DragCollectionVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionVCTL.h; sourceTree = "<group>"; };
+		2C837C341CDB10DF0078737F /* DragCollectionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionVCTL.m; sourceTree = "<group>"; };
+		2C837C351CDB10DF0078737F /* DragCollectionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionVCTL.xib; sourceTree = "<group>"; };
+		2C837C391CDB113F0078737F /* DragCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionCell.h; sourceTree = "<group>"; };
+		2C837C3A1CDB113F0078737F /* DragCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionCell.m; sourceTree = "<group>"; };
+		2C837C3B1CDB113F0078737F /* DragCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionCell.xib; sourceTree = "<group>"; };
+		2C837C3C1CDB113F0078737F /* DragCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionView.h; sourceTree = "<group>"; };
+		2C837C3D1CDB113F0078737F /* DragCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionView.m; sourceTree = "<group>"; };
+		2C837C3E1CDB113F0078737F /* DragCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionView.xib; sourceTree = "<group>"; };
+		2C837C461CDB11D80078737F /* Drag2CollectionVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drag2CollectionVCTL.h; sourceTree = "<group>"; };
+		2C837C471CDB11D80078737F /* Drag2CollectionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drag2CollectionVCTL.m; sourceTree = "<group>"; };
+		2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Drag2CollectionVCTL.xib; sourceTree = "<group>"; };
+		2C837C4B1CDB13E90078737F /* Drag2CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drag2CollectionView.h; sourceTree = "<group>"; };
+		2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drag2CollectionView.m; sourceTree = "<group>"; };
 		2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1276,7 +1289,7 @@
 				2C729B6E1CD0522200284E78 /* CameraVCTL.m */,
 				2C729B6F1CD0522200284E78 /* CameraVCTL.xib */,
 				2C729B701CD0522200284E78 /* default */,
-				2C729B741CD0522200284E78 /* ErWeiMa */,
+				2C837C211CDAEFB10078737F /* RQCode */,
 			);
 			path = camera;
 			sourceTree = "<group>";
@@ -1289,23 +1302,6 @@
 				2C729B731CD0522200284E78 /* DefaultCameraVCTL.xib */,
 			);
 			path = default;
-			sourceTree = "<group>";
-		};
-		2C729B741CD0522200284E78 /* ErWeiMa */ = {
-			isa = PBXGroup;
-			children = (
-				2C729B751CD0522200284E78 /* beep.mp3 */,
-				2C729B761CD0522200284E78 /* beep_mine.mp3 */,
-				2C729B771CD0522200284E78 /* EWMCodeVCTL.h */,
-				2C729B781CD0522200284E78 /* EWMCodeVCTL.m */,
-				2C729B791CD0522200284E78 /* EWMCodeVCTL.xib */,
-				2C729B7A1CD0522200284E78 /* QRScanView.h */,
-				2C729B7B1CD0522200284E78 /* QRScanView.m */,
-				2C729B7C1CD0522200284E78 /* RQScanVCTL.h */,
-				2C729B7D1CD0522200284E78 /* RQScanVCTL.m */,
-				2C729B7E1CD0522200284E78 /* RQScanVCTL.xib */,
-			);
-			path = ErWeiMa;
 			sourceTree = "<group>";
 		};
 		2C729B7F1CD0522200284E78 /* category */ = {
@@ -1458,12 +1454,11 @@
 		2C729BC21CD0522200284E78 /* dragCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				2C729BC31CD0522200284E78 /* DragCollectionCell.h */,
-				2C729BC41CD0522200284E78 /* DragCollectionCell.m */,
-				2C729BC51CD0522200284E78 /* DragCollectionCell.xib */,
-				2C729BC61CD0522200284E78 /* DragCollectionView.h */,
-				2C729BC71CD0522200284E78 /* DragCollectionView.m */,
-				2C729BC81CD0522200284E78 /* DragCollectionView.xib */,
+				2C837C331CDB10DF0078737F /* DragCollectionVCTL.h */,
+				2C837C341CDB10DF0078737F /* DragCollectionVCTL.m */,
+				2C837C351CDB10DF0078737F /* DragCollectionVCTL.xib */,
+				2C837C381CDB113F0078737F /* 1 */,
+				2C837C451CDB11B80078737F /* 2 */,
 			);
 			path = dragCollectionView;
 			sourceTree = "<group>";
@@ -2096,6 +2091,48 @@
 			path = 1;
 			sourceTree = "<group>";
 		};
+		2C837C211CDAEFB10078737F /* RQCode */ = {
+			isa = PBXGroup;
+			children = (
+				2C837C221CDAEFB10078737F /* beep.mp3 */,
+				2C837C231CDAEFB10078737F /* beep_mine.mp3 */,
+				2C837C241CDAEFB10078737F /* EWMCodeVCTL.h */,
+				2C837C251CDAEFB10078737F /* EWMCodeVCTL.m */,
+				2C837C261CDAEFB10078737F /* EWMCodeVCTL.xib */,
+				2C837C271CDAEFB10078737F /* QRScanView.h */,
+				2C837C281CDAEFB10078737F /* QRScanView.m */,
+				2C837C291CDAEFB10078737F /* RQScanVCTL.h */,
+				2C837C2A1CDAEFB10078737F /* RQScanVCTL.m */,
+				2C837C2B1CDAEFB10078737F /* RQScanVCTL.xib */,
+			);
+			path = RQCode;
+			sourceTree = "<group>";
+		};
+		2C837C381CDB113F0078737F /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				2C837C3C1CDB113F0078737F /* DragCollectionView.h */,
+				2C837C3D1CDB113F0078737F /* DragCollectionView.m */,
+				2C837C3E1CDB113F0078737F /* DragCollectionView.xib */,
+				2C837C391CDB113F0078737F /* DragCollectionCell.h */,
+				2C837C3A1CDB113F0078737F /* DragCollectionCell.m */,
+				2C837C3B1CDB113F0078737F /* DragCollectionCell.xib */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		2C837C451CDB11B80078737F /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				2C837C461CDB11D80078737F /* Drag2CollectionVCTL.h */,
+				2C837C471CDB11D80078737F /* Drag2CollectionVCTL.m */,
+				2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */,
+				2C837C4B1CDB13E90078737F /* Drag2CollectionView.h */,
+				2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
@@ -2396,9 +2433,9 @@
 			files = (
 				2C40EB0B1BE0C40500074AB8 /* file_pdf4.pdf in Resources */,
 				2C729CFC1CD0522200284E78 /* AnimationRotateVCTL.xib in Resources */,
+				2C837C371CDB10DF0078737F /* DragCollectionVCTL.xib in Resources */,
 				2C729D101CD0522200284E78 /* CategoryVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
-				2C729D351CD0522200284E78 /* DragCollectionView.xib in Resources */,
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
 				2C729D151CD0522200284E78 /* AttributeStringVCTL.xib in Resources */,
 				2C729D241CD0522200284E78 /* Dealloc1VCTL.xib in Resources */,
@@ -2407,13 +2444,13 @@
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C729DA41CD0522200284E78 /* StatusBarVCTL.xib in Resources */,
 				2C729D5B1CD0522200284E78 /* main.js in Resources */,
+				2C837C2F1CDAEFB10078737F /* EWMCodeVCTL.xib in Resources */,
 				2C729D261CD0522200284E78 /* Dealloc2VCTL.xib in Resources */,
 				2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */,
 				2C729D5F1CD0522200284E78 /* LewPopupVCTL.xib in Resources */,
 				2C729CF41CD0522200284E78 /* Touch3D1VCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
-				2C729D331CD0522200284E78 /* DragCollectionCell.xib in Resources */,
 				2C729D4A1CD0522200284E78 /* HorizontalVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
 				2C729DC41CD0522200284E78 /* UILabelVCTL.xib in Resources */,
@@ -2430,20 +2467,23 @@
 				2C729CF21CD0522200284E78 /* Touch3d1DetailVCTL.xib in Resources */,
 				2C729D461CD0522200284E78 /* HorizonScrollTitleCollectionCell.xib in Resources */,
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
+				2C837C2C1CDAEFB10078737F /* beep.mp3 in Resources */,
 				2C729D8A1CD0522200284E78 /* RefreshTableViewCell.xib in Resources */,
 				2C729D6E1CD0522200284E78 /* MGSwipeCellVCTL.xib in Resources */,
+				2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */,
 				2C729DBF1CD0522200284E78 /* TouchEventVCTL.xib in Resources */,
 				2C729D801CD0522200284E78 /* PostNotificationVCTL.xib in Resources */,
 				2C729D221CD0522200284E78 /* DeallocVCTL.xib in Resources */,
 				2C729D171CD0522200284E78 /* ConstrainVCTL.xib in Resources */,
+				2C837C321CDAEFB10078737F /* RQScanVCTL.xib in Resources */,
 				2C729D201CD0522200284E78 /* CPlusVCTL.xib in Resources */,
 				2C729D791CD0522200284E78 /* OthersVCTL.xib in Resources */,
+				2C837C421CDB113F0078737F /* DragCollectionView.xib in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2C729D7B1CD0522200284E78 /* PickerVCTL.xib in Resources */,
 				2C729D501CD0522200284E78 /* IntrinsicCell.xib in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
 				2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */,
-				2C729D0B1CD0522200284E78 /* EWMCodeVCTL.xib in Resources */,
 				2C729D8C1CD0522200284E78 /* ReleaseModeVCTL.xib in Resources */,
 				2C729D441CD0522200284E78 /* HorizontalScrollCollectionCell.xib in Resources */,
 				2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */,
@@ -2454,7 +2494,6 @@
 				2C729DBD1CD0522200284E78 /* TimerVCTL.xib in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
-				2C729D0E1CD0522200284E78 /* RQScanVCTL.xib in Resources */,
 				2C729DC21CD0522200284E78 /* TouchIDVCTL.xib in Resources */,
 				2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
@@ -2477,10 +2516,12 @@
 				2C729D881CD0522200284E78 /* RefreshTableVCTL.xib in Resources */,
 				2C729D301CD0522200284E78 /* LocationGTJA.gpx in Resources */,
 				2C729D031CD0522200284E78 /* BuglyVCTL.xib in Resources */,
+				2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */,
 				2C729DAF1CD0522200284E78 /* TableViewXIBCell.xib in Resources */,
 				2C729D941CD0522200284E78 /* ScrollViewZoomVCTL.xib in Resources */,
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
+				2C837C401CDB113F0078737F /* DragCollectionCell.xib in Resources */,
 				2C729D131CD0522200284E78 /* CheckInstallQQVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C729D661CD0522200284E78 /* MathProblem2VCTL.xib in Resources */,
@@ -2505,12 +2546,10 @@
 				2C729D2C1CD0522200284E78 /* DownloadVCTL.xib in Resources */,
 				2C729D5D1CD0522200284E78 /* KVOVCTL.xib in Resources */,
 				2C729D191CD0522200284E78 /* ConstraintCodeVCTL.xib in Resources */,
-				2C729D081CD0522200284E78 /* beep.mp3 in Resources */,
 				2C729D6A1CD0522200284E78 /* MenuItemCell.xib in Resources */,
 				2C729D5A1CD0522200284E78 /* JSPatchVCTL.xib in Resources */,
 				2C729D641CD0522200284E78 /* MathProblem1VCTL.xib in Resources */,
 				2C729D1C1CD0522200284E78 /* ContactListVCTL.xib in Resources */,
-				2C729D091CD0522200284E78 /* beep_mine.mp3 in Resources */,
 				2C729DB71CD0522200284E78 /* testXibVCTL.xib in Resources */,
 				2C729D621CD0522200284E78 /* LewView2.xib in Resources */,
 				2C729D7D1CD0522200284E78 /* PickerViewController.xib in Resources */,
@@ -2560,7 +2599,6 @@
 				2C729DC11CD0522200284E78 /* TouchIDVCTL.m in Sources */,
 				2C729D871CD0522200284E78 /* RefreshTableVCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
-				2C729D0C1CD0522200284E78 /* QRScanView.m in Sources */,
 				2C729D9D1CD0522200284E78 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C729D651CD0522200284E78 /* MathProblem2VCTL.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
@@ -2596,6 +2634,7 @@
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
 				2C729D9B1CD0522200284E78 /* WXApiResponseHandler.m in Sources */,
+				2C837C411CDB113F0078737F /* DragCollectionView.m in Sources */,
 				2C729D631CD0522200284E78 /* MathProblem1VCTL.m in Sources */,
 				2C4BE0481BE9A7B0004F1DAF /* MJRefreshBackGifFooter.m in Sources */,
 				2C4BE04C1BE9A7B0004F1DAF /* MJRefreshNormalHeader.m in Sources */,
@@ -2607,18 +2646,18 @@
 				2C729DBA1CD0522200284E78 /* TimerInstance.m in Sources */,
 				2C2EC3341BE74021008197C3 /* AFURLResponseSerialization.m in Sources */,
 				2C729DBB1CD0522200284E78 /* TimerObject.m in Sources */,
+				2C837C3F1CDB113F0078737F /* DragCollectionCell.m in Sources */,
 				2C729CFE1CD0522200284E78 /* SecurityStrategy.m in Sources */,
 				2C4BE0441BE9A7B0004F1DAF /* MJRefreshHeader.m in Sources */,
 				2C729CF51CD0522200284E78 /* Touch3DVCTL.m in Sources */,
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
 				2C729D161CD0522200284E78 /* ConstrainVCTL.m in Sources */,
-				2C729D341CD0522200284E78 /* DragCollectionView.m in Sources */,
 				2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */,
 				2C729D591CD0522200284E78 /* JSPatchVCTL.m in Sources */,
 				2C729D931CD0522200284E78 /* ScrollViewZoomVCTL.m in Sources */,
-				2C729D321CD0522200284E78 /* DragCollectionCell.m in Sources */,
 				2C729D5E1CD0522200284E78 /* LewPopupVCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
+				2C837C301CDAEFB10078737F /* QRScanView.m in Sources */,
 				2C729DA91CD0522200284E78 /* TableViewCodeCell.m in Sources */,
 				2C729D7F1CD0522200284E78 /* PostNotificationVCTL.m in Sources */,
 				2C729D991CD0522200284E78 /* WXApiManager.m in Sources */,
@@ -2629,7 +2668,6 @@
 				2C729D041CD0522200284E78 /* CameraVCTL.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
 				2C2EC3371BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				2C729D0D1CD0522200284E78 /* RQScanVCTL.m in Sources */,
 				2C729D1E1CD0522200284E78 /* CPlus.cpp in Sources */,
 				2C729D911CD0522200284E78 /* ScreenFrameVCTL.m in Sources */,
 				2C729D3C1CD0522200284E78 /* EncoderObject1.m in Sources */,
@@ -2641,9 +2679,10 @@
 				2C4BE0501BE9A7B0004F1DAF /* UIScrollView+MJExtension.m in Sources */,
 				2C729CFD1CD0522200284E78 /* AnimationRotateView.m in Sources */,
 				2C729DAA1CD0522200284E78 /* TableViewHeaderXIBView.m in Sources */,
+				2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */,
 				2CE1F3521BCE3DC800B82CAE /* LewPopupViewAnimationFade.m in Sources */,
+				2C837C311CDAEFB10078737F /* RQScanVCTL.m in Sources */,
 				2C729CF91CD0522200284E78 /* AnimationVCTL.m in Sources */,
-				2C729D0A1CD0522200284E78 /* EWMCodeVCTL.m in Sources */,
 				2C729DB31CD0522200284E78 /* BlockObject1.m in Sources */,
 				2C729D411CD0522200284E78 /* HorizonScrollVCTL.m in Sources */,
 				2C729DC71CD0522200284E78 /* Life2VCTL.m in Sources */,
@@ -2670,9 +2709,11 @@
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
 				2C729D551CD0522200284E78 /* JailBreakVCTL.m in Sources */,
 				2C729D211CD0522200284E78 /* DeallocVCTL.m in Sources */,
+				2C837C361CDB10DF0078737F /* DragCollectionVCTL.m in Sources */,
 				2C729D1B1CD0522200284E78 /* ContactListVCTL.m in Sources */,
 				2C729D391CD0522200284E78 /* DrawView1.m in Sources */,
 				2C729D4B1CD0522200284E78 /* HorizontalView.m in Sources */,
+				2C837C2E1CDAEFB10078737F /* EWMCodeVCTL.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C729D4F1CD0522200284E78 /* IntrinsicCell.m in Sources */,
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,
@@ -2725,6 +2766,7 @@
 				2C729D8F1CD0522200284E78 /* SavePlistVCTL.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,
 				2C729D3B1CD0522200284E78 /* EncoderObject.m in Sources */,
+				2C837C491CDB11D80078737F /* Drag2CollectionVCTL.m in Sources */,
 				2C2EC3361BE74021008197C3 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2C729D061CD0522200284E78 /* DefaultCameraVCTL.m in Sources */,
 				2C729D531CD0522200284E78 /* IntrinsicSizeTableViewVCTL.m in Sources */,

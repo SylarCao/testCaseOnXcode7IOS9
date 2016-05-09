@@ -322,6 +322,8 @@
 		2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AD1C0BF4C200089E14 /* sgs6.png */; };
 		2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AF1C0BF54000089E14 /* sgs7.png */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
+		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
+		2CB114D61CE0599500E43797 /* AFNetworkingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */; };
 		2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB381A41BCF418800D4F33F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */; };
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
@@ -843,6 +845,9 @@
 		2CA1F8AF1C0BF54000089E14 /* sgs7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs7.png; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		2CADEA381BB537E0009BBD28 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		2CB114D21CE0599500E43797 /* AFNetworkingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVCTL.h; sourceTree = "<group>"; };
+		2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVCTL.m; sourceTree = "<group>"; };
+		2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingVCTL.xib; sourceTree = "<group>"; };
 		2CB381A31BCF418800D4F33F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		2CB381A41BCF418800D4F33F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		2CCB289C1BCB45E1005E9B85 /* BasicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1132,6 +1137,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CB114D11CE0598400E43797 /* AFNetworking */,
 				2C729B471CD0522100284E78 /* 3DTouch */,
 				2C729B511CD0522100284E78 /* actionsheet */,
 				2C729B551CD0522100284E78 /* animation */,
@@ -2264,6 +2270,16 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
+		2CB114D11CE0598400E43797 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2CB114D21CE0599500E43797 /* AFNetworkingVCTL.h */,
+				2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */,
+				2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		2CB381A21BCF418800D4F33F /* jsonKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2460,6 +2476,7 @@
 				2C729D581CD0522200284E78 /* JsonKitVCTL.xib in Resources */,
 				2C729DCB1CD0522200284E78 /* WebViewVCTL.xib in Resources */,
 				2C729D481CD0522200284E78 /* HorizonScrollTitleView.xib in Resources */,
+				2CB114D61CE0599500E43797 /* AFNetworkingVCTL.xib in Resources */,
 				2C729CF61CD0522200284E78 /* Touch3DVCTL.xib in Resources */,
 				2C729D861CD0522200284E78 /* ReadPDFVCTL.xib in Resources */,
 				2C729D901CD0522200284E78 /* SavePlistVCTL.xib in Resources */,
@@ -2601,6 +2618,7 @@
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
 				2C729D9D1CD0522200284E78 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C729D651CD0522200284E78 /* MathProblem2VCTL.m in Sources */,
+				2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
 				2C729DC31CD0522200284E78 /* UILabelVCTL.m in Sources */,
 				2C729DB61CD0522200284E78 /* testXibVCTL.m in Sources */,

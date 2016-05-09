@@ -19,6 +19,8 @@
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @property (weak, nonatomic) IBOutlet UIView *viewPreview;
 
+@property (nonatomic, weak) IBOutlet UILabel *result;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation EWMCodeVCTL
@@ -46,10 +48,7 @@
 
 - (IBAction)btn1:(id)sender
 {
-//    [self funScan];
-    
-//    [self funScan];
-//    [self loadBeepSound];
+    // 扫 二维码
     
      [_captureSession startRunning];
 }
@@ -137,6 +136,9 @@
             
             [self stopReading];
             
+            dispatch_async(dispatch_get_main_queue(), ^{
+                _result.text = metadataObj.stringValue;
+            });
             
             
             [_audioPlayer play];
@@ -150,9 +152,9 @@
 //            [self performSelectorOnMainThread:@selector(backItem) withObject:nil waitUntilDone:YES];
             
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.navigationController popViewControllerAnimated:YES];
-            });
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self.navigationController popViewControllerAnimated:YES];
+//            });
             
         }
     }

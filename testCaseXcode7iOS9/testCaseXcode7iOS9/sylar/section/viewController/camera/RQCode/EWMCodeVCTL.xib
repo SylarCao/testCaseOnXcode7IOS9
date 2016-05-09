@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EWMCodeVCTL">
             <connections>
+                <outlet property="result" destination="TWe-ym-bY9" id="uXe-PK-Mlr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewPreview" destination="zfL-WQ-yux" id="hi5-C5-qtI"/>
             </connections>
@@ -56,6 +57,12 @@
                         <action selector="btn3:" destination="-1" eventType="touchUpInside" id="Gzq-gH-qtq"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWe-ym-bY9">
+                    <rect key="frame" x="166" y="130" width="43" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -64,9 +71,12 @@
                 <constraint firstItem="fe6-hv-YRB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="5R0-Yx-kAH"/>
                 <constraint firstAttribute="trailing" secondItem="Ccf-Q5-SdQ" secondAttribute="trailing" constant="99" id="6ag-aQ-kbH"/>
                 <constraint firstAttribute="bottom" secondItem="zfL-WQ-yux" secondAttribute="bottom" constant="80" id="AD5-rs-Bl9"/>
+                <constraint firstItem="TWe-ym-bY9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BaS-yg-pER"/>
                 <constraint firstItem="Tgw-zX-xr6" firstAttribute="top" secondItem="fe6-hv-YRB" secondAttribute="bottom" constant="2" id="DAK-Jh-BpG"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TWe-ym-bY9" secondAttribute="trailing" constant="10" id="Mhd-H7-dam"/>
                 <constraint firstItem="zfL-WQ-yux" firstAttribute="top" secondItem="Tgw-zX-xr6" secondAttribute="bottom" constant="97" id="T1f-QT-3ez"/>
                 <constraint firstItem="Tgw-zX-xr6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="XNl-k5-GBV"/>
+                <constraint firstItem="TWe-ym-bY9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="rV6-cz-AkC"/>
                 <constraint firstItem="zfL-WQ-yux" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="zfx-xW-aqy"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

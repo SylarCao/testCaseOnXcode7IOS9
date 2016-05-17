@@ -28,8 +28,8 @@
         
 //        [self fun1];
 //        [self fun2];
-//        [self fun3];
-        [self fun4];
+        [self fun3];
+//        [self fun4];
 //        [self fun5];
     }
     return self;
@@ -52,7 +52,6 @@
 - (void)fun5
 {
     // 加了一个 再加一个
-    
     NSDictionary *dict = NSDictionaryOfVariableBindings(_v1);
     NSArray *c1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[_v1(==20)]" options:0 metrics:nil views:dict];
     NSArray *c2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_v1]-20-|" options:0 metrics:nil views:dict];

@@ -29,6 +29,10 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zd6-fh-ThM">
                     <rect key="frame" x="244" y="164" width="85" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="Qd8-Qc-gY0"/>
+                        <constraint firstAttribute="width" constant="85" id="vIR-3b-0Ft"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -47,6 +51,12 @@
                 <constraint firstItem="ewf-la-CrK" firstAttribute="top" secondItem="Zd6-fh-ThM" secondAttribute="bottom" constant="44" id="n9s-ov-42h"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="f1e-oz-ePY"/>
+                    <exclude reference="n9s-ov-42h"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="503.5" y="364.5"/>
         </view>
     </objects>

@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self roundFunction1];
+//    [self roundFunction1];
+    
+    [self fun2];
 }
 
 - (void)roundFunction1
@@ -28,6 +30,25 @@
     NSInteger a4 = round(2.9);  // 3
     
     NSLog(@"a123 = %ld, %ld, %ld %ld", a1, a2, a3, a4);
+}
+
+- (void)fun2
+{
+    CGFloat f1 = 3.4;
+    CGFloat f2 = 3;
+    CGFloat f3 = 3.0;
+    
+    NSInteger a1 = ceilf(f1);
+    NSInteger a2 = ceilf(f2);
+    NSInteger a3 = ceilf(f3);
+    
+    CGFloat d1 = ceilf(f1);
+    CGFloat d2 = ceilf(f2);
+    CGFloat d3 = ceilf(f3);
+    
+    NSLog(@"a123 = %d, %d, %d", a1, a2, a3);
+    NSLog(@"d123 = %f, %f, %f", d1, d2, d3);
+    
 }
 
 @end

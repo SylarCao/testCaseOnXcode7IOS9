@@ -29,6 +29,8 @@
     _imv1.layer.borderWidth = 0.5;
     
     
+    [self fun2];
+    
 //    [self addCropImage];
 }
 
@@ -39,7 +41,12 @@
     
 //    [self imageCoverImage];
     
-    [self fun1];
+//    [self fun1];
+}
+
+- (void)fun2
+{
+    
 }
 
 - (void)fun1

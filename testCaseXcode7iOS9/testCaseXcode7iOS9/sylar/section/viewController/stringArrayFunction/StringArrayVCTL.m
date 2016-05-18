@@ -36,8 +36,37 @@
     
 //    [self fun5];
     
-    [self fun7];
+//    [self fun7];
     
+//    [self fun8];
+    
+}
+
+- (void)fun8
+{
+    NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    [self logFun8:dict];
+    
+//    [dict setValue:@"vv" forKey:@"kk"];  // crash
+//    [self logFun8:dict];
+    
+    
+    NSMutableDictionary *dd = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    
+    [dd setObject:@"vvv" forKey:@"kk"];
+    
+    [self logFun8:dd];
+    
+    [dd setObject:@"obj" forKey:@"key2"];
+    [self logFun8:dd];
+    
+    [dd setValue:@"v2" forKey:@"kkkk"];
+    [self logFun8:dd];
+}
+
+- (void)logFun8:(NSDictionary *)dict
+{
+    NSLog(@"dict = %@", dict);
 }
 
 - (void)fun7

@@ -9,6 +9,13 @@
 #include "CPlus.hpp"
 
 
+void cppClass1::cppFun3()
+{
+    char ch1 = '0';
+    int a = ch1;
+    printf("a = %d", a);
+}
+
 
 void cppClass1::cppFun1()
 {
@@ -31,6 +38,8 @@ void cppClass1::cppFun2(int int1, string string1)
     printf("string = %s", string1.c_str());
     
 }
+
+
 
 
 

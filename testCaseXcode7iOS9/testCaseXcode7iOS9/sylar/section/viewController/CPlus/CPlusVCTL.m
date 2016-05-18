@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self fun1];
+//    [self fun1];
 }
 
 - (IBAction)btn1:(id)sender

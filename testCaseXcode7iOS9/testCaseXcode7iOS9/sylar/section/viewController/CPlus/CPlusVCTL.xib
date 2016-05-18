@@ -18,6 +18,9 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzl-NJ-D0T">
                     <rect key="frame" x="60" y="183" width="30" height="30"/>
                     <state key="normal" title="b1"/>
+                    <connections>
+                        <action selector="btn1:" destination="-1" eventType="touchUpInside" id="7ey-bR-G4v"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0E-bx-f6v">
                     <rect key="frame" x="238" y="183" width="30" height="30"/>

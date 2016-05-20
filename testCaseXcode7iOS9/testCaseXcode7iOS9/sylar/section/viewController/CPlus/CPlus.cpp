@@ -9,6 +9,29 @@
 #include "CPlus.hpp"
 
 
+
+
+void cppClass1::cppFun4()
+{
+    string data = "34";
+    
+    
+    char *pdata = (char *)data.c_str();
+    
+    printf("val = %d", *pdata);
+    
+    int a = 0;
+    
+    int *pos = &a;
+    
+    int val     = 0;
+    char *ptr   = pdata + *pos;
+    *pos        += sizeof(char);
+    val         = (*ptr - '0' + 48);    // '0' ASCII 代表10进制数 48
+    
+    printf("val = %d, %c", val, *ptr);
+}
+
 void cppClass1::cppFun3()
 {
     char ch1 = '0';

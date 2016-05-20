@@ -18,7 +18,7 @@
 - (void)cppFun1
 {
     cppClass1 *c1 = new cppClass1();
-    c1->cppFun3();
+    c1->cppFun4();
 }
 
 @end

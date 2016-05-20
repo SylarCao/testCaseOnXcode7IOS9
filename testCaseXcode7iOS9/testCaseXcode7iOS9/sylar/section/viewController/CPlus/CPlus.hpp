@@ -22,6 +22,7 @@ public:
     void cppFun2(int int1, string string1);
     
     void cppFun3();
+    void cppFun4();
 };
 
 

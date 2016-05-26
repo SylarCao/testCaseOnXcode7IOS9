@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShakeTextFieldVCTL">
             <connections>
                 <outlet property="textField1" destination="XFW-66-tB3" id="FH8-Kd-32k"/>
+                <outlet property="v1" destination="mZQ-6b-lAW" id="b3D-8G-v1b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,22 +17,44 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-bi-23e">
-                    <rect key="frame" x="59" y="257" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-bi-23e">
+                    <rect key="frame" x="58" y="316" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="51D-Hn-ZNW"/>
+                        <constraint firstAttribute="width" constant="30" id="ZM2-Id-AbF"/>
+                    </constraints>
                     <state key="normal" title="b1"/>
                     <connections>
                         <action selector="btn1:" destination="-1" eventType="touchUpInside" id="Sr4-o2-ZnN"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFW-66-tB3">
-                    <rect key="frame" x="100" y="97" width="97" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFW-66-tB3">
+                    <rect key="frame" x="89" y="60" width="97" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-6b-lAW">
+                    <rect key="frame" x="120" y="159" width="52" height="79"/>
+                    <color key="backgroundColor" red="1" green="0.51510984010000005" blue="0.28044121020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="hDY-9Q-5uu"/>
+                        <constraint firstAttribute="width" constant="52" id="hwC-er-HxJ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XFW-66-tB3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="57h-Rc-1cE"/>
+                <constraint firstItem="mZQ-6b-lAW" firstAttribute="top" secondItem="XFW-66-tB3" secondAttribute="bottom" constant="69" id="DBt-Wk-5KN"/>
+                <constraint firstAttribute="trailing" secondItem="XFW-66-tB3" secondAttribute="trailing" constant="134" id="HzG-gN-Kk5"/>
+                <constraint firstItem="mZQ-6b-lAW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="U8P-J9-2iC"/>
+                <constraint firstItem="QWd-bi-23e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="316" id="ajh-41-7Tj"/>
+                <constraint firstItem="XFW-66-tB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="89" id="eP3-xU-TPp"/>
+                <constraint firstItem="QWd-bi-23e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="58" id="pQQ-PE-LBb"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="471" y="376"/>
         </view>
     </objects>
 </document>

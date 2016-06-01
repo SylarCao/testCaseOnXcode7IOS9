@@ -285,6 +285,9 @@
 		2C729DCC1CD0522200284E78 /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CEF1CD0522200284E78 /* XOptionVCTL.m */; };
 		2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CF01CD0522200284E78 /* XOptionVCTL.xib */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
+		2C7CAAB81CFEB24C00E2D91A /* SaveDataVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CAAB61CFEB24C00E2D91A /* SaveDataVCTL.m */; };
+		2C7CAAB91CFEB24D00E2D91A /* SaveDataVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CAAB71CFEB24C00E2D91A /* SaveDataVCTL.xib */; };
+		2C7CAABC1CFEB25D00E2D91A /* DataObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CAABB1CFEB25D00E2D91A /* DataObject1.m */; };
 		2C837C2C1CDAEFB10078737F /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C221CDAEFB10078737F /* beep.mp3 */; };
 		2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C231CDAEFB10078737F /* beep_mine.mp3 */; };
 		2C837C2E1CDAEFB10078737F /* EWMCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C251CDAEFB10078737F /* EWMCodeVCTL.m */; };
@@ -791,6 +794,11 @@
 		2C729CEF1CD0522200284E78 /* XOptionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOptionVCTL.m; sourceTree = "<group>"; };
 		2C729CF01CD0522200284E78 /* XOptionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XOptionVCTL.xib; sourceTree = "<group>"; };
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
+		2C7CAAB51CFEB24C00E2D91A /* SaveDataVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveDataVCTL.h; sourceTree = "<group>"; };
+		2C7CAAB61CFEB24C00E2D91A /* SaveDataVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveDataVCTL.m; sourceTree = "<group>"; };
+		2C7CAAB71CFEB24C00E2D91A /* SaveDataVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveDataVCTL.xib; sourceTree = "<group>"; };
+		2C7CAABA1CFEB25D00E2D91A /* DataObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject1.h; sourceTree = "<group>"; };
+		2C7CAABB1CFEB25D00E2D91A /* DataObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject1.m; sourceTree = "<group>"; };
 		2C837C221CDAEFB10078737F /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		2C837C231CDAEFB10078737F /* beep_mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_mine.mp3; sourceTree = "<group>"; };
 		2C837C241CDAEFB10078737F /* EWMCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMCodeVCTL.h; sourceTree = "<group>"; };
@@ -1137,6 +1145,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7CAAB41CFEB23C00E2D91A /* saveData */,
 				2CB114D11CE0598400E43797 /* AFNetworking */,
 				2C729B471CD0522100284E78 /* 3DTouch */,
 				2C729B511CD0522100284E78 /* actionsheet */,
@@ -2097,6 +2106,18 @@
 			path = 1;
 			sourceTree = "<group>";
 		};
+		2C7CAAB41CFEB23C00E2D91A /* saveData */ = {
+			isa = PBXGroup;
+			children = (
+				2C7CAAB51CFEB24C00E2D91A /* SaveDataVCTL.h */,
+				2C7CAAB61CFEB24C00E2D91A /* SaveDataVCTL.m */,
+				2C7CAAB71CFEB24C00E2D91A /* SaveDataVCTL.xib */,
+				2C7CAABA1CFEB25D00E2D91A /* DataObject1.h */,
+				2C7CAABB1CFEB25D00E2D91A /* DataObject1.m */,
+			);
+			path = saveData;
+			sourceTree = "<group>";
+		};
 		2C837C211CDAEFB10078737F /* RQCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2520,6 +2541,7 @@
 				2C729DB91CD0522200284E78 /* X1.xib in Resources */,
 				2C729D051CD0522200284E78 /* CameraVCTL.xib in Resources */,
 				2C729D3E1CD0522200284E78 /* EncoderVCTL.xib in Resources */,
+				2C7CAAB91CFEB24D00E2D91A /* SaveDataVCTL.xib in Resources */,
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C729CF81CD0522200284E78 /* ActionSheetVCTL.xib in Resources */,
 				2C729D8E1CD0522200284E78 /* ResizeImageVCTL.xib in Resources */,
@@ -2691,10 +2713,12 @@
 				2C729D3C1CD0522200284E78 /* EncoderObject1.m in Sources */,
 				2CE1F3531BCE3DC800B82CAE /* LewPopupViewAnimationSlide.m in Sources */,
 				2C729D2E1CD0522200284E78 /* DPLocationVCTL.m in Sources */,
+				2C7CAABC1CFEB25D00E2D91A /* DataObject1.m in Sources */,
 				2C2EC3391BE74021008197C3 /* UIButton+AFNetworking.m in Sources */,
 				2C2EC32E1BE74021008197C3 /* AFHTTPRequestOperationManager.m in Sources */,
 				2C729D111CD0522200284E78 /* ViewCategory1.m in Sources */,
 				2C4BE0501BE9A7B0004F1DAF /* UIScrollView+MJExtension.m in Sources */,
+				2C7CAAB81CFEB24C00E2D91A /* SaveDataVCTL.m in Sources */,
 				2C729CFD1CD0522200284E78 /* AnimationRotateView.m in Sources */,
 				2C729DAA1CD0522200284E78 /* TableViewHeaderXIBView.m in Sources */,
 				2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */,

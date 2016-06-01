@@ -44,7 +44,7 @@
 //    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];  // 没什么用
     
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:7 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
     
 //        [_timer fire];
 }

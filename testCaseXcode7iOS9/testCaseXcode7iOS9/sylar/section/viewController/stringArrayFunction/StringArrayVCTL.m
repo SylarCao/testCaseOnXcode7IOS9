@@ -58,9 +58,9 @@
     
     NSMutableArray *m1 = [[NSMutableArray alloc] initWithArray:a1];
     NSMutableArray *m2 = [a1 mutableCopy];
+    NSMutableArray *m3 = [m1 mutableCopy];
     
-    
-    NSLog(@"ddd = %@ - %@ - %@", a1, m1, m2);
+    NSLog(@"ddd = %@ - %@ - %@ - %@", a1, m1, m2, m3);
     
     
     

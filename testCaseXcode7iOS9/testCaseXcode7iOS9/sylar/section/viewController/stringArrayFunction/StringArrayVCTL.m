@@ -40,6 +40,30 @@
     
 //    [self fun8];
     
+    [self fun9];
+    
+}
+
+- (void)fun9
+{
+    // array -> mutable array
+    
+    StringArrayHelper *h1 = [[StringArrayHelper alloc] initWithData:1];
+    StringArrayHelper *h2 = [[StringArrayHelper alloc] initWithData:2];
+    StringArrayHelper *h3 = [[StringArrayHelper alloc] initWithData:3];
+    StringArrayHelper *h4 = [[StringArrayHelper alloc] initWithData:4];
+    
+    NSArray *a1 = @[h1, h2, h3, h4];
+    
+    
+    NSMutableArray *m1 = [[NSMutableArray alloc] initWithArray:a1];
+    NSMutableArray *m2 = [a1 mutableCopy];
+    
+    
+    NSLog(@"ddd = %@ - %@ - %@", a1, m1, m2);
+    
+    
+    
 }
 
 - (void)fun8

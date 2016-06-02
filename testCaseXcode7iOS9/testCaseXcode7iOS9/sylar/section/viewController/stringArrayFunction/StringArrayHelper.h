@@ -13,4 +13,16 @@ extern NSString *const constStringArrayHelper1;
 
 @interface StringArrayHelper : NSObject
 
+@property (nonatomic, strong) NSString *p1;
+
+
+/**
+ *  init
+ *
+ *  @param p1 p1 description
+ *
+ *  @return return value description
+ */
+- (id)initWithData:(NSInteger)p1;
+
 @end

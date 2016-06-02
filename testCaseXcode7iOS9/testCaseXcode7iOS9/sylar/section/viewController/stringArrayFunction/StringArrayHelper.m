@@ -12,4 +12,14 @@ NSString *const constStringArrayHelper1 = @"constStringArrayHelper1";
 
 @implementation StringArrayHelper
 
+- (id)initWithData:(NSInteger)p1
+{
+    self = [super init];
+    if (self)
+    {
+        _p1 = [NSString stringWithFormat:@"%ld", p1];
+    }
+    return self;
+}
+
 @end

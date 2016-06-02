@@ -82,9 +82,16 @@
     
     NSData *data = [[NSFileManager defaultManager] contentsAtPath:path];
     
-    NSMutableArray *arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSArray *arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     
-    NSLog(@"obj1 = %@", arr);
+    NSArray *aa = @[@"1", @"2"];
+    
+    NSMutableArray *mm = [[NSMutableArray alloc] initWithArray:arr];
+    
+    NSString *ss = @"sss";
+    [mm addObject:ss];
+    
+    NSLog(@"obj1 = %@ - %@", mm, aa);
 
 }
 

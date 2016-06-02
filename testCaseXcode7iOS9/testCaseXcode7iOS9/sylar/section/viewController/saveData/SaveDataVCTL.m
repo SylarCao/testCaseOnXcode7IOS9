@@ -39,7 +39,9 @@
 //    [self fun2];
     
     
-    [self fun3];
+//    [self fun3];
+    
+    [self fun4];
 }
 
 - (void)createLocalDirectory
@@ -51,11 +53,45 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun2Decode];
+//    [self fun2Decode];
+    
+    [self fun4Decode];
 }
+
+- (void)fun4
+{
+    // 保存 array of DataObject1
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    for (int i=0; i<10; i++)
+    {
+        DataObject1 *obj = [[DataObject1 alloc] initWithRandom0];
+        [arr addObject:obj];
+    }
+    
+    NSString *path = [NSString stringWithFormat:@"%@/fun4", _localDirectoryPath];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
+    
+    BOOL ss = [[NSFileManager defaultManager] createFileAtPath:path contents:data attributes:nil];
+    
+    NSLog(@"ss = %d", ss);
+}
+
+- (void)fun4Decode
+{
+    NSString *path = [NSString stringWithFormat:@"%@/fun4", _localDirectoryPath];
+    
+    NSData *data = [[NSFileManager defaultManager] contentsAtPath:path];
+    
+    NSMutableArray *arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    NSLog(@"obj1 = %@", arr);
+
+}
+
 
 - (void)fun3
 {
+    // core data 需要project支持
     NSManagedObjectContext *context = [self managedObjectContext];
     
 //    NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
@@ -76,6 +112,7 @@
 
 - (void)fun1
 {
+    // 本地保存 一个 NSString
     NSString *path = [NSString stringWithFormat:@"%@/fun1", _localDirectoryPath];
     
     NSString *ss = @"ss";
@@ -88,6 +125,7 @@
 
 - (void)fun2
 {
+    // 本地保存一个 DataObject1
     NSString *path = [NSString stringWithFormat:@"%@/fun2", _localDirectoryPath];
     
     _model = [[DataObject1 alloc] initWithRandom1];

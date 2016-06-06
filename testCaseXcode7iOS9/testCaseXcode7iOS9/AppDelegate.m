@@ -127,4 +127,10 @@
     return NO;
 }
 
+#pragma mark - 禁止 横屏 竖屏的 调整
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end

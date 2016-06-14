@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "AFNetworkingVCTL.h"
 #import "AFNetworking.h"
+#import "Reachability.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface AFNetworkingVCTL ()
 
@@ -22,12 +23,35 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
+    
+    [self netWorkAccess];
 }
 
 - (IBAction)btn2:(id)sender
 {
     
+    
+    
+}
+
+- (void)netWorkAccess
+{
+    NSTimeInterval time1 = [NSDate timeIntervalSinceReferenceDate];
+    Reachability *rr = [Reachability reachabilityWithHostname:@"www.baidu.com"];
+    
+    NSInteger dd = rr.currentReachabilityStatus;
+    NSString *ss = rr.currentReachabilityString;
+    NSString *ff = rr.currentReachabilityFlags;
+    
+    NSLog(@"status = %ld, %@, %@ end", dd, ss, ff);
+    
+    // status = 2, WiFi, -R ------- end   (wifi)
+    // status = 0, No Connection, -- ------- end  (没网络)
+    // status = 1, Cellular, WR -t----- end  (4g or 3g)
+    
+    NSTimeInterval time2 = [NSDate timeIntervalSinceReferenceDate];
+    NSLog(@"delta time = %lf", time2-time1);  // 0.002602
 }
 
 

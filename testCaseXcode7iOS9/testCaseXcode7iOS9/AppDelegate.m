@@ -13,6 +13,7 @@
 #import <Bugly/CrashReporter.h>
 //#import <JSPatch/JSPatch.h>
 #import "OpeniOS9VCTL.h"
+//#import "SaveData1.h"
 
 @interface AppDelegate ()
 
@@ -97,6 +98,8 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+//    [SaveData1 save1];
     
 //    NSLog(@"applicationWillTerminate");
 }

@@ -40,8 +40,17 @@
     
 //    [self fun8];
     
-    [self fun9];
+//    [self fun9];
     
+    [self fun10];
+    
+}
+
+- (void)fun10
+{
+    NSArray *aa = nil;
+    NSMutableArray *bb = [[NSMutableArray alloc] initWithArray:aa];
+    NSLog(@"bb = %@", bb);
 }
 
 - (void)fun9

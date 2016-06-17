@@ -31,9 +31,9 @@
 //    [self setWithLabel1];
 //    [self setWithLabel2];
     
-//    [self fun1];
+    [self fun1];
     
-    [self fun2];
+//    [self fun2];
     
     
 }
@@ -60,15 +60,15 @@
 - (void)fun1
 {
     // 文字 + 图片
-    NSMutableAttributedString *m1 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+    NSMutableAttributedString *m1 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor], NSFontAttributeName: [UIFont systemFontOfSize:20]}];
     
     NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
     UIImage *image58 = [UIImage imageNamed:@"sgs7"];
-    image58 = [[Helper share] imageScaleFitToSize:CGSizeMake(40, 40) image:image58];
+    image58 = [[Helper share] imageScaleFitToSize:CGSizeMake(10, 10) image:image58];
     textAttachment.image = image58;
     NSAttributedString *m2 = [NSAttributedString attributedStringWithAttachment:textAttachment];
 //    NSMutableAttributedString *m2 = [[NSMutableAttributedString alloc] ]
-//    [m1 appendAttributedString:m2];
+    [m1 appendAttributedString:m2];
     
 //    NSMutableAttributedString *m3 = [[NSMutableAttributedString alloc] initWithString:@"text123" attributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
 //    [m1 appendAttributedString:m3];

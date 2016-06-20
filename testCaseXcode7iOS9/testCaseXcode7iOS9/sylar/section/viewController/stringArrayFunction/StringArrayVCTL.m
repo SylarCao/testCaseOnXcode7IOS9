@@ -8,6 +8,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "StringArrayVCTL.h"
 #import "StringArrayHelper.h"
+#import "StringArrayObj1.h"
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 # define kAAA @"abc"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface StringArrayVCTL ()
@@ -42,7 +44,98 @@
     
 //    [self fun9];
     
-    [self fun10];
+//    [self fun10];
+    
+    [self fun11];
+    
+}
+
+- (void)fun11
+{
+    StringArrayObj1 *oo = [[StringArrayObj1 alloc] init];
+    
+    // string
+    NSString *s1 = @"s1";
+    NSString *s2 = @"s2";
+    
+    oo.p1 = s1;
+    oo.p2 = s2;
+    
+    NSLog(@"s1 = %@", [s1 description]);
+    
+    
+    s1 = @"s1111";
+    
+    s2 = @"s2222";
+    
+    NSLog(@"oo = %@", oo);
+    
+    // mutable string
+    NSMutableString *m1 = [[NSMutableString alloc] initWithString:@"m1"];
+    NSMutableString *m2 = [[NSMutableString alloc] initWithString:@"m2"];
+    
+    oo.p3 = m1;
+    oo.p4 = m2;
+    
+    NSLog(@"");
+    
+    [m1 appendString:@" append m1"];
+    [m2 appendString:@" append m2"];
+    
+    NSLog(@"oo = %@", oo);
+    
+    
+    // array
+    NSArray *a1 = @[@"1", @"2"];
+    NSArray *a2 = @[@"a", @"b"];
+    
+    oo.a1 = a1;
+    oo.a2 = a2;
+    
+    NSLog(@"");
+    
+    a1 = @[@"1", @"2", @"3"];
+    a2 = @[@"a", @"b", @"c"];
+    
+    NSLog(@"oo = %@", oo);
+    
+    // mutable array
+    NSMutableArray *a3 = [[NSMutableArray alloc] initWithArray:a1];
+    NSMutableArray *a4 = [[NSMutableArray alloc] initWithArray:a2];
+    
+    oo.a3 = a3;
+    oo.a4 = a4;
+    
+    NSLog(@"");
+    
+    [a3 addObject:@"44"];
+    [a4 addObject:@"dd"];
+    
+    NSLog(@"oo = %@", oo);
+    
+    // block
+    StringArrayObj1Block block1 = ^(NSString *data){
+        NSLog(@"b111 = %@", data);
+    };
+    
+    StringArrayObj1Block block2 = ^(NSString *data){
+        NSLog(@"b222 = %@", data);
+    };
+    
+    oo.b1 = block1;
+    oo.b2 = block2;
+    
+    NSLog(@"");
+    
+    block1 = ^(NSString *data){
+        NSLog(@"b111 ag = %@", data);
+    };
+    
+    block2 = ^(NSString *data){
+        NSLog(@"b222 ag = %@", data);
+    };
+    
+    NSLog(@"oo = %@", oo);
     
 }
 

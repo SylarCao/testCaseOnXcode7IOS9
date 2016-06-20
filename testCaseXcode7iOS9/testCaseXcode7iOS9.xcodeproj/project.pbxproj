@@ -325,6 +325,7 @@
 		2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8A31C0BF3D700089E14 /* sgs5.png */; };
 		2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AD1C0BF4C200089E14 /* sgs6.png */; };
 		2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AF1C0BF54000089E14 /* sgs7.png */; };
+		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
 		2CB114D61CE0599500E43797 /* AFNetworkingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */; };
@@ -855,6 +856,8 @@
 		2CA1F8A31C0BF3D700089E14 /* sgs5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5.png; sourceTree = "<group>"; };
 		2CA1F8AD1C0BF4C200089E14 /* sgs6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6.png; sourceTree = "<group>"; };
 		2CA1F8AF1C0BF54000089E14 /* sgs7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs7.png; sourceTree = "<group>"; };
+		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
+		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		2CADEA381BB537E0009BBD28 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		2CB114D21CE0599500E43797 /* AFNetworkingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVCTL.h; sourceTree = "<group>"; };
@@ -1961,6 +1964,8 @@
 				2C729CA51CD0522200284E78 /* StringArrayVCTL.h */,
 				2C729CA61CD0522200284E78 /* StringArrayVCTL.m */,
 				2C729CA71CD0522200284E78 /* StringArrayVCTL.xib */,
+				2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */,
+				2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */,
 			);
 			path = stringArrayFunction;
 			sourceTree = "<group>";
@@ -2742,6 +2747,7 @@
 				2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */,
 				2CE1F3521BCE3DC800B82CAE /* LewPopupViewAnimationFade.m in Sources */,
 				2C837C311CDAEFB10078737F /* RQScanVCTL.m in Sources */,
+				2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */,
 				2C729CF91CD0522200284E78 /* AnimationVCTL.m in Sources */,
 				2C729DB31CD0522200284E78 /* BlockObject1.m in Sources */,
 				2C729D411CD0522200284E78 /* HorizonScrollVCTL.m in Sources */,

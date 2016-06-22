@@ -306,6 +306,9 @@
 		2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */; };
 		2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */; };
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
+		2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */; };
+		2C9CA42F1D1A5859003EE2FD /* PreFixVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */; };
+		2C9CA4321D1A58C5003EE2FD /* PreFixObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
 		2CA112921BB29E4A00406685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112911BB29E4A00406685 /* ViewController.m */; };
@@ -829,6 +832,11 @@
 		2C837C4B1CDB13E90078737F /* Drag2CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drag2CollectionView.h; sourceTree = "<group>"; };
 		2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drag2CollectionView.m; sourceTree = "<group>"; };
 		2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C9CA42B1D1A5859003EE2FD /* PreFixVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreFixVCTL.h; sourceTree = "<group>"; };
+		2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreFixVCTL.m; sourceTree = "<group>"; };
+		2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreFixVCTL.xib; sourceTree = "<group>"; };
+		2C9CA4301D1A58C5003EE2FD /* PreFixObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreFixObject.h; sourceTree = "<group>"; };
+		2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreFixObject.m; sourceTree = "<group>"; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA1128D1BB29E4A00406685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1154,6 +1162,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C9CA42A1D1A5859003EE2FD /* preFix */,
 				2C7CAAB41CFEB23C00E2D91A /* saveData */,
 				2CB114D11CE0598400E43797 /* AFNetworking */,
 				2C729B471CD0522100284E78 /* 3DTouch */,
@@ -2182,6 +2191,18 @@
 			path = 2;
 			sourceTree = "<group>";
 		};
+		2C9CA42A1D1A5859003EE2FD /* preFix */ = {
+			isa = PBXGroup;
+			children = (
+				2C9CA42B1D1A5859003EE2FD /* PreFixVCTL.h */,
+				2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */,
+				2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */,
+				2C9CA4301D1A58C5003EE2FD /* PreFixObject.h */,
+				2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */,
+			);
+			path = preFix;
+			sourceTree = "<group>";
+		};
 		2CA1127E1BB29E4A00406685 = {
 			isa = PBXGroup;
 			children = (
@@ -2605,6 +2626,7 @@
 				2C729D981CD0522200284E78 /* ShareWeiXinVCTL.xib in Resources */,
 				2C729D541CD0522200284E78 /* IntrinsicSizeTableViewVCTL.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
+				2C9CA42F1D1A5859003EE2FD /* PreFixVCTL.xib in Resources */,
 				2C729D2C1CD0522200284E78 /* DownloadVCTL.xib in Resources */,
 				2C729D5D1CD0522200284E78 /* KVOVCTL.xib in Resources */,
 				2C729D191CD0522200284E78 /* ConstraintCodeVCTL.xib in Resources */,
@@ -2728,6 +2750,7 @@
 				2C729DCC1CD0522200284E78 /* XOptionVCTL.m in Sources */,
 				2C729D5C1CD0522200284E78 /* KVOVCTL.m in Sources */,
 				2C729DBC1CD0522200284E78 /* TimerVCTL.m in Sources */,
+				2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */,
 				2C729D041CD0522200284E78 /* CameraVCTL.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
 				2C2EC3371BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -2780,6 +2803,7 @@
 				2C729D391CD0522200284E78 /* DrawView1.m in Sources */,
 				2C729D4B1CD0522200284E78 /* HorizontalView.m in Sources */,
 				2C837C2E1CDAEFB10078737F /* EWMCodeVCTL.m in Sources */,
+				2C9CA4321D1A58C5003EE2FD /* PreFixObject.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C729D4F1CD0522200284E78 /* IntrinsicCell.m in Sources */,
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,

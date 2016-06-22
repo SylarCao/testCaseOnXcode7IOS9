@@ -18,7 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [[Helper share] getVersion];
+    
+    [PreFixObject fun1];
+    
+    
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

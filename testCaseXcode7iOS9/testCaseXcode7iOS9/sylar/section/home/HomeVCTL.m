@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[ @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL",
+    NSArray *ctrls = @[ @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL", @"CFileVCTL",
                 
                @"sort", // 都放到这个后边
                @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL", @"CameraVCTL", @"DownloadVCTL",

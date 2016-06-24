@@ -328,6 +328,9 @@
 		2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8A31C0BF3D700089E14 /* sgs5.png */; };
 		2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AD1C0BF4C200089E14 /* sgs6.png */; };
 		2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AF1C0BF54000089E14 /* sgs7.png */; };
+		2CA3A34B1D1BB8DC00A7F5C6 /* dzhbitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A3491D1BB8DC00A7F5C6 /* dzhbitstream.c */; };
+		2CA3A34F1D1BB91600A7F5C6 /* CFileVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */; };
+		2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
@@ -864,6 +867,11 @@
 		2CA1F8A31C0BF3D700089E14 /* sgs5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5.png; sourceTree = "<group>"; };
 		2CA1F8AD1C0BF4C200089E14 /* sgs6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6.png; sourceTree = "<group>"; };
 		2CA1F8AF1C0BF54000089E14 /* sgs7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs7.png; sourceTree = "<group>"; };
+		2CA3A3491D1BB8DC00A7F5C6 /* dzhbitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dzhbitstream.c; sourceTree = "<group>"; };
+		2CA3A34A1D1BB8DC00A7F5C6 /* dzhbitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dzhbitstream.h; sourceTree = "<group>"; };
+		2CA3A34C1D1BB91600A7F5C6 /* CFileVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileVCTL.h; sourceTree = "<group>"; };
+		2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileVCTL.m; sourceTree = "<group>"; };
+		2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFileVCTL.xib; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
@@ -1162,6 +1170,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CA3A3471D1BB8D100A7F5C6 /* CFile */,
 				2C9CA42A1D1A5859003EE2FD /* preFix */,
 				2C7CAAB41CFEB23C00E2D91A /* saveData */,
 				2CB114D11CE0598400E43797 /* AFNetworking */,
@@ -2323,6 +2332,26 @@
 			path = sgs;
 			sourceTree = "<group>";
 		};
+		2CA3A3471D1BB8D100A7F5C6 /* CFile */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3A3481D1BB8DC00A7F5C6 /* ExpandData */,
+				2CA3A34C1D1BB91600A7F5C6 /* CFileVCTL.h */,
+				2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */,
+				2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */,
+			);
+			path = CFile;
+			sourceTree = "<group>";
+		};
+		2CA3A3481D1BB8DC00A7F5C6 /* ExpandData */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3A3491D1BB8DC00A7F5C6 /* dzhbitstream.c */,
+				2CA3A34A1D1BB8DC00A7F5C6 /* dzhbitstream.h */,
+			);
+			path = ExpandData;
+			sourceTree = "<group>";
+		};
 		2CADEA361BB537E0009BBD28 /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -2516,6 +2545,7 @@
 				2C729CFC1CD0522200284E78 /* AnimationRotateVCTL.xib in Resources */,
 				2C837C371CDB10DF0078737F /* DragCollectionVCTL.xib in Resources */,
 				2C729D101CD0522200284E78 /* CategoryVCTL.xib in Resources */,
+				2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
 				2C729D151CD0522200284E78 /* AttributeStringVCTL.xib in Resources */,
@@ -2783,7 +2813,9 @@
 				2C729D7E1CD0522200284E78 /* PostModel.m in Sources */,
 				2C4BE0411BE9A7B0004F1DAF /* MJRefreshBackFooter.m in Sources */,
 				2C729D0F1CD0522200284E78 /* CategoryVCTL.m in Sources */,
+				2CA3A34F1D1BB91600A7F5C6 /* CFileVCTL.m in Sources */,
 				2C729D691CD0522200284E78 /* MenuItemCell.m in Sources */,
+				2CA3A34B1D1BB8DC00A7F5C6 /* dzhbitstream.c in Sources */,
 				2C729DB41CD0522200284E78 /* TestBlockVCTL.m in Sources */,
 				2C729D381CD0522200284E78 /* Gdip.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,

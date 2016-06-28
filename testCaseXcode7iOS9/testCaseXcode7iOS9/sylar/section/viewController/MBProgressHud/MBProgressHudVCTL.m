@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self fun1];
+//    [self fun1];
 }
 
 
@@ -33,11 +33,11 @@
 {
 //    [self showHudAnimation];
 //    [self hideHudAnimation];
-//    [self showHudWithTitle];
+    [self showHudWithTitle];
 //    [_v2 stopAnimating];
     
 //    [_v1 bringSubviewToFront:_v2];
-    [_v2 stopAnimating];
+//    [_v2 stopAnimating];
     
     
 }

@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self fun6];
+//    [self fun6];
     
 }
 
@@ -46,7 +46,21 @@
     
 //    [self fun10];
     
-    [self fun11];
+//    [self fun11];
+    
+    [self fun12];
+    
+}
+
+- (void)fun12
+{
+    NSString *aa = @"abc9999999abcd999999abcde99999";
+    NSRange r1 = [aa rangeOfString:@"abc"];
+    NSLog(@"r1 = %d, %d", r1.location, r1.length);
+    
+    
+    
+    
     
 }
 

@@ -335,6 +335,10 @@
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
 		2CB114D61CE0599500E43797 /* AFNetworkingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */; };
+		2CB141C01D24E8AC0076D9C0 /* PlayVideoVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB141BE1D24E8AC0076D9C0 /* PlayVideoVCTL.m */; };
+		2CB141C11D24E8AC0076D9C0 /* PlayVideoVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB141BF1D24E8AC0076D9C0 /* PlayVideoVCTL.xib */; };
+		2CB141C41D24E9390076D9C0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2CB141C31D24E9390076D9C0 /* video1.mp4 */; };
+		2CB141D81D24ED3A0076D9C0 /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 2CB141D71D24ED3A0076D9C0 /* Movie.m4v */; };
 		2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB381A41BCF418800D4F33F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */; };
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
@@ -879,6 +883,11 @@
 		2CB114D21CE0599500E43797 /* AFNetworkingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVCTL.h; sourceTree = "<group>"; };
 		2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVCTL.m; sourceTree = "<group>"; };
 		2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingVCTL.xib; sourceTree = "<group>"; };
+		2CB141BD1D24E8AC0076D9C0 /* PlayVideoVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoVCTL.h; sourceTree = "<group>"; };
+		2CB141BE1D24E8AC0076D9C0 /* PlayVideoVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoVCTL.m; sourceTree = "<group>"; };
+		2CB141BF1D24E8AC0076D9C0 /* PlayVideoVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayVideoVCTL.xib; sourceTree = "<group>"; };
+		2CB141C31D24E9390076D9C0 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		2CB141D71D24ED3A0076D9C0 /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
 		2CB381A31BCF418800D4F33F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		2CB381A41BCF418800D4F33F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		2CCB289C1BCB45E1005E9B85 /* BasicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1170,6 +1179,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CB141BC1D24E89D0076D9C0 /* playVideo */,
 				2CA3A3471D1BB8D100A7F5C6 /* CFile */,
 				2C9CA42A1D1A5859003EE2FD /* preFix */,
 				2C7CAAB41CFEB23C00E2D91A /* saveData */,
@@ -2373,6 +2383,26 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		2CB141BC1D24E89D0076D9C0 /* playVideo */ = {
+			isa = PBXGroup;
+			children = (
+				2CB141BD1D24E8AC0076D9C0 /* PlayVideoVCTL.h */,
+				2CB141BE1D24E8AC0076D9C0 /* PlayVideoVCTL.m */,
+				2CB141BF1D24E8AC0076D9C0 /* PlayVideoVCTL.xib */,
+				2CB141C21D24E9390076D9C0 /* resource */,
+			);
+			path = playVideo;
+			sourceTree = "<group>";
+		};
+		2CB141C21D24E9390076D9C0 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2CB141D71D24ED3A0076D9C0 /* Movie.m4v */,
+				2CB141C31D24E9390076D9C0 /* video1.mp4 */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		2CB381A21BCF418800D4F33F /* jsonKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2562,6 +2592,7 @@
 				2C729CF41CD0522200284E78 /* Touch3D1VCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
+				2CB141C41D24E9390076D9C0 /* video1.mp4 in Resources */,
 				2C729D4A1CD0522200284E78 /* HorizontalVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
 				2C729DC41CD0522200284E78 /* UILabelVCTL.xib in Resources */,
@@ -2584,6 +2615,7 @@
 				2C729D6E1CD0522200284E78 /* MGSwipeCellVCTL.xib in Resources */,
 				2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */,
 				2C729DBF1CD0522200284E78 /* TouchEventVCTL.xib in Resources */,
+				2CB141D81D24ED3A0076D9C0 /* Movie.m4v in Resources */,
 				2C729D801CD0522200284E78 /* PostNotificationVCTL.xib in Resources */,
 				2C729D221CD0522200284E78 /* DeallocVCTL.xib in Resources */,
 				2C729D171CD0522200284E78 /* ConstrainVCTL.xib in Resources */,
@@ -2613,6 +2645,7 @@
 				2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */,
 				2C729D711CD0522200284E78 /* NavigationBarVCTL.xib in Resources */,
 				2C729DB91CD0522200284E78 /* X1.xib in Resources */,
+				2CB141C11D24E8AC0076D9C0 /* PlayVideoVCTL.xib in Resources */,
 				2C729D051CD0522200284E78 /* CameraVCTL.xib in Resources */,
 				2C729D3E1CD0522200284E78 /* EncoderVCTL.xib in Resources */,
 				2C7CAAB91CFEB24D00E2D91A /* SaveDataVCTL.xib in Resources */,
@@ -2772,6 +2805,7 @@
 				2C729D931CD0522200284E78 /* ScrollViewZoomVCTL.m in Sources */,
 				2C729D5E1CD0522200284E78 /* LewPopupVCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
+				2CB141C01D24E8AC0076D9C0 /* PlayVideoVCTL.m in Sources */,
 				2C837C301CDAEFB10078737F /* QRScanView.m in Sources */,
 				2C729DA91CD0522200284E78 /* TableViewCodeCell.m in Sources */,
 				2C729D7F1CD0522200284E78 /* PostNotificationVCTL.m in Sources */,

@@ -130,8 +130,6 @@
 		2C729D2D1CD0522200284E78 /* DPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BBC1CD0522200284E78 /* DPHelper.m */; };
 		2C729D2E1CD0522200284E78 /* DPLocationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BBE1CD0522200284E78 /* DPLocationVCTL.m */; };
 		2C729D2F1CD0522200284E78 /* DPLocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */; };
-		2C729D301CD0522200284E78 /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC01CD0522200284E78 /* LocationGTJA.gpx */; };
-		2C729D311CD0522200284E78 /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BC11CD0522200284E78 /* LocationXiangYi.gpx */; };
 		2C729D361CD0522200284E78 /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCB1CD0522200284E78 /* DrawLineVCTL.m */; };
 		2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BCC1CD0522200284E78 /* DrawLineVCTL.xib */; };
 		2C729D381CD0522200284E78 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCF1CD0522200284E78 /* Gdip.m */; };
@@ -333,6 +331,9 @@
 		2CA3A34B1D1BB8DC00A7F5C6 /* dzhbitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A3491D1BB8DC00A7F5C6 /* dzhbitstream.c */; };
 		2CA3A34F1D1BB91600A7F5C6 /* CFileVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */; };
 		2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */; };
+		2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */; };
+		2CA5B12E1D34E3E400A80B8A /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */; };
+		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
@@ -563,8 +564,6 @@
 		2C729BBD1CD0522200284E78 /* DPLocationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLocationVCTL.h; sourceTree = "<group>"; };
 		2C729BBE1CD0522200284E78 /* DPLocationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLocationVCTL.m; sourceTree = "<group>"; };
 		2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPLocationVCTL.xib; sourceTree = "<group>"; };
-		2C729BC01CD0522200284E78 /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
-		2C729BC11CD0522200284E78 /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2C729BCA1CD0522200284E78 /* DrawLineVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineVCTL.h; sourceTree = "<group>"; };
 		2C729BCB1CD0522200284E78 /* DrawLineVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineVCTL.m; sourceTree = "<group>"; };
 		2C729BCC1CD0522200284E78 /* DrawLineVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawLineVCTL.xib; sourceTree = "<group>"; };
@@ -881,6 +880,9 @@
 		2CA3A34C1D1BB91600A7F5C6 /* CFileVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileVCTL.h; sourceTree = "<group>"; };
 		2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileVCTL.m; sourceTree = "<group>"; };
 		2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFileVCTL.xib; sourceTree = "<group>"; };
+		2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
+		2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
+		2CA5B1301D34E6B900A80B8A /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
@@ -1498,13 +1500,12 @@
 		2C729BBA1CD0522200284E78 /* dpLocation */ = {
 			isa = PBXGroup;
 			children = (
+				2CA5B1291D34E3E400A80B8A /* gpx */,
 				2C729BBB1CD0522200284E78 /* DPHelper.h */,
 				2C729BBC1CD0522200284E78 /* DPHelper.m */,
 				2C729BBD1CD0522200284E78 /* DPLocationVCTL.h */,
 				2C729BBE1CD0522200284E78 /* DPLocationVCTL.m */,
 				2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */,
-				2C729BC01CD0522200284E78 /* LocationGTJA.gpx */,
-				2C729BC11CD0522200284E78 /* LocationXiangYi.gpx */,
 			);
 			path = dpLocation;
 			sourceTree = "<group>";
@@ -2378,6 +2379,16 @@
 			path = ExpandData;
 			sourceTree = "<group>";
 		};
+		2CA5B1291D34E3E400A80B8A /* gpx */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5B1301D34E6B900A80B8A /* America.gpx */,
+				2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */,
+				2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */,
+			);
+			path = gpx;
+			sourceTree = "<group>";
+		};
 		2CADEA361BB537E0009BBD28 /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -2598,6 +2609,7 @@
 				2C729D241CD0522200284E78 /* Dealloc1VCTL.xib in Resources */,
 				2C729D521CD0522200284E78 /* IntrinsicDetailVCTL.xib in Resources */,
 				2C729DAB1CD0522200284E78 /* TableViewHeaderXIBView.xib in Resources */,
+				2CA5B12E1D34E3E400A80B8A /* LocationXiangYi.gpx in Resources */,
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C729DA41CD0522200284E78 /* StatusBarVCTL.xib in Resources */,
 				2C729D5B1CD0522200284E78 /* main.js in Resources */,
@@ -2677,7 +2689,6 @@
 				2C729D561CD0522200284E78 /* JailBreakVCTL.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
 				2C729D881CD0522200284E78 /* RefreshTableVCTL.xib in Resources */,
-				2C729D301CD0522200284E78 /* LocationGTJA.gpx in Resources */,
 				2C729D031CD0522200284E78 /* BuglyVCTL.xib in Resources */,
 				2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */,
 				2C729DAF1CD0522200284E78 /* TableViewXIBCell.xib in Resources */,
@@ -2688,6 +2699,7 @@
 				2C729D131CD0522200284E78 /* CheckInstallQQVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C729D661CD0522200284E78 /* MathProblem2VCTL.xib in Resources */,
+				2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */,
 				2C729DA71CD0522200284E78 /* StringArrayVCTL.xib in Resources */,
 				2C729D961CD0522200284E78 /* ShakeTextFieldVCTL.xib in Resources */,
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
@@ -2697,10 +2709,10 @@
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
 				2C729DA21CD0522200284E78 /* StatusBarTableViewCell.xib in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
-				2C729D311CD0522200284E78 /* LocationXiangYi.gpx in Resources */,
 				2C729CFA1CD0522200284E78 /* AnimationVCTL.xib in Resources */,
 				2C729DC91CD0522200284E78 /* LifeTimeVCTL.xib in Resources */,
 				2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */,
+				2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */,
 				2C729D841CD0522200284E78 /* ReadPDFDefaultVCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C729D981CD0522200284E78 /* ShareWeiXinVCTL.xib in Resources */,

@@ -25,7 +25,17 @@
  *  @return return value description
  */
 - (UIColor *) getRandomColor;
-- (UIColor *)getRandomColorWithAlpha:(CGFloat)alpha;
+- (UIColor *) getRandomColorWithAlpha:(CGFloat)alpha;
+
+/**
+ *  颜色获取alpha值
+ *
+ *  @param color color description
+ *  @param alpha alpha description
+ *
+ *  @return return value description
+ */
+- (UIColor *)getColor:(UIColor *)color alpha:(CGFloat)alpha;
 
 /**
  *  get image from color

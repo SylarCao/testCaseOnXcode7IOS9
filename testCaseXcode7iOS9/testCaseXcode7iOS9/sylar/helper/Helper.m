@@ -36,6 +36,18 @@
     return rt;
 }
 
+- (UIColor *)getColor:(UIColor *)color alpha:(CGFloat)alpha
+{
+    const CGFloat *cg_color = CGColorGetComponents(color.CGColor);
+    
+    CGFloat red = cg_color[0];
+    CGFloat green = cg_color[1];
+    CGFloat blue = cg_color[2];
+    
+    UIColor *rt = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    return rt;
+}
+
 
 - (UIImage *)imageWithColor:(UIColor *)color
 {

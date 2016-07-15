@@ -284,6 +284,10 @@
 		2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CF01CD0522200284E78 /* XOptionVCTL.xib */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
 		2C785C761D10015C004480CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C785C751D10015C004480CF /* Reachability.m */; };
+		2C7B345B1D38772900760B7D /* GestureScrollVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B34591D38772900760B7D /* GestureScrollVCTL.m */; };
+		2C7B345C1D38772900760B7D /* GestureScrollVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B345A1D38772900760B7D /* GestureScrollVCTL.xib */; };
+		2C7B34601D38787800760B7D /* GestureScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B345E1D38787800760B7D /* GestureScrollCell.m */; };
+		2C7B34611D38787800760B7D /* GestureScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B345F1D38787800760B7D /* GestureScrollCell.xib */; };
 		2C7BA8DF1D33347100B4D2C0 /* PushPopVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BA8DD1D33347100B4D2C0 /* PushPopVCTL.m */; };
 		2C7BA8E01D33347100B4D2C0 /* PushPopVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7BA8DE1D33347100B4D2C0 /* PushPopVCTL.xib */; };
 		2C7CAAB81CFEB24C00E2D91A /* SaveDataVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CAAB61CFEB24C00E2D91A /* SaveDataVCTL.m */; };
@@ -334,6 +338,7 @@
 		2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */; };
 		2CA5B12E1D34E3E400A80B8A /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */; };
 		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
+		2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
@@ -810,6 +815,12 @@
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
 		2C785C741D10015C004480CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C785C751D10015C004480CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2C7B34581D38772900760B7D /* GestureScrollVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureScrollVCTL.h; sourceTree = "<group>"; };
+		2C7B34591D38772900760B7D /* GestureScrollVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureScrollVCTL.m; sourceTree = "<group>"; };
+		2C7B345A1D38772900760B7D /* GestureScrollVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureScrollVCTL.xib; sourceTree = "<group>"; };
+		2C7B345D1D38787800760B7D /* GestureScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureScrollCell.h; sourceTree = "<group>"; };
+		2C7B345E1D38787800760B7D /* GestureScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureScrollCell.m; sourceTree = "<group>"; };
+		2C7B345F1D38787800760B7D /* GestureScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureScrollCell.xib; sourceTree = "<group>"; };
 		2C7BA8DC1D33347100B4D2C0 /* PushPopVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushPopVCTL.h; sourceTree = "<group>"; };
 		2C7BA8DD1D33347100B4D2C0 /* PushPopVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushPopVCTL.m; sourceTree = "<group>"; };
 		2C7BA8DE1D33347100B4D2C0 /* PushPopVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushPopVCTL.xib; sourceTree = "<group>"; };
@@ -883,6 +894,7 @@
 		2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
 		2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2CA5B1301D34E6B900A80B8A /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
+		2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pokemon.gpx; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
@@ -1186,6 +1198,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C7B34571D38770400760B7D /* GestureScroll */,
 				2C7BA8DB1D33346300B4D2C0 /* PushPopViewcontroller */,
 				2CB141BC1D24E89D0076D9C0 /* playVideo */,
 				2CA3A3471D1BB8D100A7F5C6 /* CFile */,
@@ -2161,6 +2174,19 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		2C7B34571D38770400760B7D /* GestureScroll */ = {
+			isa = PBXGroup;
+			children = (
+				2C7B34581D38772900760B7D /* GestureScrollVCTL.h */,
+				2C7B34591D38772900760B7D /* GestureScrollVCTL.m */,
+				2C7B345A1D38772900760B7D /* GestureScrollVCTL.xib */,
+				2C7B345D1D38787800760B7D /* GestureScrollCell.h */,
+				2C7B345E1D38787800760B7D /* GestureScrollCell.m */,
+				2C7B345F1D38787800760B7D /* GestureScrollCell.xib */,
+			);
+			path = GestureScroll;
+			sourceTree = "<group>";
+		};
 		2C7BA8DB1D33346300B4D2C0 /* PushPopViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2382,6 +2408,7 @@
 		2CA5B1291D34E3E400A80B8A /* gpx */ = {
 			isa = PBXGroup;
 			children = (
+				2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */,
 				2CA5B1301D34E6B900A80B8A /* America.gpx */,
 				2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */,
 				2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */,
@@ -2605,6 +2632,7 @@
 				2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */,
 				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
+				2C7B345C1D38772900760B7D /* GestureScrollVCTL.xib in Resources */,
 				2C729D151CD0522200284E78 /* AttributeStringVCTL.xib in Resources */,
 				2C729D241CD0522200284E78 /* Dealloc1VCTL.xib in Resources */,
 				2C729D521CD0522200284E78 /* IntrinsicDetailVCTL.xib in Resources */,
@@ -2620,6 +2648,7 @@
 				2C729CF41CD0522200284E78 /* Touch3D1VCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
+				2C7B34611D38787800760B7D /* GestureScrollCell.xib in Resources */,
 				2CB141C41D24E9390076D9C0 /* video1.mp4 in Resources */,
 				2C729D4A1CD0522200284E78 /* HorizontalVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
@@ -2688,6 +2717,7 @@
 				2C729D731CD0522200284E78 /* NumberKeyboardVCTL.xib in Resources */,
 				2C729D561CD0522200284E78 /* JailBreakVCTL.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
+				2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */,
 				2C729D881CD0522200284E78 /* RefreshTableVCTL.xib in Resources */,
 				2C729D031CD0522200284E78 /* BuglyVCTL.xib in Resources */,
 				2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */,
@@ -2861,6 +2891,7 @@
 				2C729CFD1CD0522200284E78 /* AnimationRotateView.m in Sources */,
 				2C729DAA1CD0522200284E78 /* TableViewHeaderXIBView.m in Sources */,
 				2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */,
+				2C7B345B1D38772900760B7D /* GestureScrollVCTL.m in Sources */,
 				2CE1F3521BCE3DC800B82CAE /* LewPopupViewAnimationFade.m in Sources */,
 				2C837C311CDAEFB10078737F /* RQScanVCTL.m in Sources */,
 				2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */,
@@ -2939,6 +2970,7 @@
 				2C729D761CD0522200284E78 /* OtherObjectHelper.m in Sources */,
 				2C729D431CD0522200284E78 /* HorizontalScrollCollectionCell.m in Sources */,
 				2C4BE0431BE9A7B0004F1DAF /* MJRefreshFooter.m in Sources */,
+				2C7B34601D38787800760B7D /* GestureScrollCell.m in Sources */,
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2C729D9E1CD0522200284E78 /* WXMediaMessage+messageConstruct.m in Sources */,
 				2C729DC51CD0522200284E78 /* Life1VCTL.m in Sources */,

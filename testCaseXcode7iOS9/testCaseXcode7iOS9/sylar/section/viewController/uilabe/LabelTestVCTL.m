@@ -1,24 +1,39 @@
 //
-//  UILabelVCTL.m
+//  LabelTestVCTL.m
 //  testCaseXcode7iOS9
 //
-//  Created by sylar on 16/3/3.
+//  Created by sylar on 16/7/18.
 //  Copyright © 2016年 sylar. All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-#import "UILabelVCTL.h"
+#import "LabelTestVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-@interface UILabelVCTL ()
+@interface LabelTestVCTL ()
+
+@property (nonatomic, weak) IBOutlet UILabel *lb1;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-@implementation UILabelVCTL
+@implementation LabelTestVCTL
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
-    [self setWithLabel1];
+    
+//    [self setWithLabel1];
+    
+    
+    [self fun2];
+}
+
+- (void)fun2
+{
+    _lb1.adjustsFontSizeToFitWidth = YES;
+    _lb1.text = @"123";
+    
+    _lb1.layer.borderColor = [UIColor redColor].CGColor;
+    _lb1.layer.borderWidth = 1;
 }
 
 - (void)setWithLabel1
@@ -30,5 +45,17 @@
     lb1.numberOfLines = 0;
     [self.view addSubview:lb1];
 }
+
+
+- (IBAction)btn1:(id)sender
+{
+    _lb1.text = @"12344566778";
+}
+
+- (IBAction)btn2:(id)sender
+{
+    _lb1.text = @"aa";
+}
+
 
 @end

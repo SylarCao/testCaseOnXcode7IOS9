@@ -11,4 +11,12 @@
 
 @interface BasicVCTL : UIViewController
 
+
+/**
+ *  show hud
+ *
+ *  @param content content description
+ */
+- (void) showHudWithContent:(NSString *)content;
+
 @end

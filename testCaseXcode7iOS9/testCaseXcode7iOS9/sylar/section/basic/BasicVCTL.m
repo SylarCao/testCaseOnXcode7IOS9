@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "BasicVCTL.h"
+#import "MBProgressHUD.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface BasicVCTL ()
 
@@ -40,5 +41,15 @@
 //{
 //    NSLog(@"enter Background");
 //}
+
+
+- (void) showHudWithContent:(NSString *)content
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = content;
+    hud.margin = 20;;
+    [hud hide:YES afterDelay:1];
+}
 
 @end

@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"PushPopVCTL", @"GestureScrollVCTL",
+    NSArray *ctrls = @[@"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL",
                 
                @"sort", // 都放到这个后边
                @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL", @"CFileVCTL", @"PlayVideoVCTL",
@@ -68,9 +68,16 @@
     if ([content isEqualToString:@"sort"] == NO)
     {
         UIViewController *the_vctl = [[NSClassFromString(content) alloc] initWithNibName:nil bundle:nil];
-        [self.navigationController pushViewController:the_vctl animated:YES];
+        if (the_vctl)
+        {
+            [self.navigationController pushViewController:the_vctl animated:YES];
+        }
+        else
+        {
+            NSString *cc = [NSString stringWithFormat:@"不存在 %@", content];
+            [self showHudWithContent:cc];
+        }
     }
-    
 }
 
 - (NSArray *)sortArray:(NSArray *)array

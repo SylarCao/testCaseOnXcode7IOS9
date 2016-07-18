@@ -271,8 +271,6 @@
 		2C729DC01CD0522200284E78 /* TouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CD71CD0522200284E78 /* TouchEventView.m */; };
 		2C729DC11CD0522200284E78 /* TouchIDVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CDA1CD0522200284E78 /* TouchIDVCTL.m */; };
 		2C729DC21CD0522200284E78 /* TouchIDVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CDB1CD0522200284E78 /* TouchIDVCTL.xib */; };
-		2C729DC31CD0522200284E78 /* UILabelVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CDE1CD0522200284E78 /* UILabelVCTL.m */; };
-		2C729DC41CD0522200284E78 /* UILabelVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CDF1CD0522200284E78 /* UILabelVCTL.xib */; };
 		2C729DC51CD0522200284E78 /* Life1VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CE21CD0522200284E78 /* Life1VCTL.m */; };
 		2C729DC61CD0522200284E78 /* Life1VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CE31CD0522200284E78 /* Life1VCTL.xib */; };
 		2C729DC71CD0522200284E78 /* Life2VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CE51CD0522200284E78 /* Life2VCTL.m */; };
@@ -348,6 +346,8 @@
 		2CB141C41D24E9390076D9C0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2CB141C31D24E9390076D9C0 /* video1.mp4 */; };
 		2CB141D81D24ED3A0076D9C0 /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 2CB141D71D24ED3A0076D9C0 /* Movie.m4v */; };
 		2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB381A41BCF418800D4F33F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2CB5461A1D3CF4F2004239DB /* LabelTestVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB546181D3CF4F2004239DB /* LabelTestVCTL.m */; };
+		2CB5461B1D3CF4F2004239DB /* LabelTestVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB546191D3CF4F2004239DB /* LabelTestVCTL.xib */; };
 		2CCB289E1BCB45E1005E9B85 /* BasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */; };
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
 		2CD3E1961D129CBF00063620 /* SaveData1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3E1951D129CBF00063620 /* SaveData1.m */; };
@@ -795,9 +795,6 @@
 		2C729CD91CD0522200284E78 /* TouchIDVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDVCTL.h; sourceTree = "<group>"; };
 		2C729CDA1CD0522200284E78 /* TouchIDVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDVCTL.m; sourceTree = "<group>"; };
 		2C729CDB1CD0522200284E78 /* TouchIDVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDVCTL.xib; sourceTree = "<group>"; };
-		2C729CDD1CD0522200284E78 /* UILabelVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelVCTL.h; sourceTree = "<group>"; };
-		2C729CDE1CD0522200284E78 /* UILabelVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelVCTL.m; sourceTree = "<group>"; };
-		2C729CDF1CD0522200284E78 /* UILabelVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UILabelVCTL.xib; sourceTree = "<group>"; };
 		2C729CE11CD0522200284E78 /* Life1VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Life1VCTL.h; sourceTree = "<group>"; };
 		2C729CE21CD0522200284E78 /* Life1VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Life1VCTL.m; sourceTree = "<group>"; };
 		2C729CE31CD0522200284E78 /* Life1VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Life1VCTL.xib; sourceTree = "<group>"; };
@@ -909,6 +906,9 @@
 		2CB141D71D24ED3A0076D9C0 /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
 		2CB381A31BCF418800D4F33F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		2CB381A41BCF418800D4F33F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		2CB546171D3CF4F2004239DB /* LabelTestVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTestVCTL.h; sourceTree = "<group>"; };
+		2CB546181D3CF4F2004239DB /* LabelTestVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTestVCTL.m; sourceTree = "<group>"; };
+		2CB546191D3CF4F2004239DB /* LabelTestVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelTestVCTL.xib; sourceTree = "<group>"; };
 		2CCB289C1BCB45E1005E9B85 /* BasicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollectionViewCell.h; sourceTree = "<group>"; };
 		2CCB289D1BCB45E1005E9B85 /* BasicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCollectionViewCell.m; sourceTree = "<group>"; };
 		2CCB28B01BCB49EB005E9B85 /* testCaseIOS9.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCaseIOS9.pch; sourceTree = "<group>"; };
@@ -2115,9 +2115,9 @@
 		2C729CDC1CD0522200284E78 /* uilabe */ = {
 			isa = PBXGroup;
 			children = (
-				2C729CDD1CD0522200284E78 /* UILabelVCTL.h */,
-				2C729CDE1CD0522200284E78 /* UILabelVCTL.m */,
-				2C729CDF1CD0522200284E78 /* UILabelVCTL.xib */,
+				2CB546171D3CF4F2004239DB /* LabelTestVCTL.h */,
+				2CB546181D3CF4F2004239DB /* LabelTestVCTL.m */,
+				2CB546191D3CF4F2004239DB /* LabelTestVCTL.xib */,
 			);
 			path = uilabe;
 			sourceTree = "<group>";
@@ -2651,8 +2651,8 @@
 				2C7B34611D38787800760B7D /* GestureScrollCell.xib in Resources */,
 				2CB141C41D24E9390076D9C0 /* video1.mp4 in Resources */,
 				2C729D4A1CD0522200284E78 /* HorizontalVCTL.xib in Resources */,
+				2CB5461B1D3CF4F2004239DB /* LabelTestVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
-				2C729DC41CD0522200284E78 /* UILabelVCTL.xib in Resources */,
 				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
 				2C729DA01CD0522200284E78 /* StackViewVCTL.xib in Resources */,
 				2C729DAD1CD0522200284E78 /* TableViewVCTL.xib in Resources */,
@@ -2809,7 +2809,6 @@
 				2C729D651CD0522200284E78 /* MathProblem2VCTL.m in Sources */,
 				2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
-				2C729DC31CD0522200284E78 /* UILabelVCTL.m in Sources */,
 				2C729DB61CD0522200284E78 /* testXibVCTL.m in Sources */,
 				2C729D2B1CD0522200284E78 /* DownloadVCTL.m in Sources */,
 				2C729D7A1CD0522200284E78 /* PickerVCTL.m in Sources */,
@@ -2989,6 +2988,7 @@
 				2C837C491CDB11D80078737F /* Drag2CollectionVCTL.m in Sources */,
 				2C2EC3361BE74021008197C3 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2C729D061CD0522200284E78 /* DefaultCameraVCTL.m in Sources */,
+				2CB5461A1D3CF4F2004239DB /* LabelTestVCTL.m in Sources */,
 				2C729D531CD0522200284E78 /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C729DC81CD0522200284E78 /* LifeTimeVCTL.m in Sources */,
 			);

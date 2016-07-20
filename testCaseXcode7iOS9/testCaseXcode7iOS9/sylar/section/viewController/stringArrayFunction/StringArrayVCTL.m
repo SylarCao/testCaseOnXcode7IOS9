@@ -48,9 +48,59 @@
     
 //    [self fun11];
     
-    [self fun12];
+//    [self fun12];
+    
+    [self fun13];
     
 }
+
+- (void)fun13
+{
+    // isequal
+    
+    NSString *s1 = @"abc";
+    NSString *s2 = @"0abc";
+    
+    s2 = [s2 substringFromIndex:1];
+    
+    [self fun13Compare:s1 anotherObject:s2 comment:@"string"];
+    
+    
+    
+    UIButton *btn1 = [[UIButton alloc] init];
+    UIButton *btn2 = [[UIButton alloc] init];
+    
+    [self fun13Compare:btn1 anotherObject:btn2 comment:@"button"];
+    
+    
+    NSNull *n1 = [NSNull null];
+    NSNull *n2 = [NSNull null];
+    
+    [self fun13Compare:n1 anotherObject:n2 comment:@"null"];
+    
+    NSData *d1 = [s1 dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *d2 = [s1 dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [self fun13Compare:d1 anotherObject:d2 comment:@"data"];
+    
+    
+}
+
+- (void)fun13Compare:(id)obj1 anotherObject:(id)obj2 comment:(NSString *)comment
+{
+    NSLog(@"comment = %@ ----------", comment);
+    if (obj1 == obj2)
+    {
+        NSLog(@"==");
+    }
+    
+    if ([obj1 isEqual:obj2])
+    {
+        NSLog(@"equal");
+    }
+}
+
+
 
 - (void)fun12
 {
@@ -71,6 +121,7 @@
     // string
     NSString *s1 = @"s1";
     NSString *s2 = @"s2";
+    
     
     oo.p1 = s1;
     oo.p2 = s2;

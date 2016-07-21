@@ -11,4 +11,7 @@
 
 @interface WebViewVCTL : BasicVCTL
 
+
+@property (nonatomic, assign) NSInteger tag1;
+
 @end

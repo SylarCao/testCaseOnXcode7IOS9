@@ -37,6 +37,8 @@
 		2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3281BE74021008197C3 /* UIProgressView+AFNetworking.m */; };
 		2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */; };
 		2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */; };
+		2C3B7FB41D40A367008E018A /* WebViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B7FB31D40A367008E018A /* WebViewHelper.m */; };
+		2C3B7FB61D40A6D7008E018A /* stockCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B7FB51D40A6D7008E018A /* stockCode.txt */; };
 		2C3C855A1BCCD848009C4D24 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C85591BCCD848009C4D24 /* SystemConfiguration.framework */; };
 		2C3C855C1BCCD850009C4D24 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C855B1BCCD850009C4D24 /* Security.framework */; };
 		2C3C85601BCCD8B0009C4D24 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C855F1BCCD8B0009C4D24 /* libc++.tbd */; };
@@ -424,6 +426,9 @@
 		2C2EC32A1BE74021008197C3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		2C2EC32B1BE74021008197C3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		2C2EC32C1BE74021008197C3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		2C3B7FB21D40A367008E018A /* WebViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewHelper.h; sourceTree = "<group>"; };
+		2C3B7FB31D40A367008E018A /* WebViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewHelper.m; sourceTree = "<group>"; };
+		2C3B7FB51D40A6D7008E018A /* stockCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stockCode.txt; sourceTree = "<group>"; };
 		2C3C85591BCCD848009C4D24 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2C3C855B1BCCD850009C4D24 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2C3C855D1BCCD857009C4D24 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -2140,9 +2145,12 @@
 		2C729CE91CD0522200284E78 /* webView */ = {
 			isa = PBXGroup;
 			children = (
+				2C3B7FB51D40A6D7008E018A /* stockCode.txt */,
 				2C729CEA1CD0522200284E78 /* WebViewVCTL.h */,
 				2C729CEB1CD0522200284E78 /* WebViewVCTL.m */,
 				2C729CEC1CD0522200284E78 /* WebViewVCTL.xib */,
+				2C3B7FB21D40A367008E018A /* WebViewHelper.h */,
+				2C3B7FB31D40A367008E018A /* WebViewHelper.m */,
 			);
 			path = webView;
 			sourceTree = "<group>";
@@ -2723,6 +2731,7 @@
 				2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */,
 				2C729DAF1CD0522200284E78 /* TableViewXIBCell.xib in Resources */,
 				2C729D941CD0522200284E78 /* ScrollViewZoomVCTL.xib in Resources */,
+				2C3B7FB61D40A6D7008E018A /* stockCode.txt in Resources */,
 				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
 				2C837C401CDB113F0078737F /* DragCollectionCell.xib in Resources */,
@@ -2923,6 +2932,7 @@
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
 				2C729D551CD0522200284E78 /* JailBreakVCTL.m in Sources */,
 				2C729D211CD0522200284E78 /* DeallocVCTL.m in Sources */,
+				2C3B7FB41D40A367008E018A /* WebViewHelper.m in Sources */,
 				2C837C361CDB10DF0078737F /* DragCollectionVCTL.m in Sources */,
 				2C729D1B1CD0522200284E78 /* ContactListVCTL.m in Sources */,
 				2C729D391CD0522200284E78 /* DrawView1.m in Sources */,

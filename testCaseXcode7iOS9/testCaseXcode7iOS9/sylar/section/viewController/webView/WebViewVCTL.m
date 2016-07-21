@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "WebViewVCTL.h"
+#import "WebViewHelper.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface WebViewVCTL ()
 
@@ -31,15 +32,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self setConfig];
+//    [self setConfig];
     
-    [self setInitialValue];
+//    [self setInitialValue];
     
+    NSLog(@"tag = %ld", _tag1);
+
+    [self fun1];
+    
+}
+
+
+- (void)fun1
+{
+    NSString *url = [[WebViewHelper share] getUrlAutoIncrease];
+    NSURL *url1 = [NSURL URLWithString:url];
+    NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
+    [_web1 loadRequest:rr];
 }
 
 - (void)setConfig
 {
-    _bigImageUrl = @"http://dev.gtjabadminton.avosapps.com/bigWebView";
+//    _bigImageUrl = @"http://dev.gtjabadminton.avosapps.com/bigWebView";
+    _bigImageUrl = @"http://www.sanguosha.com/";
 }
 
 - (void)setInitialValue
@@ -52,7 +67,25 @@
 - (IBAction)btn1:(id)sender
 {
     WebViewVCTL *w1 = [[WebViewVCTL alloc] initWithNibName:nil bundle:nil];
+    w1.tag1 = _tag1+1;
     [self.navigationController pushViewController:w1 animated:YES];
+}
+
+- (IBAction)btn2:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    NSLog(@"did start");
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSLog(@"did finish");
 }
 
 @end

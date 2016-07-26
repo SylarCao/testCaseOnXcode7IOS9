@@ -10,7 +10,6 @@
 #import "HomeVCTL.h"
 #import "Helper.h"
 #import "SecurityStrategy.h"
-#import <Bugly/CrashReporter.h>
 //#import <JSPatch/JSPatch.h>
 #import "OpeniOS9VCTL.h"
 //#import "SaveData1.h"
@@ -41,11 +40,9 @@
     NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem1, shortItem2, nil];
 //    NSLog(@"%@", shortItems);
     if (kIOSVersion(9))
+    {
         [[UIApplication sharedApplication] setShortcutItems:shortItems];
-    
-    // bugly
-    [[CrashReporter sharedInstance] enableLog:YES];
-    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
+    }
     
 //    // JSPatch
 //    [JSPatch testScriptInBundle];

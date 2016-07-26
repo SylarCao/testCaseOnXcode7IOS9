@@ -70,9 +70,6 @@
 		2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE03D1BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m */; };
 		2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE03F1BE9A7B0004F1DAF /* UIView+MJExtension.m */; };
 		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
-		2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */; };
-		2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73A1BB3A35D00D22F29 /* icon29.png */; };
-		2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D73B1BB3A35D00D22F29 /* icon58.png */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
 		2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C68EE021C1942F2009E1396 /* sgs5TH.png */; };
@@ -283,6 +280,12 @@
 		2C729DCC1CD0522200284E78 /* XOptionVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729CEF1CD0522200284E78 /* XOptionVCTL.m */; };
 		2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729CF01CD0522200284E78 /* XOptionVCTL.xib */; };
 		2C7584A11C740EAC00614D17 /* small_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7584A01C740EAC00614D17 /* small_30.png */; };
+		2C7849411D475E1B00E82013 /* icon0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78493B1D475E1B00E82013 /* icon0.png */; };
+		2C7849421D475E1B00E82013 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78493C1D475E1B00E82013 /* icon58.png */; };
+		2C7849431D475E1B00E82013 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78493D1D475E1B00E82013 /* icon80.png */; };
+		2C7849441D475E1B00E82013 /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78493E1D475E1B00E82013 /* icon87.png */; };
+		2C7849451D475E1B00E82013 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78493F1D475E1B00E82013 /* icon120.png */; };
+		2C7849461D475E1B00E82013 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7849401D475E1B00E82013 /* icon180.png */; };
 		2C785C761D10015C004480CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C785C751D10015C004480CF /* Reachability.m */; };
 		2C7B345B1D38772900760B7D /* GestureScrollVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B34591D38772900760B7D /* GestureScrollVCTL.m */; };
 		2C7B345C1D38772900760B7D /* GestureScrollVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7B345A1D38772900760B7D /* GestureScrollVCTL.xib */; };
@@ -479,9 +482,6 @@
 		2C4BE03E1BE9A7B0004F1DAF /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		2C4BE03F1BE9A7B0004F1DAF /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
-		2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon0副本 2.png"; sourceTree = "<group>"; };
-		2C65D73A1BB3A35D00D22F29 /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
-		2C65D73B1BB3A35D00D22F29 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
 		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
 		2C68EDFE1C194280009E1396 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -815,6 +815,12 @@
 		2C729CEF1CD0522200284E78 /* XOptionVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XOptionVCTL.m; sourceTree = "<group>"; };
 		2C729CF01CD0522200284E78 /* XOptionVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XOptionVCTL.xib; sourceTree = "<group>"; };
 		2C7584A01C740EAC00614D17 /* small_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_30.png; sourceTree = "<group>"; };
+		2C78493B1D475E1B00E82013 /* icon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon0.png; sourceTree = "<group>"; };
+		2C78493C1D475E1B00E82013 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		2C78493D1D475E1B00E82013 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		2C78493E1D475E1B00E82013 /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
+		2C78493F1D475E1B00E82013 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		2C7849401D475E1B00E82013 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
 		2C785C741D10015C004480CF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C785C751D10015C004480CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2C7B34581D38772900760B7D /* GestureScrollVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureScrollVCTL.h; sourceTree = "<group>"; };
@@ -1185,9 +1191,12 @@
 		2C65D7381BB3A35D00D22F29 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				2C65D7391BB3A35D00D22F29 /* icon0副本 2.png */,
-				2C65D73A1BB3A35D00D22F29 /* icon29.png */,
-				2C65D73B1BB3A35D00D22F29 /* icon58.png */,
+				2C78493B1D475E1B00E82013 /* icon0.png */,
+				2C78493C1D475E1B00E82013 /* icon58.png */,
+				2C78493D1D475E1B00E82013 /* icon80.png */,
+				2C78493E1D475E1B00E82013 /* icon87.png */,
+				2C78493F1D475E1B00E82013 /* icon120.png */,
+				2C7849401D475E1B00E82013 /* icon180.png */,
 			);
 			path = icon;
 			sourceTree = "<group>";
@@ -2638,7 +2647,6 @@
 				2C837C371CDB10DF0078737F /* DragCollectionVCTL.xib in Resources */,
 				2C729D101CD0522200284E78 /* CategoryVCTL.xib in Resources */,
 				2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */,
-				2C65D73C1BB3A35D00D22F29 /* icon0副本 2.png in Resources */,
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
 				2C7B345C1D38772900760B7D /* GestureScrollVCTL.xib in Resources */,
 				2C729D151CD0522200284E78 /* AttributeStringVCTL.xib in Resources */,
@@ -2649,6 +2657,7 @@
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C729DA41CD0522200284E78 /* StatusBarVCTL.xib in Resources */,
 				2C729D5B1CD0522200284E78 /* main.js in Resources */,
+				2C7849411D475E1B00E82013 /* icon0.png in Resources */,
 				2C837C2F1CDAEFB10078737F /* EWMCodeVCTL.xib in Resources */,
 				2C729D261CD0522200284E78 /* Dealloc2VCTL.xib in Resources */,
 				2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */,
@@ -2661,7 +2670,6 @@
 				2C729D4A1CD0522200284E78 /* HorizontalVCTL.xib in Resources */,
 				2CB5461B1D3CF4F2004239DB /* LabelTestVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
-				2C65D73E1BB3A35D00D22F29 /* icon58.png in Resources */,
 				2C729DA01CD0522200284E78 /* StackViewVCTL.xib in Resources */,
 				2C729DAD1CD0522200284E78 /* TableViewVCTL.xib in Resources */,
 				2C729D581CD0522200284E78 /* JsonKitVCTL.xib in Resources */,
@@ -2697,12 +2705,14 @@
 				2C729D8C1CD0522200284E78 /* ReleaseModeVCTL.xib in Resources */,
 				2C729D441CD0522200284E78 /* HorizontalScrollCollectionCell.xib in Resources */,
 				2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */,
+				2C7849441D475E1B00E82013 /* icon87.png in Resources */,
 				2C729D921CD0522200284E78 /* ScreenFrameVCTL.xib in Resources */,
 				2C729D751CD0522200284E78 /* OpeniOS9VCTL.xib in Resources */,
 				2C729D281CD0522200284E78 /* DeleteInsertCell.xib in Resources */,
 				2C729D4E1CD0522200284E78 /* ImageVCTL.xib in Resources */,
 				2C729DBD1CD0522200284E78 /* TimerVCTL.xib in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
+				2C7849421D475E1B00E82013 /* icon58.png in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
 				2C729DC21CD0522200284E78 /* TouchIDVCTL.xib in Resources */,
 				2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */,
@@ -2719,10 +2729,13 @@
 				2C729CF81CD0522200284E78 /* ActionSheetVCTL.xib in Resources */,
 				2C729D8E1CD0522200284E78 /* ResizeImageVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
+				2C7849461D475E1B00E82013 /* icon180.png in Resources */,
+				2C7849431D475E1B00E82013 /* icon80.png in Resources */,
 				2C729D2F1CD0522200284E78 /* DPLocationVCTL.xib in Resources */,
 				2C729D011CD0522200284E78 /* BlurBkgVCTL.xib in Resources */,
 				2C729D401CD0522200284E78 /* FingerTapVCTL.xib in Resources */,
 				2C729D731CD0522200284E78 /* NumberKeyboardVCTL.xib in Resources */,
+				2C7849451D475E1B00E82013 /* icon120.png in Resources */,
 				2C729D561CD0522200284E78 /* JailBreakVCTL.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
 				2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */,
@@ -2732,7 +2745,6 @@
 				2C729DAF1CD0522200284E78 /* TableViewXIBCell.xib in Resources */,
 				2C729D941CD0522200284E78 /* ScrollViewZoomVCTL.xib in Resources */,
 				2C3B7FB61D40A6D7008E018A /* stockCode.txt in Resources */,
-				2C65D73D1BB3A35D00D22F29 /* icon29.png in Resources */,
 				2CA1F8AA1C0BF3D700089E14 /* sgs5.png in Resources */,
 				2C837C401CDB113F0078737F /* DragCollectionCell.xib in Resources */,
 				2C729D131CD0522200284E78 /* CheckInstallQQVCTL.xib in Resources */,
@@ -3131,7 +3143,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = (
 					"-Wno-shorten-64-to-32",
 					"-Wno-unused-variable",
@@ -3162,7 +3174,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = (
 					"-Wno-shorten-64-to-32",
 					"-Wno-unused-variable",

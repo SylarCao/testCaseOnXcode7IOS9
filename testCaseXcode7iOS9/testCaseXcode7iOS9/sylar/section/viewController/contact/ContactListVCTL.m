@@ -20,6 +20,9 @@
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ContactListVCTL
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -138,5 +141,5 @@
     
     NSLog(@"select phone number = %@", phone_numbers);
 }
-
+#pragma clang diagnostic pop
 @end

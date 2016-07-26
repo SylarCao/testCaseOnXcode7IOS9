@@ -22,7 +22,7 @@
     
     NSInteger aa = doubleValue1(a);
     
-    NSLog(@"aa = %d", aa);
+    NSLog(@"aa = %ld", aa);
     
 }
 

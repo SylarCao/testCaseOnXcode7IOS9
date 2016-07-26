@@ -60,9 +60,12 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSString *url = @"http://test3.gtjadev.com:8007/externalInterface.do?method=getAppTgUrl&param={abc defg}";
-    
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];  // 不加这个下边的uu输出是null
-    
+#pragma clang diagnostic pop
     NSURL *uu = [NSURL URLWithString:url relativeToURL:nil];
     
     NSLog(@"uu = %@", [uu absoluteString]);

@@ -35,7 +35,13 @@
     
     NSString *path = [NSString stringWithFormat:@"%@/aaa.mp3", kHomeDocumentsPath];
     BOOL ss = [[NSFileManager defaultManager] createFileAtPath:path contents:data attributes:nil];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wformat"
     NSLog(@"ss = %ld", ss);
+#pragma clang diagnostic pop
+    
+
 }
 
 @end

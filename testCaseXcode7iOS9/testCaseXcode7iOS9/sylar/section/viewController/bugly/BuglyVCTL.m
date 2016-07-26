@@ -17,9 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [self performSelector:@selector(crash) withObject:nil afterDelay:3.0];
+#pragma clang diagnostic pop
 }
-
 
 
 - (IBAction)btn1:(id)sender

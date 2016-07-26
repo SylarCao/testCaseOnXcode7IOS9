@@ -25,13 +25,13 @@
 		2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC30C1BE74021008197C3 /* AFHTTPSessionManager.m */; };
 		2C2EC3301BE74021008197C3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC30F1BE74021008197C3 /* AFNetworkReachabilityManager.m */; };
 		2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3111BE74021008197C3 /* AFSecurityPolicy.m */; };
-		2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3131BE74021008197C3 /* AFURLConnectionOperation.m */; };
+		2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3131BE74021008197C3 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		2C2EC3331BE74021008197C3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3151BE74021008197C3 /* AFURLRequestSerialization.m */; };
 		2C2EC3341BE74021008197C3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3171BE74021008197C3 /* AFURLResponseSerialization.m */; };
 		2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3191BE74021008197C3 /* AFURLSessionManager.m */; };
 		2C2EC3361BE74021008197C3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC31C1BE74021008197C3 /* AFNetworkActivityIndicatorManager.m */; };
 		2C2EC3371BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC31E1BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m */; };
-		2C2EC3381BE74021008197C3 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3201BE74021008197C3 /* UIAlertView+AFNetworking.m */; };
+		2C2EC3381BE74021008197C3 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3201BE74021008197C3 /* UIAlertView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		2C2EC3391BE74021008197C3 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3221BE74021008197C3 /* UIButton+AFNetworking.m */; };
 		2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3251BE74021008197C3 /* UIImageView+AFNetworking.m */; };
 		2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC3281BE74021008197C3 /* UIProgressView+AFNetworking.m */; };
@@ -134,7 +134,7 @@
 		2C729D2F1CD0522200284E78 /* DPLocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BBF1CD0522200284E78 /* DPLocationVCTL.xib */; };
 		2C729D361CD0522200284E78 /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCB1CD0522200284E78 /* DrawLineVCTL.m */; };
 		2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C729BCC1CD0522200284E78 /* DrawLineVCTL.xib */; };
-		2C729D381CD0522200284E78 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCF1CD0522200284E78 /* Gdip.m */; };
+		2C729D381CD0522200284E78 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BCF1CD0522200284E78 /* Gdip.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		2C729D391CD0522200284E78 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BD21CD0522200284E78 /* DrawView1.m */; };
 		2C729D3A1CD0522200284E78 /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BD41CD0522200284E78 /* DrawView2.m */; };
 		2C729D3B1CD0522200284E78 /* EncoderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C729BD71CD0522200284E78 /* EncoderObject.m */; };
@@ -3122,7 +3122,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3131,6 +3131,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"-Wno-shorten-64-to-32",
 					"-Wno-unused-variable",
@@ -3152,7 +3153,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3161,6 +3162,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"-Wno-shorten-64-to-32",
 					"-Wno-unused-variable",

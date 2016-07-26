@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BasicVCTL.h"
 
+// reference link: https://bugly.qq.com/v2/
+
 @interface BuglyVCTL : BasicVCTL
 
 @end

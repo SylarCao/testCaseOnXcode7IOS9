@@ -46,8 +46,12 @@
     CGFloat d2 = ceilf(f2);
     CGFloat d3 = ceilf(f3);
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wformat"
     NSLog(@"a123 = %d, %d, %d", a1, a2, a3);
     NSLog(@"d123 = %f, %f, %f", d1, d2, d3);
+#pragma clang diagnostic pop
     
 }
 

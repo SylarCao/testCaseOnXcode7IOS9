@@ -47,7 +47,9 @@
     }
     else
     {
-        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"cancel button" destructiveButtonTitle:nil otherButtonTitles:@"o1", @"o2", @"o3", nil];
         
         NSArray *other_titles = @[@"o1", @"o2", @"other3"];
@@ -84,6 +86,7 @@
 {
     NSLog(@"tap = %ld", buttonIndex);
 }
+#pragma clang diagnostic pop
 
 - (void)btnTap1
 {

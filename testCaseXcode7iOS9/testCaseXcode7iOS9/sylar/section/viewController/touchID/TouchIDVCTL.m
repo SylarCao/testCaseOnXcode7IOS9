@@ -28,12 +28,17 @@
     BOOL is_simulator = [[Helper share] checkSimulator];
     if (is_simulator)
     {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated"
+
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"不是手机"
                                                             message:@"不是手机，请用手机"
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil, nil];
         [alertView show];
+#pragma clang diagnostic pop
     }
     else
     {
@@ -52,6 +57,9 @@
         [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
                   localizedReason:myLocalizedReasonString
                             reply:^(BOOL success, NSError *error) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated"
                                 if (success) {
                                     dispatch_async(dispatch_get_main_queue(), ^{
 //                                        [self performSegueWithIdentifier:@"Success" sender:nil];
@@ -86,7 +94,7 @@
         });
     }
 
-    
+#pragma clang diagnostic pop
     
 }
 

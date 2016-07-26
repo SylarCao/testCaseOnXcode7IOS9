@@ -9,6 +9,9 @@
 #import "PlayVideoVCTL.h"
 #import <MediaPlayer/MediaPlayer.h>
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated"
 @interface PlayVideoVCTL ()
 
 @property (nonatomic, weak) IBOutlet UIView *videoBkgView;
@@ -57,5 +60,5 @@
 {
     [_mm.moviePlayer play];
 }
-
+#pragma clang diagnostic pop
 @end

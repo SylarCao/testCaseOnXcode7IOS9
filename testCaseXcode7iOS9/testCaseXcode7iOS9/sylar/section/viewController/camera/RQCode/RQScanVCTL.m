@@ -159,6 +159,10 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
@@ -175,6 +179,6 @@
     [alertView show];
 }
 
-
+#pragma clang diagnostic pop
 
 @end

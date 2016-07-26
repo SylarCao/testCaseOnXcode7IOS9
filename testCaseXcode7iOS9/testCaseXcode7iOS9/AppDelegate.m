@@ -43,9 +43,9 @@
     if (kIOSVersion(9))
         [[UIApplication sharedApplication] setShortcutItems:shortItems];
     
-//    // bugly
-//    [[CrashReporter sharedInstance] enableLog:YES];
-//    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
+    // bugly
+    [[CrashReporter sharedInstance] enableLog:YES];
+    [[CrashReporter sharedInstance] installWithAppId:@"900009919"];
     
 //    // JSPatch
 //    [JSPatch testScriptInBundle];
@@ -107,10 +107,14 @@
 #pragma mark -  3d touch的效果
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
     if ([shortcutItem.localizedTitle  isEqual: @"弹框"]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OPPS!" message:@"我的CTO叫佛山强" delegate:self cancelButtonTitle:@"哦" otherButtonTitles:nil, nil];
         [alert show];
         return;
     }
+#pragma clang diagnostic pop
 }
 
 #pragma mark - 本地推送

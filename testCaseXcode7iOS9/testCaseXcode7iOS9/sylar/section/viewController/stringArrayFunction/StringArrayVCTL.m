@@ -106,7 +106,7 @@
 {
     NSString *aa = @"abc9999999abcd999999abcde99999";
     NSRange r1 = [aa rangeOfString:@"abc"];
-    NSLog(@"r1 = %d, %d", r1.location, r1.length);
+    NSLog(@"r1 = %ld, %ld", r1.location, r1.length);
     
     
     
@@ -356,6 +356,9 @@
 #endif
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wconstant-conversion"
 - (void)fun4
 {
     CGFloat f1 = 123456789012345678.12345;
@@ -365,7 +368,7 @@
     NSLog(@"n1 = %d", n1);
     
 }
-
+#pragma clang diagnostic pop
 
 
 

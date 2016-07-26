@@ -39,7 +39,11 @@
                           arr1, @"array1",
                           arr2, @"array2",
                           nil];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
     NSData *dd = [arr1 JSONString];
+#pragma clang diagnostic pop
     NSLog(@"");
 }
 

@@ -50,8 +50,19 @@
     
 //    [self fun12];
     
-    [self fun13];
+//    [self fun13];
     
+    [self fun14];
+    
+}
+
+
+- (void)fun14
+{
+    const char *cc = "abcd";
+    cc = NULL;  // NULL 会crash
+    NSString *ss = [NSString stringWithUTF8String:cc];
+    NSLog(@"ss = %@", ss);
 }
 
 - (void)fun13

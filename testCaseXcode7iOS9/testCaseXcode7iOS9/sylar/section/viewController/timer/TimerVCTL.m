@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TimerVCTL ()
 
-@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, weak) NSTimer *timer;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -25,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self fun1];
     
 //    [self fun2];
 }
@@ -63,8 +65,8 @@
 {
     [super viewWillDisappear:animated];
     
-    [_timer invalidate];
-    _timer = nil;
+//    [_timer invalidate];
+//    _timer = nil;
 }
 
 - (IBAction)btn1:(id)sender

@@ -24,10 +24,38 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun2];
+//    [self fun2];
+    
+    
+//    [self fun3];
+    
+    [self fun4];
 }
 
+- (void)fun4
+{
+    int aa[10] = {1, 2, 11, '{', '}'};
+    
+    for (int i=0; i<10; i++)
+    {
+        NSLog(@"i%d = %d", i, aa[i]);
+    }
+    
+    NSLog(@"end-----------");
+}
 
+- (void)fun3
+{
+    const char *c1 = "abcdefg";
+    
+    char buf[10];
+    
+    snprintf(buf, 10, "1234567");
+    
+    NSLog(@"c1 = %s", buf);
+    
+    
+}
 
 
 - (void)fun2

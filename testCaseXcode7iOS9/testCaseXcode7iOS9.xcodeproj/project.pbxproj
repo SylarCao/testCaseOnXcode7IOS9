@@ -313,6 +313,8 @@
 		2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */; };
 		2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */; };
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
+		2C9AF9251D59D2B600A59F27 /* StructVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AF9231D59D2B600A59F27 /* StructVCTL.m */; };
+		2C9AF9261D59D2B600A59F27 /* StructVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */; };
 		2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */; };
 		2C9CA42F1D1A5859003EE2FD /* PreFixVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */; };
 		2C9CA4321D1A58C5003EE2FD /* PreFixObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */; };
@@ -862,6 +864,9 @@
 		2C837C4B1CDB13E90078737F /* Drag2CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drag2CollectionView.h; sourceTree = "<group>"; };
 		2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drag2CollectionView.m; sourceTree = "<group>"; };
 		2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C9AF9221D59D2B600A59F27 /* StructVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructVCTL.h; sourceTree = "<group>"; };
+		2C9AF9231D59D2B600A59F27 /* StructVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructVCTL.m; sourceTree = "<group>"; };
+		2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StructVCTL.xib; sourceTree = "<group>"; };
 		2C9CA42B1D1A5859003EE2FD /* PreFixVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreFixVCTL.h; sourceTree = "<group>"; };
 		2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreFixVCTL.m; sourceTree = "<group>"; };
 		2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreFixVCTL.xib; sourceTree = "<group>"; };
@@ -1212,6 +1217,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C9AF9211D59D2A600A59F27 /* struct */,
 				2C7B34571D38770400760B7D /* GestureScroll */,
 				2C7BA8DB1D33346300B4D2C0 /* PushPopViewcontroller */,
 				2CB141BC1D24E89D0076D9C0 /* playVideo */,
@@ -2270,6 +2276,16 @@
 			path = 2;
 			sourceTree = "<group>";
 		};
+		2C9AF9211D59D2A600A59F27 /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AF9221D59D2B600A59F27 /* StructVCTL.h */,
+				2C9AF9231D59D2B600A59F27 /* StructVCTL.m */,
+				2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */,
+			);
+			path = struct;
+			sourceTree = "<group>";
+		};
 		2C9CA42A1D1A5859003EE2FD /* preFix */ = {
 			isa = PBXGroup;
 			children = (
@@ -2751,6 +2767,7 @@
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
 				2C729D661CD0522200284E78 /* MathProblem2VCTL.xib in Resources */,
 				2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */,
+				2C9AF9261D59D2B600A59F27 /* StructVCTL.xib in Resources */,
 				2C729DA71CD0522200284E78 /* StringArrayVCTL.xib in Resources */,
 				2C729D961CD0522200284E78 /* ShakeTextFieldVCTL.xib in Resources */,
 				2C4BE04E1BE9A7B0004F1DAF /* MJRefresh.bundle in Resources */,
@@ -2818,6 +2835,7 @@
 				2C4BE0491BE9A7B0004F1DAF /* MJRefreshBackNormalFooter.m in Sources */,
 				2C729DCA1CD0522200284E78 /* WebViewVCTL.m in Sources */,
 				2C729DB21CD0522200284E78 /* BlockHelperTimer.m in Sources */,
+				2C9AF9251D59D2B600A59F27 /* StructVCTL.m in Sources */,
 				2C729D781CD0522200284E78 /* OthersVCTL.m in Sources */,
 				2C729D231CD0522200284E78 /* Dealloc1VCTL.m in Sources */,
 				2C729D001CD0522200284E78 /* BlurBkgVCTL.m in Sources */,

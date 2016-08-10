@@ -80,6 +80,13 @@ struct SZ
              /* 1 padding byte */
 }SZ;
 
+struct SA {
+    int  a1; /* 4 bytes */
+    char a2; /* 1 byte  + 3 padding bytes */
+    int  a3; /* 4 bytes */
+    char a4; /* 1 byte  + 3 padding bytes */
+}SA;
+
 
 
 @interface StructVCTL : BasicVCTL

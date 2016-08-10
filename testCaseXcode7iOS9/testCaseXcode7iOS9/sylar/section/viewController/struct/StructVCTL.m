@@ -41,8 +41,9 @@
     NSInteger a1 = sizeof(SX);
     NSInteger a2 = sizeof(SY);
     NSInteger a3 = sizeof(SZ);
+    NSInteger a4 = sizeof(SA);
     
-    NSLog(@"size = %ld, %ld, %ld", a1, a2, a3);   // 12, 8, 8
+    NSLog(@"size = %ld, %ld, %ld, %ld", a1, a2, a3, a4);   // 12, 8, 8, 16
     
 }
 

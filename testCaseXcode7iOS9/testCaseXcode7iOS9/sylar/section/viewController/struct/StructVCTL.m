@@ -27,7 +27,63 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
+    
+//    [self fun2];
+    
+//    [self fun3];
+    
+    [self fun4];
+}
+
+- (void)fun4
+{
+    NSInteger a1 = sizeof(SX);
+    NSInteger a2 = sizeof(SY);
+    NSInteger a3 = sizeof(SZ);
+    
+    NSLog(@"size = %ld, %ld, %ld", a1, a2, a3);   // 12, 8, 8
+    
+}
+
+- (void)fun3
+{
+    ss5 s5;
+    NSInteger size = sizeof(ss5);
+    ss5 *p5 = &s5;
+    memset(p5, 0, size);  // 初始化 0000
+    
+    
+    s5.v1 = 0xaa56;
+    
+    NSData *data = [NSData dataWithBytes:p5 length:size];
+    NSLog(@"data = %@", data);
+    
+    s5.v2 = 0xc9;
+    s5.v3 = 0xb8;
+    s5.v4 = 0xd7;
+    s5.v5 = 0xe1e2e3e4;
+    
+    data = [NSData dataWithBytes:p5 length:size];
+    NSLog(@"data = %@", data);
+
+}
+
+- (void)fun2
+{
+    int b1 = sizeof(short);
+    int b2 = sizeof(char);
+    int b3 = sizeof(DZH_DATAHEAD);
+    int b4 = sizeof(int);
+    int b5 = 0;
+    NSLog(@"size = %d, %d, %d, %d", b1, b2, b3, b4);  // 2, 1, 8, 4
+    
+    b1 = sizeof(ss1);
+    b2 = sizeof(ss2);
+    b3 = sizeof(ss3);
+    b4 = sizeof(ss4);
+    b5 = sizeof(ss5);
+    NSLog(@"size = %d, %d, %d, %d, %d", b1, b2, b3, b4, b5);  // 2, 4, 8, 8, 12
 }
 
 - (void)fun1
@@ -47,6 +103,9 @@
     self->m1 = p1->type;
     
     NSLog(@"m1 = %d", self->m1);
+    
+    
+    
     
 }
 

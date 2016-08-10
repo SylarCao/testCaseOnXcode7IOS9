@@ -29,7 +29,19 @@
     
 //    [self fun3];
     
-    [self fun4];
+//    [self fun4];
+    
+    [self fun5];
+}
+
+- (void)fun5
+{
+    char c1 = 'a';
+    char c2 = '\r';
+    char c3 = '\n';
+    
+    NSLog(@"char = %d, %d, %d", c1, c2, c3);  // 97, 13, 10
+    
 }
 
 - (void)fun4

@@ -39,10 +39,10 @@
     UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"弹框" localizedTitle:@"弹框"];
     NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem1, shortItem2, nil];
 //    NSLog(@"%@", shortItems);
-    if (kIOSVersion(9))
-    {
-        [[UIApplication sharedApplication] setShortcutItems:shortItems];
-    }
+//    if (kIOSVersion(9))
+//    {
+//        [[UIApplication sharedApplication] setShortcutItems:shortItems];
+//    }
     
 //    // JSPatch
 //    [JSPatch testScriptInBundle];

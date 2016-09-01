@@ -345,6 +345,9 @@
 		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
 		2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
+		2CACF3771D77CF7C006073E3 /* FormatCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF3751D77CF7C006073E3 /* FormatCodeVCTL.m */; };
+		2CACF3781D77CF7C006073E3 /* FormatCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CACF3761D77CF7C006073E3 /* FormatCodeVCTL.xib */; };
+		2CACF37A1D77CFC8006073E3 /* format.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CACF3791D77CFC8006073E3 /* format.txt */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB114D31CE0599500E43797 /* AFNetworkingVCTL.m */; };
 		2CB114D61CE0599500E43797 /* AFNetworkingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB114D41CE0599500E43797 /* AFNetworkingVCTL.xib */; };
@@ -910,6 +913,10 @@
 		2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pokemon.gpx; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
+		2CACF3741D77CF7C006073E3 /* FormatCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatCodeVCTL.h; sourceTree = "<group>"; };
+		2CACF3751D77CF7C006073E3 /* FormatCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatCodeVCTL.m; sourceTree = "<group>"; };
+		2CACF3761D77CF7C006073E3 /* FormatCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormatCodeVCTL.xib; sourceTree = "<group>"; };
+		2CACF3791D77CFC8006073E3 /* format.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = format.txt; sourceTree = "<group>"; };
 		2CADEA371BB537E0009BBD28 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		2CADEA381BB537E0009BBD28 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		2CB114D21CE0599500E43797 /* AFNetworkingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingVCTL.h; sourceTree = "<group>"; };
@@ -1217,6 +1224,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CACF3731D77CF60006073E3 /* formatCode */,
 				2C9AF9211D59D2A600A59F27 /* struct */,
 				2C7B34571D38770400760B7D /* GestureScroll */,
 				2C7BA8DB1D33346300B4D2C0 /* PushPopViewcontroller */,
@@ -2449,6 +2457,17 @@
 			path = gpx;
 			sourceTree = "<group>";
 		};
+		2CACF3731D77CF60006073E3 /* formatCode */ = {
+			isa = PBXGroup;
+			children = (
+				2CACF3791D77CFC8006073E3 /* format.txt */,
+				2CACF3741D77CF7C006073E3 /* FormatCodeVCTL.h */,
+				2CACF3751D77CF7C006073E3 /* FormatCodeVCTL.m */,
+				2CACF3761D77CF7C006073E3 /* FormatCodeVCTL.xib */,
+			);
+			path = formatCode;
+			sourceTree = "<group>";
+		};
 		2CADEA361BB537E0009BBD28 /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -2687,6 +2706,7 @@
 				2CB5461B1D3CF4F2004239DB /* LabelTestVCTL.xib in Resources */,
 				2C729D681CD0522200284E78 /* MBProgressHudVCTL.xib in Resources */,
 				2C729DA01CD0522200284E78 /* StackViewVCTL.xib in Resources */,
+				2CACF37A1D77CFC8006073E3 /* format.txt in Resources */,
 				2C729DAD1CD0522200284E78 /* TableViewVCTL.xib in Resources */,
 				2C729D581CD0522200284E78 /* JsonKitVCTL.xib in Resources */,
 				2C729DCB1CD0522200284E78 /* WebViewVCTL.xib in Resources */,
@@ -2794,6 +2814,7 @@
 				2C729D5A1CD0522200284E78 /* JSPatchVCTL.xib in Resources */,
 				2C729D641CD0522200284E78 /* MathProblem1VCTL.xib in Resources */,
 				2C729D1C1CD0522200284E78 /* ContactListVCTL.xib in Resources */,
+				2CACF3781D77CF7C006073E3 /* FormatCodeVCTL.xib in Resources */,
 				2C729DB71CD0522200284E78 /* testXibVCTL.xib in Resources */,
 				2C729D621CD0522200284E78 /* LewView2.xib in Resources */,
 				2C729D7D1CD0522200284E78 /* PickerViewController.xib in Resources */,
@@ -2848,6 +2869,7 @@
 				2C729D651CD0522200284E78 /* MathProblem2VCTL.m in Sources */,
 				2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */,
 				2CADEA391BB537E0009BBD28 /* Helper.m in Sources */,
+				2CACF3771D77CF7C006073E3 /* FormatCodeVCTL.m in Sources */,
 				2C729DB61CD0522200284E78 /* testXibVCTL.m in Sources */,
 				2C729D2B1CD0522200284E78 /* DownloadVCTL.m in Sources */,
 				2C729D7A1CD0522200284E78 /* PickerVCTL.m in Sources */,

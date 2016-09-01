@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL",
+    NSArray *ctrls = @[@"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL", @"FormatCodeVCTL",
                 
                @"sort", // 都放到这个后边
                @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL", @"CFileVCTL", @"PlayVideoVCTL",

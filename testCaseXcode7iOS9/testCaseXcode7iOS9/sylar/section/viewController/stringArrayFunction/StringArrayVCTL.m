@@ -52,10 +52,47 @@
     
 //    [self fun13];
     
-    [self fun14];
+//    [self fun14];
+    
+//    [self fun15];
+    
+    [self fun16];
     
 }
 
+- (void)fun16
+{
+    // compare string
+    NSString *s1 = @"9";
+    NSString *s2 = @"5";
+    
+    NSComparisonResult rr = [s1 compare:s2];
+    NSLog(@"result(%@, %@) = %ld", s1, s2, rr);  // 1
+    
+    s1 = @"15";
+    s2 = @"4";
+    rr = [s1 compare:s2];
+    NSLog(@"result(%@, %@) = %ld", s1, s2, rr);  // -1
+    
+    s1 = @"8.1.3";
+    s2 = @"8.0.5";
+    rr = [s1 compare:s2];
+    NSLog(@"result(%@, %@) = %ld", s1, s2, rr);  // 1
+    
+    
+    s1 = @"8";
+    s2 = @"7.9.5";
+    rr = [s1 compare:s2];
+    NSLog(@"result(%@, %@) = %ld", s1, s2, rr);  // 1
+    
+}
+
+
+- (void)fun15
+{
+    NSString *aa = [NSString stringWithFormat:@"a = %2zd", 4];
+    NSLog(@"aa = %@", aa);
+}
 
 - (void)fun14
 {

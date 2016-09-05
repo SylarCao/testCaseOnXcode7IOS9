@@ -25,15 +25,50 @@
     
 //    _viewFinger.multipleTouchEnabled = YES;
     
-    [self addGesture];
+//    [self addGesture];
     
 //    [self addMask];
     
 //    [self addMask2];
     
+    [self fun1];
+    
+}
+
+- (void)fun1
+{
+    // 重叠的2个view 加tap
+    
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(10, kScreenHeight-70, kScreenWidth-20, 60)];
+    v1.backgroundColor = [UIColor redColor];
+    [self.view addSubview:v1];
+    
+    UIView *v2 = [[UIView alloc] initWithFrame:CGRectMake(40, 0, kScreenWidth/2-40, 60)];
+    v2.backgroundColor = [UIColor yellowColor];
+    [v1 addSubview:v2];
+    
+    
+    UITapGestureRecognizer *t2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap2)];
+    [v2 addGestureRecognizer:t2];
+    
+    UITapGestureRecognizer *t1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap1)];
+    [v1 addGestureRecognizer:t1];
+    
+    
     
     
 }
+
+- (void)fun1Tap1
+{
+    NSLog(@"funtap1");
+}
+
+- (void)fun1Tap2
+{
+    NSLog(@"funtap2");
+}
+
 
 - (void)addGesture
 {

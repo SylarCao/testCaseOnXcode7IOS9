@@ -11,6 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define kIOSVersion(version)    ([[Helper share] checkVersion:version])
 #define IS_OS_8_OR_LATER        ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define kScreenHeight           ([[UIScreen mainScreen]bounds].size.height)
+#define kScreenWidth            ([[UIScreen mainScreen]bounds].size.width)
 #define kIsSimulator            ([[Helper share] checkSimulator])
 #define kHomeDocumentsPath      ([[Helper share] getHomeDocumentsPath])
 #define kReturnCondition(condition, logContent)     if (condition) { NSLog(logContent); return; }

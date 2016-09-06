@@ -296,6 +296,7 @@
 		2C7CAAB81CFEB24C00E2D91A /* SaveDataVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CAAB61CFEB24C00E2D91A /* SaveDataVCTL.m */; };
 		2C7CAAB91CFEB24D00E2D91A /* SaveDataVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CAAB71CFEB24C00E2D91A /* SaveDataVCTL.xib */; };
 		2C7CAABC1CFEB25D00E2D91A /* DataObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CAABB1CFEB25D00E2D91A /* DataObject1.m */; };
+		2C8309741D7E6CBC0036FFCF /* DrawView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8309731D7E6CBC0036FFCF /* DrawView3.m */; };
 		2C837C2C1CDAEFB10078737F /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C221CDAEFB10078737F /* beep.mp3 */; };
 		2C837C2D1CDAEFB10078737F /* beep_mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C231CDAEFB10078737F /* beep_mine.mp3 */; };
 		2C837C2E1CDAEFB10078737F /* EWMCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C251CDAEFB10078737F /* EWMCodeVCTL.m */; };
@@ -842,6 +843,8 @@
 		2C7CAAB71CFEB24C00E2D91A /* SaveDataVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveDataVCTL.xib; sourceTree = "<group>"; };
 		2C7CAABA1CFEB25D00E2D91A /* DataObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject1.h; sourceTree = "<group>"; };
 		2C7CAABB1CFEB25D00E2D91A /* DataObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject1.m; sourceTree = "<group>"; };
+		2C8309721D7E6CBC0036FFCF /* DrawView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView3.h; sourceTree = "<group>"; };
+		2C8309731D7E6CBC0036FFCF /* DrawView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView3.m; sourceTree = "<group>"; };
 		2C837C221CDAEFB10078737F /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		2C837C231CDAEFB10078737F /* beep_mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_mine.mp3; sourceTree = "<group>"; };
 		2C837C241CDAEFB10078737F /* EWMCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMCodeVCTL.h; sourceTree = "<group>"; };
@@ -1591,6 +1594,8 @@
 				2C729BD21CD0522200284E78 /* DrawView1.m */,
 				2C729BD31CD0522200284E78 /* DrawView2.h */,
 				2C729BD41CD0522200284E78 /* DrawView2.m */,
+				2C8309721D7E6CBC0036FFCF /* DrawView3.h */,
+				2C8309731D7E6CBC0036FFCF /* DrawView3.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -3027,6 +3032,7 @@
 				2C729CFF1CD0522200284E78 /* UIImage+BlurGlass.m in Sources */,
 				2C7BA8DF1D33347100B4D2C0 /* PushPopVCTL.m in Sources */,
 				2C785C761D10015C004480CF /* Reachability.m in Sources */,
+				2C8309741D7E6CBC0036FFCF /* DrawView3.m in Sources */,
 				2C729CF11CD0522200284E78 /* Touch3d1DetailVCTL.m in Sources */,
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
 				2C729D761CD0522200284E78 /* OtherObjectHelper.m in Sources */,

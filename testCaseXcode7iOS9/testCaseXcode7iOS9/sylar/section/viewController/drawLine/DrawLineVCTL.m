@@ -10,6 +10,7 @@
 #import "Gdip.h"
 #import "DrawView1.h"
 #import "DrawView2.h"
+#import "DrawView3.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface DrawLineVCTL ()
 
@@ -24,11 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addView1];
+//    [self addView1];
     
 //    [self drawLine1];
     
 //    [self addDrawView2];
+    
+    [self fun1];
 }
 
 - (IBAction)btn1:(id)sender
@@ -39,9 +42,18 @@
 
 //    [_view1 publicFun1];
     
-    [_view1 setNeedsDisplay];
+//    [_view1 setNeedsDisplay];
     
 //    [self test1];
+}
+
+- (void)fun1
+{
+    DrawView3 *v3 = [[DrawView3 alloc] initWithFrame:CGRectMake(30, 100, 200, 400)];
+    v3.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:v3];
+    
+    
 }
 
 - (void)addDrawView2

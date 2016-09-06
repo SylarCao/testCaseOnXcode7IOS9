@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     
 //    [self addView1];
-    [self addView2];
+//    [self addView2];
 }
 
 - (IBAction)btn1:(id)sender

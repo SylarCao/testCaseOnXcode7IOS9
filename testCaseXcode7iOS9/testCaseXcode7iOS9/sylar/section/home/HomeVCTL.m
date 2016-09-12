@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSArray *vctls;
 
 @end
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation HomeVCTL
 
 - (void)viewDidLoad {
@@ -23,9 +23,11 @@
     
     
     // data
-    NSArray *ctrls = @[@"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL", @"FormatCodeVCTL",
+    NSArray *ctrls = @[@"CollectionViewVCTL",
+                       
                 
                @"sort", // 都放到这个后边
+               @"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL", @"FormatCodeVCTL", @"WindowVCTL",
                @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL", @"CFileVCTL", @"PlayVideoVCTL",
                @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL", @"CameraVCTL", @"DownloadVCTL",
                @"UILabelVCTL", @"TestBlockVCTL", @"TableViewVCTL", @"ConstraintCodeVCTL", @"EncoderVCTL", @"OthersVCTL",

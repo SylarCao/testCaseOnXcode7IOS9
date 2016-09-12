@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Eh-b5-kjv">
+                    <rect key="frame" x="0.0" y="0.0" width="387" height="141"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.4698569432474532" green="1" blue="0.18173898238189301" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Eh-b5-kjv" secondAttribute="trailing" id="0jG-TF-mQP"/>
+                <constraint firstItem="3Eh-b5-kjv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Tvf-HL-p01"/>
+                <constraint firstAttribute="bottom" secondItem="3Eh-b5-kjv" secondAttribute="bottom" id="gdt-vC-KYw"/>
+                <constraint firstItem="3Eh-b5-kjv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="s0H-GE-xiJ"/>
+            </constraints>
+            <connections>
+                <outlet property="header" destination="3Eh-b5-kjv" id="ozO-QZ-lob"/>
+            </connections>
+            <point key="canvasLocation" x="452.5" y="387.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

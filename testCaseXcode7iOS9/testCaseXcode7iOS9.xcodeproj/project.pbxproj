@@ -314,6 +314,12 @@
 		2C837C4A1CDB11D80078737F /* Drag2CollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C837C481CDB11D80078737F /* Drag2CollectionVCTL.xib */; };
 		2C837C4D1CDB13E90078737F /* Drag2CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */; };
 		2C8BAB611BC7D593000FD2DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */; };
+		2C8D3A5F1D864B4000BA9FD5 /* CollectionViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D3A5D1D864B4000BA9FD5 /* CollectionViewVCTL.m */; };
+		2C8D3A601D864B4000BA9FD5 /* CollectionViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D3A5E1D864B4000BA9FD5 /* CollectionViewVCTL.xib */; };
+		2C8D3A641D864BDB00BA9FD5 /* CollectionView123Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D3A621D864BDB00BA9FD5 /* CollectionView123Cell.m */; };
+		2C8D3A651D864BDB00BA9FD5 /* CollectionView123Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D3A631D864BDB00BA9FD5 /* CollectionView123Cell.xib */; };
+		2C8D3A691D864C3E00BA9FD5 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */; };
+		2C8D3A6A1D864C3E00BA9FD5 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */; };
 		2C9AF9251D59D2B600A59F27 /* StructVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AF9231D59D2B600A59F27 /* StructVCTL.m */; };
 		2C9AF9261D59D2B600A59F27 /* StructVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */; };
 		2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */; };
@@ -341,6 +347,8 @@
 		2CA3A34B1D1BB8DC00A7F5C6 /* dzhbitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A3491D1BB8DC00A7F5C6 /* dzhbitstream.c */; };
 		2CA3A34F1D1BB91600A7F5C6 /* CFileVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */; };
 		2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */; };
+		2CA551EF1D810748006769A7 /* WindowVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA551ED1D810748006769A7 /* WindowVCTL.m */; };
+		2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA551EE1D810748006769A7 /* WindowVCTL.xib */; };
 		2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */; };
 		2CA5B12E1D34E3E400A80B8A /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */; };
 		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
@@ -870,6 +878,15 @@
 		2C837C4B1CDB13E90078737F /* Drag2CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drag2CollectionView.h; sourceTree = "<group>"; };
 		2C837C4C1CDB13E90078737F /* Drag2CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drag2CollectionView.m; sourceTree = "<group>"; };
 		2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C8D3A5C1D864B4000BA9FD5 /* CollectionViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewVCTL.h; sourceTree = "<group>"; };
+		2C8D3A5D1D864B4000BA9FD5 /* CollectionViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewVCTL.m; sourceTree = "<group>"; };
+		2C8D3A5E1D864B4000BA9FD5 /* CollectionViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewVCTL.xib; sourceTree = "<group>"; };
+		2C8D3A611D864BDB00BA9FD5 /* CollectionView123Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView123Cell.h; sourceTree = "<group>"; };
+		2C8D3A621D864BDB00BA9FD5 /* CollectionView123Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView123Cell.m; sourceTree = "<group>"; };
+		2C8D3A631D864BDB00BA9FD5 /* CollectionView123Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionView123Cell.xib; sourceTree = "<group>"; };
+		2C8D3A661D864C3E00BA9FD5 /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
+		2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
+		2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		2C9AF9221D59D2B600A59F27 /* StructVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructVCTL.h; sourceTree = "<group>"; };
 		2C9AF9231D59D2B600A59F27 /* StructVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructVCTL.m; sourceTree = "<group>"; };
 		2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StructVCTL.xib; sourceTree = "<group>"; };
@@ -910,6 +927,9 @@
 		2CA3A34C1D1BB91600A7F5C6 /* CFileVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileVCTL.h; sourceTree = "<group>"; };
 		2CA3A34D1D1BB91600A7F5C6 /* CFileVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileVCTL.m; sourceTree = "<group>"; };
 		2CA3A34E1D1BB91600A7F5C6 /* CFileVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFileVCTL.xib; sourceTree = "<group>"; };
+		2CA551EC1D810748006769A7 /* WindowVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowVCTL.h; sourceTree = "<group>"; };
+		2CA551ED1D810748006769A7 /* WindowVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowVCTL.m; sourceTree = "<group>"; };
+		2CA551EE1D810748006769A7 /* WindowVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowVCTL.xib; sourceTree = "<group>"; };
 		2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationGTJA.gpx; sourceTree = "<group>"; };
 		2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2CA5B1301D34E6B900A80B8A /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
@@ -1227,6 +1247,8 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D3A5B1D864B2B00BA9FD5 /* collectionView */,
+				2CA551EB1D810739006769A7 /* window */,
 				2CACF3731D77CF60006073E3 /* formatCode */,
 				2C9AF9211D59D2A600A59F27 /* struct */,
 				2C7B34571D38770400760B7D /* GestureScroll */,
@@ -2289,6 +2311,22 @@
 			path = 2;
 			sourceTree = "<group>";
 		};
+		2C8D3A5B1D864B2B00BA9FD5 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2C8D3A5C1D864B4000BA9FD5 /* CollectionViewVCTL.h */,
+				2C8D3A5D1D864B4000BA9FD5 /* CollectionViewVCTL.m */,
+				2C8D3A5E1D864B4000BA9FD5 /* CollectionViewVCTL.xib */,
+				2C8D3A611D864BDB00BA9FD5 /* CollectionView123Cell.h */,
+				2C8D3A621D864BDB00BA9FD5 /* CollectionView123Cell.m */,
+				2C8D3A631D864BDB00BA9FD5 /* CollectionView123Cell.xib */,
+				2C8D3A661D864C3E00BA9FD5 /* CollectionHeaderView.h */,
+				2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */,
+				2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
 		2C9AF9211D59D2A600A59F27 /* struct */ = {
 			isa = PBXGroup;
 			children = (
@@ -2449,6 +2487,16 @@
 				2CA3A34A1D1BB8DC00A7F5C6 /* dzhbitstream.h */,
 			);
 			path = ExpandData;
+			sourceTree = "<group>";
+		};
+		2CA551EB1D810739006769A7 /* window */ = {
+			isa = PBXGroup;
+			children = (
+				2CA551EC1D810748006769A7 /* WindowVCTL.h */,
+				2CA551ED1D810748006769A7 /* WindowVCTL.m */,
+				2CA551EE1D810748006769A7 /* WindowVCTL.xib */,
+			);
+			path = window;
 			sourceTree = "<group>";
 		};
 		2CA5B1291D34E3E400A80B8A /* gpx */ = {
@@ -2698,11 +2746,13 @@
 				2C7584A11C740EAC00614D17 /* small_30.png in Resources */,
 				2C729DA41CD0522200284E78 /* StatusBarVCTL.xib in Resources */,
 				2C729D5B1CD0522200284E78 /* main.js in Resources */,
+				2C8D3A651D864BDB00BA9FD5 /* CollectionView123Cell.xib in Resources */,
 				2C7849411D475E1B00E82013 /* icon0.png in Resources */,
 				2C837C2F1CDAEFB10078737F /* EWMCodeVCTL.xib in Resources */,
 				2C729D261CD0522200284E78 /* Dealloc2VCTL.xib in Resources */,
 				2C729DCD1CD0522200284E78 /* XOptionVCTL.xib in Resources */,
 				2C729D5F1CD0522200284E78 /* LewPopupVCTL.xib in Resources */,
+				2C8D3A6A1D864C3E00BA9FD5 /* CollectionHeaderView.xib in Resources */,
 				2C729CF41CD0522200284E78 /* Touch3D1VCTL.xib in Resources */,
 				2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */,
 				2CA1F8A81C0BF3D700089E14 /* sgs3.jpg in Resources */,
@@ -2722,6 +2772,7 @@
 				2C729D861CD0522200284E78 /* ReadPDFVCTL.xib in Resources */,
 				2C729D901CD0522200284E78 /* SavePlistVCTL.xib in Resources */,
 				2C729DC61CD0522200284E78 /* Life1VCTL.xib in Resources */,
+				2C8D3A601D864B4000BA9FD5 /* CollectionViewVCTL.xib in Resources */,
 				2C729CF21CD0522200284E78 /* Touch3d1DetailVCTL.xib in Resources */,
 				2C729D461CD0522200284E78 /* HorizonScrollTitleCollectionCell.xib in Resources */,
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
@@ -2744,6 +2795,7 @@
 				2C729D501CD0522200284E78 /* IntrinsicCell.xib in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
 				2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */,
+				2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */,
 				2C729D8C1CD0522200284E78 /* ReleaseModeVCTL.xib in Resources */,
 				2C729D441CD0522200284E78 /* HorizontalScrollCollectionCell.xib in Resources */,
 				2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */,
@@ -2867,6 +2919,7 @@
 				2C729D231CD0522200284E78 /* Dealloc1VCTL.m in Sources */,
 				2C729D001CD0522200284E78 /* BlurBkgVCTL.m in Sources */,
 				2C729D3A1CD0522200284E78 /* DrawView2.m in Sources */,
+				2CA551EF1D810748006769A7 /* WindowVCTL.m in Sources */,
 				2C729D491CD0522200284E78 /* HorizontalVCTL.m in Sources */,
 				2C729DC11CD0522200284E78 /* TouchIDVCTL.m in Sources */,
 				2C729D871CD0522200284E78 /* RefreshTableVCTL.m in Sources */,
@@ -2893,6 +2946,7 @@
 				2C729D1F1CD0522200284E78 /* CPlusVCTL.m in Sources */,
 				2C729DA51CD0522200284E78 /* StringArrayHelper.m in Sources */,
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
+				2C8D3A641D864BDB00BA9FD5 /* CollectionView123Cell.m in Sources */,
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
@@ -2949,6 +3003,7 @@
 				2CE1F3531BCE3DC800B82CAE /* LewPopupViewAnimationSlide.m in Sources */,
 				2C729D2E1CD0522200284E78 /* DPLocationVCTL.m in Sources */,
 				2C7CAABC1CFEB25D00E2D91A /* DataObject1.m in Sources */,
+				2C8D3A5F1D864B4000BA9FD5 /* CollectionViewVCTL.m in Sources */,
 				2C2EC3391BE74021008197C3 /* UIButton+AFNetworking.m in Sources */,
 				2C2EC32E1BE74021008197C3 /* AFHTTPRequestOperationManager.m in Sources */,
 				2C729D111CD0522200284E78 /* ViewCategory1.m in Sources */,
@@ -3056,6 +3111,7 @@
 				2C729D3B1CD0522200284E78 /* EncoderObject.m in Sources */,
 				2C837C491CDB11D80078737F /* Drag2CollectionVCTL.m in Sources */,
 				2C2EC3361BE74021008197C3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				2C8D3A691D864C3E00BA9FD5 /* CollectionHeaderView.m in Sources */,
 				2C729D061CD0522200284E78 /* DefaultCameraVCTL.m in Sources */,
 				2CB5461A1D3CF4F2004239DB /* LabelTestVCTL.m in Sources */,
 				2C729D531CD0522200284E78 /* IntrinsicSizeTableViewVCTL.m in Sources */,

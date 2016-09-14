@@ -320,6 +320,8 @@
 		2C8D3A651D864BDB00BA9FD5 /* CollectionView123Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D3A631D864BDB00BA9FD5 /* CollectionView123Cell.xib */; };
 		2C8D3A691D864C3E00BA9FD5 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */; };
 		2C8D3A6A1D864C3E00BA9FD5 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */; };
+		2C8E072A1D88F53900B88821 /* LayerVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E07281D88F53900B88821 /* LayerVCTL.m */; };
+		2C8E072B1D88F53900B88821 /* LayerVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E07291D88F53900B88821 /* LayerVCTL.xib */; };
 		2C9AF9251D59D2B600A59F27 /* StructVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AF9231D59D2B600A59F27 /* StructVCTL.m */; };
 		2C9AF9261D59D2B600A59F27 /* StructVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */; };
 		2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */; };
@@ -354,6 +356,8 @@
 		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
 		2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
+		2CAB21641D879867008AD64D /* CollectionView1234Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB21621D879867008AD64D /* CollectionView1234Cell.m */; };
+		2CAB21651D879867008AD64D /* CollectionView1234Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB21631D879867008AD64D /* CollectionView1234Cell.xib */; };
 		2CACF3771D77CF7C006073E3 /* FormatCodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF3751D77CF7C006073E3 /* FormatCodeVCTL.m */; };
 		2CACF3781D77CF7C006073E3 /* FormatCodeVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CACF3761D77CF7C006073E3 /* FormatCodeVCTL.xib */; };
 		2CACF37A1D77CFC8006073E3 /* format.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CACF3791D77CFC8006073E3 /* format.txt */; };
@@ -887,6 +891,9 @@
 		2C8D3A661D864C3E00BA9FD5 /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
 		2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
 		2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		2C8E07271D88F53900B88821 /* LayerVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerVCTL.h; sourceTree = "<group>"; };
+		2C8E07281D88F53900B88821 /* LayerVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerVCTL.m; sourceTree = "<group>"; };
+		2C8E07291D88F53900B88821 /* LayerVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayerVCTL.xib; sourceTree = "<group>"; };
 		2C9AF9221D59D2B600A59F27 /* StructVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructVCTL.h; sourceTree = "<group>"; };
 		2C9AF9231D59D2B600A59F27 /* StructVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructVCTL.m; sourceTree = "<group>"; };
 		2C9AF9241D59D2B600A59F27 /* StructVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StructVCTL.xib; sourceTree = "<group>"; };
@@ -936,6 +943,9 @@
 		2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pokemon.gpx; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
+		2CAB21611D879867008AD64D /* CollectionView1234Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView1234Cell.h; sourceTree = "<group>"; };
+		2CAB21621D879867008AD64D /* CollectionView1234Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView1234Cell.m; sourceTree = "<group>"; };
+		2CAB21631D879867008AD64D /* CollectionView1234Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionView1234Cell.xib; sourceTree = "<group>"; };
 		2CACF3741D77CF7C006073E3 /* FormatCodeVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatCodeVCTL.h; sourceTree = "<group>"; };
 		2CACF3751D77CF7C006073E3 /* FormatCodeVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatCodeVCTL.m; sourceTree = "<group>"; };
 		2CACF3761D77CF7C006073E3 /* FormatCodeVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormatCodeVCTL.xib; sourceTree = "<group>"; };
@@ -1247,6 +1257,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C8E07261D88F52900B88821 /* layer */,
 				2C8D3A5B1D864B2B00BA9FD5 /* collectionView */,
 				2CA551EB1D810739006769A7 /* window */,
 				2CACF3731D77CF60006073E3 /* formatCode */,
@@ -2323,8 +2334,21 @@
 				2C8D3A661D864C3E00BA9FD5 /* CollectionHeaderView.h */,
 				2C8D3A671D864C3E00BA9FD5 /* CollectionHeaderView.m */,
 				2C8D3A681D864C3E00BA9FD5 /* CollectionHeaderView.xib */,
+				2CAB21611D879867008AD64D /* CollectionView1234Cell.h */,
+				2CAB21621D879867008AD64D /* CollectionView1234Cell.m */,
+				2CAB21631D879867008AD64D /* CollectionView1234Cell.xib */,
 			);
 			path = collectionView;
+			sourceTree = "<group>";
+		};
+		2C8E07261D88F52900B88821 /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E07271D88F53900B88821 /* LayerVCTL.h */,
+				2C8E07281D88F53900B88821 /* LayerVCTL.m */,
+				2C8E07291D88F53900B88821 /* LayerVCTL.xib */,
+			);
+			path = layer;
 			sourceTree = "<group>";
 		};
 		2C9AF9211D59D2A600A59F27 /* struct */ = {
@@ -2831,6 +2855,7 @@
 				2C729D731CD0522200284E78 /* NumberKeyboardVCTL.xib in Resources */,
 				2C7849451D475E1B00E82013 /* icon120.png in Resources */,
 				2C729D561CD0522200284E78 /* JailBreakVCTL.xib in Resources */,
+				2C8E072B1D88F53900B88821 /* LayerVCTL.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
 				2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */,
 				2C729D881CD0522200284E78 /* RefreshTableVCTL.xib in Resources */,
@@ -2843,6 +2868,7 @@
 				2C837C401CDB113F0078737F /* DragCollectionCell.xib in Resources */,
 				2C729D131CD0522200284E78 /* CheckInstallQQVCTL.xib in Resources */,
 				2C40EB0A1BE0C40500074AB8 /* file_pdf3.pdf in Resources */,
+				2CAB21651D879867008AD64D /* CollectionView1234Cell.xib in Resources */,
 				2C729D661CD0522200284E78 /* MathProblem2VCTL.xib in Resources */,
 				2CA5B12D1D34E3E400A80B8A /* LocationGTJA.gpx in Resources */,
 				2C9AF9261D59D2B600A59F27 /* StructVCTL.xib in Resources */,
@@ -2948,6 +2974,7 @@
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
 				2C8D3A641D864BDB00BA9FD5 /* CollectionView123Cell.m in Sources */,
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
+				2C8E072A1D88F53900B88821 /* LayerVCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
 				2C729D771CD0522200284E78 /* OthersInstance.m in Sources */,
@@ -3007,6 +3034,7 @@
 				2C2EC3391BE74021008197C3 /* UIButton+AFNetworking.m in Sources */,
 				2C2EC32E1BE74021008197C3 /* AFHTTPRequestOperationManager.m in Sources */,
 				2C729D111CD0522200284E78 /* ViewCategory1.m in Sources */,
+				2CAB21641D879867008AD64D /* CollectionView1234Cell.m in Sources */,
 				2C4BE0501BE9A7B0004F1DAF /* UIScrollView+MJExtension.m in Sources */,
 				2C7CAAB81CFEB24C00E2D91A /* SaveDataVCTL.m in Sources */,
 				2C729CFD1CD0522200284E78 /* AnimationRotateView.m in Sources */,

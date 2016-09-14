@@ -9,6 +9,7 @@
 #import "CollectionViewVCTL.h"
 #import "CollectionView123Cell.h"
 #import "CollectionHeaderView.h"
+#import "CollectionView1234Cell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface CollectionViewVCTL ()
 <UICollectionViewDelegate, UICollectionViewDataSource>
@@ -35,6 +36,7 @@
     _collectionView.collectionViewLayout = layout;
     
     [_collectionView registerNib:[UINib nibWithNibName:@"CollectionView123Cell" bundle:nil] forCellWithReuseIdentifier:[CollectionView123Cell getCellId]];
+    [_collectionView registerNib:[UINib nibWithNibName:@"CollectionView1234Cell" bundle:nil] forCellWithReuseIdentifier:[CollectionView1234Cell getCellId]];
     [_collectionView registerNib:[UINib nibWithNibName:@"CollectionHeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[CollectionHeaderView getCellId]];
     
 }
@@ -51,14 +53,36 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     NSInteger rt = section *5+3;
+    if (section == 1)
+    {
+        rt = 1;
+    }
     return rt;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CollectionView123Cell *rt = [collectionView dequeueReusableCellWithReuseIdentifier:[CollectionView123Cell getCellId] forIndexPath:indexPath];
-    rt.content.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.row];
+    UICollectionViewCell *rt = nil;
+    if (indexPath.section == 1)
+    {
+        CollectionView1234Cell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CollectionView1234Cell getCellId] forIndexPath:indexPath];
+        rt = cell;
+    }
+    else
+    {
+        CollectionView123Cell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CollectionView123Cell getCellId] forIndexPath:indexPath];
+        cell.content.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.row];
+        rt = cell;
+    }
     return rt;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1)
+    {
+        NSLog(@"end display CollectionView1234Cell");
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section

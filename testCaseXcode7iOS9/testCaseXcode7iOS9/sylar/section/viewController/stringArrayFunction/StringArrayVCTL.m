@@ -24,6 +24,8 @@
     
 //    [self fun6];
     
+    [self btn1:nil];
+    
 }
 
 - (IBAction)btn1:(id)sender
@@ -60,12 +62,26 @@
     
 //    [self fun17];
     
-    [self fun18];
+//    [self fun18];
     
+    [self fun19];
+    
+}
+
+- (void)fun19
+{
+    // replace string
+    NSString *s1 = @"a123bcd123aaaa123bbbb123";
+    NSString *s2 = [s1 stringByReplacingOccurrencesOfString:@"123" withString:@"456"];
+    NSLog(@"s2 = %@", s2);
+    
+    s2 = [s1 stringByReplacingOccurrencesOfString:@"123" withString:@"H" options:NSBackwardsSearch|NSAnchoredSearch range:NSMakeRange(0, s1.length)];
+    NSLog(@"s2 = %@", s2);
 }
 
 - (void)fun18
 {
+    // append nil string
     NSString *s1 = nil;
     NSString *s2 = [s1 stringByAppendingString:@"124"];
     NSLog(@"s2 = %@", s2);
@@ -79,6 +95,7 @@
 
 - (void)fun17
 {
+    // 分割 componentsSeparatedByString
     NSString *s1 = @"ab111cd111efg";
     NSArray *aa = [s1 componentsSeparatedByString:@"11"];
     NSLog(@"aa = %@", aa);

@@ -30,6 +30,16 @@
     
 }
 
+- (void)fun4
+{
+    CALayer *ll = [[CALayer alloc] init];
+    ll.frame = CGRectMake(0, 0, 50, 50);
+    ll.borderWidth = 2;
+    ll.borderColor = [UIColor blueColor].CGColor;
+    
+    [_v1.layer addSublayer:ll];
+}
+
 - (void)fun3
 {
     CALayer *ll = [[CALayer alloc] init];

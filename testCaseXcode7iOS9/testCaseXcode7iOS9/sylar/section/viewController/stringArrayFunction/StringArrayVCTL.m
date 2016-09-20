@@ -56,7 +56,48 @@
     
 //    [self fun15];
     
-    [self fun16];
+//    [self fun16];
+    
+//    [self fun17];
+    
+    [self fun18];
+    
+}
+
+- (void)fun18
+{
+    NSString *s1 = nil;
+    NSString *s2 = [s1 stringByAppendingString:@"124"];
+    NSLog(@"s2 = %@", s2);
+    
+    s2 = @"abc";
+    NSString *s3 = [s2 stringByAppendingString:s1];  // crash
+    NSLog(@"s3 = %@", s3);
+    s3 = [s3 stringByAppendingString:@"uuu"];
+    NSLog(@"s3 = %@", s3);
+}
+
+- (void)fun17
+{
+    NSString *s1 = @"ab111cd111efg";
+    NSArray *aa = [s1 componentsSeparatedByString:@"11"];
+    NSLog(@"aa = %@", aa);
+    
+    s1 = @"ab1111cd1111efg";
+    aa = [s1 componentsSeparatedByString:@"11"];
+    NSLog(@"aa = %@", aa);
+    
+    s1 = @"ab11111cd11111efg";
+    aa = [s1 componentsSeparatedByString:@"11"];
+    NSLog(@"aa = %@", aa);
+    
+    s1 = @"abc";
+    aa = [s1 componentsSeparatedByString:@""];
+    NSLog(@"aa = %@", aa);
+    
+    s1 = @"abc";
+    NSString *s2 = [s1 stringByReplacingOccurrencesOfString:@"" withString:@"HH"];
+    NSLog(@"s2 = %@", s2);
     
 }
 

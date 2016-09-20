@@ -44,7 +44,7 @@
     layout.minimumInteritemSpacing = 20;
     
     
-    _dragCollectionView = [[Drag2CollectionView alloc] initWithFrame:CGRectMake(10, 10, 320, 400) collectionViewLayout:layout];
+    _dragCollectionView = [[Drag2CollectionView alloc] initWithFrame:CGRectMake(10, 80, 320, 400) collectionViewLayout:layout];
     _dragCollectionView.delegate = self;
     _dragCollectionView.dataSource = self;
     _dragCollectionView.dragDelegate = self;
@@ -55,6 +55,17 @@
     
     [_dragCollectionView registerNib:[UINib nibWithNibName:@"DragCollectionCell" bundle:nil] forCellWithReuseIdentifier:[DragCollectionCell getCellId]];
     
+}
+
+- (IBAction)btn1:(id)sender
+{
+    [_dragCollectionView deleteItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:2 inSection:0]]];   // crash
+}
+
+- (IBAction)btn2:(id)sender
+{
+    [_data removeLastObject];
+    [_dragCollectionView deleteItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:2 inSection:0]]];  // ok
 }
 
 

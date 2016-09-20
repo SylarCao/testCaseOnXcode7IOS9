@@ -24,10 +24,24 @@
     
 //    [self fun2];
     
-    [self fun3];
+//    [self fun3];
     
+//    [self fun5];
     
+    [self fun6];
     
+}
+
+- (void)fun6
+{
+    
+}
+
+- (void)fun5
+{
+    CAShapeLayer * maskLayer = [CAShapeLayer layer];
+    maskLayer.path = [UIBezierPath bezierPathWithRoundedRect: _v1.bounds byRoundingCorners: UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii: (CGSize){15, 15}].CGPath;
+    _v1.layer.mask = maskLayer;
 }
 
 - (void)fun4

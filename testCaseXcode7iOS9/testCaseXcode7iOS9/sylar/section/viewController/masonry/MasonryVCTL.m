@@ -13,7 +13,9 @@
 
 @property (nonatomic, strong) UIView *v1;
 
-@property (nonatomic, strong) MASConstraint *bottomConstraint;
+@property (nonatomic, weak) MASConstraint *bottomConstraint;
+
+@property (nonatomic, weak) MASConstraint *rightConstraint;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,6 +46,8 @@
     //  下边2个都可以
     _bottomConstraint.offset(-90);
     _bottomConstraint.offset = -90;
+    
+    _rightConstraint.offset = -100;
 }
 
 
@@ -65,9 +69,11 @@
         make.left.equalTo(self.view.mas_left).with.offset(20);
         
         // 距离约束
-        make.right.offset = self.view.mas_right.layoutAttribute-40;
-//        make.right.equalTo(self.view.mas_right).with.offset(-40);
+//        make.right.offset = self.view.mas_right.layoutAttribute-40;
         
+        _rightConstraint = make.right;
+        _rightConstraint.offset = self.view.mas_right.layoutAttribute-40;
+
         
         // 用property
         _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);

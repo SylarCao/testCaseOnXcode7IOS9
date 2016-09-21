@@ -23,7 +23,7 @@
     
     
     // data
-    NSArray *ctrls = @[@"CollectionViewVCTL", @"LayerVCTL",
+    NSArray *ctrls = @[@"CollectionViewVCTL", @"LayerVCTL", @"MasonryVCTL",
                        
                 
                @"sort", // 都放到这个后边

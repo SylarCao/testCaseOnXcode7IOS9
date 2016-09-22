@@ -75,9 +75,12 @@
         _rightConstraint.offset = self.view.mas_right.layoutAttribute-40;
 
         
-        // 用property
+        // 用property  bottom
         _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
         _bottomConstraint.with.offset(-50);
+        
+        // center
+//        make.centerY.offset = 1;
         
         
         // 固定 高度

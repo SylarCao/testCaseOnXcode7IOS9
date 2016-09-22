@@ -76,11 +76,11 @@
 
         
         // 用property  bottom
-        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
-        _bottomConstraint.with.offset(-50);
+//        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
+//        _bottomConstraint.with.offset(-50);
         
         // center
-//        make.centerY.offset = 1;
+        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.5);
         
         
         // 固定 高度

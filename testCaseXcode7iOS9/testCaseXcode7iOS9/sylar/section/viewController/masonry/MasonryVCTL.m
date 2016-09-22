@@ -69,18 +69,20 @@
         make.left.equalTo(self.view.mas_left).with.offset(20);
         
         // 距离约束
-//        make.right.offset = self.view.mas_right.layoutAttribute-40;
+//        make.right.offset = self.view.mas_right.layoutAttribute-40;  // not correct
+        make.right.offset = -40;   // correct
+        make.right.equalTo(self.view.mas_right).with.offset(-40);  // correct
         
         _rightConstraint = make.right;
-        _rightConstraint.offset = self.view.mas_right.layoutAttribute-40;
+        _rightConstraint.offset = -40;
 
         
         // 用property  bottom
-//        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
-//        _bottomConstraint.with.offset(-50);
+        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
+        _bottomConstraint.with.offset(-50);
         
         // center
-        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.5);
+//        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.5);
         
         
         // 固定 高度

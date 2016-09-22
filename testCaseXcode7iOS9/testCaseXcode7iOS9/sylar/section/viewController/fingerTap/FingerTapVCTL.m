@@ -37,7 +37,7 @@
 
 - (void)fun1
 {
-    // 重叠的2个view 加tap
+    // 重叠的2个view 加tap  上边的会吃掉下边的view不能穿透
     
     UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(10, kScreenHeight-70, kScreenWidth-20, 60)];
     v1.backgroundColor = [UIColor redColor];
@@ -48,13 +48,11 @@
     [v1 addSubview:v2];
     
     
-    UITapGestureRecognizer *t2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap2)];
-    [v2 addGestureRecognizer:t2];
-    
     UITapGestureRecognizer *t1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap1)];
     [v1 addGestureRecognizer:t1];
     
-    
+    UITapGestureRecognizer *t2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap2)];
+    [v2 addGestureRecognizer:t2];
     
     
 }

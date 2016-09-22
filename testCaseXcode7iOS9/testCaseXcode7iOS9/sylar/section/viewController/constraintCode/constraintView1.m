@@ -28,9 +28,10 @@
         
 //        [self fun1];
 //        [self fun2];
-        [self fun3];
+//        [self fun3];
 //        [self fun4];
 //        [self fun5];
+        [self fun6];
     }
     return self;
 }
@@ -47,6 +48,13 @@
     _v2.translatesAutoresizingMaskIntoConstraints = NO;
     _v2.backgroundColor = [[Helper share] getRandomColor];
     [self addSubview:_v2];
+}
+
+- (void)fun6
+{
+    // 间距相等
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_v1, _v2);
+    
 }
 
 - (void)fun5

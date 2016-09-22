@@ -82,7 +82,11 @@
         
         // 固定 高度
 //        make.height.equalTo(@60);
-        make.height.offset = 60;
+//        make.height.offset = 60;
+        
+        // 比例 高度
+        make.width.equalTo(_v1.mas_height).multipliedBy(9);  // width = height * 9
+//        make.width.multipliedBy = _v1.mas_height.layoutAttribute*10; // 不能这么写
     }];
     
 //    NSLog(@"a1 = %@", a1);   // 有4个约束

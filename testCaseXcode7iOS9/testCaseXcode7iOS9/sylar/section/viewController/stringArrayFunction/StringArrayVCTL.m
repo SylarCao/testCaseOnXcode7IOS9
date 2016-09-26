@@ -56,7 +56,7 @@
     
 //    [self fun14];
     
-    [self fun15];
+//    [self fun15];
     
 //    [self fun16];
     
@@ -66,6 +66,19 @@
     
 //    [self fun19];
     
+    [self fun20];
+    
+}
+
+- (void)fun20
+{
+    // 小数位数
+    CGFloat f1 = 1.234567;
+    NSInteger bit = 4;
+    NSString *s1 = [NSString stringWithFormat:@"%%.%ldf", bit];
+    NSString *s2 = [NSString stringWithFormat:s1, f1];
+    
+    NSLog(@"s1 = %@, s2 = %@", s1, s2);
 }
 
 - (void)fun19

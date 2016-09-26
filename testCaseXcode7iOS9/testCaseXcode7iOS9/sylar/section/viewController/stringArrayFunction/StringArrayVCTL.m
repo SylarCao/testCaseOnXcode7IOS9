@@ -56,7 +56,7 @@
     
 //    [self fun14];
     
-//    [self fun15];
+    [self fun15];
     
 //    [self fun16];
     
@@ -64,7 +64,7 @@
     
 //    [self fun18];
     
-    [self fun19];
+//    [self fun19];
     
 }
 
@@ -150,6 +150,11 @@
 {
     NSString *aa = [NSString stringWithFormat:@"a = %2zd", 4];
     NSLog(@"aa = %@", aa);
+    
+    NSInteger a1 = -5;
+    aa = [NSString stringWithFormat:@"a = %3zd", a1];
+    NSLog(@"aa = %@", aa);
+
 }
 
 - (void)fun14

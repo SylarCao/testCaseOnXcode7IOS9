@@ -99,7 +99,7 @@
     NSLog(@"p1 = %d", p1->type);
     
     int a1 = p1->type;
-    NSLog(@"a1 = %ld", a1);
+    NSLog(@"a1 = %ld", (long)a1);
     
     self->m1 = p1->type;
     

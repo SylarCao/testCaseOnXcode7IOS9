@@ -357,6 +357,12 @@
 		2CA5B12E1D34E3E400A80B8A /* LocationXiangYi.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */; };
 		2CA5B1311D34E6B900A80B8A /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B1301D34E6B900A80B8A /* America.gpx */; };
 		2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */; };
+		2CA660051DACB9AA00B3069B /* SuperNibVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA660031DACB9AA00B3069B /* SuperNibVCTL.m */; };
+		2CA660061DACB9AA00B3069B /* SuperNibVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA660041DACB9AA00B3069B /* SuperNibVCTL.xib */; };
+		2CA660141DACBA9B00B3069B /* SuperNibCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA660121DACBA9B00B3069B /* SuperNibCell1.m */; };
+		2CA660151DACBA9B00B3069B /* SuperNibCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA660131DACBA9B00B3069B /* SuperNibCell1.xib */; };
+		2CA660191DACBABC00B3069B /* SuperNibCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA660171DACBABC00B3069B /* SuperNibCell2.m */; };
+		2CA6601A1DACBABC00B3069B /* SuperNibCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA660181DACBABC00B3069B /* SuperNibCell2.xib */; };
 		2CA8D9ED1D17D5100081A3DD /* StringArrayObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */; };
 		2CAB21641D879867008AD64D /* CollectionView1234Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB21621D879867008AD64D /* CollectionView1234Cell.m */; };
 		2CAB21651D879867008AD64D /* CollectionView1234Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB21631D879867008AD64D /* CollectionView1234Cell.xib */; };
@@ -959,6 +965,15 @@
 		2CA5B12B1D34E3E400A80B8A /* LocationXiangYi.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationXiangYi.gpx; sourceTree = "<group>"; };
 		2CA5B1301D34E6B900A80B8A /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
 		2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pokemon.gpx; sourceTree = "<group>"; };
+		2CA660021DACB9AA00B3069B /* SuperNibVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperNibVCTL.h; sourceTree = "<group>"; };
+		2CA660031DACB9AA00B3069B /* SuperNibVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperNibVCTL.m; sourceTree = "<group>"; };
+		2CA660041DACB9AA00B3069B /* SuperNibVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperNibVCTL.xib; sourceTree = "<group>"; };
+		2CA660111DACBA9B00B3069B /* SuperNibCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperNibCell1.h; sourceTree = "<group>"; };
+		2CA660121DACBA9B00B3069B /* SuperNibCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperNibCell1.m; sourceTree = "<group>"; };
+		2CA660131DACBA9B00B3069B /* SuperNibCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperNibCell1.xib; sourceTree = "<group>"; };
+		2CA660161DACBABC00B3069B /* SuperNibCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperNibCell2.h; sourceTree = "<group>"; };
+		2CA660171DACBABC00B3069B /* SuperNibCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperNibCell2.m; sourceTree = "<group>"; };
+		2CA660181DACBABC00B3069B /* SuperNibCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperNibCell2.xib; sourceTree = "<group>"; };
 		2CA8D9EB1D17D5100081A3DD /* StringArrayObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObj1.h; sourceTree = "<group>"; };
 		2CA8D9EC1D17D5100081A3DD /* StringArrayObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObj1.m; sourceTree = "<group>"; };
 		2CAB21611D879867008AD64D /* CollectionView1234Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView1234Cell.h; sourceTree = "<group>"; };
@@ -1314,6 +1329,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CA660011DACB99B00B3069B /* superNib */,
 				2C6482701D9CDCF80007ACCE /* try */,
 				2CC549B11D923387000F6880 /* masonry */,
 				2C8E07261D88F52900B88821 /* layer */,
@@ -2593,6 +2609,22 @@
 			path = gpx;
 			sourceTree = "<group>";
 		};
+		2CA660011DACB99B00B3069B /* superNib */ = {
+			isa = PBXGroup;
+			children = (
+				2CA660021DACB9AA00B3069B /* SuperNibVCTL.h */,
+				2CA660031DACB9AA00B3069B /* SuperNibVCTL.m */,
+				2CA660041DACB9AA00B3069B /* SuperNibVCTL.xib */,
+				2CA660111DACBA9B00B3069B /* SuperNibCell1.h */,
+				2CA660121DACBA9B00B3069B /* SuperNibCell1.m */,
+				2CA660131DACBA9B00B3069B /* SuperNibCell1.xib */,
+				2CA660161DACBABC00B3069B /* SuperNibCell2.h */,
+				2CA660171DACBABC00B3069B /* SuperNibCell2.m */,
+				2CA660181DACBABC00B3069B /* SuperNibCell2.xib */,
+			);
+			path = superNib;
+			sourceTree = "<group>";
+		};
 		2CACF3731D77CF60006073E3 /* formatCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2826,7 +2858,7 @@
 		2CA1127F1BB29E4A00406685 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = sylar;
 				TargetAttributes = {
 					2CA112861BB29E4A00406685 = {
@@ -2892,6 +2924,7 @@
 				2C729DA01CD0522200284E78 /* StackViewVCTL.xib in Resources */,
 				2CACF37A1D77CFC8006073E3 /* format.txt in Resources */,
 				2C729DAD1CD0522200284E78 /* TableViewVCTL.xib in Resources */,
+				2CA660061DACB9AA00B3069B /* SuperNibVCTL.xib in Resources */,
 				2C729D581CD0522200284E78 /* JsonKitVCTL.xib in Resources */,
 				2C729DCB1CD0522200284E78 /* WebViewVCTL.xib in Resources */,
 				2C729D481CD0522200284E78 /* HorizonScrollTitleView.xib in Resources */,
@@ -2919,6 +2952,7 @@
 				2C729D791CD0522200284E78 /* OthersVCTL.xib in Resources */,
 				2C837C421CDB113F0078737F /* DragCollectionView.xib in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
+				2CA6601A1DACBABC00B3069B /* SuperNibCell2.xib in Resources */,
 				2C729D7B1CD0522200284E78 /* PickerVCTL.xib in Resources */,
 				2C729D501CD0522200284E78 /* IntrinsicCell.xib in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
@@ -2938,6 +2972,7 @@
 				2C7849421D475E1B00E82013 /* icon58.png in Resources */,
 				2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */,
 				2C729DC21CD0522200284E78 /* TouchIDVCTL.xib in Resources */,
+				2CA660151DACBA9B00B3069B /* SuperNibCell1.xib in Resources */,
 				2CA1F8AE1C0BF4C200089E14 /* sgs6.png in Resources */,
 				2CA112C51BB29EAA00406685 /* HomeTableViewCell.xib in Resources */,
 				2C729D421CD0522200284E78 /* HorizonScrollVCTL.xib in Resources */,
@@ -3081,6 +3116,7 @@
 				2C729DA51CD0522200284E78 /* StringArrayHelper.m in Sources */,
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
 				2C8D3A641D864BDB00BA9FD5 /* CollectionView123Cell.m in Sources */,
+				2CA660051DACB9AA00B3069B /* SuperNibVCTL.m in Sources */,
 				2CC549AB1D923373000F6880 /* MASViewAttribute.m in Sources */,
 				2C2EC33D1BE74021008197C3 /* UIWebView+AFNetworking.m in Sources */,
 				2C8E072A1D88F53900B88821 /* LayerVCTL.m in Sources */,
@@ -3208,6 +3244,7 @@
 				2C729DA31CD0522200284E78 /* StatusBarVCTL.m in Sources */,
 				2CC549AE1D923373000F6880 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2C729D701CD0522200284E78 /* NavigationBarVCTL.m in Sources */,
+				2CA660191DACBABC00B3069B /* SuperNibCell2.m in Sources */,
 				2C729D6D1CD0522200284E78 /* MGSwipeCellVCTL.m in Sources */,
 				2C729CFB1CD0522200284E78 /* AnimationRotateVCTL.m in Sources */,
 				2C729D891CD0522200284E78 /* RefreshTableViewCell.m in Sources */,
@@ -3255,6 +3292,7 @@
 				2C729D8F1CD0522200284E78 /* SavePlistVCTL.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,
 				2C729D3B1CD0522200284E78 /* EncoderObject.m in Sources */,
+				2CA660141DACBA9B00B3069B /* SuperNibCell1.m in Sources */,
 				2C837C491CDB11D80078737F /* Drag2CollectionVCTL.m in Sources */,
 				2C2EC3361BE74021008197C3 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2C8D3A691D864C3E00BA9FD5 /* CollectionHeaderView.m in Sources */,
@@ -3300,8 +3338,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -3344,8 +3384,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

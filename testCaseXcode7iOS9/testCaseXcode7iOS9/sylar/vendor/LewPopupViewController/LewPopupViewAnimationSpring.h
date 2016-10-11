@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "UIViewController+LewPopupViewController.h"
 
-@interface LewPopupViewAnimationSpring : NSObject<LewPopupAnimation>
+@interface LewPopupViewAnimationSpring : NSObject<LewPopupAnimation, CAAnimationDelegate>
 
 @end

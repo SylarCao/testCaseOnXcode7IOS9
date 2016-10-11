@@ -17,6 +17,7 @@
 @implementation TableViewXIBCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     CGSize size = self.contentView.frame.size;
     NSLog(@"xib.size = %f, %f", size.width, size.height);
 

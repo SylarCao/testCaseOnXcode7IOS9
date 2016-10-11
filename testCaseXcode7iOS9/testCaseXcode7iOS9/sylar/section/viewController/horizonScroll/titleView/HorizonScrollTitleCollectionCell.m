@@ -17,9 +17,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation HorizonScrollTitleCollectionCell
 
-- (void)awakeFromNib {
-}
-
 - (void)setWithContent:(NSString *)content
 {
     _content.text = content;

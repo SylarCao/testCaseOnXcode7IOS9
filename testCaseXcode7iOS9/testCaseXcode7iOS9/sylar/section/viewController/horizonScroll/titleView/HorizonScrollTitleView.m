@@ -31,6 +31,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     _count = 0;
     _size = CGSizeMake(200, 40);
     self.backgroundColor = [UIColor clearColor];

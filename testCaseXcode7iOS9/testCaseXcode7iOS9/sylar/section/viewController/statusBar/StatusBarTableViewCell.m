@@ -12,7 +12,7 @@
 @implementation StatusBarTableViewCell
 
 - (void)awakeFromNib {
-    
+    [super awakeFromNib];
     UIColor *rand_color = [[Helper share] getRandomColor];
     
     self.contentView.backgroundColor = rand_color;

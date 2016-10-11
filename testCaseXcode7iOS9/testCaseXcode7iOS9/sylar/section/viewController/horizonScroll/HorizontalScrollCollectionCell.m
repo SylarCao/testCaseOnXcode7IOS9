@@ -18,8 +18,7 @@
 @implementation HorizontalScrollCollectionCell
 
 - (void)awakeFromNib {
-    // Initialization code
-    
+    [super awakeFromNib];
     self.contentView.backgroundColor = [[Helper share] getRandomColor];
 }
 

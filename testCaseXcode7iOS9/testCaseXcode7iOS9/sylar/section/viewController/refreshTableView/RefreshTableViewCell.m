@@ -16,9 +16,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation RefreshTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
+//- (void)awakeFromNib {
+//    // Initialization code
+//}
 
 - (void) setWithContent:(NSInteger)row
 {

@@ -18,6 +18,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     UILongPressGestureRecognizer *long_tap = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longTap:)];
     [self addGestureRecognizer:long_tap];
 }

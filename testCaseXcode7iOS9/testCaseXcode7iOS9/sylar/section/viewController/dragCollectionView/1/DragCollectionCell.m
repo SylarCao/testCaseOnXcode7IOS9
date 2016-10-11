@@ -17,7 +17,7 @@
 @implementation DragCollectionCell
 
 - (void)awakeFromNib {
-    
+    [super awakeFromNib];
     self.contentView.backgroundColor = [UIColor grayColor];
 }
 

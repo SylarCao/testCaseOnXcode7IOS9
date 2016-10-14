@@ -10,9 +10,9 @@
 
 @implementation DrawView2
 
-- (void)drawRect:(CGRect)rect
-{
-    NSLog(@"DrawView2");
-}
+//- (void)drawRect:(CGRect)rect
+//{
+//    NSLog(@"DrawView2");
+//}
 
 @end

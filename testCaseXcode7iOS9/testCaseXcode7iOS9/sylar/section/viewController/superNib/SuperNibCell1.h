@@ -10,7 +10,6 @@
 
 @interface SuperNibCell1 : UITableViewCell
 
-
 - (void)sayHello;
 
 @end

@@ -11,6 +11,7 @@
 		2C23A0861C0D457F008B4712 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0811C0D457F008B4712 /* libWeChatSDK.a */; };
 		2C23A0871C0D457F008B4712 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C23A0821C0D457F008B4712 /* read_me.txt */; };
 		2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */; };
+		2C28B6AE1DB0A6A7004B2B88 /* DrawBazView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C28B6AD1DB0A6A7004B2B88 /* DrawBazView.m */; };
 		2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */; };
 		2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */; };
 		2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A686D1BFDAAED00C4FA73 /* JSPatch.js */; };
@@ -419,6 +420,8 @@
 		2C23A0841C0D457F008B4712 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		2C23A0851C0D457F008B4712 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2C28B6AC1DB0A6A7004B2B88 /* DrawBazView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBazView.h; sourceTree = "<group>"; };
+		2C28B6AD1DB0A6A7004B2B88 /* DrawBazView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBazView.m; sourceTree = "<group>"; };
 		2C2A16521BCF54AF00D065CD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2C2A686B1BFDAAED00C4FA73 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
@@ -1704,6 +1707,8 @@
 				2C729BD41CD0522200284E78 /* DrawView2.m */,
 				2C8309721D7E6CBC0036FFCF /* DrawView3.h */,
 				2C8309731D7E6CBC0036FFCF /* DrawView3.m */,
+				2C28B6AC1DB0A6A7004B2B88 /* DrawBazView.h */,
+				2C28B6AD1DB0A6A7004B2B88 /* DrawBazView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -3172,6 +3177,7 @@
 				2C729DBC1CD0522200284E78 /* TimerVCTL.m in Sources */,
 				2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */,
 				2C729D041CD0522200284E78 /* CameraVCTL.m in Sources */,
+				2C28B6AE1DB0A6A7004B2B88 /* DrawBazView.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
 				2C2EC3371BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2C729D1E1CD0522200284E78 /* CPlus.cpp in Sources */,

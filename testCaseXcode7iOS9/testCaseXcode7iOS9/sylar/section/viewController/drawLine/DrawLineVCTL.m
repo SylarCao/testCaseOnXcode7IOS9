@@ -11,6 +11,7 @@
 #import "DrawView1.h"
 #import "DrawView2.h"
 #import "DrawView3.h"
+#import "DrawBazView.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface DrawLineVCTL ()
 
@@ -32,6 +33,8 @@
 //    [self addDrawView2];
     
     [self fun1];
+    
+//    [self fun2];
 }
 
 - (IBAction)btn1:(id)sender
@@ -47,20 +50,25 @@
 //    [self test1];
 }
 
+- (void)fun2
+{
+    DrawBazView *b1 = [[DrawBazView alloc] initWithFrame:CGRectMake(30, 100, 200, 400)];
+    b1.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:b1];
+}
+
 - (void)fun1
 {
     DrawView3 *v3 = [[DrawView3 alloc] initWithFrame:CGRectMake(30, 100, 200, 400)];
     v3.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:v3];
-    
-    
 }
 
 - (void)addDrawView2
 {
     _view2 = [[DrawView2 alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
     _view2.backgroundColor = [UIColor redColor];
-    [_view1 addSubview:_view2];
+    [self.view addSubview:_view2];
 }
 
 - (void)test1

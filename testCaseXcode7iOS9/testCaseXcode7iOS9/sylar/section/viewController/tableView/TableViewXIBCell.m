@@ -23,6 +23,7 @@
 
 }
 
+
 - (void)setWithIndex:(NSInteger)index
 {
     _content.text = [NSString stringWithFormat:@"xib = %ld", index];

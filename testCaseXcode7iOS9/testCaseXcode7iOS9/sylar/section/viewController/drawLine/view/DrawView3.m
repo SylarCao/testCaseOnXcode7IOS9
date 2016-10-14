@@ -90,6 +90,31 @@
     CGContextSetFillColor(context, CGColorGetComponents(aColor.CGColor));
     CGContextFillRect(context, rr);
     
+    // UIBezierPath 不规则图形
+//    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
+//    CGContextSetFillColor(context, CGColorGetComponents(aColor2.CGColor));
+//    UIBezierPath *aPath = [UIBezierPath bezierPath];
+//    [aPath moveToPoint:CGPointMake(100.0, 0.0)];
+//    [aPath addLineToPoint:CGPointMake(200.0, 40.0)];
+//    [aPath addLineToPoint:CGPointMake(160, 140)];
+//    [aPath addLineToPoint:CGPointMake(40.0, 140)];
+//    [aPath addLineToPoint:CGPointMake(0.0, 40.0)];
+//    [aPath closePath];
+//    [aPath stroke];
+//    [aPath fill];
+    
+    // UIBezierPath  和上边的一样
+//    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
+//    CGContextSetFillColor(context, CGColorGetComponents(aColor2.CGColor));
+//    CGContextBeginPath(context);
+//    CGContextMoveToPoint(context, 0, 0);
+//    CGContextAddLineToPoint(context, 50, 50);
+//    CGContextAddLineToPoint(context, 50, 100);
+//    CGContextAddLineToPoint(context, 0, 80);
+//    CGContextClosePath(context);
+//    CGContextDrawPath(context, kCGPathFillStroke);  // 这句话必须加
+//    CGContextFillPath(context);
+//    CGContextStrokePath(context);
 
 }
 

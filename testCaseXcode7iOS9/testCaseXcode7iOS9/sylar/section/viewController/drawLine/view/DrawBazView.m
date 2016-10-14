@@ -27,9 +27,13 @@
     UIColor *c5 = [UIColor colorWithRed:0.5 green:0.3 blue:0.1 alpha:0.3];
     UIBezierPath *aPath = [UIBezierPath bezierPath];
     
-    // data
+
     CGFloat height = self.frame.size.height;
     CGFloat width = self.frame.size.width;
+    
+    CGContextSetStrokeColor(context, CGColorGetComponents(c1.CGColor));
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, 10, height/2);
     
     NSInteger count = 20;
     CGPoint points[count];
@@ -38,47 +42,21 @@
     {
         NSInteger ran = arc4random()%20;
         CGFloat y = height/2+ran;
-        CGPoint pp = CGPointMake(10+width/30*i, y);
-        points[i] = pp;
+        CGContextAddLineToPoint(context, 10+width/30*(i+1), y);
     }
     
-    CGContextSetStrokeColor(context, CGColorGetComponents(c1.CGColor));
-    CGContextSetFillColor(context, CGColorGetComponents(c5.CGColor));
-    CGContextAddLines(context, points, count);
+    CGPathRef path = CGContextCopyPath(context);   // path 可以保存
     CGContextStrokePath(context);
     
-//    CGContextSetStrokeColor(context, CGColorGetComponents(c2.CGColor));
-    
-    CGContextDrawPath(context, kCGPathFillStroke);
-    
-    CGContextBeginPath(context);
-    CGContextMoveToPoint(context, 0, 0);
-    CGContextAddLineToPoint(context, 10+width/30*count, height);
+    CGContextAddPath(context, path);
+    CGContextAddLineToPoint(context, 10+width/30*(count), height);
     CGContextAddLineToPoint(context, 10, height);
-    CGContextAddLineToPoint(context, 10, height/2);
-//    CGContextClosePath(context);
+    CGContextClosePath(context);
     
-//    CGContextDrawPath(context, kCGPathFillStroke);
+    CGContextSetFillColor(context, CGColorGetComponents(c5.CGColor));
     CGContextFillPath(context);
-//    CGContextStrokePath(context);
     
-    
-    
-//    // Set the starting point of the shape.
-//    [aPath moveToPoint:CGPointMake(100.0, 0.0)];
-//    
-//    // Draw the lines.
-//    [aPath addLineToPoint:CGPointMake(200.0, 40.0)];
-////    [aPath stroke];
-//    CGContextSetStrokeColor(context, CGColorGetComponents(c2.CGColor));
-//    [aPath addLineToPoint:CGPointMake(160, 140)];
-//    [aPath addLineToPoint:CGPointMake(40.0, 140)];
-//    [aPath addLineToPoint:CGPointMake(0.0, 40.0)];
-//    [aPath closePath];
-//    
-////    [aPath stroke];
-//    CGContextDrawPath(context, kCGPathStroke);
-    
+ 
 }
 
 @end

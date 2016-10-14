@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     // data
     NSArray *ctrls = @[@"CollectionViewVCTL", @"LayerVCTL", @"MasonryVCTL", @"TRYVCTL", @"SuperNibVCTL",
                        

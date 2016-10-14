@@ -32,9 +32,9 @@
     
 //    [self addDrawView2];
     
-    [self fun1];
+//    [self fun1];
     
-//    [self fun2];
+    [self fun2];
 }
 
 - (IBAction)btn1:(id)sender

@@ -24,9 +24,11 @@
     
     _imgView.layer.borderColor = [UIColor whiteColor].CGColor;
     _imgView.layer.borderWidth = 0.5;
+    _imgView.contentMode = UIViewContentModeScaleAspectFit;
     
     _imv1.layer.borderColor = [UIColor redColor].CGColor;
     _imv1.layer.borderWidth = 0.5;
+    _imv1.contentMode = UIViewContentModeScaleAspectFit;
     
     
     [self fun2];
@@ -46,6 +48,44 @@
 
 - (void)fun2
 {
+    UIImage *aImage = [UIImage imageNamed:@"sgs7"];
+    
+    _imv1.image = aImage;
+    // 图片的旋转
+    
+//    _imgView.image = aImage;
+    
+    
+    CGImageRef imgRef = aImage.CGImage;
+    CGFloat width = CGImageGetWidth(imgRef);
+    CGFloat height = CGImageGetHeight(imgRef);
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    CGRect bounds = CGRectMake(0, 0, width, height);
+    CGFloat scaleRatio = 1;
+    CGFloat boundHeight;
+    UIImageOrientation orient = aImage.imageOrientation;
+    
+    boundHeight = bounds.size.height;
+    bounds.size.height = bounds.size.width;
+    bounds.size.width = boundHeight;
+    transform = CGAffineTransformMakeTranslation(0.0, width);
+    transform = CGAffineTransformRotate(transform, 3.0 * M_PI / 2.0);
+    UIGraphicsBeginImageContext(bounds.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    if (orient == UIImageOrientationRight || orient == UIImageOrientationLeft) {
+        CGContextScaleCTM(context, -scaleRatio, scaleRatio);
+        CGContextTranslateCTM(context, -height, 0);
+    }
+    else {
+        CGContextScaleCTM(context, scaleRatio, -scaleRatio);
+        CGContextTranslateCTM(context, 0, -height);
+    }
+    CGContextConcatCTM(context, transform);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, width, height), imgRef);
+    UIImage *imageCopy = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    _imgView.image = imageCopy;
     
 }
 

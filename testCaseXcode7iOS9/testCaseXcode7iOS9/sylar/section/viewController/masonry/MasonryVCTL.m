@@ -73,13 +73,13 @@
         make.right.offset = -40;   // correct
         make.right.equalTo(self.view.mas_right).with.offset(-40);  // correct
         
-        _rightConstraint = make.right;
-        _rightConstraint.offset = -40;
+//        _rightConstraint = make.right;
+//        _rightConstraint.offset = -40;
 
         
-        // 用property  bottom
-        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
-        _bottomConstraint.with.offset(-50);
+//        // 用property  bottom
+//        _bottomConstraint = make.bottom.equalTo(self.view.mas_bottom);
+//        _bottomConstraint.with.offset(-50);
         
         // center
 //        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.5);
@@ -90,7 +90,7 @@
 //        make.height.offset = 60;
         
         // 比例 高度
-        make.width.equalTo(_v1.mas_height).multipliedBy(9);  // width = height * 9
+//        make.width.equalTo(_v1.mas_height).multipliedBy(9);  // width = height * 9
 //        make.width.multipliedBy = _v1.mas_height.layoutAttribute*10; // 不能这么写
     }];
     

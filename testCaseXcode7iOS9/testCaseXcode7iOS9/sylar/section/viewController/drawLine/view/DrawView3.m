@@ -115,6 +115,18 @@
 //    CGContextDrawPath(context, kCGPathFillStroke);  // 这句话必须加
 //    CGContextFillPath(context);
 //    CGContextStrokePath(context);
+    
+    // text
+    NSString *s1 = @"abcdefg";
+    [s1 drawAtPoint:CGPointMake(10, 60) withAttributes:@{NSForegroundColorAttributeName: [UIColor redColor]}];
+    
+    [s1 drawInRect:CGRectMake(60, 60, 40, 20) withAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSBackgroundColorAttributeName: [UIColor yellowColor]}];
+    
+//    [s1 drawWithRect:<#(CGRect)#> options:<#(NSStringDrawingOptions)#> attributes:<#(nullable NSDictionary<NSString *,id> *)#> context:<#(nullable NSStringDrawingContext *)#>]
+    
+    
+    
+    
 
 }
 

@@ -90,7 +90,7 @@
     CGContextSetFillColor(context, CGColorGetComponents(aColor.CGColor));
     CGContextFillRect(context, rr);
     
-    // UIBezierPath 不规则图形
+    // UIBezierPath 不规则图形  // 见 DrawBazView
 //    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
 //    CGContextSetFillColor(context, CGColorGetComponents(aColor2.CGColor));
 //    UIBezierPath *aPath = [UIBezierPath bezierPath];
@@ -103,7 +103,7 @@
 //    [aPath stroke];
 //    [aPath fill];
     
-    // UIBezierPath  和上边的一样
+    // UIBezierPath  和上边的一样   // 见 DrawBazView
 //    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
 //    CGContextSetFillColor(context, CGColorGetComponents(aColor2.CGColor));
 //    CGContextBeginPath(context);
@@ -124,10 +124,21 @@
     
 //    [s1 drawWithRect:<#(CGRect)#> options:<#(NSStringDrawingOptions)#> attributes:<#(nullable NSDictionary<NSString *,id> *)#> context:<#(nullable NSStringDrawingContext *)#>]
     
+    // 虚线
+    points2[0] = CGPointMake(2, 88);
+    points2[1] = CGPointMake(100, 88);
+    CGContextAddLines(context, points2, 2);
+    CGFloat dashLength[] = {4,1};
+    CGContextSetLineDash(context, 0, dashLength , 2);
+    CGContextStrokePath(context);
     
+    // 取消虚线
+    points2[0] = CGPointMake(2, 92);
+    points2[1] = CGPointMake(100, 92);
+    CGContextAddLines(context, points2, 2);
+    CGContextSetLineDash(context, 0, nil, 0);
+    CGContextStrokePath(context);
     
-    
-
 }
 
 

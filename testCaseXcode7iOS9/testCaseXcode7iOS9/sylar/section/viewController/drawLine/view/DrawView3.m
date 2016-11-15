@@ -139,6 +139,15 @@
     CGContextSetLineDash(context, 0, nil, 0);
     CGContextStrokePath(context);
     
+    // 画圆圈
+    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(100, 120) radius:10 startAngle:0 endAngle:M_PI clockwise:YES];
+    CGContextAddPath(context, path.CGPath);
+    CGContextStrokePath(context);
+    
+    
+    
+    
 }
 
 

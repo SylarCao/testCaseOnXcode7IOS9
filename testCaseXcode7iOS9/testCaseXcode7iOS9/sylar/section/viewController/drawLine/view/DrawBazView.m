@@ -13,11 +13,11 @@
 - (void)drawRect:(CGRect)rect
 {
     
-//    [self fun1];
+    [self fun1];
     
 //    [self fun2];
     
-    [self fun3];
+//    [self fun3];
     
 }
 

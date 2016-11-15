@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewCellVCTL">
+            <connections>
+                <outlet property="mainView" destination="QMh-Ni-xFm" id="m00-fq-Tdf"/>
+                <outlet property="ppp" destination="hw9-MY-FPd" id="vbJ-aD-eFQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMh-Ni-xFm">
+                    <color key="backgroundColor" red="0.99682734389379235" green="0.15149006028925291" blue="0.013257341128988158" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="JLe-41-uS3"/>
+                        <constraint firstAttribute="height" constant="200" id="NIf-IR-dE9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojE-ff-MXl">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="FFy-pA-4u8"/>
+                        <constraint firstAttribute="height" constant="30" id="FIU-8c-ss7"/>
+                    </constraints>
+                    <state key="normal" title="b1"/>
+                    <connections>
+                        <action selector="btn1:" destination="-1" eventType="touchUpInside" id="nqu-g8-1wO"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="hw9-MY-FPd"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hw9-MY-FPd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BIT-Bf-DLP"/>
+                <constraint firstItem="ojE-ff-MXl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="WHq-CX-Ag2"/>
+                <constraint firstItem="hw9-MY-FPd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lgs-zJ-6RD"/>
+                <constraint firstItem="QMh-Ni-xFm" firstAttribute="top" secondItem="ojE-ff-MXl" secondAttribute="bottom" constant="52" id="nMG-SG-2uk"/>
+                <constraint firstItem="QMh-Ni-xFm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rVX-AO-U6T"/>
+                <constraint firstItem="QMh-Ni-xFm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ywt-1v-zYs"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

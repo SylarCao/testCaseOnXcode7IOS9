@@ -22,10 +22,12 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"CollectionViewVCTL", @"LayerVCTL", @"MasonryVCTL", @"TRYVCTL", @"SuperNibVCTL",
+    NSArray *ctrls = @[@"SubViewIndexVCTL",
+                       
                        
                 
                @"sort", // 都放到这个后边
+               @"CollectionViewVCTL", @"LayerVCTL", @"MasonryVCTL", @"TRYVCTL", @"SuperNibVCTL", @"TableViewCellVCTL",
                @"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL", @"FormatCodeVCTL", @"WindowVCTL",
                @"CategoryVCTL", @"AFNetworkingVCTL", @"SaveDataVCTL", @"PreFixVCTL", @"CFileVCTL", @"PlayVideoVCTL",
                @"WebViewVCTL", @"KVOVCTL", @"AnimationVCTL", @"CPlusVCTL", @"PickerVCTL", @"CameraVCTL", @"DownloadVCTL",

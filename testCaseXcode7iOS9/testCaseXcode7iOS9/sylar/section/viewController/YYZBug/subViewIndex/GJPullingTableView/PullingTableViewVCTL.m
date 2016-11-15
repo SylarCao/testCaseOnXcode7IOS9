@@ -46,7 +46,7 @@
     
     // constraints
     [_table mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset = 0;
+        make.top.offset = 100;
         make.bottom.offset = 0;
         make.left.offset = 0;
         make.right.offset = 0;
@@ -94,6 +94,14 @@
     NormalCell *rt = [tableView dequeueReusableCellWithIdentifier:[NormalCell getCellId] forIndexPath:indexPath];
     rt.content.text = [NSString stringWithFormat:@"index = %ld", indexPath.row];
     return rt;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"sylar :  selected = %d,%d", indexPath.section, indexPath.row);
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [tableView bringSubviewToFront:cell];
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -17,8 +17,34 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+NSLog(@"sylar :  setSelected = %d (animation = %d)",selected, animated);
     // Configure the view for the selected state
 }
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+    [super setHighlighted:highlighted animated:animated];
+    NSLog(@"sylar :  setHighlighted = %d (animation = %d)",highlighted, animated);
+}
+//
+//- (void)setNeedsLayout
+//{
+//    [super setNeedsLayout];
+//    
+//    NSLog(@"sylar :  setNeedsLayout");
+//}
+//
+//- (void)setNeedsDisplay
+//{
+//    [super setNeedsDisplay];
+//    NSLog(@"sylar :  setNeedsDisplay");
+//}
+//
+//- (void)layoutSubviews
+//{
+//    [super layoutSubviews];
+//    NSLog(@"sylar :  layoutSubviews");
+//}
+
 
 @end

@@ -46,15 +46,32 @@
 {
     NormalCell *rt = [tableView dequeueReusableCellWithIdentifier:[NormalCell getCellId] forIndexPath:indexPath];
     rt.content.text = [NSString stringWithFormat:@"index = %ld", indexPath.row];
+    rt.content.backgroundColor = [[Helper share] getRandomColor];
     return rt;
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    NSLog(@"sylar :  shouldHighlightRowAtIndexPath = %ld,%ld", indexPath.section, indexPath.row);
+
+    
+    // 下边2行代码 可以 bringSubviewToFront  (ios10 && ios9 测试通过)
+    [cell setHighlighted:YES animated:NO];
+    [cell setHighlighted:NO animated:NO];
+    
+    //  下边的代码无法执行， 在didSelectRowAtIndexPath里，自动会把cell的z-order提高
+    [_table bringSubviewToFront:cell];
+    
+    return NO;
+}
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    NSLog(@"sylar :  didSelectRowAtIndexPath = %ld,%ld", indexPath.section, indexPath.row);
     
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    [tableView bringSubviewToFront:cell];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 

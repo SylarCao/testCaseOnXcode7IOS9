@@ -7,13 +7,12 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "SubViewIndexVCTL.h"
-#import "IndexCell.h"
+#import "NormalTableViewVCTL.h"
+#import "PullingTableViewVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface SubViewIndexVCTL ()
-<UITableViewDelegate, UITableViewDataSource>
 
 
-@property (nonatomic, weak) IBOutlet UITableView *table;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,41 +20,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
-    [self setInitialValue];
-}
-
-- (void)setInitialValue
-{
-    [_table registerNib:[UINib nibWithNibName:[IndexCell getCellId] bundle:nil] forCellReuseIdentifier:[IndexCell getCellId]];
 }
 
 
-#pragma mark - UITableViewDelegate
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (IBAction)btnNormal:(id)sender
 {
-    return 10;
+    [self toNormal];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (IBAction)btnPulling:(id)sender
 {
-    return 60;
+    [self toRefresh];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)toNormal
 {
-    IndexCell *rt = [tableView dequeueReusableCellWithIdentifier:[IndexCell getCellId] forIndexPath:indexPath];
-    rt.content.text = [NSString stringWithFormat:@"index = %ld", indexPath.row];
-    return rt;
+    NormalTableViewVCTL *nn = [[NormalTableViewVCTL alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:nn animated:YES];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)toRefresh
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    [tableView bringSubviewToFront:cell];
+    PullingTableViewVCTL *pp = [[PullingTableViewVCTL alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:pp animated:YES];
 }
 
 

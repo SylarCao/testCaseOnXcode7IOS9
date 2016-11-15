@@ -397,8 +397,14 @@
 		2CCB28B61BCB4F58005E9B85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */; };
 		2CCB7AD51DDAB8FC0004423E /* SubViewIndexVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7AD31DDAB8FC0004423E /* SubViewIndexVCTL.m */; };
 		2CCB7AD61DDAB8FC0004423E /* SubViewIndexVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB7AD41DDAB8FC0004423E /* SubViewIndexVCTL.xib */; };
-		2CCB7ADA1DDAD0310004423E /* IndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7AD81DDAD0310004423E /* IndexCell.m */; };
-		2CCB7ADB1DDAD0310004423E /* IndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB7AD91DDAD0310004423E /* IndexCell.xib */; };
+		2CCB7B0D1DDADDF60004423E /* GJBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B081DDADDF60004423E /* GJBaseView.m */; };
+		2CCB7B0E1DDADDF60004423E /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B0A1DDADDF60004423E /* LoadingView.m */; };
+		2CCB7B0F1DDADDF60004423E /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B0C1DDADDF60004423E /* PullingRefreshTableView.m */; };
+		2CCB7B141DDADF150004423E /* NormalTableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B121DDADF150004423E /* NormalTableViewVCTL.m */; };
+		2CCB7B151DDADF150004423E /* NormalTableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB7B131DDADF150004423E /* NormalTableViewVCTL.xib */; };
+		2CCB7B191DDADF270004423E /* NormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B171DDADF270004423E /* NormalCell.m */; };
+		2CCB7B1A1DDADF270004423E /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB7B181DDADF270004423E /* NormalCell.xib */; };
+		2CCB7B1D1DDAE0D10004423E /* PullingTableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB7B1C1DDAE0D10004423E /* PullingTableViewVCTL.m */; };
 		2CCF29E81DCB166E00AF7FC1 /* TableViewCellVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF29E61DCB166E00AF7FC1 /* TableViewCellVCTL.m */; };
 		2CCF29E91DCB166E00AF7FC1 /* TableViewCellVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF29E71DCB166E00AF7FC1 /* TableViewCellVCTL.xib */; };
 		2CCF29ED1DCB170600AF7FC1 /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF29EB1DCB170600AF7FC1 /* TableViewCell1.m */; };
@@ -1047,9 +1053,20 @@
 		2CCB7AD21DDAB8FC0004423E /* SubViewIndexVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewIndexVCTL.h; sourceTree = "<group>"; };
 		2CCB7AD31DDAB8FC0004423E /* SubViewIndexVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewIndexVCTL.m; sourceTree = "<group>"; };
 		2CCB7AD41DDAB8FC0004423E /* SubViewIndexVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubViewIndexVCTL.xib; sourceTree = "<group>"; };
-		2CCB7AD71DDAD0310004423E /* IndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCell.h; sourceTree = "<group>"; };
-		2CCB7AD81DDAD0310004423E /* IndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCell.m; sourceTree = "<group>"; };
-		2CCB7AD91DDAD0310004423E /* IndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexCell.xib; sourceTree = "<group>"; };
+		2CCB7B071DDADDF60004423E /* GJBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJBaseView.h; sourceTree = "<group>"; };
+		2CCB7B081DDADDF60004423E /* GJBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJBaseView.m; sourceTree = "<group>"; };
+		2CCB7B091DDADDF60004423E /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		2CCB7B0A1DDADDF60004423E /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		2CCB7B0B1DDADDF60004423E /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
+		2CCB7B0C1DDADDF60004423E /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
+		2CCB7B111DDADF150004423E /* NormalTableViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewVCTL.h; sourceTree = "<group>"; };
+		2CCB7B121DDADF150004423E /* NormalTableViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewVCTL.m; sourceTree = "<group>"; };
+		2CCB7B131DDADF150004423E /* NormalTableViewVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalTableViewVCTL.xib; sourceTree = "<group>"; };
+		2CCB7B161DDADF270004423E /* NormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalCell.h; sourceTree = "<group>"; };
+		2CCB7B171DDADF270004423E /* NormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalCell.m; sourceTree = "<group>"; };
+		2CCB7B181DDADF270004423E /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		2CCB7B1B1DDAE0D10004423E /* PullingTableViewVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingTableViewVCTL.h; sourceTree = "<group>"; };
+		2CCB7B1C1DDAE0D10004423E /* PullingTableViewVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingTableViewVCTL.m; sourceTree = "<group>"; };
 		2CCF29E51DCB166E00AF7FC1 /* TableViewCellVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellVCTL.h; sourceTree = "<group>"; };
 		2CCF29E61DCB166E00AF7FC1 /* TableViewCellVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellVCTL.m; sourceTree = "<group>"; };
 		2CCF29E71DCB166E00AF7FC1 /* TableViewCellVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellVCTL.xib; sourceTree = "<group>"; };
@@ -2764,14 +2781,41 @@
 		2CCB7AD11DDAB8E60004423E /* subViewIndex */ = {
 			isa = PBXGroup;
 			children = (
+				2CCB7B101DDADEFB0004423E /* NormalTableView */,
+				2CCB7B061DDADDD00004423E /* GJPullingTableView */,
 				2CCB7AD21DDAB8FC0004423E /* SubViewIndexVCTL.h */,
 				2CCB7AD31DDAB8FC0004423E /* SubViewIndexVCTL.m */,
 				2CCB7AD41DDAB8FC0004423E /* SubViewIndexVCTL.xib */,
-				2CCB7AD71DDAD0310004423E /* IndexCell.h */,
-				2CCB7AD81DDAD0310004423E /* IndexCell.m */,
-				2CCB7AD91DDAD0310004423E /* IndexCell.xib */,
 			);
 			path = subViewIndex;
+			sourceTree = "<group>";
+		};
+		2CCB7B061DDADDD00004423E /* GJPullingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB7B071DDADDF60004423E /* GJBaseView.h */,
+				2CCB7B081DDADDF60004423E /* GJBaseView.m */,
+				2CCB7B091DDADDF60004423E /* LoadingView.h */,
+				2CCB7B0A1DDADDF60004423E /* LoadingView.m */,
+				2CCB7B0B1DDADDF60004423E /* PullingRefreshTableView.h */,
+				2CCB7B0C1DDADDF60004423E /* PullingRefreshTableView.m */,
+				2CCB7B1B1DDAE0D10004423E /* PullingTableViewVCTL.h */,
+				2CCB7B1C1DDAE0D10004423E /* PullingTableViewVCTL.m */,
+			);
+			path = GJPullingTableView;
+			sourceTree = "<group>";
+		};
+		2CCB7B101DDADEFB0004423E /* NormalTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB7B111DDADF150004423E /* NormalTableViewVCTL.h */,
+				2CCB7B121DDADF150004423E /* NormalTableViewVCTL.m */,
+				2CCB7B131DDADF150004423E /* NormalTableViewVCTL.xib */,
+				2CCB7B161DDADF270004423E /* NormalCell.h */,
+				2CCB7B171DDADF270004423E /* NormalCell.m */,
+				2CCB7B181DDADF270004423E /* NormalCell.xib */,
+			);
+			path = NormalTableView;
 			sourceTree = "<group>";
 		};
 		2CCF29DF1DCB160500AF7FC1 /* tableViewCell */ = {
@@ -3005,6 +3049,7 @@
 				2C729D901CD0522200284E78 /* SavePlistVCTL.xib in Resources */,
 				2C729DC61CD0522200284E78 /* Life1VCTL.xib in Resources */,
 				2C8D3A601D864B4000BA9FD5 /* CollectionViewVCTL.xib in Resources */,
+				2CCB7B151DDADF150004423E /* NormalTableViewVCTL.xib in Resources */,
 				2C729CF21CD0522200284E78 /* Touch3d1DetailVCTL.xib in Resources */,
 				2C729D461CD0522200284E78 /* HorizonScrollTitleCollectionCell.xib in Resources */,
 				2CCF29EE1DCB170600AF7FC1 /* TableViewCell1.xib in Resources */,
@@ -3029,7 +3074,6 @@
 				2C729D7B1CD0522200284E78 /* PickerVCTL.xib in Resources */,
 				2C729D501CD0522200284E78 /* IntrinsicCell.xib in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
-				2CCB7ADB1DDAD0310004423E /* IndexCell.xib in Resources */,
 				2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */,
 				2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */,
 				2C6482751D9CDD070007ACCE /* TRYVCTL.xib in Resources */,
@@ -3071,6 +3115,7 @@
 				2C7849451D475E1B00E82013 /* icon120.png in Resources */,
 				2C729D561CD0522200284E78 /* JailBreakVCTL.xib in Resources */,
 				2C8E072B1D88F53900B88821 /* LayerVCTL.xib in Resources */,
+				2CCB7B1A1DDADF270004423E /* NormalCell.xib in Resources */,
 				2CA1F8A71C0BF3D700089E14 /* sgs2.jpg in Resources */,
 				2CA5B13C1D34EBDE00A80B8A /* Pokemon.gpx in Resources */,
 				2C729D881CD0522200284E78 /* RefreshTableVCTL.xib in Resources */,
@@ -3159,7 +3204,6 @@
 				2C9AF9251D59D2B600A59F27 /* StructVCTL.m in Sources */,
 				2C729D781CD0522200284E78 /* OthersVCTL.m in Sources */,
 				2C729D231CD0522200284E78 /* Dealloc1VCTL.m in Sources */,
-				2CCB7ADA1DDAD0310004423E /* IndexCell.m in Sources */,
 				2C729D001CD0522200284E78 /* BlurBkgVCTL.m in Sources */,
 				2C729D3A1CD0522200284E78 /* DrawView2.m in Sources */,
 				2CA551EF1D810748006769A7 /* WindowVCTL.m in Sources */,
@@ -3182,6 +3226,7 @@
 				2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */,
 				2C729D4C1CD0522200284E78 /* HorizontalView2.m in Sources */,
 				2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */,
+				2CCB7B141DDADF150004423E /* NormalTableViewVCTL.m in Sources */,
 				2C2EC3301BE74021008197C3 /* AFNetworkReachabilityManager.m in Sources */,
 				2C729D021CD0522200284E78 /* BuglyVCTL.m in Sources */,
 				2C729D181CD0522200284E78 /* ConstraintCodeVCTL.m in Sources */,
@@ -3291,6 +3336,7 @@
 				2C729D381CD0522200284E78 /* Gdip.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C729D831CD0522200284E78 /* ReadPDFDefaultVCTL.m in Sources */,
+				2CCB7B0F1DDADDF60004423E /* PullingRefreshTableView.m in Sources */,
 				2C729D951CD0522200284E78 /* ShakeTextFieldVCTL.m in Sources */,
 				2C729D571CD0522200284E78 /* JsonKitVCTL.m in Sources */,
 				2C729D2D1CD0522200284E78 /* DPHelper.m in Sources */,
@@ -3340,7 +3386,9 @@
 				2C2EC3331BE74021008197C3 /* AFURLRequestSerialization.m in Sources */,
 				2CC549B51D923398000F6880 /* MasonryVCTL.m in Sources */,
 				2C729D7C1CD0522200284E78 /* PickerViewController.m in Sources */,
+				2CCB7B0D1DDADDF60004423E /* GJBaseView.m in Sources */,
 				2C4BE04A1BE9A7B0004F1DAF /* MJRefreshBackStateFooter.m in Sources */,
+				2CCB7B191DDADF270004423E /* NormalCell.m in Sources */,
 				2C729D511CD0522200284E78 /* IntrinsicDetailVCTL.m in Sources */,
 				2C729D811CD0522200284E78 /* PushNotificationVCTL.m in Sources */,
 				2C729D851CD0522200284E78 /* ReadPDFVCTL.m in Sources */,
@@ -3349,6 +3397,7 @@
 				2C729CF71CD0522200284E78 /* ActionSheetVCTL.m in Sources */,
 				2C729D3F1CD0522200284E78 /* FingerTapVCTL.m in Sources */,
 				2C729CFF1CD0522200284E78 /* UIImage+BlurGlass.m in Sources */,
+				2CCB7B0E1DDADDF60004423E /* LoadingView.m in Sources */,
 				2C7BA8DF1D33347100B4D2C0 /* PushPopVCTL.m in Sources */,
 				2C785C761D10015C004480CF /* Reachability.m in Sources */,
 				2C8309741D7E6CBC0036FFCF /* DrawView3.m in Sources */,
@@ -3362,6 +3411,7 @@
 				2C729D9E1CD0522200284E78 /* WXMediaMessage+messageConstruct.m in Sources */,
 				2C729DC51CD0522200284E78 /* Life1VCTL.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
+				2CCB7B1D1DDAE0D10004423E /* PullingTableViewVCTL.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C729D721CD0522200284E78 /* NumberKeyboardVCTL.m in Sources */,
 				2C729D3D1CD0522200284E78 /* EncoderVCTL.m in Sources */,

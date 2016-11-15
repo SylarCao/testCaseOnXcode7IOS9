@@ -1,5 +1,5 @@
 //
-//  SubViewIndexVCTL.h
+//  NormalCell.h
 //  testCaseXcode7iOS9
 //
 //  Created by sylar on 2016/11/15.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasicTableViewCell.h"
 
-@interface SubViewIndexVCTL : BasicVCTL
+@interface NormalCell : BasicTableViewCell
+
+@property (nonatomic, weak) IBOutlet UILabel *content;
 
 @end

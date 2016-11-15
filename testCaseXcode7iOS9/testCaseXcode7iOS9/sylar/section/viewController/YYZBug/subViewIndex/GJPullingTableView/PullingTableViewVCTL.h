@@ -1,5 +1,5 @@
 //
-//  SubViewIndexVCTL.h
+//  PullingTableViewVCTL.h
 //  testCaseXcode7iOS9
 //
 //  Created by sylar on 2016/11/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SubViewIndexVCTL : BasicVCTL
+@interface PullingTableViewVCTL : BasicVCTL
 
 @end

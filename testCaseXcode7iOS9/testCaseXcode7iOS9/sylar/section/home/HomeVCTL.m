@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"SubViewIndexVCTL",
+    NSArray *ctrls = @[@"YYZBugVCTL", @"BlurVCTL",
                        
                        
                 

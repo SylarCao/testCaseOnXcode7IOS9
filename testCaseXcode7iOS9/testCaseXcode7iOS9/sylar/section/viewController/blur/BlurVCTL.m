@@ -34,7 +34,7 @@
 
 - (void)fun2
 {
-    UIBlurEffect
+//    UIBlurEffect
 }
 
 - (void)fun1

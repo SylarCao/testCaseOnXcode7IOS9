@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "YYZBugVCTL.h"
 #import "SubViewIndexVCTL.h"
+//#import "GJWebViewVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface YYZBugVCTL ()
 
@@ -19,12 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self fun2];
+//    [self fun2];
 }
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
+    
+    [self toGJWebView];
     
 }
 
@@ -39,6 +42,13 @@
 {
     SubViewIndexVCTL *ss = [[SubViewIndexVCTL alloc] initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:ss animated:YES];
+}
+
+- (void)toGJWebView
+{
+//    GJWebViewVCTL *ww = [[GJWebViewVCTL alloc] initWithNibName:nil bundle:nil];  // to many warnings
+//    [self.navigationController pushViewController:ww animated:YES];
+    
 }
 
 

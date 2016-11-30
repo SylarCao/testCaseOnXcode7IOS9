@@ -98,7 +98,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"sylar :  selected = %d,%d", indexPath.section, indexPath.row);
+    NSLog(@"sylar :  selected = %ld,%ld", (long)indexPath.section, (long)indexPath.row);
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [tableView bringSubviewToFront:cell];
     return NO;

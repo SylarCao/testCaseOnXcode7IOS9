@@ -129,8 +129,8 @@
 {
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
     NSData *stringBytes = [input dataUsingEncoding: NSUTF8StringEncoding];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-w"
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-w"
     if (CC_SHA1([stringBytes bytes], [stringBytes length], digest))
     {
         /* SHA-1 hash has been calculated and stored in 'digest'. */
@@ -145,7 +145,7 @@
     {
         return nil;
     }
-#pragma clang diagnostic pop
+//#pragma clang diagnostic pop
     
 }
 

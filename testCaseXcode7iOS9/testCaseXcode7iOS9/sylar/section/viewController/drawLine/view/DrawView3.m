@@ -145,7 +145,19 @@
     CGContextAddPath(context, path.CGPath);
     CGContextStrokePath(context);
     
+    // 有圆角的矩形
+    rr = CGRectMake(10, 140, 40, 30);
+    CGContextSetStrokeColor(context, CGColorGetComponents(aColor.CGColor));
+    CGContextSetLineWidth(context, 1);
+    CGMutablePathRef pathRef = CGPathCreateMutable();
+    CGPathAddRoundedRect(pathRef, nil, rr, 5, 5);
+    CGContextAddPath(context, pathRef);
+    CGContextStrokePath(context);
     
+    // 没圆角的矩形
+    rr = CGRectMake(100, 149, 40, 30);
+    CGContextAddRect(context, rr);
+    CGContextStrokePath(context);
     
     
 }

@@ -98,5 +98,15 @@
     return header;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"sylar :  did selected = %ld-%ld", (long)indexPath.section, (long)indexPath.row);
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"sylar :  deselected = %ld-%ld", (long)indexPath.section, (long)indexPath.row);
+}
 
 @end

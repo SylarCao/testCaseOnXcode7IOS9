@@ -1153,6 +1153,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1B78A11DF69B6E007A7984 /* iOS10 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS10;
+			sourceTree = "<group>";
+		};
 		2C23A0801C0D457F008B4712 /* wechat */ = {
 			isa = PBXGroup;
 			children = (
@@ -1412,6 +1419,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C1B78A11DF69B6E007A7984 /* iOS10 */,
 				2C56A4721DE6C806004ADE17 /* blur */,
 				2CEDE4DC1DD55EEE000FF892 /* YYZBug */,
 				2CCF29DF1DCB160500AF7FC1 /* tableViewCell */,

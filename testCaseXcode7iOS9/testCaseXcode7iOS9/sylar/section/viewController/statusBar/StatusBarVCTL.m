@@ -88,6 +88,10 @@
     {
         [self statusBarColorChangeDark];
     }
+    else if (indexPath.row == 3)
+    {
+        [self statusBarColorChangeLight10];
+    }
 }
 
 #pragma clang diagnostic push
@@ -97,7 +101,7 @@
 #pragma mark - helper
 - (void)statusBarColorChangeLight
 {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];  // deprecated ok in ios10
 }
 
 - (void)statusBarColorChangeDark
@@ -106,4 +110,14 @@
 }
 
 #pragma clang diagnostic pop
+
+- (void)statusBarColorChangeLight10
+{
+    if (kIOSVersion(10))
+    {
+        //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
 @end

@@ -16,6 +16,9 @@
 
 @property (nonatomic, strong) UIView *statusBarBkgView;
 
+
+@property (nonatomic, assign) BOOL statusBarHidden;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation StatusBarVCTL
@@ -40,6 +43,10 @@
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleDefault;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return _statusBarHidden;
 }
 
 - (void) setMyStatusBarColor
@@ -74,6 +81,30 @@
 {
     StatusBarTableViewCell *rt = [tableView dequeueReusableCellWithIdentifier:[StatusBarTableViewCell getCellId] forIndexPath:indexPath];
     
+    NSString *content = [NSString stringWithFormat:@"%ld", indexPath.row];
+    
+    if (indexPath.row == 1)
+    {
+        content = @"ios9  status bar light";
+    }
+    else if (indexPath.row == 2)
+    {
+        content = @"ios9  status bar dark(default)";
+    }
+    else if (indexPath.row == 3)
+    {
+        content = @"ios10  status bar dark(default)";
+    }
+    else if (indexPath.row == 4)
+    {
+        content = @"ios10  status bar hide";
+    }
+    else if (indexPath.row == 5)
+    {
+        content = @"ios10  status bar show";
+    }
+    
+    rt.textLabel.text = content;
     
     return rt;
 }
@@ -90,7 +121,15 @@
     }
     else if (indexPath.row == 3)
     {
-        [self statusBarColorChangeLight10];
+        [self statusBarColorChange10];
+    }
+    else if (indexPath.row == 4)
+    {
+        [self statusBarHide10];
+    }
+    else if (indexPath.row == 5)
+    {
+        [self statusBarShow10];
     }
 }
 
@@ -111,11 +150,31 @@
 
 #pragma clang diagnostic pop
 
-- (void)statusBarColorChangeLight10
+- (void)statusBarColorChange10
 {
     if (kIOSVersion(10))
     {
         //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
+- (void)statusBarHide10
+{
+    if (kIOSVersion(10))
+    {
+        //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
+        _statusBarHidden = YES;
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
+- (void)statusBarShow10
+{
+    if (kIOSVersion(10))
+    {
+        //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
+        _statusBarHidden = NO;
         [self setNeedsStatusBarAppearanceUpdate];
     }
 }

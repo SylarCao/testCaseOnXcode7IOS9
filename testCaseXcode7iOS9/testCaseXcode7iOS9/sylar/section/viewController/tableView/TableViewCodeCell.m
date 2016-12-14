@@ -21,10 +21,32 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
+        
+        
         [self setInitialValue];
+        
+        _lbContent.textColor = [UIColor blueColor];
+//        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+        self.contentView.backgroundColor = [UIColor yellowColor];
     }
     return self;
 }
+
+//- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+//    [super setHighlighted:highlighted animated:animated];
+//    
+//    if (highlighted)
+//    {
+//        _lbContent.textColor = [UIColor redColor];
+//        self.contentView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
+//    }
+//    else
+//    {
+//        _lbContent.textColor = [UIColor blueColor];
+//        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+//    }
+//    
+//}
 
 - (void)setInitialValue
 {
@@ -33,9 +55,10 @@
     
     _lbContent = [[UILabel alloc] init];
     [self.contentView addSubview:_lbContent];
+    _lbContent.textColor = [UIColor blackColor];
     _lbContent.translatesAutoresizingMaskIntoConstraints = NO;
-    _lbContent.layer.borderColor = [UIColor redColor].CGColor;
-    _lbContent.layer.borderWidth = 1;
+//    _lbContent.layer.borderColor = [UIColor redColor].CGColor;
+//    _lbContent.layer.borderWidth = 1;
     
     // add constrains
     NSDictionary *dict = NSDictionaryOfVariableBindings(_lbContent);

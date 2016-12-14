@@ -37,6 +37,8 @@
     pp.layer.borderColor = [UIColor redColor].CGColor;
     pp.layer.borderWidth = 1;
     
+    pp.backgroundColor = [UIColor whiteColor];
+    
 }
 
 

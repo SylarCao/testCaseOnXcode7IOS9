@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     if (kTableViewVCTLXib)
     {
         [_tableView registerNib:[UINib nibWithNibName:@"TableViewXIBCell" bundle:nil] forCellReuseIdentifier:[TableViewXIBCell getCellId]];
@@ -53,6 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"sylar :  numberOfRowsInSection(%ld)", section);
     NSInteger rt = section*5 + 2;
     return rt;
 }

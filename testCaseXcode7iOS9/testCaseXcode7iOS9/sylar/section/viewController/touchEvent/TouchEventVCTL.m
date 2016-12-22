@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "TouchEventVCTL.h"
 #import "TouchEventView.h"
+#import "TouchLabelView.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TouchEventVCTL ()
 <UIGestureRecognizerDelegate>
@@ -32,10 +33,14 @@
     [self.view addSubview:v1];
     _v1 = v1;
     
-    TouchEventView *tv1 = [[TouchEventView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    tv1.backgroundColor = [UIColor blueColor];
-    [v1 addSubview:tv1];
-    _tv1 = tv1;
+//    TouchEventView *tv1 = [[TouchEventView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+//    tv1.backgroundColor = [UIColor blueColor];
+//    [v1 addSubview:tv1];
+//    _tv1 = tv1;
+    
+    TouchLabelView *tb = [[TouchLabelView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    tb.backgroundColor = [UIColor yellowColor];
+    [v1 addSubview:tb];
     
     UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture1)];
     [v1 addGestureRecognizer:tap1];

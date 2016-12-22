@@ -76,6 +76,7 @@
 		2C56A47F1DE6C8F9004ADE17 /* AppDelegate+MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A47A1DE6C8F9004ADE17 /* AppDelegate+MaskView.m */; };
 		2C56A4801DE6C8F9004ADE17 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A47C1DE6C8F9004ADE17 /* UIImage+ImageEffects.m */; };
 		2C56A4811DE6C8F9004ADE17 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A47E1DE6C8F9004ADE17 /* UIImage+ScreenShot.m */; };
+		2C5B37FF1E0BAB37002B97E0 /* TouchLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B37FE1E0BAB37002B97E0 /* TouchLabelView.m */; };
 		2C6482741D9CDD070007ACCE /* TRYVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6482721D9CDD070007ACCE /* TRYVCTL.m */; };
 		2C6482751D9CDD070007ACCE /* TRYVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6482731D9CDD070007ACCE /* TRYVCTL.xib */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
@@ -556,6 +557,8 @@
 		2C56A47C1DE6C8F9004ADE17 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		2C56A47D1DE6C8F9004ADE17 /* UIImage+ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScreenShot.h"; sourceTree = "<group>"; };
 		2C56A47E1DE6C8F9004ADE17 /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
+		2C5B37FD1E0BAB37002B97E0 /* TouchLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLabelView.h; sourceTree = "<group>"; };
+		2C5B37FE1E0BAB37002B97E0 /* TouchLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLabelView.m; sourceTree = "<group>"; };
 		2C6482711D9CDD070007ACCE /* TRYVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRYVCTL.h; sourceTree = "<group>"; };
 		2C6482721D9CDD070007ACCE /* TRYVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRYVCTL.m; sourceTree = "<group>"; };
 		2C6482731D9CDD070007ACCE /* TRYVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRYVCTL.xib; sourceTree = "<group>"; };
@@ -2333,6 +2336,8 @@
 				2C729CD51CD0522200284E78 /* TouchEventVCTL.xib */,
 				2C729CD61CD0522200284E78 /* TouchEventView.h */,
 				2C729CD71CD0522200284E78 /* TouchEventView.m */,
+				2C5B37FD1E0BAB37002B97E0 /* TouchLabelView.h */,
+				2C5B37FE1E0BAB37002B97E0 /* TouchLabelView.m */,
 			);
 			path = touchEvent;
 			sourceTree = "<group>";
@@ -3492,6 +3497,7 @@
 				2C729D061CD0522200284E78 /* DefaultCameraVCTL.m in Sources */,
 				2CB5461A1D3CF4F2004239DB /* LabelTestVCTL.m in Sources */,
 				2C729D531CD0522200284E78 /* IntrinsicSizeTableViewVCTL.m in Sources */,
+				2C5B37FF1E0BAB37002B97E0 /* TouchLabelView.m in Sources */,
 				2C729DC81CD0522200284E78 /* LifeTimeVCTL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

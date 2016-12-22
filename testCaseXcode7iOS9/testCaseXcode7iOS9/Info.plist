@@ -68,6 +68,10 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>plist里写点，否则没法授权</string>
+	<key>NSCameraUsageDescription</key>
+	<string>想用照相机camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>我想用相册album</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -39,6 +39,7 @@
 
 - (void)funTakePhoto
 {
+    // plist 里要加  Privacy - Camera Usage Description
     UIImagePickerController *pp = [[UIImagePickerController alloc] init];
     pp.delegate = self;
     pp.allowsEditing = YES;
@@ -48,6 +49,7 @@
 
 - (void)funPhotoAlbum
 {
+    // plist -> Privacy - Photo Library Usage Description
     UIImagePickerController *pp = [[UIImagePickerController alloc] init];
     pp.delegate = self;
     pp.allowsEditing = YES;

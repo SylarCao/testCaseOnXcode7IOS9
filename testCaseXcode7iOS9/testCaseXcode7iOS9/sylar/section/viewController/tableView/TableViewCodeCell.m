@@ -28,25 +28,29 @@
         _lbContent.textColor = [UIColor blueColor];
 //        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
         self.contentView.backgroundColor = [UIColor yellowColor];
+        
+        id aa = self.backgroundView;
+        id bb = self.selectedBackgroundView;
+        
+        NSLog(@"sylar :  %@, %@", aa, bb);
     }
     return self;
 }
 
-//- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-//    [super setHighlighted:highlighted animated:animated];
-//    
-//    if (highlighted)
-//    {
-//        _lbContent.textColor = [UIColor redColor];
-//        self.contentView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
-//    }
-//    else
-//    {
-//        _lbContent.textColor = [UIColor blueColor];
-//        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
-//    }
-//    
-//}
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    [super setHighlighted:highlighted animated:animated];
+    
+    if (highlighted)
+    {
+        _lbContent.textColor = [UIColor redColor];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
+    }
+    else
+    {
+        _lbContent.textColor = [UIColor blueColor];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+    }
+}
 
 - (void)setInitialValue
 {

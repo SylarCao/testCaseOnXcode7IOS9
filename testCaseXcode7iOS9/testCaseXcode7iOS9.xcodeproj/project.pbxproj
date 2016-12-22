@@ -431,6 +431,8 @@
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
 		2CEDE4E01DD55EFF000FF892 /* YYZBugVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDE4DE1DD55EFF000FF892 /* YYZBugVCTL.m */; };
 		2CEDE4E11DD55EFF000FF892 /* YYZBugVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEDE4DF1DD55EFF000FF892 /* YYZBugVCTL.xib */; };
+		2CF3D8BD1E0B6AE700B0A5E9 /* GoToSettingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */; };
+		2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1122,6 +1124,9 @@
 		2CEDE4DD1DD55EFF000FF892 /* YYZBugVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYZBugVCTL.h; sourceTree = "<group>"; };
 		2CEDE4DE1DD55EFF000FF892 /* YYZBugVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYZBugVCTL.m; sourceTree = "<group>"; };
 		2CEDE4DF1DD55EFF000FF892 /* YYZBugVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYZBugVCTL.xib; sourceTree = "<group>"; };
+		2CF3D8BA1E0B6AE700B0A5E9 /* GoToSettingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToSettingVCTL.h; sourceTree = "<group>"; };
+		2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToSettingVCTL.m; sourceTree = "<group>"; };
+		2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoToSettingVCTL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1153,13 +1158,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C1B78A11DF69B6E007A7984 /* iOS10 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOS10;
-			sourceTree = "<group>";
-		};
 		2C23A0801C0D457F008B4712 /* wechat */ = {
 			isa = PBXGroup;
 			children = (
@@ -1419,7 +1417,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				2C1B78A11DF69B6E007A7984 /* iOS10 */,
+				2CF3D8B91E0B6AD300B0A5E9 /* toSetting */,
 				2C56A4721DE6C806004ADE17 /* blur */,
 				2CEDE4DC1DD55EEE000FF892 /* YYZBug */,
 				2CCF29DF1DCB160500AF7FC1 /* tableViewCell */,
@@ -2991,6 +2989,16 @@
 			path = YYZBug;
 			sourceTree = "<group>";
 		};
+		2CF3D8B91E0B6AD300B0A5E9 /* toSetting */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3D8BA1E0B6AE700B0A5E9 /* GoToSettingVCTL.h */,
+				2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */,
+				2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */,
+			);
+			path = toSetting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3061,6 +3069,7 @@
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
 				2C7B345C1D38772900760B7D /* GestureScrollVCTL.xib in Resources */,
 				2C729D151CD0522200284E78 /* AttributeStringVCTL.xib in Resources */,
+				2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */,
 				2C729D241CD0522200284E78 /* Dealloc1VCTL.xib in Resources */,
 				2C729D521CD0522200284E78 /* IntrinsicDetailVCTL.xib in Resources */,
 				2C729DAB1CD0522200284E78 /* TableViewHeaderXIBView.xib in Resources */,
@@ -3382,6 +3391,7 @@
 				2C729D691CD0522200284E78 /* MenuItemCell.m in Sources */,
 				2CA3A34B1D1BB8DC00A7F5C6 /* dzhbitstream.c in Sources */,
 				2C729DB41CD0522200284E78 /* TestBlockVCTL.m in Sources */,
+				2CF3D8BD1E0B6AE700B0A5E9 /* GoToSettingVCTL.m in Sources */,
 				2C729D381CD0522200284E78 /* Gdip.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C729D831CD0522200284E78 /* ReadPDFDefaultVCTL.m in Sources */,
@@ -3609,7 +3619,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3641,7 +3651,7 @@
 				);
 				GCC_PREFIX_HEADER = testCaseXcode7iOS9/testCaseIOS9.pch;
 				INFOPLIST_FILE = testCaseXcode7iOS9/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

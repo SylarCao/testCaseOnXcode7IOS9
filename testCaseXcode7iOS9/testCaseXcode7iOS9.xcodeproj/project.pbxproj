@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
+		2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C190D341E1B42720009DFCF /* NotificationCenter.framework */; };
+		2C190D391E1B42720009DFCF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D381E1B42720009DFCF /* TodayViewController.m */; };
+		2C190D3C1E1B42720009DFCF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */; };
+		2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C190D321E1B42710009DFCF /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D461E1B464E0009DFCF /* TodayVCTL.m */; };
+		2C190D491E1B464E0009DFCF /* TodayVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C190D471E1B464E0009DFCF /* TodayVCTL.xib */; };
 		2C23A0861C0D457F008B4712 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0811C0D457F008B4712 /* libWeChatSDK.a */; };
 		2C23A0871C0D457F008B4712 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C23A0821C0D457F008B4712 /* read_me.txt */; };
 		2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */; };
@@ -436,8 +442,41 @@
 		2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2C190D3E1E1B42720009DFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CA1127F1BB29E4A00406685 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C190D311E1B42710009DFCF;
+			remoteInfo = testWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C190D441E1B42720009DFCF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C190D321E1B42710009DFCF /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C190D341E1B42720009DFCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2C190D371E1B42720009DFCF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		2C190D381E1B42720009DFCF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		2C190D3B1E1B42720009DFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2C190D3D1E1B42720009DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C190D451E1B464E0009DFCF /* TodayVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayVCTL.h; sourceTree = "<group>"; };
+		2C190D461E1B464E0009DFCF /* TodayVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayVCTL.m; sourceTree = "<group>"; };
+		2C190D471E1B464E0009DFCF /* TodayVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayVCTL.xib; sourceTree = "<group>"; };
 		2C23A0811C0D457F008B4712 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		2C23A0821C0D457F008B4712 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		2C23A0831C0D457F008B4712 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -1133,6 +1172,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C190D2F1E1B42710009DFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CA112841BB29E4A00406685 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1161,6 +1208,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C190D331E1B42720009DFCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C190D341E1B42720009DFCF /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C190D361E1B42720009DFCF /* testWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2C190D371E1B42720009DFCF /* TodayViewController.h */,
+				2C190D381E1B42720009DFCF /* TodayViewController.m */,
+				2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */,
+				2C190D3D1E1B42720009DFCF /* Info.plist */,
+				2C190D451E1B464E0009DFCF /* TodayVCTL.h */,
+				2C190D461E1B464E0009DFCF /* TodayVCTL.m */,
+				2C190D471E1B464E0009DFCF /* TodayVCTL.xib */,
+			);
+			path = testWidget;
+			sourceTree = "<group>";
+		};
 		2C23A0801C0D457F008B4712 /* wechat */ = {
 			isa = PBXGroup;
 			children = (
@@ -2567,6 +2636,8 @@
 				2CCB28B51BCB4F58005E9B85 /* QuartzCore.framework */,
 				2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */,
 				2CA112891BB29E4A00406685 /* testCaseXcode7iOS9 */,
+				2C190D361E1B42720009DFCF /* testWidget */,
+				2C190D331E1B42720009DFCF /* Frameworks */,
 				2CA112881BB29E4A00406685 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -2575,6 +2646,7 @@
 			isa = PBXGroup;
 			children = (
 				2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */,
+				2C190D321E1B42710009DFCF /* testWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3007,6 +3079,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C190D311E1B42710009DFCF /* testWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C190D431E1B42720009DFCF /* Build configuration list for PBXNativeTarget "testWidget" */;
+			buildPhases = (
+				2C190D2E1E1B42710009DFCF /* Sources */,
+				2C190D2F1E1B42710009DFCF /* Frameworks */,
+				2C190D301E1B42710009DFCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testWidget;
+			productName = testWidget;
+			productReference = 2C190D321E1B42710009DFCF /* testWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2CA112861BB29E4A00406685 /* testCaseXcode7iOS9 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CA1129E1BB29E4A00406685 /* Build configuration list for PBXNativeTarget "testCaseXcode7iOS9" */;
@@ -3015,10 +3104,12 @@
 				2CA112841BB29E4A00406685 /* Frameworks */,
 				2CA112851BB29E4A00406685 /* Resources */,
 				2C3C85681BCCDF21009C4D24 /* ShellScript */,
+				2C190D441E1B42720009DFCF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C190D3F1E1B42720009DFCF /* PBXTargetDependency */,
 			);
 			name = testCaseXcode7iOS9;
 			productName = testCaseXcode7iOS9;
@@ -3034,6 +3125,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = sylar;
 				TargetAttributes = {
+					2C190D311E1B42710009DFCF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 925M29NF35;
+						ProvisioningStyle = Automatic;
+					};
 					2CA112861BB29E4A00406685 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 925M29NF35;
@@ -3055,11 +3151,21 @@
 			projectRoot = "";
 			targets = (
 				2CA112861BB29E4A00406685 /* testCaseXcode7iOS9 */,
+				2C190D311E1B42710009DFCF /* testWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C190D301E1B42710009DFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C190D491E1B464E0009DFCF /* TodayVCTL.xib in Resources */,
+				2C190D3C1E1B42720009DFCF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CA112851BB29E4A00406685 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3248,6 +3354,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C190D2E1E1B42710009DFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */,
+				2C190D391E1B42720009DFCF /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CA112831BB29E4A00406685 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3504,7 +3619,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2C190D3F1E1B42720009DFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C190D311E1B42710009DFCF /* testWidget */;
+			targetProxy = 2C190D3E1E1B42720009DFCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C190D3B1E1B42720009DFCF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		2CA112931BB29E4A00406685 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3524,6 +3655,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C190D411E1B42720009DFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 925M29NF35;
+				INFOPLIST_FILE = testWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9.testWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C190D421E1B42720009DFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 925M29NF35;
+				INFOPLIST_FILE = testWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p1.testCaseXcode7iOS9.testWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		2CA1129C1BB29E4A00406685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3677,6 +3838,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C190D431E1B42720009DFCF /* Build configuration list for PBXNativeTarget "testWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C190D411E1B42720009DFCF /* Debug */,
+				2C190D421E1B42720009DFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2CA112821BB29E4A00406685 /* Build configuration list for PBXProject "testCaseXcode7iOS9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

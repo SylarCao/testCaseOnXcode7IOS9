@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
 		2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C190D341E1B42720009DFCF /* NotificationCenter.framework */; };
-		2C190D391E1B42720009DFCF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D381E1B42720009DFCF /* TodayViewController.m */; };
-		2C190D3C1E1B42720009DFCF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */; };
 		2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C190D321E1B42710009DFCF /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D461E1B464E0009DFCF /* TodayVCTL.m */; };
 		2C190D491E1B464E0009DFCF /* TodayVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C190D471E1B464E0009DFCF /* TodayVCTL.xib */; };
@@ -470,9 +468,6 @@
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2C190D321E1B42710009DFCF /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C190D341E1B42720009DFCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		2C190D371E1B42720009DFCF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		2C190D381E1B42720009DFCF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		2C190D3B1E1B42720009DFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2C190D3D1E1B42720009DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C190D451E1B464E0009DFCF /* TodayVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayVCTL.h; sourceTree = "<group>"; };
 		2C190D461E1B464E0009DFCF /* TodayVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayVCTL.m; sourceTree = "<group>"; };
@@ -1219,9 +1214,6 @@
 		2C190D361E1B42720009DFCF /* testWidget */ = {
 			isa = PBXGroup;
 			children = (
-				2C190D371E1B42720009DFCF /* TodayViewController.h */,
-				2C190D381E1B42720009DFCF /* TodayViewController.m */,
-				2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */,
 				2C190D3D1E1B42720009DFCF /* Info.plist */,
 				2C190D451E1B464E0009DFCF /* TodayVCTL.h */,
 				2C190D461E1B464E0009DFCF /* TodayVCTL.m */,
@@ -3162,7 +3154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C190D491E1B464E0009DFCF /* TodayVCTL.xib in Resources */,
-				2C190D3C1E1B42720009DFCF /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3359,7 +3350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */,
-				2C190D391E1B42720009DFCF /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3628,14 +3618,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C190D3A1E1B42720009DFCF /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C190D3B1E1B42720009DFCF /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		2CA112931BB29E4A00406685 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

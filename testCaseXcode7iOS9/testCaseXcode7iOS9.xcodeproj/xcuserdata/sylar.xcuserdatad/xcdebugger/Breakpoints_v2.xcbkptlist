@@ -344,11 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/stringArrayFunction/StringArrayVCTL.m"
-            timestampString = "496559851.221707"
+            timestampString = "505293268.172897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
             landmarkName = "-fun11"
             landmarkType = "7">
          </BreakpointContent>
@@ -360,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testCaseXcode7iOS9/sylar/section/viewController/stringArrayFunction/StringArrayVCTL.m"
-            timestampString = "496559851.221707"
+            timestampString = "505293268.172897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
             landmarkName = "-fun11"
             landmarkType = "7">
          </BreakpointContent>
@@ -473,6 +473,22 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testCaseXcode7iOS9/sylar/section/viewController/stringArrayFunction/StringArrayVCTL.m"
+            timestampString = "505293295.228641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-fun21"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

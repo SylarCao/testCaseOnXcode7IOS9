@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"YYZBugVCTL", @"BlurVCTL", @"GoToSettingVCTL",
+    NSArray *ctrls = @[@"YYZBugVCTL", @"BlurVCTL", @"GoToSettingVCTL", @"ThreadVCTL",
                        
                        
                 

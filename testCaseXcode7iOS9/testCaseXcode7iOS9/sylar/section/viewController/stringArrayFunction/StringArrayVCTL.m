@@ -66,7 +66,38 @@
     
 //    [self fun19];
     
-    [self fun20];
+//    [self fun20];
+    
+    [self fun21];
+    
+}
+
+- (void)fun21 {
+    // string to char
+    
+    NSString *s1 = @"rrrrurrrrrrrrrwbbbbbbbbbH";
+    char c1[s1.length];
+    
+    snprintf(c1, s1.length+1, "%s", s1.UTF8String);
+    
+    
+    
+    char *c2 = strchr(c1, 'w');
+    
+    NSLog(@"sylar :  c2 = %s", c2);
+    
+    char ww = 'w';
+    
+    
+    size_t t1 = strcspn(c1, &ww);
+    NSLog(@"sylar :  t1 = %zu", t1);
+    
+    c1[15] = 'k';
+    
+    
+    
+    NSLog(@"sylar :  end = %s", c1);
+    
     
 }
 

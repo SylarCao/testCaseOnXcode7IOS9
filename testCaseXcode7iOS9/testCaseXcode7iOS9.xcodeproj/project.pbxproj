@@ -425,6 +425,7 @@
 		2CCF29EE1DCB170600AF7FC1 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF29EC1DCB170600AF7FC1 /* TableViewCell1.xib */; };
 		2CD3E1961D129CBF00063620 /* SaveData1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3E1951D129CBF00063620 /* SaveData1.m */; };
 		2CD6C2CA1E2F3283004E0978 /* LocationTest.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6C2C91E2F3283004E0978 /* LocationTest.gpx */; };
+		2CD6C2CD1E2F7453004E0978 /* ThreadMain1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6C2CC1E2F7453004E0978 /* ThreadMain1.m */; };
 		2CE1F34B1BCE3DC800B82CAE /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE1F3271BCE3DC800B82CAE /* Bugly.framework */; };
 		2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F32B1BCE3DC800B82CAE /* LSCollectionViewHelper.m */; };
 		2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F32D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m */; };
@@ -1141,6 +1142,8 @@
 		2CD3E1941D129CBF00063620 /* SaveData1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveData1.h; sourceTree = "<group>"; };
 		2CD3E1951D129CBF00063620 /* SaveData1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveData1.m; sourceTree = "<group>"; };
 		2CD6C2C91E2F3283004E0978 /* LocationTest.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationTest.gpx; sourceTree = "<group>"; };
+		2CD6C2CB1E2F7453004E0978 /* ThreadMain1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadMain1.h; sourceTree = "<group>"; };
+		2CD6C2CC1E2F7453004E0978 /* ThreadMain1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadMain1.m; sourceTree = "<group>"; };
 		2CE1F3271BCE3DC800B82CAE /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		2CE1F32A1BCE3DC800B82CAE /* LSCollectionViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCollectionViewHelper.h; sourceTree = "<group>"; };
 		2CE1F32B1BCE3DC800B82CAE /* LSCollectionViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCollectionViewHelper.m; sourceTree = "<group>"; };
@@ -2539,6 +2542,8 @@
 				2C7F50571E1F8EEB004C74D9 /* ThreadMethod1.m */,
 				2C7F50591E1F9614004C74D9 /* ThreadItem.h */,
 				2C7F505A1E1F9614004C74D9 /* ThreadItem.m */,
+				2CD6C2CB1E2F7453004E0978 /* ThreadMain1.h */,
+				2CD6C2CC1E2F7453004E0978 /* ThreadMain1.m */,
 			);
 			path = thread;
 			sourceTree = "<group>";
@@ -3594,6 +3599,7 @@
 				2CCB7B191DDADF270004423E /* NormalCell.m in Sources */,
 				2C56A47F1DE6C8F9004ADE17 /* AppDelegate+MaskView.m in Sources */,
 				2C729D511CD0522200284E78 /* IntrinsicDetailVCTL.m in Sources */,
+				2CD6C2CD1E2F7453004E0978 /* ThreadMain1.m in Sources */,
 				2C729D811CD0522200284E78 /* PushNotificationVCTL.m in Sources */,
 				2C729D851CD0522200284E78 /* ReadPDFVCTL.m in Sources */,
 				2C729D4D1CD0522200284E78 /* ImageVCTL.m in Sources */,

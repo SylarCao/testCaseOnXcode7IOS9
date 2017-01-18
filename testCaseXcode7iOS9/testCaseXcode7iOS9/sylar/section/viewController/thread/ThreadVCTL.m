@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "ThreadVCTL.h"
 #import "ThreadMethod1.h"
+#import "ThreadMain1.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface ThreadVCTL ()
 
@@ -24,7 +25,9 @@
 
 - (IBAction)btn1:(id)sender {
     
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
     
 }
 
@@ -33,6 +36,10 @@
     _m1 = m1;
     [m1 method1];
     
+}
+
+- (void)fun2 {
+    [[ThreadMain1 share] fun1];
 }
 
 

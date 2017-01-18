@@ -424,6 +424,7 @@
 		2CCF29ED1DCB170600AF7FC1 /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF29EB1DCB170600AF7FC1 /* TableViewCell1.m */; };
 		2CCF29EE1DCB170600AF7FC1 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF29EC1DCB170600AF7FC1 /* TableViewCell1.xib */; };
 		2CD3E1961D129CBF00063620 /* SaveData1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3E1951D129CBF00063620 /* SaveData1.m */; };
+		2CD6C2CA1E2F3283004E0978 /* LocationTest.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6C2C91E2F3283004E0978 /* LocationTest.gpx */; };
 		2CE1F34B1BCE3DC800B82CAE /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE1F3271BCE3DC800B82CAE /* Bugly.framework */; };
 		2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F32B1BCE3DC800B82CAE /* LSCollectionViewHelper.m */; };
 		2CE1F34D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F32D1BCE3DC800B82CAE /* LSCollectionViewLayoutHelper.m */; };
@@ -1139,6 +1140,7 @@
 		2CCF29EC1DCB170600AF7FC1 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 		2CD3E1941D129CBF00063620 /* SaveData1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveData1.h; sourceTree = "<group>"; };
 		2CD3E1951D129CBF00063620 /* SaveData1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveData1.m; sourceTree = "<group>"; };
+		2CD6C2C91E2F3283004E0978 /* LocationTest.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationTest.gpx; sourceTree = "<group>"; };
 		2CE1F3271BCE3DC800B82CAE /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		2CE1F32A1BCE3DC800B82CAE /* LSCollectionViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCollectionViewHelper.h; sourceTree = "<group>"; };
 		2CE1F32B1BCE3DC800B82CAE /* LSCollectionViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCollectionViewHelper.m; sourceTree = "<group>"; };
@@ -2790,6 +2792,7 @@
 		2CA5B1291D34E3E400A80B8A /* gpx */ = {
 			isa = PBXGroup;
 			children = (
+				2CD6C2C91E2F3283004E0978 /* LocationTest.gpx */,
 				2CA5B13B1D34EBDE00A80B8A /* Pokemon.gpx */,
 				2CA5B1301D34E6B900A80B8A /* America.gpx */,
 				2CA5B12A1D34E3E400A80B8A /* LocationGTJA.gpx */,
@@ -3257,6 +3260,7 @@
 				2CA6601A1DACBABC00B3069B /* SuperNibCell2.xib in Resources */,
 				2C729D7B1CD0522200284E78 /* PickerVCTL.xib in Resources */,
 				2C729D501CD0522200284E78 /* IntrinsicCell.xib in Resources */,
+				2CD6C2CA1E2F3283004E0978 /* LocationTest.gpx in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
 				2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */,
 				2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */,

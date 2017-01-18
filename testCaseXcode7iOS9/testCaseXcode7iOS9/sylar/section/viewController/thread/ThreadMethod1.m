@@ -26,6 +26,8 @@
 
 @property (nonatomic, assign) NSInteger currentThreadNumber;
 
+//@property (nonatomic, assign) int count;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ThreadMethod1
@@ -35,7 +37,7 @@
     if (self) {
         
         _startNumber = 100;
-        _endNumber = 110;
+        _endNumber = 150;
         // (100, 120) = 4340
         // (100, 110) = 2070
         
@@ -74,7 +76,16 @@
     [self useThread];
     
     
+    id aa = nil;
+    
+    [aa count];
+    
 }
+
+//- (NSInteger)count {
+//    NSObject *rt = [[NSObject alloc] init];
+//    return rt;
+//}
 
 - (void)useThread {
     

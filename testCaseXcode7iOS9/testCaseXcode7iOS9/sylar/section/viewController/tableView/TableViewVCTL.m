@@ -41,10 +41,32 @@
         [_tableView registerClass:[TableViewCodeCell class] forCellReuseIdentifier:[TableViewCodeCell getCellId]];
         [_tableView registerClass:[TabelViewHeaderCodeView class] forHeaderFooterViewReuseIdentifier:[TabelViewHeaderCodeView getCellId]];
     }
+    
+    // navigation
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"b1" style:UIBarButtonItemStylePlain target:self action:@selector(naviFun1)];
+    self.navigationItem.rightBarButtonItem = item;
 }
 
+- (void)naviFun1 {
+    NSLog(@"sylar :  navi fun1");
+    
+    if (kTableViewVCTLXib) {
+        
+    } else {
+        TableViewCodeCell *cell = [_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]];
+        [cell setSelected:YES animated:NO];
+    }
+    
+}
 
-
+- (void)fun1:(id)sender {
+    if ([sender isKindOfClass:[TableViewCodeCell class]]) {
+        NSLog(@"sylar :  yes");
+        [(TableViewCodeCell *)sender setSelected:YES animated:NO];
+    } else {
+        NSLog(@"sylar :  no");
+    }
+}
 
 
 #pragma mark - UITableViewDelegate
@@ -55,7 +77,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"sylar :  numberOfRowsInSection(%ld)", section);
+//    NSLog(@"sylar :  numberOfRowsInSection(%ld)", section);
     NSInteger rt = section*5 + 2;
     return rt;
 }
@@ -73,10 +95,14 @@
     {
         TableViewCodeCell *cell = [tableView dequeueReusableCellWithIdentifier:[TableViewCodeCell getCellId] forIndexPath:indexPath];
         [cell setWithIndex:indexPath.row];
+        if (indexPath.row == 0) {
+            [self performSelectorOnMainThread:@selector(fun1:) withObject:cell waitUntilDone:NO];
+            
+        }
         rt = cell;
     }
     
-    NSLog(@"rt.size = %f, %f", rt.frame.size.width,rt.frame.size.height);
+//    NSLog(@"rt.size = %f, %f", rt.frame.size.width,rt.frame.size.height);
     
     return rt;
 }
@@ -88,7 +114,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 48;
+    return 40;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -114,9 +140,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+//    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 

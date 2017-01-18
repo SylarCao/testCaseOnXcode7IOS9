@@ -40,7 +40,25 @@
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
     [super setHighlighted:highlighted animated:animated];
     
+//    NSLog(@"sylar :  setHighlighted = %d", highlighted);
+    
     if (highlighted)
+    {
+        _lbContent.textColor = [UIColor redColor];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
+    }
+    else
+    {
+        _lbContent.textColor = [UIColor blueColor];
+        self.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+    }
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    
+//    NSLog(@"sylar :  setSelected = %d", selected);
+    if (selected)
     {
         _lbContent.textColor = [UIColor redColor];
         self.contentView.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];

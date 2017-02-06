@@ -442,6 +442,8 @@
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
 		2CEDE4E01DD55EFF000FF892 /* YYZBugVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDE4DE1DD55EFF000FF892 /* YYZBugVCTL.m */; };
 		2CEDE4E11DD55EFF000FF892 /* YYZBugVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEDE4DF1DD55EFF000FF892 /* YYZBugVCTL.xib */; };
+		2CF3405D1E48464F006E8E3A /* ScreenShotVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3405B1E48464F006E8E3A /* ScreenShotVCTL.m */; };
+		2CF3405E1E48464F006E8E3A /* ScreenShotVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3405C1E48464F006E8E3A /* ScreenShotVCTL.xib */; };
 		2CF3D8BD1E0B6AE700B0A5E9 /* GoToSettingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */; };
 		2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */; };
 /* End PBXBuildFile section */
@@ -1177,6 +1179,9 @@
 		2CEDE4DD1DD55EFF000FF892 /* YYZBugVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYZBugVCTL.h; sourceTree = "<group>"; };
 		2CEDE4DE1DD55EFF000FF892 /* YYZBugVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYZBugVCTL.m; sourceTree = "<group>"; };
 		2CEDE4DF1DD55EFF000FF892 /* YYZBugVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYZBugVCTL.xib; sourceTree = "<group>"; };
+		2CF3405A1E48464F006E8E3A /* ScreenShotVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotVCTL.h; sourceTree = "<group>"; };
+		2CF3405B1E48464F006E8E3A /* ScreenShotVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVCTL.m; sourceTree = "<group>"; };
+		2CF3405C1E48464F006E8E3A /* ScreenShotVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenShotVCTL.xib; sourceTree = "<group>"; };
 		2CF3D8BA1E0B6AE700B0A5E9 /* GoToSettingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToSettingVCTL.h; sourceTree = "<group>"; };
 		2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToSettingVCTL.m; sourceTree = "<group>"; };
 		2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoToSettingVCTL.xib; sourceTree = "<group>"; };
@@ -1497,6 +1502,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CF340591E48463E006E8E3A /* screenShot */,
 				2C7F50501E1F8D53004C74D9 /* thread */,
 				2CF3D8B91E0B6AD300B0A5E9 /* toSetting */,
 				2C56A4721DE6C806004ADE17 /* blur */,
@@ -3092,6 +3098,16 @@
 			path = YYZBug;
 			sourceTree = "<group>";
 		};
+		2CF340591E48463E006E8E3A /* screenShot */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3405A1E48464F006E8E3A /* ScreenShotVCTL.h */,
+				2CF3405B1E48464F006E8E3A /* ScreenShotVCTL.m */,
+				2CF3405C1E48464F006E8E3A /* ScreenShotVCTL.xib */,
+			);
+			path = screenShot;
+			sourceTree = "<group>";
+		};
 		2CF3D8B91E0B6AD300B0A5E9 /* toSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -3334,6 +3350,7 @@
 				2C729D6C1CD0522200284E78 /* MenuItemVCTL.xib in Resources */,
 				2CA1F8A61C0BF3D700089E14 /* sgs1.jpg in Resources */,
 				2C40EB081BE0C40500074AB8 /* file_pdf1.pdf in Resources */,
+				2CF3405E1E48464F006E8E3A /* ScreenShotVCTL.xib in Resources */,
 				2C729DA21CD0522200284E78 /* StatusBarTableViewCell.xib in Resources */,
 				2CA112951BB29E4A00406685 /* Main.storyboard in Resources */,
 				2C729CFA1CD0522200284E78 /* AnimationVCTL.xib in Resources */,
@@ -3543,6 +3560,7 @@
 				2C729D381CD0522200284E78 /* Gdip.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C729D831CD0522200284E78 /* ReadPDFDefaultVCTL.m in Sources */,
+				2CF3405D1E48464F006E8E3A /* ScreenShotVCTL.m in Sources */,
 				2CCB7B0F1DDADDF60004423E /* PullingRefreshTableView.m in Sources */,
 				2C729D951CD0522200284E78 /* ShakeTextFieldVCTL.m in Sources */,
 				2C729D571CD0522200284E78 /* JsonKitVCTL.m in Sources */,

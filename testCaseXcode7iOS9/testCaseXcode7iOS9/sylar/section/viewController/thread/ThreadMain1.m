@@ -48,7 +48,7 @@
     NSLog(@"sylar :  s1 = %@", s1);  // abcdefg
     obj.value = s1;
     
-    [self performSelectorOnMainThread:@selector(pFun1:) withObject:obj waitUntilDone:YES];  // different result with waitUntilDone
+    [self performSelectorOnMainThread:@selector(pFun1:) withObject:obj waitUntilDone:NO];  // different result with waitUntilDone
     
     dispatch_async(dispatch_get_main_queue(), ^{
         // always before pFun1

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadVCTL">
             <connections>
+                <outlet property="table" destination="XEh-sP-G5F" id="qiy-F0-obr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,9 +27,25 @@
                         <action selector="btn1:" destination="-1" eventType="touchUpInside" id="Mgh-8w-vW6"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-sP-G5F">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="yGY-yp-mNy"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5so-Pq-aqf"/>
+                        <outlet property="delegate" destination="-1" id="4Z0-2n-z3Q"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="45" y="47"/>
+            <constraints>
+                <constraint firstItem="XEh-sP-G5F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AiO-Nw-rn9"/>
+                <constraint firstAttribute="trailing" secondItem="XEh-sP-G5F" secondAttribute="trailing" id="pFy-md-bGU"/>
+                <constraint firstAttribute="bottom" secondItem="XEh-sP-G5F" secondAttribute="bottom" id="wcT-0t-z1n"/>
+            </constraints>
+            <point key="canvasLocation" x="44.5" y="46.5"/>
         </view>
     </objects>
 </document>

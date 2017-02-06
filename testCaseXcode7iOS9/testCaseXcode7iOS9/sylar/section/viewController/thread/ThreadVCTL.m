@@ -11,8 +11,11 @@
 #import "ThreadMain1.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface ThreadVCTL ()
+<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) ThreadMethod1 *m1;
+
+@property (nonatomic, weak) IBOutlet UITableView *table;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // table view
+    [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 }
 
 - (IBAction)btn1:(id)sender {
@@ -39,9 +45,31 @@
 }
 
 - (void)fun2 {
+    
+    [_table reloadData];
     [[ThreadMain1 share] fun1];
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [_table reloadData];
+//    });
+//
+//    [_table reloadData];
 }
 
+
+#pragma mark - UITableViewDelegate 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"sylar :  numberOfRowsInSection");
+    return 8;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *rt = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    
+    rt.textLabel.text = [NSString stringWithFormat:@"index = %ld", indexPath.row];
+    return rt;
+    
+}
 
 
 @end

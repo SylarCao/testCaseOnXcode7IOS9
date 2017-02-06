@@ -10,6 +10,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ThreadMainObject
 
+- (void)dealloc {
+    NSLog(@"sylar :  dealloc ThreadMainObject");
+}
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation ThreadMain1
@@ -33,16 +37,26 @@
 - (void)funS1 {
     ThreadMainObject *obj = [[ThreadMainObject alloc] init];
     NSString *s1 = @"abcdefghijklmn";
-    NSLog(@"sylar :  s1 = %@", s1);
+    NSLog(@"sylar :  s1 = %@", s1);  // abcdefghijklmn
+    
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"sylar :  main queue  1111");
+    });
     
     s1 = [s1 substringToIndex:s1.length/2];
-    NSLog(@"sylar :  s1 = %@", s1);
+    NSLog(@"sylar :  s1 = %@", s1);  // abcdefg
     obj.value = s1;
     
     [self performSelectorOnMainThread:@selector(pFun1:) withObject:obj waitUntilDone:YES];  // different result with waitUntilDone
     
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // always before pFun1
+        NSLog(@"sylar :  main queue  222 = %@", obj.value);
+    });
+    
     s1 = [s1 substringToIndex:s1.length/2];
-    NSLog(@"sylar :  s1 = %@", s1);
+    NSLog(@"sylar :  s1 = %@", s1);  // abc
     obj.value = s1;
 }
 

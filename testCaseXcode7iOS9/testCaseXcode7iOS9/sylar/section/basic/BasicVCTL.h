@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Helper.h"
 
+#define BasicVCTLTest10 (1)  // relative to PreFixObjectTest10
+
 @interface BasicVCTL : UIViewController
 
 

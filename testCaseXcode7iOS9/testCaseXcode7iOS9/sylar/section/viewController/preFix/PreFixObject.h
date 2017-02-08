@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "BasicVCTL.h"
 
+// prefix里的define修改了会重新编译，其他地方的不会
+// relative to BasicVCTLTest10, ThreadVCTLTest10
+#define PreFixObjectTest10 (0)
+
 @interface PreFixObject : NSObject
 
 

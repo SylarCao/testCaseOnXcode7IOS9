@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define ThreadVCTLTest10 (0)  // relative to PreFixObjectTest10, BasicVCTLTest10
+
 @interface ThreadVCTL : BasicVCTL
 
 @end

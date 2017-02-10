@@ -36,15 +36,25 @@
     
 //    [self setInitialValue];
     
-    NSLog(@"tag = %ld", _tag1);
+//    NSLog(@"tag = %ld", _tag1);
 
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
     
 }
 
+- (void)fun2 {
+    NSString *s1 = @"http://36kr.com/p/5063512.html";
+    NSString *url = s1;
+    NSURL *url1 = [NSURL URLWithString:url];
+    NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
+    [_web1 loadRequest:rr];
+}
 
 - (void)fun1
 {
+    // 测试股票f10 的
     NSString *url = [[WebViewHelper share] getUrlAutoIncrease];
     NSURL *url1 = [NSURL URLWithString:url];
     NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
@@ -66,14 +76,19 @@
 
 - (IBAction)btn1:(id)sender
 {
-    WebViewVCTL *w1 = [[WebViewVCTL alloc] initWithNibName:nil bundle:nil];
-    w1.tag1 = _tag1+1;
-    [self.navigationController pushViewController:w1 animated:YES];
+    if ([_web1 canGoBack]) {
+        [_web1 goBack];
+    } else {
+        NSLog(@"sylar :  can't go back");
+    }
+//    WebViewVCTL *w1 = [[WebViewVCTL alloc] initWithNibName:nil bundle:nil];
+//    w1.tag1 = _tag1+1;
+//    [self.navigationController pushViewController:w1 animated:YES];
 }
 
 - (IBAction)btn2:(id)sender
 {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

@@ -15,6 +15,8 @@
 		2C23A0861C0D457F008B4712 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0811C0D457F008B4712 /* libWeChatSDK.a */; };
 		2C23A0871C0D457F008B4712 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C23A0821C0D457F008B4712 /* read_me.txt */; };
 		2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */; };
+		2C240CAF1E52F5DA000268CC /* UIButtonBVTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C240CAD1E52F5DA000268CC /* UIButtonBVTL.m */; };
+		2C240CB01E52F5DA000268CC /* UIButtonBVTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C240CAE1E52F5DA000268CC /* UIButtonBVTL.xib */; };
 		2C28B6AE1DB0A6A7004B2B88 /* DrawBazView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C28B6AD1DB0A6A7004B2B88 /* DrawBazView.m */; };
 		2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */; };
 		2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */; };
@@ -486,6 +488,9 @@
 		2C23A0841C0D457F008B4712 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		2C23A0851C0D457F008B4712 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2C240CAC1E52F5DA000268CC /* UIButtonBVTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonBVTL.h; sourceTree = "<group>"; };
+		2C240CAD1E52F5DA000268CC /* UIButtonBVTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonBVTL.m; sourceTree = "<group>"; };
+		2C240CAE1E52F5DA000268CC /* UIButtonBVTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIButtonBVTL.xib; sourceTree = "<group>"; };
 		2C28B6AC1DB0A6A7004B2B88 /* DrawBazView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBazView.h; sourceTree = "<group>"; };
 		2C28B6AD1DB0A6A7004B2B88 /* DrawBazView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBazView.m; sourceTree = "<group>"; };
 		2C2A16521BCF54AF00D065CD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -1255,6 +1260,16 @@
 			path = wechat;
 			sourceTree = "<group>";
 		};
+		2C240CAB1E52F5C2000268CC /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C240CAC1E52F5DA000268CC /* UIButtonBVTL.h */,
+				2C240CAD1E52F5DA000268CC /* UIButtonBVTL.m */,
+				2C240CAE1E52F5DA000268CC /* UIButtonBVTL.xib */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		2C2A16511BCF54AF00D065CD /* MBProgressHud */ = {
 			isa = PBXGroup;
 			children = (
@@ -1502,6 +1517,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C240CAB1E52F5C2000268CC /* UIButton */,
 				2CF340591E48463E006E8E3A /* screenShot */,
 				2C7F50501E1F8D53004C74D9 /* thread */,
 				2CF3D8B91E0B6AD300B0A5E9 /* toSetting */,
@@ -3360,6 +3376,7 @@
 				2C729D841CD0522200284E78 /* ReadPDFDefaultVCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C729D981CD0522200284E78 /* ShareWeiXinVCTL.xib in Resources */,
+				2C240CB01E52F5DA000268CC /* UIButtonBVTL.xib in Resources */,
 				2C729D541CD0522200284E78 /* IntrinsicSizeTableViewVCTL.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
 				2C9CA42F1D1A5859003EE2FD /* PreFixVCTL.xib in Resources */,
@@ -3457,6 +3474,7 @@
 				2C729D1F1CD0522200284E78 /* CPlusVCTL.m in Sources */,
 				2C729DA51CD0522200284E78 /* StringArrayHelper.m in Sources */,
 				2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */,
+				2C240CAF1E52F5DA000268CC /* UIButtonBVTL.m in Sources */,
 				2C8D3A641D864BDB00BA9FD5 /* CollectionView123Cell.m in Sources */,
 				2CA660051DACB9AA00B3069B /* SuperNibVCTL.m in Sources */,
 				2CC549AB1D923373000F6880 /* MASViewAttribute.m in Sources */,

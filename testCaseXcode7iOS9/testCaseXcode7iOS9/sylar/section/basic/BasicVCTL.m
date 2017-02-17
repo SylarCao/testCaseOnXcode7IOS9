@@ -50,6 +50,7 @@
     hud.labelText = content;
     hud.margin = 20;;
     [hud hide:YES afterDelay:1];
+    
 }
 
 @end

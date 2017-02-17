@@ -448,6 +448,8 @@
 		2CF3405E1E48464F006E8E3A /* ScreenShotVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3405C1E48464F006E8E3A /* ScreenShotVCTL.xib */; };
 		2CF3D8BD1E0B6AE700B0A5E9 /* GoToSettingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */; };
 		2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */; };
+		2CF914241E56D26D003BBF0D /* StrongWeakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF914221E56D26D003BBF0D /* StrongWeakVCTL.m */; };
+		2CF914251E56D26D003BBF0D /* StrongWeakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF914231E56D26D003BBF0D /* StrongWeakVCTL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1190,6 +1192,9 @@
 		2CF3D8BA1E0B6AE700B0A5E9 /* GoToSettingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToSettingVCTL.h; sourceTree = "<group>"; };
 		2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToSettingVCTL.m; sourceTree = "<group>"; };
 		2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoToSettingVCTL.xib; sourceTree = "<group>"; };
+		2CF914211E56D26D003BBF0D /* StrongWeakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrongWeakVCTL.h; sourceTree = "<group>"; };
+		2CF914221E56D26D003BBF0D /* StrongWeakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrongWeakVCTL.m; sourceTree = "<group>"; };
+		2CF914231E56D26D003BBF0D /* StrongWeakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrongWeakVCTL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1517,6 +1522,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CF914201E56D25E003BBF0D /* StrongWeak */,
 				2C240CAB1E52F5C2000268CC /* UIButton */,
 				2CF340591E48463E006E8E3A /* screenShot */,
 				2C7F50501E1F8D53004C74D9 /* thread */,
@@ -3134,6 +3140,16 @@
 			path = toSetting;
 			sourceTree = "<group>";
 		};
+		2CF914201E56D25E003BBF0D /* StrongWeak */ = {
+			isa = PBXGroup;
+			children = (
+				2CF914211E56D26D003BBF0D /* StrongWeakVCTL.h */,
+				2CF914221E56D26D003BBF0D /* StrongWeakVCTL.m */,
+				2CF914231E56D26D003BBF0D /* StrongWeakVCTL.xib */,
+			);
+			path = StrongWeak;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3328,6 +3344,7 @@
 				2C7CAAB91CFEB24D00E2D91A /* SaveDataVCTL.xib in Resources */,
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2CEDE4E11DD55EFF000FF892 /* YYZBugVCTL.xib in Resources */,
+				2CF914251E56D26D003BBF0D /* StrongWeakVCTL.xib in Resources */,
 				2C729CF81CD0522200284E78 /* ActionSheetVCTL.xib in Resources */,
 				2C729D8E1CD0522200284E78 /* ResizeImageVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
@@ -3482,6 +3499,7 @@
 				2C8E072A1D88F53900B88821 /* LayerVCTL.m in Sources */,
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
+				2CF914241E56D26D003BBF0D /* StrongWeakVCTL.m in Sources */,
 				2C729D771CD0522200284E78 /* OthersInstance.m in Sources */,
 				2CA112C21BB29EAA00406685 /* BasicTableViewCell.m in Sources */,
 				2C4BE0421BE9A7B0004F1DAF /* MJRefreshComponent.m in Sources */,

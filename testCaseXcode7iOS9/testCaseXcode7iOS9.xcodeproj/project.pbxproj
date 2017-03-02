@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
+		2C1332CF1E67B810008FB58B /* InstanceVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332CD1E67B810008FB58B /* InstanceVCTL.m */; };
+		2C1332D01E67B810008FB58B /* InstanceVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1332CE1E67B810008FB58B /* InstanceVCTL.xib */; };
+		2C1332D31E67B84D008FB58B /* InstanceTypeObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332D21E67B84D008FB58B /* InstanceTypeObj1.m */; };
+		2C1332D61E67B8A2008FB58B /* InstanceTypeObj2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332D51E67B8A2008FB58B /* InstanceTypeObj2.m */; };
+		2C1332D91E67B93F008FB58B /* InstanceTypeObj3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332D81E67B93F008FB58B /* InstanceTypeObj3.m */; };
 		2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C190D341E1B42720009DFCF /* NotificationCenter.framework */; };
 		2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C190D321E1B42710009DFCF /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D461E1B464E0009DFCF /* TodayVCTL.m */; };
@@ -480,6 +485,15 @@
 
 /* Begin PBXFileReference section */
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C1332CC1E67B810008FB58B /* InstanceVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceVCTL.h; sourceTree = "<group>"; };
+		2C1332CD1E67B810008FB58B /* InstanceVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceVCTL.m; sourceTree = "<group>"; };
+		2C1332CE1E67B810008FB58B /* InstanceVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstanceVCTL.xib; sourceTree = "<group>"; };
+		2C1332D11E67B84D008FB58B /* InstanceTypeObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceTypeObj1.h; sourceTree = "<group>"; };
+		2C1332D21E67B84D008FB58B /* InstanceTypeObj1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceTypeObj1.m; sourceTree = "<group>"; };
+		2C1332D41E67B8A2008FB58B /* InstanceTypeObj2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceTypeObj2.h; sourceTree = "<group>"; };
+		2C1332D51E67B8A2008FB58B /* InstanceTypeObj2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceTypeObj2.m; sourceTree = "<group>"; };
+		2C1332D71E67B93F008FB58B /* InstanceTypeObj3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceTypeObj3.h; sourceTree = "<group>"; };
+		2C1332D81E67B93F008FB58B /* InstanceTypeObj3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceTypeObj3.m; sourceTree = "<group>"; };
 		2C190D321E1B42710009DFCF /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C190D341E1B42720009DFCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2C190D3D1E1B42720009DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1239,6 +1253,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1332CB1E67B7FB008FB58B /* instance */ = {
+			isa = PBXGroup;
+			children = (
+				2C1332CC1E67B810008FB58B /* InstanceVCTL.h */,
+				2C1332CD1E67B810008FB58B /* InstanceVCTL.m */,
+				2C1332CE1E67B810008FB58B /* InstanceVCTL.xib */,
+				2C1332D11E67B84D008FB58B /* InstanceTypeObj1.h */,
+				2C1332D21E67B84D008FB58B /* InstanceTypeObj1.m */,
+				2C1332D41E67B8A2008FB58B /* InstanceTypeObj2.h */,
+				2C1332D51E67B8A2008FB58B /* InstanceTypeObj2.m */,
+				2C1332D71E67B93F008FB58B /* InstanceTypeObj3.h */,
+				2C1332D81E67B93F008FB58B /* InstanceTypeObj3.m */,
+			);
+			path = instance;
+			sourceTree = "<group>";
+		};
 		2C190D331E1B42720009DFCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1527,6 +1557,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C1332CB1E67B7FB008FB58B /* instance */,
 				2C8E81421E5C034200AC899B /* background */,
 				2CF914201E56D25E003BBF0D /* StrongWeak */,
 				2C240CAB1E52F5C2000268CC /* UIButton */,
@@ -3336,6 +3367,7 @@
 				2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */,
 				2C6482751D9CDD070007ACCE /* TRYVCTL.xib in Resources */,
 				2C729D8C1CD0522200284E78 /* ReleaseModeVCTL.xib in Resources */,
+				2C1332D01E67B810008FB58B /* InstanceVCTL.xib in Resources */,
 				2C729D441CD0522200284E78 /* HorizontalScrollCollectionCell.xib in Resources */,
 				2C729D371CD0522200284E78 /* DrawLineVCTL.xib in Resources */,
 				2C7849441D475E1B00E82013 /* icon87.png in Resources */,
@@ -3484,6 +3516,7 @@
 				2CC549AF1D923373000F6880 /* View+MASAdditions.m in Sources */,
 				2C729D871CD0522200284E78 /* RefreshTableVCTL.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
+				2C1332CF1E67B810008FB58B /* InstanceVCTL.m in Sources */,
 				2C729D9D1CD0522200284E78 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C729D651CD0522200284E78 /* MathProblem2VCTL.m in Sources */,
 				2CB114D51CE0599500E43797 /* AFNetworkingVCTL.m in Sources */,
@@ -3566,6 +3599,7 @@
 				2C729DCC1CD0522200284E78 /* XOptionVCTL.m in Sources */,
 				2C729D5C1CD0522200284E78 /* KVOVCTL.m in Sources */,
 				2C729DBC1CD0522200284E78 /* TimerVCTL.m in Sources */,
+				2C1332D91E67B93F008FB58B /* InstanceTypeObj3.m in Sources */,
 				2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */,
 				2C729D041CD0522200284E78 /* CameraVCTL.m in Sources */,
 				2C28B6AE1DB0A6A7004B2B88 /* DrawBazView.m in Sources */,
@@ -3623,6 +3657,7 @@
 				2C729D1D1CD0522200284E78 /* CMMFile.mm in Sources */,
 				2C2EC3311BE74021008197C3 /* AFSecurityPolicy.m in Sources */,
 				2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */,
+				2C1332D31E67B84D008FB58B /* InstanceTypeObj1.m in Sources */,
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
 				2C729D551CD0522200284E78 /* JailBreakVCTL.m in Sources */,
 				2CCF29E81DCB166E00AF7FC1 /* TableViewCellVCTL.m in Sources */,
@@ -3692,6 +3727,7 @@
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2C729D9E1CD0522200284E78 /* WXMediaMessage+messageConstruct.m in Sources */,
 				2C729DC51CD0522200284E78 /* Life1VCTL.m in Sources */,
+				2C1332D61E67B8A2008FB58B /* InstanceTypeObj2.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2CCB7B1D1DDAE0D10004423E /* PullingTableViewVCTL.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,

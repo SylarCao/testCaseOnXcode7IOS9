@@ -10,6 +10,8 @@
 
 @interface  UIView (ViewCategory1)
 
+@property (nonatomic, strong) UIView *v1;
+@property (nonatomic, strong) NSString *s1;  // 需要写get set方法，否则会crash
 
 - (void)showRedView;
 

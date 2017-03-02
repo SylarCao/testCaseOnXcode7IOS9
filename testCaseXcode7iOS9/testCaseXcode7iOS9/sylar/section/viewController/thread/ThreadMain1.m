@@ -27,9 +27,31 @@
     return inst;
 }
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self fun2];
+    }
+    return self;
+}
+
 - (void)fun1 {
-    [self funS1];
-    [self funS2];
+//    [self funS1];
+//    [self funS2];
+}
+
+- (void)fun2 {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"a1");
+    });
+    
+    NSLog(@"a2");
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"a3");
+    });
+    
     
     
 }

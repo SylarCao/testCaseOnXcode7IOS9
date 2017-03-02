@@ -54,9 +54,9 @@
     
     [[ThreadMain1 share] fun1];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [_table reloadData];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [_table reloadData];
+//    });
     
 //
 //    [_table reloadData];

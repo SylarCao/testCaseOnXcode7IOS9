@@ -32,7 +32,7 @@
 //    [_v1 hideRedView];
     _v1.v1.hidden = YES;
     
-    _v1.s1 = @"222";
+//    _v1.s1 = @"222";
 }
 
 @end

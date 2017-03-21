@@ -88,6 +88,10 @@
 		2C56A4801DE6C8F9004ADE17 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A47C1DE6C8F9004ADE17 /* UIImage+ImageEffects.m */; };
 		2C56A4811DE6C8F9004ADE17 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56A47E1DE6C8F9004ADE17 /* UIImage+ScreenShot.m */; };
 		2C5B37FF1E0BAB37002B97E0 /* TouchLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B37FE1E0BAB37002B97E0 /* TouchLabelView.m */; };
+		2C5CB6FB1E7BD95E004D3B8C /* MD5VCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CB6F91E7BD95E004D3B8C /* MD5VCTL.m */; };
+		2C5CB6FC1E7BD95E004D3B8C /* MD5VCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5CB6FA1E7BD95E004D3B8C /* MD5VCTL.xib */; };
+		2C5CB7141E7BE1B0004D3B8C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CB7101E7BE1B0004D3B8C /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C5CB7151E7BE1B0004D3B8C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CB7131E7BE1B0004D3B8C /* NSString+MD5.m */; };
 		2C6482741D9CDD070007ACCE /* TRYVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6482721D9CDD070007ACCE /* TRYVCTL.m */; };
 		2C6482751D9CDD070007ACCE /* TRYVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6482731D9CDD070007ACCE /* TRYVCTL.xib */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
@@ -353,6 +357,7 @@
 		2C9CA42E1D1A5859003EE2FD /* PreFixVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA42C1D1A5859003EE2FD /* PreFixVCTL.m */; };
 		2C9CA42F1D1A5859003EE2FD /* PreFixVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */; };
 		2C9CA4321D1A58C5003EE2FD /* PreFixObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */; };
+		2CA10EB51E7AA39900387F3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
 		2CA112921BB29E4A00406685 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA112911BB29E4A00406685 /* ViewController.m */; };
@@ -456,8 +461,12 @@
 		2CF3405E1E48464F006E8E3A /* ScreenShotVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3405C1E48464F006E8E3A /* ScreenShotVCTL.xib */; };
 		2CF3D8BD1E0B6AE700B0A5E9 /* GoToSettingVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */; };
 		2CF3D8BE1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */; };
+		2CF76FB21E80FB220091D2A9 /* PropertyVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF76FB01E80FB220091D2A9 /* PropertyVCTL.m */; };
+		2CF76FB31E80FB220091D2A9 /* PropertyVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF76FB11E80FB220091D2A9 /* PropertyVCTL.xib */; };
 		2CF914241E56D26D003BBF0D /* StrongWeakVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF914221E56D26D003BBF0D /* StrongWeakVCTL.m */; };
 		2CF914251E56D26D003BBF0D /* StrongWeakVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF914231E56D26D003BBF0D /* StrongWeakVCTL.xib */; };
+		2CFB1B7C1E7A347800318CB7 /* CoreDataVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB1B7A1E7A347800318CB7 /* CoreDataVCTL.m */; };
+		2CFB1B7D1E7A347800318CB7 /* CoreDataVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFB1B7B1E7A347800318CB7 /* CoreDataVCTL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -625,6 +634,14 @@
 		2C56A47E1DE6C8F9004ADE17 /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
 		2C5B37FD1E0BAB37002B97E0 /* TouchLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLabelView.h; sourceTree = "<group>"; };
 		2C5B37FE1E0BAB37002B97E0 /* TouchLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchLabelView.m; sourceTree = "<group>"; };
+		2C5CB6F81E7BD95D004D3B8C /* MD5VCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5VCTL.h; sourceTree = "<group>"; };
+		2C5CB6F91E7BD95E004D3B8C /* MD5VCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5VCTL.m; sourceTree = "<group>"; };
+		2C5CB6FA1E7BD95E004D3B8C /* MD5VCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MD5VCTL.xib; sourceTree = "<group>"; };
+		2C5CB70F1E7BE1B0004D3B8C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		2C5CB7101E7BE1B0004D3B8C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		2C5CB7111E7BE1B0004D3B8C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		2C5CB7121E7BE1B0004D3B8C /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		2C5CB7131E7BE1B0004D3B8C /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		2C6482711D9CDD070007ACCE /* TRYVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRYVCTL.h; sourceTree = "<group>"; };
 		2C6482721D9CDD070007ACCE /* TRYVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRYVCTL.m; sourceTree = "<group>"; };
 		2C6482731D9CDD070007ACCE /* TRYVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRYVCTL.xib; sourceTree = "<group>"; };
@@ -1040,6 +1057,7 @@
 		2C9CA42D1D1A5859003EE2FD /* PreFixVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreFixVCTL.xib; sourceTree = "<group>"; };
 		2C9CA4301D1A58C5003EE2FD /* PreFixObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreFixObject.h; sourceTree = "<group>"; };
 		2C9CA4311D1A58C5003EE2FD /* PreFixObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreFixObject.m; sourceTree = "<group>"; };
+		2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA1128D1BB29E4A00406685 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1214,9 +1232,15 @@
 		2CF3D8BA1E0B6AE700B0A5E9 /* GoToSettingVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToSettingVCTL.h; sourceTree = "<group>"; };
 		2CF3D8BB1E0B6AE700B0A5E9 /* GoToSettingVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToSettingVCTL.m; sourceTree = "<group>"; };
 		2CF3D8BC1E0B6AE700B0A5E9 /* GoToSettingVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoToSettingVCTL.xib; sourceTree = "<group>"; };
+		2CF76FAF1E80FB220091D2A9 /* PropertyVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyVCTL.h; sourceTree = "<group>"; };
+		2CF76FB01E80FB220091D2A9 /* PropertyVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyVCTL.m; sourceTree = "<group>"; };
+		2CF76FB11E80FB220091D2A9 /* PropertyVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyVCTL.xib; sourceTree = "<group>"; };
 		2CF914211E56D26D003BBF0D /* StrongWeakVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrongWeakVCTL.h; sourceTree = "<group>"; };
 		2CF914221E56D26D003BBF0D /* StrongWeakVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrongWeakVCTL.m; sourceTree = "<group>"; };
 		2CF914231E56D26D003BBF0D /* StrongWeakVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrongWeakVCTL.xib; sourceTree = "<group>"; };
+		2CFB1B791E7A347800318CB7 /* CoreDataVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataVCTL.h; sourceTree = "<group>"; };
+		2CFB1B7A1E7A347800318CB7 /* CoreDataVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataVCTL.m; sourceTree = "<group>"; };
+		2CFB1B7B1E7A347800318CB7 /* CoreDataVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataVCTL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1232,6 +1256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA10EB51E7AA39900387F3F /* OpenGLES.framework in Frameworks */,
 				2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */,
 				2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */,
 				2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */,
@@ -1275,6 +1300,7 @@
 		2C190D331E1B42720009DFCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */,
 				2C190D341E1B42720009DFCF /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -1514,6 +1540,29 @@
 			path = GTJA_Zhangchao;
 			sourceTree = "<group>";
 		};
+		2C5CB6F71E7BD950004D3B8C /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CB6F81E7BD95D004D3B8C /* MD5VCTL.h */,
+				2C5CB6F91E7BD95E004D3B8C /* MD5VCTL.m */,
+				2C5CB6FA1E7BD95E004D3B8C /* MD5VCTL.xib */,
+				2C5CB70E1E7BE1B0004D3B8C /* vendor */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		2C5CB70E1E7BE1B0004D3B8C /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2C5CB70F1E7BE1B0004D3B8C /* GTMBase64.h */,
+				2C5CB7101E7BE1B0004D3B8C /* GTMBase64.m */,
+				2C5CB7111E7BE1B0004D3B8C /* GTMDefines.h */,
+				2C5CB7121E7BE1B0004D3B8C /* NSString+MD5.h */,
+				2C5CB7131E7BE1B0004D3B8C /* NSString+MD5.m */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
 		2C6482701D9CDCF80007ACCE /* try */ = {
 			isa = PBXGroup;
 			children = (
@@ -1560,6 +1609,9 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CF76FAB1E80FAFD0091D2A9 /* property */,
+				2C5CB6F71E7BD950004D3B8C /* MD5 */,
+				2CFB1B781E7A346700318CB7 /* coreData */,
 				2C1332CB1E67B7FB008FB58B /* instance */,
 				2C8E81421E5C034200AC899B /* background */,
 				2CF914201E56D25E003BBF0D /* StrongWeak */,
@@ -3190,6 +3242,16 @@
 			path = toSetting;
 			sourceTree = "<group>";
 		};
+		2CF76FAB1E80FAFD0091D2A9 /* property */ = {
+			isa = PBXGroup;
+			children = (
+				2CF76FAF1E80FB220091D2A9 /* PropertyVCTL.h */,
+				2CF76FB01E80FB220091D2A9 /* PropertyVCTL.m */,
+				2CF76FB11E80FB220091D2A9 /* PropertyVCTL.xib */,
+			);
+			path = property;
+			sourceTree = "<group>";
+		};
 		2CF914201E56D25E003BBF0D /* StrongWeak */ = {
 			isa = PBXGroup;
 			children = (
@@ -3200,6 +3262,16 @@
 				2CE4CA8C1E67FF64004C727F /* StrongWeakObject.m */,
 			);
 			path = StrongWeak;
+			sourceTree = "<group>";
+		};
+		2CFB1B781E7A346700318CB7 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				2CFB1B791E7A347800318CB7 /* CoreDataVCTL.h */,
+				2CFB1B7A1E7A347800318CB7 /* CoreDataVCTL.m */,
+				2CFB1B7B1E7A347800318CB7 /* CoreDataVCTL.xib */,
+			);
+			path = coreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3300,6 +3372,7 @@
 				2CC549B61D923398000F6880 /* MasonryVCTL.xib in Resources */,
 				2C837C371CDB10DF0078737F /* DragCollectionVCTL.xib in Resources */,
 				2C729D101CD0522200284E78 /* CategoryVCTL.xib in Resources */,
+				2C5CB6FC1E7BD95E004D3B8C /* MD5VCTL.xib in Resources */,
 				2CA3A3501D1BB91600A7F5C6 /* CFileVCTL.xib in Resources */,
 				2CCF29E91DCB166E00AF7FC1 /* TableViewCellVCTL.xib in Resources */,
 				2C729D821CD0522200284E78 /* PushNotificationVCTL.xib in Resources */,
@@ -3369,6 +3442,7 @@
 				2CD6C2CA1E2F3283004E0978 /* LocationTest.gpx in Resources */,
 				2C729D2A1CD0522200284E78 /* DeleteInsertCellVCTL.xib in Resources */,
 				2C729D071CD0522200284E78 /* DefaultCameraVCTL.xib in Resources */,
+				2CF76FB31E80FB220091D2A9 /* PropertyVCTL.xib in Resources */,
 				2CA551F01D810748006769A7 /* WindowVCTL.xib in Resources */,
 				2C6482751D9CDD070007ACCE /* TRYVCTL.xib in Resources */,
 				2C729D8C1CD0522200284E78 /* ReleaseModeVCTL.xib in Resources */,
@@ -3454,6 +3528,7 @@
 				2C729D2C1CD0522200284E78 /* DownloadVCTL.xib in Resources */,
 				2C729D5D1CD0522200284E78 /* KVOVCTL.xib in Resources */,
 				2C729D191CD0522200284E78 /* ConstraintCodeVCTL.xib in Resources */,
+				2CFB1B7D1E7A347800318CB7 /* CoreDataVCTL.xib in Resources */,
 				2C729D6A1CD0522200284E78 /* MenuItemCell.xib in Resources */,
 				2C729D5A1CD0522200284E78 /* JSPatchVCTL.xib in Resources */,
 				2C729D641CD0522200284E78 /* MathProblem1VCTL.xib in Resources */,
@@ -3504,6 +3579,7 @@
 				2C729D6B1CD0522200284E78 /* MenuItemVCTL.m in Sources */,
 				2C729D741CD0522200284E78 /* OpeniOS9VCTL.m in Sources */,
 				2CE1F3551BCE3DC800B82CAE /* UIViewController+LewPopupViewController.m in Sources */,
+				2CFB1B7C1E7A347800318CB7 /* CoreDataVCTL.m in Sources */,
 				2C729D9A1CD0522200284E78 /* WXApiRequestHandler.m in Sources */,
 				2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */,
 				2C4BE0491BE9A7B0004F1DAF /* MJRefreshBackNormalFooter.m in Sources */,
@@ -3611,6 +3687,7 @@
 				2C28B6AE1DB0A6A7004B2B88 /* DrawBazView.m in Sources */,
 				2C2EC3351BE74021008197C3 /* AFURLSessionManager.m in Sources */,
 				2C2EC3371BE74021008197C3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				2C5CB7151E7BE1B0004D3B8C /* NSString+MD5.m in Sources */,
 				2C729D1E1CD0522200284E78 /* CPlus.cpp in Sources */,
 				2C729D911CD0522200284E78 /* ScreenFrameVCTL.m in Sources */,
 				2C729D3C1CD0522200284E78 /* EncoderObject1.m in Sources */,
@@ -3656,6 +3733,7 @@
 				2CF3405D1E48464F006E8E3A /* ScreenShotVCTL.m in Sources */,
 				2CCB7B0F1DDADDF60004423E /* PullingRefreshTableView.m in Sources */,
 				2C729D951CD0522200284E78 /* ShakeTextFieldVCTL.m in Sources */,
+				2CF76FB21E80FB220091D2A9 /* PropertyVCTL.m in Sources */,
 				2C729D571CD0522200284E78 /* JsonKitVCTL.m in Sources */,
 				2C729D2D1CD0522200284E78 /* DPHelper.m in Sources */,
 				2CCF29ED1DCB170600AF7FC1 /* TableViewCell1.m in Sources */,
@@ -3696,6 +3774,7 @@
 				2C729CFB1CD0522200284E78 /* AnimationRotateVCTL.m in Sources */,
 				2C729D891CD0522200284E78 /* RefreshTableViewCell.m in Sources */,
 				2C729D8B1CD0522200284E78 /* ReleaseModeVCTL.m in Sources */,
+				2C5CB6FB1E7BD95E004D3B8C /* MD5VCTL.m in Sources */,
 				2C729DA61CD0522200284E78 /* StringArrayVCTL.m in Sources */,
 				2C2EC33C1BE74021008197C3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2C729DA81CD0522200284E78 /* TabelViewHeaderCodeView.m in Sources */,
@@ -3721,6 +3800,7 @@
 				2C729CFF1CD0522200284E78 /* UIImage+BlurGlass.m in Sources */,
 				2C8E81461E5C035500AC899B /* EnterBkgdVCTL.m in Sources */,
 				2CCB7B0E1DDADDF60004423E /* LoadingView.m in Sources */,
+				2C5CB7141E7BE1B0004D3B8C /* GTMBase64.m in Sources */,
 				2C7BA8DF1D33347100B4D2C0 /* PushPopVCTL.m in Sources */,
 				2C785C761D10015C004480CF /* Reachability.m in Sources */,
 				2C8309741D7E6CBC0036FFCF /* DrawView3.m in Sources */,

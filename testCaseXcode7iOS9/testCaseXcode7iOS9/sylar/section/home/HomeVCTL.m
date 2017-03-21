@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"StrongWeakVCTL", @"EnterBkgdVCTL", @"InstanceVCTL",
+    NSArray *ctrls = @[@"StrongWeakVCTL", @"EnterBkgdVCTL", @"InstanceVCTL", @"CoreDataVCTL", @"MD5VCTL", @"PropertyVCTL",
                        
                 
                @"sort", // 都放到这个后边

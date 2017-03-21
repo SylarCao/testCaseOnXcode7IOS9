@@ -10,6 +10,7 @@
 
 @interface StrongWeakObject : NSObject
 
+@property (nonatomic, assign) NSInteger value;
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, weak) UIColor *colorWeak;
 

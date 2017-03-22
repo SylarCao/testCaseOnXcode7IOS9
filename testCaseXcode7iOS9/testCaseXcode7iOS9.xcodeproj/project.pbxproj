@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
+		2C0EDBA11E824FC6006EBED8 /* LogAddressVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EDB9F1E824FC6006EBED8 /* LogAddressVCTL.m */; };
 		2C1332CF1E67B810008FB58B /* InstanceVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332CD1E67B810008FB58B /* InstanceVCTL.m */; };
 		2C1332D01E67B810008FB58B /* InstanceVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1332CE1E67B810008FB58B /* InstanceVCTL.xib */; };
 		2C1332D31E67B84D008FB58B /* InstanceTypeObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1332D21E67B84D008FB58B /* InstanceTypeObj1.m */; };
@@ -495,6 +496,8 @@
 
 /* Begin PBXFileReference section */
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C0EDB9E1E824FC6006EBED8 /* LogAddressVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAddressVCTL.h; sourceTree = "<group>"; };
+		2C0EDB9F1E824FC6006EBED8 /* LogAddressVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAddressVCTL.m; sourceTree = "<group>"; };
 		2C1332CC1E67B810008FB58B /* InstanceVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceVCTL.h; sourceTree = "<group>"; };
 		2C1332CD1E67B810008FB58B /* InstanceVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceVCTL.m; sourceTree = "<group>"; };
 		2C1332CE1E67B810008FB58B /* InstanceVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstanceVCTL.xib; sourceTree = "<group>"; };
@@ -1281,6 +1284,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0EDB9D1E824FB8006EBED8 /* LogAddress */ = {
+			isa = PBXGroup;
+			children = (
+				2C0EDB9E1E824FC6006EBED8 /* LogAddressVCTL.h */,
+				2C0EDB9F1E824FC6006EBED8 /* LogAddressVCTL.m */,
+			);
+			path = LogAddress;
+			sourceTree = "<group>";
+		};
 		2C1332CB1E67B7FB008FB58B /* instance */ = {
 			isa = PBXGroup;
 			children = (
@@ -1609,6 +1621,7 @@
 		2C729B461CD0522100284E78 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C0EDB9D1E824FB8006EBED8 /* LogAddress */,
 				2CF76FAB1E80FAFD0091D2A9 /* property */,
 				2C5CB6F71E7BD950004D3B8C /* MD5 */,
 				2CFB1B781E7A346700318CB7 /* coreData */,
@@ -3631,6 +3644,7 @@
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
 				2CF914241E56D26D003BBF0D /* StrongWeakVCTL.m in Sources */,
+				2C0EDBA11E824FC6006EBED8 /* LogAddressVCTL.m in Sources */,
 				2C729D771CD0522200284E78 /* OthersInstance.m in Sources */,
 				2CA112C21BB29EAA00406685 /* BasicTableViewCell.m in Sources */,
 				2C4BE0421BE9A7B0004F1DAF /* MJRefreshComponent.m in Sources */,

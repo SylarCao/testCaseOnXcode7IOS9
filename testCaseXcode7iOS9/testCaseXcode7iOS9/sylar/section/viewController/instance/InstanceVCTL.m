@@ -24,19 +24,20 @@
 }
 
 - (void)fun1 {
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
     InstanceTypeObj1 *a = [[InstanceTypeObj1 alloc] initWithValue1:1];
     NSString *a1 = [a returnArrayFun1];
     
     InstanceTypeObj2 *b = [[InstanceTypeObj2 alloc] initWithValue2:2];
-    NSString *b1 = [b returnArrayFun1];
+    NSString *b1 = [b returnArrayFun1];  // warning
     
     
     NSString *s1 = [InstanceTypeObj1 obj1STFun1];
     
-    NSString *s2 = [InstanceTypeObj2 obj2STFun1];
+    NSString *s2 = [InstanceTypeObj2 obj2STFun1];  // warning
     
-    
+#pragma clang diagnostic pop
 }
 
 @end

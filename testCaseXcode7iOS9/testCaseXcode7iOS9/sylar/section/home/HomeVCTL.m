@@ -22,10 +22,10 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"StrongWeakVCTL", @"EnterBkgdVCTL", @"InstanceVCTL", @"CoreDataVCTL", @"MD5VCTL", @"PropertyVCTL",
-                       
+    NSArray *ctrls = @[ @"LogAddressVCTL",
                 
                @"sort", // 都放到这个后边
+               @"StrongWeakVCTL", @"EnterBkgdVCTL", @"InstanceVCTL", @"CoreDataVCTL", @"MD5VCTL", @"PropertyVCTL",
                @"YYZBugVCTL", @"BlurVCTL", @"GoToSettingVCTL", @"ThreadVCTL", @"ScreenShotVCTL", @"UIButtonBVTL",
                @"CollectionViewVCTL", @"LayerVCTL", @"MasonryVCTL", @"TRYVCTL", @"SuperNibVCTL", @"TableViewCellVCTL",
                @"PushPopVCTL", @"GestureScrollVCTL", @"LabelTestVCTL", @"StructVCTL", @"FormatCodeVCTL", @"WindowVCTL",

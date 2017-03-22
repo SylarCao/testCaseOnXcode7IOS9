@@ -48,7 +48,9 @@
     
 //    [self fun5];
     
-    [self fun6];
+//    [self fun6];
+    
+    [self fun7];
 }
 
 - (IBAction)btn1:(id)sender {
@@ -59,6 +61,8 @@
 
 - (void)fun7 {
     UIColor *c1 = [UIColor colorWithRed:0.5 green:0.6 blue:0.7 alpha:1];
+    
+    NSLog(@"sylar :  c1 = %p", c1);  //  输出地址
 //    c1.
 }
 

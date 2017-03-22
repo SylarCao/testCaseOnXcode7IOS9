@@ -26,9 +26,13 @@
     NSLog(@"sylar :  obj2Fun1");
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
 - (instancetype)returnArrayFun1 {
     NSArray *a = @[@"1", @"2"];
-    return a;
+    return a;  // warning
 }
+
+#pragma clang diagnostic pop
 
 @end

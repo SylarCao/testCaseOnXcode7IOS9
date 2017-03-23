@@ -39,10 +39,10 @@ NSString * const keyKVO1 = @"self.content.text";
     
     // keyPath必须传 self.s1   _s1没有用
     // 修改的时候必须用self.s1   _s1没有用  见btn1,btn2
-    [self addObserver:self forKeyPath:@"self.s1" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
-    [self addObserver:self forKeyPath:@"_s1" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//    [self addObserver:self forKeyPath:@"self.s1" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//    [self addObserver:self forKeyPath:@"_s1" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
-//    [self addObserver:self forKeyPath:keyKVO1 options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+    [self addObserver:self forKeyPath:keyKVO1 options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
     self.s1 = @"desef";
 }

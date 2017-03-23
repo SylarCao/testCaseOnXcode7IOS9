@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self addWebViewHeightObserver];
     // Do any additional setup after loading the view from its nib.
     
 //    [self setConfig];
@@ -43,6 +45,16 @@
     [self fun2];
     
     
+}
+
+- (void)addWebViewHeightObserver {
+    // webview 高度变化 kvo
+    [self addObserver:self forKeyPath:@"self.web1.scrollView.contentSize" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    NSLog(@"obobob");
 }
 
 - (void)fun2 {

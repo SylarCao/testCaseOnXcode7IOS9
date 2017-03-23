@@ -42,10 +42,12 @@
     
     [self fun2];
     
+    
 }
 
 - (void)fun2 {
     NSString *s1 = @"http://36kr.com/p/5063512.html";
+    s1 = @"https://i.gtja.com/quotes/securities/diagnoseEplus/trading/index.html?stockCode=002253&market=SZ&color=white";
     NSString *url = s1;
     NSURL *url1 = [NSURL URLWithString:url];
     NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
@@ -96,11 +98,16 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     NSLog(@"did start");
+    CGFloat height = _web1.scrollView.contentSize.height;
+    NSLog(@"sylar :  start height = %f", height);
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     NSLog(@"did finish");
+    CGFloat height = _web1.scrollView.contentSize.height;
+    NSLog(@"sylar :  end height = %f", height);
+
 }
 
 @end

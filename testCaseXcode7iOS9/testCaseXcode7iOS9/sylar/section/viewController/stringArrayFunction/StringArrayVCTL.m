@@ -68,8 +68,37 @@
     
 //    [self fun20];
     
-    [self fun21];
+//    [self fun21];
     
+//    [self fun22];
+    
+    [self fun23];
+    
+}
+
+- (void)fun23 {
+    // NSDictionaryOfVariableBindings这个宏生成一个字典,这个宏可以生成一个变量名到变量值映射的Dictionary,比如:
+    NSNumber * packId=@(2);
+    NSNumber *userId=@(22);
+    NSNumber *proxyType=@(2);
+    NSDictionary *param=NSDictionaryOfVariableBindings(packId,userId,proxyType);
+    NSLog(@"sylar :  param = %@", param);
+}
+
+- (void)fun22 {
+    NSInteger a = 15;
+    NSInteger b = 3;
+    NSInteger c = 0;
+    CGFloat d = 0;
+    
+    CGSize size = CGSizeMake(10, 0);
+    
+    CGFloat a1 = a/b;
+    CGFloat a2 = b/size.height;
+    CGFloat a3 = b/d;  // not crash
+    CGFloat a4 = b/c;  // crash
+    
+    NSLog(@"sylar :  f = %f, %f, %f", a1, a2, a3);
 }
 
 - (void)fun21 {

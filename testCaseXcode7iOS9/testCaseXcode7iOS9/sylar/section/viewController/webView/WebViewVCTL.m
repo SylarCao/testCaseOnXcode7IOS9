@@ -34,6 +34,7 @@ const BOOL kUseWKWebView = 1;
 {
     NSLog(@"dealloc");
     [_web1 stopLoading];
+    [self removeObserver:self forKeyPath:self.kvoKeyPath];
 }
 
 - (void)viewDidLoad {
@@ -74,7 +75,7 @@ const BOOL kUseWKWebView = 1;
     NSString *s1 = @"http://36kr.com/p/5063512.html";
 //    s1 = @"https://www.baidu.com/";
     s1 = @"https://i.gtja.com/quotes/securities/diagnoseEplus/trading/index.html?stockCode=002253&market=SZ&color=white";  // 诊股
-    s1 = @"https://mnews.gw.com.cn/wap/data/ipad/stock/SZ/39/000639/f10/f10.html?themeStyleVs=1&qsThemeSign=1";  // f10
+//    s1 = @"https://mnews.gw.com.cn/wap/data/ipad/stock/SZ/39/000639/f10/f10.html?themeStyleVs=1&qsThemeSign=1";  // f10
     NSString *url = s1;
     NSURL *url1 = [NSURL URLWithString:url];
     NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
@@ -104,7 +105,10 @@ const BOOL kUseWKWebView = 1;
         height = _web1.scrollView.contentSize.height;
     }
     // 诊股的网址用WKWebView有问题，contentsize一直在变，但是实际没有变
-    NSLog(@"obobob = %f, %f", width, height);
+    NSValue *nn = [change objectForKey:@"new"];
+//    nn = nil;
+    CGSize ss = [nn CGSizeValue];
+    NSLog(@"obobob = %f, %f, %f", width, height, ss.width);
 }
 
 - (void)fun2 {

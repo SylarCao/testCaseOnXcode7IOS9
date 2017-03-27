@@ -31,9 +31,9 @@
 
 - (IBAction)btn1:(id)sender {
     
-//    [self fun1];
+    [self fun1];
     
-    [self fun2];
+//    [self fun2];
     
 }
 

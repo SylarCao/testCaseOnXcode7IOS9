@@ -15,7 +15,6 @@
 
 @property (nonatomic, strong) NSMutableArray *data;
 
-
 @property (nonatomic, strong) NSMutableArray *threads;
 @property (nonatomic, assign) NSInteger startNumber;
 @property (nonatomic, assign) NSInteger endNumber;
@@ -72,13 +71,7 @@
     
 //    [self noThread];
     
-    
     [self useThread];
-    
-    
-    id aa = nil;
-    
-    [aa count];
     
 }
 

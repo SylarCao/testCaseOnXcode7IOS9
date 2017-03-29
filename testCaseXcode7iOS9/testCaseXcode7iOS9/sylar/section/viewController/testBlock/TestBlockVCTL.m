@@ -36,7 +36,9 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self funPara1];
+    [self fun1];
+    
+//    [self funPara1];
 }
 
 - (void)fun5

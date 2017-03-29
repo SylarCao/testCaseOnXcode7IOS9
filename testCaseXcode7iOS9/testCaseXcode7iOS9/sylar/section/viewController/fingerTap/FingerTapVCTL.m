@@ -31,13 +31,29 @@
     
 //    [self addMask2];
     
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
+    
+}
+
+- (void)fun2 {
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap1)];
+    [_viewFinger addGestureRecognizer:tap1];
+    
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap2)];
+    tap2.numberOfTapsRequired = 2;
+    [_viewFinger addGestureRecognizer:tap2];
+    
+    [tap1 requireGestureRecognizerToFail:tap2];  // 2tap 会把 1tap 吃掉，但是1tap会有延迟
     
 }
 
 - (void)fun1
 {
-    // 重叠的2个view 加tap  上边的会吃掉下边的view不能穿透
+    // 重叠的2个view 加tap
+    // 如果上边的view加tap，那么会吃掉下边的
+    // 如果上边的view不加tap，那么下边的的不会被吃掉
     
     UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(10, kScreenHeight-70, kScreenWidth-20, 60)];
     v1.backgroundColor = [UIColor redColor];

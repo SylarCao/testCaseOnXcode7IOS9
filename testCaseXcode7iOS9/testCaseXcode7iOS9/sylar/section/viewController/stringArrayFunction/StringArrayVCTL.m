@@ -72,8 +72,20 @@
     
 //    [self fun22];
     
-    [self fun23];
+//    [self fun23];
     
+    [self fun24];
+    
+}
+
+- (void)fun24 {
+    NSInteger a1 = 123401;
+    NSString *s1 = [NSString stringWithFormat:@"%.2f HH", a1/1000.f];
+    NSLog(@"sylar :  s1 = %@", s1);   // 123.40
+    
+    a1 = 123409;
+    s1 = [NSString stringWithFormat:@"%.2f HH", a1/1000.f];
+    NSLog(@"sylar :  s1 = %@", s1);   // 123.41
 }
 
 - (void)fun23 {

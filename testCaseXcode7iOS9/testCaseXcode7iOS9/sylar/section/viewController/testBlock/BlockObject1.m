@@ -75,6 +75,7 @@
     if (_blockStrong)
     {
         _blockStrong(@"strong block call back");
+//        _blockStrong = nil;  
     }
     
     if (_blockWeak)

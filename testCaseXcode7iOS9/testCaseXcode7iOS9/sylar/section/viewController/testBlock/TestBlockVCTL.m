@@ -16,6 +16,7 @@
 @property (nonatomic, strong) BlockObject1BlockWeak weak;
 
 @property (nonatomic, strong) BlockObject1 *obj;
+@property (nonatomic, weak) BlockObject1 *objWeak;
 
 @property (nonatomic, strong) NSString *string1;
 
@@ -44,15 +45,20 @@
     
 //    [self fun2];
     
-    [self fun3];
+//    [self fun3];
+    
+    [self fun6];
     
 //    [self funPara1];
 }
 
 - (void)fun6 {
-    self.string1 = @"11";
-    BlockObject1 *oo = [[BlockObject1 alloc] init];
-//    [oo requestBlockStrong:<#^(NSString *data)block#>]
+    BlockObject1 *ss = [[BlockObject1 alloc] init];
+    _objWeak = ss;
+    BlockObject1 *b1 = [[BlockObject1 alloc] init];
+    [b1 requestBlockStrong:^(NSString *data) {
+        NSLog(@"sylar :  b1 = %@(%@)", b1, ss);
+    }];
 }
 
 - (void)fun5
@@ -69,11 +75,7 @@
 //        a1 = a2;   // 这个会报错
     };
     
-//    ++localCounter; // unseen by the block
-//    localCharacter = 'b';
-    
     aBlock(); // execute the block
-    // localCharacter now 'a'
 }
 
 - (void)fun1

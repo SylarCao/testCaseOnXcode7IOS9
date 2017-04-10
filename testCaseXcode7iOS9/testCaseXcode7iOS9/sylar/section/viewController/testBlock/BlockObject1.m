@@ -33,14 +33,14 @@
 {
     _blockStrong = block;
 //    [self performSelector:@selector(cbStrongBlock) withObject:nil afterDelay:2];
-    [[BlockHelperTimer share] fun2SecondAfter:self obj:self];
+    [[BlockHelperTimer share] fun2SecondAfter:self obj:nil];
 }
 
 - (void)requestBlockWeak:(BlockObject1BlockWeak)block
 {
     _blockWeak = block;
 //    [self performSelector:@selector(cbWeakBlock) withObject:nil afterDelay:2];
-    [[BlockHelperTimer share] fun2SecondAfter:self obj:self];
+    [[BlockHelperTimer share] fun2SecondAfter:self obj:nil];
 }
 
 - (void)requestBlockWithParameter:(NSString *)para1 block:(BlockObject1BlockPara1)block

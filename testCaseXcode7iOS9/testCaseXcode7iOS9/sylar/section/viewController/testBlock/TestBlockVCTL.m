@@ -36,13 +36,22 @@
 
 - (IBAction)btn1:(id)sender
 {
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
     
 //    [self funPara1];
 }
 
+- (void)fun6 {
+    self.string1 = @"11";
+    BlockObject1 *oo = [[BlockObject1 alloc] init];
+//    [oo requestBlockStrong:<#^(NSString *data)block#>]
+}
+
 - (void)fun5
 {
+    // __block 什么意思
     // reference link: http://stackoverflow.com/questions/7080927/what-does-the-block-keyword-mean
     
     NSInteger a1 = 42;
@@ -67,6 +76,7 @@
     [block1 requestBlockStrong:^(NSString *data) {
         NSLog(@"ss = %@", data);
     }];
+    _obj = block1;  // block1 没有被hold的时候不会打印ss
 }
 
 - (void)fun2

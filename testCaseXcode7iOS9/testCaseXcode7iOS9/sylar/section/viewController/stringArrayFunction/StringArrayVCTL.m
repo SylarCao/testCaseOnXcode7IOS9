@@ -14,6 +14,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface StringArrayVCTL ()
 
+@property (nonatomic, strong) NSString *s1;
+@property (nonatomic, weak) NSString *w1;
+@property (nonatomic, copy) NSString *c1;
+
+@property (nonatomic, strong) UIColor *ss1;
+@property (nonatomic, weak) UIColor *ww1;
+@property (nonatomic, copy) UIColor *cc1;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -74,8 +82,54 @@
     
 //    [self fun23];
     
-    [self fun24];
+//    [self fun24];
     
+//    [self fun25];
+    
+//    [self fun26];
+    
+    [self fun27];
+    
+}
+
+- (void)fun27 {
+    _ss1 = [UIColor redColor];
+    _ww1 = _ss1;
+    _ss1 = [UIColor blueColor];
+    
+    NSLog(@"sylar :   %@(%p) %@(%p)", _ss1, _ss1, _ww1, _ww1);  // 4个都一样
+}
+
+- (void)fun26 {
+    // strong weak copy
+    UIColor *cc = [UIColor redColor];
+    _ss1 = cc;
+    _ww1 = cc;
+    _cc1 = cc;
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _ss1, _ss1, _ww1, _ww1, _cc1, _cc1, cc, cc);  // 4个都一样
+    
+    cc = [UIColor yellowColor];
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _ss1, _ss1, _ww1, _ww1, _cc1, _cc1, cc, cc);  // ss 不一样，其他3个一样
+    
+    _ss1 = [UIColor yellowColor];
+    _cc1 = [UIColor blueColor];
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _ss1, _ss1, _ww1, _ww1, _cc1, _cc1, cc, cc);  // 4个都不一样
+}
+
+- (void)fun25 {
+    // strong weak copy
+    NSString *ss = @"00";
+    _s1 = ss;
+    _w1 = ss;
+    _c1 = ss;
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _s1, _s1, _w1, _w1, _c1, _c1, ss, ss);  // 4个都一样
+    
+    ss = @"123";
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _s1, _s1, _w1, _w1, _c1, _c1, ss, ss);  // ss 不一样，其他3个一样
+    
+    _s1 = @"s1";
+    _c1 = @"c1";
+    NSLog(@"sylar :  %@(%p) %@(%p) %@(%p) %@(%p)", _s1, _s1, _w1, _w1, _c1, _c1, ss, ss);  // 4个都不一样
 }
 
 - (void)fun24 {

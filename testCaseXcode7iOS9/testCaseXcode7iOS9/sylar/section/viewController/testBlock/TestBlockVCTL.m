@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TestBlockVCTL ()
 
-@property (nonatomic, strong) BlockObject1BlockStrong strong;
+@property (nonatomic, weak) BlockObject1BlockStrong strong;
 
 @property (nonatomic, strong) BlockObject1BlockWeak weak;
 
@@ -34,11 +34,17 @@
     _string1 = @"init_value";
 }
 
+- (IBAction)btn2:(id)sender {
+    NSLog(@"sylar :  222");
+}
+
 - (IBAction)btn1:(id)sender
 {
 //    [self fun1];
     
-    [self fun2];
+//    [self fun2];
+    
+    [self fun3];
     
 //    [self funPara1];
 }
@@ -85,6 +91,8 @@
     [b1 requestBlockWeak:^(NSString *data) {
         NSLog(@"ww = %@", data);
     }];
+    _obj = b1;  // b1 没有被hold的时候不会打印ww
+
 }
 
 - (void)fun3

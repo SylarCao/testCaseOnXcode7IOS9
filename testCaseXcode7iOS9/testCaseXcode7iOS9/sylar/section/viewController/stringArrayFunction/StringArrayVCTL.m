@@ -88,8 +88,48 @@
     
 //    [self fun26];
     
-    [self fun27];
+//    [self fun27];
     
+//    [self fun28];
+    
+    [self fun29];
+    
+}
+
+- (void)fun29 {
+    NSString *s1 = @"aa";   // NSCFConstantString
+    NSString *s2 = [s1 copy];  // NSCFConstantString
+    NSString *s3 = [s1 mutableCopy];  // NSCFString
+    NSString *s4 = [[s1 mutableCopy] copy];  // NSTaggedPointerString
+    
+    self.s1 = s4;
+    self.w1 = s4;
+    self.c1 = s4;
+    NSLog(@"sylar :  s1 = %p, %p, %p, %p, s1(%p), %p, %p ", s1, s2, s3, s4, self.s1, self.w1, self.c1);  // s1=s2, s3, s4=_s1=_w1=_c1
+    
+//    s1 = @"s222";
+//    NSLog(@"sylar :  s1 = %@", s1);
+//    NSLog(@"sylar :  s1 = %p, %p, %p, %p, s1(%p), %p, %p ", s1, s2, s3, s4, self.s1, self.w1, self.c1);  //
+    
+    
+    NSString *s5 = s4;  // NSTaggedPointerString (same address as s4)
+    s5 = @"bb";         // NSCFConstantString
+    s5 = @"aa";         // NSCFConstantString    3个s5地址都不一样
+    
+    NSLog(@"sylar :  s5 = %@", s5);
+    
+    
+}
+
+- (void)fun28 {
+    NSString *s1 = @"123";
+    NSLog(@"sylar :  s1 = %p", s1);   // address1
+    s1 = @"234";
+    NSLog(@"sylar :  s1 = %p", s1);   // address2
+    s1 = @"123";
+    NSLog(@"sylar :  s1 = %p", s1);   // address1
+    s1 = @"123";
+    NSLog(@"sylar :  s1 = %p", s1);   // address1
 }
 
 - (void)fun27 {

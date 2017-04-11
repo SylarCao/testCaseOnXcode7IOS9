@@ -11,6 +11,9 @@
 #import "PropertyOC1.h"
 #import "PropertyOC2.h"
 #import "PropertyC2.h"
+#import "PropertyOCO2ag.h"
+#import "PropertyCOC.h"
+#import "PropertyC100.h"
 
 
 /*
@@ -46,13 +49,44 @@
     
 //    [self fun3];
     
-    [self fun4];
+//    [self fun4];
+    
+//    [self fun5];
+    
+    [self fun6];
 
 }
 
 - (IBAction)btn1:(id)sender {
     NSLog(@"sylar :  btn1");
     NSLog(@"sylar :  int1 = %ld", _myInt1);
+}
+
+- (void)fun6 {
+    PropertyCOC *oco = [[PropertyCOC alloc] init];
+    [oco show]; //  1(21), 2(22), 3(23), 4(24), 5(25), 6(26), 7(27), 8(28), 9(29)
+    
+    PropertyC100 *c100 = oco;
+    c100->a1 = 41;
+    c100->a2 = 42;
+    c100->a3 = 43;
+    c100->a4 = 44;
+    c100->a5 = 45;
+    c100->a6 = 46;
+    c100->a7 = 47;
+    c100->a8 = 48;
+    [c100 show];  // 1(41), 2(42), 3(45), 4(46), 5(47), 6(43), 7(44), 8(48), 9(29)
+    
+}
+
+- (void)fun5 {
+    PropertyOC2 *v1 = [[PropertyOC2 alloc] init];
+    [v1 show];
+    
+    PropertyOCO2ag *ag = v1;
+    ag.a2 = 100;  // crash
+    [ag show];
+    
 }
 
 - (void)fun4 {

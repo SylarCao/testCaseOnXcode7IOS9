@@ -176,7 +176,7 @@
 		2C6E604B1E9B808900D17A82 /* DragCollectionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5E111E9B808800D17A82 /* DragCollectionVCTL.xib */; };
 		2C6E604C1E9B808900D17A82 /* DrawLineVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E141E9B808800D17A82 /* DrawLineVCTL.m */; };
 		2C6E604D1E9B808900D17A82 /* DrawLineVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5E151E9B808800D17A82 /* DrawLineVCTL.xib */; };
-		2C6E604E1E9B808900D17A82 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E181E9B808800D17A82 /* Gdip.m */; };
+		2C6E604E1E9B808900D17A82 /* Gdip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E181E9B808800D17A82 /* Gdip.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		2C6E604F1E9B808900D17A82 /* DrawBazView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E1B1E9B808800D17A82 /* DrawBazView.m */; };
 		2C6E60501E9B808900D17A82 /* DrawView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E1D1E9B808800D17A82 /* DrawView1.m */; };
 		2C6E60511E9B808900D17A82 /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5E1F1E9B808800D17A82 /* DrawView2.m */; };
@@ -401,7 +401,7 @@
 		2C6E612C1E9B808900D17A82 /* XOptionVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5FC81E9B808900D17A82 /* XOptionVCTL.xib */; };
 		2C6E612D1E9B808900D17A82 /* GJWebViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FCC1E9B808900D17A82 /* GJWebViewVCTL.m */; };
 		2C6E612E1E9B808900D17A82 /* GJWebViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5FCD1E9B808900D17A82 /* GJWebViewVCTL.xib */; };
-		2C6E612F1E9B808900D17A82 /* GJWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FD01E9B808900D17A82 /* GJWebView.m */; };
+		2C6E612F1E9B808900D17A82 /* GJWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FD01E9B808900D17A82 /* GJWebView.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		2C6E61301E9B808900D17A82 /* GJBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FD41E9B808900D17A82 /* GJBaseView.m */; };
 		2C6E61311E9B808900D17A82 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FD61E9B808900D17A82 /* LoadingView.m */; };
 		2C6E61321E9B808900D17A82 /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5FD81E9B808900D17A82 /* PullingRefreshTableView.m */; };

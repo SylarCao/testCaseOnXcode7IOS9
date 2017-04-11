@@ -56,8 +56,13 @@
     BlockObject1 *ss = [[BlockObject1 alloc] init];
     _objWeak = ss;
     BlockObject1 *b1 = [[BlockObject1 alloc] init];
+//    _obj = b1;
     [b1 requestBlockStrong:^(NSString *data) {
-        NSLog(@"sylar :  b1 = %@(%@)", b1, ss);
+//        NSLog(@"sylar :  b1 = %@(%@)", b1, ss);
+//        NSLog(@"sylar :  self = %p", self);
+        
+//        self.string1 = data;
+//        NSLog(@"sylar :  back = %@", data);
     }];
 }
 

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
+		2C13F6541E9CCC3C009BBE34 /* PropertyC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */; };
+		2C13F6571E9CCD1A009BBE34 /* PropertyOC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6561E9CCD1A009BBE34 /* PropertyOC1.m */; };
+		2C13F65A1E9CD042009BBE34 /* PropertyOC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6591E9CD042009BBE34 /* PropertyOC2.m */; };
+		2C13F65D1E9CD04D009BBE34 /* PropertyC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F65C1E9CD04D009BBE34 /* PropertyC2.m */; };
 		2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C190D341E1B42720009DFCF /* NotificationCenter.framework */; };
 		2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C190D321E1B42710009DFCF /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D461E1B464E0009DFCF /* TodayVCTL.m */; };
@@ -500,6 +504,14 @@
 
 /* Begin PBXFileReference section */
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C13F6521E9CCC3C009BBE34 /* PropertyC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyC1.h; sourceTree = "<group>"; };
+		2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyC1.m; sourceTree = "<group>"; };
+		2C13F6551E9CCD1A009BBE34 /* PropertyOC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyOC1.h; sourceTree = "<group>"; };
+		2C13F6561E9CCD1A009BBE34 /* PropertyOC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyOC1.m; sourceTree = "<group>"; };
+		2C13F6581E9CD042009BBE34 /* PropertyOC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyOC2.h; sourceTree = "<group>"; };
+		2C13F6591E9CD042009BBE34 /* PropertyOC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyOC2.m; sourceTree = "<group>"; };
+		2C13F65B1E9CD04D009BBE34 /* PropertyC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyC2.h; sourceTree = "<group>"; };
+		2C13F65C1E9CD04D009BBE34 /* PropertyC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyC2.m; sourceTree = "<group>"; };
 		2C190D321E1B42710009DFCF /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C190D341E1B42720009DFCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2C190D3D1E1B42720009DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -2483,6 +2495,14 @@
 				2C6E5EDF1E9B808800D17A82 /* PropertyVCTL.h */,
 				2C6E5EE01E9B808800D17A82 /* PropertyVCTL.m */,
 				2C6E5EE11E9B808800D17A82 /* PropertyVCTL.xib */,
+				2C13F6521E9CCC3C009BBE34 /* PropertyC1.h */,
+				2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */,
+				2C13F6551E9CCD1A009BBE34 /* PropertyOC1.h */,
+				2C13F6561E9CCD1A009BBE34 /* PropertyOC1.m */,
+				2C13F6581E9CD042009BBE34 /* PropertyOC2.h */,
+				2C13F6591E9CD042009BBE34 /* PropertyOC2.m */,
+				2C13F65B1E9CD04D009BBE34 /* PropertyC2.h */,
+				2C13F65C1E9CD04D009BBE34 /* PropertyC2.m */,
 			);
 			path = property;
 			sourceTree = "<group>";
@@ -3630,6 +3650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6E60391E9B808900D17A82 /* DownloadVCTL.m in Sources */,
+				2C13F65A1E9CD042009BBE34 /* PropertyOC2.m in Sources */,
 				2C6E60A51E9B808900D17A82 /* OthersVCTL.m in Sources */,
 				2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */,
 				2C6E605A1E9B808900D17A82 /* FormatCodeVCTL.m in Sources */,
@@ -3821,8 +3842,10 @@
 				2C2EC33B1BE74021008197C3 /* UIProgressView+AFNetworking.m in Sources */,
 				2C2EC32D1BE74021008197C3 /* AFHTTPRequestOperation.m in Sources */,
 				2C6E612B1E9B808900D17A82 /* XOptionVCTL.m in Sources */,
+				2C13F6571E9CCD1A009BBE34 /* PropertyOC1.m in Sources */,
 				2C6E60041E9B808900D17A82 /* CameraVCTL.m in Sources */,
 				2C6E60D81E9B808900D17A82 /* WXApiRequestHandler.m in Sources */,
+				2C13F6541E9CCC3C009BBE34 /* PropertyC1.m in Sources */,
 				2CC549AD1D923373000F6880 /* NSArray+MASAdditions.m in Sources */,
 				2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */,
 				2C6E61311E9B808900D17A82 /* LoadingView.m in Sources */,
@@ -3860,6 +3883,7 @@
 				2CA112921BB29E4A00406685 /* ViewController.m in Sources */,
 				2C4BE0431BE9A7B0004F1DAF /* MJRefreshFooter.m in Sources */,
 				2C6E60261E9B808900D17A82 /* ContactListVCTL.m in Sources */,
+				2C13F65D1E9CD04D009BBE34 /* PropertyC2.m in Sources */,
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2C6E609A1E9B808900D17A82 /* MGSwipeCellVCTL.m in Sources */,

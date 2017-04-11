@@ -9,7 +9,13 @@
 #import "TestBlockVCTL.h"
 #import "BlockObject1.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+#define normalize( x )    try{} @finally{} __typeof__(x) x = __weak_##x##__;
+#define weakify( x )    autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x;
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TestBlockVCTL ()
+{
+    NSString *member1;
+}
 
 @property (nonatomic, weak) BlockObject1BlockStrong strong;
 
@@ -26,7 +32,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"dealloc");
+    NSLog(@"dealloc TestBlockVCTL");
 }
 
 
@@ -47,9 +53,38 @@
     
 //    [self fun3];
     
-    [self fun6];
+//    [self fun6];
+    
+    [self fun7];
     
 //    [self funPara1];
+}
+
+- (void)fun7 {
+    BlockObject1 *b1 = [[BlockObject1 alloc] init];
+    _obj = b1;
+    self.string1 = @"ssr";
+    
+    // 下边这样写 没问题
+    __weak TestBlockVCTL *ww = self;
+    [b1 requestBlockStrong:^(NSString *data) {
+        NSLog(@"sylar :  back");
+        NSLog(@"sylar :  self = %p", self.string1);   // not ok
+        NSLog(@"sylar :  self = %p", _string1);       // not ok
+        NSLog(@"sylar :  self = %p", ww.string1);     // ok
+    }];
+    
+//    @weakify(self);
+//    [b1 requestBlockStrong:^(NSString *data) {
+//        @normalize(self);
+//        NSLog(@"sylar :  back");
+//        NSLog(@"sylar :  self = %p", self.string1);  // ok
+//        NSLog(@"sylar :  self = %p", _string1);      // not ok
+//        NSLog(@"sylar :  self = %p", self->member1);  // ok
+//        NSLog(@"sylar :  self = %p", member1);       // not ok
+//    }];
+    
+   
 }
 
 - (void)fun6 {

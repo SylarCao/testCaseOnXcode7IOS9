@@ -39,7 +39,8 @@
 @end
 
 @implementation PropertyVCTL
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -110,8 +111,6 @@
     NSLog(@"sylar :  +++++++++++++");
 }
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
 - (void)fun3 {
     PropertyOC1 *c2 = [[PropertyOC1 alloc] init];
     c2.value = 88;

@@ -54,6 +54,12 @@ typedef struct ss5
     int v5;
 }ss5;
 
+typedef struct ss6
+{
+    char v2;
+    int v3;
+    short v1;
+}ss6;
 
 struct SX
 {

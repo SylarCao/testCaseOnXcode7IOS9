@@ -29,11 +29,11 @@
 {
 //    [self fun1];
     
-//    [self fun2];
+    [self fun2];
     
 //    [self fun3];
     
-    [self fun4];
+//    [self fun4];
 }
 
 - (void)fun4
@@ -77,6 +77,7 @@
     int b3 = sizeof(DZH_DATAHEAD);
     int b4 = sizeof(int);
     int b5 = 0;
+    int b6 = 0;
     NSLog(@"size = %d, %d, %d, %d", b1, b2, b3, b4);  // 2, 1, 8, 4
     
     b1 = sizeof(ss1);
@@ -84,7 +85,8 @@
     b3 = sizeof(ss3);
     b4 = sizeof(ss4);
     b5 = sizeof(ss5);
-    NSLog(@"size = %d, %d, %d, %d, %d", b1, b2, b3, b4, b5);  // 2, 4, 8, 8, 12
+    b6 = sizeof(ss6);
+    NSLog(@"size = %d, %d, %d, %d, %d, %d", b1, b2, b3, b4, b5, b6);  // 2, 4, 8, 8, 12, 12
 }
 
 - (void)fun1

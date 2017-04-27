@@ -479,6 +479,8 @@
 		2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3451BCE3DC800B82CAE /* MGSwipeButton.m */; };
 		2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */; };
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
+		2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */; };
+		2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1276,6 +1278,9 @@
 		2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		2CE1F3491BCE3DC800B82CAE /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		2CFE609F1EB03643001CC571 /* DetectRotationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectRotationVCTL.h; sourceTree = "<group>"; };
+		2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectRotationVCTL.m; sourceTree = "<group>"; };
+		2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectRotationVCTL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1561,6 +1566,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CFE609E1EB03631001CC571 /* DetectRotation */,
 				2C6E5D551E9B808800D17A82 /* 3DTouch */,
 				2C6E5D5F1E9B808800D17A82 /* actionsheet */,
 				2C6E5D631E9B808800D17A82 /* AFNetworking */,
@@ -3364,6 +3370,16 @@
 			path = textField_shake;
 			sourceTree = "<group>";
 		};
+		2CFE609E1EB03631001CC571 /* DetectRotation */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE609F1EB03643001CC571 /* DetectRotationVCTL.h */,
+				2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */,
+				2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */,
+			);
+			path = DetectRotation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3472,6 +3488,7 @@
 				2C6E60181E9B808900D17A82 /* AttributeStringVCTL.xib in Resources */,
 				2C6E608D1E9B808900D17A82 /* MathProblem1VCTL.xib in Resources */,
 				2C6E61071E9B808900D17A82 /* X1.xib in Resources */,
+				2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */,
 				2C6E5FF31E9B808900D17A82 /* AnimationVCTL.xib in Resources */,
 				2C6E60971E9B808900D17A82 /* MenuItemCell.xib in Resources */,
 				2C6E5FF81E9B808900D17A82 /* EnterBkgdVCTL.xib in Resources */,
@@ -3683,6 +3700,7 @@
 				2C6E601B1E9B808900D17A82 /* CollectionView1234Cell.m in Sources */,
 				2C6E60291E9B808900D17A82 /* CoreDataVCTL.m in Sources */,
 				2C6E5FFE1E9B808900D17A82 /* SecurityStrategy.m in Sources */,
+				2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */,
 				2C6E60E81E9B808900D17A82 /* StrongWeakVCTL.m in Sources */,
 				2C6E5FEC1E9B808900D17A82 /* Touch3DVCTL.m in Sources */,
 				2C6E60021E9B808900D17A82 /* BuglyVCTL.m in Sources */,

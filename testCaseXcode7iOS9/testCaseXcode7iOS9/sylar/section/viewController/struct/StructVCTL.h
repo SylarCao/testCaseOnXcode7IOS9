@@ -93,6 +93,45 @@ struct SA {
     char a4; /* 1 byte  + 3 padding bytes */
 }SA;
 
+struct SB {
+    char  a1; /* 1 bytes + 1 padding bytes*/
+    short a2; /* 2 byte */
+    int  a3;  /* 4 bytes */
+}SB;
+
+struct SC {
+    char  a1;    // 1 bytes + 1 padding bytes   = 2
+    short a2;    // 2 byte                      = 2
+    int  a3;     // 4 bytes                     = 4
+    char a4[9];  // 9 bytes + 3 padding bytes   = 10
+}SC;
+
+struct SC1 {   // size  = 20
+    char  a1;    // 1 bytes + 1 padding bytes   = 2
+    short a2;    // 2 byte                      = 2
+    int  a3;     // 4 bytes                     = 4
+    char a4[9];  // 9 bytes + 1 padding bytes   = 10
+    short a5;    // 2 byte                      = 2
+}SC1;
+
+struct SC2 {   // size  = 24
+    char  a1;    // 1 bytes + 1 padding bytes   = 2
+    short a2;    // 2 byte                      = 2
+    int  a3;     // 4 bytes                     = 4
+    char a4[9];  // 9 bytes + 1 padding bytes   = 10
+    short a5;    // 2 byte                      = 2
+    char  a6;     // 1 byte + 3 padding          = 4
+}SC2;
+
+struct SC3 {   // size  = 20
+    char  a1;    // 1 bytes + 1 padding bytes   = 2
+    short a2;    // 2 byte                      = 2
+    int  a3;     // 4 bytes                     = 4
+    char a4[9];  // 9 bytes                     = 9
+    char  a5;     // 1 byte                      = 1
+    short a6;    // 2 byte                      = 2
+    
+}SC3;
 
 
 @interface StructVCTL : BasicVCTL

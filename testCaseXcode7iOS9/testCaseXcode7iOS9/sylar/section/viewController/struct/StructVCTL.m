@@ -29,11 +29,11 @@
 {
 //    [self fun1];
     
-    [self fun2];
+//    [self fun2];
     
 //    [self fun3];
     
-//    [self fun4];
+    [self fun4];
 }
 
 - (void)fun4
@@ -42,8 +42,15 @@
     NSInteger a2 = sizeof(SY);
     NSInteger a3 = sizeof(SZ);
     NSInteger a4 = sizeof(SA);
+    NSInteger a5 = sizeof(SB);
+    NSInteger a6 = sizeof(SC);
     
-    NSLog(@"size = %ld, %ld, %ld, %ld", a1, a2, a3, a4);   // 12, 8, 8, 16
+    NSLog(@"size = %ld, %ld, %ld, %ld, %ld, %ld", a1, a2, a3, a4, a5, a6);   // 12, 8, 8, 16, 8, 20
+    
+    NSInteger a7 = sizeof(SC1);
+    NSInteger a8 = sizeof(SC2);
+    NSInteger a9 = sizeof(SC3);
+    NSLog(@"sylar :  size = %ld, %ld, %ld", a7, a8, a9);   // 20, 24, 20
     
 }
 

@@ -92,7 +92,26 @@
     
 //    [self fun28];
     
-    [self fun29];
+//    [self fun29];
+    
+    [self fun30];
+    
+}
+
+- (void)fun30 {
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    for (int i=0; i<10; i++) {
+        NSString *ss = [NSString stringWithFormat:@"a = %d", i];
+        [arr addObject:ss];
+    }
+    
+    NSArray *a1 = [[NSArray alloc] initWithArray:arr];
+    [a1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"sylar :  obj = %@, index(%ld), stop(%d)", obj, idx, *stop);
+        if (idx == 4) {
+            *stop = YES;
+        }
+    }];
     
 }
 

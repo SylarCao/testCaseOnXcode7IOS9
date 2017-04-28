@@ -105,13 +105,23 @@
         [arr addObject:ss];
     }
     
-    NSArray *a1 = [[NSArray alloc] initWithArray:arr];
-    [a1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    
+//    NSArray *a1 = [[NSArray alloc] initWithArray:arr];
+//    [a1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        NSLog(@"sylar :  obj = %@, index(%ld), stop(%d)", obj, idx, *stop);
+//        if (idx == 4) {
+//            *stop = YES;
+//        }
+//    }];
+    
+    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSLog(@"sylar :  obj = %@, index(%ld), stop(%d)", obj, idx, *stop);
         if (idx == 4) {
-            *stop = YES;
+            [arr removeObject:obj];
         }
-    }];
+    }];    // not crash  
+    
+    
     
 }
 

@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSString *s1;
 @property (nonatomic, weak) NSString *w1;
 @property (nonatomic, copy) NSString *c1;
+@property (nonatomic) NSString *s0;
 
 @property (nonatomic, strong) UIColor *ss1;
 @property (nonatomic, weak) UIColor *ww1;
@@ -104,12 +105,15 @@
     NSMutableString *s1 = [[NSMutableString alloc] initWithString:@"12345"];
     self.s1 = s1;
     self.c1 = s1;
+    self.s0 = s1;
     
     [s1 appendString:@"aaaa"];
     
     NSLog(@"sylar :  %@(%p), %@(%p), %@(%p)", s1, s1, self.s1, self.s1, self.c1, self.c1);
     
     NSLog(@"sylar :  mutable = %d", [self.c1 isKindOfClass:[NSMutableString class]]);
+    
+    NSLog(@"sylar :  s0 = %@", self.s0);  //  s0 = 12345aaaa
     
     
     s1 = [[NSMutableString alloc] initWithString:@"12345"];

@@ -94,8 +94,24 @@
     
 //    [self fun29];
     
-    [self fun30];
+//    [self fun30];
     
+    [self fun31];
+    
+}
+
+- (void)fun31 {
+    NSMutableString *s1 = [[NSMutableString alloc] initWithString:@"12345"];
+    self.s1 = s1;
+    self.c1 = s1;
+    
+    [s1 appendString:@"aaaa"];
+    
+    s1.string
+    
+    NSLog(@"sylar :  %@(%p), %@(%p), %@(%p)", s1, s1, self.s1, self.s1, self.c1, self.c1);
+    
+    NSLog(@"sylar :  mutable = %d", [self.c1 isKindOfClass:[NSMutableString class]]);
 }
 
 - (void)fun30 {

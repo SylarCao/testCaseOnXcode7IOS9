@@ -107,11 +107,17 @@
     
     [s1 appendString:@"aaaa"];
     
-    s1.string
-    
     NSLog(@"sylar :  %@(%p), %@(%p), %@(%p)", s1, s1, self.s1, self.s1, self.c1, self.c1);
     
     NSLog(@"sylar :  mutable = %d", [self.c1 isKindOfClass:[NSMutableString class]]);
+    
+    
+    s1 = [[NSMutableString alloc] initWithString:@"12345"];
+    NSString *s2 = s1;
+    [s1 appendString:@"aaaa"];
+    
+    NSLog(@"sylar :  s1 = %@, s2 = %@", s1, s2);   // s1 = 12345aaaa, s2 = 12345aaaa
+    
 }
 
 - (void)fun30 {

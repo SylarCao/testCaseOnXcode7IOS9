@@ -97,8 +97,22 @@
     
 //    [self fun30];
     
-    [self fun31];
+//    [self fun31];
     
+    [self fun32];
+    
+}
+
+- (void)fun32 {
+    NSString *s1 = @"123";
+    NSString *k = @"kk";
+    s1 = nil;
+    
+//    NSDictionary *dict1 = @{k : s1};  // nil crash
+    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"obj1", @"k1", s1, k, nil];  // nil not crash
+    NSDictionary *dict3 = [NSDictionary dictionaryWithObject:s1 forKey:k];  // nil crash
+    
+    NSLog(@"sylar :  info");
 }
 
 - (void)fun31 {

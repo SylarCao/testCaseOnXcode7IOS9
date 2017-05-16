@@ -26,6 +26,7 @@
 @property (nonatomic, strong) NSMutableArray *marr1;
 @property (nonatomic, copy) NSMutableArray *marr2;
 
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation StrongWeakVCTL
@@ -48,9 +49,42 @@
     
 //    [self fun5];
     
-//    [self fun6];
+    [self fun6];
     
-    [self fun7];
+//    [self fun7];
+    
+//    [self fun8];
+
+}
+
+- (void)fun8 {
+    
+    [self testA:@"aabcad"];
+    
+}
+
+- (void)testA:(NSString *)str {
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    for (int i=0; i<str.length; i++) {
+        [arr addObject:[str substringWithRange:NSMakeRange(i, 1)]];
+    }
+    
+    NSLog(@"sylar :  arr = %@", arr);
+    
+    
+    int count = arr.count;
+    for (int j=0; j<count; j++) {
+        for (int i=j; i<count; i ++) {
+            [arr objectAtIndex:i+2];
+            NSString *a = [arr objectAtIndex:j];
+            NSString *b = [arr objectAtIndex:i+2];
+            if ([a isEqualToString:b]) {
+                [arr replaceObjectAtIndex:i+2 withObject:@""];
+            }
+        }
+    }
+    NSLog(@"sylar :  arr = %@", arr);
+    
 }
 
 - (IBAction)btn1:(id)sender {
@@ -70,15 +104,32 @@
     StrongWeakObject *obj1 = [[StrongWeakObject alloc] init];
     obj1.value = 1;
     
+    self.marr2 = [[NSMutableArray alloc] init];
+    
+    NSArray *a0 = @[@"1", @"2", @"3"];
     NSMutableArray *a1 = [[NSMutableArray alloc] initWithObjects:@"1", @"2", obj1, @"3", nil];
-    self.marr1 = a1;
-    self.marr2 = a1;
+    self.marr1 = a1;   // arrayM
+    self.marr2 = a1;   // array
     
     obj1.value = 2;
     
+    NSLog(@"sylar :  mmm = %d", [self.marr2 isKindOfClass:[NSMutableArray class]]);
+    
     [a1 addObject:@"5"];
     
-    NSLog(@"sylar :  a1 = %@", a1);
+    NSLog(@"sylar :  a1 = %p, %p, %p", a1, self.marr1, self.marr2);
+    
+    self.marr2 = [a1 mutableCopy];  // array
+    NSLog(@"sylar :  mmm = %d", [self.marr2 isKindOfClass:[NSMutableArray class]]);  // 0
+    NSLog(@"sylar :  a1 = %p, %p, %p", a1, self.marr1, self.marr2);
+    
+    self.marr2 = [[NSMutableArray alloc] initWithArray:a1];  // array
+    NSLog(@"sylar :  mmm = %d", [self.marr2 isKindOfClass:[NSMutableArray class]]);  // 0
+    NSLog(@"sylar :  a1 = %p, %p, %p", a1, self.marr1, self.marr2);
+    
+    self.marr2 = [a1 copy];
+    NSLog(@"sylar :  mmm = %d", [self.marr2 isKindOfClass:[NSMutableArray class]]);  // 0
+    NSLog(@"sylar :  a1 = %p, %p, %p", a1, self.marr1, self.marr2);
 }
 
 - (void)fun5 {

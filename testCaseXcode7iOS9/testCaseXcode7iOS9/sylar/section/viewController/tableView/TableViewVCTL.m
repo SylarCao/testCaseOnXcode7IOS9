@@ -12,7 +12,7 @@
 #import "TabelViewHeaderCodeView.h"
 #import "TableViewCodeCell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-#define kTableViewVCTLXib  (0)
+#define kTableViewVCTLXib  (1)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TableViewVCTL ()
 <UITableViewDataSource, UITableViewDelegate>
@@ -72,6 +72,7 @@
 #pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+//    NSLog(@"sylar :  numberOfSectionsInTableView");
     return 5;
 }
 
@@ -84,6 +85,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    NSLog(@"sylar :  cellForRowAtIndexPath(%d, %d)", indexPath.section, indexPath.row);
     UITableViewCell *rt = nil;
     if (kTableViewVCTLXib)
     {
@@ -143,6 +145,8 @@
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 //    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+    // reload seciont 的时候   numberOfRowsInSection 会都掉
+    //                        cellForRowAtIndexPath 只会调用对应的section
 }
 
 

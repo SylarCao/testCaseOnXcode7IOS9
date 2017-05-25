@@ -144,7 +144,8 @@
 {
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];
     // reload seciont 的时候   numberOfRowsInSection 会都掉
     //                        cellForRowAtIndexPath 只会调用对应的section
 }

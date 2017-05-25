@@ -49,17 +49,26 @@
     
 //    [self fun5];
     
-    [self fun6];
+//    [self fun6];
     
 //    [self fun7];
     
-//    [self fun8];
+    [self fun8];
 
 }
 
 - (void)fun8 {
     
-    [self testA:@"aabcad"];
+//    [self testA:@"aabcad"];
+    
+    self.marr2 = [[NSMutableArray alloc] init];
+    if ([self.marr2 isKindOfClass:[NSMutableArray class]]) {
+        NSLog(@"sylar :  arr2  yes");
+    } else {
+        NSLog(@"sylar :  arr2 no");
+    }
+    
+    [self.marr2 addObject:@"1"];
     
 }
 
@@ -143,7 +152,7 @@
     
     obj1.value = 2;
     
-    NSLog(@"sylar :  a1 = %@", a1);
+    NSLog(@"sylar :  a1 = %@, %p, %p, %p", a1, a1, self.arr1, self.arr2);
     
 }
 

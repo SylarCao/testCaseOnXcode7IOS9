@@ -99,8 +99,20 @@
     
 //    [self fun31];
     
-    [self fun32];
+//    [self fun32];
     
+    [self fun33];
+    
+}
+
+- (void)fun33 {
+    NSArray *aa = [[NSArray alloc] init];
+    
+    NSLog(@"sylar :  aaa = %d, %u", aa.count, aa.count-1);
+    
+    for (int i=0; i<(NSInteger)aa.count-1; i++) {
+        NSString *ss = [aa objectAtIndex:i];
+    }
 }
 
 - (void)fun32 {

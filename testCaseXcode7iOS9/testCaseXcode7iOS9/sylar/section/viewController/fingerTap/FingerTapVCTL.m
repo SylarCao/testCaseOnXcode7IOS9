@@ -15,6 +15,8 @@
 
 @property (nonatomic, weak) IBOutlet UIView *viewPoint;
 
+@property (nonatomic, weak) IBOutlet UIView *v1;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation FingerTapVCTL
@@ -33,8 +35,21 @@
     
 //    [self fun1];
     
-    [self fun2];
+//    [self fun2];
     
+    [self fun3];
+    
+}
+
+- (void)fun3 {
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fun1Tap1)];
+    [_viewFinger addGestureRecognizer:tap1];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(fun1Tap2) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"ttt" forState:UIControlStateNormal];
+    [_v1 addSubview:btn];
+    btn.frame = CGRectMake(20, 60, 40, 50);
 }
 
 - (void)fun2 {

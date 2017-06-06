@@ -108,7 +108,7 @@
 - (void)fun33 {
     NSArray *aa = [[NSArray alloc] init];
     
-    NSLog(@"sylar :  aaa = %d, %u", aa.count, aa.count-1);
+    NSLog(@"sylar :  aaa = %ld, %lu", aa.count, aa.count-1);
     
     for (int i=0; i<(NSInteger)aa.count-1; i++) {
         NSString *ss = [aa objectAtIndex:i];

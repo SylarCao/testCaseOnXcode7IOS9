@@ -39,9 +39,12 @@
     
     u1 = @"http://mnews.gw.com.cn/wap/data/ipad/stock/SZ/63/002563/f10/f10.html?themeStyleVs=1&qsThemeSign=1";
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:[u1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
                                                 cachePolicy: NSURLRequestUseProtocolCachePolicy
                                             timeoutInterval: 60.0];
+#pragma clang diagnostic pop
     
     [_w1 loadRequest:urlRequest];
 }

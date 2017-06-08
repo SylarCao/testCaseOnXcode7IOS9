@@ -101,7 +101,30 @@
     
 //    [self fun32];
     
-    [self fun33];
+//    [self fun33];
+    
+    [self fun34];
+    
+}
+
+- (void)fun34 {
+    NSArray *aa = @[@"1", @"2"];
+    NSString *obj = @"123";
+    
+    NSInteger index = [aa indexOfObject:obj];
+    if (index == NSNotFound) {
+        NSLog(@"sylar :  aaaa index not found");  // here
+    } else {
+        NSLog(@"sylar :  aaaaaaa");
+    }
+    
+    aa = nil;
+    index = [aa indexOfObject:obj];
+    if (index == NSNotFound) {
+        NSLog(@"sylar :  bbbbb index not found");
+    } else {
+        NSLog(@"sylar :  bbbbb");   // here
+    }
     
 }
 

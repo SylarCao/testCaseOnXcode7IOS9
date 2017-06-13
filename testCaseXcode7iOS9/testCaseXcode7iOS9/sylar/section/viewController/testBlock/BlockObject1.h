@@ -40,5 +40,12 @@ typedef void (^BlockObject1BlockPara1)(NSString *data);
  */
 - (void)requestBlockWithParameter:(NSString *)para1 block:(BlockObject1BlockPara1)block;
 
+/**
+ timer
+
+ @param block block description
+ */
+- (void)requestWithTimer:(BlockObject1BlockStrong)block;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

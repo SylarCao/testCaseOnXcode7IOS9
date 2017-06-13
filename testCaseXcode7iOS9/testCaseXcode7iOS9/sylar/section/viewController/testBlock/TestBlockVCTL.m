@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "TestBlockVCTL.h"
 #import "BlockObject1.h"
+#import "BlockObject2.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #define normalize( x )    try{} @finally{} __typeof__(x) x = __weak_##x##__;
 #define weakify( x )    autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x;
@@ -53,11 +54,17 @@
     
 //    [self fun3];
     
+//    [self fun4];
+    
 //    [self fun6];
     
-    [self fun7];
+//    [self fun7];
     
-//    [self funPara1];
+    [self funPara1];
+    
+//    [self funPara2];
+    
+//    [self funPara3];
 }
 
 - (void)fun7 {
@@ -124,7 +131,7 @@
     [block1 requestBlockStrong:^(NSString *data) {
         NSLog(@"ss = %@", data);
     }];
-    _obj = block1;  // block1 没有被hold的时候不会打印ss
+    _obj = block1;  // 会输出
 }
 
 - (void)fun2
@@ -132,15 +139,17 @@
     BlockObject1 *b1 = [[BlockObject1 alloc] init];
     [b1 requestBlockWeak:^(NSString *data) {
         NSLog(@"ww = %@", data);
+        BlockObject2 *oo = [[BlockObject2 alloc] init];
+        NSLog(@"sylar :  bbb");
     }];
-    _obj = b1;  // b1 没有被hold的时候不会打印ww
+    _obj = b1;  // 会输出
 
 }
 
 - (void)fun3
 {
     BlockObject1BlockStrong block1 = ^(NSString *data){
-        NSLog(@"s = %@", data);
+        NSLog(@"s = %@", data);  // 不输出
     };
     _strong = block1;
     BlockObject1 *bb1 = [[BlockObject1 alloc] init];
@@ -150,7 +159,7 @@
 - (void)fun4
 {
     BlockObject1BlockWeak block1 = ^(NSString *data){
-        NSLog(@"w = %@", data);
+        NSLog(@"w = %@", data);    // 不输出
     };
     _weak = block1;
     BlockObject1 *bb1 = [[BlockObject1 alloc] init];
@@ -159,24 +168,69 @@
 
 - (void)funPara1
 {
+    _string1 = @"another";
     BlockObject1 *obj1 = [[BlockObject1 alloc] init];
     NSString *ss = _string1;
     [obj1 requestBlockWithParameter:ss block:^(NSString *data) {
         NSLog(@"ss = %@", ss);
         NSLog(@"data = %@", data);
-        NSLog(@"para1 = %@", _string1);
+        NSLog(@"para1 = %@", _string1);  // 这里循环引用了
         
-        if ([_string1 isEqualToString:data])
-        {
-            NSLog(@"same");
-        }
-        else
-        {
-            NSLog(@"not same");
-        }
+        BlockObject2 *oo = [[BlockObject2 alloc] init];
+        oo.value1 = 123;
+        
+//        if ([_string1 isEqualToString:data])
+//        {
+//            NSLog(@"same");
+//        }
+//        else
+//        {
+//            NSLog(@"not same");
+//        }
+        
+        self.obj = nil;  // 加了这句就不会循环引用了
+        
     }];
+    _obj = obj1;
     
     _string1 = @"another";
+}
+
+- (void)funPara2 {
+    _string1 = @"another";
+    BlockObject1 *obj1 = [[BlockObject1 alloc] init];
+    NSString *ss = _string1;
+    __weak TestBlockVCTL *ttt = self;
+    [obj1 requestBlockWithParameter:ss block:^(NSString *data) {
+        NSLog(@"ss = %@", ss);
+        NSLog(@"data = %@", data);
+        NSLog(@"para1 = %@", ttt.string1);
+        
+        BlockObject2 *oo = [[BlockObject2 alloc] init];
+        oo.value1 = 123;
+        
+        //        if ([_string1 isEqualToString:data])
+        //        {
+        //            NSLog(@"same");
+        //        }
+        //        else
+        //        {
+        //            NSLog(@"not same");
+        //        }
+        
+    }];
+    _obj = obj1;
+    
+    _string1 = @"another";
+}
+
+- (void)funPara3 {
+    BlockObject1 *obj1 = [[BlockObject1 alloc] init];
+    [obj1 requestWithTimer:^(NSString *data) {
+        NSLog(@"sylar :  %@", data);
+        
+        NSLog(@"para1 = %@", _string1);  // 这里 不会循环引用
+    }];
 }
 
 @end

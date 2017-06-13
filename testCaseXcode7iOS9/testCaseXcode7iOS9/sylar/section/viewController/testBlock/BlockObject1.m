@@ -32,14 +32,12 @@
 - (void)requestBlockStrong:(BlockObject1BlockStrong)block
 {
     _blockStrong = block;
-//    [self performSelector:@selector(cbStrongBlock) withObject:nil afterDelay:2];
     [[BlockHelperTimer share] fun2SecondAfter:self obj:nil];
 }
 
 - (void)requestBlockWeak:(BlockObject1BlockWeak)block
 {
     _blockWeak = block;
-//    [self performSelector:@selector(cbWeakBlock) withObject:nil afterDelay:2];
     [[BlockHelperTimer share] fun2SecondAfter:self obj:nil];
 }
 
@@ -47,7 +45,11 @@
 {
     _para1 = para1;
     _blockPara1 = block;
-//    [[BlockHelperTimer share] fun2SecondAfter:self obj:self];
+    [[BlockHelperTimer share] fun2SecondAfter:self obj:nil];
+}
+
+- (void)requestWithTimer:(BlockObject1BlockStrong)block {
+    _blockStrong = block;
     [self performSelector:@selector(BlockHelperTimerCallBackAfter2Second) withObject:nil afterDelay:2];
 }
 
@@ -58,7 +60,6 @@
     {
         _blockStrong(@"strong block call back");
     }
-//    [self performSelector:@selector(cbStrongBlock) withObject:nil afterDelay:2];
 }
 
 - (void)cbWeakBlock

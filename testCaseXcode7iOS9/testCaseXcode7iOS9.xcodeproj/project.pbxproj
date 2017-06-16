@@ -480,6 +480,7 @@
 		2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3451BCE3DC800B82CAE /* MGSwipeButton.m */; };
 		2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */; };
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
+		2CF0E0051EF36F2300067697 /* sgs6px.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0E0041EF36F2300067697 /* sgs6px.png */; };
 		2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */; };
 		2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */; };
 /* End PBXBuildFile section */
@@ -1281,6 +1282,7 @@
 		2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		2CE1F3491BCE3DC800B82CAE /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		2CF0E0041EF36F2300067697 /* sgs6px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6px.png; sourceTree = "<group>"; };
 		2CFE609F1EB03643001CC571 /* DetectRotationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectRotationVCTL.h; sourceTree = "<group>"; };
 		2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectRotationVCTL.m; sourceTree = "<group>"; };
 		2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectRotationVCTL.xib; sourceTree = "<group>"; };
@@ -3208,6 +3210,7 @@
 		2CA1F89E1C0BF3D600089E14 /* sgs */ = {
 			isa = PBXGroup;
 			children = (
+				2CF0E0041EF36F2300067697 /* sgs6px.png */,
 				2C68EE021C1942F2009E1396 /* sgs5TH.png */,
 				2CA1F8AF1C0BF54000089E14 /* sgs7.png */,
 				2CA1F8AD1C0BF4C200089E14 /* sgs6.png */,
@@ -3589,6 +3592,7 @@
 				2C6E601C1E9B808900D17A82 /* CollectionView1234Cell.xib in Resources */,
 				2C6E601E1E9B808900D17A82 /* CollectionView123Cell.xib in Resources */,
 				2C6E60F71E9B808900D17A82 /* TableViewVCTL.xib in Resources */,
+				2CF0E0051EF36F2300067697 /* sgs6px.png in Resources */,
 				2C6E612A1E9B808900D17A82 /* WindowVCTL.xib in Resources */,
 				2C6E60691E9B808900D17A82 /* HorizontalVCTL.xib in Resources */,
 				2C6E60B11E9B808900D17A82 /* PostNotificationVCTL.xib in Resources */,

@@ -14,9 +14,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation DrawView3
 
-
-
-
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -24,6 +21,7 @@
     UIColor *aColor = [UIColor redColor];
     UIColor *aColor2 = [UIColor blueColor];
     CGRect rr = CGRectZero;
+    NSDictionary *attribute = nil;
     
     // 画1根 参考的线条
     points2[0] = CGPointMake(2, 2);
@@ -158,6 +156,38 @@
     rr = CGRectMake(100, 149, 40, 30);
     CGContextAddRect(context, rr);
     CGContextStrokePath(context);
+    
+    // draw text 增加高度和宽度
+    rr = CGRectMake(30, 200, 180, 40);
+    aColor = [UIColor yellowColor];
+    CGContextSetFillColor(context, CGColorGetComponents(aColor.CGColor));
+    CGContextFillRect(context, rr);  // 黄色背景
+    s1 = @"abcde";
+    NSMutableParagraphStyle * style = [[NSMutableParagraphStyle alloc] init];
+    style.minimumLineHeight = rr.size.height;
+    style.headIndent = 6;
+    style.firstLineHeadIndent = 3;
+    style.tailIndent = rr.size.width - 3;
+    style.alignment = NSTextAlignmentCenter;
+    NSNumber *n = [NSNumber numberWithFloat:rr.size.height/2];
+    attribute = @{NSForegroundColorAttributeName: [UIColor redColor], NSBackgroundColorAttributeName: [UIColor greenColor], NSParagraphStyleAttributeName: style, NSBaselineOffsetAttributeName: n};
+//    [s1 drawInRect:rr withAttributes:attribute];
+    
+    // attribute string 后边跟一张图片
+    NSMutableAttributedString *mm = [[NSMutableAttributedString alloc] initWithString:@""];
+    NSDictionary *a1 = @{NSForegroundColorAttributeName: [UIColor redColor], NSBaselineOffsetAttributeName: n, NSParagraphStyleAttributeName: style};
+    NSMutableAttributedString *m1 = [[NSMutableAttributedString alloc] initWithString:@"123 " attributes:a1];
+    NSDictionary *a2 = @{NSForegroundColorAttributeName: [UIColor greenColor], NSBaselineOffsetAttributeName: n, NSParagraphStyleAttributeName: style};
+    NSMutableAttributedString *m2 = [[NSMutableAttributedString alloc] initWithString:@"abc" attributes:a2];
+    NSTextAttachment *tt = [[NSTextAttachment alloc] init];
+    UIImage *image6 = [UIImage imageNamed:@"sgs6px"];
+    tt.image = image6;
+    NSAttributedString *m3 = [NSAttributedString attributedStringWithAttachment:tt];
+    [mm appendAttributedString:m1];
+    [mm appendAttributedString:m2];
+    [mm appendAttributedString:m3];
+    [mm drawInRect:rr];
+    
     
     
 }

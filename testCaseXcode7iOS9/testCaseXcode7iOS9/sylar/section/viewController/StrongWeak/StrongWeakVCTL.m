@@ -53,8 +53,80 @@
     
 //    [self fun7];
     
-    [self fun8];
+//    [self fun8];
+    
+//    [self fun9];
+    
+    [self fun10];
 
+}
+
+- (void)fun10 {
+    NSString *s1 = @"abcd";
+    NSString *s2 = @"abcd";
+    
+    NSLog(@"sylar :  s1 = %p, %p", s1, s2);  // same
+    
+    s2 = @"cc";
+    s2 = @"abcd";
+    NSLog(@"sylar :  s2 = %p, %p", s1, s2);  // same
+    
+    s2 = [NSString stringWithFormat:@"%@", s1];
+    NSLog(@"sylar :  s3 = %p, %p", s1, s2);  // not same
+    
+    s2 = @"abcd";
+    NSLog(@"sylar :  s4 = %p, %p", s1, s2);  // same
+    
+    s2 = [self fun10Helper];
+    NSLog(@"sylar :  s5 = %p, %p", s1, s2);  // same
+    
+    NSString *ss1 = @"111bacd";
+    NSString *ss2 = @"abcd111";
+    s1 = [ss1 substringFromIndex:3];
+    s2 = [ss2 substringToIndex:4];
+    NSLog(@"sylar :  s5 = %@(%p), %@(%p)", s1, s1, s2, s2);  // not same address
+    
+    NSArray *aa = @[s1, @"1", @"2", @"3"];
+    if ([aa containsObject:s1]) {
+        NSLog(@"sylar :  contain s1");  // work
+    }
+    
+    if ([aa containsObject:s2]) {
+        NSLog(@"sylar :  contain s2");  // not work
+    }
+    
+    if ([aa containsObject:@"abcd"]) {
+        NSLog(@"sylar :  contain abcd");  // not work
+    }
+    
+    
+    
+}
+
+- (NSString *)fun10Helper {
+    NSString *rt = @"abcd";
+    return rt;
+}
+
+- (void)fun9 {
+    NSString *s1 = @"aaaaa";
+    self.ss2 = s1;
+    self.ws1 = s1;
+    self.cs3 = s1;
+    
+    NSLog(@"sylar :  s1 = %@(%p), %@(%p), %@(%p), %@(%p),", s1, s1, self.ss2, self.ss2, self.ws1, self.ws1, self.cs3, self.cs3);
+    
+    self.cs3 = [s1 copy];
+    NSLog(@"sylar :  s1 = %@(%p), %@(%p), %@(%p), %@(%p),", s1, s1, self.ss2, self.ss2, self.ws1, self.ws1, self.cs3, self.cs3);
+    
+    s1 = @"bbbb";
+    NSLog(@"sylar :  s1 = %@(%p), %@(%p), %@(%p), %@(%p),", s1, s1, self.ss2, self.ss2, self.ws1, self.ws1, self.cs3, self.cs3);
+    
+    self.ss2 = @"cccc";
+    NSLog(@"sylar :  s1 = %@(%p), %@(%p), %@(%p), %@(%p),", s1, s1, self.ss2, self.ss2, self.ws1, self.ws1, self.cs3, self.cs3);
+    
+    self.cs3 = @"ddd";
+    NSLog(@"sylar :  s1 = %@(%p), %@(%p), %@(%p), %@(%p),", s1, s1, self.ss2, self.ss2, self.ws1, self.ws1, self.cs3, self.cs3);
 }
 
 - (void)fun8 {

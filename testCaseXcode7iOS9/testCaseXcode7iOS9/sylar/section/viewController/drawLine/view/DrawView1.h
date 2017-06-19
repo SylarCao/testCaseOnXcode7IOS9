@@ -24,3 +24,4 @@
 - (void)publicFun2:(CGRect)rect;
 
 @end
+

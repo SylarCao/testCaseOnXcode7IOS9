@@ -481,6 +481,7 @@
 		2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */; };
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
 		2CF0E0051EF36F2300067697 /* sgs6px.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0E0041EF36F2300067697 /* sgs6px.png */; };
+		2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */; };
 		2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */; };
 		2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */; };
 /* End PBXBuildFile section */
@@ -1283,6 +1284,8 @@
 		2CE1F3491BCE3DC800B82CAE /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		2CF0E0041EF36F2300067697 /* sgs6px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6px.png; sourceTree = "<group>"; };
+		2CF2F54A1F022B5100CAEE5A /* StringArrayObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObject1.h; sourceTree = "<group>"; };
+		2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObject1.m; sourceTree = "<group>"; };
 		2CFE609F1EB03643001CC571 /* DetectRotationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectRotationVCTL.h; sourceTree = "<group>"; };
 		2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectRotationVCTL.m; sourceTree = "<group>"; };
 		2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectRotationVCTL.xib; sourceTree = "<group>"; };
@@ -2743,6 +2746,8 @@
 				2C6E5F401E9B808900D17A82 /* StringArrayVCTL.h */,
 				2C6E5F411E9B808900D17A82 /* StringArrayVCTL.m */,
 				2C6E5F421E9B808900D17A82 /* StringArrayVCTL.xib */,
+				2CF2F54A1F022B5100CAEE5A /* StringArrayObject1.h */,
+				2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */,
 			);
 			path = stringArrayFunction;
 			sourceTree = "<group>";
@@ -3768,6 +3773,7 @@
 				2C6E612D1E9B808900D17A82 /* GJWebViewVCTL.m in Sources */,
 				2C6E60151E9B808900D17A82 /* CheckInstallQQVCTL.m in Sources */,
 				2C6E60141E9B808900D17A82 /* dzhbitstream.c in Sources */,
+				2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */,
 				2C6E60FC1E9B808900D17A82 /* TableViewCellVCTL.m in Sources */,
 				2C6E611C1E9B808900D17A82 /* UIButtonBVTL.m in Sources */,
 				2C6E60731E9B808900D17A82 /* IntrinsicCell.m in Sources */,

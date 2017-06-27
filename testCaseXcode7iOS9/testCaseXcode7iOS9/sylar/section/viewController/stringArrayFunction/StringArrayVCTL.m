@@ -9,6 +9,7 @@
 #import "StringArrayVCTL.h"
 #import "StringArrayHelper.h"
 #import "StringArrayObj1.h"
+#import "StringArrayObject1.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 # define kAAA @"abc"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -103,8 +104,52 @@
     
 //    [self fun33];
     
-    [self fun34];
+//    [self fun34];
     
+    [self fun35];
+    
+}
+
+- (void)fun35 {
+    // reference link: https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709545396&idx=1&sn=e4faf102653f2bf769945234ad6d7a6a&chksm=828f0b6ab5f8827c7d9b4b624d4e252853ad86c65710a0aa606f212b4c406ec3ef3cc0b3a8bd&mpshare=1&scene=1&srcid=06270e4GCqCX4PGO4UfEYkaM&key=8e7349a2eeff6e43d3ef492cbaebaab91e8c13f9e7c87a83a346e6c1870c37669ebfd967f52a3669a1cd38f4723f6acb94030f6c91862d77786c370d80d6204051d2e255e79a32beeaea69d8ebcebd4b&ascene=0&uin=MTQ2OTIyMzg2Mg%3D%3D&devicetype=iMac+Macmini7%2C1+OSX+OSX+10.12+build(16A323)&version=12020510&nettype=WIFI&fontScale=100&pass_ticket=ElJ7LOYzu2xKPCz1O3FMwfYeUiGtcuYbiukKFwAb9ttjUanHwljLpPLUi8x%2FWXnH
+    NSDictionary *dict = @{@"1": @"111", @"2": @"222", @"3": @"333", @"4": @"444", @"5": @"555", @"6": @"666"};
+    StringArrayObject1 *obj = [[StringArrayObject1 alloc] init];
+    NSError *ee = nil;
+    BOOL bb = [self fun35Helper1:dict obj:obj error:&ee];
+    NSLog(@"sylar :  bb = %d (%@)", bb, ee);
+}
+
+- (BOOL)fun35Helper1:(NSDictionary *)dict obj:(StringArrayObject1 *)obj1 error:(NSError __strong**)error {
+    __block BOOL rt = YES;
+    
+    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj1 checkValue:obj key:key])
+            return;
+        
+        NSLog(@"sylar :  here (%@)", *error);
+        *stop = YES;
+        rt = NO;
+        if (error) {
+            *error = [NSError errorWithDomain:@"ddd" code:111 userInfo:nil];  // this will crash
+            // 因为这个枚举里是个 @autoreleasepool
+        }
+    }];
+    
+//    __block NSError *e1 = nil;
+//    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        if ([obj1 checkValue:obj key:key])
+//            return;
+//        
+//        NSLog(@"sylar :  here (%@)", *error);
+//        *stop = YES;
+//        rt = NO;
+//        if (error) {
+//            e1 = [NSError errorWithDomain:@"ddd" code:111 userInfo:nil];  // 入参写成  error:(NSError __strong**)error  也行
+//        }
+//    }];
+//    *error = e1;
+    
+    return rt;
 }
 
 - (void)fun34 {

@@ -76,6 +76,7 @@ const BOOL kUseWKWebView = 1;
 //    s1 = @"https://www.baidu.com/";
     s1 = @"https://i.gtja.com/quotes/securities/diagnoseEplus/trading/index.html?stockCode=002253&market=SZ&color=white";  // 诊股
 //    s1 = @"https://mnews.gw.com.cn/wap/data/ipad/stock/SZ/39/000639/f10/f10.html?themeStyleVs=1&qsThemeSign=1";  // f10
+    s1 = @"http://i.bankuang.com/#!/macro?DZHSPECIAL=37";
     NSString *url = s1;
     NSURL *url1 = [NSURL URLWithString:url];
     NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];

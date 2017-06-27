@@ -60,11 +60,26 @@
     
 //    [self fun7];
     
-    [self funPara1];
+//    [self funPara1];
     
 //    [self funPara2];
     
 //    [self funPara3];
+    
+    [self fun8];
+    
+}
+
+- (void)fun8 {
+    BlockObject1 *b1 = [[BlockObject1 alloc] init];
+    _obj = b1;
+    [b1 requestBlockStrong:^(NSString *data) {
+        NSLog(@"sylar :  not release -- xun huan yin yong le");
+        self.string1 = data;
+    }];
+    
+    
+
 }
 
 - (void)fun7 {

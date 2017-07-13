@@ -106,7 +106,35 @@
     
 //    [self fun34];
     
-    [self fun35];
+//    [self fun35];
+    
+    [self fun36];
+}
+
+- (void)fun36 {
+    NSString *s1 = [NSString stringWithFormat:@"aaa = %zd", -1];
+    NSLog(@"sylar :  s1 = %@", s1);
+    
+    int a1 = -1;
+    s1 = [NSString stringWithFormat:@"%zd", a1];
+    NSLog(@"sylar :  s1 = %@", s1);
+    
+    NSInteger a11 = [s1 integerValue];
+    NSLog(@"sylar :  a11 = %ld", a11);
+    
+    NSInteger a2 = -1;
+    s1 = [NSString stringWithFormat:@"%zd", a2];
+    NSLog(@"sylar :  s1 = %@", s1);
+    
+    NSInteger a3 = [s1 integerValue];
+    NSLog(@"sylar :  a2 = %ld", a3);
+    
+    int a4 = -1;
+    s1 = [NSString stringWithFormat:@"%d", a4];
+    NSLog(@"sylar :  s1 = %@", s1);
+    
+    NSInteger a5 = [s1 integerValue];
+    NSLog(@"sylar :  a5 = %ld", a5);
     
 }
 

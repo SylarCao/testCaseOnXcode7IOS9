@@ -112,6 +112,10 @@
 }
 
 - (void)fun36 {
+    
+    //    NSInteger -> zd
+    //    NSUInteger -> tu
+    
     NSString *s1 = [NSString stringWithFormat:@"aaa = %zd", -1];
     NSLog(@"sylar :  s1 = %@", s1);
     

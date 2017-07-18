@@ -31,6 +31,7 @@
 
 - (void) postFun1:(NSNotification *)aNotification
 {
+    NSLog(@"sylar :  thread = %@", [NSThread currentThread]);
     NSLog(@"receive");
     PostModel *mm = aNotification.object;
     [mm showLog];
@@ -43,7 +44,12 @@
     PostModel *pp = [[PostModel alloc] init];
     pp.p1 = @"pp1";
     pp.p2 = @"abcd";
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"name123" object:pp userInfo:@{@"key1": @"value1111"}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"name123" object:pp userInfo:@{@"key1": @"value1111"}];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"name123" object:pp userInfo:@{@"key1": @"value1111"}];
+    });
+
 }
 
 - (IBAction)btn2:(id)sender

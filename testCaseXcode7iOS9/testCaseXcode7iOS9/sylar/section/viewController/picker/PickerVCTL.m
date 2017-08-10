@@ -36,7 +36,7 @@
     pp.showsSelectionIndicator = YES;
     pp.layer.borderColor = [UIColor redColor].CGColor;
     pp.layer.borderWidth = 1;
-    
+    pp.tintColor = [UIColor greenColor];
     pp.backgroundColor = [UIColor whiteColor];
     
 }
@@ -62,6 +62,15 @@
 #pragma mark - UIPickerViewDelegate
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
+    // 分割线颜色 变成 blucecolor
+    for(UIView *singleLine in pickerView.subviews)
+    {
+        if (singleLine.frame.size.height < 1)
+        {
+            singleLine.backgroundColor = [UIColor blueColor];
+        }
+    }
+
     return 1;
 }
 

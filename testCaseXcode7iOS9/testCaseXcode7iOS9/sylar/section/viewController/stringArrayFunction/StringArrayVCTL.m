@@ -108,7 +108,22 @@
     
 //    [self fun35];
     
-    [self fun36];
+//    [self fun36];
+    
+    [self fun37];
+}
+
+- (void)fun37 {
+    NSArray *aa = @[];
+    id a1 = [aa lastObject];
+    id a2 = [aa firstObject];
+    
+    NSLog(@"sylar :  aaa = %@ - %@", a1, a2);  // nil, nil
+    
+    
+    NSArray *bb = nil;
+    id b1 = bb.firstObject;
+    NSLog(@"sylar :  bbb = %@ - %@", bb, b1);  // nil, nil
 }
 
 - (void)fun36 {

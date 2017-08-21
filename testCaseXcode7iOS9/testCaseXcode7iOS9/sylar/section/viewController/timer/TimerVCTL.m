@@ -12,6 +12,7 @@
 @interface TimerVCTL ()
 
 @property (nonatomic, weak) NSTimer *timer;
+@property (nonatomic, copy) NSString *s1;
 
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -31,36 +32,6 @@
 //    [self fun2];
 }
 
-- (void)fun2
-{
-    static int i = 0;
-    i++;
-//    [[TimerInstance share] startTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%ld", i]];
-    
-//    [[TimerInstance share] reStartTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%d", i]];
-}
-
-- (void)fun1
-{
-    
-//    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];  // 没什么用
-    
-    
-    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
-    
-//        [_timer fire];
-}
-
-- (void) showLog
-{
-    NSLog(@"time ======== ");
-}
-
-- (void)showLogWithContent:(NSString *)content
-{
-    NSLog(@"content ========= %@", content);
-}
-
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -73,7 +44,9 @@
 {
 //    [_timer invalidate];
 //    [self fun2];
-    [self fun1];
+//    [self fun1];
+    
+    [self fun3];
 }
 
 - (IBAction)btn2:(id)sender
@@ -85,6 +58,42 @@
     NSLog(@"fire");
 }
 
+- (void)fun3 {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        self.s1 = @"123";
+        NSLog(@"sylar :  5555 = %@", self.s1);
+    });
+}
+
+- (void)fun2
+{
+    static int i = 0;
+    i++;
+    //    [[TimerInstance share] startTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%ld", i]];
+    
+    //    [[TimerInstance share] reStartTimer:self selector:@selector(showLogWithContent:) content:[NSString stringWithFormat:@"abc%d", i]];
+}
+
+- (void)fun1
+{
+    
+    //    _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(showLog) userInfo:nil repeats:YES];  // 没什么用
+    
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showLog) userInfo:nil repeats:YES];
+    
+    //        [_timer fire];
+}
+
+- (void) showLog
+{
+    NSLog(@"time ======== ");
+}
+
+- (void)showLogWithContent:(NSString *)content
+{
+    NSLog(@"content ========= %@", content);
+}
 
 
 @end

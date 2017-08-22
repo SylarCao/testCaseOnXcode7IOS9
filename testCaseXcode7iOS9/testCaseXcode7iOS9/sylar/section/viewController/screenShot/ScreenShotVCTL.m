@@ -65,11 +65,11 @@
 }
 
 - (void)fun3 {
-    CGImageRef s1 = NSSelectorFromString(@"UIGetScreenImage");//UIGetScreenImage();
+//    CGImageRef s1 = NSSelectorFromString(@"UIGetScreenImage");//UIGetScreenImage();
     
 //    if ([s1 des])
     
-    [s1 ki]
+//    [s1 ki]
     
 //    UIImage *image1 = [UIImage imageWithCGImage:screenshot];
 //    _imv1.image = image1;

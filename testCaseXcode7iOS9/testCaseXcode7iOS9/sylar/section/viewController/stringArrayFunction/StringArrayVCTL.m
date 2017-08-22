@@ -110,7 +110,20 @@
     
 //    [self fun36];
     
-    [self fun37];
+//    [self fun37];
+    
+    [self fun38];
+}
+
+- (void)fun38 {
+    NSMutableArray *a1 = @[@"1", @"2", @"3", @"4"].mutableCopy;
+    [a1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *s1 = obj;
+        NSLog(@"sylar :  s = %@ - %ld", s1, idx);
+        if (idx == 2) {
+            [a1 addObject:@"10"];
+        }
+    }];
 }
 
 - (void)fun37 {

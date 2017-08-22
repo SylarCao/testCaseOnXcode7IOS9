@@ -119,11 +119,28 @@
     NSMutableArray *a1 = @[@"1", @"2", @"3", @"4"].mutableCopy;
     [a1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSString *s1 = obj;
-        NSLog(@"sylar :  s = %@ - %ld", s1, idx);
+        NSLog(@"sylar :  s = %@ - %ld - (%@)", s1, idx, a1);
         if (idx == 2) {
-            [a1 addObject:@"10"];
+            [a1 addObject:@"10"];  // ok
         }
     }];
+    // output = 1 2 3 4 1
+    
+    for (int i=0; i<a1.count; i++) {
+        NSString *s1 = [a1 objectAtIndex:i];
+        NSLog(@"sylar :  s = %@", s1);
+        if ([s1 isEqualToString:@"2"]) {
+            [a1 addObject:@"20"];  // crash
+        }
+    }
+    // output = 1 2 3 4 10 20
+    
+    for (NSString *s1 in a1 ) {
+        NSLog(@"sylar :  s = %@", s1);
+        if ([s1 isEqualToString:@"2"]) {
+            [a1 addObject:@"30"];  // crash
+        }
+    }
 }
 
 - (void)fun37 {

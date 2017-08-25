@@ -11,4 +11,6 @@
 
 @interface Dealloc2VCTL : Dealloc1VCTL
 
+@property (nonatomic, weak) UIViewController *v1;
+
 @end

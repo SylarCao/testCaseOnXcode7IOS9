@@ -57,45 +57,15 @@
         [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
                   localizedReason:myLocalizedReasonString
                             reply:^(BOOL success, NSError *error) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-retain-cycles"
-#pragma clang diagnostic ignored "-Wdeprecated"
                                 if (success) {
-                                    dispatch_async(dispatch_get_main_queue(), ^{
-//                                        [self performSegueWithIdentifier:@"Success" sender:nil];
-                                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"success"
-                                                                                            message:@"successsssssssss"
-                                                                                           delegate:self
-                                                                                  cancelButtonTitle:@"OK"
-                                                                                  otherButtonTitles:nil, nil];
-                                        [alertView show];
-
-                                    });
+                                   NSLog(@"sylar :  success = %@", myContext);
                                 } else {
-                                    dispatch_async(dispatch_get_main_queue(), ^{
-                                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                                            message:error.description
-                                                                                           delegate:self
-                                                                                  cancelButtonTitle:@"OK"
-                                                                                  otherButtonTitles:nil, nil];
-                                        [alertView show];
-                                        NSLog(@"Switch to fall back authentication - ie, display a keypad or password entry box");
-                                    });
+                                    NSLog(@"sylar :  failure");
                                 }
                             }];
     } else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                message:authError.description
-                                                               delegate:self
-                                                      cancelButtonTitle:@"OK"
-                                                      otherButtonTitles:nil, nil];
-            [alertView show];
-        });
+        NSLog(@"sylar :  not support");
     }
-
-#pragma clang diagnostic pop
-    
 }
 
 

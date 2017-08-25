@@ -11,4 +11,7 @@
 
 @interface DeallocVCTL : BasicVCTL
 
+@property (nonatomic, copy) NSString *s1;
+@property (nonatomic, weak) UIViewController *v1;
+
 @end

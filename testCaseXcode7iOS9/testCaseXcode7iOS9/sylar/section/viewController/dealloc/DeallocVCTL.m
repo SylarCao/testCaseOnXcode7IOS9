@@ -18,13 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.s1 = @"222";
 }
 
 - (IBAction)btn1:(id)sender
 {
-    Dealloc2VCTL *v2 = [[Dealloc2VCTL alloc] init];
+    Dealloc2VCTL *v2 = [[Dealloc2VCTL alloc] initWithNibName:nil bundle:nil];
+    v2.v1 = self;
+    self.v1 = v2;
     [self.navigationController pushViewController:v2 animated:YES];
-    
 }
 
 

@@ -79,6 +79,9 @@
 		2C4BE0501BE9A7B0004F1DAF /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE03B1BE9A7B0004F1DAF /* UIScrollView+MJExtension.m */; };
 		2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE03D1BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m */; };
 		2C4BE0521BE9A7B0004F1DAF /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE03F1BE9A7B0004F1DAF /* UIView+MJExtension.m */; };
+		2C4E0DCE1F6A569300C2CE27 /* DrawLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E0DCD1F6A569300C2CE27 /* DrawLineScrollView.m */; };
+		2C4E0DD01F6A579800C2CE27 /* DrawLineScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4E0DCF1F6A579800C2CE27 /* DrawLineScrollView.xib */; };
+		2C4E0DD31F6A5C0400C2CE27 /* DrawLineScrollView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */; };
 		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
@@ -640,6 +643,11 @@
 		2C4BE03D1BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		2C4BE03E1BE9A7B0004F1DAF /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		2C4BE03F1BE9A7B0004F1DAF /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		2C4E0DCC1F6A569300C2CE27 /* DrawLineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineScrollView.h; sourceTree = "<group>"; };
+		2C4E0DCD1F6A569300C2CE27 /* DrawLineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineScrollView.m; sourceTree = "<group>"; };
+		2C4E0DCF1F6A579800C2CE27 /* DrawLineScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawLineScrollView.xib; sourceTree = "<group>"; };
+		2C4E0DD11F6A5C0400C2CE27 /* DrawLineScrollView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineScrollView2.h; sourceTree = "<group>"; };
+		2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineScrollView2.m; sourceTree = "<group>"; };
 		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
 		2C68EDFE1C194280009E1396 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -1543,6 +1551,18 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		2C4E0DCB1F6A568000C2CE27 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2C4E0DCC1F6A569300C2CE27 /* DrawLineScrollView.h */,
+				2C4E0DCD1F6A569300C2CE27 /* DrawLineScrollView.m */,
+				2C4E0DCF1F6A579800C2CE27 /* DrawLineScrollView.xib */,
+				2C4E0DD11F6A5C0400C2CE27 /* DrawLineScrollView2.h */,
+				2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */,
+			);
+			path = scrollView;
+			sourceTree = "<group>";
+		};
 		2C65D7371BB3A35D00D22F29 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -2093,6 +2113,7 @@
 				2C6E5E131E9B808800D17A82 /* DrawLineVCTL.h */,
 				2C6E5E141E9B808800D17A82 /* DrawLineVCTL.m */,
 				2C6E5E151E9B808800D17A82 /* DrawLineVCTL.xib */,
+				2C4E0DCB1F6A568000C2CE27 /* scrollView */,
 				2C6E5E161E9B808800D17A82 /* gdip */,
 				2C6E5E191E9B808800D17A82 /* view */,
 			);
@@ -3596,6 +3617,7 @@
 				2C6E607E1E9B808900D17A82 /* JSPatchVCTL.xib in Resources */,
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C6E60BA1E9B808900D17A82 /* PushPopVCTL.xib in Resources */,
+				2C4E0DD01F6A579800C2CE27 /* DrawLineScrollView.xib in Resources */,
 				2C6E60581E9B808900D17A82 /* FingerTapVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2C6E60881E9B808900D17A82 /* LewView2.xib in Resources */,
@@ -3810,6 +3832,7 @@
 				2C6E60231E9B808900D17A82 /* ConstraintCodeVCTL.m in Sources */,
 				2C6E60DA1E9B808900D17A82 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				2C6E60CF1E9B808900D17A82 /* ScreenShotVCTL.m in Sources */,
+				2C4E0DD31F6A5C0400C2CE27 /* DrawLineScrollView2.m in Sources */,
 				2C6E60B31E9B808900D17A82 /* PreFixVCTL.m in Sources */,
 				2C6E61041E9B808900D17A82 /* testXibVCTL.m in Sources */,
 				2C2EC33A1BE74021008197C3 /* UIImageView+AFNetworking.m in Sources */,
@@ -3866,6 +3889,7 @@
 				2C6E60661E9B808900D17A82 /* HorizonScrollTitleView.m in Sources */,
 				2C6E600F1E9B808900D17A82 /* CategoryVCTL.m in Sources */,
 				2CE1F34E1BCE3DC800B82CAE /* DraggableCollectionViewFlowLayout.m in Sources */,
+				2C4E0DCE1F6A569300C2CE27 /* DrawLineScrollView.m in Sources */,
 				2C6E603C1E9B808900D17A82 /* DPLocationVCTL.m in Sources */,
 				2C6E60B91E9B808900D17A82 /* PushPopVCTL.m in Sources */,
 				2CC549B01D923373000F6880 /* ViewController+MASAdditions.m in Sources */,

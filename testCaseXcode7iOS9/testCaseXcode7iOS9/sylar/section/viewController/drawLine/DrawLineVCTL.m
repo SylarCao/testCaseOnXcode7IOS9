@@ -12,6 +12,9 @@
 #import "DrawView2.h"
 #import "DrawView3.h"
 #import "DrawBazView.h"
+#import "DrawLineScrollView.h"
+#import "DrawLineScrollView2.h"
+#import "Masonry.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface DrawLineVCTL ()
 
@@ -32,9 +35,11 @@
     
 //    [self addDrawView2];
     
-    [self fun1];
+//    [self fun1];
     
 //    [self fun2];
+    
+    [self fun3];
 }
 
 - (IBAction)btn1:(id)sender
@@ -48,6 +53,33 @@
 //    [_view1 setNeedsDisplay];
     
 //    [self test1];
+}
+
+- (void)fun3 {
+    // 8192 -> 这个是 画图的size 不是 view的size
+    CGFloat width = 12000;
+    UIScrollView * s1 = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 110, 300, 400)];
+    [self.view addSubview:s1];
+    s1.layer.borderColor = [UIColor redColor].CGColor;
+    s1.layer.borderWidth = 1;
+    s1.contentSize = CGSizeMake(width, 400);
+    
+    UINib *nib = [UINib nibWithNibName:@"DrawLineScrollView" bundle:nil];
+    DrawLineScrollView *v1 = [[nib instantiateWithOwner:nil options:nil] lastObject];
+    v1.frame = CGRectMake(0, 0, width, 400);
+    [s1 addSubview:v1];
+    
+    DrawLineScrollView2 *v2 = [[DrawLineScrollView2 alloc] initWithFrame:CGRectZero];
+    [v1 addSubview:v2];
+    v2.backgroundColor = [UIColor yellowColor];
+    v2.layer.borderWidth = 2;
+    v2.layer.borderColor = [UIColor blueColor].CGColor;
+    [v2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset = 2;
+        make.right.offset = -2;
+        make.bottom.offset = -5;
+        make.height.offset = 150;
+    }];
 }
 
 - (void)fun2

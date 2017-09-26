@@ -112,7 +112,37 @@
     
 //    [self fun37];
     
-    [self fun38];
+//    [self fun38];
+    
+    [self fun39];
+}
+
+// compare string
+- (void)fun39 {
+    NSString *s1 = @"a";
+    NSString *s2 = @"b";
+    NSString *s3 = @"2";
+    NSString *s4 = @"5";
+    NSString *s5 = @"21";
+    NSString *s6 = @"aa";
+    NSString *s7 = @"ba";
+    NSString *s8 = @"bc";
+    
+    NSComparisonResult rr = [s1 compare:s2];
+    NSLog(@"sylar :  compare %@, %@ = %ld",s1, s2, rr);
+    
+    rr = [s3 compare:s4];
+    NSLog(@"sylar :  compare %@, %@ = %ld",s3, s4, rr);
+    
+    rr = [s4 compare:s5];
+    NSLog(@"sylar :  compare %@, %@ = %ld",s4, s5, rr);
+    
+    rr = [s1 compare:s6];
+    NSLog(@"sylar :  compare %@, %@ = %ld",s1, s6, rr);
+    
+    rr = [s7 compare:s8];
+    NSLog(@"sylar :  compare %@, %@ = %ld",s7, s8, rr);
+    
 }
 
 - (void)fun38 {

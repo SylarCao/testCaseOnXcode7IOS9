@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface Drag2CollectionView : UICollectionView
 
-@property (nonatomic, weak) id<DragCollectionViewdelegate> dragDelegate;
+@property (nonatomic, weak) id<DragCollectionViewdelegate> drag2Delegate;
 
 
 // test

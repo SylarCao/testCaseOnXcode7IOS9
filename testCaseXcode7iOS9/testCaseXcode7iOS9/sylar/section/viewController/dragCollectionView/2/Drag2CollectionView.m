@@ -73,9 +73,9 @@
     self.snapMoveCell = snapMoveCell;
     
     // delegate
-    if ([_dragDelegate respondsToSelector:@selector(collectionViewDidBeginDrag:)])
+    if ([_drag2Delegate respondsToSelector:@selector(collectionViewDidBeginDrag:)])
     {
-        [_dragDelegate performSelector:@selector(collectionViewDidBeginDrag:) withObject:self];
+        [_drag2Delegate performSelector:@selector(collectionViewDidBeginDrag:) withObject:self];
     }
 }
 
@@ -100,9 +100,9 @@
         [self.snapMoveCell removeFromSuperview];//移除截图Cell
         cell.hidden = NO;//显示隐藏的Cell
         
-        if ([_dragDelegate respondsToSelector:@selector(collectionViewDidEndDrag:)])
+        if ([_drag2Delegate respondsToSelector:@selector(collectionViewDidEndDrag:)])
         {
-            [_dragDelegate performSelector:@selector(collectionViewDidEndDrag:) withObject:self];
+            [_drag2Delegate performSelector:@selector(collectionViewDidEndDrag:) withObject:self];
         }
     }];
 }
@@ -123,9 +123,9 @@
         if (spacingX <= self.snapMoveCell.bounds.size.width / 2.0 && spacingY <= self.snapMoveCell.bounds.size.height / 2.0) {
             self.moveIndexPath = [self indexPathForCell:cell];
             [self moveItemAtIndexPath:self.originalIndexPath toIndexPath:self.moveIndexPath];
-            if ([_dragDelegate respondsToSelector:@selector(collectionView:didDragItemAtIndexPath:toIndexPath:)])
+            if ([_drag2Delegate respondsToSelector:@selector(collectionView:didDragItemAtIndexPath:toIndexPath:)])
             {
-                [_dragDelegate collectionView:self didDragItemAtIndexPath:self.originalIndexPath toIndexPath:self.moveIndexPath];
+                [_drag2Delegate collectionView:self didDragItemAtIndexPath:self.originalIndexPath toIndexPath:self.moveIndexPath];
                 
             }
             self.originalIndexPath = self.moveIndexPath;

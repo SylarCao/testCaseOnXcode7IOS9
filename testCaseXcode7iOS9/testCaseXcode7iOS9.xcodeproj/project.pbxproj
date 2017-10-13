@@ -15,6 +15,9 @@
 		2C13F6601E9CE5E7009BBE34 /* PropertyCOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F65F1E9CE5E7009BBE34 /* PropertyCOC.m */; };
 		2C13F6631E9CE716009BBE34 /* PropertyC100.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6621E9CE716009BBE34 /* PropertyC100.m */; };
 		2C13F6661E9CE73E009BBE34 /* PropertyOCO2ag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6651E9CE73E009BBE34 /* PropertyOCO2ag.m */; };
+		2C148D711F8CBDC90077B299 /* ScrollViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C148D6F1F8CBDC90077B299 /* ScrollViewVCTL.m */; };
+		2C148D721F8CBDC90077B299 /* ScrollViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C148D701F8CBDC90077B299 /* ScrollViewVCTL.xib */; };
+		2C148D751F8CBDF50077B299 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C148D741F8CBDF50077B299 /* MyScrollView.m */; };
 		2C190D351E1B42720009DFCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C190D341E1B42720009DFCF /* NotificationCenter.framework */; };
 		2C190D401E1B42720009DFCF /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C190D321E1B42710009DFCF /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C190D481E1B464E0009DFCF /* TodayVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C190D461E1B464E0009DFCF /* TodayVCTL.m */; };
@@ -60,6 +63,7 @@
 		2C40EB0D1BE0C99E00074AB8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40EB0C1BE0C99E00074AB8 /* QuickLook.framework */; };
 		2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EB0E1BE0CA8A00074AB8 /* pp1.pdf */; };
 		2C40EB111BE0CA8A00074AB8 /* pp2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EB0F1BE0CA8A00074AB8 /* pp2.pdf */; };
+		2C45E1171F90BF92007E17B8 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45E1161F90BF92007E17B8 /* ColorView.m */; };
 		2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE0161BE9A7B0004F1DAF /* MJRefreshAutoFooter.m */; };
 		2C4BE0411BE9A7B0004F1DAF /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE0181BE9A7B0004F1DAF /* MJRefreshBackFooter.m */; };
 		2C4BE0421BE9A7B0004F1DAF /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE01A1BE9A7B0004F1DAF /* MJRefreshComponent.m */; };
@@ -533,6 +537,11 @@
 		2C13F6621E9CE716009BBE34 /* PropertyC100.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyC100.m; sourceTree = "<group>"; };
 		2C13F6641E9CE73E009BBE34 /* PropertyOCO2ag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyOCO2ag.h; sourceTree = "<group>"; };
 		2C13F6651E9CE73E009BBE34 /* PropertyOCO2ag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyOCO2ag.m; sourceTree = "<group>"; };
+		2C148D6E1F8CBDC90077B299 /* ScrollViewVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewVCTL.h; sourceTree = "<group>"; };
+		2C148D6F1F8CBDC90077B299 /* ScrollViewVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewVCTL.m; sourceTree = "<group>"; };
+		2C148D701F8CBDC90077B299 /* ScrollViewVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewVCTL.xib; sourceTree = "<group>"; };
+		2C148D731F8CBDF50077B299 /* MyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		2C148D741F8CBDF50077B299 /* MyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 		2C190D321E1B42710009DFCF /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C190D341E1B42720009DFCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		2C190D3D1E1B42720009DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -607,6 +616,8 @@
 		2C40EB0C1BE0C99E00074AB8 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		2C40EB0E1BE0CA8A00074AB8 /* pp1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pp1.pdf; sourceTree = "<group>"; };
 		2C40EB0F1BE0CA8A00074AB8 /* pp2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pp2.pdf; sourceTree = "<group>"; };
+		2C45E1151F90BF91007E17B8 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		2C45E1161F90BF92007E17B8 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
 		2C4BE0151BE9A7B0004F1DAF /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		2C4BE0161BE9A7B0004F1DAF /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		2C4BE0171BE9A7B0004F1DAF /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -1347,6 +1358,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C148D6D1F8CBDB90077B299 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2C45E1151F90BF91007E17B8 /* ColorView.h */,
+				2C45E1161F90BF92007E17B8 /* ColorView.m */,
+				2C148D6E1F8CBDC90077B299 /* ScrollViewVCTL.h */,
+				2C148D6F1F8CBDC90077B299 /* ScrollViewVCTL.m */,
+				2C148D701F8CBDC90077B299 /* ScrollViewVCTL.xib */,
+				2C148D731F8CBDF50077B299 /* MyScrollView.h */,
+				2C148D741F8CBDF50077B299 /* MyScrollView.m */,
+			);
+			path = scrollView;
+			sourceTree = "<group>";
+		};
 		2C190D331E1B42720009DFCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1604,6 +1629,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C148D6D1F8CBDB90077B299 /* scrollView */,
 				2C7ED9531F7244EC00FC0392 /* popPrevious */,
 				2CDB09071F1DA20700790F5C /* NSDate */,
 				2CFE609E1EB03631001CC571 /* DetectRotation */,
@@ -3591,6 +3617,7 @@
 				2C6E604D1E9B808900D17A82 /* DrawLineVCTL.xib in Resources */,
 				2C6E60FD1E9B808900D17A82 /* TableViewCellVCTL.xib in Resources */,
 				2C6E604B1E9B808900D17A82 /* DragCollectionVCTL.xib in Resources */,
+				2C148D721F8CBDC90077B299 /* ScrollViewVCTL.xib in Resources */,
 				2C6E60991E9B808900D17A82 /* MenuItemVCTL.xib in Resources */,
 				2CA112971BB29E4A00406685 /* Assets.xcassets in Resources */,
 				2C6E610C1E9B808900D17A82 /* ThreadVCTL.xib in Resources */,
@@ -3841,6 +3868,7 @@
 				2CA112C31BB29EAA00406685 /* BasicVCTL.m in Sources */,
 				2C6E60DB1E9B808900D17A82 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				2C6E60C91E9B808900D17A82 /* SaveDataVCTL.m in Sources */,
+				2C148D711F8CBDC90077B299 /* ScrollViewVCTL.m in Sources */,
 				2C2EC2FF1BE72787008197C3 /* LocationHelper.m in Sources */,
 				2CE1F3541BCE3DC800B82CAE /* LewPopupViewAnimationSpring.m in Sources */,
 				2C6E600C1E9B808900D17A82 /* QRScanView.m in Sources */,
@@ -3880,6 +3908,7 @@
 				2C6E60EE1E9B808900D17A82 /* SuperNibCell2.m in Sources */,
 				2C6E60F01E9B808900D17A82 /* SuperNibVCTL.m in Sources */,
 				2C4BE0441BE9A7B0004F1DAF /* MJRefreshHeader.m in Sources */,
+				2C45E1171F90BF92007E17B8 /* ColorView.m in Sources */,
 				2C6E60D11E9B808900D17A82 /* ScrollViewZoomVCTL.m in Sources */,
 				2C6E61201E9B808900D17A82 /* Life1VCTL.m in Sources */,
 				2CA112C61BB29EAA00406685 /* HomeVCTL.m in Sources */,
@@ -3983,6 +4012,7 @@
 				2C4BE04A1BE9A7B0004F1DAF /* MJRefreshBackStateFooter.m in Sources */,
 				2C6E60F21E9B808900D17A82 /* TabelViewHeaderCodeView.m in Sources */,
 				2C6E60B71E9B808900D17A82 /* PushNotificationVCTL.m in Sources */,
+				2C148D751F8CBDF50077B299 /* MyScrollView.m in Sources */,
 				2C4BE0511BE9A7B0004F1DAF /* UIScrollView+MJRefresh.m in Sources */,
 				2C6E60F81E9B808900D17A82 /* TableViewXIBCell.m in Sources */,
 				2C6E60701E9B808900D17A82 /* InstanceTypeObj3.m in Sources */,

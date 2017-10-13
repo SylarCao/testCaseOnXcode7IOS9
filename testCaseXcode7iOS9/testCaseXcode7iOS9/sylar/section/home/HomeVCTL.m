@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[ @"LogAddressVCTL", @"DetectRotationVCTL", @"NSDateVCTL", @"PopPreviousVCTL",
+    NSArray *ctrls = @[ @"LogAddressVCTL", @"DetectRotationVCTL", @"NSDateVCTL", @"PopPreviousVCTL", @"ScrollViewVCTL",
                 
                @"sort", // 都放到这个后边
                @"StrongWeakVCTL", @"EnterBkgdVCTL", @"InstanceVCTL", @"CoreDataVCTL", @"MD5VCTL", @"PropertyVCTL",

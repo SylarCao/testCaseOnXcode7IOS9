@@ -52,8 +52,7 @@ NSInteger const kMaxSaveNumber = 50;
     } else {
         [arr insertObject:dict atIndex:0];
     }
-    BOOL bb = [arr writeToFile:path atomically:YES];
-    NSLog(@"sylar :  save %@ = %d", name, bb);
+    [arr writeToFile:path atomically:YES];
 }
 
 + (NSMutableArray *)getPlistArray {
@@ -61,12 +60,11 @@ NSInteger const kMaxSaveNumber = 50;
     NSString *path = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), kPlistPath];
     NSTimeInterval time0 = [NSDate timeIntervalSinceReferenceDate];
     NSMutableArray *arr = [NSMutableArray arrayWithContentsOfFile:path];
-    NSLog(@"sylar :  arr.count = %ld", arr.count);
     for (NSDictionary *dict in arr) {
         NSTimeInterval time = [[dict objectForKey:@"time"] floatValue];
         if (time0 - time < kSaveTime) {
             NSString *name = [dict objectForKey:@"name"];
-            if ([rt containsObject:name] == NO) {
+            if ([rt containsObject:name] == NO && rt.count < 3) {
                 [rt addObject:name];
             }
         }

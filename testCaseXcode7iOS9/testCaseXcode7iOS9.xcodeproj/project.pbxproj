@@ -491,6 +491,8 @@
 		2CE1F3561BCE3DC800B82CAE /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3451BCE3DC800B82CAE /* MGSwipeButton.m */; };
 		2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */; };
 		2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */; };
+		2CEF4B901F947EDD00192E92 /* Test123TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF4B8C1F947EDC00192E92 /* Test123TableViewCell.m */; };
+		2CEF4B911F947EDD00192E92 /* Test123ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF4B8D1F947EDC00192E92 /* Test123ViewController.m */; };
 		2CF0E0051EF36F2300067697 /* sgs6px.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0E0041EF36F2300067697 /* sgs6px.png */; };
 		2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */; };
 		2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */; };
@@ -1312,6 +1314,10 @@
 		2CE1F3471BCE3DC800B82CAE /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		2CE1F3491BCE3DC800B82CAE /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		2CE1F34A1BCE3DC800B82CAE /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		2CEF4B8C1F947EDC00192E92 /* Test123TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test123TableViewCell.m; sourceTree = "<group>"; };
+		2CEF4B8D1F947EDC00192E92 /* Test123ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test123ViewController.m; sourceTree = "<group>"; };
+		2CEF4B8E1F947EDC00192E92 /* Test123TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test123TableViewCell.h; sourceTree = "<group>"; };
+		2CEF4B8F1F947EDC00192E92 /* Test123ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test123ViewController.h; sourceTree = "<group>"; };
 		2CF0E0041EF36F2300067697 /* sgs6px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6px.png; sourceTree = "<group>"; };
 		2CF2F54A1F022B5100CAEE5A /* StringArrayObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObject1.h; sourceTree = "<group>"; };
 		2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObject1.m; sourceTree = "<group>"; };
@@ -1629,6 +1635,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CEF4B8B1F947EDC00192E92 /* Test123 */,
 				2C148D6D1F8CBDB90077B299 /* scrollView */,
 				2C7ED9531F7244EC00FC0392 /* popPrevious */,
 				2CDB09071F1DA20700790F5C /* NSDate */,
@@ -3462,6 +3469,17 @@
 			path = textField_shake;
 			sourceTree = "<group>";
 		};
+		2CEF4B8B1F947EDC00192E92 /* Test123 */ = {
+			isa = PBXGroup;
+			children = (
+				2CEF4B8F1F947EDC00192E92 /* Test123ViewController.h */,
+				2CEF4B8D1F947EDC00192E92 /* Test123ViewController.m */,
+				2CEF4B8E1F947EDC00192E92 /* Test123TableViewCell.h */,
+				2CEF4B8C1F947EDC00192E92 /* Test123TableViewCell.m */,
+			);
+			path = Test123;
+			sourceTree = "<group>";
+		};
 		2CFE609E1EB03631001CC571 /* DetectRotation */ = {
 			isa = PBXGroup;
 			children = (
@@ -4041,6 +4059,7 @@
 				2C6E61221E9B808900D17A82 /* Life2VCTL.m in Sources */,
 				2C6E609F1E9B808900D17A82 /* NumberKeyboardVCTL.m in Sources */,
 				2C4BE0451BE9A7B0004F1DAF /* MJRefreshAutoGifFooter.m in Sources */,
+				2CEF4B911F947EDD00192E92 /* Test123ViewController.m in Sources */,
 				2C6E5FF21E9B808900D17A82 /* AnimationVCTL.m in Sources */,
 				2C6E60A41E9B808900D17A82 /* OthersInstance.m in Sources */,
 				2C6E601D1E9B808900D17A82 /* CollectionView123Cell.m in Sources */,
@@ -4052,6 +4071,7 @@
 				2C6E60F61E9B808900D17A82 /* TableViewVCTL.m in Sources */,
 				2C6E60801E9B808900D17A82 /* KVOVCTL.m in Sources */,
 				2C6E60D91E9B808900D17A82 /* WXApiResponseHandler.m in Sources */,
+				2CEF4B901F947EDD00192E92 /* Test123TableViewCell.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,
 				2C6E61001E9B808900D17A82 /* BlockHelperTimer.m in Sources */,
 				2C13F6661E9CE73E009BBE34 /* PropertyOCO2ag.m in Sources */,

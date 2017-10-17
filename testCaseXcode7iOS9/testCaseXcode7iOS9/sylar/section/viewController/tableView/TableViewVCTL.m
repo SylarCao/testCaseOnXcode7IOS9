@@ -12,7 +12,7 @@
 #import "TabelViewHeaderCodeView.h"
 #import "TableViewCodeCell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-#define kTableViewVCTLXib  (1)
+#define kTableViewVCTLXib  (0)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TableViewVCTL ()
 <UITableViewDataSource, UITableViewDelegate>
@@ -49,6 +49,10 @@
 
 - (void)naviFun1 {
     NSLog(@"sylar :  navi fun1");
+    
+    [self.tableView reloadData];
+    
+    return;
     
     if (kTableViewVCTLXib) {
         
@@ -116,6 +120,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    NSLog(@"sylar :  height (%ld, %ld)", indexPath.section, indexPath.row);
     return 40;
 }
 

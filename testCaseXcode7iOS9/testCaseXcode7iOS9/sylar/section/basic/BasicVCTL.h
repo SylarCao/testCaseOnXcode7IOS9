@@ -13,12 +13,19 @@
 
 @interface BasicVCTL : UIViewController
 
-
 /**
  *  show hud
  *
  *  @param content content description
  */
 - (void) showHudWithContent:(NSString *)content;
+
+/**
+ 获取最近点击的
+
+ @return return value description
+ */
++ (NSMutableArray *)getPlistArray;
+
 
 @end

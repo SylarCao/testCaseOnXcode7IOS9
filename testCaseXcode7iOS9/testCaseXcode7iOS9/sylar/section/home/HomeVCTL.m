@@ -116,6 +116,29 @@
 
         return result;
     }];
+    
+    // 把最近点击的加上去
+    NSMutableArray *recentArray = [BasicVCTL getPlistArray];
+    NSMutableArray *addArray = [NSMutableArray array];
+    for (NSString *name in recentArray) {
+        BOOL same = NO;
+        for (int i=0; i<dealloc_index; i++) {
+            NSString *cc = [rt objectAtIndex:i];
+            if ([cc isEqualToString:name]) {
+                same = YES;
+                break;
+            }
+        }
+        if (same == NO) {
+            [addArray addObject:name];
+        }
+    }
+
+    if (addArray.count > 0) {
+        [addArray addObjectsFromArray:rt];
+        rt = [NSArray arrayWithArray:addArray];
+    }
+    
     return rt;
 }
 

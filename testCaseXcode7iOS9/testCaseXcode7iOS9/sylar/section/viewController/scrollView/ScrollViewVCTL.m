@@ -46,6 +46,15 @@
     [c1 setRangeColor:[UIColor redColor] anotherColor:[UIColor whiteColor]];
     [v1 addSubview:c1];
     
+    
+    MyScrollView *v2 = [[MyScrollView alloc] initWithFrame:CGRectMake(0, 100, width, width)];
+    v2.bounces = NO;
+    v2.contentSize = CGSizeMake(width, width*2);
+    [v1 addSubview:v2];
+    ColorView *c2 = [[ColorView alloc] initWithFrame:CGRectMake(0, 0, width, width*2)];
+    [c2 setRangeColor:[UIColor whiteColor] anotherColor:[UIColor blueColor]];
+    [v2 addSubview:c2];
+    
 }
 
 - (void)fun1 {

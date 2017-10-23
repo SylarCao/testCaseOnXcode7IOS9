@@ -11,7 +11,9 @@
 #import "ColorView.h"
 #import "Masonry.h"
 
-@interface ScrollViewVCTL ()
+@interface ScrollViewVCTL () <UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) MyScrollView  *s1;
 
 @end
 
@@ -22,7 +24,31 @@
     
 //    [self fun1];
     
-    [self fun2];
+//    [self fun2];
+    
+    [self fun3];
+}
+
+- (void)fun3 {
+    // 一个scrollview
+    CGFloat width = kScreenWidth;
+    
+    MyScrollView *v1 = [[MyScrollView alloc] initWithFrame:CGRectZero];
+    _s1 = v1;
+//    v1.delaysContentTouches = NO;
+    v1.contentSize = CGSizeMake(width, 1000);
+    [self.view addSubview:v1];
+    
+    [v1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset = 0;
+        make.bottom.offset = 0;
+        make.left.offset = 0;
+        make.right.offset = 0;
+    }];
+    
+    ColorView *c1 = [[ColorView alloc] initWithFrame:CGRectMake(0, 0, width, 1000)];
+    [c1 setRangeColor:[UIColor redColor] anotherColor:[UIColor whiteColor]];
+    [v1 addSubview:c1];
 }
 
 - (void)fun2 {
@@ -63,5 +89,6 @@
 //    [v1 setRangeColor:[UIColor blueColor] anotherColor:[UIColor clearColor]];
 //    [self.view addSubview:v1];
 }
+
 
 @end

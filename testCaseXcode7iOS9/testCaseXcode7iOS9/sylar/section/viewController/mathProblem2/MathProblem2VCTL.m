@@ -38,13 +38,13 @@
     CGFloat f2 = 3;
     CGFloat f3 = 3.0;
     
-    NSInteger a1 = ceilf(f1);
-    NSInteger a2 = ceilf(f2);
-    NSInteger a3 = ceilf(f3);
+    NSInteger a1 = ceilf(f1);  // 4
+    NSInteger a2 = ceilf(f2);  // 3
+    NSInteger a3 = ceilf(f3);  // 3
     
-    CGFloat d1 = ceilf(f1);
-    CGFloat d2 = ceilf(f2);
-    CGFloat d3 = ceilf(f3);
+    CGFloat d1 = ceilf(f1);  // 4.0000
+    CGFloat d2 = ceilf(f2);  // 3.0000
+    CGFloat d3 = ceilf(f3);  // 3.0000
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-retain-cycles"

@@ -44,9 +44,9 @@
 {
 //    [_timer invalidate];
 //    [self fun2];
-//    [self fun1];
+    [self fun1];
     
-    [self fun3];
+//    [self fun3];
 }
 
 - (IBAction)btn2:(id)sender

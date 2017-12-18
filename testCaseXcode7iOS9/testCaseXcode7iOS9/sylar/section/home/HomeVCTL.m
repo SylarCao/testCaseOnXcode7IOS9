@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // data
-    NSArray *ctrls = @[@"Test123ViewController", @"ScrollViewVCTL",
+    NSArray *ctrls = @[@"Test123ViewController", @"ScrollViewVCTL", @"PastBoardVCTL",
                
                 
                @"sort", // 都放到这个后边

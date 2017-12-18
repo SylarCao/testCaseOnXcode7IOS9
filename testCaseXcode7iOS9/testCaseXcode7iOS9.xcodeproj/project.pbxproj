@@ -88,6 +88,8 @@
 		2C4E0DD31F6A5C0400C2CE27 /* DrawLineScrollView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */; };
 		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
+		2C683CFD1FE7BBD8009D2FB7 /* PastBoardVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C683CFB1FE7BBD8009D2FB7 /* PastBoardVCTL.m */; };
+		2C683CFE1FE7BBD8009D2FB7 /* PastBoardVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C683CFC1FE7BBD8009D2FB7 /* PastBoardVCTL.xib */; };
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
 		2C68EE031C1942F2009E1396 /* sgs5TH.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C68EE021C1942F2009E1396 /* sgs5TH.png */; };
 		2C6E5FE81E9B808900D17A82 /* Touch3d1DetailVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5D571E9B808800D17A82 /* Touch3d1DetailVCTL.m */; };
@@ -665,6 +667,9 @@
 		2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineScrollView2.m; sourceTree = "<group>"; };
 		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
+		2C683CFA1FE7BBD8009D2FB7 /* PastBoardVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastBoardVCTL.h; sourceTree = "<group>"; };
+		2C683CFB1FE7BBD8009D2FB7 /* PastBoardVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastBoardVCTL.m; sourceTree = "<group>"; };
+		2C683CFC1FE7BBD8009D2FB7 /* PastBoardVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastBoardVCTL.xib; sourceTree = "<group>"; };
 		2C68EDFE1C194280009E1396 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		2C68EE021C1942F2009E1396 /* sgs5TH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs5TH.png; sourceTree = "<group>"; };
@@ -1632,9 +1637,20 @@
 			path = mathProblem;
 			sourceTree = "<group>";
 		};
+		2C683CF91FE7BBCA009D2FB7 /* PastBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2C683CFA1FE7BBD8009D2FB7 /* PastBoardVCTL.h */,
+				2C683CFB1FE7BBD8009D2FB7 /* PastBoardVCTL.m */,
+				2C683CFC1FE7BBD8009D2FB7 /* PastBoardVCTL.xib */,
+			);
+			path = PastBoard;
+			sourceTree = "<group>";
+		};
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C683CF91FE7BBCA009D2FB7 /* PastBoard */,
 				2CEF4B8B1F947EDC00192E92 /* Test123 */,
 				2C148D6D1F8CBDB90077B299 /* scrollView */,
 				2C7ED9531F7244EC00FC0392 /* popPrevious */,
@@ -3594,6 +3610,7 @@
 				2C6E61191E9B808900D17A82 /* TouchIDVCTL.xib in Resources */,
 				2C7849411D475E1B00E82013 /* icon0.png in Resources */,
 				2C6E5FEB1E9B808900D17A82 /* Touch3D1VCTL.xib in Resources */,
+				2C683CFE1FE7BBD8009D2FB7 /* PastBoardVCTL.xib in Resources */,
 				2C6E608F1E9B808900D17A82 /* MathProblem2VCTL.xib in Resources */,
 				2C6E60181E9B808900D17A82 /* AttributeStringVCTL.xib in Resources */,
 				2C6E608D1E9B808900D17A82 /* MathProblem1VCTL.xib in Resources */,
@@ -4045,6 +4062,7 @@
 				2CE1F3501BCE3DC800B82CAE /* LewPopupBackgroundView.m in Sources */,
 				2CE1F3511BCE3DC800B82CAE /* LewPopupViewAnimationDrop.m in Sources */,
 				2C6E609A1E9B808900D17A82 /* MGSwipeCellVCTL.m in Sources */,
+				2C683CFD1FE7BBD8009D2FB7 /* PastBoardVCTL.m in Sources */,
 				2C6E60B51E9B808900D17A82 /* PropertyVCTL.m in Sources */,
 				2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */,
 				2C6E605E1E9B808900D17A82 /* GestureScrollVCTL.m in Sources */,

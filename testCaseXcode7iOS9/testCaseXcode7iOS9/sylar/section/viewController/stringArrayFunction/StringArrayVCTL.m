@@ -114,7 +114,16 @@
     
 //    [self fun38];
     
-    [self fun39];
+//    [self fun39];
+    
+    [self fun40];
+}
+
+// NSUInteger NSInteger
+- (void)fun40 {
+    NSUInteger a1 = 18446744073709551605;
+    NSInteger a2 = a1;
+    NSLog(@"sylar : %lu, %ld", (unsigned long)a1, a2);
 }
 
 // compare string

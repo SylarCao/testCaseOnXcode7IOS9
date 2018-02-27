@@ -136,7 +136,6 @@
 		2C6E60111E9B808900D17A82 /* ViewCategory1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5DA51E9B808800D17A82 /* ViewCategory1.m */; };
 		2C6E60121E9B808900D17A82 /* CFileVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5DA81E9B808800D17A82 /* CFileVCTL.m */; };
 		2C6E60131E9B808900D17A82 /* CFileVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5DA91E9B808800D17A82 /* CFileVCTL.xib */; };
-		2C6E60141E9B808900D17A82 /* dzhbitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5DAB1E9B808800D17A82 /* dzhbitstream.c */; };
 		2C6E60151E9B808900D17A82 /* CheckInstallQQVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5DAF1E9B808800D17A82 /* CheckInstallQQVCTL.m */; };
 		2C6E60161E9B808900D17A82 /* CheckInstallQQVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E5DB01E9B808800D17A82 /* CheckInstallQQVCTL.xib */; };
 		2C6E60171E9B808900D17A82 /* AttributeStringVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E5DB41E9B808800D17A82 /* AttributeStringVCTL.m */; };
@@ -742,8 +741,6 @@
 		2C6E5DA71E9B808800D17A82 /* CFileVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileVCTL.h; sourceTree = "<group>"; };
 		2C6E5DA81E9B808800D17A82 /* CFileVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileVCTL.m; sourceTree = "<group>"; };
 		2C6E5DA91E9B808800D17A82 /* CFileVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFileVCTL.xib; sourceTree = "<group>"; };
-		2C6E5DAB1E9B808800D17A82 /* dzhbitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dzhbitstream.c; sourceTree = "<group>"; };
-		2C6E5DAC1E9B808800D17A82 /* dzhbitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dzhbitstream.h; sourceTree = "<group>"; };
 		2C6E5DAE1E9B808800D17A82 /* CheckInstallQQVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInstallQQVCTL.h; sourceTree = "<group>"; };
 		2C6E5DAF1E9B808800D17A82 /* CheckInstallQQVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInstallQQVCTL.m; sourceTree = "<group>"; };
 		2C6E5DB01E9B808800D17A82 /* CheckInstallQQVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInstallQQVCTL.xib; sourceTree = "<group>"; };
@@ -1936,18 +1933,8 @@
 				2C6E5DA71E9B808800D17A82 /* CFileVCTL.h */,
 				2C6E5DA81E9B808800D17A82 /* CFileVCTL.m */,
 				2C6E5DA91E9B808800D17A82 /* CFileVCTL.xib */,
-				2C6E5DAA1E9B808800D17A82 /* ExpandData */,
 			);
 			path = CFile;
-			sourceTree = "<group>";
-		};
-		2C6E5DAA1E9B808800D17A82 /* ExpandData */ = {
-			isa = PBXGroup;
-			children = (
-				2C6E5DAB1E9B808800D17A82 /* dzhbitstream.c */,
-				2C6E5DAC1E9B808800D17A82 /* dzhbitstream.h */,
-			);
-			path = ExpandData;
 			sourceTree = "<group>";
 		};
 		2C6E5DAD1E9B808800D17A82 /* checkInstallQQ */ = {
@@ -3891,7 +3878,6 @@
 				2C6E602D1E9B808900D17A82 /* CPlusVCTL.m in Sources */,
 				2C6E612D1E9B808900D17A82 /* GJWebViewVCTL.m in Sources */,
 				2C6E60151E9B808900D17A82 /* CheckInstallQQVCTL.m in Sources */,
-				2C6E60141E9B808900D17A82 /* dzhbitstream.c in Sources */,
 				2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */,
 				2C6E60FC1E9B808900D17A82 /* TableViewCellVCTL.m in Sources */,
 				2C6E611C1E9B808900D17A82 /* UIButtonBVTL.m in Sources */,

@@ -116,7 +116,18 @@
     
 //    [self fun39];
     
-    [self fun40];
+//    [self fun40];
+    
+    [self fun41];
+}
+
+- (void)fun41 {
+    int a = 1;
+    int b = 5;
+    unsigned int c = 7;
+//    int c = 7;
+    int d = MIN(9, a - c);
+    NSLog(@"sylar : aaa");
 }
 
 // NSUInteger NSInteger

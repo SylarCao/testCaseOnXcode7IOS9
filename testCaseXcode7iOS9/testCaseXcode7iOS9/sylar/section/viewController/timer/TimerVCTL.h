@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimerVCTL : UIViewController
+@interface TimerVCTL : BasicVCTL
 
 @end

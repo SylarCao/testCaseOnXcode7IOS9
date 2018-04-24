@@ -118,9 +118,33 @@
     
 //    [self fun40];
     
-    [self fun41];
+//    [self fun41];
+    
+    [self fun42];
 }
 
+- (void)fun42 {
+//    CGPoint pp[5];
+//    pp[0] = CGPointMake(1, 1);
+//    pp[1] = CGPointMake(10, 11);
+//    pp[2] = CGPointMake(100, 12);
+    
+    float pp[5];
+    pp[0] = 2;
+    pp[2] = 5;
+    pp[3] = 8;
+    
+    
+    [self fun42Helper:pp];
+}
+
+- (void)fun42Helper:(float *)pp {
+    int a1 = sizeof(pp);
+    int a2 = sizeof(pp[0]);
+    NSLog(@"sylar : a1 = %d - %d", a1, a2);
+}
+
+// max min
 - (void)fun41 {
     int a = 1;
     int b = 5;

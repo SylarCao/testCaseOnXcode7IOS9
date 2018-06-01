@@ -17,6 +17,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation TabelViewHeaderCodeView
 
+- (void)dealloc {
+    NSLog(@"sylar : TabelViewHeaderCodeView dealloc");
+}
+
 + (NSString *)getCellId
 {
     NSString *rt = @"TabelViewHeaderCodeView_id";
@@ -28,6 +32,8 @@
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self)
     {
+        static int a = 1;
+        NSLog(@"sylar : init = %d", a++);
         [self setInitialVaue];
     }
     return self;

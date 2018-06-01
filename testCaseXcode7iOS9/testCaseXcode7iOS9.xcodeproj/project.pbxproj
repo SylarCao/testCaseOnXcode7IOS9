@@ -463,6 +463,13 @@
 		2CA1F8B01C0BF54000089E14 /* sgs7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1F8AF1C0BF54000089E14 /* sgs7.png */; };
 		2CADEA391BB537E0009BBD28 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CADEA381BB537E0009BBD28 /* Helper.m */; };
 		2CB381A51BCF418800D4F33F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB381A41BCF418800D4F33F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2CBA356E20C1279700CAE341 /* LocationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA356C20C1279700CAE341 /* LocationVCTL.m */; };
+		2CBA356F20C1279700CAE341 /* LocationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA356D20C1279700CAE341 /* LocationVCTL.xib */; };
+		2CBA357220C12C0700CAE341 /* PrivateAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA357120C12C0700CAE341 /* PrivateAPI.m */; };
+		2CBA357520C130A300CAE341 /* SimulateLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA357420C130A300CAE341 /* SimulateLocation.m */; };
+		2CBA357820C133D100CAE341 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA357720C133D100CAE341 /* Swizzle.m */; };
+		2CBA35BB20C1486700CAE341 /* ScriptVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA35B920C1486700CAE341 /* ScriptVCTL.m */; };
+		2CBA35BC20C1486700CAE341 /* ScriptVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */; };
 		2CC549A61D923373000F6880 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5498C1D923373000F6880 /* Info.plist */; };
 		2CC549A71D923373000F6880 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5498E1D923373000F6880 /* MASCompositeConstraint.m */; };
 		2CC549A81D923373000F6880 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC549911D923373000F6880 /* MASConstraint.m */; };
@@ -1253,6 +1260,19 @@
 		2CADEA381BB537E0009BBD28 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		2CB381A31BCF418800D4F33F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		2CB381A41BCF418800D4F33F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		2CBA356B20C1279700CAE341 /* LocationVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationVCTL.h; sourceTree = "<group>"; };
+		2CBA356C20C1279700CAE341 /* LocationVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationVCTL.m; sourceTree = "<group>"; };
+		2CBA356D20C1279700CAE341 /* LocationVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationVCTL.xib; sourceTree = "<group>"; };
+		2CBA357020C12C0700CAE341 /* PrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPI.h; sourceTree = "<group>"; };
+		2CBA357120C12C0700CAE341 /* PrivateAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateAPI.m; sourceTree = "<group>"; };
+		2CBA357320C130A300CAE341 /* SimulateLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulateLocation.h; sourceTree = "<group>"; };
+		2CBA357420C130A300CAE341 /* SimulateLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulateLocation.m; sourceTree = "<group>"; };
+		2CBA357620C133D100CAE341 /* Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swizzle.h; sourceTree = "<group>"; };
+		2CBA357720C133D100CAE341 /* Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swizzle.m; sourceTree = "<group>"; };
+		2CBA35B820C1486700CAE341 /* ScriptVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptVCTL.h; sourceTree = "<group>"; };
+		2CBA35B920C1486700CAE341 /* ScriptVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptVCTL.m; sourceTree = "<group>"; };
+		2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptVCTL.xib; sourceTree = "<group>"; };
+		2CBA35BE20C148E700CAE341 /* a1.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = a1.sh; sourceTree = "<group>"; };
 		2CC5498C1D923373000F6880 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC5498D1D923373000F6880 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		2CC5498E1D923373000F6880 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -1647,6 +1667,8 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CBA35B720C1485900CAE341 /* Script */,
+				2CBA356A20C1278500CAE341 /* Location */,
 				2C683CF91FE7BBCA009D2FB7 /* PastBoard */,
 				2CEF4B8B1F947EDC00192E92 /* Test123 */,
 				2C148D6D1F8CBDB90077B299 /* scrollView */,
@@ -3314,6 +3336,8 @@
 				2CADEA381BB537E0009BBD28 /* Helper.m */,
 				2C2EC2FD1BE72787008197C3 /* LocationHelper.h */,
 				2C2EC2FE1BE72787008197C3 /* LocationHelper.m */,
+				2CBA357620C133D100CAE341 /* Swizzle.h */,
+				2CBA357720C133D100CAE341 /* Swizzle.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -3325,6 +3349,39 @@
 				2CB381A41BCF418800D4F33F /* JSONKit.m */,
 			);
 			path = jsonKit;
+			sourceTree = "<group>";
+		};
+		2CBA356A20C1278500CAE341 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA356B20C1279700CAE341 /* LocationVCTL.h */,
+				2CBA356C20C1279700CAE341 /* LocationVCTL.m */,
+				2CBA356D20C1279700CAE341 /* LocationVCTL.xib */,
+				2CBA357020C12C0700CAE341 /* PrivateAPI.h */,
+				2CBA357120C12C0700CAE341 /* PrivateAPI.m */,
+				2CBA357320C130A300CAE341 /* SimulateLocation.h */,
+				2CBA357420C130A300CAE341 /* SimulateLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		2CBA35B720C1485900CAE341 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA35BD20C148B100CAE341 /* Shell */,
+				2CBA35B820C1486700CAE341 /* ScriptVCTL.h */,
+				2CBA35B920C1486700CAE341 /* ScriptVCTL.m */,
+				2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		2CBA35BD20C148B100CAE341 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA35BE20C148E700CAE341 /* a1.sh */,
+			);
+			path = Shell;
 			sourceTree = "<group>";
 		};
 		2CC5498B1D923373000F6880 /* Masonry */ = {
@@ -3586,6 +3643,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBA356F20C1279700CAE341 /* LocationVCTL.xib in Resources */,
 				2C6E612E1E9B808900D17A82 /* GJWebViewVCTL.xib in Resources */,
 				2C6E60651E9B808900D17A82 /* HorizonScrollTitleCollectionCell.xib in Resources */,
 				2C6E60741E9B808900D17A82 /* IntrinsicCell.xib in Resources */,
@@ -3714,6 +3772,7 @@
 				2C6E60CC1E9B808900D17A82 /* SavePlistVCTL.xib in Resources */,
 				2C6E607F1E9B808900D17A82 /* main.js in Resources */,
 				2C6E60761E9B808900D17A82 /* IntrinsicDetailVCTL.xib in Resources */,
+				2CBA35BC20C1486700CAE341 /* ScriptVCTL.xib in Resources */,
 				2C6E600E1E9B808900D17A82 /* RQScanVCTL.xib in Resources */,
 				2C6E61101E9B808900D17A82 /* TimerVCTL.xib in Resources */,
 				2C6E60CA1E9B808900D17A82 /* SaveDataVCTL.xib in Resources */,
@@ -3865,6 +3924,7 @@
 				2C4BE0401BE9A7B0004F1DAF /* MJRefreshAutoFooter.m in Sources */,
 				2C6E60491E9B808900D17A82 /* Drag2CollectionView.m in Sources */,
 				2C6E608A1E9B808900D17A82 /* MasonryVCTL.m in Sources */,
+				2CBA356E20C1279700CAE341 /* LocationVCTL.m in Sources */,
 				2C6E601F1E9B808900D17A82 /* CollectionViewVCTL.m in Sources */,
 				2C6E60111E9B808900D17A82 /* ViewCategory1.m in Sources */,
 				2C4BE04F1BE9A7B0004F1DAF /* MJRefreshConst.m in Sources */,
@@ -3883,8 +3943,10 @@
 				2C6E611C1E9B808900D17A82 /* UIButtonBVTL.m in Sources */,
 				2C6E60731E9B808900D17A82 /* IntrinsicCell.m in Sources */,
 				2C6E60901E9B808900D17A82 /* MBProgressHudVCTL.m in Sources */,
+				2CBA357820C133D100CAE341 /* Swizzle.m in Sources */,
 				2CA112C21BB29EAA00406685 /* BasicTableViewCell.m in Sources */,
 				2C6E61161E9B808900D17A82 /* TouchLabelView.m in Sources */,
+				2CBA357220C12C0700CAE341 /* PrivateAPI.m in Sources */,
 				2C4BE0421BE9A7B0004F1DAF /* MJRefreshComponent.m in Sources */,
 				2CA112C31BB29EAA00406685 /* BasicVCTL.m in Sources */,
 				2C6E60DB1E9B808900D17A82 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
@@ -4012,6 +4074,7 @@
 				2C2EC3321BE74021008197C3 /* AFURLConnectionOperation.m in Sources */,
 				2C6E5FEE1E9B808900D17A82 /* ActionSheetVCTL.m in Sources */,
 				2C6E60C81E9B808900D17A82 /* SaveData1.m in Sources */,
+				2CBA35BB20C1486700CAE341 /* ScriptVCTL.m in Sources */,
 				2C4BE04D1BE9A7B0004F1DAF /* MJRefreshStateHeader.m in Sources */,
 				2C6E60681E9B808900D17A82 /* HorizontalVCTL.m in Sources */,
 				2C6E610F1E9B808900D17A82 /* TimerVCTL.m in Sources */,
@@ -4068,6 +4131,7 @@
 				2C6E60A41E9B808900D17A82 /* OthersInstance.m in Sources */,
 				2C6E601D1E9B808900D17A82 /* CollectionView123Cell.m in Sources */,
 				2C6E610D1E9B808900D17A82 /* TimerInstance.m in Sources */,
+				2CBA357520C130A300CAE341 /* SimulateLocation.m in Sources */,
 				2C6E60A31E9B808900D17A82 /* OtherObjectHelper.m in Sources */,
 				2C6E61231E9B808900D17A82 /* LifeTimeVCTL.m in Sources */,
 				2C6E60EC1E9B808900D17A82 /* SuperNibCell1.m in Sources */,

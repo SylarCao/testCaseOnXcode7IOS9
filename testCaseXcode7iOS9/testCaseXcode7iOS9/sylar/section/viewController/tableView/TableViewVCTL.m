@@ -31,6 +31,11 @@
     
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+//    _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    _tableView.estimatedRowHeight = 0;
+    _tableView.estimatedSectionHeaderHeight = 0;
+    _tableView.estimatedSectionFooterHeight = 0;
+    
     if (kTableViewVCTLXib)
     {
         [_tableView registerNib:[UINib nibWithNibName:@"TableViewXIBCell" bundle:nil] forCellReuseIdentifier:[TableViewXIBCell getCellId]];
@@ -115,6 +120,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+//    NSLog(@"sylar : heightForHeaderInSection(%ld)", section);
     return 50;
 }
 

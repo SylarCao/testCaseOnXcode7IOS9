@@ -15,6 +15,7 @@
 #import "DrawLineScrollView.h"
 #import "DrawLineScrollView2.h"
 #import "Masonry.h"
+#import "DrawView4.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface DrawLineVCTL ()
 
@@ -39,7 +40,9 @@
     
 //    [self fun2];
     
-    [self fun3];
+//    [self fun3];
+    
+    [self fun4];
 }
 
 - (IBAction)btn1:(id)sender
@@ -53,6 +56,11 @@
 //    [_view1 setNeedsDisplay];
     
 //    [self test1];
+}
+
+- (void)fun4 {
+    DrawView4 *v4 = [[DrawView4 alloc] initWithFrame:CGRectMake(10, 100, 300, 400)];
+    [self.view addSubview:v4];
 }
 
 - (void)fun3 {

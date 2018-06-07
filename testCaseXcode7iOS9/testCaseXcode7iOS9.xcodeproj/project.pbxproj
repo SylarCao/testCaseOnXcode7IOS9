@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C01B1B220C91C5E004CAEEA /* DrawView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C01B1B120C91C5E004CAEEA /* DrawView4.m */; };
 		2C09198E1CC875A6004EDFD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */; };
 		2C13F6541E9CCC3C009BBE34 /* PropertyC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */; };
 		2C13F6571E9CCD1A009BBE34 /* PropertyOC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6561E9CCD1A009BBE34 /* PropertyOC1.m */; };
@@ -532,6 +533,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C01B1B020C91C5E004CAEEA /* DrawView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView4.h; sourceTree = "<group>"; };
+		2C01B1B120C91C5E004CAEEA /* DrawView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView4.m; sourceTree = "<group>"; };
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2C13F6521E9CCC3C009BBE34 /* PropertyC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyC1.h; sourceTree = "<group>"; };
 		2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyC1.m; sourceTree = "<group>"; };
@@ -2204,6 +2207,8 @@
 				2C6E5E1F1E9B808800D17A82 /* DrawView2.m */,
 				2C6E5E201E9B808800D17A82 /* DrawView3.h */,
 				2C6E5E211E9B808800D17A82 /* DrawView3.m */,
+				2C01B1B020C91C5E004CAEEA /* DrawView4.h */,
+				2C01B1B120C91C5E004CAEEA /* DrawView4.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4034,6 +4039,7 @@
 				2C6E61331E9B808900D17A82 /* PullingTableViewVCTL.m in Sources */,
 				2C2EC3391BE74021008197C3 /* UIButton+AFNetworking.m in Sources */,
 				2C6E60191E9B808900D17A82 /* CollectionHeaderView.m in Sources */,
+				2C01B1B220C91C5E004CAEEA /* DrawView4.m in Sources */,
 				2C6E60541E9B808900D17A82 /* EncoderObject1.m in Sources */,
 				2C6E5FFC1E9B808900D17A82 /* UIImage+ImageEffects.m in Sources */,
 				2C2EC32E1BE74021008197C3 /* AFHTTPRequestOperationManager.m in Sources */,

@@ -44,6 +44,14 @@
     NSInteger i5 = CGColorGetNumberOfComponents(r5);  // 2
     NSInteger i6 = CGColorGetNumberOfComponents(r6);  // 2
     
+    CGColorSpaceRef s1 = CGColorGetColorSpace(r1);
+    CGColorSpaceGetModel(s1);
+    CGColorSpaceRef s2 = CGColorGetColorSpace(r2);
+    CGColorSpaceRef s3 = CGColorGetColorSpace(r3);
+    CGColorSpaceRef s4 = CGColorGetColorSpace(r4);
+    CGColorSpaceRef s5 = CGColorGetColorSpace(r5);
+    CGColorSpaceRef s6 = CGColorGetColorSpace(r6);
+    
 //    NSLog(@"sylar : aaa = %@", r1);
 }
 
@@ -88,9 +96,10 @@
 //    CGContextSetFillColor(context, CGColorGetComponents(color.CGColor));
 //    CGContextFillRect(context, CGRectMake(rect.origin.x, rect.origin.y, rect.size.width/2, rect.size.height/2));
     
+    
+    
     // draw line
     color = [UIColor blueColor];
-
     CGContextSetStrokeColor(context, CGColorGetComponents(color.CGColor));
     points2[0] = CGPointMake(rect.origin.x + rect.size.width/4, rect.origin.y);
     points2[1] = CGPointMake(rect.origin.x + rect.size.width/4, rect.origin.y + rect.size.height);
@@ -104,6 +113,7 @@
     CGContextSetLineWidth(context, 1);
     CGContextStrokePath(context);
     
+    CGContextSaveGState(context);
     // draw text
     NSString *s1 = @"abcdedg";
     frame = CGRectMake(0, 0, rect.size.width/4, 40);
@@ -112,6 +122,7 @@
 //    c1 = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
     aa = @{NSForegroundColorAttributeName: c1};
     [s1 drawInRect:frame withAttributes:aa];
+    CGContextRestoreGState(context);
     
     // draw line
     color = [UIColor blueColor];

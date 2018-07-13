@@ -27,12 +27,39 @@
     
     [super viewDidLoad];
     
+    [self fun2];
     
-    [self addV1V2];
+//    [self addV1V2];
     
-    _height1 = 50;
-    _width1 = 50;
-    [self constraints4];
+//    _height1 = 50;
+//    _width1 = 50;
+//    [self constraints4];
+}
+
+- (void)fun2 {
+    UILabel *ll = [[UILabel alloc] initWithFrame:CGRectZero];
+    ll.translatesAutoresizingMaskIntoConstraints = NO;
+    ll.text = @"My Label";
+    ll.font = [UIFont systemFontOfSize:20];
+    ll.textColor = [UIColor redColor];
+    [self.view addSubview:ll];
+    
+    NSLayoutConstraint *c1 = [NSLayoutConstraint constraintWithItem:ll
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeTop
+                                                         multiplier:1
+                                                           constant:100];
+    NSLayoutConstraint *c2 = [NSLayoutConstraint constraintWithItem:ll
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1
+                                                           constant:0];
+    
+    [self.view addConstraints:@[c1, c2]];
 }
 
 

@@ -40,9 +40,9 @@
     
 //    [self fun2];
     
-//    [self fun3];
+    [self fun3];
     
-    [self fun4];
+//    [self fun4];
 }
 
 - (IBAction)btn1:(id)sender
@@ -65,7 +65,7 @@
 
 - (void)fun3 {
     // 8192 -> 这个是 画图的size 不是 view的size
-    CGFloat width = 12000;
+    CGFloat width = 8220;
     UIScrollView * s1 = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 110, 300, 400)];
     [self.view addSubview:s1];
     s1.layer.borderColor = [UIColor redColor].CGColor;

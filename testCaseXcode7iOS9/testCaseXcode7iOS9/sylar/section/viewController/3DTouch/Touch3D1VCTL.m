@@ -53,8 +53,7 @@
     [generator impactOccurred];
 }
 
-- (void) shake1
-{
+- (void) shake1 {
 //    AudioServicesPlaySystemSound(1000);//新邮件消息提示
 //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate); //震动
 //    AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);

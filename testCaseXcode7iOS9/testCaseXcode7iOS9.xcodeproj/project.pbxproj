@@ -440,6 +440,9 @@
 		2C785C761D10015C004480CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C785C751D10015C004480CF /* Reachability.m */; };
 		2C7ED9571F7244FE00FC0392 /* PopPreviousVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ED9551F7244FE00FC0392 /* PopPreviousVCTL.m */; };
 		2C7ED9581F7244FE00FC0392 /* PopPreviousVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */; };
+		2C8E862D2105A01B00DF2B47 /* BackItemVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */; };
+		2C8E862E2105A01B00DF2B47 /* BackItemVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */; };
+		2C8E86302105A10600DF2B47 /* img_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862F2105A10600DF2B47 /* img_back.png */; };
 		2CA10EB51E7AA39900387F3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
@@ -1231,6 +1234,10 @@
 		2C7ED9551F7244FE00FC0392 /* PopPreviousVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPreviousVCTL.m; sourceTree = "<group>"; };
 		2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopPreviousVCTL.xib; sourceTree = "<group>"; };
 		2C8BAB601BC7D593000FD2DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C8E862A2105A01B00DF2B47 /* BackItemVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackItemVCTL.h; sourceTree = "<group>"; };
+		2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackItemVCTL.m; sourceTree = "<group>"; };
+		2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackItemVCTL.xib; sourceTree = "<group>"; };
+		2C8E862F2105A10600DF2B47 /* img_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_back.png; sourceTree = "<group>"; };
 		2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1670,6 +1677,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C8E86292105A00900DF2B47 /* backItem */,
 				2CBA35B720C1485900CAE341 /* Script */,
 				2CBA356A20C1278500CAE341 /* Location */,
 				2C683CF91FE7BBCA009D2FB7 /* PastBoard */,
@@ -3186,6 +3194,7 @@
 		2C75849F1C740EAC00614D17 /* 1 */ = {
 			isa = PBXGroup;
 			children = (
+				2C8E862F2105A10600DF2B47 /* img_back.png */,
 				2C7584A01C740EAC00614D17 /* small_30.png */,
 			);
 			path = 1;
@@ -3208,6 +3217,16 @@
 				2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */,
 			);
 			path = popPrevious;
+			sourceTree = "<group>";
+		};
+		2C8E86292105A00900DF2B47 /* backItem */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E862A2105A01B00DF2B47 /* BackItemVCTL.h */,
+				2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */,
+				2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */,
+			);
+			path = backItem;
 			sourceTree = "<group>";
 		};
 		2CA1127E1BB29E4A00406685 = {
@@ -3668,6 +3687,7 @@
 				2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */,
 				2C6E5FF31E9B808900D17A82 /* AnimationVCTL.xib in Resources */,
 				2C6E60971E9B808900D17A82 /* MenuItemCell.xib in Resources */,
+				2C8E862E2105A01B00DF2B47 /* BackItemVCTL.xib in Resources */,
 				2C6E5FF81E9B808900D17A82 /* EnterBkgdVCTL.xib in Resources */,
 				2C6E60BE1E9B808900D17A82 /* ReadPDFVCTL.xib in Resources */,
 				2C6E60A21E9B808900D17A82 /* OpeniOS9VCTL.xib in Resources */,
@@ -3747,6 +3767,7 @@
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C6E60BA1E9B808900D17A82 /* PushPopVCTL.xib in Resources */,
 				2C4E0DD01F6A579800C2CE27 /* DrawLineScrollView.xib in Resources */,
+				2C8E86302105A10600DF2B47 /* img_back.png in Resources */,
 				2C6E60581E9B808900D17A82 /* FingerTapVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2C6E60881E9B808900D17A82 /* LewView2.xib in Resources */,
@@ -4144,6 +4165,7 @@
 				2C6E606F1E9B808900D17A82 /* InstanceTypeObj2.m in Sources */,
 				2C6E60F61E9B808900D17A82 /* TableViewVCTL.m in Sources */,
 				2C6E60801E9B808900D17A82 /* KVOVCTL.m in Sources */,
+				2C8E862D2105A01B00DF2B47 /* BackItemVCTL.m in Sources */,
 				2C6E60D91E9B808900D17A82 /* WXApiResponseHandler.m in Sources */,
 				2CEF4B901F947EDD00192E92 /* Test123TableViewCell.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,

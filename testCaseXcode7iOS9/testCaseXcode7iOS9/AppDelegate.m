@@ -13,6 +13,7 @@
 //#import <JSPatch/JSPatch.h>
 #import "OpeniOS9VCTL.h"
 //#import "SaveData1.h"
+//#import "RootNavigationVCTL.h"  // backitem
 
 @interface AppDelegate ()
 
@@ -25,14 +26,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+
     HomeVCTL *hh = [[HomeVCTL alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:hh];
     _naviController = nav;
-    
+
     _window.rootViewController = nav;
     [_window addSubview:nav.view];
     [_window makeKeyAndVisible];
+    
+//    // 设置 leftBarItem 可以右滑返回
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    HomeVCTL *hh = [[HomeVCTL alloc] initWithNibName:nil bundle:nil];
+//    RootNavigationVCTL *rr = [[RootNavigationVCTL alloc] initWithRootViewController:hh];
+//    [self.window setRootViewController:rr];
+//    [self.window makeKeyAndVisible];
+//    // end 设置 leftBarItem 可以右滑返回
     
     // 3d touch
     UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"斋打开" localizedTitle:@"斋打开"];

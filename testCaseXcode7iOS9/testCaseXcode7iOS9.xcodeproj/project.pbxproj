@@ -443,6 +443,7 @@
 		2C8E862D2105A01B00DF2B47 /* BackItemVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */; };
 		2C8E862E2105A01B00DF2B47 /* BackItemVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */; };
 		2C8E86302105A10600DF2B47 /* img_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862F2105A10600DF2B47 /* img_back.png */; };
+		2C8E863C2105B08E00DF2B47 /* RootNavigationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E863B2105B08E00DF2B47 /* RootNavigationVCTL.m */; };
 		2CA10EB51E7AA39900387F3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
 		2CA1128F1BB29E4A00406685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128E1BB29E4A00406685 /* AppDelegate.m */; };
@@ -1238,6 +1239,8 @@
 		2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackItemVCTL.m; sourceTree = "<group>"; };
 		2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackItemVCTL.xib; sourceTree = "<group>"; };
 		2C8E862F2105A10600DF2B47 /* img_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_back.png; sourceTree = "<group>"; };
+		2C8E863A2105B08E00DF2B47 /* RootNavigationVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationVCTL.h; sourceTree = "<group>"; };
+		2C8E863B2105B08E00DF2B47 /* RootNavigationVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationVCTL.m; sourceTree = "<group>"; };
 		2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2CA112871BB29E4A00406685 /* testCaseXcode7iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCaseXcode7iOS9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA1128B1BB29E4A00406685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -3222,11 +3225,21 @@
 		2C8E86292105A00900DF2B47 /* backItem */ = {
 			isa = PBXGroup;
 			children = (
+				2C8E86392105B07D00DF2B47 /* navi */,
 				2C8E862A2105A01B00DF2B47 /* BackItemVCTL.h */,
 				2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */,
 				2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */,
 			);
 			path = backItem;
+			sourceTree = "<group>";
+		};
+		2C8E86392105B07D00DF2B47 /* navi */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E863A2105B08E00DF2B47 /* RootNavigationVCTL.h */,
+				2C8E863B2105B08E00DF2B47 /* RootNavigationVCTL.m */,
+			);
+			path = navi;
 			sourceTree = "<group>";
 		};
 		2CA1127E1BB29E4A00406685 = {
@@ -4169,6 +4182,7 @@
 				2C6E60D91E9B808900D17A82 /* WXApiResponseHandler.m in Sources */,
 				2CEF4B901F947EDD00192E92 /* Test123TableViewCell.m in Sources */,
 				2CA1128C1BB29E4A00406685 /* main.m in Sources */,
+				2C8E863C2105B08E00DF2B47 /* RootNavigationVCTL.m in Sources */,
 				2C6E61001E9B808900D17A82 /* BlockHelperTimer.m in Sources */,
 				2C13F6661E9CE73E009BBE34 /* PropertyOCO2ag.m in Sources */,
 				2C6E60471E9B808900D17A82 /* Drag2CollectionVCTL.m in Sources */,

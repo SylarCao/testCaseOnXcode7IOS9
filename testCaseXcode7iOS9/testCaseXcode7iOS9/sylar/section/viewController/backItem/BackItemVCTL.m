@@ -8,7 +8,7 @@
 
 #import "BackItemVCTL.h"
 
-@interface BackItemVCTL ()
+@interface BackItemVCTL () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -19,14 +19,23 @@
     // Do any additional setup after loading the view from its nib.
     
     [self setBack1];
+    
+    [self fun1];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+}
+
+- (void)fun1 {
+    // 这个方法可以 右滑返回， 也可以用 RootNavigationVCTL 
+    id aaa = self.navigationController.interactivePopGestureRecognizer.delegate;
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    NSLog(@"sylar : aaaa = %@", aaa);
 }
 
 - (void)setBack1 {
-//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
-//    backButton.accessibilityLabel = @"返回";
-//    if (backButton){
-//        [self.navigationItem setLeftBarButtonItem:backButton];
-//    }
     UIImage *img = [UIImage imageNamed:@"img_back"];
     img = [[UIImage imageNamed:@"img_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(actionBack)];
@@ -35,6 +44,7 @@
 
 - (void)actionBack {
     NSLog(@"sylar : tap back    ");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

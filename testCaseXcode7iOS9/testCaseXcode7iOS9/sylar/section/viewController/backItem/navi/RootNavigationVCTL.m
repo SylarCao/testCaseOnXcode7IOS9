@@ -23,4 +23,13 @@
     }
 }
 
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (navigationController.viewControllers.count == 1) {
+        navigationController.interactivePopGestureRecognizer.enabled = NO;
+        navigationController.interactivePopGestureRecognizer.delegate = nil;
+    } else {
+        navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
+}
+
 @end

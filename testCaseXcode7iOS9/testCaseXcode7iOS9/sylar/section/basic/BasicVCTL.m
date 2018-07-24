@@ -26,6 +26,10 @@ NSInteger const kMaxSaveNumber = 50;
     self.title = NSStringFromClass([self class]);
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    // 下边这个是返回按钮是图片的时候用的
+//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     if ([self.title isEqualToString:@"HomeVCTL"] == NO) {
         [self savePlist: self.title];
     }

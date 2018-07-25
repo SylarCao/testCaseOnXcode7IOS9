@@ -25,6 +25,8 @@
 		2C23A0861C0D457F008B4712 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0811C0D457F008B4712 /* libWeChatSDK.a */; };
 		2C23A0871C0D457F008B4712 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C23A0821C0D457F008B4712 /* read_me.txt */; };
 		2C23A0891C0D45B6008B4712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */; };
+		2C242BCF2106CC41003B62FE /* img_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C242BCD2106CC41003B62FE /* img_back@2x.png */; };
+		2C242BD02106CC41003B62FE /* img_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C242BCE2106CC41003B62FE /* img_back.png */; };
 		2C2A16541BCF54AF00D065CD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */; };
 		2C2A686E1BFDAAED00C4FA73 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A686C1BFDAAED00C4FA73 /* JPEngine.m */; };
 		2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A686D1BFDAAED00C4FA73 /* JSPatch.js */; };
@@ -442,7 +444,6 @@
 		2C7ED9581F7244FE00FC0392 /* PopPreviousVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */; };
 		2C8E862D2105A01B00DF2B47 /* BackItemVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */; };
 		2C8E862E2105A01B00DF2B47 /* BackItemVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */; };
-		2C8E86302105A10600DF2B47 /* img_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8E862F2105A10600DF2B47 /* img_back.png */; };
 		2C8E863C2105B08E00DF2B47 /* RootNavigationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E863B2105B08E00DF2B47 /* RootNavigationVCTL.m */; };
 		2CA10EB51E7AA39900387F3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */; };
 		2CA1128C1BB29E4A00406685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1128B1BB29E4A00406685 /* main.m */; };
@@ -475,6 +476,8 @@
 		2CBA357820C133D100CAE341 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA357720C133D100CAE341 /* Swizzle.m */; };
 		2CBA35BB20C1486700CAE341 /* ScriptVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA35B920C1486700CAE341 /* ScriptVCTL.m */; };
 		2CBA35BC20C1486700CAE341 /* ScriptVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */; };
+		2CBC82B221081F70004F77FE /* NumberVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC82B021081F70004F77FE /* NumberVCTL.m */; };
+		2CBC82B321081F70004F77FE /* NumberVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC82B121081F70004F77FE /* NumberVCTL.xib */; };
 		2CC549A61D923373000F6880 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5498C1D923373000F6880 /* Info.plist */; };
 		2CC549A71D923373000F6880 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5498E1D923373000F6880 /* MASCompositeConstraint.m */; };
 		2CC549A81D923373000F6880 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC549911D923373000F6880 /* MASConstraint.m */; };
@@ -571,6 +574,8 @@
 		2C23A0841C0D457F008B4712 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		2C23A0851C0D457F008B4712 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		2C23A0881C0D45B6008B4712 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2C242BCD2106CC41003B62FE /* img_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_back@2x.png"; sourceTree = "<group>"; };
+		2C242BCE2106CC41003B62FE /* img_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_back.png; sourceTree = "<group>"; };
 		2C2A16521BCF54AF00D065CD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2C2A16531BCF54AF00D065CD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2C2A686B1BFDAAED00C4FA73 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
@@ -1238,7 +1243,6 @@
 		2C8E862A2105A01B00DF2B47 /* BackItemVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackItemVCTL.h; sourceTree = "<group>"; };
 		2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackItemVCTL.m; sourceTree = "<group>"; };
 		2C8E862C2105A01B00DF2B47 /* BackItemVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackItemVCTL.xib; sourceTree = "<group>"; };
-		2C8E862F2105A10600DF2B47 /* img_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_back.png; sourceTree = "<group>"; };
 		2C8E863A2105B08E00DF2B47 /* RootNavigationVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationVCTL.h; sourceTree = "<group>"; };
 		2C8E863B2105B08E00DF2B47 /* RootNavigationVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationVCTL.m; sourceTree = "<group>"; };
 		2CA10EB31E7AA27A00387F3F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1286,6 +1290,9 @@
 		2CBA35B920C1486700CAE341 /* ScriptVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptVCTL.m; sourceTree = "<group>"; };
 		2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScriptVCTL.xib; sourceTree = "<group>"; };
 		2CBA35BE20C148E700CAE341 /* a1.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = a1.sh; sourceTree = "<group>"; };
+		2CBC82AF21081F70004F77FE /* NumberVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberVCTL.h; sourceTree = "<group>"; };
+		2CBC82B021081F70004F77FE /* NumberVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberVCTL.m; sourceTree = "<group>"; };
+		2CBC82B121081F70004F77FE /* NumberVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberVCTL.xib; sourceTree = "<group>"; };
 		2CC5498C1D923373000F6880 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC5498D1D923373000F6880 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		2CC5498E1D923373000F6880 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -1680,6 +1687,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CBC82AE21081F61004F77FE /* Number */,
 				2C8E86292105A00900DF2B47 /* backItem */,
 				2CBA35B720C1485900CAE341 /* Script */,
 				2CBA356A20C1278500CAE341 /* Location */,
@@ -3197,7 +3205,8 @@
 		2C75849F1C740EAC00614D17 /* 1 */ = {
 			isa = PBXGroup;
 			children = (
-				2C8E862F2105A10600DF2B47 /* img_back.png */,
+				2C242BCE2106CC41003B62FE /* img_back.png */,
+				2C242BCD2106CC41003B62FE /* img_back@2x.png */,
 				2C7584A01C740EAC00614D17 /* small_30.png */,
 			);
 			path = 1;
@@ -3419,6 +3428,16 @@
 				2CBA35BE20C148E700CAE341 /* a1.sh */,
 			);
 			path = Shell;
+			sourceTree = "<group>";
+		};
+		2CBC82AE21081F61004F77FE /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				2CBC82AF21081F70004F77FE /* NumberVCTL.h */,
+				2CBC82B021081F70004F77FE /* NumberVCTL.m */,
+				2CBC82B121081F70004F77FE /* NumberVCTL.xib */,
+			);
+			path = Number;
 			sourceTree = "<group>";
 		};
 		2CC5498B1D923373000F6880 /* Masonry */ = {
@@ -3729,6 +3748,7 @@
 				2C6E60E21E9B808900D17A82 /* StatusBarVCTL.xib in Resources */,
 				2C6E61391E9B808900D17A82 /* SubViewIndexVCTL.xib in Resources */,
 				2CA1129A1BB29E4A00406685 /* LaunchScreen.storyboard in Resources */,
+				2CBC82B321081F70004F77FE /* NumberVCTL.xib in Resources */,
 				2C6E61351E9B808900D17A82 /* NormalCell.xib in Resources */,
 				2C6E60EF1E9B808900D17A82 /* SuperNibCell2.xib in Resources */,
 				2C6E60081E9B808900D17A82 /* beep.mp3 in Resources */,
@@ -3745,6 +3765,7 @@
 				2C6E60071E9B808900D17A82 /* DefaultCameraVCTL.xib in Resources */,
 				2C6E60F51E9B808900D17A82 /* TableViewHeaderXIBView.xib in Resources */,
 				2C40EB091BE0C40500074AB8 /* file_pdf2.pdf in Resources */,
+				2C242BCF2106CC41003B62FE /* img_back@2x.png in Resources */,
 				2C6E60321E9B808900D17A82 /* Dealloc1VCTL.xib in Resources */,
 				2C6E61051E9B808900D17A82 /* testXibVCTL.xib in Resources */,
 				2C6E60911E9B808900D17A82 /* MBProgressHudVCTL.xib in Resources */,
@@ -3780,7 +3801,6 @@
 				2C2A686F1BFDAAED00C4FA73 /* JSPatch.js in Resources */,
 				2C6E60BA1E9B808900D17A82 /* PushPopVCTL.xib in Resources */,
 				2C4E0DD01F6A579800C2CE27 /* DrawLineScrollView.xib in Resources */,
-				2C8E86302105A10600DF2B47 /* img_back.png in Resources */,
 				2C6E60581E9B808900D17A82 /* FingerTapVCTL.xib in Resources */,
 				2C40EB101BE0CA8A00074AB8 /* pp1.pdf in Resources */,
 				2C6E60881E9B808900D17A82 /* LewView2.xib in Resources */,
@@ -3795,6 +3815,7 @@
 				2C6E60381E9B808900D17A82 /* DeleteInsertCellVCTL.xib in Resources */,
 				2C7849431D475E1B00E82013 /* icon80.png in Resources */,
 				2C6E607C1E9B808900D17A82 /* JsonKitVCTL.xib in Resources */,
+				2C242BD02106CC41003B62FE /* img_back.png in Resources */,
 				2C6E601C1E9B808900D17A82 /* CollectionView1234Cell.xib in Resources */,
 				2C6E601E1E9B808900D17A82 /* CollectionView123Cell.xib in Resources */,
 				2C6E60F71E9B808900D17A82 /* TableViewVCTL.xib in Resources */,
@@ -4079,6 +4100,7 @@
 				2C2EC32E1BE74021008197C3 /* AFHTTPRequestOperationManager.m in Sources */,
 				2C6E60771E9B808900D17A82 /* IntrinsicSizeTableViewVCTL.m in Sources */,
 				2C6E60BD1E9B808900D17A82 /* ReadPDFVCTL.m in Sources */,
+				2CBC82B221081F70004F77FE /* NumberVCTL.m in Sources */,
 				2CC549AA1D923373000F6880 /* MASLayoutConstraint.m in Sources */,
 				2C6E60551E9B808900D17A82 /* EncoderVCTL.m in Sources */,
 				2C6E60FF1E9B808900D17A82 /* TestTableWidthTableViewCell.m in Sources */,

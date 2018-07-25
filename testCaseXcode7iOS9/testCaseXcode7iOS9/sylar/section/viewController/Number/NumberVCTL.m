@@ -29,7 +29,7 @@
     NSLog(@"sylar : 2222");
     
     NSString *s1 = @"u87";
-    s1 = [[NSObject alloc] init];  // crash
+//    s1 = [[NSObject alloc] init];  // crash
     s1 = nil;  // 0
     NSInteger a1 = [s1 integerValue];
     CGFloat a2 = 6*5-30.00000;

@@ -75,8 +75,9 @@ const BOOL kUseWKWebView = 1;
     NSString *s1 = @"http://36kr.com/p/5063512.html";
 //    s1 = @"https://www.baidu.com/";
     s1 = @"https://i.gtja.com/quotes/securities/diagnoseEplus/trading/index.html?stockCode=002253&market=SZ&color=white";  // 诊股
-//    s1 = @"https://mnews.gw.com.cn/wap/data/ipad/stock/SZ/39/000639/f10/f10.html?themeStyleVs=1&qsThemeSign=1";  // f10
-    s1 = @"http://i.bankuang.com/#!/macro?DZHSPECIAL=37";
+    s1 = @"https://mnews.gw.com.cn/wap/data/ipad/stock/SZ/39/000639/f10/f10.html?themeStyleVs=1&qsThemeSign=1";  // f10
+//    s1 = @"http://i.bankuang.com/#!/macro?DZHSPECIAL=37";
+    s1 = @"https://apicdn.app.gtja.com/hkf10/hkf10_test/app/home/f10.html?InnerCode=00700";  //  港股F10
     NSString *url = s1;
     NSURL *url1 = [NSURL URLWithString:url];
     NSURLRequest *rr = [[NSURLRequest alloc] initWithURL:url1];
@@ -91,7 +92,11 @@ const BOOL kUseWKWebView = 1;
     } else {
         self.kvoKeyPath = @"self.web1.scrollView.contentSize";
     }
-    [self addObserver:self forKeyPath:self.kvoKeyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//    [self addObserver:self forKeyPath:self.kvoKeyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        [self addObserver:self forKeyPath:self.kvoKeyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//    });
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
@@ -106,10 +111,10 @@ const BOOL kUseWKWebView = 1;
         height = _web1.scrollView.contentSize.height;
     }
     // 诊股的网址用WKWebView有问题，contentsize一直在变，但是实际没有变
-    NSValue *nn = [change objectForKey:@"new"];
+//    NSValue *nn = [change objectForKey:@"new"];
 //    nn = nil;
-    CGSize ss = [nn CGSizeValue];
-    NSLog(@"obobob = %f, %f, %f", width, height, ss.width);
+//    CGSize ss = [nn CGSizeValue];
+    NSLog(@"obobob = %f, %f, %f", width, height, 0);
 }
 
 - (void)fun2 {
@@ -186,6 +191,10 @@ const BOOL kUseWKWebView = 1;
     NSLog(@"sylar :  did finish");
     CGFloat height = _web2.scrollView.contentSize.height;
     NSLog(@"sylar :  end height = %f", height);
+    
+    WKWebViewConfiguration *cc = webView.configuration;
+    NSLog(@"sylar : cc = %@", cc.description);
+    
 }
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {

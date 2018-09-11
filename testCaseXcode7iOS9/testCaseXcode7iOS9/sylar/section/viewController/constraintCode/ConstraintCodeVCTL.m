@@ -8,11 +8,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "ConstraintCodeVCTL.h"
 #import "constraintView1.h"
-
+#import "Masonry.h"
+#import "ConstraintView2.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface ConstraintCodeVCTL ()
 
 @property (nonatomic, strong) constraintView1 *v1;
+
+@property (nonatomic, strong) ConstraintView2 *v2;
 
 @property (nonatomic, strong) NSLayoutConstraint *v1Width;
 
@@ -25,7 +28,15 @@
     
     
     
-    [self fun1];
+//    [self fun1];
+    
+    [self fun2];
+}
+
+- (void)fun2 {
+    _v2 = [[ConstraintView2 alloc] initWithFrame:CGRectMake(100, 100, 50, 80)];
+    _v2.backgroundColor = [UIColor redColor];
+    [self.view addSubview:_v2];
 }
 
 - (void)fun1
@@ -50,15 +61,19 @@
     [self.view addConstraints:c2];
 }
 
-
 - (IBAction)btn1:(id)sender
 {
-    
+    [_v2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset = 100;
+        make.left.offset = 100;
+        make.width.offset = 30;
+        make.height.offset = 60;
+    }];
 }
 
 - (IBAction)btn2:(id)sender
 {
-    
+    _v2.frame = CGRectMake(100, 100, 80, 40);
 }
 
 @end

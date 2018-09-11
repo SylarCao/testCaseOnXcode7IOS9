@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C01B1B220C91C5E004CAEEA /* DrawView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C01B1B120C91C5E004CAEEA /* DrawView4.m */; };
+		2C087F042147617700CFD87F /* ConstraintView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C087F032147617700CFD87F /* ConstraintView2.m */; };
 		2C13F6541E9CCC3C009BBE34 /* PropertyC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */; };
 		2C13F6571E9CCD1A009BBE34 /* PropertyOC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6561E9CCD1A009BBE34 /* PropertyOC1.m */; };
 		2C13F65A1E9CD042009BBE34 /* PropertyOC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C13F6591E9CD042009BBE34 /* PropertyOC2.m */; };
@@ -542,6 +543,8 @@
 /* Begin PBXFileReference section */
 		2C01B1B020C91C5E004CAEEA /* DrawView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView4.h; sourceTree = "<group>"; };
 		2C01B1B120C91C5E004CAEEA /* DrawView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView4.m; sourceTree = "<group>"; };
+		2C087F022147617700CFD87F /* ConstraintView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintView2.h; sourceTree = "<group>"; };
+		2C087F032147617700CFD87F /* ConstraintView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintView2.m; sourceTree = "<group>"; };
 		2C09198D1CC875A6004EDFD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2C13F6521E9CCC3C009BBE34 /* PropertyC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyC1.h; sourceTree = "<group>"; };
 		2C13F6531E9CCC3C009BBE34 /* PropertyC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyC1.m; sourceTree = "<group>"; };
@@ -2046,6 +2049,8 @@
 				2C6E5DCA1E9B808800D17A82 /* ConstraintCodeVCTL.xib */,
 				2C6E5DCB1E9B808800D17A82 /* constraintView1.h */,
 				2C6E5DCC1E9B808800D17A82 /* constraintView1.m */,
+				2C087F022147617700CFD87F /* ConstraintView2.h */,
+				2C087F032147617700CFD87F /* ConstraintView2.m */,
 			);
 			path = constraintCode;
 			sourceTree = "<group>";
@@ -3937,6 +3942,7 @@
 				2C6E610B1E9B808900D17A82 /* ThreadVCTL.m in Sources */,
 				2C6E601B1E9B808900D17A82 /* CollectionView1234Cell.m in Sources */,
 				2C376F4E1EEFF85200DAD77F /* BlockObject2.m in Sources */,
+				2C087F042147617700CFD87F /* ConstraintView2.m in Sources */,
 				2C6E60291E9B808900D17A82 /* CoreDataVCTL.m in Sources */,
 				2C6E5FFE1E9B808900D17A82 /* SecurityStrategy.m in Sources */,
 				2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */,

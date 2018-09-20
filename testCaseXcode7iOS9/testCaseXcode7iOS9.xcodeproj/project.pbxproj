@@ -91,6 +91,9 @@
 		2C4E0DD31F6A5C0400C2CE27 /* DrawLineScrollView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */; };
 		2C4FE5551BD79AAE00681C2F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */; };
 		2C65D7411BB3A38500D22F29 /* mp1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C65D7401BB3A38500D22F29 /* mp1.jpg */; };
+		2C6655E32153661B00731EFC /* DeprecatedVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6655E12153661B00731EFC /* DeprecatedVCTL.m */; };
+		2C6655E42153661B00731EFC /* DeprecatedVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6655E22153661B00731EFC /* DeprecatedVCTL.xib */; };
+		2C6655E721536EEB00731EFC /* DeprecatedObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6655E621536EEB00731EFC /* DeprecatedObject1.m */; };
 		2C683CFD1FE7BBD8009D2FB7 /* PastBoardVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C683CFB1FE7BBD8009D2FB7 /* PastBoardVCTL.m */; };
 		2C683CFE1FE7BBD8009D2FB7 /* PastBoardVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C683CFC1FE7BBD8009D2FB7 /* PastBoardVCTL.xib */; };
 		2C68EE011C19428D009E1396 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C68EE001C19428D009E1396 /* libsqlite3.0.tbd */; };
@@ -688,6 +691,11 @@
 		2C4E0DD21F6A5C0400C2CE27 /* DrawLineScrollView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineScrollView2.m; sourceTree = "<group>"; };
 		2C4FE5541BD79AAE00681C2F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		2C65D7401BB3A38500D22F29 /* mp1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp1.jpg; sourceTree = "<group>"; };
+		2C6655E02153661B00731EFC /* DeprecatedVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeprecatedVCTL.h; sourceTree = "<group>"; };
+		2C6655E12153661B00731EFC /* DeprecatedVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeprecatedVCTL.m; sourceTree = "<group>"; };
+		2C6655E22153661B00731EFC /* DeprecatedVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeprecatedVCTL.xib; sourceTree = "<group>"; };
+		2C6655E521536EEB00731EFC /* DeprecatedObject1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeprecatedObject1.h; sourceTree = "<group>"; };
+		2C6655E621536EEB00731EFC /* DeprecatedObject1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeprecatedObject1.m; sourceTree = "<group>"; };
 		2C683CFA1FE7BBD8009D2FB7 /* PastBoardVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastBoardVCTL.h; sourceTree = "<group>"; };
 		2C683CFB1FE7BBD8009D2FB7 /* PastBoardVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastBoardVCTL.m; sourceTree = "<group>"; };
 		2C683CFC1FE7BBD8009D2FB7 /* PastBoardVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastBoardVCTL.xib; sourceTree = "<group>"; };
@@ -1677,6 +1685,18 @@
 			path = mathProblem;
 			sourceTree = "<group>";
 		};
+		2C6655DF2153660800731EFC /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				2C6655E02153661B00731EFC /* DeprecatedVCTL.h */,
+				2C6655E12153661B00731EFC /* DeprecatedVCTL.m */,
+				2C6655E22153661B00731EFC /* DeprecatedVCTL.xib */,
+				2C6655E521536EEB00731EFC /* DeprecatedObject1.h */,
+				2C6655E621536EEB00731EFC /* DeprecatedObject1.m */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
 		2C683CF91FE7BBCA009D2FB7 /* PastBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1690,6 +1710,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2C6655DF2153660800731EFC /* Deprecated */,
 				2CBC82AE21081F61004F77FE /* Number */,
 				2C8E86292105A00900DF2B47 /* backItem */,
 				2CBA35B720C1485900CAE341 /* Script */,
@@ -3885,6 +3906,7 @@
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C6E60361E9B808900D17A82 /* DeleteInsertCell.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
+				2C6655E42153661B00731EFC /* DeprecatedVCTL.xib in Resources */,
 				2CC549A61D923373000F6880 /* Info.plist in Resources */,
 				2C6E5FE91E9B808900D17A82 /* Touch3d1DetailVCTL.xib in Resources */,
 				2CA1F8A91C0BF3D700089E14 /* sgs4.jpg in Resources */,
@@ -3969,6 +3991,7 @@
 				2C6E60B21E9B808900D17A82 /* PreFixObject.m in Sources */,
 				2C6E60C11E9B808900D17A82 /* RefreshTableViewCell.m in Sources */,
 				2C13F6631E9CE716009BBE34 /* PropertyC100.m in Sources */,
+				2C6655E32153661B00731EFC /* DeprecatedVCTL.m in Sources */,
 				2CC549A81D923373000F6880 /* MASConstraint.m in Sources */,
 				2CC549AF1D923373000F6880 /* View+MASAdditions.m in Sources */,
 				2CE1F34C1BCE3DC800B82CAE /* LSCollectionViewHelper.m in Sources */,
@@ -4190,6 +4213,7 @@
 				2C6E5FF41E9B808900D17A82 /* AnimationRotateVCTL.m in Sources */,
 				2C6E600A1E9B808900D17A82 /* EWMCodeVCTL.m in Sources */,
 				2C6E5FF71E9B808900D17A82 /* EnterBkgdVCTL.m in Sources */,
+				2C6655E721536EEB00731EFC /* DeprecatedObject1.m in Sources */,
 				2C6E60921E9B808900D17A82 /* MD5VCTL.m in Sources */,
 				2C6E61221E9B808900D17A82 /* Life2VCTL.m in Sources */,
 				2C6E609F1E9B808900D17A82 /* NumberKeyboardVCTL.m in Sources */,

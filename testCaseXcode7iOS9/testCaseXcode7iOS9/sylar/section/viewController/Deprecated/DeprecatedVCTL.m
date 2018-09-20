@@ -23,7 +23,7 @@
 
 - (void)fun1 {
     DeprecatedObject1 *aa = [[DeprecatedObject1 alloc] init];
-    [aa fun1];
+//    [aa fun1];   // 会有warning
     [aa fun2];
 }
 

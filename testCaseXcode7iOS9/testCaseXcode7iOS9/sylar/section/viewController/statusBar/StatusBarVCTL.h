@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StatusBarVCTL : UIViewController
+@interface StatusBarVCTL : BasicVCTL
 
 @end

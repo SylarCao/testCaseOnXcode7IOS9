@@ -9,6 +9,8 @@
 #import "StatusBarVCTL.h"
 #import "StatusBarTableViewCell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+NSInteger const kLatestVersion = 11;
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface StatusBarVCTL ()
 <UITableViewDataSource, UITableViewDelegate>
 
@@ -26,8 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setMyStatusBarColor];
-    
+//    [self setMyStatusBarColor];
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     [_table registerNib:[UINib nibWithNibName:@"StatusBarTableViewCell" bundle:nil] forCellReuseIdentifier:[StatusBarTableViewCell getCellId]];
 }
@@ -152,7 +154,7 @@
 
 - (void)statusBarColorChange10
 {
-    if (kIOSVersion(10))
+    if (kIOSVersion(kLatestVersion))
     {
         //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
         [self setNeedsStatusBarAppearanceUpdate];
@@ -161,7 +163,7 @@
 
 - (void)statusBarHide10
 {
-    if (kIOSVersion(10))
+    if (kIOSVersion(kLatestVersion))
     {
         //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
         _statusBarHidden = YES;
@@ -171,7 +173,7 @@
 
 - (void)statusBarShow10
 {
-    if (kIOSVersion(10))
+    if (kIOSVersion(kLatestVersion))
     {
         //  make sure to add to your info.plist "View controller-based status bar appearance" set to YES otherwise things just don't seem to work
         _statusBarHidden = NO;

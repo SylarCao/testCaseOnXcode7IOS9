@@ -120,7 +120,37 @@
     
 //    [self fun41];
     
-    [self fun42];
+//    [self fun42];
+    
+    [self fun43];
+}
+
+- (void)fun43 {
+    CGFloat width = 375-110;
+    NSInteger font_size = 16;
+    UILabel *ll = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, width, 200)];
+    ll.font = [UIFont systemFontOfSize:font_size];
+    ll.textColor = [UIColor blackColor];
+    [self.view addSubview:ll];
+    ll.layer.borderColor = [UIColor redColor].CGColor;
+    ll.layer.borderWidth = 1;
+    ll.numberOfLines = 0;
+    
+    NSString *s1 = @"恩华药业(sz002262)两日大跌近两成 300多名分析师参会讨论带量采购";
+    CGRect rr = [s1 boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font_size]} context:nil];
+    NSLog(@"sylar : rr = %f", rr.size.height);
+    
+//    s1 = @"恩华药业两日大跌近两成 300多名分析师参会讨论带量采购";
+//    rr = [s1 boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font_size]} context:nil];
+//    NSLog(@"sylar : rr = %f", rr.size.height);
+    
+    s1 = @"富易测试恩华药业(sz002262)两日大跌近两成 300多名分析师参会讨论带量采购";
+    rr = [s1 boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font_size]} context:nil];
+    NSLog(@"sylar : rr = %f", rr.size.height);
+    
+    
+    ll.text = s1;
+    
 }
 
 - (void)fun42 {

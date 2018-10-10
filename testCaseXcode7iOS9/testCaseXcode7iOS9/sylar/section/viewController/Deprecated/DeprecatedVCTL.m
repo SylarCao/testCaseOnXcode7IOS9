@@ -9,7 +9,9 @@
 #import "DeprecatedVCTL.h"
 #import "DeprecatedObject1.h"
 
-@interface DeprecatedVCTL ()
+@interface DeprecatedVCTL () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *table;
 
 @end
 
@@ -19,6 +21,10 @@
     [super viewDidLoad];
     
     [self fun1];
+    
+    _table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    _table.dataSource = self;
+    _table.delegate = self;
 }
 
 - (void)fun1 {
@@ -29,6 +35,17 @@
 
 - (void)fun2 {
     
+}
+
+#pragma mark - UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *aa = nil;
+    return aa;
 }
 
 @end

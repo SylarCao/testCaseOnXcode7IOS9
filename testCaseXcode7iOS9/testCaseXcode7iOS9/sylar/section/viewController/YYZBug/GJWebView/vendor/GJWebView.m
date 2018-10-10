@@ -224,7 +224,7 @@
     if (urlString == nil) {
         urlString = [self.webView stringByEvaluatingJavaScriptFromString:@"document.href"];
     }
-    return nil;
+    return urlString;
 }
 
 - (NSURLRequest *)request

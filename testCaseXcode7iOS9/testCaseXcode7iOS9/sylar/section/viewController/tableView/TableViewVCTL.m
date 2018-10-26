@@ -59,12 +59,16 @@ BOOL const kTableViewVCTLXib = 0;
 
 - (IBAction)btn1Action:(id)sender {
     self.a1 = 4;
-    [self.tableView reloadSections:[[NSIndexSet alloc ] initWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];  // reloadSections 的时候 当期的section的number可以变化，其他的section不可以变化
+    NSLog(@"sylar : aaa");
+    [self.tableView reloadSections:[[NSIndexSet alloc ] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];  // reloadSections 的时候 当期的section的number可以变化，其他的section不可以变化
+    NSLog(@"sylar : bbb");
 }
 
 - (IBAction)btn2Action:(id)sender {
-    self.a1 = 4;
+//    self.a1 = 4;
+    NSLog(@"sylar : aaa");
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:2]] withRowAnimation:UITableViewRowAnimationNone]; // reloadRowsAtIndexPaths 必须所有section的number都不能变化
+    NSLog(@"sylar : bbb");
 }
 
 - (void)naviFun1 {
@@ -106,6 +110,7 @@ BOOL const kTableViewVCTLXib = 0;
     NSInteger rt = section*2 + 2;
     if (section == 1) {
         rt = self.a1;
+        NSLog(@"sylar : numberOfRowsInSection(%ld) = %ld", (long)section, (long)rt);
     }
     return rt;
 }

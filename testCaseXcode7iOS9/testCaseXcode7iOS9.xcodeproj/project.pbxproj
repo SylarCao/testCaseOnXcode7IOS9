@@ -482,7 +482,6 @@
 		2CBA35BC20C1486700CAE341 /* ScriptVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBA35BA20C1486700CAE341 /* ScriptVCTL.xib */; };
 		2CBC82B221081F70004F77FE /* NumberVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC82B021081F70004F77FE /* NumberVCTL.m */; };
 		2CBC82B321081F70004F77FE /* NumberVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC82B121081F70004F77FE /* NumberVCTL.xib */; };
-		2CC549A61D923373000F6880 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5498C1D923373000F6880 /* Info.plist */; };
 		2CC549A71D923373000F6880 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5498E1D923373000F6880 /* MASCompositeConstraint.m */; };
 		2CC549A81D923373000F6880 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC549911D923373000F6880 /* MASConstraint.m */; };
 		2CC549A91D923373000F6880 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC549931D923373000F6880 /* MASConstraintMaker.m */; };
@@ -3907,7 +3906,6 @@
 				2C6E60361E9B808900D17A82 /* DeleteInsertCell.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
 				2C6655E42153661B00731EFC /* DeprecatedVCTL.xib in Resources */,
-				2CC549A61D923373000F6880 /* Info.plist in Resources */,
 				2C6E5FE91E9B808900D17A82 /* Touch3d1DetailVCTL.xib in Resources */,
 				2CA1F8A91C0BF3D700089E14 /* sgs4.jpg in Resources */,
 				2C6E61031E9B808900D17A82 /* TestBlockVCTL.xib in Resources */,

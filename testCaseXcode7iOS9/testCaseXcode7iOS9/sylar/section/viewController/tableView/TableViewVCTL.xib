@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewVCTL">
@@ -17,22 +21,48 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FlV-Cg-viY">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="uAF-E4-UHS"/>
                         <outlet property="delegate" destination="-1" id="Oty-WJ-ifX"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCA-P2-dER">
+                    <rect key="frame" x="172" y="625" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ogw-vH-jP3"/>
+                    </constraints>
+                    <state key="normal" title="b2"/>
+                    <connections>
+                        <action selector="btn2Action:" destination="-1" eventType="touchUpInside" id="oXH-CE-2YT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEw-Yc-huE">
+                    <rect key="frame" x="51" y="625" width="49" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="jsI-jC-0a2"/>
+                    </constraints>
+                    <state key="normal" title="b1"/>
+                    <connections>
+                        <action selector="btn1Action:" destination="-1" eventType="touchUpInside" id="Il4-bz-SFm"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="FlV-Cg-viY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="367-iu-sw4"/>
+                <constraint firstItem="gCA-P2-dER" firstAttribute="top" secondItem="FlV-Cg-viY" secondAttribute="bottom" constant="8" id="44C-wU-UxN"/>
+                <constraint firstItem="UEw-Yc-huE" firstAttribute="top" secondItem="FlV-Cg-viY" secondAttribute="bottom" constant="8" id="4OV-pd-xEe"/>
+                <constraint firstItem="gCA-P2-dER" firstAttribute="leading" secondItem="UEw-Yc-huE" secondAttribute="trailing" constant="72" id="D0O-7u-wut"/>
                 <constraint firstAttribute="trailing" secondItem="FlV-Cg-viY" secondAttribute="trailing" id="MRI-cR-tbP"/>
                 <constraint firstItem="FlV-Cg-viY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UCe-iH-5Xd"/>
-                <constraint firstAttribute="bottom" secondItem="FlV-Cg-viY" secondAttribute="bottom" id="iRe-bo-ofT"/>
+                <constraint firstAttribute="bottom" secondItem="gCA-P2-dER" secondAttribute="bottom" constant="12" id="Zut-Tj-F4n"/>
+                <constraint firstAttribute="bottom" secondItem="FlV-Cg-viY" secondAttribute="bottom" constant="50" id="iRe-bo-ofT"/>
+                <constraint firstItem="UEw-Yc-huE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="nfp-NL-xze"/>
+                <constraint firstAttribute="bottom" secondItem="UEw-Yc-huE" secondAttribute="bottom" constant="9" id="tAh-dg-a1t"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="32.799999999999997" y="53.523238380809602"/>
         </view>
     </objects>
 </document>

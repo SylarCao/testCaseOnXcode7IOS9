@@ -12,18 +12,19 @@
 #import "TabelViewHeaderCodeView.h"
 #import "TableViewCodeCell.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-#define kTableViewVCTLXib  (0)
+BOOL const kTableViewVCTLXib = 0;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface TableViewVCTL ()
 <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
+@property (nonatomic, assign) NSInteger a1;
+@property (nonatomic, assign) NSInteger a2;
+
 @end
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation TableViewVCTL
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunreachable-code"
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +51,19 @@
     // navigation
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"b1" style:UIBarButtonItemStylePlain target:self action:@selector(naviFun1)];
     self.navigationItem.rightBarButtonItem = item;
+    
+    // temp value
+    self.a1 = 3;
+    self.a2 = 4;
+}
+
+- (IBAction)btn1Action:(id)sender {
+    self.a1 = 4;
+    [self.tableView reloadSections:[[NSIndexSet alloc ] initWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];  // reloadSections 的时候 当期的section的number可以变化，其他的section不可以变化
+}
+
+- (IBAction)btn2Action:(id)sender {
+    
 }
 
 - (void)naviFun1 {
@@ -59,12 +73,12 @@
     
     return;
     
-    if (kTableViewVCTLXib) {
-        
-    } else {
-        TableViewCodeCell *cell = [_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]];
-        [cell setSelected:YES animated:NO];
-    }
+//    if (kTableViewVCTLXib) {
+//
+//    } else {
+//        TableViewCodeCell *cell = [_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]];
+//        [cell setSelected:YES animated:NO];
+//    }
     
 }
 
@@ -88,7 +102,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 //    NSLog(@"sylar :  numberOfRowsInSection(%ld)", section);
-    NSInteger rt = section*5 + 2;
+    NSInteger rt = section*2 + 2;
+    if (section == 1) {
+        rt = self.a1;
+    }
     return rt;
 }
 
@@ -106,10 +123,10 @@
     {
         TableViewCodeCell *cell = [tableView dequeueReusableCellWithIdentifier:[TableViewCodeCell getCellId] forIndexPath:indexPath];
         [cell setWithIndex:indexPath.row];
-        if (indexPath.row == 0) {
-            [self performSelectorOnMainThread:@selector(fun1:) withObject:cell waitUntilDone:NO];
-            
-        }
+//        if (indexPath.row == 0) {
+//            [self performSelectorOnMainThread:@selector(fun1:) withObject:cell waitUntilDone:NO];
+//
+//        }
         rt = cell;
     }
     
@@ -153,16 +170,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
-    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];
+//    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+//    [tableView reloadSections:[[NSIndexSet alloc] initWithIndex:2] withRowAnimation:UITableViewRowAnimationNone];
     // reload seciont 的时候   numberOfRowsInSection 会都掉
     //                        cellForRowAtIndexPath 只会调用对应的section
 }
 
 
-#pragma clang diagnostic pop
 
 
 

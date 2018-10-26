@@ -63,7 +63,8 @@ BOOL const kTableViewVCTLXib = 0;
 }
 
 - (IBAction)btn2Action:(id)sender {
-    
+    self.a1 = 4;
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:2]] withRowAnimation:UITableViewRowAnimationNone]; // reloadRowsAtIndexPaths 必须所有section的number都不能变化
 }
 
 - (void)naviFun1 {

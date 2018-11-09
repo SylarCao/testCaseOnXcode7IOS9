@@ -20,10 +20,10 @@
     return self;
 }
 
-- (void)didMoveToWindow {
-    [super didMoveToWindow];
-    NSLog(@"sylar : did move to window");
-}
+//- (void)didMoveToWindow {
+//    [super didMoveToWindow];
+//    NSLog(@"sylar : did move to window");
+//}
 
 - (void)tapSSButton {
     NSLog(@"sylar : tapppp ss button");

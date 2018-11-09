@@ -8,6 +8,7 @@
 
 #import "SwizzlerVCTL.h"
 #import "SSButton.h"
+#import "UIButton+Swizzle.h"
 #import <objc/runtime.h>
 
 @interface SwizzlerVCTL ()
@@ -45,6 +46,11 @@
 - (void)swizzleButton {
 //    simple_Swizzle([SSButton class], @selector(didMoveToWindow), @selector(sfun1));
 //    best_Swizzle([SSButton class], @selector(didMoveToWindow), @selector(sfun1));
+    
+//    simple_Swizzle([UIButton class], @selector(didMoveToWindow), @selector(swFun1));  // uibutton
+//    best_Swizzle([UIButton class], @selector(didMoveToWindow), @selector(swFun1));
+    
+    [self bestSwizzleClass:[UIButton class] originalSel:@selector(didMoveToWindow) swizzleSel:@selector(swFun1)];
 }
 
 
@@ -53,6 +59,19 @@
     Method originalMethod = class_getInstanceMethod(aClass, originalSel);
     Method swizzleMethod = class_getInstanceMethod(aClass, swizzleSel);
     method_exchangeImplementations(originalMethod, swizzleMethod);
+    return YES;
+}
+
+- (BOOL)bestSwizzleClass:(Class)aClass originalSel:(SEL)originalSel swizzleSel:(SEL)swizzleSel {
+    Method originalMethod = class_getInstanceMethod(aClass, originalSel);
+    Method swizzleMethod = class_getInstanceMethod(aClass, swizzleSel);
+    BOOL didAddMethod = class_addMethod(aClass, originalSel, method_getImplementation(swizzleMethod), method_getTypeEncoding(swizzleMethod));
+    if (didAddMethod) {
+        class_replaceMethod(aClass, swizzleSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    }else{
+        method_exchangeImplementations(originalMethod, swizzleMethod);
+    }
+    
     return YES;
 }
 

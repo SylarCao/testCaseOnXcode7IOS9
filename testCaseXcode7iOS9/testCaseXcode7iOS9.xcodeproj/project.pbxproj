@@ -514,6 +514,10 @@
 		2CEF4B911F947EDD00192E92 /* Test123ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF4B8D1F947EDC00192E92 /* Test123ViewController.m */; };
 		2CF0E0051EF36F2300067697 /* sgs6px.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0E0041EF36F2300067697 /* sgs6px.png */; };
 		2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */; };
+		2CF3B96A21942DA20099F435 /* SwizzlerVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3B96821942DA20099F435 /* SwizzlerVCTL.m */; };
+		2CF3B96B21942DA20099F435 /* SwizzlerVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF3B96921942DA20099F435 /* SwizzlerVCTL.xib */; };
+		2CF3B96F21942E110099F435 /* MPSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3B96E21942E110099F435 /* MPSwizzler.m */; };
+		2CF3B97221942EC30099F435 /* SSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3B97121942EC30099F435 /* SSButton.m */; };
 		2CFE60A21EB03643001CC571 /* DetectRotationVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */; };
 		2CFE60A31EB03643001CC571 /* DetectRotationVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */; };
 /* End PBXBuildFile section */
@@ -1373,6 +1377,13 @@
 		2CF0E0041EF36F2300067697 /* sgs6px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sgs6px.png; sourceTree = "<group>"; };
 		2CF2F54A1F022B5100CAEE5A /* StringArrayObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringArrayObject1.h; sourceTree = "<group>"; };
 		2CF2F54B1F022B5100CAEE5A /* StringArrayObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringArrayObject1.m; sourceTree = "<group>"; };
+		2CF3B96721942DA20099F435 /* SwizzlerVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzlerVCTL.h; sourceTree = "<group>"; };
+		2CF3B96821942DA20099F435 /* SwizzlerVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlerVCTL.m; sourceTree = "<group>"; };
+		2CF3B96921942DA20099F435 /* SwizzlerVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwizzlerVCTL.xib; sourceTree = "<group>"; };
+		2CF3B96D21942E100099F435 /* MPSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSwizzler.h; sourceTree = "<group>"; };
+		2CF3B96E21942E110099F435 /* MPSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSwizzler.m; sourceTree = "<group>"; };
+		2CF3B97021942EC30099F435 /* SSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSButton.h; sourceTree = "<group>"; };
+		2CF3B97121942EC30099F435 /* SSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSButton.m; sourceTree = "<group>"; };
 		2CFE609F1EB03643001CC571 /* DetectRotationVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectRotationVCTL.h; sourceTree = "<group>"; };
 		2CFE60A01EB03643001CC571 /* DetectRotationVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectRotationVCTL.m; sourceTree = "<group>"; };
 		2CFE60A11EB03643001CC571 /* DetectRotationVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetectRotationVCTL.xib; sourceTree = "<group>"; };
@@ -1709,6 +1720,7 @@
 		2C6E5D541E9B808800D17A82 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CF3B96621942D8D0099F435 /* Swizzler */,
 				2C6655DF2153660800731EFC /* Deprecated */,
 				2CBC82AE21081F61004F77FE /* Number */,
 				2C8E86292105A00900DF2B47 /* backItem */,
@@ -3621,6 +3633,28 @@
 			path = Test123;
 			sourceTree = "<group>";
 		};
+		2CF3B96621942D8D0099F435 /* Swizzler */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3B96721942DA20099F435 /* SwizzlerVCTL.h */,
+				2CF3B96821942DA20099F435 /* SwizzlerVCTL.m */,
+				2CF3B96921942DA20099F435 /* SwizzlerVCTL.xib */,
+				2CF3B97021942EC30099F435 /* SSButton.h */,
+				2CF3B97121942EC30099F435 /* SSButton.m */,
+				2CF3B96C21942DDD0099F435 /* Vendor */,
+			);
+			path = Swizzler;
+			sourceTree = "<group>";
+		};
+		2CF3B96C21942DDD0099F435 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2CF3B96D21942E100099F435 /* MPSwizzler.h */,
+				2CF3B96E21942E110099F435 /* MPSwizzler.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 		2CFE609E1EB03631001CC571 /* DetectRotation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3905,6 +3939,7 @@
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C6E60361E9B808900D17A82 /* DeleteInsertCell.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
+				2CF3B96B21942DA20099F435 /* SwizzlerVCTL.xib in Resources */,
 				2C6655E42153661B00731EFC /* DeprecatedVCTL.xib in Resources */,
 				2C6E5FE91E9B808900D17A82 /* Touch3d1DetailVCTL.xib in Resources */,
 				2CA1F8A91C0BF3D700089E14 /* sgs4.jpg in Resources */,
@@ -3998,6 +4033,7 @@
 				2C6E60E31E9B808900D17A82 /* StringArrayHelper.m in Sources */,
 				2CE1F3581BCE3DC800B82CAE /* UITextField+Shake.m in Sources */,
 				2C6E60F31E9B808900D17A82 /* TableViewCodeCell.m in Sources */,
+				2CF3B97221942EC30099F435 /* SSButton.m in Sources */,
 				2C2EC32F1BE74021008197C3 /* AFHTTPSessionManager.m in Sources */,
 				2C2EC3301BE74021008197C3 /* AFNetworkReachabilityManager.m in Sources */,
 				2C6E61321E9B808900D17A82 /* PullingRefreshTableView.m in Sources */,
@@ -4027,6 +4063,7 @@
 				2C6E60151E9B808900D17A82 /* CheckInstallQQVCTL.m in Sources */,
 				2CF2F54C1F022B5100CAEE5A /* StringArrayObject1.m in Sources */,
 				2C6E60FC1E9B808900D17A82 /* TableViewCellVCTL.m in Sources */,
+				2CF3B96A21942DA20099F435 /* SwizzlerVCTL.m in Sources */,
 				2C6E611C1E9B808900D17A82 /* UIButtonBVTL.m in Sources */,
 				2C6E60731E9B808900D17A82 /* IntrinsicCell.m in Sources */,
 				2C6E60901E9B808900D17A82 /* MBProgressHudVCTL.m in Sources */,
@@ -4137,6 +4174,7 @@
 				2C6E60DC1E9B808900D17A82 /* WXMediaMessage+messageConstruct.m in Sources */,
 				2C6E5FFF1E9B808900D17A82 /* UIImage+BlurGlass.m in Sources */,
 				2C6E608C1E9B808900D17A82 /* MathProblem1VCTL.m in Sources */,
+				2CF3B96F21942E110099F435 /* MPSwizzler.m in Sources */,
 				2C4BE0501BE9A7B0004F1DAF /* UIScrollView+MJExtension.m in Sources */,
 				2C6E60061E9B808900D17A82 /* DefaultCameraVCTL.m in Sources */,
 				2CE1F3521BCE3DC800B82CAE /* LewPopupViewAnimationFade.m in Sources */,

@@ -12,6 +12,8 @@
 
 - (void)swFun1 {
     NSLog(@"sylar : sw");
+    
+//    [self swFun1];
 }
 
 @end

@@ -21,7 +21,7 @@
 }
 
 //- (void)didMoveToWindow {
-//    [super didMoveToWindow];
+////    [super didMoveToWindow];
 //    NSLog(@"sylar : did move to window");
 //}
 

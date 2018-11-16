@@ -7,6 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #import "PushPopVCTL.h"
+#import "Push1TableViewVCTL.h"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface PushPopVCTL ()
 
@@ -33,6 +34,11 @@
     _content.text = [NSString stringWithFormat:@"index = %ld", i++];
     NSLog(@"did load = %ld", i);
     _index = i;
+}
+
+- (IBAction)btnChild:(id)sender {
+    Push1TableViewVCTL *aa = [[Push1TableViewVCTL alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:aa animated:YES];
 }
 
 - (IBAction)btnPush:(id)sender

@@ -445,6 +445,10 @@
 		2C7849461D475E1B00E82013 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7849401D475E1B00E82013 /* icon180.png */; };
 		2C785C761D10015C004480CF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C785C751D10015C004480CF /* Reachability.m */; };
 		2C79CD532195523900B005AE /* UIButton+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C79CD522195523900B005AE /* UIButton+Swizzle.m */; };
+		2C7CC3AE219EB63B00F10BD1 /* Push1TableViewVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CC3AC219EB63B00F10BD1 /* Push1TableViewVCTL.m */; };
+		2C7CC3AF219EB63B00F10BD1 /* Push1TableViewVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CC3AD219EB63B00F10BD1 /* Push1TableViewVCTL.xib */; };
+		2C7CC3B7219EB82700F10BD1 /* Push2CodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CC3B6219EB82700F10BD1 /* Push2CodeVCTL.m */; };
+		2C7CC3BA219EBAE600F10BD1 /* Push3CodeVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CC3B9219EBAE600F10BD1 /* Push3CodeVCTL.m */; };
 		2C7ED9571F7244FE00FC0392 /* PopPreviousVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7ED9551F7244FE00FC0392 /* PopPreviousVCTL.m */; };
 		2C7ED9581F7244FE00FC0392 /* PopPreviousVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */; };
 		2C8E862D2105A01B00DF2B47 /* BackItemVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E862B2105A01B00DF2B47 /* BackItemVCTL.m */; };
@@ -1253,6 +1257,13 @@
 		2C785C751D10015C004480CF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2C79CD512195523900B005AE /* UIButton+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzle.h"; sourceTree = "<group>"; };
 		2C79CD522195523900B005AE /* UIButton+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Swizzle.m"; sourceTree = "<group>"; };
+		2C7CC3AB219EB63B00F10BD1 /* Push1TableViewVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Push1TableViewVCTL.h; sourceTree = "<group>"; };
+		2C7CC3AC219EB63B00F10BD1 /* Push1TableViewVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Push1TableViewVCTL.m; sourceTree = "<group>"; };
+		2C7CC3AD219EB63B00F10BD1 /* Push1TableViewVCTL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Push1TableViewVCTL.xib; sourceTree = "<group>"; };
+		2C7CC3B5219EB82700F10BD1 /* Push2CodeVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Push2CodeVCTL.h; sourceTree = "<group>"; };
+		2C7CC3B6219EB82700F10BD1 /* Push2CodeVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Push2CodeVCTL.m; sourceTree = "<group>"; };
+		2C7CC3B8219EBAE600F10BD1 /* Push3CodeVCTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Push3CodeVCTL.h; sourceTree = "<group>"; };
+		2C7CC3B9219EBAE600F10BD1 /* Push3CodeVCTL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Push3CodeVCTL.m; sourceTree = "<group>"; };
 		2C7ED9541F7244FE00FC0392 /* PopPreviousVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPreviousVCTL.h; sourceTree = "<group>"; };
 		2C7ED9551F7244FE00FC0392 /* PopPreviousVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPreviousVCTL.m; sourceTree = "<group>"; };
 		2C7ED9561F7244FE00FC0392 /* PopPreviousVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopPreviousVCTL.xib; sourceTree = "<group>"; };
@@ -2707,6 +2718,13 @@
 				2C6E5EE71E9B808800D17A82 /* PushPopVCTL.h */,
 				2C6E5EE81E9B808800D17A82 /* PushPopVCTL.m */,
 				2C6E5EE91E9B808800D17A82 /* PushPopVCTL.xib */,
+				2C7CC3AB219EB63B00F10BD1 /* Push1TableViewVCTL.h */,
+				2C7CC3AC219EB63B00F10BD1 /* Push1TableViewVCTL.m */,
+				2C7CC3AD219EB63B00F10BD1 /* Push1TableViewVCTL.xib */,
+				2C7CC3B5219EB82700F10BD1 /* Push2CodeVCTL.h */,
+				2C7CC3B6219EB82700F10BD1 /* Push2CodeVCTL.m */,
+				2C7CC3B8219EBAE600F10BD1 /* Push3CodeVCTL.h */,
+				2C7CC3B9219EBAE600F10BD1 /* Push3CodeVCTL.m */,
 			);
 			path = PushPopViewcontroller;
 			sourceTree = "<group>";
@@ -3943,6 +3961,7 @@
 				2C6E611F1E9B808900D17A82 /* LabelTestVCTL.xib in Resources */,
 				2CA112C71BB29EAA00406685 /* HomeVCTL.xib in Resources */,
 				2C6E60361E9B808900D17A82 /* DeleteInsertCell.xib in Resources */,
+				2C7CC3AF219EB63B00F10BD1 /* Push1TableViewVCTL.xib in Resources */,
 				2C23A0871C0D457F008B4712 /* read_me.txt in Resources */,
 				2CF3B96B21942DA20099F435 /* SwizzlerVCTL.xib in Resources */,
 				2C6655E42153661B00731EFC /* DeprecatedVCTL.xib in Resources */,
@@ -4152,6 +4171,7 @@
 				2C6E60B91E9B808900D17A82 /* PushPopVCTL.m in Sources */,
 				2CC549B01D923373000F6880 /* ViewController+MASAdditions.m in Sources */,
 				2C6E60AB1E9B808900D17A82 /* PlayVideoVCTL.m in Sources */,
+				2C7CC3AE219EB63B00F10BD1 /* Push1TableViewVCTL.m in Sources */,
 				2CC549A91D923373000F6880 /* MASConstraintMaker.m in Sources */,
 				2CC549AC1D923373000F6880 /* MASViewConstraint.m in Sources */,
 				2CE1F34F1BCE3DC800B82CAE /* UICollectionView+Draggable.m in Sources */,
@@ -4187,8 +4207,10 @@
 				2C4BE04B1BE9A7B0004F1DAF /* MJRefreshGifHeader.m in Sources */,
 				2C4BE0411BE9A7B0004F1DAF /* MJRefreshBackFooter.m in Sources */,
 				2C79CD532195523900B005AE /* UIButton+Swizzle.m in Sources */,
+				2C7CC3B7219EB82700F10BD1 /* Push2CodeVCTL.m in Sources */,
 				2CE1F3571BCE3DC800B82CAE /* MGSwipeTableCell.m in Sources */,
 				2C6E60EA1E9B808900D17A82 /* StructVCTL.m in Sources */,
+				2C7CC3BA219EBAE600F10BD1 /* Push3CodeVCTL.m in Sources */,
 				2C6E60F41E9B808900D17A82 /* TableViewHeaderXIBView.m in Sources */,
 				2C6E604F1E9B808900D17A82 /* DrawBazView.m in Sources */,
 				2C6E5FE81E9B808900D17A82 /* Touch3d1DetailVCTL.m in Sources */,

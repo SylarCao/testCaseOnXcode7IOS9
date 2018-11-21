@@ -122,7 +122,18 @@
     
 //    [self fun42];
     
-    [self fun43];
+//    [self fun43];
+    
+    [self fun44];
+}
+
+- (void)fun44 {
+    NSUInteger a1 = 5;
+    NSUInteger a2 = 7;
+    
+    NSUInteger a3 = 20;
+    NSInteger a4 = MIN(a3, a1 - a2);
+    NSLog(@"sylar : a4 = %lu", a4);
 }
 
 - (void)fun43 {

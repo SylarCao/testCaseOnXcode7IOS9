@@ -75,7 +75,7 @@
     
     Push3CodeVCTL *p3 = [[Push3CodeVCTL alloc] initWithNibName:nil bundle:nil];
     [self addChildViewController:p3];
-    p3.view.frame = CGRectMake(100, 150, kScreenWidth-120, 200);
+    p3.view.frame = CGRectMake(100, 30, kScreenWidth-120, 200);
     [self.view addSubview:p3.view];
     [p3 didMoveToParentViewController:self];
 }
